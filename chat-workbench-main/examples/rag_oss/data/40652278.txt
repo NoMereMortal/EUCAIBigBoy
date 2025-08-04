@@ -1,0 +1,3028 @@
+
+Zhang and He Hereditas
+(2025) 162:125
+Hereditas
+https://doi.org/10.1186/s41065-025-00496-3
+RESEARCH
+Open Access
+In silico and in vitro assessment of TP53,
+Check for
+updates
+ATM, RAD51, and BAX genes in gastric cancer
+and their contribution to radiotherapy
+resistance
+Junwei Zhang and Pengtao He²*
+Abstract
+Background Gastric cancer remains a leading cause of cancer-related morbidity and mortality worldwide. The
+genetic factors contributing to gastric cancer progression and resistance to therapies, particularly radiotherapy, are
+not fully understood. TP53, ATM, RAD51, and BAX are genes involved in DNA repair, apoptosis, and response to stress.
+The aim of this study was to investigate the expression patterns of these genes in gastric cancer, their potential role in
+radiotherapy resistance, and their diagnostic value.
+Methodology Gene expression levels of TP53, ATM, RAD51, and BAX were assessed using RT-qPCR across 9 gastric
+cancer cell lines and 6 normal control cell lines. Additionally, protein expression was confirmed via IHC and TCGA
+dataset analysis. Methylation levels of these genes were evaluated in gastric cancer tissues using the GSCA database.
+Mutational analysis was conducted using cBioPortal, and survival analysis was performed using Kaplan-Meier and
+meta-analysis. The radiotherapy resistance study was carried out by knocking down TP53, RAD51, and BAX in AGS and
+MKN-45 gastric cancer cell lines, followed by expression analysis, colony formation, and wound healing assays.
+Results The expression of TP53, RAD51, and BAX was significantly upregulated, while ATM was downregulated
+in gastric cancer cell lines compared to normal controls. All four genes demonstrated good discriminatory
+power (AUC = 1) in distinguishing gastric cancer from normal samples. Methylation analysis revealed significant
+hypomethylation of TP53, RAD51, and BAX, and hypermethylation of ATM in gastric cancer tissues. Mutational analysis
+showed that TP53 was altered in 88% of gastric cancer samples, while ATM, RAD51, and BAX exhibited lower mutation
+rates. Survival analysis suggested that elevated expression of TP53, RAD51, and BAX may be linked to poorer survival
+outcomes, while reduced ATM expression appeared to associate with decreased overall survival. However, these
+associations require further validation through additional studies. Knockdown of TP53, RAD51, and BAX in AGS and
+MKN-45 cells resulted in significantly reduced cell proliferation and slower wound healing, highlighting their role in
+radiotherapy resistance.
+*Correspondence:
+Pengtao He
+drhepengtao@outlook.com
+Full list of author information is available at the end of the article
+© The Author(s) 2025. Open Access This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use,
+BMC
+sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and
+the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this
+article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included
+in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will
+need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommons.org/licenses/by/4.0/.The
+Creative Commons Public Domain Dedication waiver (http://creativecommons.org/publicdomain/zero/1.0/) applies to the data made available
+in this article, unless otherwise stated in a credit line to the data.
+Zhang and He Hereditas
+(2025) 162:125
+Page 2 of 20
+Conclusion The TP53, RAD51, and BAX genes are significantly involved in gastric cancer progression and resistance
+to radiotherapy. Their expression and mutation status provide valuable diagnostic and prognostic information.
+Keywords Gastric cancer, Radiotherapy resistance, Gene expression, Diagnostic biomarker
+Introduction
+and enhancing patient survival rates. One of the major
+Gastric cancer is a leading cause of cancer-related mor-
+contributors to radiotherapy resistance is the repair of
+tality globally, accounting for approximately 1 million
+DNA damage. Radiation-induced DNA damage, includ-
+new cases and over 700,000 deaths each year [1, 2]. It is
+ing double-strand breaks, can be repaired by tumor
+particularly prevalent in Eastern Asia, with higher inci-
+cells, allowing them to recover and continue proliferat-
+dence rates in countries such as Japan, China, and Korea,
+ing despite exposure to lethal doses of radiation [23, 24].
+but it remains a significant health concern worldwide
+Key DNA damage repair pathways, such as homologous
+[3-5]. Gastric cancer is a heterogeneous disease with dis-
+recombination and non-homologous end joining, are
+tinct molecular and histopathological subtypes, including
+often upregulated in resistant tumor cells, promoting
+intestinal and diffuse types, each with different clini-
+their survival post-radiation [23, 25]. Another critical fac-
+cal outcomes and responses to treatment [6, 7]. Despite
+tor in radioresistance is the altered regulation of the cell
+advances in diagnostic techniques such as endoscopy
+cycle. Many cancer cells exhibit dysregulated cell cycle
+and histopathological evaluation, early detection remains
+checkpoints, particularly at the G1/S and G2/M phases,
+challenging, as patients often present with advanced
+which can allow them to bypass radiation-induced cell
+disease at diagnosis, leading to a 5-year survival rate of
+cycle arrest [26]. This dysregulation enables tumor cells
+approximately 30-40% [8-10].
+to continue progressing through the cell cycle even when
+Cancer treatment has undergone a significant trans-
+damaged, contributing to their ability to survive radiation
+formation from traditional cytotoxic therapies toward
+treatment [27]. Furthermore, some tumor cells can enter
+more precise and personalized strategies [11]. Early
+a quiescent or dormant state, making them less suscep-
+approaches, such as chemotherapy, were effective at
+tible to radiation-induced cell death and more resistant
+targeting rapidly dividing cells but were often associ-
+to the effects of subsequent treatments [28]. In addi-
+ated with substantial toxicity and non-specific effects on
+tion to DNA repair and cell cycle regulation, the tumor
+normal tissues [11]. Advances in molecular biology and
+microenvironment also plays a crucial role in radioresis-
+genomics have enabled the development of targeted ther-
+tance. Factors such as hypoxia (low oxygen levels within
+apies that disrupt specific oncogenic pathways, as well as
+tumors), the presence of cancer-associated fibroblasts,
+immunotherapies that harness the patient's immune sys-
+and immune cell infiltration can promote resistance to
+tem to selectively attack tumor cells [11]. More recently,
+radiotherapy [29]. Hypoxic conditions within tumors
+novel modalities such as RNA-based therapeutics, adop-
+can lead to decreased efficacy of radiation, as oxygen
+tive cell transfer, and tumor microenvironment modula-
+enhances the damage caused by radiation therapy [29].
+tion have emerged as promising strategies for overcoming
+Furthermore, stromal cells within the tumor microenvi-
+resistance and improving durability of response [12].
+ronment can secrete signaling molecules that promote
+These innovations are increasingly guided by artificial
+cell survival and proliferation, further enhancing the
+intelligence and integrative multi-omic profiling, offer-
+radioresistant phenotype [30].
+ing dynamic and individualized treatment approaches
+Several genes have been implicated in modulating
+that reflect the evolving complexity of tumor biology
+radioresistance, including TP53, ATM, RAD51, and BAX.
+[13]. Treatment for gastric cancer typically involves a
+TP53, one of the most frequently mutated tumor suppres-
+combination of surgery, chemotherapy, and radiotherapy
+sor genes in human cancers, plays a critical role in main-
+[14-16]. However, therapeutic outcomes remain poor for
+taining genomic integrity [31-33]. TP53 mutations are
+many patients due to the development of resistance, par-
+associated with impaired DNA repair and reduced cell
+ticularly resistance to radiotherapy [17, 18]. Radiotherapy
+death following radiation exposure, leading to increased
+resistance is a significant barrier to effective treatment, as
+tumor survival and resistance to treatment [34, 35]. ATM
+it impedes the ability to deliver curative doses of radia-
+(ataxia telangiectasia mutated) is another key regula-
+tion to tumors, contributing to disease recurrence and
+tor of the DNA damage response, involved in detecting
+metastasis [19, 20]. The mechanisms underlying radio-
+DNA double-strand breaks and initiating repair through
+resistance are complex and multifactorial, encompassing
+various pathways, including homologous recombination
+a variety of cellular and molecular alterations that allow
+[36, 37]. Mutations or downregulation of ATM have been
+cancer cells to evade the detrimental effects of radia-
+linked to increased sensitivity to radiation-induced cell
+tion [21, 22]. Understanding these molecular mecha-
+death and tumor progression [23, 38]. RAD51 is a central
+nisms is crucial for improving therapeutic strategies
+player in the homologous recombination repair pathway
+Zhang and He Hereditas
+(2025) 162:125
+Page 3 of 20
+and facilitates the repair of DNA double-strand breaks,
+gene expression was calculated using the 2^⁻⁴⁴ᶜₜ method
+contributing to radioresistance by allowing cancer cells to
+[49]. Following primers were used for amplification:
+repair radiation-induced DNA damage [39, 40]. BAX, a
+GAPDH-F5'-ACCCACTCCTCCACCTTTGAC-3'
+pro-apoptotic member of the BCL-2 family, is involved in
+GAPDH-R 5'-CTGTTGCTGTAGCCAAATTCG-3.
+regulating cell death [41]. Up-regulation of BAX expres-
+TP53-F: 5'-CCTCAGCATCTTATCCGAGTGG-3'
+sion has been shown to impair radiation-induced apop-
+TP53-R: 5'-TGGATGGTGGTACAGTCAGAGC-3"
+tosis, leading to enhanced survival of cancer cells after
+ATM-F: 5'-TGTTCCAGGACACGAAGGGAGA-3'
+radiotherapy [42]. While significant research has been
+ATM-R: 5'-CAGGGTTCTCAGCACTATGGGA-3'
+conducted on these genes in various cancers, including
+RAD51-F: 5'-TCTCTGGCAGTGATGTCCTGGA-3'
+breast, lung, and head and neck cancers, there is lim-
+RAD51-R: 5'-TAAAGGGCGGTGGCACTGTCTA-3'
+ited knowledge regarding their specific role in gastric
+BAX-F: 5'-TCAGGATGCGTCCACCAAGAAG-3"
+cancer, particularly in the context of radiotherapy resis-
+BAX-R: 5'-TGTGTCCACGGCGGCAATCATC-3'
+tance. Previous studies have highlighted the association
+between alterations in TP53, ATM, RAD51, and BAX
+Expression validation analysis
+and poor treatment outcomes in other malignancies [43,
+The mRNA expression levels of TP53, RAD51, ATM, and
+44], but their precise contribution to radioresistance in
+BAX in gastric cancer were validated using patient sam-
+gastric cancer remains poorly understood. Moreover,
+ple data from TCGA, accessed through the GSCA data-
+there is a lack of comprehensive studies that combine
+base (http://bioinfo.life.hust.edu.cn/GSCA/) [50]. This
+both in silico (computational) and in vitro (experimental)
+tool facilitated the comparison of gene expression pro-
+approaches to explore these genes' roles in gastric cancer.
+files between gastric cancer and normal tissues to deter-
+Given the high incidence of gastric cancer, its poor
+mine the differential expression patterns of these genes.
+prognosis, and the challenges posed by radiotherapy
+To validate the protein expression of TP53, RAD51,
+resistance, there is an urgent need for further investiga-
+ATM, and BAX, Immunohistochemistry (IHC) data were
+tion into the molecular mechanisms that underlie radio-
+obtained from the HPA database (https://www.proteinat
+resistance in this disease. This study aims to fill this gap
+las.org/) [51]. This database provided tissue-specific pro
+by performing an integrated analysis of TP53, ATM,
+tein expression data, allowing us to confirm the protein
+RAD51, and BAX using multi-level in silico [45, 46] and
+expression of TP53, ATM, RAD51, and BAX in gastric
+in vitro approach [47, 48].
+cancer tissue. The GEPIA2 database (http://gepia2.can
+cer-pku.cn/) [52] was used to analyze the expression of
+Methodology
+these genes across different stages of gastric cancer. This
+Cell culture and growth conditions
+resource enabled us to assess whether the expression
+Nine gastric cancer cell lines and six normal gastric
+levels of TP53, RAD51, ATM, and BAX were associated
+cell lines were purchased from a commercial cell line
+with cancer progression.
+repository. The gastric cancer cell lines included "AGS,
+MKN-45, SNU-1, SNU-16, MGC803, HGC-27, KATO
+Promoter methylation analysis
+III, NCI-N87, and HCC-44." The normal gastric cell
+The promoter methylation levels of TP53, ATM, RAD51,
+lines included "GSE-1, GSE-2, GSE-3, GSE-4, GSE-5,
+and BAX in gastric cancer and normal tissues were
+and GSE-6." Cells were cultured in Dulbecco's Modified
+assessed using the GSCA database (http://bioinfo.life.hus
+Eagle Medium (DMEM) or RPMI-1640 (Thermo Fisher)
+t.edu.cn/GSCA/) [50]. This database provided methylatio
+supplemented with 10% fetal bovine serum (FBS) and 1%
+n data, allowing for the comparison of methylation levels
+penicillin-streptomycin. Cells were incubated at 37 °C in
+between gastric cancer tissues and normal tissues. More-
+a humidified atmosphere containing 5% CO2.
+over, this database was also utilized to perform Gene Set
+Enrichment Analysis (GSEA) analysis of TP53, RAD51,
+Reverse transcription and quantitative PCR (RT-qPCR)
+ATM, and BAX in gastric cancer.
+Total RNA was extracted from the cultured cells using
+the PureLink RNA Mini Kit (Thermo Fisher) following
+Mutational analysis
+the manufacturer's protocol. For gene expression analy-
+The mutational analysis of TP53, ATM, RAD51, and BAX
+sis, "1 µg of total RNA was reverse transcribed into cDNA
+was performed using the cBioPortal database (https://w
+using the SuperScript IV First-Strand Synthesis System
+ww.cbioportal.org/) [53]. This platform provided data on
+(Thermo Fisher). Quantitative PCR was performed using
+gene mutations and copy number variations (CNV) for
+PowerUp SYBR Green Master Mix (Thermo Fisher) on a
+gastric cancer samples, allowing for comprehensive anal-
+QuantStudio 5 Real-Time PCR System (Thermo Fisher)."
+ysis of genetic alterations in these genes.
+GAPDH was used as an internal control. The relative
+Zhang and He Hereditas
+(2025) 162:125
+Page 4 of 20
+Survival analysis
+database (http://ualcan.path.uab.edu/) [63] was used to
+The survival analysis for TP53, ATM, RAD51, and BAX
+assess the expression of hsa-miR-15b-5p in gastric cancer
+genes was performed using Kaplan-Meier survival anal-
+samples. UALCAN provides access to large-scale cancer
+ysis via the KM Plotter (https://kmplot.com/analysis/)
+transcriptome data and allows for the analysis of gene
+[54]. The analysis provides a visual representation of sur-
+and miRNA expression across various cancer types.
+vival curves based on gene expression levels, helping to
+The TaqMan MicroRNA Assay for hsa-miR-15b-5p
+identify the prognostic significance of gene expression in
+(Assay ID: 478313_mir, Thermo Fisher) was used to
+gastric cancer. Moreover, survival meta-analysis was per-
+detect the expression of hsa-miR-15b-5p according to
+formed using the GENT2 database (https://gent2.appex
+manufacturer's instruction. The RT-qPCR was carried
+.kr/) [55], which integrates gene expression data across
+out using the QuantStudio 5 Real-Time PCR System
+various studies and provides a more comprehensive sur-
+(Thermo Fisher). The relative expression of hsa-miR-
+vival analysis. The meta-analysis combined results from
+15b-5p was normalized to the RNU6B (Assay ID: 001093,
+multiple cohorts to validate the survival associations of
+Thermo Fisher) internal control, a small nuclear RNA
+the TP53, ATM, RAD51, and BAX genes across different
+that is stably expressed in all cell types. Relative quantifi-
+gastric cancer datasets.
+cation was performed using the 2^⁻⁴⁴ᶜᵗ method.
+Expression analysis of TP53, ATM, RAD51, and BAX across
+Protein-protein interaction (PPI) network construction,
+immune subtypes of gastric cancer and their association
+gene enrichment, immune infiltration, and drug sensitivity
+with immune inhibitors
+analyses
+The expression levels of TP53, ATM, RAD51, and BAX
+The PPI network for TP53, ATM, RAD51, and BAX-
+were analyzed across different immune subtypes of gas-
+associated genes was constructed using the GeneMA-
+tric cancer using the TISIDB database (http://cis.hku.hk/
+NIA database (http://genemania.org/) [64]. GeneMANIA
+TISIDB/) [56]. TISIDB classifies tumors into five distinct
+allows for the visualization of interactions between genes,
+immune subtypes based on immune-related molecular
+providing insights into their functional relationships.
+characteristics: C1 (wound healing), C2 (IFN-y domi-
+Gene enrichment analysis was conducted using the
+nant), C3 (inflammatory), C4 (lymphocyte depleted),
+DAVID database (https://david.ncifcrf.gov/) [65], which
+C5 (immunologically quiet), and C6 (TGF-β dominant).
+provides functional annotation tools for gene expression
+The C1 subtype is associated with elevated expression
+analysis. Drug sensitivity analysis was performed using
+of angiogenic genes, a high proliferation rate, and a Th2
+the GSCA database to examine the relationship between
+cell bias [57]. C2 demonstrates strong interferon-gamma
+the expression of the hub genes and resistance or sensi-
+signaling and a robust adaptive immune response with
+tivity to specific drugs.
+high T cell receptor diversity [58]. C3 exhibits moderate
+immune signaling with low proliferation and is gener-
+Cell treatment with ionizing radiation (IR)
+ally linked to a favorable prognosis [59]. In contrast, C4
+AGS and MKN-45 gastric cancer cell lines were seeded in
+shows reduced lymphocyte infiltration and enhanced
+6-well plates at a density of 1 X 10⁶ cells/well and allowed
+macrophage signatures, indicative of immunosuppres-
+to adhere overnight. After 24 h, cells were subjected to
+sion and poor clinical outcome [60]. C6 features strong
+ionizing IR using a Gammacell 40 Exactor Irradiator
+TGF-β signaling and stromal activation, contributing to
+(Best Theratronics, Canada) at a dose of 2 Gy. Radiation
+an immune-excluded tumor phenotype [61]. Analyzing
+exposure was carried out at room temperature. Post-irra-
+gene expression across these subtypes allowed for the
+diation, the cells were incubated at 37 °C in a humidified
+assessment of how immune context influences the regu-
+incubator with 5% CO₂ for the recovery time (72 h). After
+lation of TP53, ATM, RAD51, and BAX. Additionally,
+this, cells were harvested for downstream analysis.
+the correlation between the expression of these genes
+and a set of immune inhibitors was explored using the
+Knockdown of TP53, RAD51, and BAX in AGS and MKN-45
+"Immunoinhibitor" module within TISIDB. This analysis
+cells
+included key checkpoint molecules such as PDCD1 (PD-
+TP53, RAD51, and BAX were knocked down in AGS and
+1), CTLA4, LAG3, TIGIT, and HAVCR2 (TIM-3).
+MKN-45 gastric cancer cell lines using small interfering
+RNA (siRNA). Cells were seeded in 6-well plates at a den-
+Identification and validation of a key MiRNA targeting
+sity of 1 X 10⁶ cells per well and incubated overnight. The
+TP53, ATM, RAD51, and BAX in gastric cancer
+following day, siRNAs targeting TP53 (siRNA Catalog
+The miRNA-mRNA interaction network was constructed
+No. #AM16708, Thermo Fisher), RAD51 (siRNA Cata-
+using the miRNET database (http://www.mirnet.ca/)
+log No. #AM16708, Thermo Fisher), and BAX (siRNA
+[62], which facilitates the identification and visualiza-
+Catalog No. #AM16708, Thermo Fisher) were trans-
+tion of miRNA-target gene interactions. The UALCAN
+fected into the cells using Lipofectamine™ RNAiMAX
+Zhang and He Hereditas
+(2025) 162:125
+Page 5 of 20
+Transfection Reagent (Catalog No. #13778150, Thermo
+Results
+Fisher), according to the manufacturer's instructions.
+Expression analysis and diagnostic performance of TP53,
+The siRNA was diluted in Opti-MEM® Reduced Serum
+ATM, RAD51, and BAX genes in gastric cancer
+Medium (Catalog No. #31985070, Thermo Fisher), and
+The expression levels of TP53, ATM, RAD51, and BAX
+Lipofectamine™ RNAiMAX was mixed with the siRNA
+were assessed across 9 gastric cancer cell lines and 6
+in the same medium and incubated for 20 min at room
+normal control cell lines using RT-qPCR. This analy-
+temperature to form the transfection complex. The com-
+sis revealed a significant upregulation of TP53, RAD51,
+plex was then added to the cells, which were incubated
+and BAX, while significant downregulation of ATM in
+at 37 °C in a 5% CO₂ humidified incubator for 48 h to
+gastric cancer cell lines compared to normal controls
+achieve efficient knockdown.
+(Fig. 1A). ROC curve analysis was performed to assess
+Western blot analysis of TP53, ATM, and BAX was per-
+the diagnostic accuracy of these genes in distinguishing
+formed according to the protocols described in previous
+gastric cancer from normal samples. The results showed
+studies [66, 67]. Briefly, protein extraction, SDS-PAGE,
+good discriminatory power for all four genes (AUC=1),
+membrane transfer, blocking, incubation with primary
+indicating that TP53, ATM, RAD51, and BAX can serve
+and secondary antibodies, and chemiluminescent detec-
+as highly reliable biomarkers for identifying gastric can-
+tion were carried out following established procedures.
+cer based on gene expression profiles (Fig. 1B). The gene
+Protein band intensity was quantified using Image] soft-
+expression levels were further validated by utilizing
+ware, as previously reported.
+patient sample data from the TCGA dataset through the
+GSCA database. This analysis confirmed the significant
+Cell proliferation, colony formation, and wound healing
+up-regulation of TP53, RAD51, and BAX and signifi-
+assays
+cant downregulation of BAX in gastric cancer samples
+Cell proliferation was assessed using the MTT assay by
+(Fig. 1C). To further validate the protein expression of
+transfecting AGS and MKN-45 cells with siRNAs, fol-
+these genes, IHC data from the HPA database was uti-
+lowed by incubation with MTT solution for 4 h. Absor-
+lized. The IHC staining confirmed the elevated protein
+bance at 570 nm was measured after dissolving formazan
+expression levels of TP53, RAD51, and BAX, and down-
+crystals with DMSO.
+regulated expression of ATM in gastric cancer tissue
+For colony formation assays, 500-1000 cells were
+(Fig. 1D). Finally, the expression of these genes was ana-
+seeded in 6-well plates, transfected with siRNAs, and
+lyzed across different stages of gastric cancer using the
+cultured for 7-10 days post-knockdown. Colonies were
+GEPIA2 database. The results indicated that while TP53,
+fixed with paraformaldehyde, stained with crystal violet,
+ATM, RAD51, and BAX exhibited varying expression
+and counted to assess the impact of knockdown on cell
+levels across the stages, none of the genes showed a sig-
+proliferation and colony formation.
+nificant correlation with cancer stage (p>0.05) (Fig. 1E),
+For the wound healing assay, AGS and MKN-45 cells
+suggesting that while these genes are differentially
+were seeded in 6-well plates, and a scratch was made
+expressed in gastric cancer, their expression may not be
+using a sterile 200 µL pipette tip once the cells reached
+stage-dependent.
+confluence. After transfection with siRNAs, cells were
+cultured in serum-free medium for 48 h, and images
+Promoter methylation analysis
+were taken at 0 and 24 h to assess wound healing and cell
+Promoter methylation levels of TP53, ATM, RAD51,
+migration.
+and BAX were assessed in gastric cancer and normal tis-
+sues using the GSCA database. The results showed sig-
+Statistical analysis
+nificantly lower methylation levels of TP53 (p=6.8e-07),
+Statistical analysis was performed using GraphPad Prism
+RAD51 (p=0.025), and BAX (p=8.8e-15), while high
+(version 9.0). For two-group comparisons, "an unpaired
+methylation level of ATM (p=9e-09) in gastric cancer
+Student's t-test or Mann-Whitney U test" was used, while
+tissues compared to normal tissues (Fig. 2A). The cor-
+for multiple group comparisons, "one-way ANOVA with
+relation between methylation and gene expression lev-
+Tukey's post hoc test or Kruskal-Wallis test with Dunn's
+els of TP53, ATM, RAD51, and BAX was examined in
+post hoc test" was applied. "Kaplan-Meier survival curves
+gastric cancer samples. For TP53, the correlation with
+and log-rank tests" were used for survival analysis. Cor-
+expression in gastric cancer samples showed a negative
+relations between gene expression and clinical vari-
+relationship (Cor = -0.08, FDR=0.19) (Fig. 2B). More-
+ables were determined using "Pearson's or Spearman's
+over, significant negative correlation was also observed
+correlation." p**-value < 0.01, and p***-
+between ATM methylation and expression in gastric
+value<0.001 were considered statistically significant for
+cancer samples (Cor = -0.17, FDR = 1.2e-03) (Fig. 2B).
+all analyses.
+Moreover, RAD51 and BAX also exhibited negative cor-
+relations (Cor = -0.04, FDR=0.41 for RAD51 and Cor =
+Zhang and He Hereditas
+(2025) 162:125
+Page 6 of 20
+A
+TP53
+ATM
+B
+E
+TP53
+ROC Curve for TP53
+ROC Curve for ATM
+value .829
+Pr(>F) 0.479
+1.00
+1.00
+8
+Gene Expression
+4
+Gene Expression
+5
+-
+Group
+Group
+0.75
+0.75
+4
+Normal
+Normal
+6
+3
+GC
+GC
+sensitivity
+0.50
+sensitivity
+0.50
+5
+3
+4
+2
+2
+0.25
+0.25
+AUC = 1
+AUC 1
+3
+Normal
+Nomal
+2
+0.00
+0.00
+1.00
+0.75
+0.50
+0.25
+0.00
+1.00
+0.75
+0.50
+0.25
+0.00
+Stage
+Stage
+Stage III
+Stage IV
+Group
+Group
+specificity
+specificity
+ATM
+RAD51
+BAX
+ROC Curve for RAD51
+ROC Curve for BAX
+6
+F value 1.55
+Pr(>F) 0.203
+1.00
+1.00
+6
+5
+6
+Gene Expression
+Gene Expression
+0.75
+0.75
+5
+Group
+Group
+5
+Normal
+Normal
+4
+sensitivity
+0.50
+sensitivity
+4
+0.50
+GC
+GC
+3
+4
+3
+0.25
+0.25
+AUC
+AUC = 1
+2
+Normal
+Normal
+0.00
+0.00
+1.00
+0.75
+0.50
+0.25
+0.00
+1.00
+0.75
+0.50
+0.25
+0.00
+Stage
+Stage
+Stage III
+Stage IV
+specificity
+specificity
+RAD51
+Group
+Group
+C
+F value 1.47
+Pr(>F) 0.224
+TP53 expression (tumor vs normal)
+ATM expression (tumor vs. normal)
+RAD51 expression (tumor vs. normal)
+BAX expression (tumor vs. normal)
+5
+14
+FDR 2.6e-03
+10-
+FDR 4.6e-03
+FDR 9.1e-03
+11-
+FOR 7.20.03
+Expression log2{RSEM}
+12
+Group
+Expression log2{RSEM}
+12
+Group
+Expression log2(RSEM)
+Expression log2(RSEM)
+10
+Group
+Group
+Normal
+Normal
+$ Normal
+9.
+& Normal
+3
+10
+Tumor
+lumor
+6-
+10
+Tumor
+B Turror
+8-
+2
+4
+8
+7-
+Normal
+Tumor
+Normal
+Tumor
+Normal
+Tumor
+Normal
+Tumor
+Group
+Group
+D
+Group
+Group
+GC
+GC
+GC
+GC
+Stage
+Stage
+Stage III
+Stage IV
+BAX
+F value 1.06
+7.5
+Pr(>F) 0.369
+7.0
+6.5
+6.0
+5.5
+5.0
+4.5
+Staining: High
+Staining: Low
+Staining: High
+Staining High
+Stage
+Stage
+Stage III
+Stage IV
+Fig. 1 Gene expression and diagnostic performance of TP53, ATM, RAD51, and BAX in gastric cancer. (A) RT-qPCR analysis of gene expression levels
+in nine gastric cancer cell lines (AGS, MKN-28, MKN-45, SGC-7901, HGC-27, BGC-823, MGC-803, KATO III, and NCI-N87) and six normal gastric epithelial
+control cell lines revealed significant upregulation of TP53, RAD51, and BAX, and significant downregulation of ATM in gastric cells compared to normal
+controls (p <0.01, Student's t-test). (B) ROC curve analysis based on RT-qPCR data demonstrated good discriminatory performance of all four genes in
+distinguishing gastric cell lines from normal controls, with an area under the curve (AUC) of 1.0 for each gene. (C) Expression profiles of TP53, ATM, RAD51,
+and BAX were further validated using patient tumor and normal tissue data from The Cancer Genome Atlas (TCGA) via the GSCA online platform. (D)
+Immunohistochemical (IHC) staining images and data obtained from the Human Protein Atlas (HPA) database corroborated the mRNA findings, showing
+higher protein expression of TP53, RAD51, and BAX, and reduced protein levels of ATM in gastric cancer tissues compared to normal gastric mucosa. (E)
+Analysis of gene expression across different pathological stages of gastric cancer using the GEPIA2 platform revealed no statistically significant stage-
+dependent variation in the expression of TP53, ATM, RAD51, and BAX (p> 0.05)
+-0.09, FDR = 0.074 for BAX) with expression in gastric
+shift deletions (Fig. 3A-B-C). RAD51 was altered in just
+cancer (Fig. 2B). GSEA was performed using the GSCA
+1% of samples, with mutations primarily occurring in
+database to examine the enrichment of TP53, ATM,
+the missense category (Fig. 3A-B-C). BAX gene was
+RAD51, and BAX in STAD. The enrichment plots indi-
+not altered in any of the analyzed gastric cancer sam-
+cated significant associations between the expression
+ple. The copy number variation (CNV) analysis is using
+status of these genes and development of gastric cancer
+cBioPortal database reveal the distribution of different
+(Fig. 2C).
+CNV alterations. For TP53, the majority of alterations
+are amplifications (red) and deletions (green) (Fig. 3C).
+Mutational analysis
+RAD51 has a lower frequency of amplifications, with
+Mutational analysis of TP53, ATM, RAD51, and BAX
+most samples showing no significant CNV changes (gray)
+was performed using the cBioPortal database. The results
+(Fig. 3C). ATM shows a similar pattern to TP53, with
+showed that TP53 was altered in 88% of gastric cancer
+amplifications and deletions observed (Fig. 3C). BAX
+samples, with the majority of mutations being missense
+also shows a mix of amplifications, deletions, and normal
+mutations (green bars), followed by frame shift dele-
+CNV (gray) (Fig. 3C), indicating a more balanced pattern
+tions (orange bars) and splice site mutations (blue bars)
+of CNV alterations.
+(Fig. 3A-B-C). ATM was altered in 17% of samples, with
+most mutations being missense mutations and frame
+Zhang and He Hereditas
+(2025) 162:125
+Page 7 of 20
+A
+TP53 methylation
+ATM methylation
+RAD51 methylation
+BAX methylation
+6.8e-07
+9e-09
+0.25
+0.025
+1.2
+1.0
+0.04
+8.8e-15
+Methylation (Beta value)
+0.8
+Types
+Methylation (Beta value)
+0.03
+Methylation (Beta value)
+0.20
+Types
+Methylation (Beta value)
+1.0
+Types
+Types
+0.15
+Normal
+Normal
+Normal
+0.6
+0.8
+Normal
+Tumor
+Tumor
+0.10
+Tumor
+Tumor
+0.02
+0.4
+0.6
+0.05
+0.2
+Normal
+Tumor
+Normal
+Tumor
+Normal
+Tumor
+Normal
+Tumor
+Type
+Type
+Type
+Type
+B
+Spearman correlation between TP53 methylation and
+Spearman correlation between ATM methylation and
+Spearman correlation between RAD51 methylation and
+Spearman correlation between BAX methylation and
+expression in STAD
+expression in STAD
+expression in STAD
+expression in STAD
+Cor. -0.08
+0.035
+0.3
+Cor. -0.17
+Cor. -0.04
+Cor. 0.09
+FDR = 0.19
+0.06
+0.15
+FDR = 1.2e-03
+FDR 0.41
+FDR 0.074
+0.030-
+Methylation (Beta value)
+0.04
+'0.02
+Methylation (Beta value)
+0.10
+Methylation (Beta value)
+0.020-
+Methylation (Beta value)
+0.2
+0.025
+0.1
+0.05
+0.015-
+0.00
+0.010
+8
+9
+10
+11
+12
+13
+10
+11
+12
+13
+5
+9
+10
+ii
+12
+Expression log2(RSEM)
+Expression log2(RSEM)
+Expression log2(RSEM)
+Expression log2(RSEM)
+C
+Enrichment plot of inputted gene set in STAD
+Enrichment plot of inputted gene set in STAD
+Enrichment plot of inputted gene set in STAD
+Enrichment plot of inputted gene set in STAD
+0.75
+0.6
+0.6
+0.4
+0.75
+0.50
+0.4
+Enrichment score
+0.25
+Enrichment score
+0.2
+0.0
+Enrichment score
+0.50
+Enrichment score
+0.2
+0.25
+0.0
+0.00
+0.2
+0.2
+0.00
+-0.25
+-0.4
+-0.4
+Ranked List Metric
+10
+5
+0
+Ranked List Metric
+10
+5
+Ranked List Metric
+10
+0
+Ranked List Metric
+10
+5
+5
+0
+0
+5
+5
+5
+5
+5000
+10000
+15000
+5000
+10000
+15000
+5000
+10000
+15000
+5000
+10000
+15000
+Rank in Ordered Dataset
+Rank in Ordered Dataset
+Rank in Ordered Dataset
+Rank in Ordered Dataset
+Fig. 2 Promoter methylation and gene expression correlation of TP53, ATM, RAD51, and BAX in gastric cancer. (A) Promoter methylation levels of the
+four genes were compared between gastric cancer tissues and normal controls. Results revealed significantly lower promoter methylation in gastric for
+TP53 6.8e-07), RAD51 (p=0.025), - and BAX (p=8.8e-15), whereas ATM showed significantly higher methylation levels in gastric samples = 9e-09). (B)
+Correlation analysis between methylation and gene expression in gastric cancer samples demonstrated negative associations: TP53 (Correlation = - 0.08,
+FDR=0.19), ATM (Correlation = 0.17, FDR = 1.2e-03), RAD51 (Correlation = 0.04, FDR = =0.41), and BAX (Correlation = - 0.09, FDR=0.074), indicating that
+promoter methylation may influence transcriptional regulation. (C) Gene Set Enrichment Analysis (GSEA) showed significant enrichment of TP53, ATM,
+RAD51, and BAX in gastric cancer datasets, supporting their functional involvement in tumorigenesis. p-value 0.05
+Survival analysis
+RAD51 showed a weaker association in Kaplan-Meier
+The survival analysis of TP53, ATM, RAD51, and BAX
+analysis, with a slight trend toward poorer survival at
+gene expression in gastric cancer was conducted using
+higher expression levels (HR = 1.17, 95% CI: 0.97-1.41)
+two approaches: Kaplan-Meier analysis via the KM
+(Fig. 4A). However, the meta-analysis indicated a stron-
+Plotter and meta-analysis using the GENT2 database.
+ger correlation, with a random effects HR of 2.27 (95%
+For TP53, Kaplan-Meier analysis indicated that higher
+CI: 1.40-3.66) (Fig. 4B). For BAX, Kaplan-Meier analysis
+expression was significantly associated with poorer sur-
+indicated a significant association between high expres-
+vival outcomes, with a hazard ratio (HR) of 1.68 (95%
+sion and worse survival (HR = 1.93, 95% CI: 1.61-2.31)
+CI: 1.39-2.03) (Fig. 4A). Meta-analysis supported this
+(Fig. 4A). The meta-analysis, however, reported more
+trend, though with more modest effect sizes, report-
+variable results, with HRs of 0.75 for both fixed and ran-
+ing HRs ranging from 1.30 (fixed effects model, 95%
+dom effects models (95% CI: 0.39-1.44) (Fig. 4B). These
+CI: 0.83-2.04) to 1.31 (random effects model, 95% CI:
+inconsistencies highlight the complexity of interpreting
+1.01-1.81) (Fig. 4B). While this suggests a possible asso-
+BAX's role in prognosis and reinforce the need for future
+ciation, further validation in prospective cohorts is war-
+prospective validation.
+ranted. For ATM, Kaplan-Meier analysis showed that
+lower expression levels were significantly associated with
+Expression analysis of TP53, ATM, RAD51, and BAX across
+reduced survival (HR = 0.59, 95% CI: 0.50-0.70) (Fig. 4A).
+immune subtypes of gastric cancer and their association
+Meta-analysis provided supportive but variable evidence,
+with immune inhibitors
+with HRs of 1.69 (fixed effects, 95% CI: 0.80-3.59) and
+The expression of TP53, ATM, RAD51, and BAX was
+1.63 (random effects, 95% CI: 1.06-2.42) (Fig. 4B), indi-
+assessed across different immune subtypes of gastric can-
+cating a potential survival disadvantage associated with
+cer using the TISIDB database. Results indicate statisti-
+low ATM expression, though the variability across stud-
+cally significant differences in the expression levels of all
+ies highlights the need for caution in interpretation.
+four genes between all the immune subtypes (P-values
+Zhang and He Hereditas
+(2025) 162:125
+Page 8 of 20
+A
+Altered in 242 (100%) of 242 samples.
+C
+TP53 [Somatic Mutation Rate: 48.75%]
+D
+Hete. Amp.
+NM_000546
+12
+Homo. Amp.
+TMD
+Hete. Del.
+0
+214
+0
+of samples
+Homo. Del.
+None
+TP53
+88%
+**
+1
+1°53_TAD
+MOJ
+ATM
+17%
+TP53
+0
+100
+200
+300
+393
+Site
+Del
+RAD51
+1%
+ATM [Somatic Mutation Rate: 9.57%)
+NM 000051
+Cancer_type
+5
+.
+Missense Mutation
+Splice Site
+Cancer_type
+Frame
+in_Frame_Del
+STAD
+Frame Ins
+Multi_Hit
+Nonsense Mutation
+RAD51
+B
+Variant Classification
+Variant Type
+SNV Class
+1
+Missense_Mutation
+T>G
+7
+SNP
+Frame_Shift_Del
+T>A
+7
+PIKNEJAZM
+Nonsense_Mutation
+T>C
+36
+INS
+0
+500
+1000
+1500
+2000
+2500
+3000
+Splice_ Site
+C>T
+138
+Missense Name
+Frame
+Frame_Shift_Ins
+C>G
+13
+Frame
+DEL
+ATM
+In_Frame_Del
+C>A
+27
+RAD51 [Somatic Mutation Rate: 0.46%]
+50
+100
+150
+200
+0
+50
+100
+150
+200
+250
+0.00
+0.25
+0.50
+0.75
+1.00
+5
+Variants per sample
+Variant Classification
+Top 10
+Median:
+summary
+mutated genes
+6
+2
+TP53
+88%
+4
+1
+ATM
+17%
+1
+2
+BAX
+RAD51
+1%
+recomb RAOSI
+Ravi51 DMC' redd
+0
+0
+0
+50
+100
+150
+200
+250
+0
+300
+340
+76
+152
+229
+Fig. 3 Mutational and copy number variation (CNV) analysis of TP53, ATM, RAD51, and BAX in gastric cancer. (A) Overall mutation frequency analysis
+revealed that TP53 was the most frequently altered gene, mutated in 88% of gastric samples, followed by ATM (17%) and RAD51 (1%). BAX showed no
+detectable mutations in the analyzed cohort. (B) Mutation type distribution shows that TP53 mutations were predominantly missense mutations (green
+bars), along with frameshift deletions (orange bars) and splice site mutations (blue bars). ATM alterations also included a mix of missense and frameshift
+deletions. RAD51 alterations were limited and primarily missense in nature. (C) Copy number variation (CNV) analysis illustrated the diversity in genomic
+alterations. TP53 exhibited a high proportion of amplifications (red) and deletions (green). ATM displayed a similar CNV pattern. RAD51 showed minimal
+CNV changes, with most samples displaying no significant alterations (gray). BAX exhibited a balanced CNV profile, with a mix of amplifications, deletions,
+and normal copy numbers
+for TP53, ATM, RAD51, and BAX are 3.86e-02, 1.13e-22,
+performed using the UALCAN database, which revealed
+5.97e-64, and 1.29e-14, respectively) (Fig. 5A). The cor-
+a significant increase in the miRNA's expression in pri-
+relation analysis between TP53, ATM, RAD51, and BAX
+mary tumor samples compared to normal gastric tis-
+and immune inhibitors was performed using TISIDB
+sues. Moreover, Fig. 6C presents the RT-qPCR results for
+database. TP53 displayed strong positive correlations
+hsa-miR-15b-5p expression in gastric cancer and normal
+with immune inhibitors such as PDCD1, PDCD1LG2,
+cell lines. The expression was significantly higher in gas-
+and TIGIT (Fig. 5B). ATM also showed strong positive
+tric cancer cell lines than in normal cell lines. Figure 6D
+correlations with immune inhibitors like TIGIT, PDCD1,
+further validates this finding with ROC curve analysis,
+and TGFBR1 (Fig. 5B). Similarly, RAD51 correlated posi-
+showing an AUC of 1, indicating that hsa-miR-15b-5p
+tively with PVRL2, LGALS9, and LAG3 (Fig. 5B). Lastly,
+can perfectly distinguish between gastric cancer and nor-
+BAX showed positive correlations with several immune
+mal samples, suggesting its potential as a reliable diag-
+inhibitors, including PDCD1 and TIGIT in gastric cancer
+nostic biomarker for gastric cancer.
+(Fig. 5B).
+PPI network construction, gene enrichment, immune
+Identification and validation of a key MiRNA targeting
+infiltration, and drug sensitivity analyses
+TP53, ATM, RAD51, and BAX in gastric cancer
+To investigate the functional associations among TP53,
+The miRNA-mRNA interaction network was constructed
+ATM, RAD51, BAX, and related genes, a PPI network
+using the miRNET database, where hsa-miR-15b-5p
+was constructed using GeneMANIA database (Fig. 7A;
+(represented by the pink node) was found to interact
+Table 1). The network revealed a dense and highly inter-
+with the four key genes (TP53, ATM, RAD51, and BAX)
+connected structure, highlighting the central regulatory
+simultaneously (Fig. 6A), suggesting its potential role
+roles of TP53, ATM, RAD51, and BAX in the DNA dam-
+as a central regulator in gastric cancer. The expression
+age response and apoptosis signaling pathways. These
+analysis of hsa-miR-15b-5p in gastric cancer samples was
+four genes occupy core hub positions in the network,
+Zhang and He Hereditas
+(2025) 162:125
+Page 9 of 20
+A
+TP53
+ATM
+RAD51
+BAX
+1.0
+HR = 1.68 (1.39 2.03)
+1.0
+HR 0.59 (0.5 0.7)
+HR = 1.17 (0.97 1.41)
+1.0
+HR = 1.93 (1.61 2.31)
+logrank P = 3.6e-08
+logrank P = 9e-10
+logrank P 0.01
+logrank P = 3.2e-13
+0.8
+0.8
+0.6
+0.6
+0.4
+0.4
+0.0 0.2 0.4 0.6 0.8 1.0
+0.8
+Probability
+Probability
+Probability
+Probability
+0.6
+0.4
+0.2
+Expression
+0.2
+Expression
+Expression
+0.2
+Expression
+low
+low
+low
+low
+0.0
+high
+0.0
+high
+high
+0.0
+high
+0
+150
+0
+50
+100
+150
+0
+50
+100
+150
+0
+50
+100
+50
+100
+150
+Time (months)
+Time (months)
+Time (months)
+Time (months)
+Number risk
+Number risk
+Number risk
+Number risk
+low
+314
+148
+7
+0
+low
+398
+95
+19
+1
+low
+634
+223
+37
+0
+low
+382
+177
+18
+0
+high
+561
+150
+41
+high
+477
+203
+29
+0
+high
+241
+75
+11
+1
+high
+493
+121
+30
+B
+TP53
+Weight
+Weight
+RAD51
+Weight
+Weight
+Study
+TE seTE
+Hazard Ratio
+HR
+95%-CI
+(fixed)
+(random)
+Study
+TE
+seTE
+Hazard Ratio
+HR
+95%-CI
+(fixed)
+(random)
+GSE38749-GPL570(217542_at)
+1.96 0.9418
+7.08
+[1.12; 44.87]
+6.0%
+6.5%
+GSE38749-GPL570(211711_s at) 1.64 0.8628
+5.15 [0.95;27.95]
+8.0%
+8.0%
+GSE38749-GPL570(238733_at)
+1.88 0.8876
+6.53
+[1.15;37.19]
+6.7%
+7.3%
+GSE38749-GPL570(204054_at)
+0.96 0.5500
+2.62
+[0.89; 7.69]
+19.7%
+19.7%
+GSE38749-GPL570(237891_at)
+0.59 1.6656
+1.80
+[0.07; 46.98]
+1.9%
+2.2%
+GSE38749-GPL570(225363_at)
+0.96 0.5382
+2.61
+[0.91; 7.50]
+20.6%
+20.6%
+GSE38749-GPL570(225160_x_at
+0.30 0.4356
+1.35
+[0.58; 3.18]
+27.8%
+26.1%
+GSE38749-GPL570(233254_x_a 0.82 0.8398
+2.28
+[0.44; 11.82]
+8.4%
+8.4%
+GSE38749-GPL570(229711_s_at)
+0.17 0.4501
+1.19
+[0.49; 2.87]
+26.1%
+24.8%
+GSE38749-GPL570(204053_x_a 0.64 0.6719
+1.91
+[0.51; 7.11]
+13.2%
+13.2%
+GSE38749-GPL570(244616_x_at) -0.14 1.5702
+0.87
+[0.04; 18.82]
+2.1%
+2.4%
+GSE38749-GPL570(242622_x_at) 0.63 0.9531
+1.87 [0.29; 12.10]
+6.6%
+6.6%
+GSE38749-GPL570(217373_x_at) -0.22 0.5465
+0.81
+[0.28; 2.35]
+17.7%
+17.8%
+GSE38749-GPL570(228006_at)
+0.44 0.5033
+1.56
+[0.58; 4.17]
+23.5%
+23.5%
+GSE38749-GPL570(205386_s_at) -0.36 0.8839
+0.69
+[0.12; 3.93]
+6.8%
+7.4%
+GSE38749-GPL570(211832_s_at) -0.98 1.1948
+0.38
+[0.04; 3.90]
+3.7%
+4.1%
+Fixed effect model
+2.27
+[1.40;
+3.66]
+100.0%
+--
+GSE38749-GPL570(205385_at)
+-1.28 2.0064
+0.28
+[0.01; 14.21]
+1.3%
+1.5%
+Random effects model
+2.27 [1.40; 3.66]
+--
+100.0%
+Heterogeneity: 12 = 0%, = 0.04
+Fixed effect model
+1.30 [0.83; 2.04] 100.0%
+--
+0.1
+0.5 1 2
+10
+Random effects model
+1.31 [0.81; 2.12]
+--
+100.0%
+Heterogeneity: 12 = 7%, T2 0.0420, = 0.038
+BAX
+Weight
+Weight
+0.01
+0.1
+1
+10
+100
+Study
+TE
+seTE
+Hazard Ratio
+HR
+95%-CI
+(fixed)
+(random)
+ATM
+Weight
+Weight
+GSE38749-GPL570(208478_s -0.29 0.5995
+0.75
+[0.23; 2.43]
+31.5%
+31.5%
+Study
+TE seTE
+Hazard Ratio
+HR
+95%-CI (fixed) (random)
+GSE38749-GPL570(211833_s_at) -0.30 0.4065
+0.74
+[0.34; 1.65]
+68.5%
+68.5%
+GSE38749-GPL570(1570352_at) 3.88 1.9771
+48.66 [1.01; 2345.01]
+3.8%
+3.8%
+Fixed effect model
+0.75 [0.39; 1.44] 100.0%
+--
+GSE38749-GPL570(210858_> at) 0.60 0.7240
+1.82
+[0.44;
+7.51]
+28.1%
+28.1%
+Random effects model
+0.75 [0.39; 1.44]
+100.0%
+GSE38749-GPL570(208442_s_at) 0.46 0.7597
+1.58
+[0.36;
+7.02]
+25.5%
+25.5%
+Heterogeneity: 12 = 0%, 0, p = 0.04
+GSE38749-GPL570(212672_at)
+0.23 0.7134
+1.26
+[0.31;
+5.10]
+29.0%
+29.0%
+0.5
+1
+2
+GSE38749-GPL570(1553387_at)
+0.22 1.1452
+1.24
+[0.13;
+11.72]
+11.2%
+11.2%
+GSE38749-GPL570(1554631_at)
+0.12 2.4921
+1.13
+[0.01;
+149.48]
+2.4%
+2.4%
+Fixed effect model
+1.69
+[0.80;
+3.59]
+100.0%
+--
+Random effects model
+1.69
+[0.80;
+3.59]
+100.0%
+Heterogeneity: 12 = 0%, T2 = 0.03
+0.001
+0.1
+1
+10
+1000
+Fig. 4 Survival analysis of TP53, ATM, RAD51, and BAX gene expression in gastric cancer. (A) Kaplan-Meier plots from KM Plotter show that high expres-
+sion of TP53 (HR= 1.68), RAD51 (HR=1.17) and BAX (HR=1.93) is associated with worse overall survival, while low ATM expression correlates with poorer
+survival (HR=0.59). (B) Meta-analysis via GENT2 supports these trends with variable effect sizes. p-value < 0.05
+A
+STAD TP53 exp
+STAD ATM exp
+STAD RAD51 exp
+STAD BAX exp
+Kruskal- Wallis Test: Pv=3. 86e-02
+Kruskal-Wallis Test: Pv=1.13e-22
+Kruskal-Wallis Test: Pv=5.
+Kruskal Wallis Test: Pv=1 29e-14
+n=C1 129,C2 210,C3 36,C4 9,C67
+n=C1 129,C2 210,C3 36,C4 9,C6
+n=C1 129,C2 210,C3 36,C4 9,C6
+n=C1 129,C2 210,C3 36,C4 9,C6
+10.0
+8
+8
+Expression (log2CPM)
+7.5
+5.0
+Expression (log2CPM)
+Expression (log2CPM)
+5.0
+6
+4
+Expression (log2CPM)
+6
+2.5
+4
+2.5
+0.0
+2
+C1
+C2
+C3
+C4
+C6
+C1
+C2
+C3
+C4
+C6
+C1
+C2
+C3
+C4
+C6
+C1
+C2
+C3
+C4
+C6
+Subtype
+Subtype
+Subtype
+Subtype
+B
+TP53
+ATM
+RAD51
+BAX
+ADORAZA
+ADORA2A
+ADORA2A
+ADORAZA
+BTLA
+BTLA
+BTLA
+BTLA
+CD160
+CD160
+CD160
+CD160
+CD244
+CD244
+CD244
+CD274
+CD274
+CD274
+CD274
+CD96
+CD96
+CD96
+CD96
+CSF1R
+CSF1R
+CSF1R
+CSF1R
+CTLA4
+CTLA4
+CTLA4
+CTLA4
+HAVCR2
+HAVCR2
+HAVCR2
+HAVCR2
+DO
+IDO1
+IDO1
+DO1
+IL10
+IL10
+ILTO
+IL10
+IL10RB
+IL10RB
+L10RB
+IL10RB
+KDR
+KDR
+KDR
+KDR
+KIR2DL1
+KIR2DL1
+KIR2DL1
+KIR2DL1
+KIR2DL3
+KIR2DL3
+KIR2DL3
+KIR2DL3
+LAG3
+LAG3
+LAG3
+LAG3
+LGALS9
+LGALS9
+LGALS9
+LGALS9
+PDCD1
+PDCD1
+PDCD1
+PDCD1
+PDCD1LG2
+PDCD1LG2
+PDCD1LG2
+PDCD1LG2
+PVRL2
+PVRL2
+PVRL2
+PVRL2
+PVRL2
+TGFB1
+TGFB1
+TGFB1
+TGFBR1
+TGFBR1
+TIGIT
+TIGIT
+TIGIT
+TIGIT
+VTCN1
+VTCN1
+VICN
+VTCN1
+Fig. 5 Expression analysis of TP53, ATM, RAD51, and BAX across immune subtypes of gastric cancer and their association with immune inhibitors. (A) Ex-
+pression levels of the four genes were analyzed using TISIDB database across different immune subtypes of gastric cancer, revealing subtype-specific ex-
+pression patterns. (B) Correlation analysis between gene expression and known immune inhibitory molecules identified significant associations (p <0.05),
+suggesting potential roles for these genes in modulating the tumor immune microenvironment. p-value 0.05
+Zhang and He Hereditas
+(2025) 162:125
+Page 10 of 20
+A
+hsa-miR-204-5p
+hsa-miR-497-5p
+B
+Expression level of hsa-mir-15b in Stomach adenocarcinoma
+hsa-miR-200c-3p
+hsa-miR-224-5p
+hsa-miR-10b-5p
+hsa-miR-17-5p
+hsa-miR-503-5p
+1250
+hsa-miR-20a-5p
+BAX
+ATM
+hsa-miR-37
+hsa-miR-9-5p
+1000
+hsa-miR-22-3p
+hsa-miR-200a-3p
+RAD51
+RPM
+750
+TP53
+hsa-miR-449a
+hsa-miR-26a-5p
+sa-miR-49b-5p
+500
+hsa-miR-675-5p
+hsa-miR-29a-3p
+hsa-miR-375-3p
+250
+hsa-miR-29b-3p
+hsa-miR-29c-3p
+sa-miR-638
+0
+hsa-miR-125a-5p
+Normal
+Primary tumor
+(n=40)
+(n=387)
+hsa-miR-15b-5p
+TCGA samples
+C
+D
+ROC Curve for Model
+**
+30
+1.0
+0.8
+miRNA Expression
+20
+CellLineType
+True Positive Rate (Sensitivity)
+0.6
+GC
+Normal
+0.4
+AUC = 1
+0.2
+10
+0.0
+GC
+Normal
+1.0
+0.8
+0.6
+0.4
+0.2
+0.0
+Cell Line Type
+False Positive Rate
+Fig. 6 Identification and validation of hsa-miR-15b-5p as a key miRNA targeting TP53, ATM, RAD51, and BAX in gastric cancer. (A) miRNA-mRNA interac-
+tion network constructed using the miRNET database identified hsa-miR-15b-5p (pink node) as a common regulator targeting TP53, ATM, RAD51, and
+BAX, indicating its central role in gene regulation. (B) Expression analysis using the UALCAN database showed significantly elevated levels of hsa-miR-
+15b-5p in primary gastric cancer tissues compared to normal gastric tissues (p 0.01). (C) RT-qPCR analysis confirmed the upregulation of hsa-miR-15b-5p
+in gastric cancer cell lines relative to normal gastric cell lines. (D) ROC curve analysis demonstrated an AUC of 1.0 for hsa-miR-15b-5p, suggesting good
+diagnostic potential in distinguishing gastric cancer from normal controls. p**-value <0.01
+characterized by numerous high-confidence interac-
+apoptotic regulators such as PMAIP1, BID, and BCL2L1,
+tions with key apoptotic regulators and DNA repair pro-
+underlining its involvement in mitochondrial-mediated
+teins. TP53 interacts with MDM2, BAX, CHEK2, and
+apoptosis (Fig. 7A; Table 1). Next, the gene enrichment
+TP53BP1, reflecting its role in DNA damage-induced
+analysis of TP53, ATM, RAD51, and BAX-associated
+cell cycle arrest and apoptosis (Fig. 7A; Table 1). ATM
+genes was conducted using DAVID database. Figure 7B
+shows strong associations with RAD51, CHEK2, and
+shows the cellular component enrichment analysis, high-
+TP53BP1, consistent with its function in DNA dam-
+lighting that these genes were involved in components
+age sensing and checkpoint activation (Fig. 7A; Table 1).
+such as the nuclear membrane, mitochondria, and DNA
+RAD51 connects with BRCA2, RAD52, and DMC1,
+repair. Figure 7C focuses on molecular function terms
+indicating its central role in homologous recombina-
+and identified significant enrichment in terms related
+tion repair (Fig. 7A; Table 1). BAX interacts with key
+to DNA binding, apoptotic signaling, and response to
+Zhang and He Hereditas
+(2025) 162:125
+Page 11 of 20
+A
+B
+Bcl-2 family protein complex
+C
+BH3 domain binding
+DNA repair complex
+BH domain binding
+Synaptonemal complex
+Death domain binding
+RAD52
+Synaptonemal structure
+BBC3
+BRCA2
+ATP-dependent DNA damage sensor activity
+Condensed nuclear chromosome
+Small molecule sensor activity
+Germ cell nucleus
+Replication fork
+-log10(FDR)
+Disordered domain specific binding
+-log10(FDR)
+CL2L
+BID
+Telomeric DNA binding
+Site of double strand break
+Single-stranded DNA binding
+Chromosome telomeric region
+Mitochondrial outer membrane
+P53 binding
+3
+6
+Organelle outer membrane
+ATP-dependent activity acting on DNA
+4
+SMC3I
+MDM2
+Outer membrane
+Protein N terminus binding
+8
+Condensed chromosome
+Catalytic activity acting on DNA
+5
+Nuclear chromosome
+10
+Ubiquitin protein ligase binding
+Chromosomal region
+Ubiquitin-like protein ligase binding
+Nuclear body
+P-dependent activity
+Chromosome
+Enzyme binding
+MLH1
+BCL2L
+Mitochondrion
+DNA binding
+BAX
+Nuclcoplasm
+Identical protein binding
+Nuclear lumen
+Nucleic acid binding
+0
+100
+200
+300
+400
+500
+0
+100
+200
+300
+Fold Enrichment
+Fold Enrichment
+GZMB
+TP53
+RAD51
+MND1
+D
+E
+Reg. of release of cytochrome C from mitochondria
+Apoptosis-multiple species
+Response to gamma radiation
+P53 signaling pathway
+Positive reg. of mitochondrial membrane permeability
+Platinum drug resistance
+ATM
+Reg. of mitochondrial membrane permeability
+Homologous recombination
+Cellular response to ionizing radiation
+Fanconi anemia pathway
+SNK10
+COP1
+Intrinsic apoptotic signaling pathway in response to DNA damage
+Colorectal cancer
+-log10(FDR)
+Response to ionizing radiation
+Apoptosis
+-log10(FDR)
+Meiosis
+Pancreatic cancer
+12
+Melosis cell cycle proc.
+Chronic myeloid leukemia
+Cellular response to radiation
+13
+Endometrial cancer
+8
+Measles
+AD51
+MYB
+Signal transduction in response to DNA damage
+14
+Cell cycle
+12
+Intrinsic apoptotic signaling pathway
+15
+Transcriptional misregulation in cancer
+Reg. of response to DNA damage stimulus
+16
+Cellular senescence
+16
+Apoptotic signaling pathway
+MicroRNAs cancer
+PMAIP
+TP53BP
+Reg. of cellular response to stress
+Epstein- virus infection
+Cellular response to DNA damage stimulus
+Human T-cell leukemia virus infection
+Cell cycle proc.
+Pathways in cancer
+TELO2
+DMC1
+Cell cycle
+Shigellosis
+CHEK2
+Cellular response to stress
+PI3K-Akt signaling pathway
+0
+50
+100
+0
+50
+100
+150
+Fold Enrichment
+Fold Enrichment
+F
+G
+Correlation between expression and immune infiltrates in STAD
+Correlation between CTRP drug sensitivity
+and mRNA expression
+Correlation
+Correlation
+-0.5
+TP53
+-0.5
+BAX
+O
+O
+O
+O
+0.0
+0.0
+BAX
+0.6
+TP53
+0.1
+-Log10(FDR)
+Symbol
+-Log10(FDR)
+Symbol
+2.5
+2.5
+5.0
+5.0
+RAD51
+7.5
+RAD51
+7.5
+10.0
+10.0
+FDR
+FDR
+ATM
+<=0.05
+O
+<=0.05
+ATM
+>0.05
+O >0.05
+803
+DC.
+Tip
+haive
+Th2
+Central
+Gamma
+Neutrophil
+BRD.
+cytarabine
+Cell type
+Drugs
+Fig. 7 Protein-protein interaction (PPI) network construction, gene enrichment, immune infiltration, and drug sensitivity analyses. (A) PPI network of
+TP53, ATM, RAD51, and BAX-associated genes constructed using the GeneMANIA database. (B) Cellular component enrichment analysis of TP53, ATM,
+RAD51, and BAX-associated genes. (C) Molecular function enrichment analysis of TP53, ATM, RAD51, and BAX-associated genes. (D) Biological process en-
+richment analysis showing high enrichment of TP53, ATM, RAD51, and BAX-associated genes. (E) KEGG pathway enrichment analysis of TP53, ATM, RAD51,
+and BAX-associated genes. (F) Correlation of TP53, ATM, RAD51, and BAX gene expression with immune cell infiltration in gastric cancer, as assessed using
+the GSCA database. (G) Correlation between TP53, ATM, RAD51, and BAX expression and drug sensitivity. p-value <0.05
+DNA damage. Figure 7D reports on biological process
+sensitivity. The blue dots indicate negative correlations
+terms, where high enrichment in DNA repair, stress
+between the expression of these genes and resistance to
+response, cell cycle regulation, and apoptotic signaling
+certain drugs, such as Bl-2536 and Decitabine. This high-
+pathways was observed. Figure 7E provides insight into
+lights that overexpression of these genes may contribute
+the KEGG pathway enrichment, with significant asso-
+to drug sensitivity in cancer treatment, suggesting that
+ciations found with pathways such as apoptosis, DNA
+targeting these pathways could enhance the effectiveness
+repair, P53 signaling, and cancer-related pathways (e.g.,
+of cancer therapies.
+pancreatic cancer, leukemia). The correlations of TP53,
+ATM, RAD51, and BAX with immune cells and drug sen-
+Role of TP53, RAD51, and BAX in radiotherapy resistance in
+sitivity were explored using GSCA database. Figure 7F
+AGS and MKN-45 cells
+presents the correlation of the expression of the TP53,
+To further investigate the role of TP53, RAD51, and
+ATM, RAD51, and BAX genes with immune cell types in
+BAX in modulating radiotherapy resistance, AGS and
+gastric. The blue dots, indicating negative correlations,
+MKN-45 gastric cancer cells were exposed to ionizing
+show that some of these genes may be inversely related
+radiation (IR), followed by gene knockdown experiments.
+to the infiltration of certain immune cells, which could be
+RT-qPCR and Western blot analyses revealed no signifi-
+crucial for understanding immune evasion mechanisms
+cant change in the expression levels of these genes in IR-
+in cancer. Moreover, Fig. 7G explores the correlation of
+treated cells compared to controls, suggesting a stable
+TP53, ATM, RAD51, and BAX gene expression with drug
+activation of radioprotective pathways (Figs. 8A-B and
+Zhang and He Hereditas
+(2025) 162:125
+Page 12 of 20
+Table 1 Key protein-protein interactions of TP53, TM, RAD51,
+the DNA damage response, regulating checkpoint acti-
+and BAX and their functional relevance in gastric cancer
+vation and repair protein recruitment [73]. Although
+Gene
+Inter-
+Type of
+Functional relevance
+not directly manipulated in this study, it is plausible that
+name
+acting
+interaction
+TP53, RAD51, and BAX interact with ATM-mediated
+partner
+TP53
+MDM2
+Negative regulation
+Regulates TP53 stabil-
+signaling, and disruption of these genes impairs the abil-
+ity via ubiquitination and
+ity of cells to mount a coordinated response to IR. Addi-
+degradation
+tionally, wound healing assays demonstrated delayed
+TP53
+BAX
+Transcriptional
+Promotes mitochondrial
+migration in knockdown cells compared to controls and
+activation
+apoptosis
+IR-treated groups (Fig. 9F-G), reinforcing the hypothesis
+ATM
+CHEK2
+Phosphorylation
+Activates DNA damage
+that these genes contribute not only to radiation resis-
+checkpoints
+tance but also to post-damage repair and recovery pro-
+ATM
+TP53BP1
+DNA repair
+Facilitates double-strand
+cesses such as epithelial regeneration and migration.
+scaffolding
+break repair
+RAD51
+BRCA2
+Protein recruitment
+Supports homologous
+recombination repair
+Discussion
+RAD51
+RAD52
+Functional
+Alternative pathway for DNA
+Gastric cancer remains one of the leading causes of can-
+redundancy
+repair
+cer-related mortality worldwide, largely due to its late-
+BAX
+BID
+Protein-protein
+Induces mitochondrial outer
+stage diagnosis and limited therapeutic options [1, 2,
+interaction
+membrane permeabilization
+74]. The majority of patients are diagnosed at advanced
+BAX
+BCL2L1
+Inhibitory binding
+Balances apoptotic and anti-
+stages when the cancer has already spread, which sig-
+apoptotic signaling
+nificantly reduces the chances of successful intervention
+[75, 76]. Despite advancements in surgical techniques
+9A-B, Supplementary Fig. 1). In contrast, gene silenc-
+and chemotherapy regimens, the prognosis for gastric
+ing resulted in a marked reduction in expression levels,
+cancer patients remains poor, with a five-year survival
+confirming effective knockdown (Figs. 8A-B and 9A-B).
+rate that is significantly lower than that of other can-
+Functionally, knockdown cells exhibited significantly
+cers [77]. Radiotherapy plays a crucial role in the multi-
+reduced proliferation and colony formation capacity
+modal treatment approach for gastric cancer, especially
+compared to both control and IR-treated cells (Fig. 9C-
+in combination with chemotherapy and surgery, and is
+E), indicating a critical role for these genes in promoting
+often employed in both the adjuvant and palliative set-
+radiotherapy resistance. Mechanistically, TP53 is known
+tings [1, 2]. It can help control tumor growth, reduce
+to modulate radiation-induced apoptosis via transcrip-
+symptoms, and improve overall survival. However, treat-
+tional activation of downstream effectors such as p21
+ment responses to radiotherapy can vary widely among
+and GADD45, which mediate cell cycle arrest and DNA
+patients, with some tumors showing remarkable sensi-
+repair [68]. The loss of TP53 function can impair these
+tivity while others exhibit substantial resistance to radia-
+responses, leading to unregulated cell survival and accu-
+tion therapy [78]. This variability in response is one of the
+mulation of genomic instability. Additionally, recent
+key challenges in optimizing treatment for gastric can-
+findings implicate SCN3B, a TP53-related gene, in modu-
+cer and improving outcomes for patients. Understand-
+lating the cellular response to DNA damage, suggesting
+ing the molecular mechanisms underlying radiotherapy
+that broader p53 signaling networks may be involved in
+resistance is essential for improving patient prognosis
+resistance mechanisms [69]. RAD51 plays a pivotal role
+and developing more effective treatment strategies [79,
+in homologous recombination (HR) repair, a critical path-
+80]. Radioresistance in gastric cancer is a multifactorial
+way for resolving double-strand breaks caused by IR [70].
+phenomenon that can be influenced by several genetic,
+Overexpression of RAD51 enhances DNA repair fidelity
+epigenetic, and microenvironmental factors. The devel-
+and contributes to resistance, as confirmed by previous
+opment of resistance is often linked to alterations in
+pan-cancer analyses highlighting RAD51 upregulation as
+DNA repair mechanisms, cell cycle regulation, and apop-
+a common feature in radioresistant tumors [71]. In our
+tosis pathways, which allow cancer cells to survive and
+study, silencing RAD51 sensitized cells to radiation, sug-
+proliferate despite radiation-induced DNA damage [81].
+gesting compromised HR capacity, which limits effective
+Recent advances in genomic and transcriptomic stud-
+DNA damage repair post-IR. BAX, a pro-apoptotic mem-
+ies have identified radiotherapy-related genes in various
+ber of the Bcl-2 family, promotes mitochondrial outer
+malignancies, such as breast, lung, and colorectal cancers
+membrane permeabilization (MOMP), leading to cyto-
+[82-84]. However, limited research has focused on their
+chrome c release and caspase activation during apoptosis
+role in gastric cancer, necessitating further investigation.
+[72]. Its downregulation may inhibit intrinsic apoptotic
+Despite the established significance of radiotherapy in
+pathways, allowing cells to evade radiation-induced cell
+cancer treatment, the molecular determinants govern-
+death. Furthermore, the ATM-CHK2 axis is central to
+ing therapeutic responses remain poorly understood [3].
+Zhang and He Hereditas
+(2025) 162:125
+Page 13 of 20
+A
+B
+C
+D
+125
+125
+100
+KD)
+100
+Gene Expression
+AGS (Control)
+AGS (Control)
+AGS (RAD51 KD)
+AGS (Control)
+100
+AGS
+RAD51
+GAPDH
+50
+Proliferation (% control)
+75
+75
+Gene
+BAX
+50
+Colony Numbers
+TP53
+50
+25
+25
+TP53
+RAD51
+BAX
+0
+0
+0
+AGS(IR)
+AGS (Contro)
+Condition
+Condition
+Condition
+E
+AGS (Control)
+AGS (IR)
+AGS (TP53 KD)
+AGS (RAD51 KD)
+AGS (BAX KD)
+F
+G
+AGS (Control)
+AGS (IR)
+AGS (TP53 KD)
+AGS (RAD51 KD)
+AGS (BAX
+50
+40
+Wound Closure (%)
+30
+20
+10
+0
+AGg (Contion
+AGS(IR)
+Condition
+Fig. 8 Role of TP53, RAD51, and BAX in radiotherapy resistance in AGS and MKN-45 cells. (A-B) Expression analysis of TP53, RAD51, and BAX in AGS and
+MKN-45 cells following exposure to ionizing radiation (IR). RT-qPCR and Western blotting data show no significant differences in the expression of these
+genes between control and IR-treated cells, indicating their role in radiotherapy resistance. Knockdown of TP53, RAD51, and BAX results in significant
+reduction in gene expression compared to both control and IR-treated cells. (C-D-E) Colony formation assays showing that cells with knocked-down
+TP53, RAD51, and BAX formed significantly fewer colonies compared to control and IR-treated cells, further confirming the contribution of these genes to
+radiotherapy resistance. (F-G) Wound healing assays demonstrating slower wound closure rates in knockdown cells compared to control and IR-treated
+cells, indicating that TP53, RAD51, and BAX are involved in cell migration and resistance to radiation-induced damage during recovery. value <0.01
+While studies have extensively explored radiotherapy
+expression patterns were observed, suggesting a gastric
+resistance in lung, prostate, and breast cancers, gastric
+cancer-specific radiotherapy response. Previous research
+cancer remains underrepresented in these analyses [83,
+in colorectal cancer has demonstrated the prognostic
+84]. Furthermore, most studies have investigated the
+value of TP53 mutations in predicting radiotherapy out-
+overall tumor microenvironment, with limited focus on
+comes [90, 91]. TP53 mutations can impair the DNA
+radiotherapy-specific genetic markers [85, 86]. Our study
+damage response and compromise the cell's ability to
+addresses this gap by systematically exploring the diag-
+repair radiation-induced DNA damage, thereby increas-
+nostic, prognostic, and therapeutic value of radiotherapy-
+ing the likelihood of tumor cell survival after radiotherapy
+related genes in gastric cancer using both in silico and in
+[90, 91]. These findings have made TP53 a key biomarker
+vitro approaches.
+for predicting radiotherapy resistance and have led to
+In lung cancer, radiotherapy response has been linked
+the exploration of TP53-targeted therapies as a potential
+to DNA damage repair genes such as ATM, BRCA1, and
+strategy to improve treatment efficacy in colorectal can-
+TP53 [87]. Similar findings have been reported in breast
+cer. Similarly, in prostate cancer, studies have shown that
+cancer, where genes like RAD51 and CHEK2 contribute
+genes involved in oxidative stress response, such as SOD2
+to radiation sensitivity [88, 89]. Our study identified anal-
+(superoxide dismutase 2) and CAT (catalase), play criti-
+ogous pathways in gastric cancer, indicating a conserved
+cal roles in determining the tumor's response to radio-
+mechanism across malignancies. However, unique gene
+therapy [92, 93]. These genes are involved in the cellular
+Zhang and He Hereditas
+(2025) 162:125
+Page 14 of 20
+A
+B
+C
+D
+120
+120
+120
+90
+MKN-45 (Control)
+MKN-45 (Control)
+MKN-45 (Control)
+KD) MKK-45
+90
+Gene Expression
+60
+BAX
+RAD51
+TP53
+Proliferation control)
+80
+Gene
+GAPDH
+Colony Numbers
+60
+40
+30
+30
+TP53
+RAD51
+BAX
+0
+0
+0
+MINAS UR)
+MKN-45
+Condition
+Condition
+Condition
+E
+MNK-45 (Control)
+MNK-45 (IR)
+MKN-45 (TP53 KD)
+MKN-45 (RAD51 KD)
+MKN-45(BAX KD)
+F
+MNK-45 (Control)
+MNK-45 (IR)
+MKN-45 (TP53
+MKN-45 (RAD51 KD)
+MKN-45 (BAX KD)
+G
+50
+40
+Oh
+Wound Closure (%)
+30
+0h
+Oh
+Oh
+20
+10
+0
+MKN-45
+24 h
+24h
+24h
+24h
+24h
+Condition
+Fig. 9 Radiotherapy resistance in AGS and MKN-45 cells following gene knockdown. (A-B) Expression analysis of TP53, RAD51, and BAX genes in AGS
+and MKN-45 cells exposed to IR, with corresponding knockdown data showing successful reduction of gene expression. (C-D-E) Colony formation assays
+confirming that TP53, RAD51, and BAX knockdown significantly reduces colony formation in comparison to control and IR-treated cells. (F-G) Wound
+healing assays revealing slower wound closure rates in gene knockdown conditions, suggesting that these genes play a potential role in cellular migra-
+tion and resistance to radiation-induced damage. p**-value <0.01
+defense against reactive oxygen species (ROS), which are
+Moreover, GANs can aid in identifying novel regulatory
+generated during radiation treatment. Elevated ROS lev-
+patterns that might escape conventional analytical pipe-
+els can cause significant DNA damage, and cancer cells
+lines, potentially uncovering previously unrecognized
+with enhanced oxidative stress responses are more likely
+mechanisms of radioresistance.
+to survive and proliferate despite radiation exposure. As
+In our study, promoter methylation analysis revealed
+a result, oxidative stress-related genes have been identi-
+significant differences in the methylation patterns of
+fied as potential prognostic biomarkers in prostate can-
+TP53, ATM, RAD51, and BAX between gastric can-
+cer, helping to predict the effectiveness of radiotherapy
+cer and normal tissues. Specifically, we observed lower
+and identify patients who may benefit from additional
+methylation levels of TP53, RAD51, and BAX, while
+therapeutic interventions targeting oxidative stress path-
+ATM exhibited higher methylation levels in gastric can-
+ways. In parallel with these molecular insights, emerging
+cer tissues. These findings align with previous studies in
+computational approaches, such as generative adver-
+other cancers, where alterations in the methylation of
+sarial networks (GANs), offer powerful tools to advance
+TP53 and ATM have been linked to radiotherapy resis-
+gene expression analysis in radiotherapy research [94].
+tance [95, 96]. For example, ATM hypermethylation has
+For instance, GANs can be trained to synthesize real-
+been reported in colorectal and lung cancers, and TP53
+istic gene expression profiles-including those of key
+hypomethylation has been associated with poor prog-
+genes like TP53, ATM, RAD51, and BAX in gastric can-
+nosis in breast cancer [97]. However, our study adds
+cer-thereby augmenting limited datasets and enabling
+unique insights by revealing the distinct methylation
+more robust statistical modeling. This methodology is
+profile in gastric cancer. The altered methylation pat-
+especially valuable in high-dimensional genomic studies
+tern of TP53, ATM, RAD51, and BAX suggests that epi-
+like ours where sample sizes are often constrained [94].
+genetic regulation of these genes plays a role in gastric
+Zhang and He Hereditas
+(2025) 162:125
+Page 15 of 20
+cancer's response to radiation, an aspect that has been
+leading to abnormal gene expression patterns in TP53,
+less explored in other cancers. This lower methylation
+ATM, RAD51, and BAX genes. Specifically, TP53,
+could be indicative of activation of genes that help cells
+RAD51, and BAX were upregulated, while ATM was
+repair DNA damage, potentially contributing to resis-
+downregulated (Fig. 10). These expression changes were
+tance against radiotherapy.
+further influenced by the overexpression of miR-15b-5p,
+Helicobacter pylori (H. pylori) infection is a well-estab-
+which targets all four genes and disrupts their normal
+lished etiological factor in gastric carcinogenesis [98],
+regulatory balance (Fig. 10). At the gene level, high muta-
+and its potential influence on the molecular changes
+tion frequencies in TP53 (88%) and moderate levels in
+observed in our study warrants careful consideration. H.
+ATM (17%) may further impair proper DNA repair or
+pylori has been shown to induce chronic inflammation,
+apoptotic responses (Fig. 10). The downstream effects of
+promote cancer cell migration, and remodel the tumor
+these alterations may result in aberrant cellular signaling
+microenvironment, all of which can modulate gene
+pathways that impair the effective response to radiother-
+expression and DNA damage response pathways [99].
+apy (Fig. 10).
+Specifically, H. pylori infection has been associated with
+Targeted radiosensitization strategies in breast cancer
+alterations in TP53 activity, either through direct muta-
+have focused on modulating PI3K/AKT/mTOR path-
+tion or degradation of the p53 protein, thereby impairing
+ways to enhance therapeutic outcomes. In glioblastoma,
+apoptosis and genomic stability [100]. Similarly, studies
+another highly aggressive cancer, DNA repair mecha-
+suggest that H. pylori may downregulate ATM expres-
+nisms play a pivotal role in determining the success of
+sion and disrupt the ATM-CHK2 signaling axis, weaken-
+radiation therapy [108]. Studies have demonstrated that
+ing the cellular response to DNA damage [101]. RAD51,
+inhibiting key DNA repair proteins, such as ATR, ATM,
+essential for homologous recombination repair, may also
+and DNA-PK, increases the susceptibility of glioblas-
+be influenced by H. pylori-induced oxidative stress and
+toma cells to radiation-induced damage [108]. These pro-
+inflammation, potentially altering DNA repair efficiency
+teins are essential for maintaining genomic stability and
+[102]. Additionally, H. pylori-related suppression of pro-
+repairing DNA damage caused by radiation. By inhibit-
+apoptotic genes like BAX has been reported [103], which
+ing these repair pathways, glioblastoma cells are less
+may contribute to enhanced survival of damaged cells
+able to recover from radiation-induced DNA damage,
+and resistance to therapy. Although our study did not
+thus enhancing the therapeutic effects of radiation [108].
+investigate the role of Helicobacter pylori, future research
+This approach has led to the exploration of DNA repair
+should explore whether H. pylori infection influences the
+inhibitors as potential radiosensitizers in glioblastoma
+expression or function of TP53, ATM, RAD51, and BAX
+and other cancers. Our study, however, focuses on gas-
+in gastric cancer.
+tric cancer, a malignancy that has received comparatively
+In our study, hsa-miR-15b-5p was identified as a key
+less attention in the context of radiosensitization strate-
+regulator of TP53, ATM, RAD51, and BAX genes. This
+gies. We identified TP53, ATM, RAD51, and BAX as
+aligns with a growing body of research highlighting the
+potential candidates that could influence the radiother-
+pivotal role of non-coding RNAs (ncRNAs) in cancer
+apy response in gastric cancer. Our findings suggest that
+[104]. ncRNAs, including microRNAs, IncRNAs, and
+these genes may play a potential role in modulating the
+circRNAs, regulate gene expression and influence tumor
+sensitivity of gastric cancer cells to radiotherapy, and tar-
+progression, immune response, and therapy resistance.
+geting them could enhance the effectiveness of radiation
+For example, IncRNA KCNQ1OT1 promotes NLRP3
+treatment. While these genes have been implicated in
+inflammasome activation via the pri-miR-186/mature
+other cancers, their role in gastric cancer remains under-
+miR-186/NLRP3 axis [105], while IncRNA FOXD2-
+explored. This opens up new possibilities for targeted
+AS1 drives OSCC progression by modulating the miR-
+radiosensitization strategies in gastric cancer, potentially
+185-5p/PLOD1/Akt/mTOR pathway [106]. Additionally,
+leading to improved clinical outcomes. By combining
+circ_0017552 was shown to enhance colon cancer cell
+radiotherapy with agents that modulate the expression or
+proliferation through SP1-induced NET1 expression
+activity of TP53, ATM, RAD51, and BAX, we may over-
+[107]. These studies emphasize the broader significance
+come the resistance mechanisms that limit the effective-
+of ncRNAs in cancer biology and suggest that hsa-miR-
+ness of radiation therapy in gastric cancer patients.
+15b-5p may function within a more complex regulatory
+Considering the novelty of this study, while TP53,
+network involving other ncRNA species-an area war-
+ATM, and RAD51 have been individually implicated in
+ranting further investigation.
+radiotherapy resistance, our study presents a novel inte-
+Collectively, the integrated data in the Fig. 10 suggest a
+grative approach by identifying and functionally validat-
+multifactorial mechanism contributing to radioresistance
+ing the combined regulatory impact of TP53, RAD51,
+in gastric cancer. Promoter methylation appears to play
+and BAX in gastric cancer, with supporting evidence for
+a key upstream regulatory role, with hypermethylation
+ATM's epigenetic suppression. What distinguishes our
+Zhang and He Hereditas
+(2025) 162:125
+Page 16 of 20
+Upstream Regulation
+Survival Impact
+TP53
+worse
+Promoter Methylation
+survival
+Gene Level Regulation
+RAD51
+1%
+worse
+88%
+17%
+1%
+ATM
+miR-15b-5p
+worse
+Abnormal expression
+of target genes
+BAX
+worse
+Downstream
+Radioresistence
+Regulation
+Fig. 10 Multilayered epigenetic and post-transcriptional dysregulation of TP53, ATM, RAD51, and BAX drives radioresistance and poor prognosis. Pro-
+moter methylation is shown as an upstream regulatory factor, with hypermethylation (red) of TP53, RAD51, and BAX, and hypomethylation (blue) of
+ATM. Gene-level mutation frequencies are represented as pie charts, with TP53 exhibiting the highest alteration rate (88%), followed by ATM (17%), and
+negligible changes in RAD51 (1%) and BAX (0%). Overexpressed miR-15b-5p exerts post-transcriptional control over all four genes, resulting in their
+dysregulated expression-upregulation of TP53, RAD51, and BAX, and downregulation of ATM. These aberrations are associated with worse survival
+outcomes, as indicated by Kaplan-Meier survival curves
+work is the comprehensive validation across multiple lev-
+implications of TP53, ATM, RAD51, and BAX genes in
+els-including gene expression, promoter methylation,
+gastric cancer, shedding light on their diagnostic and
+mutational profiling, immune subtype association, and in
+therapeutic potential. The findings hold significant mer-
+vitro knockdown experiments-which collectively high-
+its as they contribute valuable insights into gastric cancer
+light a coordinated radioprotective network. Notably, our
+biology, particularly regarding the molecular alterations
+identification of hsa-miR-15b-5p as a shared upstream
+that influence tumorigenesis and therapeutic resistance.
+regulator of these genes and its robust diagnostic per-
+One of the key merits of this study is the use of multi-
+formance adds a new dimension to the regulatory axis
+ple robust platforms, including RT-qPCR, TCGA data-
+involved in radiotherapy resistance. Furthermore, our
+set, HPA database, and gene expression analysis across
+findings suggest an unexplored link between these genes
+different stages of gastric cancer, which strengthens the
+and immune modulation, as evidenced by their strong
+reliability and validity of the results. Moreover, the use of
+correlations with key immune checkpoint molecules.
+patient-derived data from TCGA and GSCA databases to
+This study provides a comprehensive analysis of the
+validate gene expression results enhances the generaliz-
+expression, methylation, mutation, and survival-related
+ability and applicability of the findings across different
+Zhang and He Hereditas
+(2025) 162:125
+Page 17 of 20
+populations. Another merit of this study is its thorough
+and publicly available datasets; although these tools
+exploration of the promoter methylation status of these
+are valuable for discovery, they cannot fully capture the
+genes in gastric cancer. The significant correlations
+biological complexity of gastric cancer without comple-
+between DNA methylation and gene expression further
+mentary in vitro or in vivo validation. Additionally, while
+elucidate the epigenetic mechanisms underlying gastric
+hsa-miR-15b-5p was identified as a potential upstream
+cancer development. The integration of mutational anal-
+regulator, the findings are limited to expression and cor-
+ysis via cBioPortal and survival analysis using Kaplan-
+relation data. Without functional assays such as luciferase
+Meier and meta-analysis provides a holistic view of how
+reporter assays or miRNA mimic/inhibitor experiments,
+these genes' alterations impact gastric cancer prognosis.
+the regulatory relationship remains speculative.
+Furthermore, the identification of a key miRNA (hsa-
+miR-15b-5p) targeting these genes introduces an excit-
+Conclusion
+ing avenue for future therapeutic interventions in gastric
+The study investigated the expression, mutation, and
+cancer.
+methylation patterns of TP53, ATM, RAD51, and BAX
+However, this study has several limitations that could
+genes in gastric cancer and their potential as diagnostic
+affect its interpretability and translational applicability.
+biomarkers. The analysis revealed significant upregula-
+While the study extensively analyzes the expression lev-
+tion of TP53, RAD51, and BAX, and downregulation of
+els and epigenetic modifications of the target genes, it
+ATM in gastric cell lines compared to normal controls.
+does not delve deeply into the functional consequences
+ROC curve analysis indicated that these genes have high
+of these alterations in a cellular context-particularly in
+diagnostic potential (AUC=1). Promoter methylation
+relation to tumor microenvironment interactions and
+analysis showed lower methylation of TP53, RAD51, and
+immune evasion mechanisms. Although survival analyses
+BAX, and higher methylation of ATM in gastric cancer
+revealed significant associations between gene expression
+tissues. Mutational analysis identified TP53 alterations
+and patient outcomes, the study does not investigate how
+in 88% of gastric samples, with mutations mostly in mis-
+these genes interface with broader molecular pathways
+sense and frameshift categories, while RAD51 and BAX
+involved in gastric cancer progression, such as stromal
+mutations were rare. The expression of these genes varied
+signaling or immune cell infiltration. The lack of compre-
+across immune subtypes and showed significant associa-
+hensive functional validation-beyond gene expression
+tions with immune inhibitors. A key miRNA, hsa-miR-
+profiling and limited knockdown experiments-prevents
+15b-5p, was identified as a regulator of these genes and
+definitive conclusions about causality. In particular, the
+was upregulated in gastric cancer, making it a potential
+study lacks in vivo validation, which is essential to con-
+diagnostic biomarker. PPI network construction revealed
+firm the biological relevance and therapeutic potential of
+complex interactions between these genes and other can-
+the identified targets within the complex tumor micro-
+cer-related pathways, including DNA repair, apoptosis,
+environment. Future studies should incorporate xeno-
+and P53 signaling. The genes were also correlated with
+graft or orthotopic mouse models to validate the impact
+immune cell infiltration and drug sensitivity, suggesting
+of TP53, ATM, RAD51, BAX, and hsa-miR-15b-5p on
+their potential as therapeutic targets. Furthermore, TP53,
+tumor growth, metastasis, and treatment response. Addi-
+RAD51, and BAX were found to contribute to resistance
+tionally, the use of only two gastric cancer cell lines (AGS
+to radiotherapy, indicating their critical role in maintain-
+and MKN-45) limits the generalizability of the findings,
+ing cell survival under radiation stress and their poten-
+as these models may not fully capture the molecular
+tial as targets to overcome radiotherapy resistance. In
+heterogeneity present in clinical gastric cancer. Inclu-
+sum, our study sheds light on the crucial role of radio-
+sion of a broader panel of cell lines representing differ-
+therapy-related genes in gastric cancer, with a particu-
+ent molecular subtypes (e.g., EBV-positive, microsatellite
+lar focus on TP53, ATM, RAD51, and BAX. Despite the
+instability-high, genomically stable) would provide more
+need for further validation in clinical and in vivo settings,
+comprehensive insights. Furthermore, while the roles
+this research provides valuable insights into the genetic
+of TP53, RAD51, and BAX in radiotherapy resistance
+factors underlying gastric cancer's response to radio-
+are emphasized, the underlying molecular mechanisms
+therapy, ultimately contributing to the advancement of
+contributing to this resistance remain insufficiently
+personalized treatment approaches for improved patient
+characterized, including their potential interaction with
+outcomes.
+DNA repair pathways (e.g., homologous recombination,
+non-homologous end joining), apoptosis signaling, and
+Supplementary Information
+reactive oxygen species detoxification. Future pathway-
+The online version contains supplementary material available at https://doi.or
+g/10.1186/s41065-025-00496-3.
+focused analyses using phospho-proteomics or CRISPR-
+based screens could provide mechanistic depth. Another
+Supplementary Material 1
+notable limitation is the reliance on in silico analyses
+Zhang and He Hereditas
+(2025) 162:125
+Page 18 of 20
+Acknowledgements
+11. Sonkin D, Thomas A, Teicher BA. Cancer treatments: past, present, and future.
+None to declare.
+Cancer Genet. 2024.
+12. Joshi RM, Telang B, Soni G, Khalife A. Overview of perspectives on
+Author contributions
+cancer, newer therapies, and future directions. Oncol Translational Med.
+Junwei Zhang contributed to the study design, data collection, in silico
+2024;10(3):105-9.
+analysis, and manuscript drafting. Pengtao He supervised the research,
+13. Peng W, Chen L, Liu J. Celastrol inhibits gastric cancer cell proliferation, migra-
+conducted the in vitro experiments, analyzed the results, and revised the
+tion, and invasion via the FOXA1/CLDN4 axis. Toxicol Res. 2023;12(3):392-9.
+manuscript critically for important intellectual content. Both authors read and
+14. Wang FH, Zhang XT, Tang L, Wu Q, Cai MY, LiYF, et al. The Chinese society of
+approved the final manuscript.
+clinical oncology (CSCO): clinical guidelines for the diagnosis and treatment
+of gastric cancer, 2023. Cancer Commun. 2024;44(1):127-72.
+Funding
+15. Liu Y, Wang Z, Tang Z, Fu Y, Wang L. mirna-383-5p functions as an Anti-onco-
+None to declare.
+gene in glioma through the akt/mtor signaling pathway by targeting VEGFA.
+Curr Cancer Drug Targets. 2024;24(4):463-75.
+Data availability
+16. Liang L, Liang X, Yu X, Xiang W. Bioinformatic analyses and integrated
+The URLs for all publicly available datasets analyzed in this study are provided
+machine learning to predict prognosis and therapeutic response based on
+in the methodology section. For further details or specific dataset requests,
+E3 ligase-related genes in colon cancer. J Cancer. 2024;15(16):5376.
+please contact the corresponding author.
+17. Liu YP, Zheng CC, Huang YN, He ML, Xu WW, LiB. Molecular mechanisms of
+chemo-and radiotherapy resistance and the potential implications for cancer
+treatment. MedComm. 2021;2(3):315-40.
+Declarations
+18. LiC, Chu Y, Dai H, Xian Q, Zhu W. KDM4C and GFPT1: potential therapeutic
+targets for gastric Cancer. Discov Med. 2024;36(191):2408-20.
+Ethics declaration
+19. Passelli K, Repáraz D, Kinj R, Herrera FG. Strategies for overcoming tumour
+Not applicable.
+resistance to immunotherapy: Harnessing the power of radiation therapy. Br
+J Radiol. 2024;97(1160):1378-90.
+Consent to participate
+20. Eslami M, Memarsadeghi O, Davarpanah A, Arti A, Nayernia K, Behnam B.
+Not applicable.
+Overcoming chemotherapy resistance in metastatic cancer: a comprehen-
+sive review. Biomedicines. 2024;12(1):183.
+Consent to publish
+21. Batool A, Rashid W, Fatima K, Khan SU. Mechanisms of Cancer resistance to
+Not applicable.
+various therapies. Drug resistance in cancer: mechanisms and strategies.
+Springer; 2024. pp. 31-75.
+Competing interests
+22. Arechaga-Ocampo E. Epigenetics as a determinant of radiation response in
+The authors declare no competing interests.
+cancer. Int Rev Cell Mol Biology. 2024;383:145-90.
+23. Saini S, Gurung P. A comprehensive review of sensors of radiation-induced
+Author details
+damage, radiation-induced proximal events, and cell death. Immunol Rev.
+¹Department of Radiotherapy, Chang'an Hospital, Xi'an 71000, China
+2025;329(1):e13409.
+²Department of Oncology Geriatrics, Xi'an Fengcheng Hospital,
+24. Liang L-X, Liang X, Zeng Y, Wang F, Yu X-K. Establishment and validation of a
+Xi'an 710000, China
+nomogram for predicting esophagogastric variceal bleeding in patients with
+liver cirrhosis. World J Gastroenterol. 2025;31(9):102714.
+Received: 31 March 2025 / Accepted: 3 July 2025
+25. Zhang G, Song C, Yin M, Liu L, Zhang Y, LiY, et al. TRAPT: a multi-stage fused
+Published online: 12 July 2025
+deep learning framework for predicting transcriptional regulators based on
+large-scale epigenomic data. Nat Commun. 2025;16(1):3611.
+26. Feroz M, Jan A, Yasin J, Mir MA. p53 control of cell cycle dynamics in breast
+cancer: maintaining a balance between arrest and proliferation. p53 in breast
+References
+Cancer. CRC; 2025. pp. 127-45.
+1.
+Riquelme A, Abnet CC. The burden of gastric Cancer in Northern central
+27. Ahmed MM, Malachowska B, Guha C. Radiation-Induced tissue regeneration:
+America. Cancer Epidemiol Biomarkers Prev. 2024;33(12):1550-2.
+pathways, mechanisms, and therapeutic potential. Hematology/Oncology
+2.
+Patwa N, Chauhan R, Chauhan A, Kumar M, Ramniwas S, Mathkor DM, et al.
+Clinics; 2025.
+Garcinol in Gastrointestinal cancer prevention: recent advances and future
+28. Patel NH, Sohal SS, Manjili MH, Harrell JC, Gewirtz DA. The roles of autophagy
+prospects. J Cancer Res Clin Oncol. 2024;150(7):370.
+and senescence in the tumor cell response to radiation. Radiat Res.
+3.
+Lin J-L, Lin J-X, Lin G-T, Huang C-M, Zheng C-H, Xie J-W, et al. Global incidence
+2020;194(2):103-15.
+and mortality trends of gastric cancer and predicted mortality of gastric
+29. Rimal R, Desai P, Daware R, Hosseinnejad A, Prakash J, Lammers T, et al.
+cancer by 2035. BMC Public Health. 2024;24(1):1763.
+Cancer-associated fibroblasts: origin, function, imaging, and therapeutic
+4.
+Guo Z, Guan K, Bao M, He B, Lu J. LINC-PINT plays an anti-tumor role in
+targeting. Adv Drug Deliv Rev. 2022;189:114504.
+nasopharyngeal carcinoma by binding to XRCC6 and affecting its function.
+30. Zheng L, Cai W, Ke Y, Hu X, Yang C, Zhang R, et al. Cancer-associated
+Pathology-Research Pract. 2024;260:155460.
+fibroblasts: a pivotal regulator of tumor microenvironment in the context of
+5.
+Chen S, Long S, Liu Y, Wang S, Hu Q, Fu L, et al. Evaluation of a three-gene
+radiotherapy. Cell Communication Signaling: CCS. 2025;23:147.
+methylation model for correlating lymph node metastasis in postoperative
+31. Janic A, Abad E, Amelio I. Decoding p53 tumor suppression: a crosstalk
+early gastric cancer adjacent samples. Front Oncol. 2024;14:1432869.
+between genomic stability and epigenetic control? Cell Death Differ.
+6.
+Burz C, Pop V, Silaghi C, Lupan I, Samasca G. Prognosis and treatment of
+2025;32(1):1-8.
+gastric cancer: a 2024 update. Cancers. 2024;16(9):1708.
+32. Khan R, Pari B, Puszynski K. Comprehensive bioinformatic investigation of
+7.
+Kuwata T. Molecular classification and intratumoral heterogeneity of gastric
+TP53 dysregulation in diverse cancer landscapes. Genes. 2024;15(5):577.
+adenocarcinoma. Pathol Int. 2024;74(6):301-16.
+33. Yang H, Li Chen X, Weng M, Huang Y, Chen Q, et al. Targeting SOX13 inhib-
+8.
+Huang Y, Shao Y, Yu X, Chen C, Guo J, Ye G. Global progress and future pros-
+its assembly of respiratory chain supercomplexes to overcome ferroptosis
+pects of early gastric cancer screening. J Cancer. 2024;15(10):3045.
+resistance in gastric cancer. Nat Commun. 2024;15(1):4296.
+9.
+Nie Y, Li D, Peng Y, Wang S, Hu S, Liu M, et al. Metal organic framework
+34. Al-Arafat T-, Mao A, Katsube T, Wang B. Exploring the role of p53 in radiosensi-
+coated MnO2 nanosheets delivering doxorubicin and self-activated
+tivity: A key player in Cancer therapy. Radiation. 2024;4(4):309-24.
+DNAzyme for chemo-gene combinatorial treatment of cancer. Int J Pharm.
+35. Wang C, Tan JYM, Chitkara N, Bhatt S. TP53 mutation-mediated immune
+2020;585:119513.
+evasion in cancer: mechanisms and therapeutic implications. Cancers.
+10. Cao Z, Zhu J, Wang Z, Peng Y, Zeng L. Comprehensive pan-cancer analysis
+2024;16(17):3069.
+reveals ENC1 as a promising prognostic biomarker for tumor microenviron-
+36. Varadhan V, Manikandan MS, Nagarajan A, Palaniyandi Ravi M, Sank-
+ment and therapeutic responses. Sci Rep. 2024;14(1):25331.
+areswaran SK, et al. Ataxia-Telangiectasia mutated (ATM) gene signaling
+Zhang and He Hereditas
+(2025) 162:125
+Page 19 of 20
+pathways in human cancers and their therapeutic implications. Pathology-
+59. Yuan K, Ye J, Liu Z, Ren Y, He W, Xu J, et al. Complement C3 overexpression
+Research Pract. 2024;260:155447.
+activates JAK2/STAT3 pathway and correlates with gastric cancer progression.
+37. Rameshkumar A, ArunPrasanna V, Mahalakshmi V, Raja MR, Gopinath K.
+J Experimental Clin Cancer Res. 2020;39:1-15.
+Recent advancement of analytical approaches for assessing Ataxia telangiec-
+60. Laga T, Van Rompuy A, Busschaert P, Marquina G, Loverix L, Olbrecht S et al.
+tasia mutated kinase inhibitors in Ataxia telangiectasia: an overview. Process
+Single-cell profiling in ovarian germ cell and sex cord-stromal tumours. Br J
+Biochem. 2024;144:142-59.
+Cancer. 2025:1-14.
+38. Xie Y, Liu Y, Lin M, Z, Shen Z, Yin S et al. Targeting ATM enhances radiation
+61. Zhou R, Wen Z, Liao Y, Wu J, Xi S, Zeng D, et al. Evaluation of stromal cell
+sensitivity of colorectal cancer by potentiating radiation-induced cell death
+infiltration in the tumor microenvironment enable prediction of treatment
+and antitumor immunity. J Adv Res. 2024.
+sensitivity and prognosis in colon cancer. Comput Struct Biotechnol J.
+39. Porrazzo A, Cassandri M, D'Alessandro A, Morciano P, Rota R, Marampon F, et
+2022;20:2153-68.
+al. DNA repair in tumor radioresistance: insights from fruit flies genetics. Cell
+62. Chang L, Zhou G, Soufan O, Xia J. MiRNet 2.0: network-based visual analyt-
+Oncol. 2024;47(3):717-32.
+ics for MiRNA functional analysis and systems biology. Nucleic Acids Res.
+40. Qian F-C, Zhou L-W, Y-Y, Yu Z-M, Li L-D, Wang Y-Z, et al. SEanalysis 2.0: a
+2020;48(W1):W244-51.
+comprehensive super-enhancer regulatory network analysis tool for human
+63. Chandrashekar DS, Karthikeyan SK, Korla PK, Patel H, Shovon AR, Athar M,
+and mouse. Nucleic Acids Res. 2023;51(W1):W520-7.
+et al. UALCAN: an update to the integrated cancer data analysis platform.
+41. Iksen WW, Hardianti B, Pongrakhananon V. Comprehensive review of Bcl-2
+Neoplasia. 2022;25:18-27.
+family proteins in cancer apoptosis: therapeutic strategies and promising
+64. Warde-Farley D, Donaldson SL, Comes O, Zuberi K, Badrawi R, Chao P,
+updates of natural bioactive compounds and small molecules. Phytother Res.
+et al. The genemania prediction server: biological network integration
+2024;38(5):2249-75.
+for gene prioritization and predicting gene function. Nucleic Acids Res.
+42. Xu K, Liu Z, Pan S, Zhang N, Wu S, Yang G, et al. BMSCs attenuate radiation-
+2010;38:W214-20. Web Server issue).
+induced brain injury induced hippocampal neuronal apoptosis through a
+65. Dennis G, Sherman BT, Hosack DA, Yang J, Gao W, Lane HC, et al. DAVID:
+PI3K/Akt/Bax/Bcl-2 signaling pathway. Brain Res. 2024;1829:148795.
+database for annotation, visualization, and integrated discovery. Genome
+43. Stankovic T, Hubank M, Cronin D, Stewart GS, Fletcher D, Bignell CR, et al.
+Biol. 2003;4(5):P3.
+Microarray analysis reveals that TP53-and ATM-mutant B-CLLs share a defect
+66. Angele S, Treilleux I, Taniere P, Martel-Planche G, Vuillaume MI, Bailly C, et al.
+in activating proapoptotic responses after DNA damage but are distin-
+Abnormal expression of the ATM and TP53 genes in sporadic breast carcino-
+guished by major differences in activating prosurvival responses. Blood.
+mas. Clin Cancer Res. 2000;6(9):3536-44.
+2004;103(1):291-300.
+67. Manetto V, Lorenzini R, Cordon-Cardo C, Krajewski S, Rosai J, Reed JC, et al.
+44. Abuetabh Y, Wu HH, Chai C, Al Yousef H, Persad S, Sergi CM, et al. DNA dam-
+Bcl-2 and Bax expression in thyroid tumours an immunohistochemical and
+age response revisited: the p53 family and its regulators provide endless
+Western blot analysis. Virchows Arch. 1997;430:125-30.
+cancer therapy opportunities. Exp Mol Med. 2022;54(10):1658-69.
+68. Krishnaraj J, Yamamoto T, Ohki R. p53-dependent cytoprotective mechanisms
+45. Zhou C, Kuang M, Tao Y, Wang J, Luo Y, Fu et al. Nynrin preserves hema-
+behind resistance to chemo-radiotherapeutic agents used in cancer treat-
+topoietic stem cell function by inhibiting the mitochondrial permeability
+ment. Cancers. 2023;15(13):3399.
+transition pore opening. Cell Stem Cell. 2024;31(9):1359-75.e.
+69. Adachi K, Toyota M, Sasaki Y, Yamashita T, Ishida S, Ohe-Toyota M, et al. Iden-
+46. Chen F, Zhang K, Wang M, He Z, Yu B, Wang X, et al. VEGF-FGF signaling
+tification of SCN3B as a novel p53-inducible proapoptotic gene. Oncogene.
+activates quiescent CD63 + Liver stem cells to proliferate and differentiate.
+2004;23(47):7791-8.
+Adv Sci. 2024;11(33):2308711.
+70. Menon V, Povirk L. Involvement of p53 in the repair of DNA double strand
+47. Liu B, Du H, Zhang J, Jiang J, Zhang X, He F, et al. Developing a new sepsis
+breaks: multifaceted roles of p53 in homologous recombination repair
+screening tool based on lymphocyte count, international normalized ratio
+(HRR) and non-homologous end joining (NHEJ). Mutant p53 MDM2 Cancer.
+and procalcitonin (LIP score). Sci Rep. 2022;12(1):20002.
+2014;321:36.
+48. Li S, Ling S, Wang D, Wang X, Hao F, Yin L, et al. Modified lentiviral globin gene
+71. Liu H, Weng J. A pan-cancer bioinformatic analysis of RAD51 regarding the
+therapy for pediatric ßo/ß0 transfusion-dependent ß-thalassemia: A single-
+values for diagnosis, prognosis, and therapeutic prediction. Front Oncol.
+center, single-arm pilot trial. Cell Stem Cell. 2024;31(7):961-73.e
+2022;12:858756.
+49. Khan M, Hameed Y. Discovery of novel six genes-based cervical cancer-
+72. Wolf P, Schoeniger A, Edlich F. Pro-apoptotic complexes of BAX and BAK on
+associated biomarkers that are capable to break the heterogeneity barrier
+the outer mitochondrial membrane. Biochim Et Biophys Acta (BBA)-Molecu-
+and applicable at the global level. J Cancer Res Ther. 2023.
+lar Cell Res. 2022;1869(10):119317.
+50. Liu C-J, Hu F-F, Xie G-Y, Miao Y-R, Li X-W, Zeng Y, et al. GSCA: an integrated
+73. Fernandez A, Artola M, Leon S, Otegui N, Jimeno A, Serrano D, et al. Cancer
+platform for gene set cancer analysis at genomic, Pharmacogenomic and
+vulnerabilities through targeting the ATR/Chk1 and ATM/Chk2 axes in the
+Immunogenomic levels. Brief Bioinform. 2023;24(1):bbac558.
+context of DNA damage. Cells. 2025;14(10):748.
+51. Thul PJ, Lindskog C. The human protein atlas: a Spatial map of the human
+74. Dong Y, Wu X, Xu C, Hameed Y, Abdel-Maksoud MA, Almanaa TN, et al. Prog-
+proteome. Protein Sci. 2018;27(1):233-44.
+nostic model development and molecular subtypes identification in bladder
+52. Tang Z, Kang B, Li C, Chen T, Zhang Z. GEPIA2: an enhanced web server for
+urothelial cancer by oxidative stress signatures. Aging. 2024;16(3):2591.
+large-scale expression profiling and interactive analysis. Nucleic Acids Res.
+75. Huang L, Irshad S, Sultana U, Ali S, Jamil A, Zubair A, et al. Pan-cancer analysis
+2019;47(W1):W556-60.
+of HS6ST2: associations with prognosis, tumor immunity, and drug resistance.
+53. Cerami E, Gao J, Dogrusoz U, Gross BE, Sumer SO, Aksoy BA, et al. The cBio
+Am J Translational Res. 2024;16(3):873.
+cancer genomics portal: an open platform for exploring multidimensional
+76. Hameed Y. Decoding the significant diagnostic and prognostic importance
+cancer genomics data. Cancer Discov. 2012;2(5):401-4.
+of maternal embryonic leucine zipper kinase in human cancers through
+54. Lánczky A, Györffy B. Web-Based survival analysis tool tailored for medical
+deep integrative analyses. J Cancer Res Ther. 2023;19(7):1852-64.
+research (KMplot): development and implementation. J Med Internet Res.
+77. Luo M, Rehman A, Haque S, Izhar S, Perveen F, Haris M, et al. Thorough
+2021;23(7):e27633.
+examination of the potential biological implications of the cuproptosis-
+55. Park S-J, Yoon B-H, Kim S-K, Kim S-Y. GENT2: an updated gene expression
+related gene LIPT2 in the prognosis and immunotherapy in pan-cancer. Am J
+database for normal and tumor tissues. BMC Med Genom. 2019;12(5):101.
+Translational Res. 2024;16(3):940.
+56. Ru B, Wong CN, Tong Y, Zhong JY, Zhong SSW, Wu WC, et al. TISIDB: an inte-
+78. García-Figueiras R, Baleato-González S, Luna A, Padhani AR, Vilanova JC,
+grated repository portal for tumor-immune system interactions. Bioinformat-
+Carballo-Castro AM, et al. How imaging advances are defining the future of
+ics. 2019;35(20):4200-2.
+precision radiation therapy. Radiographics. 2024;44(2):e230152.
+57. Chen L, He Y, Duan M, Yang T, Chen Y, Wang B, et al. Exploring NUP62's role in
+79. Jiang F, Ahmad S, Kanwal S, Hameed Y, Tang Q. Key wound healing genes as
+cancer progression, tumor immunity, and treatment response: insights from
+diagnostic biomarkers and therapeutic targets in uterine corpus endometrial
+multi-omics analysis. Front Immunol. 2025;16:1559396.
+carcinoma: an integrated in Silico and in vitro study. Hereditas. 2025;162(1):5.
+58. Fan X, Brunetti TM, Jackson K, Roop DR. Single-Cell profiling reveals global
+80. Karamat U, Ejaz S, Hameed Y. In silico-analysis of the multi-omics data identi-
+immune responses during the progression of murine epidermal neoplasms.
+fied the ataxia telangiectasia mutated gene as a potential biomarker of breast
+Cancers. 2025;17(8):1379.
+invasive carcinoma. Genetic Test Mol Biomarkers. 2021;25(4):263-75.
+Zhang and He Hereditas
+(2025) 162:125
+Page 20 of 20
+81. Nickoloff JA, Taylor L, Sharma N, Kato TA. Exploiting DNA repair pathways for
+97. Flanagan JM, Munoz-Alegre M, Henderson S, Tang T, Sun P, Johnson N, et al.
+tumor sensitization, mitigation of resistance, and normal tissue protection in
+Gene-body hypermethylation of ATM in peripheral blood DNA of bilateral
+radiotherapy. Cancer Drug Resist. 2021;4(2):244.
+breast cancer patients. Hum Mol Genet. 2009;18(7):1332-42.
+82. Rubini D, Gagliardi F, Menditti VS, D'Ambrosio L, Gallo P, D'Onofrio I, et al.
+98. Goel M, Gupta V. Cutting-Edge technological developments in the diagnosis
+Genetic profiling in radiotherapy: a comprehensive review. Front Oncol.
+and treatment of malignant gastric neoplasm. Innovative advancements in
+2024;14:1337815.
+biotechnology: technological advancements in biosciences. Springer; 2025.
+83. Liu Y, Yang Y, Ni F, Tai G, Yu C, Jiang X, et al. Research on radiotherapy related
+pp. 211-42.
+genes and prognostic target identification of rectal cancer based on multi-
+99. Wang X, Zhao G, Shao S, Yao Y. Helicobacter pylori triggers inflammation and
+omics. J Translational Med. 2023;21(1):856.
+oncogenic transformation by perturbing the immune microenvironment.
+84. Zhao P, Zhen H, Zhao H, Huang Y, Cao B. Identification of hub genes and
+Biochim Et Biophys Acta (BBA)-Reviews Cancer. 2024;1879(5):189139.
+potential molecular mechanisms related to radiotherapy sensitivity in rectal
+100. Costa L, Corre S, Michel V, Le Luel K, Fernandes J, Ziveri J, et al. USF1 defect
+cancer based on multiple datasets. Translational Med. 2023;21(1):176.
+drives p53 degradation during Helicobacter pylori infection and accelerates
+85. Li H, Gong Q, Luo K. Biomarker-driven molecular imaging probes in radio-
+gastric carcinogenesis. Gut. 2020;69(9):1582-91.
+therapy. Theranostics. 2024;14(10):4127.
+101. Santos JC, Gambeloni RZ, Roque AT, Oeck S, Ribeiro ML. Epigenetic mecha-
+86. Braunstein S, Nakamura JL. Radiotherapy-induced malignancies: review of
+nisms of ATM activation after helicobacter pylori infection. Am J Pathol.
+clinical features, pathobiology, and evolving approaches for mitigating risk.
+2018;188(2):329-35.
+Front Oncol. 2013;3:73.
+102. Xu X, Fei X, Wang H, Wu X, Zhan Y, Li X, et al. Helicobacter pylori infection
+87. Venugopala KN. Targeting the DNA damage response machinery for lung
+induces DNA double-strand breaks through the ACVR1/IRF3/POLD1 signal-
+cancer treatment. Pharmaceuticals. 2022;15(12):1475.
+ing axis to drive gastric tumorigenesis. Gut Microbes. 2025;17(1):2463581.
+88. Graffeo R, Rana H, Conforti F, Bonanni B, Cardoso M, Paluch-Shimon S, et al.
+103. Zhang S, Huang J, Xie X, He Y, Mo F, Luo Z. Quercetin from Polygonum capi-
+Moderate penetrance genes complicate genetic testing for breast cancer
+tatum protects against gastric inflammation and apoptosis associated with
+diagnosis: ATM, CHEK2, BARD1 and RAD51D. Breast. 2022;65:32-40.
+Helicobacter pylori infection by affecting the levels of p38MAPK, BCL-2 and
+89. Goel V, Sharma D, Sharma A, Mallick S. A systematic review exploring the role
+BAX. Molecules. 2017;22(5):744.
+of modern radiation for the treatment of hereditary or Familial breast Cancer.
+104. Absalan S, Vaziri H. The role of non-coding RNAs (ncRNAs) and their potential
+Radiother Oncol. 2022;176:59-67.
+connection with cancer. Egypt J Med Hum Genet. 2025;26(1):55.
+90. Russo A, Bazan V, lacopetta B, Kerr D, Soussi Gebbia N. The TP53 colorectal
+105. Li M-M, Shi M-J, Feng C-C, Yu Z-Y, Bai X-F. LncRNA KCNQ1OT1 promotes
+cancer international collaborative study on the prognostic and predictive
+NLRP3 inflammasome activation in Parkinson's disease by regulating pri-
+significance of p53 mutation: influence of tumor site, type of mutation, and
+miR-186/mature miR-186/NLRP3 axis. Biochimica et Biophysica Acta (BBA)-
+adjuvant treatment. J Clin Oncol. 2005;23(30):7518-28.
+Molecular Basis of Disease. 2024;1870(8):167454.
+91. Chen MB, Wu XY, Yu R, LiC, Wang LQ, Shen W, et al. P53 status as a predictive
+106. Liu J, Zhang Y, Wu J, Liu X, LiL, Zhang J. LncRNA FOXD2-AS1 promotes the
+biomarker for patients receiving neoadjuvant radiation-based treatment: a
+growth, invasion and migration of OSCC cells by regulating the MiR-185-5p/
+meta-analysis in rectal cancer. PLoS ONE. 2012;7(9):e45388.
+PLOD1/Akt/mTOR pathway. J Biomed Nanotechnol. 2024;20(5):909-19.
+92. Alvarez-González B, Porras-Quesada P, Arenas-Rodríguez V, Tamayo-Gómez A,
+107. Liu D, Shen M, Liu Z, Chen D, Pan Y, Zhang L, et al. SP1-induced circ_0017552
+Vázquez-Alonso F, Martínez-González LJ, et al. Genetic variants of antioxidant
+modulates colon cancer cell proliferation and apoptosis via up-regulation of
+and xenobiotic metabolizing enzymes and their association with prostate
+NET1. Cancer Genet. 2024;286:1-10.
+cancer: A meta-analysis and functional in Silico analysis. Sci Total Environ.
+108. Majd NK, Yap TA, Koul D, Balasubramaniyan V, Li X, Khan S, et al. The promise
+2023;898:165530.
+of DNA damage response inhibitors for the treatment of glioblastoma. Neu-
+93. Khandrika L, Kumar B, Koul S, Maroni P, Koul HK. Oxidative stress in prostate
+rooncol Adv. 2021;3(1):vdab015.
+cancer. Cancer Lett. 2009;282(2):125-36.
+94. Lee M. Recent advances in generative adversarial networks for gene expres-
+sion data: a comprehensive review. Mathematics. 2023;11(14):3055.
+95. Zhu X, Wang Y, Tan L, Fu X. The pivotal role of DNA methylation in the radio-
+Publisher's note
+sensitivity of tumor radiotherapy. Cancer Med. 2018;7(8):3812-9.
+Springer Nature remains neutral with regard to jurisdictional claims in
+96. Antwih DA, Gabbara KM, Lancaster WD, Ruden DM, Zielske SP. Radiation-
+published maps and institutional affiliations.
+induced epigenetic DNA methylation modification of radiation-response
+pathways. Epigenetics. 2013;8(8):839-48.

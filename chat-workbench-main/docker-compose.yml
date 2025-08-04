@@ -1,0 +1,245 @@
+services:
+  ui:
+    build:
+      context: ./ui
+      dockerfile: Dockerfile
+      target: deps
+    ports:
+      - '3000:3000'
+    env_file:
+      - .env
+    environment:
+      - NEXT_PUBLIC_API_URI=http://localhost:8000
+      - NEXT_PUBLIC_API_VERSION=v1
+      - NODE_ENV=development
+    volumes:
+      - ./ui:/app
+      - /app/node_modules
+      - ./ui/public/env.js:/app/public/env.js
+    command: npm run dev
+    depends_on:
+      app:
+        condition: service_started
+      keycloak:
+        condition: service_started
+
+  app:
+    build:
+      context: .
+      dockerfile: infrastructure/docker/backend/Dockerfile
+    ports:
+      - '8000:8000'
+    env_file:
+      - .env
+    environment:
+      - HOT_RELOAD=${HOT_RELOAD:-true}
+      # Always use a single worker in development to avoid state issues
+      - WORKERS=1
+      - LOG_LEVEL=${LOG_LEVEL:-debug}
+      - AWS_REGION=${AWS_REGION}
+      - AWS_PROFILE=${AWS_PROFILE}
+      - API_HOST=${API_HOST}
+      - API_CORS_ORIGINS=${API_CORS_ORIGINS}
+      - API_LOG_LEVEL=${API_LOG_LEVEL}
+      - API_CACHE_TTL=${API_CACHE_TTL}
+      - DYNAMODB_ENDPOINT_URL=${DYNAMODB_ENDPOINT_URL}
+      - DYNAMODB_TABLE_NAME=${DYNAMODB_TABLE_NAME}
+      - OPENSEARCH_HOST=${OPENSEARCH_HOST}
+      - OPENSEARCH_PORT=${OPENSEARCH_PORT}
+      - OPENSEARCH_ENABLED=${OPENSEARCH_ENABLED}
+      - VALKEY_HOST=${VALKEY_HOST}
+      - VALKEY_PORT=${VALKEY_PORT}
+      - VALKEY_USE_TLS=${VALKEY_USE_TLS:-false}
+      - CONTENT_STORAGE_FORCE_LOCAL=${CONTENT_STORAGE_FORCE_LOCAL}
+      - CONTENT_STORAGE_LOCAL_PATH=${CONTENT_STORAGE_LOCAL_PATH}
+      - CONTENT_STORAGE_BASE_BUCKET=${CONTENT_STORAGE_BASE_BUCKET}
+      - AUTH_ENABLED=${AUTH_ENABLED}
+      - AUTH_AUTHORITY=${AUTH_AUTHORITY}
+      - AUTH_CLIENT_ID=${AUTH_CLIENT_ID}
+      # OpenTelemetry Configuration
+      - OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=${OTEL_EXPORTER_OTLP_TRACES_ENDPOINT}
+      - OTEL_SERVICE_NAME=${OTEL_SERVICE_NAME}
+      - OTEL_TRACES_SAMPLER=${OTEL_TRACES_SAMPLER}
+      - OTEL_PROPAGATORS=${OTEL_PROPAGATORS}
+      - OTEL_PYTHON_LOGGING_AUTO_INSTRUMENTATION_ENABLED=${OTEL_PYTHON_LOGGING_AUTO_INSTRUMENTATION_ENABLED}
+      - OTEL_DEBUG=${OTEL_DEBUG}
+    volumes:
+      - ./backend/app:/app/app
+      - ~/.aws:/home/appuser/.aws:ro
+      - file_artifacts:/tmp/file_artifacts
+    depends_on:
+      dynamodb:
+        condition: service_started
+      opensearch:
+        condition: service_healthy
+      prometheus:
+        condition: service_started
+      valkey:
+        condition: service_started
+      jaeger:
+        condition: service_healthy
+    healthcheck:
+      test: ['CMD', 'curl', '-f', 'http://localhost:8000/api/health']
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  dynamodb:
+    image: amazon/dynamodb-local:latest
+    command: '-jar DynamoDBLocal.jar -sharedDb'
+    ports:
+      - '8001:8000'
+    env_file:
+      - .env
+    volumes:
+      - dynamodb_data:/home/dynamodblocal/data
+
+  prometheus:
+    image: prom/prometheus:latest
+    ports:
+      - '9090:9090'
+    env_file:
+      - .env
+    volumes:
+      - ./infrastructure/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+      - ./infrastructure/prometheus/rules:/etc/prometheus/rules
+      - prometheus_data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.path=/prometheus'
+      - '--web.console.libraries=/usr/share/prometheus/console_libraries'
+      - '--web.console.templates=/usr/share/prometheus/consoles'
+
+  grafana:
+    image: grafana/grafana:latest
+    ports:
+      - '3006:3000'
+    env_file:
+      - .env
+    volumes:
+      - ./infrastructure/grafana/dashboards:/etc/grafana/dashboards
+      - ./infrastructure/grafana/provisioning:/etc/grafana/provisioning
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=${GF_SECURITY_ADMIN_PASSWORD}
+    depends_on:
+      - prometheus
+
+  opensearch:
+    image: opensearchproject/opensearch:2.11.0
+    container_name: opensearch
+    env_file:
+      - .env
+    environment:
+      - cluster.name=${OPENSEARCH_CLUSTER_NAME}
+      - node.name=${OPENSEARCH_NODE_NAME}
+      - discovery.type=${OPENSEARCH_DISCOVERY_TYPE}
+      - bootstrap.memory_lock=${OPENSEARCH_BOOTSTRAP_MEMORY_LOCK}
+      - 'OPENSEARCH_JAVA_OPTS=${OPENSEARCH_JAVA_OPTS}'
+      - 'DISABLE_INSTALL_DEMO_CONFIG=${OPENSEARCH_DISABLE_INSTALL_DEMO_CONFIG}'
+      - 'DISABLE_SECURITY_PLUGIN=${OPENSEARCH_DISABLE_SECURITY_PLUGIN}'
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    volumes:
+      - opensearch_data:/usr/share/opensearch/data
+    ports:
+      - '9200:9200'
+      - '9600:9600'
+    healthcheck:
+      test:
+        [
+          'CMD-SHELL',
+          "curl -s http://localhost:9200/_cluster/health | grep -q '\"status\":\"green\"\\|\"status\":\"yellow\"'",
+        ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  opensearch-dashboards:
+    image: opensearchproject/opensearch-dashboards:2.11.0
+    container_name: opensearch-dashboards
+    ports:
+      - '5601:5601'
+    env_file:
+      - .env
+    environment:
+      - OPENSEARCH_HOSTS=${OPENSEARCH_DASHBOARDS_HOSTS}
+      - 'DISABLE_SECURITY_DASHBOARDS_PLUGIN=${OPENSEARCH_DASHBOARDS_DISABLE_SECURITY_PLUGIN}'
+    depends_on:
+      opensearch:
+        condition: service_healthy
+
+  valkey:
+    image: valkey/valkey:latest
+    container_name: valkey
+    ports:
+      - '6379:6379'
+    env_file:
+      - .env
+    volumes:
+      - valkey_data:/data
+    command: ['valkey-server', '--save', '60', '1', '--loglevel', 'warning']
+    healthcheck:
+      test: ['CMD', 'valkey-cli', 'ping']
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  keycloak:
+    image: quay.io/keycloak/keycloak:latest
+    container_name: keycloak
+    networks:
+      default:
+        aliases:
+          - localhost # This allows keycloak to be reached via 'localhost' from other containers
+    ports:
+      - '8080:8080'
+      - '9000:9000'
+    env_file:
+      - .env
+    environment:
+      - KC_BOOTSTRAP_ADMIN_USERNAME=${KEYCLOAK_ADMIN:-admin}
+      - KC_BOOTSTRAP_ADMIN_PASSWORD=${KEYCLOAK_ADMIN_PASSWORD:-admin}
+    command: ['start-dev', '--import-realm']
+    volumes:
+      - keycloak_data:/opt/keycloak/data
+      - ./infrastructure/keycloak/realm-export.json:/opt/keycloak/data/import/realm-export.json
+
+  jaeger:
+    image: jaegertracing/all-in-one:latest
+    container_name: jaeger
+    ports:
+      - '6831:6831/udp' # Jaeger Thrift compact protocol (agent)
+      - '6832:6832/udp' # Jaeger Thrift binary protocol (agent)
+      - '5778:5778' # Jaeger agent configs
+      - '16686:16686' # Jaeger UI
+      - '4317:4317' # OTLP gRPC
+      - '4318:4318' # OTLP HTTP
+      - '14250:14250' # Jaeger model.proto
+      - '14268:14268' # Jaeger HTTP Thrift
+      - '14269:14269' # Jaeger admin port
+      - '9411:9411' # Zipkin compatible endpoint
+    environment:
+      - COLLECTOR_ZIPKIN_HOST_PORT=:9411
+      - COLLECTOR_OTLP_ENABLED=true
+      - COLLECTOR_OTLP_HTTP_ENABLED=true # Explicitly enable OTLP HTTP
+      - COLLECTOR_OTLP_HTTP_HOST_PORT=:4318 # Specify the port
+    healthcheck:
+      test: ['CMD', 'wget', '--spider', '-q', 'http://localhost:16686']
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+volumes:
+  dynamodb_data:
+  prometheus_data:
+  grafana_data:
+  opensearch_data:
+  valkey_data:
+  keycloak_data:
+  file_artifacts:
+  jaeger_data:

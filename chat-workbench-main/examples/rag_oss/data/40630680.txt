@@ -1,0 +1,454 @@
+
+Supplementary Information (SI) for RSC Advances.
+This journal is © The Royal Society of Chemistry 2025
+Supplementary Materials for:
+Exploring the Potential Molecular Targets and Therapeutic Mechanisms of
+Cyperi Rhizoma in Treating Diabetic Cardiomyopathy: A Computational
+Approach
+Su-Rui Lu¹#, Zi-Xiang Fu¹#, Yan Xia¹#, Yan-Mei Xu¹, Feng-Liang Wang³, Zhao-Wen
+Pan¹, Yi-Wei Tu¹, Wen-Jing Peng¹, Ming-Li Han¹, Wei Yu¹*, Wen-Liang Zha,¹,²*
+¹School of Pharmacy, Xianning Medical College, Hubei University of Science and
+Technology, Xianning 437100, China.
+²Second Affiliated Hospital, Xianning Medical College, Hubei University of Science
+and Technology, Xianning 437100, China.
+³Minda Hospital of Hubei Minzu University, En shi 445000, China.
+#SuRui Lu, Zi-Xiang Fu, and Yan Xia are the co-first authors of this paper.
+*Corresponding to:
+Wen-Liang Zha, Xianning Medical College, Hubei University of Science and
+Technology, No.88, Xiannng Avenue, Xianning 437100, China. E-mail:
+xyzwl800@163.com.
+Wei Yu, Xianning Medical College, Hubei University of Science and Technology,
+No.88, Xiannng Avenue, Xianning 437100, China. E-mail: yuwei0805@163.com
+TNF SIGNALING PATHWAY
+Leukocyte recruitment
+clAP1/2
+cIAP1/2 degradation
+Ccl2
+Cel5
+Ccl20
+Cxcll
+Cxcl2
+Cxcl3
+MAPK
++u
+signaling pathway
+Cxcl5
+Cxcl10
+Cx3ell
+ASKI
+Leukocyte activation
+TAB1/2/3
+MKK4/7
+JNK1/2
+AP-1
+Csfl
+Csf2
+TRAF2/5
+TAKI
+TNF
+TNFR1
+TRADD
++p
++p
+Surface receptors
+RIP1
+MKK3/6
+p38
+c/EBPβ
+Fas
+IL18R1
+Jagl
+DNA
+Tpl2
+Inflammatory cytokines
+NF-kB
+MSK1/2
+CREB
+SODD
+NIK
++p
+IL1b
+IL6
+IL15
+Lif
+Tnf
+TNF
+MEK1
+ERK1/2
+Intracellular
+signaling
+(negative)
+Shedding
+Ubiquitin mediated
++p
+Bel3
+Nfkbia
+Socs3
+Tnfaip3
+Trafl
+proteolysis
+TACE
+IkBa
+iRhom
+IKKB
+IkBa ubiquitination
+Intracellular signaling (positive)
+iTAP
+IKKα
+and degradation
+Ifi47
+IKKy
+NF-kB
+Transcription factors
+DNA
+Deubiquitination
+NF-kappa
+Fos
+Jun
+JunB
+CYLD
++p
+signaling pathway
+Remodeling of extracellular matrix
+Mmp3
+Mmp9
+Mmp14
+ITCH
+c-FLIP
+Vascular effects
+Ednl
+Vegfc
+Ripoptosome
+Apoptosis
+PRRS
+RIPI
++p,
+CASP7
+FADD
+CASP810
+Apoptosis
+Nod2
+RIP3
+CASP3
+Cell adhesion
+Icaml
+Sele
+Vcaml
+XIAP
+Synthesis of inflammatory mediators
+Necrosome
+Ptgs2
++p
+RIP1
+RIP3
+MLKL
+PGAM5L
+Drpl
+Necroptosis
+PGAM5S
+PI3K-Akt
+signaling pathway
+PI3K
+Akt
++p
+NF-kB
++p
++p
+NIK
+IKKs
+IkBa
+Degradation
+(Limited expression)
+TRAF1
++p
+INF/LTA
+TNFR2
+TRAF2
+clAP1/2
+RIP
+MKK3
+p38
+Cell survival
+TRAF3
++p
+AIPI
+JNK
+e-Jun
+Apoptosis
+IRF1
+-0
+IFNB
+DNA
+04668 5/20/24
+(c) Kanehisa Laboratories
+Figure S1 Map of TNF signaling pathway
+AGE-RAGE SIGNALING PATHWAY IN DIABETIC COMPLICATIONS
+p27
+Cell hypertrophy
+ECM production
++p
+FN
+TOF-B
+TOFBRI
+Smad2/3
+COL
+Mesangial matrix expansion
+TGFBRII
+TGF -beta
+**
+DNA
+TOF-B1
+signaling pathway
+Smad4
+AGT
+ATIR
+Renin- -angiotensin
+MAPK
+system
+signaling pathway
+ROS
+DNAO
+TGF-B1
++p
+O
+RAGE
+Calcium signaling
+ERK1/2
+Positive feedback
+NADPH
+pathway
+AP-1
+VEGF
+Angiogenesis
+DAG
+PLC
+PKC
+p38
+MCP-1
+PAI-1
+SELE
+Thrombogenesis,
+DNA
+inflammation,
+VCAM-
+ICAM-1
+MMP2
+atherosclerosis
+IP3
+Ca'
+Aging
+IL-1
+IL-6
+IL-8
+Inflammation
+Inflammation
+Oxidative Stress
+p21 RAS
+JNK
+NF-kB
+TNF-a
+TF
+ENDI
+Dia-1
+Ischemia -reperfusion
+THBD
+High glucose O
+ROS
+RAGE
+AGEs
+Akt
+NADPH
+PI3K
+FOX01
+PI3K-AKT
+Cer
+JNK
+Bel-2
+Apoptosis
+signaling pathway
+NOS
+p38
+CASP3
+Bax
+Pim-1
+DNA
+Jak-STAT
+siganling pathway
++p
+STAT3
+NFATe1
+Vascular remodeling
+DNA
++p
+JAK2
++p
+STAT1,3
+COLI
+DNA
+Cell cycle
+STAT5
+O
+CycD1
+DNA
+Cellular proliferation leading to renal hypertrophy
+CDK4
+Hypoxia
+RAGE
+PKCBH
+JNK
+Egr-1
+>0
+Expression Egr-1
+dependent genes
+Vascular dysfunction
+AGEs
+DNA
+04933 1/29/19
+(c) Kanchisa Laboratories
+Figure S2 Map of AGE-RAGE signaling pathway in diabetic complications
+ARG-328
+2.6
+2.3
+2.2
+ALA 329
+26
+2.2
+TYR-326
+2.8
+2.2
+TYR-38
+center_X = 6.29 center_Y = - 7.941 center_Z = 17.261 Binding energy = -5.6
+size_X=75.25 size_Y=75.25
+size= 75.25
+Figure S3 Molecular docking between AKT1 and its natural ligand PIP3
+A
+0.5
+AKT1
+B
+0.7
+AKT1
+AKT1-quercetin
+0.6
+AKT1-quercetin
+0.4
+0.5
+0.3
+RMSD (nm)
+RMSF (nm)
+0.4
+0.3
+0.2
+0.2
+0.1
+0.1
+0.0
+0.0
+0
+20
+40
+60
+80
+100
+0
+100
+200
+300
+400
+Time (ns)
+Residue
+C
+220
+D
+2.25
+AKT1
+AKT1
+AKT1-quercetin
+AKT1-quercetin
+2.20
+SASA (nm²)
+200
+Rg (nm)
+2.15
+180
+2.10
+160
+2.05
+0
+20
+40
+60
+80
+100
+0
+20
+40
+60
+80
+100
+Time (ns)
+Time (ns)
+E
+F
+6
+AKT1 quercetin
+Contribution Energy (KJ/mol)
+0
+5
+Number of H-bond
+4
+3
+2
+Contribution Energy
+-5
+(KJ/mol)
+-10
+1
+0
+-15
+0
+20
+40
+60
+80
+100
+TRP80R81HR82
+Time (ns)
+Residue
+Figure S4 Analysis of MDS Results
+(A) RMSD of AKT1-quercetin.(B) RMSF of AKT1-quercetin.(C) SASA of AKT1-quercetin.(D)
+Rg changes of AKT1-quercetin.(E) Number of Hydrogen Bonds (HBNUM) of AKT1-quercetin.(F)
+Free Energy Decomposition of Amino Acids for AKT1-quercetin.
+Table S1 Protein ligand MMPBSA analysis
+Energy
+complex
+Van der Waals Energy (KJ/mol)
+-156.766
+Electrostatic energy (kJ/mol)
+-75.610
+Polar solvation energy (KJ/mol)
+161.970
+Nonpolar solvation Energy(KJ/mol)
+-19.120
+Total Binding Energy(KJ/mol)
+-89.526
+-TAS(KJ/mol)
+4.473
+Total Binding Free Energy(KJ/mol)
+-85.053
+#
+#
+150
+#
+*
+#
+Cell viability (%)
+100
+50
+0
+Control DM+ DM (20HM)
+Figure S5 Impact of quercetin and luteolin on H9c2 cardiomyocytes in a
+diabetic environment
+Influence of quercetin and luteolin on the survival rate of H9c2 myocardial cells subjected to
+injury from high glucose and PA, as relative to the Control group, *P < 0.05; and relative to the
+DM group, #P < 0.05, n=3 different cell batches. * indicates that there is a correlation between
+two variables and a P<0.05 is considered to indicate statistical significance.

@@ -1,0 +1,130 @@
+[project]
+name = "app"
+version = "1.0.0"
+description = "Chat Workbench backend application"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "aiobotocore>=2.19.0",
+    "cachetools>=5.5.1",
+    "fastapi>=0.115.8",
+    "jinja2>=3.1.5",
+    "loguru>=0.7.3",
+    "prometheus-client>=0.21.1",
+    "pydantic>=2.10.6",
+    "pydantic-settings>=2.7.1",
+    "python-multipart>=0.0.20",
+    "starlette>=0.45.3",
+    "uvicorn[standard]>=0.34.0",
+    "valkey>=6.1.0",
+    "PyJWT[crypto]>=2.10.1",
+    "cryptography>=43.0.0",
+    "httpx>=0.28.1",
+    "nanoid>=2.0.0",
+    "aiofiles>=24.1.0",
+    "strands-agents>=1.1.0",
+    "strands-agents-tools>=0.2.2",
+    "opensearch-py>=3.0.0",
+    "requests-aws4auth>=1.3.1",
+    "tiktoken>=0.5.0",
+    # OpenTelemetry dependencies
+    "opentelemetry-api>=1.20.0",
+    "opentelemetry-sdk>=1.20.0",
+    "opentelemetry-exporter-otlp>=1.20.0",
+    "opentelemetry-instrumentation>=0.56b0",
+    "opentelemetry-instrumentation-fastapi>=0.56b0",
+    "opentelemetry-instrumentation-httpx>=0.56b0",
+]
+
+[project.scripts]
+api = "app.api.main:main"
+
+[tool.uv]
+package = true
+
+dev-dependencies = [
+    # Testing dependencies
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "pytest-mock>=3.12.0",
+    "pytest-cov>=4.0.0",
+    "pytest-xdist>=3.3.0",
+    # AWS mocking
+    "moto[all]>=5.0.0",
+    # Test utilities
+    "httpx>=0.28.0",
+    "respx>=0.21.0",
+    # Factories for test data
+    "factory-boy>=3.3.0",
+]
+
+[tool.pytest.ini_options]
+# Test discovery
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+
+# Async support
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+
+# Markers for test categorization
+markers = [
+    "unit: Fast unit tests (default)",
+    "integration: Integration tests with external services",
+    "slow: Tests that take >5 seconds",
+    "aws: Tests requiring AWS services/credentials",
+    "concurrent: Tests for concurrency and race conditions",
+    "api: API endpoint tests",
+    "repository: Repository/database tests",
+    "service: Service layer tests",
+    "task_handler: Task handler tests (highest priority)",
+    "auth: Authentication and authorization tests",
+    "data: Data layer and repository pattern tests"
+]
+
+# Coverage configuration
+addopts = [
+    "--strict-markers",
+    "--strict-config",
+    "--cov=app",
+    "--cov-report=term-missing",
+    "--cov-report=html:htmlcov",
+    "--cov-report=xml",
+    "--cov-fail-under=80",
+    "-ra",
+    "--tb=short"
+]
+
+# Parallel execution
+# Use -n auto to automatically determine worker count
+# Can be overridden with -n <num> in command line
+
+# Test timeout (prevent hanging tests) - handled by pytest-timeout plugin if installed
+# timeout = 300
+
+[tool.coverage.run]
+source = ["app"]
+omit = [
+    "*/tests/*",
+    "*/test_*.py",
+    "*/__pycache__/*",
+    "*/migrations/*",
+    "*/venv/*",
+    "*/.venv/*"
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "if settings.DEBUG",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:",
+    "class .*\\bProtocol\\):",
+    "@(abc\\.)?abstractmethod"
+]

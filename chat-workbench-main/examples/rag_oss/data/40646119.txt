@@ -1,0 +1,1155 @@
+
+www.nature.com/scientificreports
+scientific reports
+Check for updates
+OPEN
+A promising platform of hypoxia
+sensitive magnetosomes in
+hepatocellular carcinoma therapy
+Kun Deng1,4, Jiaojiao Wang¹,⁴, Xia Zhou²,⁴, Yuanyuan Geng¹, Weiquan Liu¹, Yiheng Zhang²,
+Yuangang Liu2,3
+& Wei Jiang1
+Here, we engineered hypoxia-responsive nanoparticles (NI-HA-BMs-DOX) comprising 2-nitroimidazole
+(NI), hyaluronic acid (HA), bacterial magnetosomes (BMs), and doxorubicin (DOX) for targeted
+drug delivery. Under tumor hypoxia, the hypoxia-sensitive NI moiety undergoes reduction to
+2-aminoimidazole, inducing a transition of the nanoparticles from a hydrophobic to a hydrophilic state,
+thereby facilitating controlled DOX release. Cellular assays demonstrated selective DOX delivery to
+HepG2 hepatocellular carcinoma cells under hypoxic conditions, while exhibiting minimal cytotoxicity
+toward normal hepatocytes (HL-7702). NI-HA-BMs-DOX significantly enhanced tumor cytotoxicity and
+apoptosis by upregulating caspase-3, caspase-8, and Tp53, demonstrating superior efficacy compared
+to free DOX and HA-BMs-DOX. In vivo studies further confirmed the therapeutic potential of NI-HA-
+BMs-DOX (4 mg/kg DOX equivalent), achieving a tumor inhibition rate of 55.38%, which exceeded
+that of HA-BMs-DOX (43.88%) and free DOX (34.90%). These findings validate NI-HA-BMs-DOX as
+a promising hypoxia-targeted therapeutic platform for HCC and highlight the potential of bacterial
+magnetosomes in improving drug delivery strategies for cancer treatment.
+Keywords Bacterial magnetosomes, Doxorubicin, Hypoxia, Antitumor effect
+Hypoxia, a pathological condition characterized by insufficient oxygen supply, plays a crucial role in the
+progression of various diseases, including cancer, cardiovascular diseases, ischemia-related conditions,
+and rheumatoid arthritis¹ Tumor hypoxia results from disrupted vascular flow or fast tumor development
+exceeding oxygen delivery. Due to aberrant, inefficient blood arteries, tumor tissues have lower oxygen levels (5
+mmHg) than healthy tissues (40-60 mmHg). These abnormal circulatory systems promote acute and persistent
+tumor hypoxia³. A key strategy in hypoxia-targeted therapy involves the use of nitroimidazoles, which exhibit
+selective hypoxia sensitivity⁴. Due to its hydrophobicity and hypoxia sensitivity, nitroimidazole has been
+frequently exploited in drug carrier development in recent years The ability of nitroimidazoles to mimic the
+role of oxygen in radiochemical processes has led to their widespread use as radiosensitizers for hypoxic cells⁸.
+The biggest obstacles in using nitroimidazole as a radiosensitizer in hypoxic cells are boosting medication
+concentration at the tumor location and avoiding deleterious side effects on normal tissues. Due to its great
+sensitivity to hypoxia, 2-nitroimidazole has been frequently used in contrast and bioreductive agent research 10,11
+Upon entering hypoxic cells, 2-nitroimidazole undergoes a series of enzymatic reduction reactions catalyzed
+by nitroreductases, converting it into hydrophilic 2-aminoimidazoles that accumulate within hypoxic cells¹²,
+which can be converted to hydrophilic 2-aminoimidazoles and retained in the cell¹³. Reoxidizing the reduced
+nitro group to the original material in normoxic cells allows it to diffuse beyond the cell. The reduced nitro
+group cannot be reoxidized in hypoxic cells, therefore the reduced product is further reduced and maintained.
+2-nitroimidazole is potential for tumor hypoxia imaging and hypoxia-responsive drug carriers because to this
+property.
+Doxorubicin (DOX) is a widely used anthracycline antibiotic known for its potent anticancer effects. It
+was initially isolated from Streptomyces peucetius and has been extensively utilized for treating hematological
+malignancies, solid tumors, and sarcomas¹⁴,¹⁵. DOX exerts its therapeutic effects primarily through two
+mechanisms: (1) intercalation into DNA, which inhibits replication and transcription 16 and (2) generation
+of free radicals, leading to oxidative damage to cellular components. In addition, DOX can also inhibit the
+¹State Key Laboratory of Animal Biotech Breeding, College of Biological Sciences, China Agricultural University,
+Beijing 100193, China. ²Institute of Pharmaceutical Engineering, Huaqiao University, Xiamen 361021, China.
+³State Key Laboratory of Vaccines for Infectious Diseases, Xiang An Biomedicine Laboratory, Xiamen 361102,
+China. 4Kun Deng, Jiaojiao Wang and Xia Zhou contributed equally to this work. email: ygliu@hqu.edu.cn;
+jiangwei01@cau.edu.cn
+Scientific Reports
+-
+(2025) 15:25031
+I
+https://doi.org/10.1038/s41598-025-10353-y
+natureportfolio
+1
+www.nature.com/scientificreports/
+activity of topoisomerase II, which markedly suppresses DNA replication, transcription and repair¹⁷,¹⁸. DOX is
+considered one of the most effective chemotherapeutic agents.
+Bacterial magnetosomes (BMs) are synthesized in magnetotactic bacteria and consist of nanoscale magnetic
+particles coated with lipid bilayers¹⁹, the main component of which is Fe₃O₄ or Fe₃S₄; these molecules are
+arranged in a chain-like form in the cell²⁰,²¹. BMs are produced through precise genetic control and exhibit
+uniformity in shape, size, and dispersity. The size of magnetosome crystals typically ranges from 35 to 120 nm
+and exhibits a stable single magnetic domain characteristic²²,²³. Compared with chemically synthesized
+magnetic nanoparticles²⁴, the nanometer scale of BMs enhances heating efficiency. Another advantage of BMs is
+the high purity of their crystalline components; X-ray diffraction analysis indicates that the crystallinity of BMs
+exceeds that of chemically synthesized magnetosomes²⁵. Magnetosomes are encased in lipid bilayers that exhibit
+a high density of amino and carboxyl groups on their surface, facilitating the straightforward functionalization
+of biomolecules²⁶. Additionally, the presence of a magnetosome membrane and the negative charge on the
+surface of the membrane endow the magnetosome with good dispersion, therefore, magnetosomes have special
+advantages as drug carriers²⁷.
+In this study, we developed a novel hypoxia-responsive nanoplatform, Ni-HA-BMs-DOX, which integrates
+nitroimidazole (NI), hyaluronic acid (HA), bacterial magnetosomes (BMs), and doxorubicin (DOX) to achieve
+selective drug release in hypoxic tumor environments. The physicochemical properties of these nanoparticles
+were characterized using nuclear magnetic resonance (NMR) and Fourier-transform infrared spectroscopy (FT-
+IR). Our findings demonstrate that Ni-HA-BMs-DOX nanoparticles significantly enhance DOX accumulation
+in hypoxic cancer cells, induce higher levels of apoptosis, and exhibit superior tumor inhibition compared to
+free DOX or HA-BMs-DOX. By leveraging hypoxia-responsive drug release and magnetic targeting, this study
+provides a promising platform for improving the therapeutic efficacy of HCC treatment.
+Materials and methods
+Experimental cell lines and mouse models
+The human hepatoma cell line HepG2 and the human normal hepatic cell line HL-7702 were cultivated in
+our laboratory. Male BALB/c nude mice (aged 6-8 weeks) were procured from Beijing Vital River Laboratory
+Animal Technology (Beijing, China).
+Synthesis of the NI-HA-BMs-DOX complexes
+At Huaqiao University in Fujian, China, 2-nitroimidazole (NI), hyaluronic acid (HA), bacterial magnetosomes
+(BMs), and doxorubicin (DOX) were synthesized. The synthesis produced NI-BOC and NI-NH, from
+2-nitroimidazole: A specified amount of NI (0.5mmol), tert-butyl (6-hexyl bromide) carbamate (0.5mmol),
+and potassium carbonate (0.6mmol) was dissolved in dimethylformamide (DMF) and heated at 80 °C for 1 h.
+Following completion of the reaction, the mixture was naturally cooled to room temperature. The reaction
+solution was extracted 2-3 times using ethyl acetate and subsequently concentrated via rotary evaporation at
+40 °C. The resulting solution was purified using silica gel column chromatography (petroleum ether/ethyl acetate,
+3:1 v/v), yielding the purified product NI-BOC. The purified NI-BOC was dissolved in 1.2 mol/L hydrochloric
+acid/methanol solution under ice bath conditions, The organic solvent was removed by rotary evaporation,
+and the product was washed 2-3 times with dichloromethane to obtain NI-NH₂ (2-nitroimidazolylamine).
+NI-NH, was dissolved in DMF, and 1 mg/mL bacterial magnetosomes, sodium hyaluronate (HA, 1 mg/mL),
+and genipin (GP, 1.2%) were added. Cross-linking was carried out at 37 °C for 12 h at 60 rpm, resulting in the
+formation of NI-HA-BMs. NI-HA-BMs were resuspended in phosphate-buffered saline (PBS), followed by the
+addition of the cross-linking agents N-(3-dimethylaminopropyl)-N'-ethylcarbodiimide hydrochloride (EDC)
+and N-hydroxysuccinimide (NHS). Subsequently, 1 mL of doxorubicin hydrochloride (DOX, 1 mg/mL) was
+introduced. The solution was sonicated at 100 W for 5 min (5s pulse on/1s pulse off). NI-HA-BMs-DOX was
+obtained by stirring at 37 °C for 24 h at 60 rpm. After freeze-drying, the final product was stored at 4 °C for
+further analysis.
+Characterization of related complex-related properties
+CDCl₂ MeOD, D,O was used to solubilize and structurally analyze NI-BOC, NI-NH, and NI-HA-BMs at 500
+MHz H-NMR. The KBr tablet method was used to characterize freeze-dried HA, BMs, DOX, NI-NH₂, and
+NI-HA-BMs-DOX by FT-IR. A specified amount of the material to be studied was combined, reduced to a fine
+powder, pressed into a tablet, and the various functional groups were recognized within the wavenumber range
+of 4000-400 cm⁻¹ after finely grinding KBr in an agate mortar.
+Drug loading capacity
+To make a specific concentration solution, lyophilized NI-HA-BMs-DOX was measured and reconstituted in
+PBS (pH=7.4). The highest DOX absorbance wavelength was measured with a UV-vis spectrophotometer. The
+absorbance value was compared to the DOX standard curve in PBS at pH 7.4 to determine DOX content. The
+DOX concentration in NI-HA-BMs-DOX was calculated using the formula: Drug loading = (W1÷W2) 100%,
+where W1 represents drug content within NPs and W2 represents total NP concentration.
+Cell culture
+The cell lines HepG2 and HL-7702 were cultured and sustained in Dulbecco's modified Eagle's medium
+(DMEM) with 10% (v/v) FBS (Gibco, USA) and 1% penicillin-streptomycin. The cells were kept in a humidified
+environment with 5% CO2 and 95% air for an incubation period of 37 °C.
+Scientific Reports
+(2025) 15:25031
+|
+https://doi.org/10.1038/s41598-025-10353-y
+natureportfolio
+2
+www.nature.com/scientificreports/
+Observation and detection of cells
+We used CLSM and flow cytometry to analyze HepG2 and HL-7702 cells. After fixing with 4% paraformaldehyde,
+permeabilizing with 0.5% Triton X-100, and mark detection with FITC-MAb1, cells were nuclear counterstained
+with DAPI. In flow cytometry, cells were fixed with 70% ethanol, treated with FITC-MAb1, and evaluated after
+removing unbound antibody. Hypoxyprobeᵀ was used to identify hypoxic areas in cells after 12 h of exposure
+to 1% O₂. After treatment, cells were collected, fixed, and assessed for intracellular hypoxia using CLSM and
+flow cytometry.
+Cell viability was measured by MTT assay
+Cells were seeded in 96-well plates at 1x 10⁴ per well and cultivated to 80-90% confluence at 37 °C with 5% CO2.
+Patients were treated with DOX, HA-BMs-DOX, or NI-HA-BMs-DOX (0-10 µg/mL) for 12 h under normoxic
+and hypoxic (1% O₂) settings. Add 100 µL of 0.5 mg/mL MTT solution and incubate plates for 4 hours after
+treatment. After adding 110 µL of DMSO to dissolve formazan crystals, cell viability was assessed by measuring
+absorbance at 492 nm with a microplate reader.
+Analysis of the cellular uptake of NI-HA-BMs-DOX
+Cells were sown at 5x 10⁴ cells/well in 24-well plates with sterile slides and grown at 37 °C in a humid incubator
+with 5% CO2. After confluence, cells were hypoxic (1% O₂) for 12 h. After adding Hypoxyprobe™-1 (6 µg/mL)
+to the medium, DOX, HA-BMs-DOX, or NI-HA-BMs-DOX were added and the final DOX concentration was
+10 µg/mL. Control groups received similar BMs and were incubated for 6 h under normoxic and hypoxic (1%
+O₂) conditions. After incubation, cells were fixed and studied using laser confocal fluorescence microscopy to
+assess experimental results.
+In vitro cytotoxicity assay and apoptosis assay
+Hoechst 33,342 stained cells for apoptosis. Cells were seeded at 5x 10⁴ cells/well in 24-well plates with sterile
+slides and grown at 37 °C in a humid incubator with 5% CO2. After 80-90% confluence, the culture medium was
+replaced with fresh medium containing 1 µg/mL DOX, HA-BMs-DOX, and NI-HA-BMs-DOX. Control groups
+received an equivalent BM concentration and were incubated for 24 h under normoxic and hypoxic (1%O₂)
+settings. After treatment, cells were fixed and fluorescence microscopy was used to assess apoptosis.
+Apoptosis assay
+HepG2 and HL-7702 cells were seeded at 5x 10⁴ cells/well in sterile coverslip-lined 24-well plates and grown
+under normal conditions. Cells were treated with 1 µg/mL free DOX, HA-BMs-DOX, or NI-HA-BMs-DOX
+for 12-24 h. Control groups received similar BMs and were incubated for 24 h under normoxic and hypoxic
+(1% O₂) conditions. Post-treatment, cells were fixed and stained with Hoechst 33,342 (100 µg/mL; Solarbio,
+China) at 37 °C for 15 min in the dark. Apoptotic bodies were detected and seen using fluorescence microscopy
+(AopTome, Germany).
+Quantitative real-time PCR
+HepG2 and HL-7702 cells were seeded at 1x 10⁵ cells/well in 12-well plates and incubated at 37 °C for 12 h,
+and treated with 1 µg/mL of free DOX, NI-BMs-DOX, or NI-HA-BMs-DOX for 12, 24, or 48 h. Following the
+manufacturer's instructions, the Total RNA Purification Kit (Genemark, Taiwan) extracted total RNA. Using
+Fast SYBR Mixture (with High ROX) (CWBIO, Beijing, China), all samples were evaluated in triplicate for
+repeatability and accuracy in quantitative real-time PCR (qRT-PCR).
+NI-HA-BMs-DOX tumor suppression experiments in vivo
+HepG2 cells X 10⁷ cells/mouse in 0.1 mL PBS) were subcutaneously implanted into the right flank of male
+BALB/c nude mice to initiate tumor formation. The tumor volume was determined using the formula A X B2/2,
+where A is the length and B is the width in millimeters. When the average tumor volume exceeded 40 mm³,
+mice were separated into five groups (n=6) and given intravenous injections of 4 mg/kg DOX as BMs, HA-BMs-
+DOX, NI-HA-BMs-DOX, or free DOX every 3 days. A control group received PBS. Every 3 days, weight and
+tumor volume were measured.
+Detection of iron ions in tumors
+For each sample, 20 mg of tumor tissue was placed in Eppendorf tubes and 100 µL of pure nitric acid was added.
+After complete digestion, the tubes were incubated at 100 °C for 3 h to decompose organic material. To eliminate
+particle matter, 100 µL of the digested sample was diluted in 5 mL of ultrapure water and passed through 0.22 µm
+microporous membranes. To measure iron concentration in processed samples, the iCAP 6300 equipment
+(Thermo Fisher Scientific) was used for inductively coupled plasma-optical emission spectrometry (ICP-OES).
+Mice
+The protocols for animal experiments were approved by the Institutional Ethical Committee of China
+Agricultural University. All experiments were performed in accordance with the guidelines approved by the
+Institutional Ethical Committee.
+Histological analysis
+Tumors, heart, liver and lung tissues were selected randomly from each group (n=6) for histological analysis.
+Segments of tissues were fixed in 10%formalin, embedded in paraffin, cut into 20 µm sections, and stained with
+hematoxylin and eosin (H&E). Stained sections were examined with a microscope.
+Scientific Reports
+I
+(2025) 15:25031
+I
+https://doi.org/10.1038/s41598-025-10353-y
+natureportfolio
+3
+www.nature.com/scientificreports/
+Statistical analysis
+Three replicates were used for all studies. Data were processed and displayed using GraphPad Prism software,
+and provided as means ± SDs. Significant differences were determined at *p <0.05, **p <0.01, ***p <0.001, and
+****p<0.0001.
+Results
+NI-HA-BMs -DOX complexes were synthesized
+NI-BOC was synthesized by reacting 2-nitroimidazole with tert-butyl (6-hexyl bromide) carbamate in the
+presence of potassium carbonate, followed by purification through washing with dichloromethane (2-3 times) to
+yield 2-nitroimidazole hexylamine (NI-NH₂). The chemical structures of NI-BOC and NI-NH₂ were confirmed
+using nuclear magnetic resonance (NMR) spectroscopy (Fig. 1A-B). The synthesized 2-nitroimidazolylamine
+was dissolved in DMF, and a mixture containing 1 mg/mL magnetosome and 1 mg/mL sodium hyaluronate
+(HA) was added. Crosslinking and subsequent purification were performed to obtain NI-HA-BMs. The
+structure of NI-HA-BMs was analyzed using Fourier transform infrared (FTIR) spectroscopy (Fig. 1C). The
+resulting NI-HA-BMs were further dissolved in phosphate-buffered saline (PBS), and crosslinking agents, N-
+A
+B
+9
+8
+7
+6
+5
+4
+3
+2
+1
+0
+-1
+9
+8
+7
+6
+5
+4
+3
+2
+1
+0
+-1
+C
+D
+650.4
+2925.8
+3428.1
+2965.2
+2439.4
+1588.41
+1540.2L
+1489.1
+1279.3
+1024.3)
+3435.7
+1724.1
+1630.8
+1281.9-
+1362.8
+1361.0
+1078.6
+947.3
+NI-NH,
+1257.5
+860.3
+546.3
+NI-HA-BMs
+946.0
+2895.6
+1322.4
+611.0
+1730.1
+1525.8
+805.6
+3407.7
+1616.3
+1151.0L
+3434.8
+1619.8
+1414.6
+1045.2
+HA
+DOX
+3446.3
+1747.1-
+1646.5
+1361.7
+1701.3)
+1630.5-
+861.5
+525.0
+1723.7
+1161.4
+946.0
+546.1
+1685.5
+1080.0
+1075.0
+859.7
+3438.3
+1160.0
+BMs
+NI-HA-BMs-DOX
+4000
+3000
+2000
+1000
+500
+4000
+3000
+2000
+1000
+500
+Wavelength number (cm⁻¹)
+Wavelength number (cm⁻¹)
+Fig. 1. Structural characterization of each compound in the NI-HA-BMs-DOX synthesis pathway: (A) NI-
+BOC ¹H-NMR, H-NMR (500 MHz, CDCl₂) δ 7.16 (s, 1H), 7.10 (s, 1H), 4.45-4.39 (m, 2 H), 3.13 (s, 1H),
+1.46 (s, 6 H), 1.27 (s, 4 H), 0.86 (dd, J =7.7, 4.0 Hz, 9 H). (B) NI-NH, H-NMR, ¹H-NMR (500 MHz, MeOD)
+δ 7.65 (s, 1H), 7.27 (s, 1H), 5.51 (s, 2 H), 2.95 (s, 2 H), 1.91 (d, =6.9 Hz, 2 H), 1.70 (s, 2 H), 1.20 (t, = Hz,
+2 H). (C) FT-IR spectra ofNI-NH₂, HA and BMs. The main characteristic absorption peaks of Ni-NH, are
+located at 3428, 1540, 1362 and 885 cm⁻¹. The peak at 1540 cm⁻¹ is attributed to the asymmetric stretching
+vibration of -NO₂, the peak at 1362 cm⁻¹ is attributed to the symmetric stretching vibration of -NO₂, the peak
+at 885 cm⁻¹ is attributed to the absorption of C-N, and the peak at 3428 cm⁻¹ is characteristic of the primary
+amino group on the carbon chain. (D) FT-IR spectra of NI-HA-BMs, DOX and NI-HA-BMs-DOX. The NI-
+HA-BMs showed a similar peak to that of the HA-BMs except for the Fe-O absorption peak at 546 cm⁻¹, and
+the characteristic absorption peaks of nitroimidazole at 1540, 1360 and 860 cm⁻¹ appeared. The characteristic
+absorption peaks of amide bonds were found at 2925, 1724, 1630 and 1281 cm⁻¹. The changes in the spectra
+of the NI-HA-BMs-DOX compared with those of the DOX are as follows: the absorption peaks of Fe-O
+(525 cm⁻¹) and 2-nitroimidazole (1560, 1364, and 861 cm⁻¹) and the characteristic peaks of amide bonds
+(2927, 1630, 1560, and 1283 cm⁻¹) were observed. In addition, the primary amino peak at 2927 cm⁻¹ and the
+carbonyl group peak at 1701 cm⁻¹ were attributed to the NI-HA-BMs-DOX. The peak of NI-HA-BMs-DOX
+was weakened compared with that of DOX, indicating that after drug loading, the amino and carboxyl groups
+of DOX were involved in the chemical reaction, resulting in the attenuation of the corresponding peak.
+Scientific Reports I (2025) 15:25031
+|
+https://doi.org/10.1038/s41598-025-10353-y
+natureportfolio
+4
+www.nature.com/scientificreports/
+(3-dimethylaminopropyl)-N-ethylcarbodimide hydrochloride (EDC) and N-hydroxysuccinimide (NHS), were
+added. Adriamycin hydrochloride (DOX, 1 mg/mL) was introduced, and ultrasonic crosslinking was carried
+out to produce NI-HA-BMs-DOX. The final product was structurally characterized to confirm its successful
+synthesis and composition (Fig. 1D).
+Characterization of related properties of NI-HA-BMs-DOX after treatment with different
+oxygen concentrations
+Hypoxia treatment increased NI-HA-BMs-DOX particle size and lowered absolute zeta potential. Additionally,
+full-wavelength UV absorption scans showed a change from 330 to 270 nm. Morphological observations showed
+particle size growth and membrane breakdown (Fig. 2).
+Hypoxia resulted in efficient DOX release from the NI-HA-BMs-DOX complexes
+In the hypoxic tumor environment, the hypoxia-responsive group 2-nitroimidazole in the NI-HA-BMs-DOX
+polymer changes from 2-nitroimidazole to 2-aminomidazole, altering its hydrophobicity and releasing the
+drug from the compact nanoparticle structure, increasing drug concentration at the target site. Flow cytometry
+analysis (Fig. 3A) shows that HepG2 cells release DOX from the NI-HA-BMs-DOX complex intracellularly
+under hypoxia. Normal liver cells HL-7702 (Fig. 3B) have lower fluorescence than HepG2 cells under the same
+circumstances, indicating a less hypoxic environment.
+HepG2 cell uptake of NI-HA-BMs-DOX was examined under normoxic and hypoxic conditions using
+laser confocal fluorescence microscopy. As shown in Fig. 4, cells absorb free DOX better than HA-BMs-DOX
+and NI-HA-BMs-DOX in normoxic conditions. Under hypoxic conditions, DOX-treated cells had enhanced
+fluorescence intensity, whereas HA-BMs-DOX cells did not. NI-HA-BMs-DOX cells did. These results support
+flow cytometry findings that NI-HA-BMs-DOX releases DOX under hypoxia.
+A
+B
+NPs
+NPs
+BMs
+(Normoxic)
+(Hypoxic)
+0
+100
+BMs
+NPs (Normoxic)
+NPs (Hypoxic)
+-5
+80
+60
+Number (%)
+40
+Zeta potential (mV)
+-10
+-15
+20
+-20
+0
+0
+200
+400
+600
+800
+1000
+1200
+1400
+1600
+1800
+2000
+Diameter (nm)
+C
+D
+3.0
+2.8
+NPs (Normoxic)
+2.6
+NPs (Hypoxic)
+BMs
+NPs (Normoxic)
+NPs (Hypoxic)
+2.4
+2.2
+2.0
+1.8
+Absorbance
+1.6
+1.4
+1.2
+1.0
+0.8
+0.6
+0.4
+0.2
+à
+1
+0.0
+240
+260
+280
+300
+320
+340
+360
+380
+400
+Wavelength (nm)
+Fig. 2. Particle Size Change (A): Due to hydrophobic interactions and electrostatic forces, NI-HA-BMs-
+DOX nanoparticles are larger than BMs. Under low oxygen, 2-nitroimidazole converts to hydrophilic
+2-aminomidazole, expanding polymers and increasing particle size. (B) The zeta potential of NI-HA-BMs-
+DOX falls due to surface polymer grafting, which increases particle size and reduces steric repulsion. The
+reduction of 2-nitroimidazole decreases the zeta potential under low oxygen by increasing the number of
+positively charged amino groups on the particle surface. (C) UV Absorption Wavelength modifications: NI-
+HA-BMs-DOX maximizes UV absorption at 330 nm, which shifts to 270 nm under low oxygen circumstances,
+suggesting the chemical transformation from 2-nitroimidazole to 2-aminoimidazole and nanoparticle
+molecular structural modifications. (D) Morphological Changes: Transmission electron microscopy shows that
+NI-HA-BMs-DOX makes a structured membrane around magnetic particles with a thicker outer layer than
+BMs. In hypoxia, membrane rupture and dispersion promote regulated medication release.
+Scientific Reports
+I
+(2025) 15:25031
+|
+https://doi.org/10.1038/s41598-025-10353-y
+natureportfolio
+5
+www.nature.com/scientificreports/
+A
+Normoxic
+Hypoxia
+400
+Count
+Mean fluorescence intensity
+250
+200
+150
+100
+50
+1
+2
+10
+10
+10³
+0
+FL2-H::PE
+t/o
+Normoxic :
+CK
+HA-BMs-DOX
+DOX
+NI-HA-BMs-DOX
+Hypoxia :
+CK
+HA-BMs-DOX
+HA., DOX
+DOX
+NI-HA-BMs-DOX
+B
+Normoxic
+Hypoxia
+450
+300
+Count
+Mean fluorescence intensity
+200
+150
+*
+100
+50
+0
+1
+2
+3
+10
+10
+10
+FL2-H::PE
+t/o
+Normoxic :
+CK
+HA-BMs-DOX
+DOX
+NI-HA-BMs-DOX
+DOX-BM6-DOX HA
+Hypoxia :
+CK
+HA-BMs-DOX
+DOX
+NI-HA-BMs-DOX
+Fig. 3. Uptake of NI-HA-BMs-DOX complexes by HepG2 and HL-7702 cells; HA-BMs-DOX: drug group
+with BMs as a carrier and DOX; NI-HA-BMs-DOX: drug group with BMs as the carrier and carrying both
+NI and DOX. (A) DOX, HA-BMs-DOX and NI-HA-BMs-DOX uptake by HepG2 cells under normoxic and
+hypoxic conditions; (B) DOX, HA-BMs-DOX and NI-HA-BMs-DOX uptake by HL-7702 cells under normoxic
+and hypoxic conditions. The experimental results were plotted using GraphPad Prism 6.0 software and are
+presented as the means ± SDs (n=3).
+The cytotoxicity of NI-HA-BMs-DOX was detected
+Prolonged hypoxia can severely impair cell development. HepG2 cells were treated with the NI-HA-BMs-DOX
+complex for 24 h and observed using the MTT test to determine how hypoxia affected cell viability. Figure 5A
+shows HepG2 findings. DOX concentration dose-dependently increased cell viability in the DOX and HA-BMs-
+DOX treatment groups under hypoxia. The NI-HA-BMs-DOX treatment group had lower cell viability under
+hypoxic circumstances at low DOX concentrations than normoxic conditions. At a dosage of 1 µg/mL, cell
+viability was lower in hypoxic conditions (73.64%) than in normoxic settings (79.72%). Hypoxic cell viability
+exceeded normoxic cell viability at increasing DOX doses. At a dosage of 5 µg/mL, cell viability under hypoxia
+was 71.62%, significantly greater than normoxia (57.35%).
+Scientific Reports I (2025) 15:25031
+I
+https://doi.org/10.1038/s41598-025-10353-y
+natureportfolio
+6
+www.nature.com/scientificreports/
+Normoxic
+Hypoxia
+Merge
+DOX
+FITC
+DAPI
+Merge
+DOX
+FITC
+DAPI
+CK
+CK
+DOX
+DOX
+NI-HA-BMs-DOX HA-BMS-DOX
+NI-HA-BMs-DOX HA-BMS-DOX
+Fig. 4. Laser confocal fluorescence microscopy was used to observe the accumulation of NI-HA-BMs-DOX in
+HepG2 cells; HA-BMs-DOX: drug group with BMs as a carrier and DOX; NI-HA-BMs-DOX: drug group with
+BMs as the carrier and carrying both NI and DOX.
+MTT findings for HL-7702 cells are shown in Fig. 5B. Under hypoxic conditions, DOX, HA-BMs-DOX, and
+NI-HA-BMs-DOX cell viability was consistently higher than normoxic conditions and dose-dependently related
+to DOX concentration. These data suggest that the NI-HA-BMs-DOX combination does not reduce HL-7702
+cell growth under hypoxia.
+The NI-HA-BMs-DOX complex promotes cell apoptosis under hypoxic conditions
+For 24 h, HepG2 cells treated with 1 µg/mL DOX, HA-BMs-DOX, and NI-HA-BMs-DOX under normoxic and
+hypoxic conditions showed no significant apoptosis, with normal nuclear morphology and intact structures in
+the PBS control group. DOX, HA-BMs-DOX, and NI-HA-BMs-DOX showed substantial apoptotic bodies under
+normoxic and hypoxic environments. DOX and HA-BMs-DOX groups had similar apoptotic body counts under
+hypoxia and normoxia. However, the number of apoptotic bodies in the NI-HA-BMs-DOX group increased
+dramatically under hypoxia, confirming microscopic observations (Fig. 6) that such complexes promote cell
+apoptosis better.
+NI-HA-BMs-DOX regulate the expression of apoptosis-related genes in cancer cells
+The activation, regulation, and expression of genes during apoptosis contribute to tumor growth and malignancy.
+Two well-known apoptotic routes are caspase-mediated intrinsic and extrinsic⁵.
+Hypoxic HepG2 cells treated with NI-HA-BMs-DOX for 24 h had considerably higher expression levels of
+CASP3²⁸ and CASP8²⁹ both of which are involved in the apoptotic pathway. In contrast, DOX and HA-BMs-
+DOX treatment groups had similar CASP3 and CASP8 expression levels in hypoxic and normoxic environments.
+Under hypoxia, the CASP9 gene expression in the DOX, HA-BMs-DOX, and NI-HA-BMs-DOX treatment
+groups was slightly reduced compared to normoxic conditions. This upregulation may be due to tumor cells'
+enhanced response to endogenous apoptotic signals, which may promote tumor cell apoptosis³⁰.
+Moreover, treatment with DOX, HA-BMs-DOX, and NI-HA-BMs-DOX for 24 h upregulated the expression
+of BCL-2³¹ and TP53³² in HepG2 cells. The hypoxia-induced increase in BCL-2 and TP53 expression was greater
+in the NI-HA-BMs-DOX group than in normoxic conditions. Conversely, hypoxia increases c-MYC expression³³
+was marginally lower in the NI-HA-BMs-DOX group than in normoxia (Fig. 7).
+A well-known anti-apoptotic regulator, the BCL-2 gene inhibits programmed cell death. In particular,
+pharmacological drugs increased BCL-2 expression in this investigation. This overexpression may explain cancer
+cell drug resistance. In particular, cancers often overexpress BCL-2, which accumulates and disrupts the delicate
+balance between apoptotic and anti-apoptotic signals. Dysregulation promotes cell survival and may make
+cancer cells more resistant to chemotherapy and targeted treatments³⁴.
+Under hypoxia, the DOX-treated group had higher TP53 gene expression than the HA-BMs-DOX group.
+TP53 is a tumor suppressor. The absence of hypoxia-responsive molecular components in the HA-BMs-DOX
+formulation may hinder DOX release and delivery to target cancer cells. Thus, DOX's incomplete release may
+limit its therapeutic effects in the HA-BMs-DOX group.
+Scientific Reports
+I
+(2025) 15:25031
+|
+https://doi.org/10.1038/s41598-025-10353-y
+natureportfolio
+7
+www.nature.com/scientificreports/
+A
+DOX
+HA-BMs-DOX
+NI-HA-BMs-DOX
+Normoxic
+120
+Hypoxia
+Normoxic
+120
+Hypoxia
+Normoxic
+Hypoxia
+120
+100
+100
+100
+Cell viability(%)
+80
+Cell viability(%)
+80
+60
+Cell viability(%)
+80
+60
+60
+T
+40
+40
+40
+20
+20
+20
+0
+0
+0
+0.01
+0.1
+1
+5
+10
+0.01
+0.1
+1
+5
+10
+0.01
+0.1
+1
+5
+10
+Concentration (µg/mL)
+Concentration (µg/mL)
+Concentration (µg/mL)
+B
+DOX
+HA-BMs-DOX
+NI-HA-BMs-DOX
+120
+Normoxic
+Hypoxia
+Normoxic
+120
+Hypoxia
+Normoxic
+120
+Hypoxia
+100
+100
+100
+T
+Cell viability(%)
+80
+60
+Cell viability(%)
+80
+40
+40
+Cell viability(%)
+80
+60
+60
+40
+20
+20
+20
+0
+0
+0
+0.01
+0.1
+1
+5
+10
+0.01
+0.1
+1
+5
+10
+0.01
+0.1
+1
+5
+10
+Concentration (µg/mL)
+Concentration (µg/mL)
+Concentration (µg/mL)
+Fig. 5. Cytotoxicity of NI-HA-BMs-DOX complex on HepG2 and HL-7702 cells. (A) Survival of HepG2 cells
+cultured with DOX, HA-BMs-DOX, and NI-HA-BMs-DOX for 24 h under normoxic and hypoxic conditions
+Rate; (B) viability of HL-7702 cells cultured with DOX, HA-BMs-DOX, and NI-HA-BMs-DOX for 24 h under
+normoxic and hypoxic conditions. Cell survival was 100% in the control group. The experimental findings
+were plotted using GraphPadPrism 6.0 software and reported as Mean ± SD (n=5). =
+CK
+DOX
+HA-BMs-DOX
+NI-HA-BMs-DOX
+Magnification
+Normoxic
+Hypoxia
+Fig. 6. Fluorescence microscopy showed NI-HA-BMs-DOX-induced HepG2 cell apoptosis. HA-BMs-DOX:
+drug group with BMs as carriers and DOX; NI-HA-BMs-DOX: drug group with BMs as carriers and NI and
+DOX. Bar = 200 µm.
+Scientific Reports
+|
+(2025) 15:25031
+https://doi.org/10.1038/s41598-025-10353-y
+natureportfolio
+8
+www.nature.com/scientificreports/
+CASP3
+CASP8
+CASP9
+5
+Normoxic
+Hypoxia
+12
+Normoxic
+Hypoxia
+4
+Normoxic
+Hypoxia
+Mean fluorescence intensity
+4
+Mean fluorescence intensity
+9
+3
+6
+1
+Mean fluorescence intensity
+3
+2
+2
+3
+1
+0
+0
+0
+t/2
+HARMS.DOX .DOX
+to
+HA. DOX DOX
+1/2
+DOX HA BMs-DOX
+BCL-2
+c-MYC
+TP53
+3
+Normoxic
+Hypoxia
+1.5
+Normoxic
+Hypoxia
+3
+Normoxic
+Hypoxia
+Mean fluorescence intensity
+2
+Mean fluorescence intensity
+1.0
+Mean fluorescence intensity
+2
+1
+0.5
+1
+0
+0.0
+0
+to
+DOX HA NI-HA
+t/o
+DOX HA BMs-DOX NI-HA. .BMs.
+t/2
+HA
+Fig. 7. HA-BMs-DOX: drug group with BMs as a carrier and DOX; NI-HA-BMs-DOX: BMs carried NI and
+DOX, while CK was the control. HepG2 cells were planted in 12-well plates. After cell density reached 80-90%,
+cells were treated with 1 µg/mL DOX and the corresponding concentration in BMs for 24 h under normoxic
+and hypoxic conditions. The expression levels of associated genes were measured by real-time PCR using
+extracted RNA. The relative expression levels were examined using Student's t test, using the reference gene
+ß-actin. Results for the control group were plotted using GraphPad Prism 6.0 software, provided as mean ± SD
+(n=3).
+These data show that NI-HA-BMs-DOX affects apoptosis-related gene expression, with substantial
+changes under hypoxic settings, providing a mechanism for increased treatment efficiency in hypoxic tumor
+microenvironments.
+NI-HA-BMs-DOX significantly inhibit tumor growth
+The anticancer efficacy of NI-HA-BMs-DOX was tested in tumor-bearing nude mice by tail vein injection with
+DOX, HA-BMs-DOX, or NI-HA-BMs-DOX at 4 mg/kg DOX. Figure 8A shows tumor volume monitoring
+during treatment. NI-HA-BMs-DOX showed the most time-dependent tumor growth inhibition, with a final
+tumor volume of 412.55 mm³ and a tumor inhibition rate of 55.38%. The HA-BMs-DOX and free DOX groups
+had tumor sizes of 512.82 mm³ and 601.83 mm³, respectively, with inhibition rates of 43.88% and 34.90%. The
+BMs-alone group showed no substantial tumor suppression, with a tumor volume of 989.58 mm³, identical to
+the control group (924.52 mm³), consistent with in vitro findings.
+Three-day body weights of naked mice were measured throughout the investigation (Fig. 8B). The negligible
+systemic toxicity of NI-HA-BMs-DOX was shown by no significant weight changes. After treatment, tumors
+were removed, weighed, and photographed (Fig. 8C and D). The average tumor weight in the NI-HA-BMs-DOX
+group was 0.40 g, significantly lower than the HA-BMs-DOX (0.69 g) and free DOX (0.67 g) groups. Instead, the
+BMs-alone group had an average tumor weight of 1.04 g, which was similar to the control group.
+Scientific Reports I (2025) 15:25031
+I
+https://doi.org/10.1038/s41598-025-10353-y
+natureportfolio
+9
+www.nature.com/scientificreports/
+A
+B
+1200
+PBS
+30
+BMs
+DOX
+900
+Tumor Volume (mm³)
+HA-BMs-DOX
+NI-HA-BMs-DOX
+Body (g)
+20
+600
+Weight
+PBS
+10
+BMs
+300
+DOX
+HA-BMs-DOX
+NI-HA-BMs-DOX
+0
+0
+0
+3
+6
+9
+12
+15
+0
+3
+6
+9
+12
+15
+Time (day)
+Time (day)
+C
+D
+1.8
+PBS
+Tumor Weight (g)
+1.2
+BMs
+DOX
+0.6
+HA-BMs
+-DOX
+0.0
+NI-HA-
+PBS
+BMs
+BMs-DOX
+HA. BMs-Dox DOX
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+Fig. 8. HA-BMs-DOX: drug group with BMs as a carrier and DOX; NI-HA-BMs-DOX: BMs carried NI and
+DOX, and PBS was the control group. Six nude mice with 40 mm3 tumors received DOX (4 mg/kg) and BMs
+via tail vein every 3 days. Every three days, naked mice body weights and tumor volumes were measured
+during therapy. All nude mice in the control group were slaughtered and their tumor tissue was dissected and
+weighed when it reached 1000 mm³. (A) Tumor volume of nude mice in each group during the experiment.
+(B) Body weight changes of naked mice in each group during the experiment. (C) Dissected tumor weight. (D)
+Group dissected tumor image acquisition. GraphPad Prism 6.0 software was used for mapping, and data are
+provided as means ± SDs (n=6). Student's t test was used to assess the data, and p values below 0.05 indicated a
+significant difference. <0.05; <0.01; <0.001.
+In addition to tumors, the heart, liver and lung tissues of mice were collected for H&E staining. The control
+and BMs groups showed similar pathological features, with tissue sections displaying a mixture of densely and
+lightly stained regions. The darkly stained areas contained clusters of small, immature cells exhibiting strong
+basophilia, high nuclear-to-cytoplasmic ratios, and hyperchromatic nuclei with round, oval or polygonal shapes.
+In contrast, the lightly stained regions comprised larger cells with pale nuclei containing prominent nucleoli,
+irregular nuclear morphology, poorly defined cellular boundaries, and frequent mitotic figures-all characteristic
+of highly proliferative tumor tissue. Treatment with DOX and HA-BMs-DOX resulted in measurable reductions
+in tumor malignancy, as evidenced by decreased cellular atypia. However, the most significant therapeutic
+effect was observed in the NI-HA-BMs-DOX group, which demonstrated marked reductions in immature cell
+populations and hyperchromatic nuclear regions. Control cardiomyocytes exhibited normal spindle-shaped
+morphology with pale blue cytoplasm and aligned nuclei, while myocardial fibers maintained regular parallel
+Scientific Reports I (2025) 15:25031
+I
+https://doi.org/10.1038/s41598-025-10353-y
+natureportfolio
+10
+www.nature.com/scientificreports/
+arrangement without pathological changes. Importantly, all treatment groups (BMs, DOX, HA-BMs-DOX, and
+NI-HA-BMs-DOX) showed identical myocardial architecture to controls. The control group exhibited compact
+liver structure with spherical to oval hepatocytes displaying eosinophilic cytoplasm, prominent nuclei, and
+clearly visible nucleoli. Comparative analysis demonstrated that all treatment groups-including BMs, DOX, HA-
+BMs-DOX, and NI-HA-BMs-DOX - maintained normal hepatic histology indistinguishable from controls. The
+control group showed normal alveolar structure with thin septa and patent air spaces, while all treatment groups
+(BMs, DOX, HA-BMs-DOX, and NI-HA-BMs-DOX) maintained comparable lung histology with only minor
+variations (Fig. 9). In summary, these findings demonstrate that bacterial magnetosomes (BMs) represent an
+excellent drug delivery platform. When combined with 2-nitroimidazole to exploit tumor hypoxia, the resulting
+NI-HA-BMs-DOX formulation exhibits enhanced therapeutic efficacy while maintaining an excellent safety
+profile in major organs.
+Drug-Loaded BMs penetrate tumor tissue and exhibit antitumor effects
+To evaluate the biodistribution of bacterial magnetosomes (BMs) and their tumor-targeting potential, iron
+content in various organs and tissues was quantified using inductively coupled plasma emission spectrometry
+(Fig. 10). The results revealed significantly higher iron accumulation in the liver, spleen, and kidneys of the
+treatment groups compared to the control group, consistent with the roles of these organs in metabolic processing
+and clearance.
+Notably, elevated iron levels were also detected in tumor tissues of the BMs, HA-BMs-DOX, and NI-HA-BMs-
+DOX treatment groups. This finding confirms the successful penetration of BMs into tumor tissues, suggesting
+their effective localization within the tumor microenvironment. The accumulation of drug-loaded BMs at the
+tumor site supports their potential to enhance therapeutic efficacy by leveraging the enhanced permeability
+and retention (EPR) effect. These results highlight the promise of BMs-based drug delivery systems for targeted
+cancer therapy.
+Discussion
+This study generated hypoxia-sensing drug delivery nanocomposites (NI-HA-BMs-DOX) from nitrogen-doped
+iron (NI), hyaluronic acid (HA), bioactive magnetosomes (BMs), and doxorubicin. Flow cytometry showed that
+the NI-HA-BMs-DOX complex released more DOX into tumor cells and inhibited tumor cell growth more than
+the HA-BMs-DOX complex under hypoxia. These drug-loaded nanoparticles (NPs) interact with DNA via DOX
+to modulate apoptosis-related gene expression and promote tumor cell death.
+Hypoxia caused more apoptotic cells than normoxia due to the NI-HA-BMs-DOX complex. Moreover, the
+NI-HA-BMs-DOX combination caused a much greater apoptotic effect than HA-BMs-DOX or free DOX. The
+NI-HA-BMs-DOX complex enhanced tumor inhibition by upregulating apoptosis-related genes like CASP3,
+CASP8, and CASP9 and modulating the proto-oncogenes c-MYC, BCL-2, and TP53.
+In tumor-bearing nude mice, intravenous NI-HA-BMs-DOX (4 mg/kg DOX) caused tumor-targeted delivery
+through the increased permeability and retention (EPR) effect and hypoxic microenvironment targeting. Rapid
+proliferation and hypoxia in tumor cells create a microenvironment that helps transport NP complexes to
+tumors. The NI-HA-BMs-DOX group inhibited tumors 55.38%, significantly greater than the HA-BMs-DOX
+CK
+BMs
+DOX
+HA-BMs-DOX
+HA-NI-BMs-DOX
+Tumor
+20 µm
+20 um
+20 µm
+20 um
+20 µm
+Heart
+20 µm
+20 µm
+20 µm
+20 µm
+20 µm
+Liver
+20 µm
+20 um
+20 µm
+20 um
+20 um
+10.7
+Lung
+20
+20 µm
+20 µm
+20 um
+20 um
+Fig. 9. Histopathological evaluation of major organs following treatment W formulations. The tumor sections
+demonstrated progressive therapeutic effects, with NI-HA-BMs-DOX showing the most significant reduction
+in malignant features. Concurrently, all major organs (heart, liver, and lung) maintained normal histological
+architecture across treatment groups, confirming the biosafety profile of these nanoparticles.
+Scientific Reports
+(2025) 15:25031
+I
+https://doi.org/10.1038/s41598-025-10353-y
+natureportfolio
+11
+www.nature.com/scientificreports/
+800
+CK
+BMs
+DOX
+600
+DOX-HA-BMs
+NI-DOX-HA-BMs
+Iron content (%)
+400
+200
+0
+Heart
+Liver
+Spleen
+Lung
+Kidney
+tumor
+Fig. 10. HA-BMs-DOX represents the treatment group in which bacterial magnetosomes (BMs) were used as
+a carrier for doxorubicin (DOX). NI-HA-BMs-DOX refers to BMs loaded with both 2-nitroimidazole (NI) and
+DOX. The control group (CK) received no treatment. Tumor tissues were digested in nitric acid and heated
+at 100 °C for 3 h. Inductively coupled plasma optical emission spectrometry (ICP-OES) was used to quantify
+iron ion content in the samples. Data were analyzed and visualized using GraphPad Prism 6.0 software and are
+presented as means ± SD (n=3).
+(43.88%) and free DOX (34.90%) groups. Notably, the NI-HA-BMs-DOX treatment increased tumor tissue BM
+accumulation, enabling more effective drug release and tumor suppression.
+Due to iron metabolism, the liver, spleen, and kidneys of treated mice accumulated more iron. The BMs, HA-
+BMs-DOX, and NI-HA-BMs-DOX groups had higher iron concentration in their tumor tissues, showing that
+BMs penetrated tumor tissue and had anticancer effects.
+Tumor microenvironment hypoxia is well-known and plays a key role in tumor development, metastasis, and
+treatment resistance³⁵. Tumor hypoxia causes poor vascularization, genetic instability, and invasiveness, which
+increases therapeutic resistance⁴. Reduced drug penetration, intrinsic chemoresistance mechanisms (including
+lack of p53-mediated apoptosis), and defective DNA repair make hypoxic cells more resistant to chemotherapy³⁶.
+These issues require drug delivery systems that can overcome tumor hypoxia to boost treatment efficacy.
+As tumor medication transporters, magnetic nanoparticles like BMs are advantageous. They are ideal for
+targeted therapy because to their nanoscale size and ability to be focused and concentrated under a magnetic
+field³⁷. Furthermore, the lipid membrane coating of BMs provides biocompatibility, which is essential for their
+use in therapeutic applications³⁸ This study did not completely harness BMs' magnetic targeting capability,
+but future research can maximize these properties to improve drug-loaded BM targeting precision and tumor
+inhibition. This could improve tumor suppression and systemic toxicity, which are crucial for drug delivery
+system therapeutic value.
+Conclusion
+We tested a hypoxia-sensitive drug delivery nanocomposite (Ni-HA-BMs-DOX) made of nitrogen-doped iron
+(NI), hyaluronic acid (HA), doxorubicin (DOX), and bioactive magnetosomes (BMs) for anticancer activity.
+Tumor's hypoxic microenvironment allows targeted medication release at tumor cell accumulation, inhibiting
+tumor growth. In vitro studies showed that NI-HA-BMs-DOX boosted tumor cell cytotoxicity and apoptosis
+by influencing tumor growth and apoptosis genes. NI-HA-BMs-DOX also inhibited tumor growth in tumor-
+bearing nude mice, outperforming HA-BMs-DOX and free DOX. This work introduces a unique drug delivery
+technology and a promising cancer-targeted therapy technique that may improve cancer treatment efficacy.
+Data availability
+Data availabilityThe data that support the findings of this study are available from the corresponding author,
+[Yuangang Liu], upon reasonable request.
+Scientific Reports
+(2025) 15:25031
+I
+https://doi.org/10.1038/s41598-025-10353-y
+natureportfolio
+12
+www.nature.com/scientificreports/
+Received: 22 January 2025; Accepted: 3 July 2025
+Published online: 11 July 2025
+References
+1. Harris, A. L. Hypoxia-a key regulatory factor in tumour growth. Nat. Rev. Cancer. 2, 38-47 (2002).
+2. Brown, J. M. & Wilson, W. R. Exploiting tumour hypoxia in cancer treatment. Nat. Rev. Cancer. 4, 437-447 (2004).
+3. Milane, L., Ganesh, S., Shah, S., Duan, Z. F. & Amiji, M. Multi-modal strategies for overcoming tumor drug resistance: hypoxia, the
+Warburg effect, stem cells, and multifunctional nanotechnology. J. Controlled Release. 155, 237-247 (2011).
+4. Bhandari, V. et al. Molecular landmarks of tumor hypoxia across cancer types. Nat. Genet. 51, 308-318 (2019).
+5. Liu, H. et al. Development of a hypoxia-triggered and hypoxic radiosensitized liposome as a doxorubicin carrier to promote
+synergetic chemo-/radio-therapy for glioma. Biomaterials 121, 130-143 (2017).
+6. Thambi, T. et al. Hypoxia-responsive polymeric nanoparticles for tumor-targeted drug delivery. Biomaterials 35, 1735-1743
+(2014).
+7. Cegla, J. Microneedle-array patches loaded with hypoxia-sensitive vesicles provide fast glucose-responsive insulin delivery. Ann.
+Clin. Biochem. 52, 720 (2015).
+8. Overgaard, J. Hypoxic radiosensitization: adored and ignored. J. Clin. Oncol. 25, 4066-4674 (2007).
+9. Chen, S. et al. Synthesis of Mitochondria-Anchored nitroimidazoles with a versatile NIR fluorophore for hypoxic Tumor-Targeting
+imaging and chemoradiotherapy. J. Med. Chem. 64, 3381-3391 (2021).
+10. Hodgkiss, R. J. et al. Bioreductive fluorescent markers for hypoxic cells: a study of 2-nitroimidazoles with 1-substituents containing
+fluorescent, bridgehead-nitrogen, bicyclic systems. J. Med. Chem. 35, 1920-1926 (1992).
+11. Hodgkiss, R. J. et al. Flow cytometric evaluation of hypoxic cells in solid experimental tumours using fluorescence immunodetection.
+Br. J. Cancer. 63, 119-125 (1991).
+12. Bin Rashed, F. et al. Cellular mechanism of action of 2-nitroimidazoles as hypoxia-selective therapeutic agents. Redox Biol. 52,
+102300 (2022).
+13. Lin, Q. et al. Highly discriminating photorelease of anticancer drugs based on hypoxia activatable phototrigger conjugated
+Chitosan nanoparticles. Adv. Mater. 25, 1981-1986 (2013).
+14. Yang, F., Teves, S. S., Kemp, C.J., Henikoff, S. & Doxorubicin DNA torsion, and chromatin dynamics. BBA-REV CANCER. 1845,
+84-89 (2014).
+15. Rawat, P. S., Jaiswal, A., Khurana, A., Bhatti, J. S. & Navik, U. Doxorubicin-induced cardiotoxicity: an update on the molecular
+mechanism and novel therapeutic strategies for effective management. Biomed. Pharmacother. 139, 111708 (2021).
+16. Mattioli, R. et al. Doxorubicin and other anthracyclines in cancers: activity, chemoresistance and its overcoming. Mol. Aspects Med.
+93, 101205 (2023).
+17. Van Ravenstein, S. X. et al. Topoisomerase II poisons inhibit vertebrate DNA replication through distinct mechanisms. EMBO J.
+41, 110632 (2022).
+18. Swift, L. P., Rephaeli, A., Nudelman, A., Phillips, D. R. & Cutts, S. M. Doxorubicin-DNA adducts induce a non-topoisomerase II-
+mediated form of cell death. Cancer Res. 66, 4863-4871 (2006).
+19. Blakemore, R. MAGNETOTACTIC BACTERIA. SCIENCE 190, 377-379 (1975).
+20. Su, Y. B. et al. A monocrystal @ultrathin N-doped carbon core/shell structure: from magnetotactic bacteria to Li storage. J.
+Mater. Chem. A. 7, 20899-20904 (2019).
+21. Lin, W. et al. Genomic expansion of magnetotactic bacteria reveals an early common origin of magnetotaxis with lineage-specific
+evolution. ISME J. 12, 1508-1519 (2018).
+22. Bazylinski, D. A. & Frankel, R. B. Magnetosome formation in prokaryotes. Nat. Rev. Microbiol. 2, 217-230 (2004).
+23. Schüler, D. Genetics and cell biology of magnetosome formation in magnetotactic bacteria. FEMS Microbiol. Rev. 32, 654-672
+(2008).
+24. Alphandéry, E., Faure, S., Seksek, O., Guyot, F. & Chebbi, I. Chains of magnetosomes extracted from AMB-1 magnetotactic
+Bacteria for application in alternative magnetic field Cancer therapy. Acs Nano. 5, 6279-6296 (2011).
+25. Jacob, J. J. & Suthindhiran, K. Magnetotactic bacteria and magnetosomes - Scope and challenges. Mater. Sci. Eng. C Mater. Biol.
+Appl. 68, 919-928 (2016).
+26. Lai, W.J. et al. A protein Corona adsorbed to a bacterial magnetosome affects its cellular uptake. Int. J. Nanomed. 15, 1481-1498
+(2020).
+27. Lang, C., Schüler, D. & Faivre, D. Synthesis of magnetite nanoparticles for bio- and nanotechnology: genetic engineering and
+biomimetics of bacterial magnetosomes. Macromol. Biosci. 7, 144-151 (2007).
+28. Lin, Y. F. et al. Targeting the XIAP/caspase-7 complex selectively kills caspase-3-deficient malignancies. J. Clin. Invest. 123, 3861-
+3875 (2013).
+29. Gong, Z. H. et al. Caspase-8 contributes to an immuno-hot microenvironment by promoting phagocytosis via an ecto-calreticulin-
+dependent mechanism. Exp. Hematol. Oncol. 12, 7 (2023).
+30. Kuida, K. et al. Reduced apoptosis and cytochrome c-mediated caspase activation in mice lacking caspase 9. Cell 94, 325-337
+(1998).
+31. Wei, H. D. et al. Structures of p53/BCL-2 complex suggest a mechanism for p53 to antagonize BCL-2 activity. Nat. Commun. 14,
+4300 (2023).
+32. Donehower, L. A. et al. Integrated analysis of TP53 gene and pathway alterations in the Cancer genome atlas. Cell. Rep. 28, 1370-
+1384e1375 (2019).
+33. Madden, S. K., de Araujo, A. D., Gerhardt, M., Fairlie, D. P. & Mason, J. M. Taking the Myc out of cancer: toward therapeutic
+strategies to directly inhibit c-Myc. Mol. Cancer. 20, 3 (2021).
+34. Hafezi, S. & Rahmani, M. Targeting BCL-2 in cancer: advances, challenges, and perspectives. Cancers 13, 1292 (2021).
+35. Wu, Q. et al. Hypoxia-inducible factors: master regulators of hypoxic tumor immune escape. J. Hematol. Oncol. 15, 77 (2022).
+36. Wilson, W.R. & Hay, M. P. Targeting hypoxia in cancer therapy. Nat. Rev. Cancer. 11, 393-410 (2011).
+37. Herborn, C. U. et al. Magnetosomes as biological model for iron binding:: relaxivity determination with MRI. Rofo-Fortschr Rontg.
+175, 830-834 (2003).
+38. Xie, J., Chen, K., Chen, X. & Production Modification and Bio-Applications of magnetic nanoparticles gestated by magnetotactic
+Bacteria. Nano Res. 2, 261-278 (2009).
+Acknowledgements
+We sincerely acknowledge the financial support from the National Natural Science Foundation of China
+(32171337) and the Scientific Research Foundation of State Key Laboratory of Vaccines for Infectious Diseases,
+Xiang An Biomedicine Laboratory (2023XAKJ0103069).
+Scientific Reports
+(2025) 15:25031
+I
+https://doi.org/10.1038/s41598-025-10353-y
+natureportfolio
+13
+www.nature.com/scientificreports/
+Author contributions
+Kun Deng: Formal analysis, Investigation, Methodology, Visualization, Writing-original draft, Data curation.
+Jiaojiao Wang: Data curation, Investigation, Methodology, Visualization. Xia Zhou: Data curation, Investigation,
+Methodology. Yuanyuan Geng: Data curation, Investigation, Methodology. Weiquan Liu: Methodology. Yiheng
+Zhang: Methodology. Yuangang Liu: Funding acquisition, Project administration, Supervision, Writing-review
+& editing. Wei Jiang: Conceptualization, Funding acquisition, Project administration, Supervision, Writing- re-
+view & editing.
+Funding
+Open Access funding enabled and organized by State key laboratory of Agro-biotechnology.
+Declarations
+Competing interests
+The authors declare no competing interests.
+Use of experimental animal
+Research has been carried out according to the ARRIVE guidelines, where applicable.
+Additional information
+Correspondence and requests for materials should be addressed to Y.L. or W.J.
+Reprints and permissions information is available at www.nature.com/reprints.
+Publisher's note Springer Nature remains neutral with regard to jurisdictional claims in published maps and
+institutional affiliations.
+Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives
+4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in
+any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide
+a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have
+permission under this licence to share adapted material derived from this article or parts of it. The images or
+other third party material in this article are included in the article's Creative Commons licence, unless indicated
+otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence
+and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to
+obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommo
+ns.org/licenses/by-nc-nd/4.0/.
+© The Author(s) 2025
+Scientific Reports
+(2025) 15:25031
+|
+https://doi.org/10.1038/s41598-025-10353-y
+natureportfolio
+14

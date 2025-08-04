@@ -1,0 +1,621 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+
+jobs:
+  # =============================
+  # Pre-commit Hooks
+  # =============================
+  pre-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pre-commit
+
+      - name: Run pre-commit hooks
+        run: pre-commit run --all-files
+
+  # =============================
+  # Backend Tests
+  # =============================
+  # Run all test jobs in parallel after pre-commit checks
+  backend-unit-tests:
+    runs-on: ubuntu-latest
+    needs: pre-commit
+    services:
+      valkey:
+        image: public.ecr.aws/valkey/valkey:2.16-alpine
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install uv
+        run: pip install uv
+
+      - name: Install dependencies
+        working-directory: backend
+        run: uv sync --dev
+
+      - name: Run unit tests
+        working-directory: backend
+        env:
+          VALKEY_URL: 'redis://localhost:6379'
+        run: uv run pytest -xvs -m "unit" --junitxml=unit-tests.xml --cov=app --cov-report=xml:unit-coverage.xml --cov-report=term
+
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          file: backend/unit-coverage.xml
+          flags: backend-unit
+          name: backend-unit-coverage
+          fail_ci_if_error: false
+
+  backend-repository-tests:
+    runs-on: ubuntu-latest
+    needs: pre-commit
+    services:
+      valkey:
+        image: public.ecr.aws/valkey/valkey:2.16-alpine
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+      dynamodb-local:
+        image: public.ecr.aws/aws-dynamodb-local/aws-dynamodb-local:latest
+        ports:
+          - 8000:8000
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install uv and boto3
+        run: pip install uv boto3
+
+      - name: Install dependencies
+        working-directory: backend
+        run: uv sync --dev
+
+      - name: Setup DynamoDB Table
+        run: |
+          chmod +x create_ddb_table.sh
+          python -c '
+          import boto3
+          ddb = boto3.resource("dynamodb", endpoint_url="http://localhost:8000")
+          ddb.create_table(
+              TableName="test-app-data",
+              KeySchema=[
+                  {"AttributeName": "PK", "KeyType": "HASH"},
+                  {"AttributeName": "SK", "KeyType": "RANGE"}
+              ],
+              AttributeDefinitions=[
+                  {"AttributeName": "PK", "AttributeType": "S"},
+                  {"AttributeName": "SK", "AttributeType": "S"}
+              ],
+              BillingMode="PAY_PER_REQUEST"
+          )
+          print("DynamoDB table created successfully")
+          '
+
+      - name: Run repository tests
+        working-directory: backend
+        env:
+          VALKEY_URL: 'redis://localhost:6379'
+          DYNAMODB_ENDPOINT_URL: 'http://localhost:8000'
+        run: uv run pytest -xvs -m "repository" --junitxml=repository-tests.xml --cov=app --cov-report=xml:repository-coverage.xml --cov-report=term
+
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          file: backend/repository-coverage.xml
+          flags: backend-repository
+          name: backend-repository-coverage
+          fail_ci_if_error: false
+
+  backend-api-tests:
+    runs-on: ubuntu-latest
+    needs: pre-commit
+    services:
+      valkey:
+        image: public.ecr.aws/valkey/valkey:2.16-alpine
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+      dynamodb-local:
+        image: public.ecr.aws/aws-dynamodb-local/aws-dynamodb-local:latest
+        ports:
+          - 8000:8000
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install uv and boto3
+        run: pip install uv boto3
+
+      - name: Install dependencies
+        working-directory: backend
+        run: uv sync --dev
+
+      - name: Setup DynamoDB Table
+        run: |
+          python -c '
+          import boto3
+          ddb = boto3.resource("dynamodb", endpoint_url="http://localhost:8000")
+          ddb.create_table(
+              TableName="test-app-data",
+              KeySchema=[
+                  {"AttributeName": "PK", "KeyType": "HASH"},
+                  {"AttributeName": "SK", "KeyType": "RANGE"}
+              ],
+              AttributeDefinitions=[
+                  {"AttributeName": "PK", "AttributeType": "S"},
+                  {"AttributeName": "SK", "AttributeType": "S"}
+              ],
+              BillingMode="PAY_PER_REQUEST"
+          )
+          print("DynamoDB table created successfully")
+          '
+
+      - name: Run API tests
+        working-directory: backend
+        env:
+          VALKEY_URL: 'redis://localhost:6379'
+          DYNAMODB_ENDPOINT_URL: 'http://localhost:8000'
+        run: uv run pytest -xvs -m "api" --junitxml=api-tests.xml --cov=app --cov-report=xml:api-coverage.xml --cov-report=term
+
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          file: backend/api-coverage.xml
+          flags: backend-api
+          name: backend-api-coverage
+          fail_ci_if_error: false
+
+  backend-integration-tests:
+    runs-on: ubuntu-latest
+    needs: pre-commit
+    services:
+      valkey:
+        image: public.ecr.aws/valkey/valkey:2.16-alpine
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+      dynamodb-local:
+        image: public.ecr.aws/aws-dynamodb-local/aws-dynamodb-local:latest
+        ports:
+          - 8000:8000
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install uv and boto3
+        run: pip install uv boto3
+
+      - name: Install dependencies
+        working-directory: backend
+        run: uv sync --dev
+
+      - name: Setup DynamoDB Table
+        run: |
+          python -c '
+          import boto3
+          ddb = boto3.resource("dynamodb", endpoint_url="http://localhost:8000")
+          ddb.create_table(
+              TableName="test-app-data",
+              KeySchema=[
+                  {"AttributeName": "PK", "KeyType": "HASH"},
+                  {"AttributeName": "SK", "KeyType": "RANGE"}
+              ],
+              AttributeDefinitions=[
+                  {"AttributeName": "PK", "AttributeType": "S"},
+                  {"AttributeName": "SK", "AttributeType": "S"}
+              ],
+              BillingMode="PAY_PER_REQUEST"
+          )
+          print("DynamoDB table created successfully")
+          '
+
+      - name: Run integration tests
+        working-directory: backend
+        env:
+          VALKEY_URL: 'redis://localhost:6379'
+          DYNAMODB_ENDPOINT_URL: 'http://localhost:8000'
+        run: uv run pytest -xvs -m "integration and not api" --junitxml=integration-tests.xml --cov=app --cov-report=xml:integration-coverage.xml --cov-report=term
+
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          file: backend/integration-coverage.xml
+          flags: backend-integration
+          name: backend-integration-coverage
+          fail_ci_if_error: false
+
+  backend-slow-tests:
+    runs-on: ubuntu-latest
+    needs: pre-commit
+    services:
+      valkey:
+        image: public.ecr.aws/valkey/valkey:2.16-alpine
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+      dynamodb-local:
+        image: public.ecr.aws/aws-dynamodb-local/aws-dynamodb-local:latest
+        ports:
+          - 8000:8000
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install uv and boto3
+        run: pip install uv boto3
+
+      - name: Install dependencies
+        working-directory: backend
+        run: uv sync --dev
+
+      - name: Setup DynamoDB Table
+        run: |
+          python -c '
+          import boto3
+          ddb = boto3.resource("dynamodb", endpoint_url="http://localhost:8000")
+          ddb.create_table(
+              TableName="test-app-data",
+              KeySchema=[
+                  {"AttributeName": "PK", "KeyType": "HASH"},
+                  {"AttributeName": "SK", "KeyType": "RANGE"}
+              ],
+              AttributeDefinitions=[
+                  {"AttributeName": "PK", "AttributeType": "S"},
+                  {"AttributeName": "SK", "AttributeType": "S"}
+              ],
+              BillingMode="PAY_PER_REQUEST"
+          )
+          print("DynamoDB table created successfully")
+          '
+
+      - name: Run slow tests
+        working-directory: backend
+        env:
+          VALKEY_URL: 'redis://localhost:6379'
+          DYNAMODB_ENDPOINT_URL: 'http://localhost:8000'
+        run: uv run pytest -xvs -m "slow" --junitxml=slow-tests.xml --cov=app --cov-report=xml:slow-coverage.xml --cov-report=term
+
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          file: backend/slow-coverage.xml
+          flags: backend-slow
+          name: backend-slow-coverage
+          fail_ci_if_error: false
+
+  backend-aws-tests:
+    runs-on: ubuntu-latest
+    needs: pre-commit
+    services:
+      valkey:
+        image: public.ecr.aws/valkey/valkey:2.16-alpine
+        ports:
+          - 6379:6379
+        options: >-
+          --health-cmd "redis-cli ping"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install uv
+        run: pip install uv
+
+      - name: Install dependencies
+        working-directory: backend
+        run: uv sync --dev
+
+      - name: Run AWS tests
+        working-directory: backend
+        env:
+          VALKEY_URL: 'redis://localhost:6379'
+          AWS_ACCESS_KEY_ID: testing
+          AWS_SECRET_ACCESS_KEY: testing # pragma: allowlist secret
+          AWS_SESSION_TOKEN: testing
+          AWS_DEFAULT_REGION: us-east-1
+        run: uv run pytest -xvs -m "aws" --junitxml=aws-tests.xml --cov=app --cov-report=xml:aws-coverage.xml --cov-report=term
+
+      - name: Upload coverage reports to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          file: backend/aws-coverage.xml
+          flags: backend-aws
+          name: backend-aws-coverage
+          fail_ci_if_error: false
+
+  # =============================
+  # Frontend Tests
+  # =============================
+  frontend-tests:
+    runs-on: ubuntu-latest
+    needs: pre-commit
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: ui/package-lock.json
+
+      - name: Install dependencies
+        working-directory: ui
+        run: npm ci
+
+      - name: Run linting
+        working-directory: ui
+        run: npm run lint
+
+      - name: Build UI
+        working-directory: ui
+        run: npm run build
+
+  # =============================
+  # CLI Tests
+  # =============================
+  cli-tests:
+    runs-on: ubuntu-latest
+    needs: pre-commit
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: stable
+          components: rustfmt, clippy
+
+      - name: Cache Rust dependencies
+        uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: 'cli -> target'
+
+      - name: Check formatting
+        working-directory: cli
+        run: cargo fmt -- --check
+
+      - name: Clippy
+        working-directory: cli
+        run: cargo clippy -- -D warnings
+
+      - name: Build
+        working-directory: cli
+        run: cargo build --release
+
+      - name: Test
+        working-directory: cli
+        run: cargo test --verbose
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: cli-binary
+          path: cli/target/release/cli
+          retention-days: 7
+
+  # =============================
+  # Coverage Report
+  # =============================
+  coverage-report:
+    runs-on: ubuntu-latest
+    needs:
+      [
+        backend-unit-tests,
+        backend-repository-tests,
+        backend-api-tests,
+        backend-integration-tests,
+        backend-slow-tests,
+        backend-aws-tests,
+      ]
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install coverage
+
+      - name: Download coverage reports
+        uses: actions/download-artifact@v4
+        with:
+          name: coverage-reports
+          path: backend
+
+      - name: Generate combined coverage report
+        working-directory: backend
+        run: |
+          coverage combine *.xml
+          coverage report
+          coverage xml
+          coverage html
+
+      - name: Upload combined coverage report
+        uses: codecov/codecov-action@v4
+        with:
+          file: backend/coverage.xml
+          flags: backend-all
+          name: backend-coverage
+          fail_ci_if_error: false
+
+      - name: Upload HTML coverage report
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-html
+          path: backend/htmlcov
+          retention-days: 7
+
+  # =============================
+  # CDK Validation
+  # =============================
+  # Run infrastructure validation after pre-commit, in parallel with tests
+  cdk-validation:
+    runs-on: ubuntu-latest
+    needs: pre-commit
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: infrastructure/cdk/package-lock.json
+
+      - name: Install dependencies
+        working-directory: infrastructure/cdk
+        run: npm ci
+
+      - name: Build TypeScript
+        working-directory: infrastructure/cdk
+        run: npm run build
+
+      - name: CDK Nag
+        working-directory: infrastructure/cdk
+        run: npx cdk synth --app="node bin/cdk.ts" --output=cdk.out --strict
+
+      - name: CDK Synth
+        working-directory: infrastructure/cdk
+        run: |
+          # Synthesize CloudFormation templates
+          npx cdk synth --app="node bin/cdk.ts" --output=cdk.out --all
+
+          # List generated stacks
+          ls -la cdk.out/
+
+          # Validate templates
+          for template in cdk.out/*.template.json; do
+            echo "Validating $template"
+            node -e "JSON.parse(require('fs').readFileSync('$template', 'utf8'))"
+          done
+
+      - name: Upload CDK artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: cdk-templates
+          path: infrastructure/cdk/cdk.out
+          retention-days: 7
+
+  # =============================
+  # Security Scan (Optional)
+  # =============================
+  security-scan:
+    runs-on: ubuntu-latest
+    needs: pre-commit
+    if: github.event_name == 'workflow_dispatch'
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install security tools
+        run: pip install safety bandit semgrep
+
+      - name: Python security checks
+        run: |
+          cd backend
+          safety check
+          bandit -r app/ -f json -o ../bandit-report.json || true
+
+      - name: Node.js security checks
+        run: |
+          cd ui
+          npm audit --audit-level=high || true
+
+      - name: Upload security reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: security-reports
+          path: bandit-report.json
+          retention-days: 7

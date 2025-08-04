@@ -1,0 +1,1680 @@
+
+Leukemia
+www.nature.com/leu
+ARTICLE
+OPEN
+Check for updates
+Chemoresistance of TP53 mutant acute myeloid leukemia
+requires the mevalonate byproduct, geranylgeranyl
+pyrophosphate, for induction of an adaptive stress response
+Sarah
+J. Skuli ID 1 , A'ishah Bakayoko¹, Marisa Kruidenier¹, Bryan Manning¹ Paige Pammer¹, Akmal Salimov ID 1 , Owen Riley¹,
+Gisela Brake-Sillá¹, Derrick Dopkin¹, Michael Bowman¹³, Leslie N. Martinez-Gutierrez⁴, Colin C. Anderson⁶, Julie A. Reisz⁶,
+Roberta Buono ID 7 Madhuri Paul⁷, Estelle Saland⁸, Francesca Liccardo ID 8 Ann DeVine¹, Sarah Wong⁹, Jimmy P. Xu¹⁰, Eva Nee ID
+10
+Ryan Hausler¹, Steffen Boettcher¹¹, Said M. Sebti¹², Catherine Lai¹, Kara N. Maxwell ID 1,13,14 Jean-Emmanuel Sarry ID 8,15,16
+David A. Fruman ID Angelo D'Alessandro ID 6 Clementina Mesaros¹⁰, Brian Keith³,¹³, M. Celeste Simon¹³,¹⁷, Pamela J. Sung ID 4,5
+Gerald Wertheim 1,18 Nicolas Skuli¹⁹, Robert L. Bowman ID 1,3 Andrew Matthews and Martin Carroll ID 1,14 X
+C The Author(s) 2025
+Acute myeloid leukemia with mutations in TP53 (TP53ᵐut AML) is fatal with a median survival of 6 months. RNA sequencing on
+purified AML patient samples showed that TP53ᵐut AML had higher expression of mevalonate pathway genes. Using novel, isogenic
+TP53ᵐut AML cell lines and primary samples, we determined that TP53ᵐut AML resistance to AML chemotherapy cytarabine (AraC)
+correlated with increased mevalonate pathway activity, a lower induction of reactive oxygen species (ROS), and a mitochondrial
+response with increased mitochondrial mass and oxidative phosphorylation. Pretreatment with the statin class of mevalonate
+pathway inhibitors reversed these effects and chemosensitized TP53ᵐut AML. The geranylgeranyl pyrophosphate (GGPP) branch of
+the mevalonate pathway was required for TP53ᵐut AML chemoresistance. In addition to its role in mitochondria biogenesis, we
+identified a novel function of GGPP in regulating glutathione for management of AraC-induced ROS. However, statins alone were
+inadequate to fully reverse chemoresistance in vivo and in a retrospective study of 364 TP53ᵐut AML patients who received
+chemotherapy concurrently with a statin. Finally, we identified clinical settings and strategies to successfully target the mevalonate
+pathway, particularly to address the unmet need of TP53ᵐut AML.
+Leukemia; https://doi.org/10.1038/s41375-025-02668-6
+INTRODUCTION
+Our group and others have demonstrated that AML requires
+TP53 mutant acute myeloid leukemia (TP53ᵐut AML) is the
+enhanced mitochondrial oxidative phosphorylation (OXPHOS) to
+paramount clinical challenge in the field of leukemia. For
+survive chemotherapy, including AraC and Ven [6-10]. The
+TP53ᵐut AML patients, particularly those with bi-allelic altera-
+correlation between chemoresistance and increased mitochon-
+tions, standard therapies, including cytarabine (AraC)-based
+drial activity is especially interesting in the context of TP53ᵐut AML
+regimens as well as hypomethylating (HMA) agents with or
+as loss of p53 leads to increased glycolysis and OXPHOS in both
+without the BCL2 inhibitor venetoclax (Ven) all lead to a similar
+solid tumors and a recent AML model [11-13]. However, the
+and dismal median overall survival of 6-9 months [1-4]. Due to
+relationship between increased mitochondrial activity and che-
+this inherent therapy resistance, international guidelines recom-
+moresistance specifically in TP53ᵐut AML has yet to be addressed.
+mend a clinical trial as the first approach to treatment of TP53ᵐut
+Moreover, direct targeting of mitochondrial metabolism to reverse
+AML [5].
+chemoresistance has been limited by toxicity due to essential
+Division of Hematology & Oncology, Department of Medicine, University of Pennsylvania, Philadelphia, PA, USA. ²Immunology, Microenvironment & Metastasis Program, Ellen
+and Ronald Caplan Cancer Center, Wistar Institute, Philadelphia, PA, USA. ³Department of Cancer Biology, University of Pennsylvania, Philadelphia, PA, USA. ⁴Department of
+Medicine - Leukemia, Roswell Park Comprehensive Cancer Center, Buffalo, NY, USA. ⁵Department of Pharmacology and Therapeutics, Roswell Park Comprehensive Cancer
+Center, Buffalo, NY, USA. ⁶Department of Biochemistry and Molecular Genetics, University of Colorado Anschutz Medical Campus, Aurora, CO, USA. ⁷Department of Molecular
+Biology and Biochemistry, University of California, Irvine, CA, USA. ⁸Centre de Recherches en Cancérologie de Toulouse, Université de Toulouse, Toulouse, France. ⁹Department of
+Research and Development, Tevogen Bio, Philadelphia, PA, USA. ¹⁰Department of Pharmacology, The University of Pennsylvania, Philadelphia, PA, USA. ¹¹Department of Medical
+Oncology and Hematology, University of Zurich and University Hospital Zurich, Zurich, Switzerland. ¹²Department of Pharmacology and Toxicology and Massey Comprehensive
+Cancer Center, Virginia Commonwealth University, Richmond, VA, USA. ¹³Abramson Family Cancer Research Institute, University of Pennsylvania Perelman School of Medicine,
+Philadelphia, PA, USA. ¹⁴Corporal Michael Crescenz Veterans Affairs Medical Center, Philadelphia, PA, USA. ¹⁵LabEx Toucan, Toulouse, France. ¹⁶Équipe Labellisée Ligue Nationale
+Contre le Cancer, Toulouse, France. ¹⁷Department of Cell and Developmental Biology, University of Pennsylvania, Philadelphia, PA, USA. ¹⁸Department of Pathology and
+Laboratory Medicine, Children's Hospital of Philadelphia, Philadelphia, PA, USA. ¹⁹Department of Radiology, University of Pennsylvania, Philadelphia, PA, USA.
+email: carroll2@pennmedicine.upenn.edu
+Received: 5 December 2024 Revised: 20 May 2025 Accepted: 13 June 2025
+Published online: 09 July 2025
+SPRINGER NATURE
+S.J. Skuli et al.
+2
+mitochondrial functions in non-malignant cells [14]. Novel
+RESULTS
+strategies are needed to identify and target pathways that
+Primary TP53ᵐut AML RNA sequencing show upregulation of a
+contribute to mitochondrial metabolism primarily and specifically
+cholesterol synthesis gene signature
+in cancer cells.
+To elucidate biological differences between TP53ᵐut and TP53WT
+Here, we present transcriptional analysis of human AML samples
+AML, we performed RNA sequencing on untreated primary AML
+demonstrating that mevalonate pathway genes are overexpressed
+blasts. We obtained 9 bi-allelic TP53ᵐut AML patient samples as
+in TP53ᵐut compared to more chemosensitive TP53 wildtype
+well as 21 TP53WT AML patient samples with either a "good"
+(TP53WT) AML samples. The mevalonate pathway is a complex
+overall survival (OS) (n = 9; median OS not reached) or a "bad" OS
+metabolic pathway that branches at the level of farnesyl pyropho-
+(n = 12, median OS 294 days) (Fig. 1A, Supplementary Table 1A).
+sphate (FPP), forming isoprenoids like geranylgeranyl pyropho-
+The median os of the TP53ᵐut AML patients was poor at 65 days
+sphate (GGPP) or other cholesterol derivatives. Importantly, there is
+(Fig. 1A; log-rank p < 0.0001 versus TP53WT "good" or "bad"
+interdependence between the mevalonate pathway and mito-
+outcome patients). Principal component analysis suggested that
+chondrial metabolism [15, 16]. The mevalonate pathway is also
+the TP53ᵐut AML patient samples shared transcriptional similarity
+necessary for tumorigenesis and metastatic potential in multiple
+whereas the TP53WT AML patient samples were more hetero-
+TP53ᵐut solid tumor models [17-21]. In AML, several studies have
+geneous (Fig. 1B; PC1 48.9% and PC2 15%). Single sample GSEA
+implicated the mevalonate pathway in therapy resistance [22-26].
+(ssGSEA) demonstrated that primary TP53ᵐut compared to all
+Early phase clinical trials investigating the addition of statins to
+TP53WT AML had lower expression of TP53 targets [31] (Fig. 1C, D,
+AraC-based induction therapy showed a promising benefit in
+Supplementary Table 1B-D). Notably, multiple gene sets involved
+patients with relapsed/refractory, poor risk AML [27-29] but did
+in cholesterol synthesis were upregulated in TP53ᵐut AML
+not lead to statin incorporation into standard therapy. Notably,
+(Fig. 1C, D, Supplementary Table 1C, D). These signatures were
+TP53ᵐut AML patients should be enriched in this population, but
+recapitulated in a cohort of primary TP53ᵐut (n = 17) versus TP53WT
+sequencing of TP53 was not routinely performed at the time.
+(n = 87) AML samples identified in the BeatAML [32] dataset
+Altogether, the role of p53 in AML metabolism and chemoresis-
+(Supplementary Fig. 1B-D).
+tance remains poorly understood.
+We hypothesized that the mevalonate pathway is required for
+TP53ᵐut AML cell lines require the mevalonate pathway to
+mitochondria-dependent chemoresistance in TP53ᵐut AML. We
+survive AML chemotherapy, AraC
+addressed this hypothesis with multiple orthogonal approaches,
+Isogenic TP53ᵐut AML cell line clones with complete loss (M14-
+including previously unpublished, multi-institutional, retrospective
+Mut1, M14-Mut3) or missense-like mutations (M14-Mut2, M14-
+clinical data, novel, isogenic TP53ᵐut AML cell lines and primary
+Mut4) of the p53 protein were developed using CRISPR/Cas9
+TP53ᵐu AML patient samples. Our studies indicate that the
+editing of the AML cell line, MOLM14, with published guides [33,
+mevalonate pathway should be targeted in chemotherapy
+34] and single cell cloning via serial dilution. The TP53ᵐut AML
+resistant TP53ᵐut AML.
+clones had consistently higher cell viability in response to AraC
+than the TP53WT AML clone, M14-WT1, indicating that the TP53ᵐ⁴
+AML clones were more chemoresistant (Fig. 2A). Furthermore, only
+METHODS
+the TP53WT clones exhibited a rapid and significant increase in
+Additional methods provided in the supplement.
+downstream p53 target, p21, at 6 and 24h following AraC
+treatment or 6h after irradiation (Supplementary Fig. 2A, B). To
+Cell culture
+determine the impact of inhibition of the mevalonate pathway on
+Human AML cell lines (Supplementary Table 1E) were maintained in minimum
+chemoresistance, we pretreated the isogenic clones with the
+essential medium-alpha (Gibco) supplemented with 10% fetal bovine serum
+mevalonate pathway inhibitor, rosuvastatin, for 24h prior to
+(Hyclone). The cultured cells were split every 2-3 days and maintained in an
+adding AraC. Cell death induced by AraC was augmented by
+exponential growth phase. Authenticated MOLM14 and HL60 cells were
+rosuvastatin pre-treatment in all TP53ᵐut and TP53WT AML clones
+obtained from DSMZ and the liquid nitrogen stock was renewed every 2 years.
+(Fig. 2B, Supplementary Fig. 2C). Importantly, rosuvastatin
+MOLM13-TP53 isogenic AML cell lines were generously provided by Dr. Stefen
+chemosensitized the TP53ᵐut MOLM14 AML clones to AraC now
+Boettcher and generated as previously described [30]. Cell lines were routinely
+tested for mycoplasma contamination.
+to the same level as the TP53WT clones (Fig. 2B, Supplementary
+Fig. 2C). We validated these findings in isogenic TP53ᵐut and
+TP53WT MOLM13 AML clones [30, 35] (Supplementary Fig. 2D) and
+Primary AML specimens
+the HL60 AML cell line with parental homozygous loss of p53
+Mononuclear cells (MNCs) from patients with AML were obtained from
+(Supplementary Fig. 2E). XTT viability assays showed that the
+the Stem Cell and Xenograft Core (SCXC, IRB Protocol Number: 703185) at
+The University of Pennsylvania (UPenn). All samples were acquired
+combination of AraC and rosuvastatin was synergistic in the
+through the SCXC following informed consent on the institutional review
+isogenic MOLM14 clones using the SynergyFinder tool [36]
+board-approved protocol. Samples were collected in accordance with
+(Supplementary Fig. 2F). Statin-induced chemosensitization is a
+federal and institutional guidelines and provided in a pathologically
+class-effect as pitavastatin also chemosensitized the isogenic
+annotated and de-identified fashion. Sample sizes were chosen based on
+MOLM14 AML clones to AraC (Supplementary Fig. 2G) at
+availability.
+concentrations achievable in patients [22, 37].
+Statistics
+Chemoresistant TP53ᵐut AML cell lines upregulate the
+Statistical analysis was performed in Prism10 using unpaired two-sided
+mevalonate pathway in response to AraC
+Student's T test, ANOVA, and two-sided Fisher's exact test, as appropriate
+To study the mechanism by which statins chemosensitize TP53ᵐut
+for each experiment and indicated in the legends. Multiple test correction
+AML, we first addressed the impact of p53 loss on the mevalonate
+was implemented using the Benjamini-Hochberg/FDR. approach or the
+pathway (Fig. 2C) at baseline and in response to AraC. Mevalonate
+Bonferroni's multiple comparisons test as indicated in the legends. For
+pathway gene expression was assessed by qRT-PCR in represen-
+multiple comparisons, a range of significant adjusted p values, or FDR
+tative TP53ᵐut and TP53WT MOLM14 AML clones. AraC induced a
+values, have been provided. The number of independent, biological
+replicates performed in the laboratory and used for statistical calculations
+time-dependent upregulation of multiple genes in the mevalonate
+are noted in the legends. The number of replicates for in vitro cell line
+pathway as well as the pathway's primary transcription factor,
+assays was at least 3 to allow for statistical analysis. Asterisks denote
+SREBF2, in both TP53ᵐut and TP53WT AML clones (Fig. 2D,
+statistical significance as described in figure legends. Error bars represent
+Supplementary Fig. 2H for time course). The rate-limiting enzyme
+standard deviations.
+of the mevalonate pathway and the target of statins, HMGCR, is
+SPRINGER NATURE
+Leukemia
+S.J. Skuli et al.
+3
+A
+B
+1.00
+25
+0.75
++
+Good
+Good
+Survival Rate
+Bad
+0
+Bad
+0.50
+TP53mut
+TP53mut
+PC2
+Log rank
+0.25
+p < 0.0001
+25
+0.00
+- 50
+0
+250
+500
+750
+1000
+1250
+1500
+40
+0
+40
+Days since diagnosis
+PC1
+C
+D
+6
+Hallmark
+Maxwell
+LSC17
+p53 Targets
+MAXWELL Cholesterol Biosynthesis
+Cholesterol
+Cholesterol
+REACTOME_CHOLESTEROL_BIOSYNTHESIS
+STEROID_ BIOSYNTHESIS
+4
+*
+*
+**
+REACTOME_DISEASES_OF_MITOTIC_CELL_CYCLE
+MAXWELL Cholesterol All
+2
+REACTOME_OXIDATIVE_STRESS_INDUCED_SENESCENCE
+REACTOME_ACTIVATION_OF_GENE_EXPRESSION_BY_SREBF_SREBP
+1
+1
+GSEA Score
+HALLMARK_CHOLESTEROL_HOMEOSTASIS
+2
+Normalized signature score
+1
+0
+0
+-1
+0
+-1
+0
+-2
+KEGG_REGULATION_OF_AUTOPHAGY
+-2
+-2
+KEGG_DRUG_METABOLISM_OTHER_ENZYMES
+-1
+-3
+-3
+REACTOME_RECYCLING_OF_BILE_ACIDS_AND_SALTS
+Pathway
+WT Mutant
+WT Mutant
+WT Mutant
+Fig. 1 Untreated, primary TP53ᵐut AML are enriched for cholesterol synthesis gene expression. RNA sequencing was performed on highly
+purified, flow-sorted blasts of primary human AML diagnostic samples from patients with TP53ᵐut (n = 9), TP53WT "bad" outcome AML (n = 12),
+and TP53WT "good" outcome AML (n = 9). A Kaplan-Meier survival outcomes with statistical analysis by log-rank test. B principal component
+analysis with principal component 1 (PC1; 48.9%) and PC2 (15%), c GSEA scores from the Hallmark and other denoted gene sets, and D single
+sample GSEA with calculation of normalized signature scores for "TP53 Targets," "Hallmark Cholesterol," and "Maxwell Cholesterol." Statistical
+analysis by Student's T Test. p-values: * = <0.05, ** = <0.01, = <0.001.
+also regulated at the post-translational level [38, 39]. HMGCR
+DNA by PCR in isogenic MOLM14 AML clones (Fig. 3D). We next
+protein expression was significantly increased by AraC in
+assessed mitochondrial reactive oxygen species (ROS). Treatment
+representative clones and highest in those with TP53 mutations
+of M14-WT1 with AraC was associated with a significant increase
+(Fig. 2E, Supplementary Fig. 2I). We also detected a significant
+in ROS (6-fold increase, p <0.001) (Fig. 3E). Correlating with
+increase in mevalonate byproducts, CoQ10 and cholesterol, in
+chemoresistance, M14-Mut1 and M14-Mut4 exhibited a signifi-
+AraC-treated isogenic clones (Fig. 2F, G, respectively). Rosuvastatin
+cantly lower induction of ROS in response to AraC (2-fold
+pretreatment abrogated the AraC-induced increase in CoQ10
+increases, p < 0.01 for M14-Mut1 and p = 0.4 for M14-Mut4)
+[Fig. 2F; M14-WT1: F(1,16) = 22, p 0.001; M14-Mut1: F(1,16) = 26,
+(Fig. 3E). Thus, there was a paradoxical improvement in ROS
+p 0.001], while rosuvastatin pretreatment alone or in combina-
+management in TP53ᵐut AML clones despite a significant increase
+tion with AraC was associated with a significant increase in
+in OXPHOS in response to AraC (Fig. 3A-C, E). Furthermore, AraC-
+cholesterol potentially via uptake (Fig. 2G).
+induced ROS and cell viability was at least partially rescued by
+pretreatment with the antioxidant, reduced glutathione (GSH,
+Increased OXPHOS and regulation of ROS correlate with AraC
+Fig. 3E, F), suggesting that AraC-induced ROS directly correlates to
+resistance in TP53ᵐut AML cell lines
+induction of cell death.
+Our group and others have demonstrated that AML AraC
+resistance correlates with increased OXPHOS. However, the impact
+Metabolomics correlate TP53ᵐut AML induction of one-carbon
+of TP53 mutations on mitochondrial metabolism in AML is not well
+metabolism to management of AraC-induced ROS
+understood. We performed a series of functional and structural
+With the significant differences in AraC-induced OXPHOS and ROS
+assays to characterize mitochondria in our isogenic MOLM14 AML
+between TP53WT and TP53ᵐut AML cell lines, we next performed
+clones and TP53ᵐut HL60 cells. In response to AraC, only TP53ᵐ⁴
+metabolomics in representative isogenic clones treated with AraC
+AML cells induced a significant increase in basal and maximum
+(Fig. 3G-I, Supplementary Fig. 3K, Supplementary Table 1F).
+uncoupler-induced oxygen consumption as assessed by Seahorse
+TP53ᵐut AML AraC-treated cells exhibited striking alterations in
+(Fig. 3A-C, Supplementary Fig. 3A-J). The increase in OXPHOS was
+one-carbon metabolism (Fig. 3G-I, Supplementary Fig. 3K). AraC
+associated with a significant increase in mitochondrial mass as
+induced a significant increase in methionine and downstream
+determined by measuring the ratio of mitochondrial to nuclear
+S-adenosylmethionine (SAM) (Fig. 3H). Only the TP53ᵐut AML
+Leukemia
+SPRINGER NATURE
+S.J. Skuli et al.
+4
+A
+B
+ns
+100
+100
+***
+M14-WT1
+**
+M14-Mut1
+H
+M14-Mut4
+(% AnV/7AAD Negative,
+75
+Normalized to control)
+M14-Mut1
+75
+M14-Mut2
+Viability
+50
+M14-Mut3
+Viability
+(% Anv/7AAD Negative)
+50
+M14-Mut4
+25
+M14-WT1
+25
+0
+0
+0.25
+0.5
+1
+2
+4
+8
+16
+32
+AraC
+-
++
+-
++
+AraC Concentration (uM)
+Statin
+-
+-
++
++
+C
+D
+E
+Mevalonate Pathway
+0.5
+2.5
+M14-WT1
+M14-Mut1
+M14-Mut3
+M14-Mut4
+M14-WT1
+M14-Mut1
+M14-Mut4
+ACLY
+AraC
+-
++
+-
++
+-
++
+Citrate
+Acetyl-CoA
+ABCA1
+HMGCR
+SREBF2
+HMGCoA
+IDI1
+TBP
+ABCA1
+FDPS
+HMGCR
+STATIN
+R.U.
+0.2
+0.8
+0.2
+0.9
+0.4
+1.6
+GGPS1
+SREBF2
+Mevalonate
+PGGT1B
+F
+*
+ns
+G
+***
+***
+MVK
+**
+**
+***
+**
+IDI1
+TRIT1
+IPP
+DMAPP
+GPX4
+***
+***
+***
+***
+300
+25
+Prenylation
+FDPS
+FDPS
+GPP
+FNT
+GGPP
+FPP
+CoQ10 (pmol/2M cells)
+200
+GGT*
+FDPS
+Cholesterol (nmol/2M cells)
+20
+15
+10
+GGPS1
+FDFT1
+100
+Squalene
+5
+PDSS1
+SQLE
+PDSS2
+0
+0
+Dolichol
+LSS
+CoQ10
+M14-WT1
+M14-Mut1
+M14-WT1
+M14-Mut1
+HemeA
+Vehicle
+Statin
+Vehicle
+Statin
+Cholesterol
+*GGT = GGTI, GGTII or GGTIII
+AraC
+AraC + Statin
+AraC
+AraC + Statin
+Fig. 2 Chemoresistant TP53ᵐut AML cell lines upregulate the mevalonate pathway in response to AraC. A Cell viability of isogenic TP53ᵐut
+AML clones treated with increasing concentrations of AraC for 24h and assessed by flow cytometry following staining with AnnexinV and
+7AAD (n = 3). B Cell viability of representative isogenic TP53ᵐut and TP53WT AML clones pretreated with 24 h of rosuvastatin (50 µM) followed
+by an additional 24 of AraC (1µM) and assessed by flow cytometry following staining with AnnexinV and 7AAD (n = 7). Statistical analysis by
+one-way ANOVA with false discovery rate (FDR) correction for multiple comparisons. c Schema of the mevalonate pathway with key enzymes
+highlighted in blue and byproducts in squares. Subunits: FNT = FNTA & FNTB, GGTI = FNTA & PGGT1B, GGTII = RABGGTA & RABGGTB,
+GGTIII = PTAR1. D Gene expression of select mevalonate pathway genes in isogenic TP53ᵐut and TP53WT AML clones following 24 h of AraC
+(1 µM) treatment, normalized to GAPDH, and compared to the vehicle for each clone as measured by qRT-PCR (n = 3). E Protein expression of
+HMGCR normalized to total binding protein (TBP) in isogenic TP53ᵐut and TP53WT AML clones treated with vehicle or 18h of AraC (1 µM),
+performed by western blot and quantified by imageJ as presented in relative units (R.U.) of HMGCR to TBP. F CoQ10 as pmol per 2 million cells
+and G cholesterol as nmol per 2 million cells in the M14-WT1 and M14-Mut1 clones in the same conditions as (B) and quantified by LC-HRMS
+(n = 5). Statistical analysis for (F, G) by two-way ANOVA with FDR correction for multiple comparisons. Adjusted p-values: * = <0.05, ** = <0.01,
+*** = <0.001. n is the number of replicates.
+clones increased SAM conversion to S-adenosylhomocysteine
+specific induction of one-carbon metabolism, particularly glu-
+(SAH), which was associated with an increase in downstream
+tathione and polyamines synthesis, for AraC resistance.
+cystathionine, y-glutamyl-cysteine (y-Glu-Cys), and GSH (Fig. 3H).
+GSH is a highly abundant essential cofactor for the enzyme-based
+AraC-induced alterations in OXPHOS and glutathione
+glutathione system [40]. Polyamines are also an important ROS
+synthesis are mevalonate pathway-dependent
+scavenger [41-43]. AraC was associated with a significant increase
+Multiple mevalonate pathway byproducts are important for
+in the polyamine precursors arginine and ornithine (Fig. 3H). Only
+mitochondrial metabolism and redox management. Thus, we
+in TP53ᵐut AML clones did AraC induce a significant increase in the
+next assessed the impact of rosuvastatin on mitochondrial and
+SAM-dependent polyamines, spermine and spermidine (Fig. 3H).
+redox parameters in representative TP53ᵐut and TP53WT MOLM14
+One of the most significantly increased metabolites in response to
+AML clones and TP53ᵐut HL60 cells. Rosuvastatin alone decreased
+AraC was deoxythymidine monophosphate (dTMP; Fig. 3I) and its
+basal and max OXPHOS and completely abrogated the AraC-
+precursors (Supplementary Fig. 3K), which may reflect an increase
+induced increase in OXPHOS (Fig. 4A, Supplementary Fig. 4A-H).
+in the folic acid cycle. Altogether, this data suggests TP53ᵐut AML-
+We then evaluated intracellular levels of TOMM20, a
+SPRINGER NATURE
+Leukemia
+S.J. Skuli et al.
+5
+A
+M14-WT1
+B
+M14-Mut1
+C
+M14-Mut3
+300
+300
+300
+Rotenone &
+Rotenone &
+Rotenone &
+Oligomycin
+FCCP
+Antimycin A
+Oligomycin
+FCCP
+Antimycin A
+Oligomycin
+FCCP
+Antimycin A
+OCR (pmol/min)
+200
+OCR (pmol/min)
+200
+100
+OCR (pmol/min)
+200
+100
+100
+0
+0
+0
+0
+20
+40
+60
+80
+0
+20
+40
+60
+80
+0
+20
+40
+60
+80
+Time (minutes)
+Time (minutes)
+Time (minutes)
+Control
+AraC
+Control
+AraC
+Control
+AraC
+D
+E
+F
+*
+*
+*
+***
+**
+ns
+**
+*
+**
+6
+8
+100
+80
+Mitochondrial Content
+6
+TO
+(Mito/Nuclear DNA)
+4
+2
+Mitochondrial ROS
+(MitoSox MFI, ratio to vehicle)
+4
+2
+Viability (% AnV/7AAD-
+normalized to vehicle)
+60
+40
+20
+0
+0
+0
+M14-WT1
+M14-Mut1
+M14-Mut4
+M14-WT1 M14-Mut1 M14-Mut4
+M14-WT1 M14-Mut1 M14-Mut4
+Vehicle
+AraC
+AraC
+AraC + GSH
+AraC
+AraC + GSH
+G
+Uptake
+H
+M14-WT1 M14-Mut1 M14-Mut3
+MTR
+MTA
+AraC:
+Oh
+18h
+24h
+Oh
+18h
+24h
+Oh
+18h
+24h
+DHF
+Methionine
+THF
+Folate
+Salvage
+Spermine
+dTMP
+L-Methionine
+***
+***
+***
+Cycle
+Polyamine
+Spermidine
+Serine
+Synthesis
+Putrescrine
+SAM
+***
+***
+***
+dUMP
+Glycine
+Methionine
+SAH
+**
+**
+10-fTHF
+SAM
+Ornithine
+5,10-mTHF
+Cystathionine
+**
+**
+***
+***
+5-mTHF
+Methionine
+Arginine
+y-Glu-Cys
+**
+Cycle
+***
+***
+**
+Glutathione
+Synthesis
+Glycine
+Glutamate
+Serine
+GSH
+***
+***
+***
+GSH
+y-Glu-Cys
+Cystathionine
+Homocysteine
+SAH
+L-Arginine
+**
+**
+***
+***
+***
+**
+Ornithine
+**
+***
+***
+***
+**
+100
+***
+***
+***
+Spermidine
+***
+***
+80
+6
+***
+***
+***
+dTMP (Ratio to vehicle)
+5
+Spermine
+**
+***
+60
+AraC:
+Oh
+4
+L-Serine
+***
+***
+***
+***
+40
+18h
+24h
+3
+Glycine
+***
+***
+20
+2
+1 L-Glutamate
+***
+0
+M14-WT1 M14-Mut1 M14-Mut3
+Fig. 3 TP53ᵐut AML AraC resistance is associated with increased OXPHOS, ROS regulation and one-carbon metabolism. Oxygen
+consumption in pmol per minute in A M14-WT1, B M14-Mut1, and C M14-Mut3 treated with vehicle or AraC (1 µM) for 24h and measured by
+Seahorse technology (n = 7, n = 8, and n = 8, respectively). AraC versus vehicle fold-changes: Basal OXPHOS of 1.2 (p = 0.05) for M14-WT1, 1.5
+(p 0.001) for M14-Mut1, 2.1 (p = 0.002) for M14-Mut3; Maximum-uncoupler-induced OXPHOS of 1.3 (p = 0.04) for M14-WT1, 2 (p 0.001) for
+M14-Mut1, 2.7 (p 0.001) for M14-Mut3. D Mitochondrial content presented as the ratio of mitochondrial to nuclear DNA measured by PCR in
+representative isogenic TP53ᵐut and TP53WT AML clones treated with vehicle or AraC (1 µM) for 24 h. E Mitochondrial ROS presented as the
+ratio to vehicle of mean fluorescence intensity (MFI) of MitoSox in viable cells [determined by Fixable Viability Stain Red (FVS-R)] as measured
+by flow cytometry in representative isogenic TP53ᵐut and TP53WT AML clones treated with AraC (1 µM, 24 h), glutathione (10 mM, 36 h), the
+combination, or their respective vehicles (n = 3). F Viability of cells normalized to respective vehicles treated as per (E) and measured by flow
+cytometry after staining with AnnexinV and 7AAD. G Schema of one-carbon metabolism with bold arrows highlighting the observed pathway
+increases in AraC-treated cells, particularly in TP53ᵐut AML clones. H Metabolomics in M14-WT1, M14-Mut1, and M14-Mut3 AML cell lines
+treated with vehicle, 18 h AraC (1 µM), or 24 h AraC (1 µM) (n = 5 per condition) presented as the ratio to respective cell line vehicle. I Relative
+abundance of dTMP for each condition relative to vehicle (n = 5). Statistical analysis by Student's T test for (D-F), Z-tests for (H), and two-way
+ANOVA with Bonferroni's multiple comparisons test for (I). Adjusted p-values: * = <0.05, ** = <0.01, *** = <0.001. n is the number of replicates.
+Leukemia
+SPRINGER NATURE
+S.J. Skuli et al.
+6
+A
+B
+250
+2.0
+Basal Oxygen Consumption
+200
+Vehicle
+1.5
+Rate (pmol/min)
+AraC
+150
+Statin
+AraC + Statin
+100
+TOMM20 (MFI in viable cells,
+Ratio to vehicle)
+1.0
+0.5
+50
+0
+0.0
+M14-WT1
+M14-Mut1
+M14-Mut4
+M14-WT1 M14-Mut1 M14-Mut4
+c
+D
+*
+ns
+ns
+5000
+ns
+6
+4000
+Mitochondrial ROS
+Vehicle
+(MFI MitoSox)
+3000
+AraC
+Statin
+2000
+AraC + Statin
+Total Glutathione
+(uM per 25,000 cells)
+4
+2
+1000
+0
+0
+M14-WT1 M14-Mut1 M14-Mut4
+M14-WT1 M14-Mut1 M14-Mut4
+Fig. 4 OXPHOS and ROS regulation in response to AraC are mevalonate-pathway dependent. For (A-D), representative isogenic TP53ᵐut
+and TP53WT AML clones were treated with rosuvastatin (50 µM) for a total of 48 with AraC (1uM) added for the last 24h and the following
+experiments subsequently performed: A Basal oxygen consumption rate in pmol per minute assessed by Seahorse technology (n = 7), =
+B TOMM20 presented as MFI in viable cells (by FVS-R) assessed by flow cytometry (n=6,n=7,n=4 = for respective cell lines), c mitochondrial
+ROS presented as the ratio to vehicle of MFI of MitoSox in viable cells (by FVS-R) as measured by flow cytometry (n = 3), = and D total
+glutathione presented as µM per 25,000 cells (n = 4, n = 5, n=3 for respective cell lines). Statistical analysis by two-way ANOVA with FDR
+correction for multiple comparisons. Adjusted p-values: * = <0.05, ** = <0.01, = <0.001. n is the number of replicates.
+mitochondria-specific protein that is a surrogate for mitochondrial
+OXPHOS (Supplementary Fig. 5A-D). Subsequently, co-treatment
+mass (Fig. 4B), and mitochondrial ROS (Fig. 4C). Cells treated with
+of M14-Mut1 with downstream GGPP also rescued the effects of a
+single agent rosuvastatin trended towards decreased TOMM20
+statin on cell viability (Fig. 5B), OXPHOS (Fig. 5C, Supplementary
+(Fig. 4B) and increased mitochondrial ROS (Fig. 4C). Importantly,
+Fig. 5E, F), TOMM20 as a mitochondria mass surrogate (Fig. 5D),
+rosuvastatin pretreatment in TP53ᵐut MOLM14 AML cells com-
+mitochondrial ROS (Fig. 5E), and total and reduced glutathione
+pletely abrogated the AraC-induced increase in TOMM20 while
+(Fig. 5F, Supplementary Fig. 5G). GGPP did not rescue the
+significantly increasing mitochondrial ROS to the same degree as
+rosuvastatin-induced decrease in coenzyme Q10 (CoQ10) in either
+M14-WT1 (Fig. 4B, C). We then assessed total glutathione and the
+M14-Mut1 or M14-WT1 (Supplementary Fig. 5H). These data
+ratio of reduced to oxidized glutathione (i.e., GSH/GSSG). In
+indicated that rosuvastatin's activity is specific to the mevalonate
+correlation with improved ROS management in TP53ᵐut AML
+pathway, dependent on the GGPP branch of the pathway, and
+clones, M14-Mut1 and M14-Mut4 responded to AraC with a
+independent of the cholesterol and CoQ10 branches. The
+significant increase in total glutathione, including a specific
+presence of GGPP correlated with improved glutathione synthesis
+increase in GSH, which were both abrogated by rosuvastatin
+and reduced ROS, specifically in the M14-Mut1 clone (M14-WT1
+pretreatment (Fig. 4D, Supplementary Fig. 4I). This data suggested
+experiments in Supplementary Fig. 6). Finally, we validated that
+that a mevalonate pathway-dependent mitochondrial response
+specific geranylgeranyl transferase (GGT) inhibitors, GGTI2417 [44,
+and ROS management was key for AraC chemoresistance in
+45] and GGTI298 [46-48], that block the incorporation of GGPP
+TP53ᵐ⁴ AML.
+onto targets, but not the farnesyltransferase (FNT) inhibitor,
+FTI277, recapitulated rosuvastatin's impact on cell viability alone
+AraC resistance in TP53ᵐut AML requires the mevalonate
+or in combination with AraC (Fig. 5G, Supplementary Figs. 5I-K,
+pathway byproduct, GGPP
+6M-O).
+To determine the specific mevalonate pathway byproducts
+necessary for mitochondria-dependent chemoresistance, we
+In vitro statin pretreatment fully abrogates OXPHOS and
+performed rescue experiments in the representative TP53ᵐ⁴
+chemoresistance in primary TP53ᵐut AML
+AML clone, M14-Mut1, treated with a rescue agent and
+We then evaluated the efficacy of the drug combination in four
+rosuvastatin for 48 h with AraC added for the last 24 (Schema
+primary TP53ᵐ⁴ AML samples in vitro (annotations in Supple-
+summarizing targets in Fig. 5A). Co-treatment of M14-Mut1 with
+mentary Table 1E). Three of the four samples demonstrated a
+mevalonate, which is produced by the direct statin target, HMGCR,
+significant increase in basal and max OXPHOS in response to AraC,
+completely rescued the effect of rosuvastatin on cell viability and
+which was blocked by rosuvastatin pretreatment (Fig. 6A). Those
+SPRINGER NATURE
+Leukemia
+S.J. Skuli et al.
+7
+A
+HMGCoA
+Mevalonate
+HMGCR
+STATIN
+Pathway
+Mevalonate
+Vehicle
+FTI277
+AraC
+Prenylation
+Statin
+FNT
+GPP
+GGTI2417
+Cholesterol
+GGT
+GGTI298
+Dolichol
+AraC + Statin
+HemeA
+GGPP
+FPP
+CoQ10
+B
+C
+D
+***
+***
+100
+150
+4
+(% Anv/7AAD Negative)
+75
+Basal Oxygen Consumption
+Rate (pmol/min)
+100
+Viability
+50
+25
+TOMM20 (MFI in viable
+cells in 100,000 intervals)
+3
+50
+2
+1
+0
+0
+0
+Vehicle
++GGPP
+Vehicle
++GGPP
+Vehicle
++GGPP
+E
+F
+G
+4000
+8
+100
+***
+Mito ROS (MFI MitoSox)
+3000
+(uM per 25,000 cells)
+6
+(% ANV/7AAD Negative)
+75
+2000
+Glutathione
+4
+Viability
+50
+1000
+2
+25
+0
+0
+0
+Vehicle
++GGPP
+Vehicle
++GGPP
+Vehicle
++GGTI2417
+Fig. 5 AraC resistance of TP53ᵐut AML requires GGPP for ROS regulation and enhanced OXPHOS. A Abridged schema of latter half of the
+mevalonate pathway with essential genes in green and known chemical inhibitors in blue. All experiments in Fig. 6B-I were performed in the
+M14-Mut1 clone pretreated for 24 h with rosuvastatin (50 µM) and/or either vehicle, GGPP (1 µM) or GGTI2417 (4 µM) followed by an additional
+24h with vehicle or AraC (1 µM) with the subsequent assessment of B cell viability presented as the percentage of annexinV and 7AAD
+negative cells by flow cytometry with or without GGPP (n = 7), c basal oxygen consumption rate in pmol/minute as assessed by Seahorse
+technology with or without GGPP (n = 8), D TOMM20 presented as MFI in viable cells (by FVS-R) assessed by flow cytometry with or without
+GGPP (n = 5), E mitochondrial ROS presented as the MFI of MitoSox in viable cells (by FVS-R) as measured by flow cytometry with or without
+GGPP (n = 3), F total glutathione presented as µM per 25,000 cells with or without GGPP (n = 5), and G cell viability presented as the
+percentage of annexinV and 7AAD negative cells by flow cytometry with or without GGTI2417 (n = 3). Statistical analysis by three-way ANOVA
+with FDR correction for multiple comparisons, including comparison of a treatment with or without the rescue agent or additional inhibitor
+(i.e., AraC + Statin vs AraC + Statin + GGPP). Adjusted p-values: * = <0.05, ** = <0.01, = <0.001. n is the number of replicates.
+3 samples also demonstrated a dose-dependent decrease in
+sensitivity to AraC and a decreased benefit of rosuvastatin
+colony forming unit ability by the combination of AraC and
+pretreatment.
+rosuvastatin (Fig. 6B). Furthermore, the AraC-induced increase in
+OXPHOS correlated with an increase in mitochondrial mass as
+PDX modeling of TP53ᵐut AML reveals only partial reversal of
+measured by flow cytometry after staining for mitochondrial
+AraC resistance by a statin
+protein TOMM20 in two of the three primary samples (Supple-
+We established PDX mouse models of TP53ᵐut AML in NOD scid
+mentary Fig. 7A). Of note, these three OXPHOS-inducing primary
+gamma (NSG) mice. Following engraftment of SCXC-5052,
+samples all exhibited bi-allelic TP53 mutations without other AML-
+mice were treated with vehicle, AraC (50 mg/kg/day intraper-
+driver mutations (Supplementary Table 1E). The fourth TP53ᵐut
+itoneally on days 1-5) as routinely performed in the laboratory
+AML sample, SCXC-7575, had co-mutations in IDH2, ASXL1, KRAS
+[6], rosuvastatin (1 mg/kg/day by oral gavage on days 1-7, the
+and CEBPA (Supplementary Table 1E) with recent studies
+maximum dose tolerated in patients [49]) or the combination
+correlating IDH2 or ASXL1 co-mutations with improved responses
+(schema in Fig. 7A). Mouse bone marrow (BM) and spleen were
+to therapy in TP53ᵐut AML¹. SCXC-7575 did not demonstrate a
+harvested on days 8-9 and leukemic burden was quantified.
+significant increase in OXPHOS in response to AraC (Supplemen-
+Only the drug combination led to a significant though modest
+tary Fig. 7B), which correlated with a smaller benefit of
+decrease in leukemic burden (Fig. 7B). Surviving leukemic cells
+combination treatment on CFUs (Supplementary Fig. 7C). These
+from AraC-treated mice had a significant increase in mevalonate
+studies suggested that primary human TP53ᵐut AML cells required
+pathway byproducts, CoQ10 (Fig. 7C) and cholesterol (Fig. 7D),
+the mevalonate pathway to survive in vitro AraC treatment and
+and a significant increase in maximal OXPHOS with a trend
+that survival correlated with increased OXPHOS. Furthermore, the
+towards increased basal OXPHOS (Fig. 7E, Supplementary
+absence of an AraC-induced OXPHOS phenotype predicted higher
+Fig. 8A). However, rosuvastatin did not fully reverse AraC-
+Leukemia
+SPRINGER NATURE
+S.J. Skuli et al.
+8
+A
+SCXC-4708
+SCXC-6865
+SCXC-5052
+Rotenone &
+Rotenone &
+Rotenone &
+Oligomycin
+FCCP
+Antimycin A
+250
+Oligomycin
+FCCP
+Antimycin A
+Oligomycin
+FCCP
+Antimycin A
+Vehicle
+Vehicle
+Vehicle
+600
+600
+AraC
+AraC
+AraC
+200
+Oxygen Consumption Rate
+Statin
+AraC Statin
+(pmol/min)
+400
+Oxygen Consumption Rate
+Statin
+(pmol/min)
+150
+Oxygen Consumption Rate
+Statin
+AraC Statin
+AraC Statin
+100
+(pmol/min)
+400
+200
+200
+50
+0
+0
+0
+0
+20
+40
+60
+80
+0
+20
+40
+60
+80
+0
+20
+40
+60
+80
+Time (minutes)
+Time (minutes)
+Time (minutes)
+q<0.001
+q<0,001
+q=0.12
+q<0.001
+q<0.001
+q<0.001
+B
+q=0.04
+q=0.005
+q = 0.008
+q=0.36
+q=0.13
+q=0.03
+q=0.58
+q=0.90
+q=0.80
+q=0.25
+q=0.008
+q=0.02
+600
+500
+1000
+500
+400
+Total Colony Forming Units (number)
+400
+Total Colony Forming Units (number)
+800
+Total Colony Forming Units (number)
+300
+600
+300
+200
+400
+200
+100
+200
+100
++
+Mo
+0
+0
+0
+Rosuvastatin 15uM
+Rosuvastatin 15uM
+Rosuvastatin 15uM
+Rosuvastatin 30uM
+Rosuvastatin 30uM
+Rosuvastatin 30uM
+AraC 5nM
+AraC 5nM
+AraC 5nM
+AraC 10nM
+AraC 10nM
+AraC 10nM
+Fig. 6 In vitro statin pretreatment fully abrogates OXPHOS and chemoresistance in primary TP53ᵐut AML. A Oxygen consumption rate
+(pmol/min) assessed by Seahorse technology in previously viably frozen primary TP53ᵐut AML samples that were resuspended in X-Vivo
+media with 20% BIT serum and 10 ng/mL of cytokines FLT3, SCF, IL3 and IL6, pretreated with rosuvastatin (50 µM) for 24 h followed by AraC
+(1 µM) treatment for an additional 24h, and depleted of dead cells via the AnnexinV dead cell removal kit prior to plating for Seahorse
+analysis. Each sample (SCXC-4708, -6865, -5052) was performed once with 5 technical replicates per condition. AraC vs vehicle fold changes
+were as follows (basal and max OXPHOS, respectively): SCXC-4708 1.4-fold (p < 0.001) and 1.3-fold (p < 0.001); SCXC-6865 1.9-fold (p = 0.005)
+and 1.7-fold (p = 0.02); SCXC-5052 1.9-fold (p 0.001) and 1.7-fold (p < 0.001). B Total number of colony forming units assessed 14 days after
+plating previously viably frozen primary TP53ᵐut AML samples (SCXC-4708, -6865, -5052) treated on day 0 with rosuvastatin (15 µM or 30 µM)
+and/or AraC (5 nM or 10nM) with 3 replicates per condition. Statistical analysis by one-way ANOVA with FDR correction for multiple
+comparisons. n is the number of replicates.
+induced mevalonate pathway byproduct accumulation or
+DISCUSSION
+OXPHOS, suggesting inadequate inhibition of the mevalonate
+TP53 mutations confer chemoresistance in AML, rendering
+pathway by rosuvastatin in vivo (Fig. 7C-E). The experiment was
+standard treatments largely ineffective and leading to dismal
+also performed with the primary sample, SCXC-7575. Correlating
+patient outcomes [3, 4, 50]. Our work identifies metabolic drivers
+with the in vitro data, AraC alone significantly reduced leukemic
+of AraC resistance in TP53ᵐut AML. We demonstrate for the first
+burden in the chemosensitive SCXC-7575 TP53ᵐut IDH2mut
+time that TP53 AML requires a mevalonate pathway-dependent
+ASXL1ᵐu AML PDX mouse model with no additional benefit
+adaptive stress response to survive chemotherapy. We provide
+from rosuvastatin [Supplementary Fig. 8B; F(1,22) = 0.5, p = 0.5].
+compelling evidence that the GGPP branch of the pathway is
+Furthermore, AraC-persisting leukemic cells did not demon-
+crucial for chemoresistance through its regulation of (1)
+strate increased basal or max OXPHOS (Supplementary
+glutathione to manage chemotherapy-induced ROS and (2)
+Fig. 8C, D). Altogether, TP53ᵐut AML AraC resistance in vivo
+mitochondrial mass and activity. We delve into mechanistic
+correlated with a mevalonate pathway-dependent increase in
+insights and therapeutic implications of targeting the mevalonate
+OXPHOS.
+pathway in AML.
+Our study has furthered our understanding of how cells resist
+In a retrospective analysis of TP53ᵐut AML patients
+AraC-induced cell death. Using novel isogenic TP53ᵐut MOLM14
+undergoing induction therapy, co-administration of a statin is
+AML cell lines, we observe that TP53WT AML cells exhibit a
+safe but does not improve survival
+significant increase in mitochondrial ROS in response to AraC.
+Statins are one of the most prescribed drugs for cardiovascular
+Conversely, TP53ᵐut AML has a higher antioxidant capacity and
+disease. Thus, a retrospective analysis was performed to deter-
+ability to regulate AraC-induced ROS that correlates with survival.
+mine the survival impact of concomitant statin with induction
+We subsequently show that TP53ᵐut AML cells respond to AraC
+therapy in patients with newly diagnosed TP53ᵐut AML. Retro-
+with significantly increased one-carbon metabolites directed
+spective chart reviews were performed on 364 TP53ᵐut AML
+towards synthesis of GSH and polyamines, which both play a role
+patients treated at one of two tertiary centers in the United States
+in cellular defense against ROS [40-43]. Notably, the upregulation
+between 2013 and 2023 (Supplementary Table 1G). 32% of
+of one-carbon metabolism is more robust in TP53ᵐut AML and only
+patients received a statin during induction therapy for TP53ᵐut
+the TP53ᵐut AML clones increase levels of the polyamines,
+AML. Statin-treated patients had more indications for a statin, such
+spermidine and spermine, in response to AraC. Interestingly,
+as a history of coronary artery disease and stroke (Fisher's exact
+active wildtype p53 is known to inhibit the transcription of genes
+p < 0.001) but were otherwise well matched. An unadjusted
+involved in polyamine synthesis (ARG1, ODC1) and promotes
+Kaplan-Meier survival estimate suggested a non-significant 1.2-
+transcription of genes involved in polyamine catabolism (SSAT),
+month improvement in median OS in patients who received a
+which then increases ROS [41]. Altogether, upregulation of one-
+statin with induction therapy (Fig. 7F).
+carbon metabolism may be crucial for TP53ᵐut AML cells to survive
+SPRINGER NATURE
+Leukemia
+S.J. Skuli et al.
+9
+A
+SCXC ID:
+5052
+Treatment Groups:
+AML Type
+De novo
+Vehicle
+Harvest
+Source
+PB
+AraC (50mg/kg/d) I.P.
+Frameshift
+Xenograft
+TP53 Status
+(VAF 90%)
+Transplant
+Other
+D1
+D5
+D7
+D8
+None
+mutations
+Primary
+Engraftment
+Rosuvastatin (1mg/kg/d) P.O.
+CMK
+TP53mut AML
+Karyotype
+(BM or PB)
+Confirmation by
+Prior Tx
+None
+BM Aspirates
+AraC + Rosuvastatin
+B
+C
+D
+*
+100
+30
+0.8
+*
+0.6
+Leukemic Burden
+(Millions of cells)
+CoQ10
+(ng per 0.5M hCD45+ cells)
+20
+10
+Cholesterol
+10
+(ug per 0.5M hCD45+ cells)
+0.4
+0.2
+1
+0
+0.0
+Vehicle AraC Statin AraC +
+Vehicle AraC Statin AraC +
+Vehicle AraC Statin AraC +
+Statin
+Statin
+Statin
+E
+*
+F
+80
+*
+1.00
+60
+TP53mut AML Survival (%)
+0.75
+No Statin Exposure
+OCR (pmol/min)
+Statin Exposure
+40
+0.50
+HR = 0.92
+(0.73-1.16)
+20
+0.25
+p = 0.49
+4.2 mos
+5.4 mos
+median
+median
+0.00
+OS
+OS
+0
+Basal OCR
+Max OCR
+0
+10
+20
+30
+40
+Months
+Vehicle
+Statin
+No Statin 249
+64
+22
+11
+0
+AraC
+AraC + Statin
+Statin 115
+27
+8
+5
+0
+Fig. 7 Statins are inadequate to fully reverse AraC resistance in PDX models and a retrospective cohort of TP53' AML patients.
+A Schema (created in BioRender) of TP53ᵐut AML PDX model. In brief, primary, human TP53ᵐut AML cells (chemoresistant SCXC-5052) were
+injected into the tail veins of busulfan-pretreated NSG mice. Engraftment was confirmed on bone marrow aspirates followed by initiation of
+treatment with vehicle, AraC (50 mg/kg/day IP for D1-5), rosuvastatin (1 mg/kg/day PO for D1-7) or the two drugs in combination. On D8 mice
+were humanely sacrificed and bilateral femurs/tibias and spleen were harvested (n = 7 mice per condition, early death of 3 mice in AraC
+condition). B Leukemic burden in millions of hCD45 + hCD33+ cells in the bone marrow and spleen combined for each mouse as quantified
+with counting beads by flow cytometry. C CoQ10 (ng) and D cholesterol (µg) per 0.5 million magnetic bead-purified hCD45+ leukemic cells
+from the bone marrow of mice with each circle representing the average of 1 mouse, as assessed by MS (5 replicates per mouse; n = 7, 4, 7, 7
+mice for Control, AraC, Statin and AraC + Statin, respectively). E Basal and maximum coupler-induced oxygen consumption in pmol/minute
+assessed by Seahorse technology in magnetic bead-purified hCD45+ leukemic cells from the bone marrow with each circle representing the
+average of 1 mouse (n = 4, 3, 2, 2 mice for Control, AraC, Statin and AraC + Statin, respectively). F Kaplan-Meier survival estimates from a
+retrospective study of newly diagnosed TP53ᵐut AML patients (n = 364) who did or did not receive a concurrent statin during induction
+therapy (n = 115 and = 249, respectively). Unless otherwise noted, statistical analysis by two-way ANOVA with FDR correction for multiple
+comparisons. Adjusted p-values: * = <0.05, ** = <0.01, *** = <0.001. n is the number of replicates. OCR oxygen consumption rate.
+AraC, particularly through production of antioxidants and
+decreased OXPHOS whereas inducible and transient TP53ᵐut
+subsequent ROS management.
+models had increased OXPHOS [51]. Our data support these
+Survival following AraC treatment is also associated with an
+findings in which stable TP53ᵐut AML single cell clones at baseline
+increase in mitochondrial mass and OXPHOS, specifically in
+have decreased OXPHOS (Fig. 3A-C, Supplementary Fig. 3A-J).
+TP53ᵐut AML cell lines and primary samples in vitro and in vivo.
+However, when the cells are stressed with AraC, for example, we
+A study evaluating the impact of TP53 missense mutations in solid
+observe a significant increase in OXPHOS and mitochondrial mass
+tumors found that stable endogenous TP53 mutations led to
+similar to the inducible/transient TP53ᵐut solid tumor models.
+Leukemia
+SPRINGER NATURE
+S.J. Skuli et al.
+10
+Thus, it is crucial to evaluate OXPHOS specifically in the context of
+Discussion Section Writing Committee Member. 2025. https://www.nccn.org/
+stress in TP53ᵐut versus TP53WT cancer models. Furthermore, the
+home/member-.
+critical determinants of chemoresistance may be both the basal
+6. Farge T, Saland E, de Toni F, Aroua N, Hosseini M, Perry R, et al. Chemotherapy-
+level of OXPHOS in AML cells and their ability to dynamically
+resistant human acute myeloid leukemia cells are not enriched for leukemic stem
+modify OXPHOS in response to stress.
+cells but require oxidative metabolism. Cancer Discov. 2017;7:716-35.
+7. Scotland S, Saland E, Skuli N, De Toni F, Boutzen H, Micklow E, et al. Mitochondrial
+Targeting metabolism, particularly direct mitochondrial inhibi-
+energetic and AKT status mediate metabolic effects and apoptosis of metformin
+tion, to reverse chemoresistance remains a challenge in the field
+in human leukemic cells. Leukemia. 2013;27:2129-38.
+[14]. Inhibiting the mevalonate pathway may be an indirect but
+8. Bosc C, Saland E, Bousard A, Gadaud N, Sabatier M, Cognet G, et al. Mitochondrial
+effective way to overcome toxicity from direct mitochondrial
+inhibitors circumvent adaptive resistance to venetoclax and cytarabine combi-
+inhibition. However, the optimal mevalonate pathway inhibitor
+nation therapy in acute myeloid leukemia. Nat Cancer. 2021;2:1204-23.
+may not be a statin. Combination rosuvastatin and AraC only
+9. Jones CL, Stevens BM, D'Alessandro A, Reisz JA, Culp-Hill R, Nemkov T, et al.
+modestly reduced TP53ᵐut AML leukemic burden in vivo, which
+Inhibition of amino acid metabolism selectively targets human leukemia stem
+correlated with partial abrogation of the mevalonate pathway and
+cells. Cancer Cell. 2018;34:724-740.e4.
+OXPHOS (Fig. 7B-E). Furthermore, while our retrospective analysis
+10. Stevens BM, Jones CL, Pollyea DA, Culp-Hill R, D'Alessandro A, Winters A, et al. Fatty
+acid metabolism underlies venetoclax resistance in acute myeloid leukemia stem
+showed that a broad range of statins at different doses appear to
+cells. Nat Cancer. 2020;1:1176-87.
+be well tolerated and safe in combination with AML therapy in
+11. Nechiporuk T, Kurtz SE, Nikolova O, Liu T, Jones CL, D'Alessandro A, et al. The TP53
+TP53ᵐut AML patients, there was no survival benefit (Fig. 7F). Statin
+apoptotic network is a primary mediator of resistance to BCL2 inhibition in AML
+anti-cancer efficacy in mouse and human models remains limited
+cells. Cancer Discov. 2019;9:910-25.
+by (1) statin pharmacokinetics and pharmacodynamics that make
+12. Zhang C, Liu J, Liang Y, Wu R, Zhao Y, Hong X, et al. Tumour-associated mutant
+it challenging to achieve doses in humans that inhibit geranylger-
+p53 drives the Warburg effect. Nat Commun. 2013;4:2935
+anylation [52, 53], which is further exacerbated in rodent models
+13. Basu S, Gnanapradeepan K, Barnoud T, Kung CP, Tavecchio M, Scott J, et al.
+[54], (2) rescue of mevalonate pathway inhibition by dietary
+Mutant p53 controls tumor metabolism and metastasis by regulating PGC-1a.
+presence of mevalonate byproducts [55], and (3) highly conserved
+Genes Dev. 2018;32:230-43.
+feedback loops that induce mevalonate pathway upregulation
+14. Yap TA, Daver N, Mahendra M, Zhang J, Kamiya-Matsuoka C, Meric-Bernstam F,
+et al. Complex I inhibitor of oxidative phosphorylation in advanced solid tumors
+following inhibition [38]. Future preclinical studies should focus on
+and acute myeloid leukemia: phase I trials. Nat Med. 2023;29:115-26.
+robust mevalonate pathway inhibition in chemoresistant AML.
+15. Tricarico P, Crovella S, Celsi F. Mevalonate pathway blockade, mitochondrial
+To optimize mevalonate pathway inhibition for anti-cancer
+dysfunction and autophagy: a possible link. Int J Mol Sci. 2015;16:16067-84.
+benefit, it is essential to understand the specific role(s) of the
+16. Ishihara N, Otera H, Oka T, Mihara K. Regulation and physiologic functions of
+mevalonate pathway in chemoresistance. We determined that
+GTPases in mitochondrial fusion and fission in Mammals. Antioxid Redox Signal.
+GGPP is the essential byproduct required for AraC resistance.
+2013;19:389-99.
+Other groups have validated the importance of this byproduct in
+17. Freed-Pastor WA, Mizuno H, Zhao X, Langerød A, Moon SH, Rodriguez-Barrueco R,
+multiple tumor models [21-23, 25, 56, 57]. However, the specific
+et al. Mutant p53 disrupts mammary tissue architecture via the mevalonate
+function of GGPP has remained elusive. GGPP may have multiple
+pathway. Cell. 2012;148:244-58.
+18. Moon SH, Huang CH, Houlihan SL, Regunath K, Freed-Pastor WA, Morris JP, et al.
+roles, such as regulation of GTPases that (1) play a role in
+p53 represses the mevalonate pathway to mediate tumor suppression. Cell.
+mitochondrial biogenesis and (2) control glutathione levels.
+2019;176:564-580.e19.
+Notably, GGPP-dependency for maintaining glutathione has only
+19. Oni TE, Biffi G, Baker LA, Hao Y, Tonelli C, Somerville TDD, et al. SOAT1 promotes
+been previously described in adipose tissue [58]. Future studies
+mevalonate pathway dependency in pancreatic cancer. J Exper Med. 2020;217.
+will define the specific mechanisms by which GGPP regulates
+20. Kaymak I, Maier CR, Schmitz W, Campbell AD, Dankworth B, Ade CP, et al. Meva-
+mitochondrial biogenesis and glutathione synthesis and deter-
+lonate pathway provides ubiquinone to maintain pyrimidine synthesis and survival
+mine the therapeutic benefit of direct targeting of GGPP in
+in p189-203-deficient cancer cells exposed to metabolic stress. Cancer Res. 2020;80.
+TP53ᵐut AML. We anticipate that novel and specific GGT inhibitors,
+21. Guo C, Wan R, He Y, Lin SH, Cao J, Qiu Y, et al. Therapeutic targeting of the
+such as GGTI2418 which has shown significant promise in clinical
+mevalonate-geranylgeranyl diphosphate pathway with statins overcomes che-
+motherapy resistance in small cell lung cancer. Nat Cancer. 2022;3:614-28.
+trials for therapy-refractory peripheral T-cell lymphomas [59], will
+22. Lee JS, Roberts A, Juarez D, Vo TTT, Bhatt S, Herzog L, et al. Statins enhance
+also be efficacious in TP53ᵐut AML.
+efficacy of venetoclax in blood cancers. Sci Transl Med. 2018;10.
+23. Zhou C, LiJ, Du J, Jiang X, Xu X, Liu Y, et al. HMGCS1 drives drug-resistance in acute
+myeloid leukemia through endoplasmic reticulum-UPR-mitochondria axis. Biomed
+DATA AVAILABILITY
+Pharmacother. 2021;137:111378.
+Sequencing data available: GSE295181. Code available at https://github.com/
+24. Pandyra A, Mullen PJ, Kalkat M, Yu R, Pong JT, et al. Immediate utility of two
+bowmanr/Skuli_TP53_mevalonate
+approved agents to target both the metabolic mevalonate pathway and its
+restorative feedback loop. Cancer Res. 2014;74:4772-82.
+25. Xia Z, Tan M, Wei-Lynn Wong W, Dimitroulakos J, Minden M, Penn L. Blocking
+REFERENCES
+protein geranylgeranylation is essential for lovastatin-induced apoptosis of
+human acute myeloid leukemia cells. Leukemia. 2001;15:1398-407.
+1. Badar T, Nanaa A, Atallah E, Shallis RM, Craver EC, Li Z, et al. Prognostic impact of
+'multi-hit' versus 'single hit' TP53 alteration in patients with acute myeloid leu-
+26. Mueller J, Schimmer RR, Koch C, Schneiter F, Fullin J, Lysenko V, et al. Targeting
+kemia: results from the Consortium on Myeloid Malignancies and Neoplastic
+the mevalonate or Wnt pathways to overcome CAR T-cell resistance in TP53-
+mutant AML cells. EMBO Mol Med. 2024;16:445-74.
+Diseases. Haematologica. 2024;109:3533-42.
+27. Kornblau SM, Banker DE, Stirewalt D, Shen D, Lemker E, Verstovsek S, et al. Blockade of
+2. Grob T, Al Hinai ASA, Sanders MA, Kavelaars FG, Rijken M, Gradowska PL, et al.
+adaptive defensive changes in cholesterol uptake and synthesis in AML by the addition of
+Molecular characterization of mutant TP53acute myeloid leukemia and high-risk
+pravastatin to idarubicin + high-dose Ara-C: a phase 1 study. Blood. 2007;109:2999-3006.
+myelodysplastic syndrome. Blood. 2022;139:2347-54.
+3. Bewersdorf JP, Shallis RM, Gowda L, Wei W, Hager K, Isufi I, et al. Clinical outcomes and
+28. Advani AS, Mcdonough S, Copelan E, Willman C, Mulford DA, List AF, et al.
+characteristics of patients with TP53-mutated acute myeloid leukemia or myelodys-
+SWOG0919: a Phase 2 study of idarubicin and cytarabine in combination with
+plastic syndromes: a single center experience*. Leuk Lymphoma. 2020;61:2180-90.
+pravastatin for relapsed acute myeloid leukaemia. Br J Haematol. 2014;167:233-7.
+4. Pasca S, Haldar SD, Ambinder A, Webster JA, Jain T, Dalton WB, et al. Outcome
+29. Advani AS, Li H, Michaelis LC, Medeiros BC, Liedtke M, List AF, et al. Report of the
+heterogeneity of TP53-mutated myeloid neoplasms and the role of allogeneic
+relapsed/refractory cohort of SWOG S0919: a phase 2 study of idarubicin and
+hematopoietic cell transplantation. Haematologica. 2024;109:948-52.
+cytarabine in combination with pravastatin for acute myelogenous leukemia
+5. Pollyea DA, Altman JK, Chair V, Assi R, Bachiashvili K, Raj Bhatt V, et al. NCCN
+(AML). Leuk Res. 2018;67:17-20.
+30. Boettcher S, Miller PG, Sharma R, Mcconkey M, Leventhal M, Krivtsov AV, et al. A
+guidelines version 2.2025 acute myeloid leukemia (age ≥18 years) continue
+dominant-negative effect drives selection of TP53 missense mutations in myeloid
+NCCN guidelines panel disclosures { Bone marrow transplantation # Hematol-
+malignancies. Science. 2019;365:599-604.
+ogy/Hematology oncology P Internal medicine t Medical oncology # Pathology
+SPRINGER NATURE
+Leukemia
+S.J. Skuli et al.
+11
+31. Schavolt KL, Pietenpol JA. p53 and Дпрбза differentially bind and regulate target genes
+58. Shu X, Wu J, Zhang T, Ma X, Du Z, Xu J, et al. Statin-induced geranylgeranyl
+involved in cell cycle arrest, DNA repair and apoptosis. Oncogene. 2007;26:6125-32.
+pyrophosphate depletion promotes ferroptosis-related senescence in adipose
+32. Tyner JW, Tognon CE, Bottomly D, Wilmot B, Kurtz SE, Savage SL, et al. Functional
+tissue. Nutrients. 2022;14.
+genomic landscape of acute myeloid leukaemia. Nature. 2018;562:526-31.
+59. Chew T, Yannakou CK, Ganju V, Grant S, Sebti S, Prince HM. Phase 1 pharmaco-
+33. Giacomelli AO, Yang X, Lintner RE, McFarland JM, Duby M, Kim J, et al. Mutational
+dynamic and pharmacokinetic study of the geranylgeranyltransferase I inhibitor
+processes shape the landscape of TP53 mutations in human cancer. Nat Genet.
+PTX-100 (GGTI-2418) in patients with advanced malignancies. Blood. 2023;142:1705
+2018;50:1381-7.
+34. Guernet A, Mungamuri SK, Cartier D, Sachidanandam R, Jayaprakash A, Adriouch
+S, et al. CRISPR-barcoding for intratumor genetic heterogeneity modeling and
+functional analysis of oncogenic driver mutations. Mol Cell. 2016;63:526-38.
+ACKNOWLEDGEMENTS
+35. Schimmer RR, Kovtonyuk LV, Klemm N, Fullin J, Stolz SM, Mueller J, et al. TP53
+We thank the UPenn Stem Cell and Xenograft Core, UPenn Cytomics and Cell Sorting
+mutations confer resistance to hypomethylating agents and BCL-2 inhibition in
+Shared Resource Laboratory (RRID:SCR_022376; NIH P3016520), and Mass Spectro-
+myeloid neoplasms. Blood Adv. 2022;6:3201-6.
+metry Shared Resource of the University of Colorado (NIH P30CA046934). Research
+36. lanevski A, Giri AK, Aittokallio T. SynergyFinder 2.0: visual analytics of multi-drug
+support provided by: the UPenn Hematology Clinical Research Training Program
+combination synergies. Nucleic Acids Res. 2020;48:488
+(T32HL0439, SJS), UPenn Clinical and Translational Research Award KL2 Program
+37. Brem EA, O'Brien SM, Becker PS, Jeyakumar D, Pinter-Brown LC, Kirk C, et al. A
+(KL2TR001879, SJS), American Society of Hematology (SJS, RLB), American Society
+phase 1 study of adding pitavastatin to venetoclax-based therapy in AML and
+of Clinical Oncology (SJS), the NIH (R35CA197731, SMS; P30ES013508, CM;
+CLL/SLL. Blood. 2023;142:5940
+R35CA220483, MCS; K08CA230190, PJS; P30CA16056, PJS, LNM-G; R00CA248460
+38. DeBose-Boyd RA. Feedback regulation of cholesterol synthesis: Sterol-accelerated
+RLB; U54CA283759, MC), Department of Defense (W81XWH-20-1-0867, DAF),
+ubiquitination and degradation of HMG CoA reductase. Cell Res. 2008;18:609-21.
+Veterans Merit Award (I01BX000918, MC), Laboratoire d'Excellence Toulouse Cancer
+39. Lu XY, Shi XJ, Hu A, Wang JQ, Ding Y, Jiang W, et al. Feeding induces cholesterol
+(ANR11-LABEX, TOUCAN and TOUCAN2.0, J-ES), INCA (HRHG-MP22-036, IRONAML53,
+biosynthesis via the mTORC1-USP20-HMGCR axis. Nature. 2020;588:479-84.
+J-ES), Ligue Nationale de Lutte Contre le Cancer (J-ES), Association GAEL (J-ES),
+40. Deponte M. Glutathione catalysis and the reaction mechanisms of glutathione-
+Leukemia Research Foundation (RLB), Swiss Cancer League (KFS-4885-08-2019, SB)
+dependent enzymes. Biochim Biophys Acta Gen Subj. 2013;1830:3217-66.
+and Helmut Horten Foundation (SB). The content is solely the responsibility of the
+41. J, Meng Y, Wu X, Sun Y. Polyamines and related signaling pathways in cancer.
+authors and does not necessarily represent the official views of the funders.
+Cancer Cell Int. 2020;20:539.
+42. Ha HC, Sirisoma NS, Kuppusamy P, Zweier JL, Woster PM, Casero RA. The natural
+polyamine spermine functions directly as a free radical scavenger. Proc Natl Acad
+AUTHOR CONTRIBUTIONS
+Sci USA. 1998;95:11140-5.
+Supervision: KNM, JES, DAF, BK, MCS, PJS, RLB, AM, MC. Funding acquisition: SJS,
+43. Zahedi K, Barone S, Soleimani M. Polyamines and their metabolism: from the main-
+KNM, JES, DAF, MC. Conceptualization: SJS, KNM, JES, DAF, BK, MCS, NS, RLB, AM, MC.
+tenance of physiological homeostasis to the mediation of disease. Med Sci. 2022;10.
+Methodology/Provision of models/reagents: SJS, BM, GBS, DD, JAR, ES, SB, SMS, AD,
+44. Falsetti SC, Wang D, Peng H, Carrico D, Cox AD, Der CJ, et al. Geranylgeranyl-
+CM, GW. Systems Development: BM, GW. Data collection: SJS, AB, MK, PP, AK, OR,
+transferase I inhibitors target RalB to inhibit anchorage-dependent growth and
+GBS, DD, LNMG, CCA, RB, MP, ES, FL, AD, SW, JPX, CM, PJS. Data analysis: SJS, AB, MK,
+induce apoptosis and RalA to inhibit anchorage-independent growth. Mol Cell
+PP, AK, OR, CCA, RB, MP, FL, EN, CM. Bioinformatics: MB, RH, RLB, AM. Statistical
+Biol. 2007;27:8003-14.
+analysis: SJS, MB, CCA, EN, RH, CM, RLB, AM. Figure preparation: SJS, CCA, RLB, AM.
+45. Kazi A, Carie A, Blaskovich MA, Bucher C, Thai V, Moulder S, et al. Blockade of
+Interpretation of data: SJS, JAR, ES, CL, KNM, JES, DAF, AD, CM, BK, MCS, GW, NS, RLB,
+protein geranylgeranylation inhibits Cdk2-dependent p27 Kip1 phosphorylation
+AM, MC. Writing - original draft: SJS. Critical review of the manuscript & writing -
+on Thr187 and accumulates p27 Kip1 in the nucleus: implications for breast
+review and editing prior to finalization: All authors.
+cancer therapy. Mol Cell Biol. 2009;29:2254-63.
+46. Vogt A, Sun J, Qian Y, Hamilton AD, Sebti M. The geranylgeranyltransferase-I
+inhibitor GGTI-298 arrests human tumor cells in G0/G1 and induces p21(WAF1/
+CIP1/SD11) in a p53-independent manner. J Biol Chem. 1997;272:27224-9.
+COMPETING INTERESTS
+47. Sun J, Qian Y, Chen Z, Marfurt J, Hamilton AD, Sebti M. The geranylgeranyl-
+SMS is co-inventor of GGTI-2418/17 and is Scientific Founder of Prescient
+transferase I inhibitor GGTI-298 induces hypophosphorylation of retinoblastoma
+Therapeutics, the company that licensed GGTI-2418/17 and sponsoring current
+and partner switching of cyclin- dependent kinase inhibitors: a potential
+clinical trials. Competing interests for unrelated studies include the following: CL is a
+mechanism for GGTI-298 antitumor activity. J Biol Chem. 1999;274:6930-4.
+consultant for Bristol Myers Squibb (BMS), AbbVie and Astellas; CL is on advisory
+48. Dan HC, Jiang K, Coppola D, Hamilton A, Nicosia SV, Sebti SM, et al.
+boards for Servier, Daiichi, AbbVie, Rigel and Genentech; CL receives research funding
+Phosphatidylinositol-3-OH kinase/AKT and survivin pathways as critical targets for
+from JAZZ and BMS; DAF is a consultant for AbbVie. Other authors declare no
+geranylgeranyltransferase I inhibitor-induced apoptosis. Oncogene. 2004;23:706-15.
+relevant competing interests.
+49. Goss GD, Jonker DJ, Laurie SA, Weberpals JI, Oza AM, Spaans JN, et al. A phase I
+study of high-dose rosuvastatin with standard dose erlotinib in patients with
+advanced solid malignancies. J Transl Med. 2016;14:83.
+50. Daver NG, Iqbal S, Renard C, Chan RJ, Hasegawa K, Hu H, et al. Treatment out-
+ETHICS APPROVAL AND CONSENT TO PARTICIPATE
+comes for newly diagnosed, treatment-naive TP53-mutated acute myeloid leu-
+All methods were performed in accordance with the relevant guidelines and
+kemia: a systematic review and meta-analysis. J Hematol Oncol. 2023;16:19.
+regulations. All animal-related experiments received ethical approval from the UPenn
+51. Eriksson M, Ambroise G, Ouchida AT, Lima Queiroz A, Smith D, Gimenez-Cassina
+Institutional Animal Care and Use Committee (IACUC Protocol #803506). The use of
+A, et al. Effect of mutant p53 proteins on glycolysis and mitochondrial metabo-
+deidentified human samples and data collected from the electronic health record
+lism. Mol Cell Biol. 2017;37.
+received ethical approval from the UPenn and Roswell Park Comprehensive Cancer
+52. Abdullah MI, de Wolf E, Jawad MJ, Richardson A. The poor design of clinical trials
+Center Institutional Review Boards (IRB Protocols #703185 and #BDR173423,
+of statins in oncology may explain their failure - lessons for drug repurposing.
+respectively). Informed consent was obtained from all participants.
+Cancer Treat Rev. 2018;69:84-89.
+53. Juarez D, Fruman DA. Targeting the mevalonate pathway in cancer. Trends
+Cancer. 2021;7:525-40.
+ADDITIONAL INFORMATION
+54. Schonewille M, Freark de Boer J, Mele L, Wolters H, Bloks VW, Wolters JC, et al.
+Supplementary information The online version contains supplementary material
+Statins increase hepatic cholesterol synthesis and stimulate fecal cholesterol
+available at https://doi.org/10.1038/s41375-025-02668-6.
+elimination in mice. J Lipid Res. 2016;57:1455-64.
+55. De Wolf E, Abdullah MI, Jones SM, Menezes K, Moss DM, Drijfhout FP, et al.
+Correspondence and requests for materials should be addressed to Martin Carroll.
+Dietary geranylgeraniol can limit the activity of pitavastatin as a potential
+treatment for drug-resistant ovarian cancer. Sci Rep. 2017;7:5410
+Reprints and permission information is available at http://www.nature.com/
+56. Juarez D, Buono R, Matulis SM, Gupta VA, Duong M, Yudiono J, et al. Statin-
+reprints
+induced mitochondrial priming sensitizes multiple myeloma cells to BCL2 and
+MCL-1 inhibitors. Cancer Res Commun. 2023;3:2497-509.
+Publisher's note Springer Nature remains neutral with regard to jurisdictional claims
+57. Jiao Z, Cai H, Long Y, Sirka OK, Padmanaban V, Ewald AJ, et al. Statin-induced
+in published maps and institutional affiliations.
+GGPP depletion blocks macropinocytosis and starves cells with oncogenic
+defects. Proc Natl Acad Sci USA. 2020;117:4158-68.
+Leukemia
+SPRINGER NATURE
+S.J. Skuli et al.
+12
+Open Access This article is licensed under a Creative Commons
+cc
+BY
+Attribution 4.0 International License, which permits use, sharing,
+adaptation, distribution and reproduction in any medium or format, as long as you give
+appropriate credit to the original author(s) and the source, provide a link to the Creative
+Commons licence, and indicate if changes were made. The images or other third party
+material in this article are included in the article's Creative Commons licence, unless
+indicated otherwise in a credit line to the material. If material is not included in the
+article's Creative Commons licence and your intended use is not permitted by statutory
+regulation or exceeds the permitted use, you will need to obtain permission directly
+from the copyright holder. To view a copy of this licence, visit http://
+creativecommons.org/licenses/by/4.0/.
+The Author(s) 2025
+SPRINGER NATURE
+Leukemia

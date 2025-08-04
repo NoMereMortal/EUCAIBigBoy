@@ -1,0 +1,142 @@
+/* Markdown code block styling */
+.container {
+    position: relative;
+    margin-bottom: 1rem;
+    font-family: var(--font-mono, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
+    border-radius: 0.25rem;
+    overflow: hidden;
+    border: 1px solid hsl(var(--border));
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 1rem;
+    background-color: hsl(var(--muted));
+    border: .5px solid hsl(var(--border));
+    color: hsl(var(--muted-foreground));
+    font-size: var(--text-xs, 0.75rem);
+}
+
+.languageLabel {
+    font-family: var(--font-mono, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
+    font-size: var(--text-xs, 0.75rem);
+    color: hsl(var(--muted-foreground));
+}
+
+/* Dark mode overrides */
+.dark .container {
+    border: 1px solid var(--tw-prose-quote-borders, rgba(55, 65, 81, 0.3));
+}
+
+.dark .header {
+    background-color: rgba(87, 87, 87, 0.3);
+    border: .5px solid rgba(129, 129, 129, 0.3);
+    color: var(--tw-prose-captions, #999);
+}
+
+.dark .languageLabel {
+    color: var(--tw-prose-captions, #999);
+}
+
+.controlsContainer {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.button {
+    padding: 0rem 0.25rem;
+    border-radius: var(--radius, 0.25rem);
+    color: hsl(var(--secondary-foreground));
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: var(--text-xs, 0.75rem);
+    border: none;
+    cursor: pointer;
+}
+
+.highlighterContainer {
+    position: relative;
+    background-color: hsl(var(--card)) !important;
+}
+
+/* Target the pre element specifically */
+.highlighterContainer pre {
+    background-color: transparent !important;
+    font-family: var(--font-mono, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace) !important;
+    color: hsl(var(--foreground)) !important;
+    overflow: auto;
+    font-weight: 400;
+    font-size: var(--text-xs, 0.8571429em) !important;
+    line-height: 1.6666667 !important;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0.6666667em 1em;
+}
+
+.dark .highlighterContainer {
+    background-color: var(--tw-prose-pre-bg, rgb(27, 28, 30)) !important;
+}
+
+.dark .highlighterContainer pre {
+    color: var(--tw-prose-pre-code, oklch(86.9% 0.005 56.366)) !important;
+}
+
+/* Target the code element inside pre */
+.highlighterContainer code,
+.code {
+    background-color: transparent !important;
+    font-family: inherit !important;
+    text-shadow: none !important;
+    color: hsl(var(--foreground)) !important;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.code pre {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/* Inline code styling */
+.inlineCode {
+    padding: 0.2rem 0.3rem;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+    color: hsl(var(--primary));
+    font-size: .7rem;
+    background-color: hsl(var(--card));
+    border-radius: 0.25rem;
+    border: .5px solid hsl(var(--border));
+}
+
+/* Multiline inline code styling - for when code has newlines but is still inline */
+.inlineMultiline {
+    display: block;
+    white-space: pre;
+    overflow-x: auto;
+    padding: 0.5rem;
+    font-family: var(--font-mono, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace);
+    background-color: hsl(var(--card));
+    border: .5px solid hsl(var(--border));
+    border-radius: 0.25rem;
+}
+
+/* Dark mode overrides for code elements */
+.highlighterContainer code .dark,
+.code .dark {
+    color: var(--tw-prose-pre-code, oklch(86.9% 0.005 56.366)) !important;
+}
+
+.inlineCode .dark {
+    color: orange !important;
+    background-color: var(--tw-prose-pre-bg, rgb(27, 28, 30));
+    border: .5px solid rgba(129, 129, 129, 0.3);
+}
+
+.inlineMultiline .dark {
+    background-color: var(--tw-prose-pre-bg, rgb(27, 28, 30));
+    border: .5px solid rgba(129, 129, 129, 0.3);
+}

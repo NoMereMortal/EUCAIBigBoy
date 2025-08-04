@@ -1,0 +1,191 @@
+/* Typography styles for different themes */
+
+
+
+/* Base typography */
+body {
+    font-feature-settings: "rlig" 1, "calt" 1;
+    text-rendering: optimizeLegibility;
+    /* Font family */
+    --font-primary: -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+    --font-secondary: -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+    /* Font settings */
+    font-family: var(--font-primary);
+    letter-spacing: -0.01em;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply font-medium tracking-tight;
+    line-height: 1.2;
+}
+
+h1 {
+    @apply text-4xl font-semibold;
+    letter-spacing: -0.025em;
+}
+
+h2 {
+    @apply text-3xl font-semibold;
+    letter-spacing: -0.025em;
+}
+
+h3 {
+    @apply text-2xl font-medium;
+    letter-spacing: -0.015em;
+}
+
+h4 {
+    @apply text-xl font-medium;
+}
+
+h5 {
+    @apply text-lg font-medium;
+}
+
+/* Paragraphs */
+p {
+    @apply leading-relaxed;
+}
+
+/* Links */
+a {
+    @apply transition-colors duration-200;
+}
+
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-primary);
+    @apply text-foreground;
+}
+
+/* Body text */
+p,
+li,
+blockquote {
+    font-family: var(--font-secondary);
+    @apply text-foreground/90;
+}
+
+/* UI elements */
+button,
+input,
+select,
+textarea {
+    font-family: var(--font-secondary);
+}
+
+/* Message text */
+.message-text {
+    line-height: 1.6;
+    letter-spacing: 0;
+}
+
+/* Code */
+code,
+pre {
+    font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+    font-size: 0.9em;
+}
+
+/* Message typography enhancements */
+.message-item {
+    @apply text-base;
+}
+
+.message-item h1 {
+    @apply text-2xl mt-6 mb-4;
+}
+
+.message-item h2 {
+    @apply text-xl mt-5 mb-3;
+}
+
+.message-item h3 {
+    @apply text-lg mt-4 mb-2;
+}
+
+.message-item p {
+    @apply my-3;
+}
+
+.message-item ul,
+.message-item ol {
+    @apply my-3 ml-6;
+}
+
+.message-item li {
+    @apply my-1;
+}
+
+.message-item code {
+    @apply px-1.5 py-0.5 rounded text-sm;
+}
+
+.message-item pre {
+    @apply p-3 rounded-md my-4 overflow-x-auto;
+}
+
+/* UI element typography */
+.sidebar-title {
+    @apply font-medium text-lg;
+}
+
+.input-label {
+    @apply font-medium text-sm;
+}
+
+.button-text {
+    @apply font-medium;
+}
+
+.dropdown-item {
+    @apply text-sm;
+}
+
+.tooltip {
+    @apply text-xs;
+}
+
+/* Responsive typography */
+@media (max-width: 640px) {
+    h1 {
+        @apply text-3xl;
+    }
+
+    h2 {
+        @apply text-2xl;
+    }
+
+    h3 {
+        @apply text-xl;
+    }
+
+    body {
+        @apply text-sm;
+    }
+}

@@ -1,0 +1,1771 @@
+
+Supplementary Figure S1
+A
+40
+30
+Xumap_2
+20
+Normal
+SCLC
+10
+LUAD
+0
+-10
+-40
+-20
+0
+Xumap_1
+B
+SCLC vs Normal Differential Gene Expression
+SFTPC-PGC AGER WIF1
+CDKN2A UBE2S ASCL1 TUBB2B
+300
+$CGB1A1/ SFTPA2-LRRK2
+or
+CPE HES6 BEXT SCG3
+FABP4 GKN2 PLA2G1B
+MDK
+UCHL1
+-log10(p_val_adj)
+200
+100
+FOXM1
+0
+-10
+0
+10
+FOXM1(RPM Lung)
+3
+FOXM1
+c
+*
+Control
++FDI-6
+2
+FOXM1
+1
+0
+V.C. +FDI6
+RPM
+D
+E
+RPM
+600
+****
+V.C.
++FDI-6
+Number of Colonies
+450
+300
+150
+0
+V.C.+FDI-6
+Supplementary Figure S1: Human and murine SCLC cells express a robust amount
+of FOXM1 and FOXM1 inhibition adversely affects cell viability and colony formation.
+A) Single cell RNA-sequencing data analysis revealed distinct populations of cell
+clusters between normal, SCLC and Lung adenocarcinoma. B) Differential gene
+expression analysis performed on the single cell data showed FOXM1
+overexpression in SCLC cells. C) RPM tissue IHC showing robust expression of
+FOXM1 which is downregulated in FDI-6/FOXM1 inhibitor treatment. D) FOXM1
+inhibition impairs colony formation of RPM SCLC cells. E) Measuring colony numbers
+from figure D showed significant downregulation in colony formation capabilities
+(n=3/6, student's t test performed for significance analysis, *, * p<0.05, **, p < 0.01, ***,
+p < 0.001, ns, non-significant).
+Supplementary Figure S2
+A
+B
+C
+120
+120
+120
+SBC-3
+100
+H-69
+100
+100
+FDI-6
+Percent Cell Viability
+SBC-5
+DMS-273
+Percent Cell Viability
+TMSCLC18
+80
+80
+RPM CisR
+Percent Cell Viability
+80
+Cisplatin
+60
+60
+H-69 CISR
+Cisplatin+FDI-6
+60
+40
+40
+40
+20
+20
+20
+0
+0
+-1.0-0.50.0 0.5 1.0 1.5 2.0
+-1.0-0.5 0.0 0.5 1.0 1.5 2.0
+0
+0.0
+0.5
+1.0
+1.5
+2.0
+Log[NB-73], µM
+Log[NB-73], µM
+Log[Cisplatin/FDI-6], µM
+D
+E
+F
+DMS-273
+120
+120
+120
+FDI-6
+RPM
+100
+RPM CisR
+Percent Cell Viability
+Percent Cell Viability
+100
+RPM CisR
+80
+Percent Cell Viability
+100
+Cisplatin
+FDI-6+Cisplatin
+80
+RPM
+80
+60
+60
+60
+40
+40
+40
+20
+20
+20
+0
+0
+0
+-1.0-0.5 0.0 0.5 1.0 1.5 2.0
+-1.0-0.50.0 0.5 1.0 1.5 2.0
+-1.0-0.5 0.0 0.5 1.0 1.5 2.0
+Log[FDI-6], µM
+Log[NB-73], µM
+Log [Cisplatin/FDI-6], µM
+G
+H
+I
+SBC-5 CisR
+RPM CisR: FDI-6
+H-69 CisR
+120
+RPM CisR: Cisplatin
+RPM CisR: FDI-6 5 µM + Cisplatin
+FDI-6
+120
+Percent Cell Viability
+100
+120
+Cisplatin
+80
+100
+FDI-6 5µM + Cisplatin
+60
+FDI-6
+Percent Cell Viability
+60
+Percent Cell Viability
+100
+80
+80
+NB-73
+40
+60
+40
+40
+20
+20
+20
+0
+-1.0-0.5 0.0 0.5 1.0 1.5 2.0
+0
+0
+-1.0-0.5 0.0 0.5 1.0 1.5 2.0 2.5
+-1.0-0.50.0 0.5 1.0 1.5 2.0
+Log[FOXM1i], µM
+Log[Drug], µM
+Log[Cisplatin/FDI-6], µM
+J
+H-69 CisR
+K
+FDI-6
+Cisplatin
+100
+H-69
+100
+Cisplatin(8µM)+FDI-6
+H-69 CisR
+Percent Cell Viability
+80
+60
+Percent Cell Viability
+80
+60
+NB-73
+40
+40
+20
+20
+0
+0
+-1.0-0.5 0.0 0.5 1.0 1.5 2.0
+-2.0 -1.5 -1.0 -0.5 0.0 0.5 1.0 1.5 2.0
+Log[Cisplatin/FDI-6], µM
+Log[FOXM1i], µM
+Supplementary Figure S2: FOXM1 inhibition reduces naïve and chemo-resistant SCLC cell
+viability and shows synergistic anticancer response with cisplatin. A-B) FOXM1 inhibitor NB-73
+potently decreases viability of SCLC naïve and chemo-resistant SCLC cells. C-D) FOXM1
+inhibition shows synergistic anticancer response with cisplatin. E-F) FOXM1 inhibitors
+effectively reduce the viability of naïve and chemo-resistant murine cell line models. G) SBC-5
+CisR cells show reduction in cell viability after FOXM1 inhibition. H) RPM CisR cells show
+synergistic anticancer effects with cisplatin at low concentrations of cisplatin. I) FOXM1
+inhibition sensitizes H-69 CisR cells towards cisplatin. J) High dose cisplatin treatment does not
+show sensitize chemo-resistant cells to FOXM1 inhibitor FDI-6. K) H-69 CisR cells showed
+higher susceptibility towards FOXM1 inhibition compared to its naïve counterpart H-69.
+Supplementary Figure S3
+A
+B
+RPM CisR
+150
+RPM CisR
+150
+*
+Control
+% Colony Formation
+100
+50
+% Colony Formation
+100
+Control
+50
+FDI-6
+NB-73
+0
+0
+V.C. FDI-6
+V.C. NB-73
+c
+H-69 CisR
+150
+%Colony Formation
+****
+Control
+100
+50
+0
+NB-73
+Control
+NB73
+D
+0 Hour
+48 Hour
+0.0011
+100
+V.C.
+80
+% closure
+wound
+(after 48h)
+60
+40
+NB-73
+20
+0
+Control
+NB-73
+Supplementary Figure S3: FOXM1 inhibition reduces colony formation and wound
+healing of naïve and chemo-resistant cancer cells. A-B) FOXM1 inhibitors decrease
+colony formation of chemo-resistant RPM cells. C) FOXM1 inhibition significantly reduces
+colony formation of H-69 CisR cells. D) FOXM1 inhibitor delays wound healing in scratch
+assay.
+Supplementary S4
+A
+B
+SBC-5
+SBC-5
+200
+V. C. V.C.
+100
+****
+V. C. V.C.
+80
+150
+SBC-5
+60
+p=0.0004
+SBC-5
+40
+% Migration
+100
++FDI-6
+.
++NB-73
+50
+20
+0
+0
+V.C. +FDI-6
+V.C.+ NB73
+V.C.
++FDI-6
++NB-73
+SBC-5 CisR
+SBC-5 CisR
+C
+****
+150
+200
+SBC-5 CisR
+% Colony Formation
+100
+150
+% Migration
+100
+50
+50
+0
+0
+Control
+FDI-6 ,73
+Control NB-73
+**
+D
+*
+20
+SBC-5 CisR
+NB-73
+NB-73
+Number of Spheroids/Field
+ns
+15
+V.C.
+Cisplatin
++Cisplatin
+10
+*
+20X
+5
+0
+Controlplatin
+NB- Combination ,73
+Supplementary Figure S4: FOXM1 inhibition reduces colony formation and migration of naïve
+and chemo-resistant cancer cells. A-B) FOXM1 inhibitors significantly diminish migration of
+naïve SBC-5 cells. C) FOXM1 inhibition significantly reduce colony formation and migration of
+SBC-5 CisR cells. D) FOXM1 inhibitor treatment adversely affects 3D sphere formation.
+Supplementary S5
+A
+V.C.
++FDI-6
+CTRL 001-All Events
+Treat 001-All Events
+5
+0.2% DEAD
+5
+LATE APOPTOSIS
+10
+2.7% DEAD
+LATE APOPTOSIS
+SBC-3
+Propidium lodide-A
+1.9%
+Propidium lodide-A
+10.8%
+82.7%
+96.6%
+EARLY APOPTOSIS
+EARLY APOPTOSIS
+1.3%
+3.8%
+-160
+-160
+0
+0
+10
+10
+10s
+0
+102
+10°
+10²
+4
+10
+10s
+-116
+-116
+ANNEXIN V Cy5-A
+ANNEXIN V Cy5-A
+B
+CTRL 004-All Events
+Treat 005-All Events
+5
+0.5% DEAD
+LATE APOPTOSIS
+5
+0.9% DEAD
+LATE APORTOSIS
+SBC-5
+Propidium lodide-A
+10
+5.0%
+10
+Propidium lodide-A
+7.4%
+89.7%
+10
+EARLY APOPTOSIS
+ALIVE
+EARLY APOPTOSIS
+4.9%
+84.3%
+7.4%
+-160
+-160
+0
+10²
+3
+10
+10
+10s
+-116
+0
+10²
+10°
+A
+10
+10s
+ANNEXIN V СУ5-А
+-116
+ANNEXIN V СУ5-А
+C
+CTRL 010-All Events
+Treat 010-All Events
+5
+LATE APOPTOSIS
+5
+10
+DEAD
+0.5%
+1.7% DEAD
+LATE APORTOSIS
+Propidium lodide-A
+10
+H-1688
+3.8%
+Propidium lodide-A
+8.8%
+10
+93.0%
+10
+82.6%
+EARLY APOPTOSIS
+EARLY APOPTOSIS
+10
+2.8%
+7.0%
+-160
+-160
+D
+0
+101
+10³
+10⁴
+10s
+0
+102
+10
+0
+10⁴
+10
+-116
+ANNEXIN V СУ5-А
+-116
+ANNEXIN V Cy5-A
+E
+CTRL_007-All Events
+freat Events
+5
+5
+10
+DEAD
+LATE APOPTOSIS
+1.8% DEAD
+LATE APOPTOSIS
+RPM
+0.0%
+FDI-6:
+-
++
+RPM
+Propidium
+Propidium lodide-A
+2.8%
+10
+95.5%
+Propidium lodide-A
+6.4%
+C. Cas3
+89.0%
+10
+ß-actin
+lodide
+EARLY APOPTOSIS
+ALIVE
+EARLY APOPTOSIS
+1.7%
+2.8%
+-160
+-160
+0
+10²
+0
+10"
+10s
+10²
+0
+10
+0
+10
+10⁴
+10s
+-116
+ANNEXIN V СУ5-А
+-116
+ANNEXIN V СУ5-А
+Annexin-V
+Supplementary Figure S5: FOXM1 inhibition using FDI-6 induced apoptosis in multiple
+human and murine (RPM) SCLC cell lines. A-D) FDI-6 Treatment resulted in the increase of
+apoptotic cell numbers compared to control cells in SBC-3, SBC-5, H-1688 and RPM cells. E)
+FDI-6 treatment induced the expression of apoptotic markers- cleaved caspase 3 (CC3) in
+RPM murine cell line model.
+Supplementary S6
+A
+B
+H-69 CisR
+NB-73:
+-
++
+100
+Percent Cell Viability
+FOXM1
+80
+60
+pERK
+40
+20
+ERK
+0
+-1.51.00.50.00.51.01.52.0
+ß Actin
+Log[FOXM1i], µM
+H69CisR xenograft tumors
+C
+Control
+D
+**
+*
+2.0
+ns
+Tumor Weight (g)
+1.5
+Cisplatin
+1.0
+NB-73
+0.5
+0.0
+Cis. + NB-73
+Cisplatin:
+-
++
+-
++
+NB-73:
+-
+-
++
++
+E V.C.
+Cisplatin
+NB-73
+Combination
+Cleaved C3
+Ki-67
+*
+*
+ns
+*
+ns
+ns
+80
+50
+40
+CC3 Positive
+Cells (per F.O.V)
+60
+O
+%KI-67 Positive
+Cells (per F.O.V)
+OO
+30
+40
+20
+OO
+20
+OO
+10
+0
+0
+NB-73
+-
+-
+NB-73
++
++
+-
+-
++
++
+Cisplatin:
+Cisplatin: - + - +
+-
++
+-
++
+Supplementary Figure S6: FOXM1 inhibition treatment alone or inhibition with cisplatin
+resulted in the reduction of chemo-resistant SCLC cell viability and tumor progression in
+cisplatin resistant xenograft mouse model of SCLC. A) FOXM1 inhibitor NB-73 reduces
+viability of chemo-resistant H69 CisR SCLC cell line model. B) FOXM1i NB-73 treatment
+reduced FOXM1 protein and activated ERK (pERK) levels in H-69 CisR cells. C) Cisplatin,
+NB-73 or a combination treatment led to a reduction in SCLC tumor growth in H-69 CisR
+subcutaneous xenograft mouse model study. D) Quantification of xenograft tumor weight
+which were isolated from different treatment groups (n=4, student's t test performed for
+significance analysis, *, p<0.05, **, p < 0.01, ***, p < 0.001, ns, non-significant). E) IHC
+staining performed on subcutaneous xenograft tumor tissue sections.
+Supplementary S7
+A
+EX vivo RPM Lung Bioluminescence
+Luminescence
+Cisplatin
+Max
+Control
+Min
+PLEDI
+Color Scale
+FDI-6
+Combination
+Min=30000
+Max=~64000
+B
+V.C.
+FDI-
+6
+ns
+ns
+ns
+25
+RPM Liver
+RPM Liver Mets
+(per F.O.V)
+20
+15
+10
+5
+:
+0
+Cisplatin
+FDI-6 + Cisplatin
+c
+V.C.
+FDI-6
+NB-73
+Supplementary Figure S7: Cisplatin and/or FDI-6 treatment resulted in the reduction of lung
+tumor bioluminescence and hepatic metastasis in RPM mouse model. A) Ex vivo
+bioluminescence imaging of RPM lung showed a reduction in bioluminescence intensity in
+RPM Mice lung in different treatment groups. B) RPM mouse model showed substantial
+reduction in the number of micro-metastatic nodules as well as the size of these nodules after
+cisplatin and/or FDI-6 treatment. C) In a pilot study carried out on RPM mouse model showed
+effectiveness of NB-73 on spontaneous SCLC tumors.
+Supplementary S8
+A
+CD31+ DAPI
+V.C.
+FDI-6
+Cisplatin
+Combination
+B
+C
+20
+8
+Mean CD31 Staining Intensity
+Area of CD31+ve Cells (%)
+*
+6
+15
+4
+10
+2
+5
+0
+0
+left in j. FDI 1
+V.C. FDI-6
+Supplementary Figure S8: Cisplatin and/or FDI-6 treatment resulted in the reduction of
+angiogenesis in RPM Lung tumors. A) Cisplatin, FDI-6 or a combination treatment reduces
+staining for CD31 (marker of angiogenesis) in RPM lung tumors. B-C) Quantification of CD31
+staining intensity and area (n=3, student's t test performed for significance analysis, *, p<0.05,
+** p < 0.01, p < 0.001, ns, non-significant).
+Supplementary S9-S10
+V.C.
+Cisplatin
+FDI-6
+Combination
+pH3
+Supplementary Fig. S9: pH3 IHC experiment performed on SBC3 xenograft tumor
+sections showed a reduction in pH3 staining. IHC staining carried out on xenograft
+tumors showed difference in pH3 staining in different treatment groups.
+Input
+AURKB
+Input
+CDC25B
+Input
+RRM2
+Supplementary Figure S10: ChIP-PCR experiment performed on FOXM1 ChIP
+samples shows multiple genes that are under the regulation of FOXM1. ChIP-
+PCR experiment using SBC3-FOXM1 ChIP lysate revealed that FOXM1 is
+transactivating Aurora Kinase B, CDC25B and RRM2.
+Supplementary S11-S12
+A
+B
+C
+FDI-6
+120
+NB-55
+Percent Cell Viability
+120
+100
+Percent Cell Viability
+120
+100
+Percent Cell Viability
+100
+NB-115
+80
+NB-73
+80
+80
+60
+60
+60
+40
+40
+40
+20
+20
+20
+0
+0
+0
+-2.5-2.0-1.5-1.0-0.50.0 0.5 1.0
+-2.5-2.0-1.5-1.0-0.50.0 0.5 1.0
+-1.0 -0.5 0.0 0.5 1.0 1.5 2.0
+Log[Barasertib], µM
+Log[Carfilzomib], µM
+Log[FOXM1i], µM
+Supplementary Figure S11: Aurora Kinase B inhibitor Barasertib and non-specific FOXM1
+inhibitor Carfilzomib reduced the viability of SBC-3 SCLC cells. A) Barasertib potently
+decreased the viability of SBC-3 cells with an IC-50 value of 0.53 µM B) Non-specific
+FOXM1 inhibitor carfilzomib is capable of adversely affecting viability of SCLC cells; SBC-3
+cell viability goes down substantially after carfilzomib treatment (IC50 value: 230 + 70 nM) C)
+Effectiveness of FOXM1 inhibitors on SBC-3 cell viability.
+SBC-5
+60
+G1 Phase (%)
+40
+20
+0
+Control
+NB-73
+Supplementary Figure S12: FOXM1 inhibition by NB-73 leads to cell cycle arrest in SBC-5
+cells. NB-73 treatment is inducing cell cycle arrest in SBC-5 cell line model in G1 phase of cell
+cycle.
+Supplementary S13
+FDI-6:
+-
+-
+-
+-
++
++
+-
+-
+NB-73:
+-
+-
+-
+-
+-
+-
++
++
+Cisplatin:
+-
+-
++
++
+-
++
+-
++
+T cells:
+-
++
+-
++
++
++
++
++
+SBC-5
+Supplementary Figure S13: Representative image of T cell mediated killing of SBC-5 cells
+after using different treatment conditions. FOXM1 inhibition alone or in combination with
+cisplatin enhances T cell mediated of cancer cells.
+Supplementary S14
+A
+Cisplatin:
+-
+-
+-
++
+T cells:
+-
++
+-
++
+SBC-5 CisR
+FDI-6:
++
++
+-
+-
+NB-73:
+-
+-
++
++
+T cells:
+-
+-
++
++
+B
+T cells:
+-
+-
++
++
++
++
++
++
+Cisplatin:
+-
++
+-
++
++
++
++
++
+FDI-6:
+-
+-
+-
+-
++
++
+-
+-
+NB-73: -
+-
+-
+-
+-
+-
++
++
+SBC-5 CisR
+Supplementary Figure S14: Graphical representation of T cell mediated killing of chemo-
+resistant SCLC cells. A) FOXM1 inhibitors enhance T cell mediated killing of chemo-
+resistant SBC-5 CisR cells. B) Comparison of crystal violet staining in different treatment
+condition after dissolution.
+Supplementary S15
+SBC-5 CisR
+****
+****
+****
+1.5
+****
+****
+*
+Relative Cell Growth
+1.0
+0.5
+0.0
+SBC-5 Cisplatin
+Cis.1-6 Cells xT x Cells FDI-6 xx x NB-73 NB. NB-73 NB- Cells ,73 tCis. +Cis X XX Cellells xT
+Supplementary Figure S15: Relative growth analysis of T cell killing experiment showed
+substantial reduction in cancer cell population in different treatment conditions. FOXM1 inhibitors
+enhance T cell mediated killing of chemo-resistant SBC-5 CisR cells.
+Supplementary S16
+SBC5
+H69
+SBC5 CDDP-R H69 CDDP-R
+PD-L1
+ß-actin
+Supplementary Figure S16: PD-L1 expression increases with FOXM1 expression.
+B) PD-L1 expression increases in chemo-resistant SCLC cell lines SBC-5 CisR and
+H-69 CisR.
+Supplementary S17
+A
+FMO CD25 APC
+CD25 APC-All Events
+FSCX SSC
+SINGLETS
+LIVE
+SSC-A 1,000)
+100 150 200 250
+CD8
+FSC-H x 1,000)
+SINGLETS
+50 100 150 200 250
+50
+LIVE DEAD BLUE V 450/50-A
+LIVE
+CD8 CD8 BV785 780/60 Violet DetA-
+CD4
+50
+100
+150
+200
+250
+M
+50
+100
+150
+200
+250
+50
+100
+150
+200
+250
+0
+10
+10"
+10
+FSC-A
+-378
+(x1,000)
+FSC-A
+FSC-A
+CD4 PE-A
+(x 1,000)
+(x1,000)
+CD8
+CD8
+CD25 CD8
+Tube: CD25 APC
+Population
+#Events
+Parent
+%Total
+All Events
+655,533
+100.0
+FSC X SSC
+364,098
+SSC-A 1,000)
+50 100 150 200 250
+CD69 CD8
+####
+55.5
+SSC-A 1,000)
+SINGLETS
+50 100 150 200 250
+CD25 CD8
+55.5
+SSC-A 1,000)
+100 150 200 250
+CD69 CD25 CD8
+350,839
+96.4
+53.5
+LIVE
+248,689
+70.9
+37.9
+CD8
+87,945
+50
+35.4
+13.4
+CD69 CD8
+8,020
+9.1
+1.2
+CD25 CD8
+14
+0.0
+0.0
+0
+10
+3
+10
+-1,495
+0
+10³
+10"
+10°
+0
+10
+10
+10
+CD69 CD25 CD8
+8
+57.1
+0.0
+CD69 Pacific Blue-A
+-221
+CD25 APC-A
+-1,495 CD69 Pacific Blue-A
+CD4
+103,221
+41.5
+15.7
+CD279 CD4
+2,564
+2.5
+0.4
+CD4
+CD25 CD4
+19
+0.0
+0.0
+CD4
+CD25 CD4
+CD279 CD25 CD4
+4
+21.1
+0.0
+SSC-A 1,000)
+CD279 CD4
+CD279 CD25 CD4
+50 100 150 250
+SSC-A 1,000)
+50 100 150 200 250
+CD25 CD4
+SSC-A 1,000)
+50 100 150 200 250
+0
+10
+10
+10
+M
+0
+104
+10
+0
+10
+10
+10
+CD279 PD1 Alexa 488-A
+-221
+CD25 APC-A
+-39 CD279 PD1 Alexa 488-A
+B
+FMO CD69 PACIFIC BLUE
+CD69 PAC BLUE-AII Events
+FSCX SSC
+SINGLETS
+LIVE
+CD8
+SSC-A 1,000)
+50 100 150 200 250
+FSC-H (x1,000)
+SINGLETS
+50 100 150 200 250
+LIVE DEAD BLUE UV 450/50-A
+CDR BV785 CD8BV785 780/60 Violet Det
+CD4
+50
+100
+150
+200
+250
+50
+100
+150
+200
+250
+50
+100
+150
+250
+0
+10
+200
+10
+10
+FSC-A
+-378
+(x 1,000)
+FSC-A
+CD4 PE-A
+FSC-A
+1,000)
+(x 1,000)
+CD8
+CD8
+CD25 CD8
+Tube: CD69 PAC BLUE
+Population
+#Events
+%Parent
+%Total
+####
+FSC X SSC
+343,145
+SSC-A 1,000)
+50.4
+50 100 150 200 250
+SSC-A 1,000)
+CD25 CD8
+CD69 CD25 CD8
+CD69 CD8
+All Events
+655,128
+100.0
+52.4
+52.4
+SINGLETS
+330,321
+96.3
+50 100 150 200 250
+SSC-A 1,000)
+50 100 150 250
+LIVE
+225,196
+68.2
+34.4
+CD8
+77,945
+34.6
+11.9
+CD69 CD8
+35
+0.0
+0.0
+T
+CD25 CD8
+57,067
+73.2
+8.7
+0
+10
+-1,495
+0
+10
+10
+0
+10
+CD69 CD25 CD8
+44
+0.1
+0.0
+CD69 Pacific Blue-A
+-221
+CD25 APC-A
+-1,495 CD69 Pacific Blue-A
+CD4
+93,117
+41.3
+14.2
+CD279 CD4
+3,047
+3.3
+0.5
+CD4
+CD25 CD4
+CD4
+CD25 CD4
+66,656
+71.6
+10.2
+CD279 CD25 CD4
+2,178
+3.3
+0.3
+SSC-A 1,000)
+100 150 200 250
+CD279 CD4
+SSC-A 1,000)
+CD279 CD25 CD4
+50 100 150 200 250
+CD25 CD4
+SSC-A 1,000)
+50 100 150 200 250
+50
+10³
+10
+10
+0
+103
+10
+10
+10
+10
+CD279 PD1 Alexa 488-A
+-221
+CD25 APC-A
+CD279 PD1 Alexa 488-A
+Supplementary Figure S17: Representative images of FMOs and gating strategy for T cells. A)
+FMO and gating strategy for CD25-APC. B) FMO and gating strategy of CD69 Pacific Blue.
+Supplementary S18
+A
+FMO CD8 BV 785
+CD8 BV785-All Events
+FSC SSC
+SINGLETS
+LIVE
+SSC-A (x1,000)
+CD8
+50 100 150 200 250
+FSC-H 1,000)
+SINGLETS
+50 100 150 200 250
+LIVE DEAD BLUE UV 450/50-A
+LIVE
+CD8BV785 780/60 Violet Det
+CD4
+50
+100
+150
+200
+250
+50
+100
+150
+200
+250
+50
+100
+150
+200
+250
+0
+10
+10
+10
+FSC-A
+-378
+(x1,000)
+CD4 PE-A
+FSC-A
+FSC-A
+(x1,000)
+(x1,000)
+CD8
+CD8
+CD25 CD8
+Tube: CD8 BV785
+Population
+#Events
+%Parent
+%Total
+All Events
+678,402
+####
+100.0
+368,286
+54.3
+SSC-A 1,000)
+50 100 150 200 250
+CD69 CD8
+FSC X SSC
+54.3
+SSC-A 1,000)
+100 150 200 250
+CD25 CD8
+SSC-A 1,000)
+CD69 CD25 CD8
+SINGLETS
+353,830
+96.1
+52.2
+50 100 150 200 250
+LIVE
+247,402
+69.9
+36.5
+CD8
+29
+0.0
+0.0
+50
+CD69 CD8
+8
+27.6
+0.0
+CD25 CD8
+29
+100.0
+0.0
+0
+10
+10
+10°
+-1,495
+0
+10
+10
+0
+10
+10⁴
+10
+CD69 CD25 CD8
+10
+34.5
+0.0
+CD69 Pacific Blue-A
+-221
+CD25 APC-A
+-1,495
+CD69 Pacific Blue-A
+CD4
+95,430
+38.6
+14.1
+CD279 CD4
+3,472
+3.6
+0.5
+CD4
+68,408
+71.7
+CD4
+CD25 CD4
+CD25 CD4
+10.1
+CD279 CD25 CD4
+2,459
+3.6
+0.4
+SSC-A 1,000)
+CD279 CD4
+CD279 CD25 CD4
+50 100 150 200 250
+SSC-A 1,000)
+50 100 150 200 250
+CD25 CD4
+SSC-A 1,000)
+50 100 150 200 250
+0
+10°
+10
+10⁵
+0
+0
+10
+10
+10
+0
+10
+10
+10
+B
+CD279 PD1 Alexa 488-A
+-221
+CD25 APC-A
+CD279 PD1 Alexa 488-A
+SBC-5 Unstained T Cells
+SBC5 UNSTAINED-AII Events
+FSCX SSC
+SINGLETS
+LIVE
+CD8
+SSC-A 1,000)
+50 100 150 200
+FSC-H (x1,000)
+SINGLETS
+50 100 150 200 250
+LIVE DEAD BLUE UV 450/50-A
+CD8BV785 780/60 Violet DetA-
+CD4
+50
+100
+150
+200
+250
+50
+100
+150
+200
+250
+50
+100
+150
+200
+250
+0
+10
+10
+10
+FSC-A
+-378
+(x1,000)
+FSC-A
+CD4 PE-A
+FSC-A
+(x 1,000)
+(x1,000)
+CD8
+CD8
+CD25 CD8
+Tube: SBC5 UNSTAINED
+Population
+#Events
+%Parent
+%Total
+All Events
+FSC X SSC
+172,737
+51.9
+51.9
+SSC-A (x 1,000)
+50 100 150 200 250
+CD69 CD8
+SSC-A 1,000)
+CD69 CD25 CD8
+332,613
+SINGLETS
+166,347
+96.3
+50 100 150 200 250
+CD25 CD8
+####
+100.0
+SSC-A 1,000)
+50.0
+50 100 150 200 250
+LIVE
+166,277
+100.0
+50.0
+CD8
+10
+0.0
+0.0
+CD69 CD8
+0
+0.0
+0.0
+CD25 CD8
+0
+0.0
+0.0
+10'
+-1,495
+0
+10³
+10
+10
+0
+10
+CD69 CD25 CD8
+0
+####
+0.0
+CD69 Pacific Blue-A
+-221
+CD25 APC-A
+-1,495 CD69 Pacific Blue-A
+CD4
+110
+0.1
+0.0
+CD279 CD4
+109
+99.1
+0.0
+CD4
+CD25 CD4
+0
+0.0
+CD4
+CD25 CD4
+0.0
+CD279 CD25 CD4
+0
+####
+0.0
+SSC-A 1,000)
+CD279 CD4
+CD279 CD25 CD4
+50 100 150 200 250
+SSC-A 1,000)
+50 100 150 200 250
+CD25 CD4
+SSC-A 1,000)
+50 100 150 200 250
+0
+10
+10°
+10
+0
+10
+10
+10
+0
+10
+10
+10°
+CD279 PD1 Alexa 488-A
+-221
+CD25 APC-A
+CD279 PD1 Alexa 488-A
+Supplementary Figure S18: Representative images of FMOs and gating strategy for unstained
+and stained T cells. A) FMO for CD8 brilliant violet shows no positive CD8 positive T cells. B) FMO
+and gating strategy FOR unstained T cells culture with SBC-5 cells.
+Supplementary S19
+SBC-5 CisR T cells Unstained
+SRT UNSTAINED-AII Events
+FSCX SSC
+SINGLETS
+LIVE
+CD8
+SSC-A 1,000)
+50 100 150 200 250
+FSC-H x 1,000)
+SINGLETS
+50 100 150 200 250
+LIVE DEAD BLUE UV 450/50-A
+104
+CD8 BV785 780/60 Violet DetA
+CD4
+50
+100
+150
+200
+250
+50
+100
+150
+200
+250
+50
+100
+150
+200
+250
+0
+10
+10
+10⁵
+FSC-A
+-378
+(x
+1,000)
+FSC-A
+CD4 PE-A
+FSC-A
+(x1,000)
+(x1,000)
+CD8
+CD8
+CD25 CD8
+Tube: SRT UNSTAINED
+Population
+#Events
+%Parent
+%Total
+All Events
+FSC X SSC
+191,485
+43.9
+43.9
+SSC-A 1,000)
+100 150 200 250
+CD69 CD8
+SSC-A (x 1,000)
+CD69 CD25 CD8
+435,726
+SINGLETS
+187,119
+50 100 150 200 250
+CD25 CD8
+####
+100.0
+SSC-A 1,000)
+97.7
+42.9
+50 100 150 200 250
+LIVE
+186,994
+99.9
+42.9
+50
+CD8
+191
+0.1
+0.0
+CD69 CD8
+3
+1.6
+0.0
+M
+I
+CD25 CD8
+0
+0.0
+0.0
+0
+10
+10⁴
+10⁵
+0
+-1,495 CD69 Pacific Blue-A
+0
+10
+10
+10
+0
+103
+104
+10
+CD69 CD25 CD8
+####
+0.0
+-221
+CD25 APC-A
+-1,495 CD69 Pacific Blue-A
+CD4
+152
+0.1
+0.0
+CD279 CD4
+152
+100.0
+0.0
+CD4
+CD4
+CD25 CD4
+CD25 CD4
+0
+0.0
+0.0
+CD279 CD25 CD4
+0
+####
+0.0
+SSC-A (x 1,000)
+CD279 CD4
+50 100 150 200 250
+SSC-A (8 1,000)
+100 150 200 250
+SSC-A 1,000)
+CD279 CD25 CD4
+CD25 CD4
+50 100 150 200 250
+50
+M
+TTTM
+0
+10
+10⁴
+10s
+M
+-39 CD279 PD1 Alexa 488-A
+0
+10³
+10
+105
+0
+10
+10"
+10
+-221
+CD25 APC-A
+CD279 PD1 Alexa 488-A
+Supplementary Figure S19: Representative images of unstained T cells with gating strategy.
+Unstained T cells co-cultured with SBC-5 CisR cells with gating strategy.
+NB-73
+Control
+B
+A
+NB-73
+Control
+expression was observed in NB-73 treated RPM cells.
+enhanced level of CD8+ T cell infiltration in the spontaneous RPM tumors. B) An increase in PD-L1
+expression on RPM tumor microenvironment. A) FOXM1 inhibitor NB-73 treatment showed an
+Supplementary Figure S20: Immunofluorescence staining for CD8+ cytotoxic T cells and PD-L1
+PDL1/DAPI
+CD8/DAPI
+Supplementary S20
+PDL1/DAPI
+CD8/DAPI
+Number of cells/ field
+Number of cells/ field
+0
+5
+10
+15
+20
+0
+10
+20
+30
+40
+Control
+NB-73
+*
+PDL1* +
+Control NB-73
+**
+CD8+
++
+Supplementary S21
+PDL1/DAPI (20X) PDL1/DAPI (20X)
+Control
+PDL1+
+**
+15
+Cisplatin
+Number of cells/ field cells/field
+10
+5
+FDI-6
+0
+Control
+Cisplatin
+Consination
+Combination
+Supplementary Figure S21: Immunofluorescence staining for PD-L1 expression on RPM
+spontaneous tumor cells. An increase in PD-L1 expression was observed in FOXMi (alone or in
+combination with cisplatin) treated RPM tissues.

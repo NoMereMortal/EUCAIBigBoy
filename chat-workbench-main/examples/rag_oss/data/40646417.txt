@@ -1,0 +1,712 @@
+
+Current Hematologic Malignancy Reports
+(2025) 20:9
+https://doi.org/10.1007/s11899-025-00752-3
+REVIEW
+Check for
+updates
+Highlights from MPN Asia 2025: Advances in Molecular Pathogenesis
+and Therapeutic Strategies in Myeloproliferative Neoplasms
+Prithviraj Bose¹ Zhijian Xiao² Hans C. Hasselbalch³ Josef T. Prchal⁴ Minghui Duan⁵ Abdulraheem Yacoub⁶
+Raajit Rampal⁷ Jean-Jacques Kiladjian⁸ Gabriela S. Hobbs⁹ Tsewang Tashi⁴ Kazuya Shimoda 10 Keita Kirito¹ 11
+Harinder Gill¹² Hsin-An Hou¹³ Sung-Eun Lee¹⁴ Jian Huang¹⁵ Bing Li⁴ Albert Qin¹⁶ Lennex Hsueh-Lin Yu¹⁶
+John O. Mascarenhas¹⁷ Ruben A. Mesa¹⁸
+Accepted: 10 June 2025
+© The Author(s) 2025
+Abstract
+Purpose of Review This report summarizes key insights from the 8th Annual International Symposium on Myeloprolif-
+erative Neoplasms (MPN Asia 2025). The symposium brought together global experts to discuss advancements in MPN
+biology, diagnostics, and therapeutics, with a focus on emerging molecular understanding, novel treatment strategies and
+real-world data.
+Recent Findings Molecular profiling has become essential in MPN risk stratification and therapeutic decision-making. High-
+risk mutations (e.g., ASXL1, TP53) and inflammatory pathways (e.g., IL-17, NF-kB) were shown to correlate with dis-
+ease progression and transformation. Interferon-based therapy is increasingly used in younger, low-risk, or treatment-naïve
+patients, and is also being investigated in myelofibrosis and essential thrombocythemia. Ropeginterferon alfa-2b, a novel
+interferon-based therapy, demonstrated durable clinical efficacy in polycythemia vera. Its high initial-dose and accelerated
+titration (HIDAT) regimen led to fast achievement of complete hematologic response, rapid reductions in JAK2V617F
+allele burden, and high complete molecular response rate. Combination regimens involving ruxolitinib and agents such as
+pelabresib, selinexor, and interferon showed potential for enhanced efficacy. Population-based studies from Asia contributed
+regional epidemiological and treatment data, reinforcing the role of real-world evidence. Modern prognostic models such as
+MIPSS70+ v2.0 and GIPSS were discussed for more precise risk prediction. Preliminary findings also suggest ropeginter-
+feron alfa-2b may be a safe option during pregnancy.
+Summary MPN Asia 2025 highlighted the growing role of molecular diagnostics and targeted therapeutics in the manage-
+ment of MPNs. Ropeginterferon alfa-2b has emerged as a therapeutic potential across the MPN spectrum. Its early use and
+personalized strategies are increasingly recognized. Real-world data and regional insights are shaping a more nuanced, glob-
+ally informed approach to MPN care.
+The 8th Annual International Symposium on Myelopro-
+Expanding the Molecular Understanding of
+liferative Neoplasms (MPN Asia 2025), held in Beijing,
+Myeloproliferative Neoplasms
+brought together leading hematologists and researchers
+from across Asia, Europe, and North America to share novel
+New molecular insights continue to refine the classifica-
+insights into the evolving landscape of Myeloproliferative
+tion and management of MPNs. Presentations at MPN Asia
+Neoplasm (MPN) biology and therapeutics. The conference
+2025 underscored the critical role of driver mutations such
+featured data from clinical trials, real-world evidence, and
+as JAK2V617F, CALR, and MPL, alongside the growing
+translational research, highlighting an emerging consensus
+importance of high-risk co-occurring mutations in genes
+on personalized, molecularly informed treatment strategies.
+such as TET2, DNMT3A, IDH1/2, ASXLI, EZH2, SRSF2,
+U2AF1 and TP53. These co-occurring mutations, detectable
+Extended author information available on the last page of the article
+Published online: 12 July 2025
+Springer
+9
+Page 2 of 7
+Current Hematologic Malignancy Reports
+(2025) 20:9
+via next-generation sequencing (NGS), are now widely used
+Early and Targeted Therapy in Myelofibrosis:
+in prognostication and therapeutic decisions in MPN [1-7].
+A Shifting Paradigm
+Specific high-risk mutations, particularly when accom-
+panied by elevated JAK2V617F allele burden in polycythe-
+Early intervention and prompt treatment of patients with
+mia vera (PV) [8], can predict transformation to post-PV
+MF can lead to better outcomes, reducing symptom burden
+myelofibrosis (MF) or acute myeloid leukemia (AML).
+and improving survival [43, 44]. Evidence from the primary
+Such molecular characteristics are increasingly being inte-
+analysis of JUMP study and post-hoc analyses of the COM-
+grated into treatment decisions, including the selection of
+FORT trials, as well as data from national registries, suggest
+therapies following JAK inhibitor failure.
+that initiating ruxolitinib earlier in the disease course may
+At the conference, the pro-inflammatory nature of MPN
+improve overall response rates and outcomes [45, 46].
+was highlighted and discussed. Transcriptomic, proteomic,
+The development of combination regimens, such as
+and cytokine profiling studies have shown that inflamma-
+ruxolitinib with pelabresib (a BET inhibitor) [47], bom-
+tory pathways, including IL-17 signaling, NF-kB activation,
+edemstat (LSD1 inhibitor) [48], selinexor (XPO1 inhibitor)
+and chemokine cascades, are upregulated in MPNs and are
+[49, 50] or with interferon [51], are being evaluated for their
+particularly associated with disease progression and throm-
+potential to increase response in first-line therapy of patients
+botic risk [9-13].
+with MF and potentially improve disease modification and
+MPNs are still largely unrecognized and underdiagnosed
+molecular responses.
+chronic blood cancers which may lead to delayed or missed
+Intervention with pegylated interferon in pre-fibrotic
+opportunities for treatment [14]. Early detection and diagno-
+MF, or in primary MF and essential thrombocythemia (ET),
+sis may be achieved by screening patients with a "high-risk
+aims at reducing progression to fibrotic phase MF and other
+MPN profile". For example, patients who had an ischemic
+adverse outcomes. Emerging evidence suggests that rope-
+stroke were 2.4 times more likely to carry the JAK2V617F
+ginterferon alfa-2b may also be effective in treating patients
+mutation than matched individuals without history of isch-
+with MF as a monotherapy, especially in early and low-risk
+emic stroke [15].
+MF [43, 44].
+Ropeginterferon Alfa-2b: Establishing a New
+Asian Real-World and Population-Based
+Therapeutic Backbone
+Evidence
+A central theme of the conference was the transformative
+Large-scale real-world data analysis can help understand the
+potential of ropeginterferon alfa-2b, a long-acting, mono-
+disease better and design personalized treatment strategies.
+pegylated interferon, across the MPN spectrum. Multiple
+A real-world study of 338 patients with MF in China has
+presentations, spanning clinical trials in Europe [16-21],
+confirmed the differences in clinical characteristics, cytoge-
+China [22-24], Korea [25, 26], Japan [27, 28], and real-
+netics, molecular biology, and prognosis among overt PMF,
+world data from the United States [29], and Taiwan [30],
+post-ET MF and post-PV MF [52]. Epidemiologic data on
+demonstrated its robust and durable efficacy in PV. Notably,
+MPN in Asia remains limited, however, a multicenter cohort
+the high initial-dose and accelerated dose-titration treat-
+study from Zhejiang Province, in China, encompassing over
+ment (HIDAT), 250-350-500 µg every two weeks, was
+3,000 patients across 58 hospitals was discussed at the con-
+associated with faster achievement of complete hematologic
+ference. The results provide valuable clinical and molecular
+response, more rapid reductions in JAK2V617F allele bur-
+insights into PV, ET, and MF in China. This dataset high-
+den and higher complete molecular remission rate compared
+lights regional mutation patterns and supports expanded
+with the conventional dose-titration regimen [23, 31-33].
+molecular diagnostics.
+Interferon therapy is being increasingly investigated as
+Two nationwide population-based studies from South
+front line treatment option in younger patients with MPN
+Korea have been published. Lim et al. analyzed the inci-
+[34, 35], as well as in those who are treatment-naïve [36] or
+dence, prevalence and survival trends in MPNs using
+classified as low-risk [20, 21], and also in individuals who
+National Health Insurance data [53], while Byun et al.
+are intolerant or resistant to hydroxyurea and/or anagrelide
+provided further characterization of clinical features and
+[30, 37, 38]. The use of interferon alfa is also being assessed
+treatment patterns in patients with PV, ET, and MF [54].
+in patients with early stage MPN, where early intervention
+In Taiwan, a recent population-based cross-sectional study
+may offer the potential to achieve molecular remission and
+reported treatment patterns and clinical outcomes on 2,647
+delay disease progression [8, 18, 39-42].
+patients with PV using the National Health Insurance
+Research Database [55].
+Springer
+Current Hematologic Malignancy Reports
+(2025) 20:9
+Page 3 of 7
+9
+Toward Personalized Risk Stratification and
+Patel KP, Newberry KJ, Luthra R, et al. Correlation of
+Therapy in MF
+mutation profile and response in patients with myelofibrosis
+treated with ruxolitinib. Blood. 2015;126(6):790-7.
+Emerging evidence continues to support the integration of
+The first report of molecular determinants of response to
+ruxolitinib in MF.
+molecular data into clinical risk models of MF. Prognostic
+Gisslinger H, Zagrijtschuk O, Buxhofer-Ausch V, et al.
+scoring systems such as the updated MIPSS70+v2.0 [56],
+MYSEC-PM [57], and GIPSS [56] that integrate clini-
+Ropeginterferon alfa-2b, a novel IFNα-2b, induces high
+cal, cytogenetic and genetic data more accurately identify
+response rates with low toxicity in patients with polycythe-
+mia vera. Blood. 2015;126(15):1762-9.
+patients at risk of MF disease progression or leukemic trans-
+formation than conventional prognostic methods.
+First report of the PEGINVERA study that led to rope-
+ginterferon alfa-2b's approval for PV in the US.
+Gisslinger H, Klade C, Georgiev P, et al. Ropeginterferon
+Special Considerations: Ropeginterferon
+alfa-2b versus standard therapy for polycythaemia vera
+alfa-2b in Pregnancy
+(PROUD-PV and CONTINUATION-PV): a randomised,
+non-inferiority, phase 3 trial and its extension study [pub-
+In limited real-world cases, ropeginterferon alfa-2b was
+lished correction appears in Lancet Haematol. 2020
+reported to be safe in pregnancy [58, 59], similarly to
+Apr;7(4):e279]. Lancet Haematol. 2020;7(3):e196-e208.
+pegylated interferon alfa-2a. Pharmacokinetics data showed
+3-year follow-up of the phase 3 PROUD/CONTI-PV
+minimal placental transfer and virtually undetectable levels
+study of ropeginterferon alfa-2b versus hydroxyurea in
+in breastmilk, supporting cautious use in women of repro-
+patients with PV.
+ductive age when alternative cytoreductive therapies are
+Gisslinger H, Klade C, Georgiev P, et al. Event-free survival
+contraindicated [Tashi et al., manuscript in preparation].
+in patients with polycythemia vera treated with ropeginter-
+feron alfa-2b versus best available treatment. Leukemia.
+2023;37(10):2129-32.
+Conclusion and Future Outlook
+Demonstration of an EFS benefit for ropeginterferon
+alfa-2b after 6 years of follow-up of the PROUD/CONTI-
+MPN Asia 2025 highlighted a field in rapid evolution, fueled
+PV phase 3 study.
+by advances in molecular diagnostics, targeted therapeutics
+Kiladjian JJ, Klade C, Georgiev P, et al. Long-term out-
+and potential personalized medicine approaches based on
+comes of polycythemia vera patients treated with ropegin-
+terferon Alfa-2b. Leukemia. 2022;36(5):1408-11.
+molecular profiles, as well as a need for global collabora-
+tion. There is growing international alignment on the early
+5-year follow-up of the phase 3 PROUD/CONTI-PV
+use of interferon-based therapies, especially ropeginterferon
+study of ropeginterferon alfa-2b versus hydroxyurea in
+alfa-2b, across the MPN disease spectrum and the use of
+patients with PV.
+combination regimens to achieve disease modification and
+Barbui T, Vannucchi AM, De Stefano V, et al. Ropegin-
+better outcomes. Increasingly, treatment strategies are shift-
+terferon alfa-2b versus phlebotomy in low-risk patients
+ing from symptom control and thrombosis reduction toward
+with polycythaemia vera (Low-PV study): a multicentre,
+long-term disease remission and even treatment-free remis-
+randomised phase 2 trial [published correction appears
+in Lancet Haematol. 2021;8(3):e170]. Lancet Haematol.
+sion. As molecular monitoring becomes more routine and
+2021;8(3):e175-e184.
+genomic classifiers are increasingly integrated into clinical
+practice, personalized care for patients with PV, ET, and MF
+Initial report of the practice-changing LOW PV trial of
+will become more precise and more effective.
+ropeginterferon alfa-2b added to phlebotomy and aspirin in
+patients with low risk PV.
+Jin J, Zhang L, Qin A, et al. A new dosing regimen of rope-
+Key References
+ginterferon alfa-2b is highly effective and tolerable: findings
+from a phase 2 study in Chinese patients with polycythemia
+Guglielmelli P, Lasho TL, Rotunno G, et al. MIPSS70:
+vera. Exp Hematol Oncol. 2023;12(1):55.23.
+Mutation-Enhanced International Prognostic Score System
+Suo S, Fu RF, Qin A, et al. Molecular remission uncoupled
+with complete haematological response in polycythaemia
+for Transplantation-Age Patients With Primary Myelofibro-
+vera treatment with ropeginterferon alfa-2b. Br J Haematol.
+sis. J Clin Oncol. 2018;36(4):310-8.
+2024;205(6):2510-4.
+The first major prognostic model for PMF that incorpo-
+rated molecular information.
+Report from China of the accelerated dose up-titration
+schema of ropeginterferon alfa-2b in patients with PV.
+Springer
+9
+Page 4 of 7
+Current Hematologic Malignancy Reports
+(2025) 20:9
+Mascarenhas J, Kosiorek HE, Prchal JT, et al. A random-
+The MYSEC-PM, a prognostic model specifically for
+ized phase 3 trial of interferon-a vs. hydroxyurea in poly-
+patients with post-PV/ET myelofibrosis.
+cythemia vera and essential thrombocythemia. Blood.
+2022;139(19):2931-41.
+Acknowledgements The authors would like to thank Drs. Paul Walden
+Results of the randomized MPD-RC 112 study of front-
+and Edward Jefford for editing the manuscript.
+line pegylated interferon alfa-2a versus hydroxyurea in
+Author Contributions All authors, including P.B., Z.X., H.C. H., J.T.
+patients with high risk PV or ET.
+P., M.D., A.Y., R.R., J-J.K., G.H., T.T., K.S., K.K., H.G., H-A.H., S-
+Yacoub A, Mascarenhas J, Kosiorek H, et al. Pegylated
+E.L., J.H., B.L., A.Q., L.H-L.Y., J.O.M., and R.A.M., contributed to
+interferon alfa-2a for polycythemia vera or essential throm-
+writing. All authors reviewed the manuscript, and approved it for pub-
+lication.
+bocythemia resistant or intolerant to hydroxyurea. Blood.
+2019;134(18):1498-509.
+Funding Open Access funding is provided by PharmaEssentia.
+Results of the single-arm MPD-RC 111 study of
+pegylated interferon alfa-2a in patients with high risk PV or
+Data Availability No datasets were generated or analysed during the
+ET failing hydroxyurea.
+current study.
+Harrison CN, Nangalia J, Boucher R, et al. Ruxolitinib ver-
+sus best available therapy for polycythemia vera intolerant
+Declarations
+or resistant to hydroxycarbamide in a randomized trial. J
+Clin Oncol. 2023;41(19):3534-44.
+Competing Interests Prithviraj Bose: Grants (Incyte, CTI, Morpho-
+Sys, Kartos, Telios, Ionis, Disc, Blueprint, Cogent, Geron, Janssen,
+Results of the MAJIC-PV trial showing improvement of
+Sumitomo, BMS, Karyopharm); consulting fees (Incyte, BMS, CTI,
+EFS by ruxolitinib in HU-resistant/intolerant patients with
+GSK, AbbVie, MorphoSys, Karyopharm, PharmaEssentia, Blueprint,
+PV and correlation with CHR and molecular response.
+Cogent, Novartis, Jubilant, Morphic, Ono, Sumitomo); honoraria for
+Verstovsek S, Kiladjian JJ, Vannucchi AM, et al. Early inter-
+lectures/advisory boards (Incyte, Blueprint, GSK, CTI, AbbVie, Sumi-
+tomo, PharmaEssentia). Zhijian Xiao: no competing interests to de-
+vention in myelofibrosis and impact on outcomes: A pooled
+clare. Hans C. Hasselbalch: Data Monitoring Board honoraria from
+analysis of the COMFORT-I and COMFORT-II studies.
+AOP Health and grants from Novartis. Josef T. Prchal: AbbVie: Re-
+Cancer. 2023;129(11):1681-90.
+search Funding; PharmaEssentia: Research Funding. Minghui Duan:
+Analysis of the COMFORT trials showing superior out-
+no competing interests to declare. Abdulraheem Yacoub: Consulting
+fees (Incyte, CTI Pharma, PharmaEssentia, Pfizer, Novartis, Acceler-
+comes for patients beginning ruxolitinib within 12 months
+on Pharma, Servier, AbbVie, Apellis, Gilead, Notable Labs); meeting/
+of diagnosis.
+travel support (Incyte). Raajit K. Rampal: Grants (Incyte, Ryvu, Mor-
+Al-Ali HK, Griesshammer M, Foltz L, et al. Primary analy-
+phoSys, Zentalis); consulting fees (MorphoSys, CTI, GSK, Stemline,
+sis of JUMP, a phase 3b, expanded-access study evaluating
+Blueprint, SDP, Servier, Zentalis, BMS, Galectco, AbbVie, PharmaEs-
+sentia, Cogent, Kartos); honoraria for lectures/advisory boards (Pro-
+the safety and efficacy of ruxolitinib in patients with myelo-
+tagonist, Karyopharm, GSK); monitoring or advisory board (Kartos).
+fibrosis, including those with low platelet counts. Br J Hae-
+Jean-Jacques Kiladjian; grants and personal fees from AOP Health,
+matol. 2020;189(5):888-903.
+and personal fees from Novartis, BMS/Celgene, AbbVie, and Phar-
+Important large phase 3b study of ruxolitinib in patients
+maEssentia. Gabriela Hobbs: Grants (Incyte); consulting fees (Phar-
+maEssentia, Protagonist, AbbVie, GSK, Pfizer, Novartis, MorphoSys,
+with myelofibrosis.
+Cogent, Pharmaxis); monitoring or advisory board (PharmaEssentia,
+Rampal RK, Grosicki S, Chraniuk D, et al. Pelabresib plus
+Protagonist, AbbVie, GSK, Pfizer, Novartis, MorphoSys); stock/stock
+ruxolitinib for JAK inhibitor-naive myelofibrosis: a ran-
+options (Regeneron Pharmaceuticals). Tsewang Tashi: Blueprint (con-
+domized phase 3 trial. Nat Med. 2025. doi:https://doi.org/1
+sultancy, research funding), PharmaEssentia (consultancy, research
+funding), Cogent (consultancy, research funding), CITI Biopharma
+0.1038/s41591-025-03572-3
+(consultancy), Italfarmaco (research funding), and Telios (research
+The first large phase 3, randomized, placebo-controlled
+funding) Kazuya Shimoda: a consultant for Sierra Oncology, Inc. and
+trial of a ruxolitinib-based synergistic combination in
+reports research funding from AbbVie G.K., Chugai Pharmaceutical
+myelofibrosis.
+Co., Ltd., Daiichi Sankyo Co., Ltd., Eisai Co., Ltd., Kyowa Kirin Co.,
+Ltd., Mochida Pharmaceutical Co., Ltd., Nippon Kayaku Co., Ltd., Ot-
+Tefferi A, Guglielmelli P, Lasho TL, et al. MIPSS70+Ver-
+suka Pharmaceutical Co., Ltd., PharmaEssentia Japan K.K., Shionogi
+sion 2.0: Mutation and karyotype-enhanced international
+& Co., Ltd., Sumitomo Dainippon Pharma Co., Ltd., Taisho Pharma-
+prognostic scoring system for primary myelofibrosis. J Clin
+ceutical Co., Ltd., and Takeda Pharmaceutical Co., Ltd. and honoraria
+Oncol. 2018;36(17):1769-70.
+from Takeda Pharmaceutical Co., Ltd., and Novartis Pharma K.K., and
+is a member of an advisory committee for AbbVie G.K. Keita Kirito:
+A refinement of the MIPSS70 and MIPSS70+ for prog-
+received honoraria for lectures, presentations, speaking engagements,
+nostication in myelofibrosis.
+manuscript writing, and educational events from AbbVie G.K., Novar-
+Passamonti F, Giorgino T, Mora B, et al. A clinical-molec-
+tis Pharma K.K., PharmaEssentia Japan K.K., Sanofi K.K., and Takeda
+ular prognostic model to predict survival in patients with
+Pharmaceutical Co., Ltd. Harinder Gill: Consulting fees/Speaker fees
+from Abbvie, Bristol Myers Squibb, GSK, MSD, Novartis, PharmaEs-
+post polycythemia vera and post essential thrombocythemia
+sentia Corporation and Pfizer, Advisory board for Abbvie, Bristol My-
+myelofibrosis. Leukemia. 2017;31(12):2726-31.
+ers Squibb, GSK, Novartis, PharmaEssentia Corporation and Pfizer,
+Research support from Celgene, MSD, Novartis and PharmaEssentia
+Springer
+Current Hematologic Malignancy Reports
+(2025) 20:9
+Page 5 of 7
+9
+Corporation, Conference support from Bristol Myers Squibb, MSD,
+8.
+Chen CC, Chen JL, Lin AJ, Yu LH, Hou HA. Association of
+Novartis, Otsuka, PharmaEssentia and Pfizer. Hsin-An Hou: Consult-
+JAK2V617F allele burden and clinical correlates in polycythe-
+ing fees/Speaker fees/ honoraria from Abbvie, Bristol Myers Squibb,
+mia vera: a systematic review and meta-analysis. Ann Hematol.
+GSK, MSD, Novartis, PharmaEssentia Corporation and Pfizer, Re-
+2024;103(6):1947-65.
+search support from Novartis and PharmaEssentia Corporation, Con-
+9.
+Tan G, Wolski WE, Kummer S, et al. Proteomic identification
+ference support from Bristol Myers Squibb, MSD, Novartis, Otsuka,
+of proliferation and progression markers in human polycythemia
+PharmaEssentia and Pfizer. Sung-Eun Lee: no competing interests to
+vera stem and progenitor cells. Blood Adv. 2022;6(11):3480-93.
+declare. Jian Huang: no competing interests to declare. Bing Li: no
+10. Hu S, Yang X, Zhu J, Huang J. Clinical and genetic features by
+competing interests to declare. Albert Qin: serving as the chief medi-
+next-generation sequencing and RNA sequencing in pre-fibrotic
+cal officer of PharmaEssentia Corporation. Lennex Hsueh-Lin Yu: em-
+primary myelofibrosis patients. Blood. 2023;142(Supplement
+ployed at PharmaEssentia. John Mascarenhas: Grants (PharmaEssen-
+1):1836.
+tia, Novartis, Roche, Geron, Abbie, Kartos, Karyopharm); consulting
+11. Cominal JG, Cacemiro MDC, Berzoti-Coelho MG, et al. Bone
+fees (PharmaEssentia, CTI, Incyte, Roche, Novartis, Merck, Geron,
+marrow soluble mediator signatures of patients with Philadel-
+AbbVie, BMS, Kartos, MorphoSys, Galecto, Imago); honoraria for
+phia chromosome-negative myeloproliferative neoplasms. Front
+lectures/advisory boards (BMS); monitoring or advisory board (Incyte,
+Oncol. 2021;11:665037.
+Galecto); meeting/travel support (Kartos). Ruben A. Mesa: Consulting
+12. Cuenca-Zamora EJ, Guijarro-Carrillo PJ, López-Poveda MJ, et
+fees (Incyte, PharmaEssentia, CTI, AbbVie, GSK, BMS, Genentech).
+al. miR-146a⁻⁻ mice model reveals that NF-kB Inhibition reverts
+inflammation-driven myelofibrosis-like phenotype. Am J Hema-
+Open Access This article is licensed under a Creative Commons
+tol. 2024;99(7):1326-37.
+Attribution-NonCommercial-NoDerivatives 4.0 International License,
+13. Sullivan JY, Fleischman AG. Relating NF-kB regulation to MPN
+which permits any non-commercial use, sharing, distribution and
+pathogenesis. Blood. 2024;143(23):2345-47.
+reproduction in any medium or format, as long as you give appropri-
+14. Cordua S, Kjaer L, Skov V, Pallisgaard N, Hasselbalch HC,
+ate credit to the original author(s) and the source, provide a link to the
+Ellervik C. Prevalence and phenotypes of JAK2 V617F and
+Creative Commons licence, and indicate if you modified the licensed
+calreticulin mutations in a Danish general population. Blood.
+material. You do not have permission under this licence to share
+2019;134(5):469-79.
+adapted material derived from this article or parts of it. The images or
+15. 15, Kristiansen MH, Kjær L, Skov V, et al. JAK2V617F muta-
+other third party material in this article are included in the article's Cre-
+tion is highly prevalent in patients with ischemic stroke: a case-
+ative Commons licence, unless indicated otherwise in a credit line to
+control study. Blood Adv. 2023;7(19):5825-34.
+the material. If material is not included in the article's Creative Com-
+16. Gisslinger H, Zagrijtschuk O, Buxhofer-Ausch V, et al. Ropegin-
+mons licence and your intended use is not permitted by statutory regu-
+terferon alfa-2b, a novel IFNα-2b, induces high response rates
+lation or exceeds the permitted use, you will need to obtain permission
+with low toxicity in patients with polycythemia vera. Blood.
+directly from the copyright holder. To view a copy of this licence, visit
+2015;126(15):1762-9.
+http://creativecommons.org/licenses/by-nc-nd/4.0/.
+17. Gisslinger H, Klade C, Georgiev P, et al. Ropeginterferon
+alfa-2b versus standard therapy for polycythaemia vera
+(PROUD-PV and CONTINUATION-PV): a randomised, non-
+inferiority, phase 3 trial and its extension study [published cor-
+References
+rection appears in lancet haematol. 2020;7(4):e279]. Lancet
+Haematol. 2020;7(3):e196-208.
+1.
+Guglielmelli P, Lasho TL, Rotunno G, et al. MIPSS70: Mutation-
+18. Gisslinger H, Klade C, Georgiev P, et al. Event-free survival
+Enhanced international prognostic score system for Transplan-
+in patients with polycythemia vera treated with ropeginter-
+tation-Age patients with primary myelofibrosis. J Clin Oncol.
+feron alfa-2b versus best available treatment. Leukemia.
+2018;36(4):310-8.
+2023;37(10):2129-32.
+2. Chang H, Kao HW, Kuo MC, et al. Genetic evolution from
+19. Kiladjian JJ, Klade C, Georgiev P, et al. Long-term outcomes of
+chronic myeloproliferative neoplasms to acute myeloid leukemia:
+polycythemia vera patients treated with ropeginterferon Alfa-2b.
+an analysis of forty-six paired samples. Blood. 2023;142(Supple-
+Leukemia. 2022;36(5):1408-11.
+ment 1):3155.
+20. Barbui T, Vannucchi AM, De Stefano V et al. Ropeginterferon
+3. Zhang SJ, Rampal R, Manshouri T, et al. Genetic analysis of
+alfa-2b versus phlebotomy in low-risk patients with poly-
+patients with leukemic transformation of myeloproliferative neo-
+cythaemia vera (Low-PV study): a multicentre, randomised
+plasms shows recurrent SRSF2 mutations that are associated with
+phase 2 trial [published correction appears in Lancet Haematol.
+adverse outcome. Blood. 2012;119(19):4480-5.
+2021;8(3):e170]. Lancet Haematol. 2021;8(3):e175-e184.
+4. Segura-Díaz A, Stuckey R, Florido Y, et al. DNMT3A/TET2/
+21. Barbui T, Carobbio A, De Stefano V, et al. Ropeginterferon phase 2
+ASXL1 mutations are an age-independent thrombotic risk fac-
+randomized study in low-risk polycythemia vera: 5-year drug sur-
+tor in polycythemia vera patients: an observational study. Thromb
+vival and efficacy outcomes. Ann Hematol. 2024;103(2):437-42.
+Haemost. 2024;124(7):669-75.
+22. Jin J, Zhang L, Qin A, et al. A new dosing regimen of ropegin-
+5. Yang Y, Abbas S, Sayem MA, Dutta A, Mohi G. SRSF2 muta-
+terferon alfa-2b is highly effective and tolerable: findings from a
+tion reduces polycythemia and impairs hematopoietic progenitor
+phase 2 study in Chinese patients with polycythemia vera. Exp
+functions in JAK2V617F-driven myeloproliferative neoplasm.
+Hematol Oncol. 2023;12(1):55.
+Blood Cancer J. 2023;13(1):171.
+23. Suo S, Fu RF, Qin A, et al. Molecular remission uncoupled
+6.
+Gagelmann N, Badbaran A, Salit RB et al. Impact of TP53 on
+with complete haematological response in polycythaemia
+outcome of patients with myelofibrosis undergoing hematopoietic
+vera treatment with ropeginterferon alfa-2b. Br J Haematol.
+stem cell transplantation [published correction appears in Blood.
+2024;205(6):2510-4.
+2024;143(18):1879]. Blood. 2023;141(23):2901-11.
+24. Suo SS, Fu RF, Qin A, et al. Effective management of poly-
+7.
+Patel KP, Newberry KJ, Luthra R, et al. Correlation of mutation
+cythemia vera with ropeginterferon alfa-2b. J Hematol.
+profile and response in patients with myelofibrosis treated with
+2024;13(1-2):12-22.
+ruxolitinib. Blood. 2015;126(6):790-7.
+25. Yoon SY, Yoon SS, Yang DH, et al. Hematologic and molecu-
+lar responses to ropeginterferon alfa-2b therapy of polycythemia
+Springer
+9
+Page 6 of 7
+Current Hematologic Malignancy Reports
+(2025) 20:9
+vera: 48-week results from a prospective study. Int J Cancer.
+43. Abu-Zeinah G, Qin A, Gill H, et al. A randomized, double-blind,
+2025. https://doi.org/10.1002/ijc.35411.
+placebo-controlled phase 3 study to assess efficacy and safety of
+26. Yoon SY, Lee SE. Treatment with ropeginterferon alfa-2b in
+ropeginterferon alfa-2b in patients with early/lower-risk primary
+patients with hydroxyurea resistant or intolerant polycythemia
+myelofibrosis. Ann Hematol. 2024;103(9):3573-83.
+vera in South korea: one-year results from a phase 2 study. Blood
+44. Gill H, Au L, Yim R, et al. Efficacy and safety of ropeginter-
+Res. 2024;59(1):23.
+feron alfa-2b for pre-fibrotic primary myelofibrosis and DIPSS
+27. Edahiro Y, Ohishi K, Gotoh A, et al. Efficacy and safety of rope-
+low/intermediate-1 risk myelofibrosis. Blood. 2022;140(Suppl
+ginterferon alfa-2b in Japanese patients with polycythemia vera:
+1):1522.
+an open-label, single-arm, phase 2 study [published correction
+45. Verstovsek S, Kiladjian JJ, Vannucchi AM, et al. Early inter-
+appears in int J hematol. 2022;116(4):642-643]. Int J Hematol.
+vention in myelofibrosis and impact on outcomes: A pooled
+2022;116(2):215-27.
+analysis of the COMFORT-I and COMFORT-II studies. Cancer.
+28. Kirito K, Sugimoto Y, Gotoh A, et al. Long-term safety and effi-
+2023;129(11):1681-90.
+cacy of ropeginterferon alfa-2b in Japanese patients with polycy-
+46. Al-Ali HK, Griesshammer M, Foltz L, et al. Primary analy-
+themia vera. Int J Hematol. 2024;120(6):675-83.
+sis of JUMP, a phase 3b, expanded-access study evaluating the
+29. Tashi T, Reeves BN, Kim SJ, et al. Real-world experience of
+safety and efficacy of ruxolitinib in patients with myelofibro-
+ropeginterferon-alfa treatment of PV and ET: two centers experi-
+sis, including those with low platelet counts. Br J Haematol.
+ence. Blood. 2023;142(Suppl 1):6397.
+2020;189(5):888-903.
+30. Huang CE, Wu YY, Hsu CC, et al. Real-world experience
+47. Rampal RK, Grosicki S, Chraniuk D, et al. Pelabresib plus ruxoli-
+with ropeginterferon-alpha 2b (Besremi) in Philadelphia-
+tinib for JAK inhibitor-naive myelofibrosis: a randomized phase 3
+negative myeloproliferative neoplasms. J Formos Med Assoc.
+trial. Nat Med. 2025. https://doi.org/10.1038/s41591-025-03572-3.
+2021;120(2):863-73.
+48. Gill H, Au L, Leung GMK, et al. Phase 2 study to assess the safety
+31. Qin A, Urbanski RW, Yu L, Ahmed T, Mascarenhas J. An alter-
+and efficacy of Bomedemstat (MK3543) in combination with
+native dosing strategy for ropeginterferon alfa-2b May help
+ruxolitinib in patients with myelofibrosis. Blood. 2023;142(Suppl
+improve outcomes in myeloproliferative neoplasms: an overview
+1):621.
+of previous and ongoing studies with perspectives on the future.
+49. Yan D, Pomicter AD, Tantravahi S, et al. Nuclear-cytoplasmic
+Front Oncol. 2023;13:1109866.
+transport is a therapeutic target in myelofibrosis. Clin Cancer Res.
+32. Qin A, Zhang L, Jin J. The higher initial dose and acceler-
+2019;25(7):2323-35.
+ated Titration regimen of ropeginterferon as a treatment option
+50. Mascarenhas J, Maher K, Rampal R, et al. Selinexor plus ruxoli-
+for certain patients with polycythaemia vera. Br J Haematol.
+tinib in JAK inhibitor treatment-naïve myelofibrosis: SENTRY
+2025;206(3):986-7.
+phase 3 study design. Future Oncol. 2025;21(7):807-13.
+33. Qin A, Wu D, Li Y, et al. Exposure-efficacy and exposure-safety
+51. Sørensen AL, Skov V, Kjær L, et al. Combination therapy with
+analyses of ropeginterferon alfa-2b treatment in patients with
+ruxolitinib and pegylated interferon alfa-2a in newly diagnosed
+polycythaemia vera. Br J Clin Pharmacol. 2024;90:1493-502.
+patients with polycythemia vera. Adv. 2024;8(20):5416-25.
+34. Kucine N, Jessup JA, Cooper TM, et al. Position paper: the time
+52. Wang S, Zhang L, Jin K, et al. PB2211: differences in post-
+for cooperative group study of ropeginterferon alfa-2b in young
+polycythemia vera and post-essential thrombocythemia
+patients with myeloproliferative neoplasms is now. Pediatr Blood
+myelofibrosis vs. primary myelofibrosis in fibrotic stage: a ret-
+Cancer. 2023;70(10):e30559.
+rospective, real-world study conducted in China. Hemasphere.
+35. Beauverd Y, Ianotto JC, Thaw KH, et al. Impact of treatment for
+2023;7(Suppl):e83600cf.
+adolescent and young adults with essential thrombocythemia and
+53. Lim Y, Lee JO, Bang SM. Incidence, survival and prevalence
+polycythemia vera. Leukemia. 2025;39(5):1135-45.
+statistics of classical myeloproliferative neoplasm in Korea. J
+36. Mascarenhas J, Kosiorek HE, Prchal JT, et al. A randomized
+Korean Med Sci. 2016;31(10):1579-85.
+phase 3 trial of interferon-α vs hydroxyurea in polycythemia vera
+54. Byun JM, Kim YJ, Youk T, Yang JJ, Yoo J, Park TS. Real world epi-
+and essential thrombocythemia. Blood. 2022;139(19):2931-41.
+demiology of myeloproliferative neoplasms: a population-based
+37. Verstovsek S, Komatsu N, Gill H, et al. SURPASS-ET: phase
+study in Korea 2004-2013. Ann Hematol. 2017;96(3):373-81.
+III study of ropeginterferon alfa-2b versus Anagrelide as sec-
+55. Tsai TH, Yu LH, Yu MS, et al. Real-world patient characteristics
+ond-line therapy in essential thrombocythemia. Future Oncol.
+and treatment patterns of polycythemia vera in Taiwan between
+2022;18(27):2999-3009.
+2016 and 2017: a nationwide cross-sectional study. Ther Adv
+38. Yacoub A, Mascarenhas J, Kosiorek H, et al. Pegylated interferon
+Hematol. 2023;14:20406207231179331.
+alfa-2a for polycythemia vera or essential thrombocythemia resis-
+56. Tefferi A, Guglielmelli P, Lasho TL, et al. MIPSS70+Version
+tant or intolerant to hydroxyurea. Blood. 2019;134(18):1498-509.
+2.0: mutation and karyotype-enhanced international prognos-
+39. Hasselbalch HC, Holmström MO. Perspectives on interferon-
+tic scoring system for primary myelofibrosis. J Clin Oncol.
+alpha in the treatment of polycythemia vera and related myelo-
+2018;36(17):1769-70.
+proliferative neoplasms: minimal residual disease and cure?
+57. Passamonti F, Giorgino T, Mora B, et al. A clinical-molecular
+Semin Immunopathol. 2019;41(1):5-19.
+prognostic model to predict survival in patients with post poly-
+40. Hasselbalch HC, Silver RT. New perspectives of interferon-
+cythemia vera and post essential thrombocythemia myelofibrosis.
+alpha2 and inflammation in treating Philadelphia-negative chronic
+Leukemia. 2017;31(12):2726-31.
+myeloproliferative neoplasms. Hemasphere. 2021;5(12):e645.
+58. Sanchez IWC, Durgam G, Curto-Garcia N, Sullivan JO, Robin-
+41. De Oliveira RD, Soret-Dulphy J, Zhao LP, et al. Interferon-alpha
+son SE, Ali S, McLornan D, Harrison C. A case of polycythaemia
+(IFN) therapy discontinuation is feasible in myeloproliferative
+vera treated with ropeginterferon-2b during pregnancy. Br J Hae-
+neoplasm (MPN) patients with complete hematological remis-
+matol. 2021;193:118-9.
+sion. Blood. 2020;136(Suppl 1):35-6.
+59. Bang SY, Lee SE. A case report of ropeginterferon alfa-
+42. Harrison CN, Nangalia J, Boucher R, et al. Ruxolitinib versus
+2b for polycythemia vera during pregnancy. Hematol Rep.
+best available therapy for polycythemia vera intolerant or resis-
+2023;15(1):172-9.
+tant to hydroxycarbamide in a randomized trial. J Clin Oncol.
+2023;41(19):3534-44.
+Publisher's Note Springer Nature remains neutral with regard to juris-
+dictional claims in published maps and institutional affiliations.
+Springer
+Current Hematologic Malignancy Reports
+(2025) 20:9
+Page 7 of 7
+9
+Authors and Affiliations
+Prithviraj Bose¹ . Zhijian Xiao² Hans C. Hasselbalch³ Josef T. Prchal⁴ Minghui Duan⁵ Abdulraheem Yacoub⁶
+Raajit Rampal⁷ . Jean-Jacques Kiladjian 8 Gabriela S. Hobbs⁹ Tsewang Tashi⁴ Kazuya Shimoda 10 Keita Kirito 11
+.
+Harinder Gill 12 Hsin-An Hou 13 Sung-Eun Lee¹⁴ . Jian Huang 15 . Bing Li⁴ Albert Qin 16 .
+Lennex Hsueh-Lin Yu¹⁶ John O. Mascarenhas 17 Ruben A. Mesa 18
+Prithviraj Bose
+10 Division of Hematology, Diabetes and Endocrinology,
+PBose@mdanderson.org
+Department of Internal Medicine, Faculty of Medicine,
+University of Miyazaki, Miyazaki-city, Miyazaki, Japan
+1
+Department of Leukemia, Division of Cancer Medicine, The
+11
+Department of Hematology and Oncology, University of
+University of Texas MD Anderson Cancer Center, Houston,
+Yamanashi, Yamanashi, Japan
+TX, USA
+12
+2
+Department of Medicine, School of Clinical Medicine, LKS
+Institute of Hematology and Blood Diseases Hospital,
+Faculty of Medicine, the University of Hong Kong, Hong
+Chinese Academy of Medical Sciences and Peking Union
+Kong, China
+Medical College, Tianjin, China
+13
+3
+Division of Hematology, Department of Internal Medicine,
+Department of Hematology, Zealand University Hospital,
+Division of General Medicine, Department of Internal
+Vestermarksvej 7-9, Roskilde, Denmark
+Medicine, National Taiwan University Hospital, Taipei,
+4
+University of Utah Huntsman Cancer Institute, Salt Lake
+Taiwan
+City, UT, USA
+14
+Department of Hematology, Seoul St. Mary's Hospital, The
+5
+Department of Hematology, Peking Union Medical College
+Catholic University of Korea, Seoul, Republic of Korea
+Hospital, Chinese Academy of Medical Sciences and Peking
+15
+The first Affiliation Hospital, Zhejiang University Medical
+Union Medical College, Beijing, China
+School, Hangzhou, Zhejiang, China
+6
+Hematologic Malignancies and Cellular Therapeutics,
+16 PharmaEssentia Corporation, Taipei, Taiwan
+University of Kansas Cancer Center, Westwood, KS, USA
+7
+17 Tisch Cancer Institute, Division of Hematology and Medical
+Center for Hematologic Malignancies, Memorial Sloan
+Oncology, Icahn School of Medicine at Mount Sinai, New
+Kettering Cancer Center, New York, NY, USA
+York, NY, USA
+8
+INSERM U1131, Hopital Saint-Louis, Paris, France
+18
+Levine Cancer Institute, Cancer Programs, Atrium Health,
+9
+Department of Medical Oncology, Massachusetts General
+Wake Forest University School of Medicine, Charlotte, NC,
+Hospital, Harvard Medical School, Boston, MA, USA
+USA
+Springer
