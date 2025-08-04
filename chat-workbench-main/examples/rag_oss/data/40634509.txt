@@ -1,0 +1,2236 @@
+
+Leukemia
+www.nature.com/leu
+ARTICLE
+OPEN
+Check for updates
+ACUTE LYMPHOBLASTIC LEUKEMIA
+Genomic determinants of therapy response in ETV6::RUNX1
+leukemia
+Laura Oksa
+ID 1,2,16 Sanni Moisio ID 3,16 Khurram Maqbool ID 4 Roger Kramer³, Atte Nikkilä¹, Buddika Jayasingha³,
+Artturi Mäkinen ID 1,5 Hassan Foroughi-Asl⁴⁶ Samuli Rounioja⁷, Janne Suhonen³, Olga Krali ID Miikka Voutilainen ID
+10
+Mari Lahnalampi ID 3 Kaisa Vepsäläinen¹¹ Sui Huang 3,12 Jesus Duque-Afonso ID 13 Julia Hauer ID 14,15 Jessica Nordlund ID 8,9
+Valtteri
+Wirta
+ID
+Olli Lohi
+1,2,17
+and Merja Heinäniemi
+3,17
+ID
+ID
+C The Author(s) 2025
+ETV6::RUNX1 leukemia is the second most common subtype of childhood B cell acute lymphoblastic leukemia (B-ALL). Although it
+generally has a low relapse risk, a significant proportion of B-ALL relapses occur within this subtype due to its relatively high
+incidence. Measurable residual disease at the end of induction therapy is a well-established biomarker predicting treatment
+outcomes, while no genomic biomarkers are routinely applied in clinics. In this study, we used multiomic data from ETV6::RUNX1
+leukemias to identify genomic features predictive of therapy response at disease presentation. In the deeply characterized sub-
+cohort we discovered that fast-responding cases frequently exhibited the APOBEC mutational signature and the gene expression
+signature of high cell cycle activity. In contrast, rearrangements of IGK genes were more frequent in slow responders. Additionally,
+response-related mutations were identified in transcriptional regulators and tumor suppressor genes (INTS1, NF1, TP53). Copy
+number analysis revealed that fast responders harbored more frequent deletions of chr12 p-arm, leading to transcriptomic changes
+affecting genes associated with induction therapy response (KRAS, FKBP4), while a shorter gain in chr12 was more common in slow
+responders. The identified genetic and transcriptomic markers of treatment sensitivity pave the way for improved disease
+classification at presentation, potentially improving clinical outcomes.
+Leukemia; https://doi.org/10.1038/s41375-025-02683-7
+INTRODUCTION
+based on blast counts at two-time points: end of induction (EOI,
+ETV6::RUNX1 is the second most frequent form of B cell acute
+around day 29) and end of consolidation (EOC, around day 79)
+lymphoblastic leukemia (B-ALL) in childhood. This fusion gene,
+[6, 11]. MRD is a surrogate marker that reflects underlying
+arising from the chromosomal translocation t(12;21)(p13;q22), is
+leukemia biology but the genetic lesions that determine therapy
+considered the initiating event that occurs in fetal hematopoietic
+response remain elusive. For example, deletion of the glucocorti-
+progenitors in utero [1, 2]. This subgroup generally presents with
+coid receptor NR3C1 that confers resistance to prednisolone and
+low-risk features and responds favorably to the current che-
+dexamethasone increases the relapse risk in ETV6::RUNX1 patients,
+motherapy. However, approximately 5% of ETV6::RUNX1 patients
+but it only occurs in approximately half of the relapsed cases [4].
+experience relapse, accounting for nearly 20% of all B-ALL relapses
+The ETV6::RUNX1 fusion acts as a weak oncogene and is
+[3-5]. Particularly, patients with an inadequate response to
+insufficient to initiate leukemia independently. Therefore, leukemia
+induction therapy display an increased risk of relapse [6-10]. This
+onset depends on the acquisition of additional genetic lesions that
+risk can be efficiently measured using techniques that quantify
+typically occur during the first years of life [1, 12, 13]. Compared to
+measurable residual disease (MRD), which is typically assessed
+other ALL subtypes, the ETV6::RUNX1 cells have higher
+¹Tampere Center for Child, Adolescent, and Maternal Health Research, Faculty of Medicine and Health Technology, Tampere University, Tampere, Finland. ²Tampere University
+Hospital, Tays Cancer Centre, Tampere, Finland. ³The Institute of Biomedicine, University of Eastern Finland, Kuopio, Finland. ⁴SciLifeLab, Department of Microbiology, Tumor and
+Cell biology, Karolinska Institutet, Stockholm, Sweden. ⁵Department of Pathology, Fimlab Laboratories, Tampere University Hospital, Tampere, Finland. ⁶Genomic Medicine Center
+Karolinska, Karolinska University Hospital, Stockholm, Sweden. ⁷Department of Hematology, Fimlab Laboratories, Tampere University Hospital, Tampere, Finland. ⁸Department of
+Medical Sciences, Uppsala University, Uppsala, Sweden. ⁹SciLifeLab, Uppsala University, Uppsala, Sweden. ¹⁰Faculty of Biological and Environmental Sciences, University of
+Helsinki, Helsinki, Finland. ¹¹Department of Pediatrics, Kuopio University Hospital, Kuopio, Finland. ¹²Institute for Systems Biology, Seattle, WA, USA. ¹³Department of
+Hematology/Oncology/Stem Cell Transplantation, Faculty of Medicine, University of Freiburg Medical Center, Freiburg, Germany. ¹⁴Department of Pediatrics, School of Medicine,
+Technical University of Munich, Munich, Germany. ¹⁵German Center for Child and Adolescent Health (DZKJ) and German Cancer Consortium (DKTK), partner site Munich, Munich,
+Germany. ¹⁶These authors contributed equally: Laura Oksa, Sanni Moisio. ¹⁷These authors jointly supervised this work: Olli Lohi, Merja Heinäniemi. email: laura.oksa@tuni.fi;
+olli.lohi@tuni.fr; merja.heinaniemi@uef.fr
+Received: 16 September 2024 Revised: 5 June 2025 Accepted: 27 June 2025
+Published online: 09 July 2025
+SPRINGER NATURE
+L. Oksa et al.
+2
+A
+B
+Mid-induction
+End of Induction (EOI)
+End of Consolidation (EOC)
+1.0
+Diagnosis
+(day 15)
+(day 29)
+(day 79)
+Induction phase
+Consolidation phase
+0.8
+Probability of relapse
+MRD level
+0.6
+Negative (n = 107)
+Non-negative <0.1% (n = 136)
+0.1% 1% (n = 59)
+Fast
+0.4
+> 1% (n =14)
+MRD 0
+p 0.006
+Fast
+Negative
+MRD 10%
+n=117
+MRD negative
+0.2
+n=270
+Intermediate
+n=232
+0 MRD 0.1%
+0.0
+Slow
+2
+4
+6
+8
+10
+n=158
+Positive
+0
+MRD 10%
+MRD positive
+Years from diagnosis
+Slow
+n=35
+MRD 0.1%
+n=55
+n=85
+Deep genomic
+cohort
+RNA-
+DNA
+Panel-
+WGS
+seq
+array
+seq
+Fast
+n=12
+n=17
+n=46
+n=84
+Intermediate
+n=5
+n=14
+n=62
+n=125
+Slow
+n=16
+n=20
+n=31
+n=51
+Unknown
+n=0
+n=0
+n=2
+n=0
+Fig. 1 MRD-stratified analysis of the ETV6::RUNX1 patient cohorts. A Cumulative incidence of relapse by MRD level at EOI in the NOPHO
+ALL2008 cohort (n = 316). B. Study design showing the response group classification and number of cases profiled in each genomics assay by
+EOI response. A subset of cases was profiled in multiple genomic analyses (refer to Fig. S1A-B).
+recombination activating (RAG) complex activity through elevated
+correlation between high MRD at EOI and the cumulative
+RAG1/2 gene expression [14, 15]. This increased activity can drive
+incidence of relapse was observed in the Nordic NOPHO
+leukemogenesis by introducing structural variants (SVs) through off-
+ALL2008 cohort of 316 ETV6::RUNX1 cases (Fig. 1A). The increased
+target DNA breakpoints. Secondary abnormalities often include
+risk of relapse was evident for patients with MRD levels above 1%
+focal deletions that harbor RAG recognition motifs. In most cases,
+after EOI, with a 26.7% (0-54%) probability of relapse five years
+these deletions typically affect only a few genomic loci, with the
+after diagnosis. In comparison, patients with MRD levels below
+most frequent target genes being ETV6, CDKN2A/B, PAX5, TCF4, EBF1,
+1% after EOI had a significantly lower risk of relapse: 4.1%
+CD200, TBL1XR1, and BTLA [14, 16, 17]. In addition to focal deletions,
+(0-9.8%) for MRD between 0.1% and 1%, 3.1% (0.1-6.0%) for MRD
+gains of chromosome arms and extra chromosomes are also
+below 0.1%, and 4.8% (0.1-9.4%) for those with undetectable
+recurrently observed in ETV6::RUNX1 leukemia, with an average of
+MRD. Cases with MRD levels above 0.1% at EOI received more
+four copy number variations (CNVs) per case. The most common
+intensified therapy (intermediate risk arm), likely masking the
+CNVs in this subtype are trisomy 21, derivative chromosome der (21)
+impact of MRD on the relapse risk. As a result, in subsequent
+t(12;21), 12p deletions, trisomy 10, trisomy 16, and duplication of
+genomic analyses, a slow EOI therapy response was defined as
+the long arm of chromosome X [14, 16-18]. Compared to other
+MRD levels greater or equal to 0.1%, intermediate response as
+cancer types, ALL typically has a relatively low single nucleotide
+measurable MRD at EOI (but below 0.1%), and fast response as
+variant (SNV) or insertion-deletion (InDel) mutation frequency, with
+undetectable MRD (MRD-negative) at EOI. In addition, we
+most mutations being passenger mutations that do not directly
+analyzed the response at two additional time points: mid-
+contribute to the selective advantage of leukemic cells [19-23].
+induction, and end of consolidation (EOC): fast responders were
+Studies of mutational signatures in ETV6::RUNX1-positive ALL have
+defined as having MRD < 10% at mid-induction, and at EOC,
+demonstrated that some COSMIC-defined signatures, such as those
+patients were classified as either MRD-negative (undetectable
+associated with aging, APOBEC activity, or DNA repair, are enriched
+MRD) or MRD-positive (detectable MRD). The EOI response served
+in ALL cells [14, 17, 24]. These mutational processes can accelerate
+as the primary time point for evaluating treatment outcomes
+leukemogenesis, with some signatures, such as those caused by
+(Fig. 1B, Supplementary Table 1).
+AID/APOBEC enzymes (SBS2 and 3), and ultraviolet light (SBS7),
+To date, MRD level is the only identified biomarker that predicts
+being linked to relapse. However, the exact mechanisms and
+treatment failure in ETV6::RUNX1 leukemia [9, 10]. Although
+functions of these signatures in ALL remain unclear [17, 23]. The
+genetic biomarkers have been investigated [25-28], none have
+presence of recurrent secondary mutations and their unique
+yet to been confirmed. To address this gap, we performed a
+combinations underscores the genetic diversity of this disease [16].
+comprehensive genomic analysis of 362 children (median age 4
+Herein, we studied the genomic determinants of therapy
+years, range 1-17 years; 171 females) with newly diagnosed
+response in ETV6::RUNX1 leukemia by integrative analysis of
+ETV6::RUNX1-positive B-ALL treated according to the NOPHO
+array-based copy number analysis (CNA), whole genome (WGS)
+ALL2000
+(n
+Il
+50)
+or
+ALL2008
+(n
+Il
+312)
+protocols
+and targeted DNA sequencing, as well as sequencing of the
+(Figs. 1B and S1A-B). The ETV6::RUNX1 fusion status was clinically
+transcriptome, in a cohort of patients stratified based on the
+verified (See Methods, breakpoints in WGS cohort in Fig. S1C, and
+therapy response to contemporary induction treatment.
+additional genomic assay confirmation in Supplementary Table 2).
+First, we profiled a discovery cohort using WGS (tumor-normal,
+n = 33) and bulk RNA sequencing (RNA-seq; tumor-only, n = 51),
+RESULTS
+both data types being available for 31 cases. This was followed by
+Somatic mutation rate is not associated with treatment
+quantitative DNA array CNV (n = 141) analysis, and targeted
+response
+sequencing (n = 261) of selected gene regions and genomic
+The slow clearance of leukemic blasts has been found to be a
+backbone to identify SNVs, InDels and CNVs (Figs. 1B and S1A-B;
+significant predictor of relapse [9]. Accordingly, a positive
+see also Methods, Supplementary Table 1).
+SPRINGER NATURE
+Leukemia
+L. Oksa et al.
+3
+A
+B
+Mid-induction MRD%
+-0.42, 0.018
+EOI MRD%
+EOC MRD
+Signature
+contribution
+Mid-induction response
+1
+0.6
+EOI response
+Mid-induction MRD%
+0.5
+100
+SBS2 (APOBEC)*
+80
+0
+60
+GE0310
+GE1329
+GE9348
+Mid-induction MRD
+Mid-induction
+SBS13 (APOBEC)
+40
+response
+0.4
+20
+Slow
+GE9336
+GE2328'
+GE3309
+GET20301
+GE8321
+GE8329
+GE9347
+GE0335
+GE6345
+GE8322
+GE3317
+GE7324
+GEK20315
+GE6347
+GE5340
+GE7318
+GE5338
+GE7304
+GE7305
+GE0319
+GE7301
+GE1312
+GET19344
+GE9321
+GE3320
+GE6339
+GE5312
+GE8315
+GE9344
+0
+Fast
+EOI MRD%
+3
+2
+0.2
+1
+c
+0
+Mid-induction MRD%
+EOC MRD
+EOI MRD%
+Negative
+EOC MRD
+Positvive
+Unknown
+Mid-induction response
+0.0
+EOI response
+Mid-induction response
+Fast
+0.0
+0.1
+0.2
+0.3
+Gene set score
+Slow
+S Phase*
+SBS2 contribution
+Unknown
+EOI response
+D
+0.5
+Fast
+R -0.3, 0.046
+G2M Phase
+Intermediate
+0
+Slow
+0.75
+GE0325
+1060
+GE5340
+1163
+1023
+GE9344
+AL
+Mid-induction MRD
+Mid-induction
+0.50
+response
+Slow
+Fast
+0.25
+0.00
+0.3
+0.6
+0.9
+S phase score
+Fig. 2 The APOBEC mutational signature and cell cycle activity correlate with a fast treatment response during induction therapy.
+A Mutational signature contributions of APOBEC signatures in the WGS cases (n = 33) ordered according to the EOI MRD and visualized as
+heatmaps. A single asterisk indicates a p value < 0.05 (Spearman's rank correlation coefficient), and significance in mid-induction response
+group. B SBS2 APOBEC mutation signature contribution of the WGS cases (n = 33) and its correlation with mid-induction MRD presented as a
+scatter plot, with Spearman's correlation coefficient. Red color indicates slow and green fast mid-induction response, respectively. c Heatmap
+visualization of S- and G2M-phase gene set scores by EOI treatment response (RNA-seq cohort, n = 51), with a single asterisk indicating p
+value < 0.05 (Spearman's rank correlation coefficient), and significance in both mid-induction and EOI response groups. D S-phase gene set
+score of the RNA-seq cases (n = 51) and its correlation with mid-induction MRD presented as a scatter plot, with Spearman's correlation
+coefficient. Red color indicates slow and green fast mid-induction response, respectively. Case IDs with hash symbol indicates relapsed
+patients in (A) and (C).
+In the WGS analyses (n = 33), a total of 82,505 somatic SNV
+Fast responders display APOBEC mutational signature and
+(median 1882, range 763-11,046) and 13,990 InDel mutations
+features of active cell cycle
+(median 413, range 153-911) were identified (Fig. S2A). Con-
+Next, we focused on the sub-cohort with WGS profiles to
+sidering only non-synonymous SNVs and InDels in the coding
+investigate the underlying mutational mechanisms that may
+regions, the median number of variants was 15 (range 8-95) and
+stratify the response groups based on mutational signatures and
+6 (range 2-19) per case, respectively (Fig. S2B, Supplementary
+RAG-mediated recombination events. To this end, we calculated
+Table 3), agreeing with previous genomics studies in this subtype
+mutational signature scores using somatic SNV profiles from the
+[14, 16]. In total, 926 SVs (including deletions < 1 Mb, the most
+33 WGS tumor samples (Supplementary Tables 8-10). Earlier study
+frequent SV type) were identified, with a median of 27 variants
+reported that APOBEC signatures (SBS2 and SBS13) were enriched
+per case (range 9-51) (Fig. S2C, Supplementary Table 4). Deletions
+in ETV6::RUNX1 leukemia [17]. In our cohort, a moderate
+and gains of > 1 Mb in size were classified as CNVs, and their
+correlation of MRD level and the COSMIC signatures correspond-
+analysis revealed 156 gains (median 2, range 0-26), with three
+ing to APOBEC activity was observed based on two different tools
+cases harboring whole-genome duplications, and 153 deletions
+(see Methods), with the highest signature scores in patients with a
+(median 4, range 0-22). In addition, 19 copy number neutral loss-
+fast early response, as measured by flow cytometry-based MRD at
+of-heterozygosity (LOH) events were identified (median 0, range
+mid-induction (SBS2 = 0.42, p 0.05; SBS13: r = -0.35,
+0-9) (Supplementary Table 5). Across all cases with available CNV
+p = 0.05, EOI: SBS2 = -0.33, p = 0.06; SBS13 = -0.30, p = 0.1,
+data (n = 358), 1168 deletions (median 3, range 0-22) and 1015
+Fig. 2A-B, Fig. S3A-B, Supplementary Tables 8-11). Additionally,
+gains (median 2, range 0-26) were identified (Supplementary
+positive weak correlations of SBS1 (age, clock-like cell-intrinsic
+Tables 5-7). No significant difference in CNV numbers or
+process) (r = 0.30, = p = 0.09) and SBS8 (unknown) (r = 0.39,
+fraction of genome affected by copy number changes were
+p<0.05) scores with mid-induction MRD levels were observed
+observed between responder groups (Fig. S2E-D). Overall, the
+(Fig. S3A, Supplementary Tables 8, 9, and 11).
+frequency of somatic genetic changes was not significantly
+The APOBEC mutational signatures originate from the activity of
+associated with the induction therapy response (Fig. S2A-D),
+the APOBEC3A (A3A) and APOBEC3B (A3B) cytosine deaminases
+suggesting that genetic diversification may not underlie the drug-
+[10, 29]. Overexpression of the A3A and A3B genes correlate with
+resistant phenotype.
+the DNA damage response (DDR) associated genes, and enhanced
+Leukemia
+SPRINGER NATURE
+L. Oksa et al.
+4
+A
+B
+IgK rearrangements
+8-1
+Mid-induction
+MRD%
+8
+Number of
+rearrangements
+6
+80
+4
+Alterations
+60
+2
+40
+Deletion
+Productive
+1
+1
+2
+2
+0
+0
+0
+Number of rearrangements
+6
+20
+ns
+0
+Inversion
+0
+1
+0
+1
+0
+0
+0
+0
+1
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+Unproductive
+0
+0
+0
+2
+0
+0
+0
+1
+0
+0
+1
+0
+1
+2
+0
+0
+0
+0
+1
+0
+0
+0
+0
+0
+1
+1
+0
+0
+0
+0
+0
+2
+0
+EOI MRD%
+4
+Mid-induction MRD%
+3
+EOI MRD%
+2
+EOC MRD
+1
+2
+EOI
+0
+GE9336
+GE2328
+GE3309
+GET20301
+GE8329
+GE9347
+GE0335
+GE6345
+GE8322
+GE0310
+GE3317
+GE7324
+GE6347
+GE7318
+GE5338
+GE7304
+GE9342
+GE7305
+GE0319
+GE1329
+GE9348
+GE1312
+GE3320
+EOI response
+EOC MRD
+GE8321
+GEK20315
+GE5340
+GE7301
+GET19344
+GE9321
+GE6339
+GE5312
+GE8315
+GE9344
+0
+Fast
+Negative
+Intermediate
+Positive
+Slow
+Unknown
+Slow
+Intermediate
+Fast
+Response group
+Fig. 3 Immunoglobulin light chain rearrangements are enriched in slow responding ETV6::RUNX1 cells. A Bar plot showing number of the
+IGK gene rearrangements by EOI response. Numbers of productive and unproductive rearrangements marked below the bar plot. Case IDs
+with hash symbol indicates relapsed patients. B Number of IGK gene rearrangements by EOI response groups as a boxplot. Median value is
+marked as black vertical line inside of each box. A single asterisk indicates a p value < 0.05 (Wilcoxon test). The data in A-B encompass the
+cases in the WGS cohort (n = 33).
+replication stress [25-28]. In addition, there is evidence that A3A
+In contrast, high MRD levels at EOI were associated with
+and A3B expression is regulated in a cell cycle -dependent manner
+increased GATA2 regulon activity = 0.40, p 0.01), and high
+in multiple myeloma and healthy blood cells, with the highest
+MRD at mid-induction and EOI with elevated MAX regulon activity
+level in the G2M-phase [29-31]. Consistent with the literature,
+at diagnosis = 0.35, p < 0.05 and 0.44, p < 0.01, respectively)
+single-cell (sc)RNA-seq profiles of healthy bone marrow B cells
+(Fig. S3E, Supplementary Table 13).
+revealed expression of A3B in cycling hematopoietic stem and
+Overall, these findings suggest that the biological processes
+progenitor cells (HSPCs), pro-B and pre-B cells (Fig. S3C), support-
+that distinguish slow and fast responding leukemias might
+ing the fact that A3B expression is regulated during the cell cycle.
+correspond to specific mutational signatures and TF activities
+In scRNA-seq data from five ETV6::RUNX1 leukemias from our
+that associate with distinct phases of the cell cycle.
+previous study [32], A3B expression was the highest in the G2M
+phase cells compared to other cell cycle phases (Fig. S3D).
+Frequent immunoglobulin light chain recombination events
+Interestingly, we noticed a negative correlation between MRD and
+in treatment resistant cases
+expression level of A3B in S-phase cells -0.99 and p 0.001)
+Off-targeting activity of RAG enzymes drives the secondary
+(Fig. S3D). Accordingly, significantly higher A3B levels were found
+mutational processes in ETV6::RUNX1 leukemia, causing SVs for
+in S-phase cells from the cases with mid-induction MRD < 0.1
+example at TBL1XR1 locus, which is associated with inferior
+(p 0.01) (Fig. S3F). Using the larger bulk RNA-sequencing from
+outcome [17]. On the other hand, successful RAG-mediated V(D)J
+the NOPHO cohort (n = 51), and cell cycle phase-specific genes,
+recombination of immunoglobulin (Ig) genes results in strong pro-
+we found further evidence to link cell cycle regulation with MRD
+survival signaling via the pre-B cell receptor (pre-BCR) and B cell
+level. Specifically, the S-phase gene set score demonstrated a
+receptor (BCR), essential to normal cell functions. This recombina-
+negative correlation with MRD levels at both mid-induction
+tion occurs in two stages: initially, the Ig heavy chain (IGH) gene is
+(r = -0.30, p < 0.05, empirical p value = 0.05) and EOI -0.28,
+rearranged in pro-B cells, followed by the rearrangement of light
+p < 0.05, empirical p value = 0.04) (Fig. 2C, D). A weaker trend was
+chains - first lg kappa (IGK), then lg lambda (IGL) - in pre-B cells
+observed with the G2/M-phase gene set score (Fig. 2C, Supple-
+until a productive chain is formed [37-39]. Since leukemic
+mentary Table 12).
+ETV6::RUNX1 cells resemble pro-B cell stage in both their
+To examine the role of putative transcriptional regulatory
+immunophenotype and transcriptome profiles, it is expected that
+mechanisms, we calculated gene set scores from transcription
+only Ig heavy chain recombination events are present [33].
+factor (TF) regulons, as defined by Mehtonen et al. [33]. The gene
+However, given the potential plasticity of leukemic blasts, we
+set scores from the E2F3 and E2F8 regulons, which represent
+hypothesized that the active RAG-mediated recombination
+critical TFs controlling the G1/S transition [32, 34], were associated
+process might diversify the leukemic Ig repertoire beyond heavy
+with EOI MRD levels (Fig. S3E, Supplementary Table 12). Previously,
+chains. To investigate this, we employed the IgCaller tool [40] on
+Somasundaram et al. showed that also PAX5 could control pro-B
+the WGS data and observed that slow responders exhibited more
+cell expansion by regulating MYC [35]. Li et al. recently showed
+frequently rearrangements in IGK genes compared to fast
+that re-introduction of ectopic expression of PAX5 into the
+responders (Wilcoxon test: p = 0.03) (Fig. 3A-B, Supplementary
+ETV6::RUNX1 positive REH cells led to the partial blockade of G1
+Tables 14 and 15). Additionally, slow responders harbored several
+to S transition and a drug-resistant phenotype [36]. Examining the
+events at the kappa-deletion element, indicating repetitive and
+patient genomics profiles collected in our study in context of the
+frequent recombination attempts within this locus [41, 42]
+previously identified mechanisms linking MYC, PAX5 and B cell
+(Fig. S4A-C).
+proliferation, we found that MYC was higher expressed in the
+As the increased frequency of Ig light chain rearrangements
+S-phase cells of fast responding cases (p < 0.01) based on the
+may provide a survival advantage by enabling active BCR
+patient scRNA-seq profiles (Fig. S3F, the modest decrease in PAX5
+signaling, we performed scRNA-seq coupled with scVDJ-
+was not significant). Consistent with the significant correlation
+sequencing to analyze the VDJ repertoire in cells collected at
+with S-phase score in the bulk RNA-seq cohort, deletions
+diagnosis, day 2, and mid-induction. The case selected for this
+overlapping the PAX5 locus were significantly (p 0.001) more
+analysis had a slow-responding leukemia with IGK-rearrangement
+prevalent in fast-responders (Fig. S3G-I, Supplementary
+detected in DNA analysis (GEK20315). At diagnosis the bone
+Table 4 and 7). Next, we asked whether these TFs that previous
+marrow leukemic blasts exhibited a typical pro-B-like expression
+mechanistic studies linked with cell cycle regulation could directly
+profile and expressed only the IGHM gene, but not the light chains
+regulate A3B expression. We found two candidate regulatory
+(Fig. S5A-B). However, light chain expression was highly elevated
+regions within the A3B locus with co-localized binding of MYC and
+during the induction therapy as evidenced in the remaining blast-
+PAX5, suggesting that A3B and cell cycle entry regulation are
+like (DNTT + MME cells at the mid-induction time point
+tightly coupled (Fig. S3J).
+(Fig. S5A-B, non-B cells are shown as controls in Fig. S5C). To
+SPRINGER NATURE
+Leukemia
+L. Oksa et al.
+5
+verify the blast status of these cells, we compared the most
+therapy (proportion of slow vs. fast responders carrying a
+frequent IGH rearrangement sequence identified through WGS
+mutation: 0.059 vs. 0.01 based on mid-induction MRD, p 0.05;
+with the scVDJ-sequencing data and found that cells with the
+0.029 vs. 0.01 based on EOI MRD p 0.1), consistent with previous
+matching heavy chain sequences were exclusively present in the
+reports linking it to poor treatment outcome in ALL [46]. The
+blast-transcriptome matched cells at diagnosis, as well as in the
+tumor suppressor gene MSH2 [47], was mutated among EOI slow
+DNTT + MME+ blast cluster observed in day 2 and mid-induction
+responders (proportion of slow responders carrying a mutation
+samples (Fig. S6A). Moreover, blasts with productive light chain
+0.072, EOI MRD, p < 0.05), while no mutations were found within
+rearrangement were enriched upon the induction treatment in
+the fast or intermediate groups. In addition, mutations in ETV6
+BM- derived samples from this patient (IGK: from 0.6% to 11%,
+were more common in slow and intermediate responders (EOI
+Fig. S6B, non-B cells are shown as controls in Fig. S6C).
+MRD, p < 0.05). In comparison, we observed a higher frequency of
+IKZF2 mutations among fast responders, in agreement with
+Presence of deletions in anthracycline- and glucocorticoid-
+previous reports linking these mutations to dexamethasone
+response modulating genes correlate weakly with mid-
+sensitivity (proportion of slow vs. fast responders carrying a
+induction treatment response
+mutation: 0.031 vs. 0.000, EOI MRD p 0.0.5) (Fig. 4A, Supplemen-
+Oshima et al. previously conducted an extensive genome-wide
+tary Tables 18 and 19).
+CRISPR analysis of chemotherapy-gene interactions in REH cells
+Many mutations identified in our analysis associated with EOC
+(ETV6::RUNX1-fusion positive cell line derived from a relapsed case)
+response. The tumor suppressor gene NF1, which regulates the Ras
+[43]. Their study identified multiple gene knockouts that either
+pathway [48], exhibited mutations significantly more frequently in
+enhanced sensitivity or conferred resistance to various chemother-
+patients with positive EOC MRD (proportion of MRD positive vs.
+apeutic agents, including vincristine, 6-mercaptopurine, L-asparagi-
+negative patients carrying a mutation: 0.111 vs. 0.013, EOC MRD
+nase, cytarabine, methotrexate, daunorubicin, and maphosphamide
+p 0.01). Similarly, these patients showed a significantly higher
+[42]. To investigate their impact on induction treatment responses,
+frequency of mutations in UGGT2 (proportion of MRD positive vs.
+we compared the cell line-based results to our patient-derived data.
+negative patients carrying a mutation: 0.130 vs. 0.018, EOC MRD
+Since the REH cell line lacks a functional NR3C1 glucocorticoid
+p 0.01), and the transcriptional regulator SIN3A (proportion of MRD
+receptor, we complemented our analysis with data from a
+positive vs. negative patients carrying a mutation: 0.056 vs. 0.004,
+dexamethasone screen from the DUX4-rearranged (DUX4::IGH)
+EOC MRD p < 0.05). TP53 mutations (proportion of MRD positive vs.
+Nalm-6 B-ALL cell line [44]. To investigate whether the frequency
+negative patients carrying a mutation: 0.056 vs. 0.004, EOC MRD
+of CNV deletions present at diagnosis in the screens differs between
+p 0.05), which are linked to multidrug resistance [43, 47, 49], and
+response groups, we calculated the median number of deletions in
+methotrexate resistance -associated mutations in KANSL1 (propor-
+different responder groups that impacted the top genes associated
+tion of MRD positive vs. negative patients carrying a mutation: 0.074
+with drug resistance or sensitivity if they are inactivated (n = 261,
+vs. 0.009, EOC MRD p 0.05) and INTS1 (proportion of MRD positive
+Fig. S7). Genes selected for the analysis were identified using
+vs. negative patients carrying a mutation: 0.074 vs. 0.013, EOC MRD
+several cut-offs; the top 100 and top 200 genes based on
+p 0.05) genes were significantly more frequent in patients with
+resistance/sensitivity ranking, as well as those with an FDR < 0.25.
+positive MRD at the EOC time-point [43]. The latter associations may
+At the CNV level, no significant differences were found in the
+bear clinical significance as patients had received high-dose
+number of deletions across responder groups for sensitizing or
+methotrexate treatments by that time-point, suggesting a possible
+resistance hits from the screens, regardless of the cut-off used
+mechanism of resistance.
+(Supplementary Table 16). However, fast responders by mid-
+induction timepoint were more likely to harbor any daunorubicin-
+Chromosomes 3, 6, 9, 12, 15 and 21 harbor gene loci that
+(p = 0.017) or dexamethasone-sensitizing deletions compared to
+associate with treatment response at copy number level
+slow responders = 0.058) (Supplementary Table 16). Overall,
+ETV6::RUNX1 genomes typically contain a few large alterations,
+these findings suggest that a simple stratification based on the
+such as deletions in the non-rearranged chromosome 12 and
+CRISPR screen hit deletion frequencies alone could not distinguish
+gains of the der(21)t(12;21) chromosome. To identify response
+suboptimal induction therapy responders in our patient cohort.
+stratifying copy number changes (gains and deletions > 1 Mb in
+size), we combined the WGS (n = 33), DNA array (n = 70) and
+Mutations in transcriptional regulator and tumor suppressor
+panel sequencing (n = 255) CNV data (in total n = 358). The CNV
+genes associated with treatment response
+locations (within chromosome arm) and response groups labels
+To further examine whether the genes associated with the
+were randomized to calculate empirical p values and to assess the
+treatment response [43, 44] harbored missense or potentially
+association between therapy response and each gene region with
+deleterious SNVs and InDels, we designed a gene panel where we
+detectable RNA expression based on the RNA-seq cohort
+included candidate response-modulating genes identified
+(Supplementary Tables 20-21). Deletions in the long arm of
+through our WGS discovery cohort and the cell line CRISPR
+chromosome 9 were more common in mid-induction and EOI
+screens. We combined variant analysis from WGS and panel
+slow responders, affecting the genes such as SYK, INIP and
+sequencing of diagnostic samples (total patients n = 294,
+ERCC6L2 (empirical p 0.01, Figs. 5A and S8A). The partial gain of
+Supplementary Table 3, Supplementary Tables 17-19), focusing
+chromosome 21, corresponding to the der(21)t(12;21) gain
+on SNVs and InDels with predicted impact on protein function.
+(empirical p < 0.05, Fig. 5B), and the partial deletion of the
+Panel-of-normals (PON)- and population-based allele frequency
+chromosome 6q were associated with slower EOI response
+(AF) filtering was applied to remove the common germline
+(empirical p < 0.05, Fig. 5C). Furthermore, CNVs associated with
+variants, however it is noteworthy that germline mutations may be
+EOC MRD positivity included focal deletions on chromosome 3
+present at low frequencies. Variants that associated with treat-
+(centered at the TBL1XR1 gene locus, p <0.001, Fig. S8B), and on
+ment response (Fisher's exact test, Supplementary Table 18)
+the chromosome 15 (INO80 locus, empirical p 0.001, Fig. S8C).
+affected genes functioning in transcriptional regulation, like
+Presence of TBL1XR1 alterations agrees with the recent finding by
+ARID5B, SIN3A, INTS1, and KANSL1, and suppression of oncogenes,
+Brady et al. [17] which associated the locus with inferior outcome
+notably including the driver genes TP53, ETV6 and NF1 [45] and
+in ETV6::RUNX1 leukemia [17].
+seven genes identified from the CRISPR-based drug sensitivity or
+In fast-responding cases at all studied timepoints, we found
+resistance screen, such as IKZF2 [43, 44] (Fig. 4A-C).
+more frequent deletions of chromosome 12p (empirical p 0.05,
+The transcriptional regulator gene ARID5B, which was more
+Figs. 5D and S8D and E). This region that includes the ETV6 locus
+frequently mutated among the slow responders to induction
+typically encompassed a larger segment beyond the translocation
+Leukemia
+SPRINGER NATURE
+L. Oksa et al.
+6
+A
+Mid-induction
+EOI
+EOC
+Fraction of cases with mutation
+Response
+0.2
+ERG
+0.15
+INTS1
+0.1
+0.05
+MECOM
+0
+MUC16
+Driver gene
+TP53
+No
+DOT1L
+Yes
+ARID5B
+Gene function
+SETD1B
+Oncogene
+Tumor supressor
+PTPRD
+Function
+MSH2
+Transcriptional regulator
+UGGT2
+Drug
+PLCG1
+Resistance
+Sensitivity
+NF1
+Response (Mid-induction / EOI)
+IKZF2
+Fast
+KANSL1
+Intermediate
+Slow
+ETV6
+EOC response
+SIN3A
+Negative
+Positive
+111000 111
+MAF
+MTXEX
+B
+Mid-induction response
+EOI response
+EOC MRD status
+SETD1B (22)
+Alterations
+Mid-induction response
+Nonsense
+Fast
+ETV6 (10)
+Frameshift
+Slow
+Splicesite
+Unknown
+DOT1L(8)
+Missense
+EOI response
+ERG (6)
+Fast
+PTPRD (6)
+Intermediate
+Slow
+MSH2 (5)
+EOC MRD status
+ARPP21 (4)
+Negative
+IKZF2 (3)
+Positive
+Unknown
+c
+Mid-induction response
+EOI response
+EOC MRD status
+MUC16 (51)
+UGGT2 (11)
+NF1 (10)
+INTS1 (7)
+PLCG1 (6)
+KANSL1 (7)
+TP53 (4)
+SIN3A(4)
+Fig. 4 SNVs and InDels associated with treatment response. A Heatmap presenting the fraction of cases (total n = 294) in each responder
+group harboring mutations affecting the indicated genes and their effect on drug responses and known biological function. Three asterisks
+indicate a p value < 0.001, two asterisks indicate a p value < 0.01, and a single asterisk indicates a p value < 0.05 in Fisher's exact test. The drug
+resistance/sensitivity annotations are based on the drug screen results by Oshima et al. [43] and Poulard et al. [44]. B, c Oncoprints visualizing
+gene mutations significantly associated with (B) EOI response and (C) EOC MRD status (n = 294). Numbers of the mutations are indicated in
+parentheses. EOI end of induction, EOC end of consolidation, 6-MP 6-mercaptopurine, ARA-C cytarabine, DNR daunorubicin, L-ASP L-
+Asparaginase, MAF maphosphamide, MTX methotrexate, VCR vincristine.
+breakpoints, notably including the well-known oncogene KRAS,
+on drug responses, we analyzed ex vivo drug responses (Fig. 6A,
+and the EMP1 gene locus, whose deletion has been shown to
+B). Four patients with a 12p deletion exhibited sensitivity to
+sensitize cells to prednisolone and high expression associated
+induction therapy drugs (dexamethasone, doxorubicin, predniso-
+with poor event-free survival (EFS) in B-ALL [50, 51]. In contrast,
+lone, or vincristine), whereas one patient with a 12p gain
+slow-responding patients exhibited more frequent gains at 12p,
+demonstrated resistance to these drugs. Additionally, in a
+covering a shorter region, approximately 12 Mb from the start of
+dexamethasone-only screen, one patient with a 12p deletion
+chromosome 12, corresponding to the der(21)t(12;21) gain
+showed sensitivity across the tested dexamethasone concentra-
+(Fig. 5E). The overlapping region encompassed expressed genes
+tions, whereas the patient with a 12p gain was resistant to
+including ETV6, TIGAR, SLC2A3, KDM5A, PHB2, and USP5 with
+dexamethasone, in agreement with the MRD associations.
+significant gains in slow responder group across all time points
+Previous studies have shown that the activating KRAS G13
+(empirical p < 0.05, Figs. 5E and S8F-G). Several of these genes
+mutation confers resistance to prednisolone, methotrexate and
+have been previously associated with chemoresistance and
+vincristine, while the KRAS G12 mutation shows conflicting effects
+tumorigenesis [52-60].
+on drug responses [61, 62]. In our analysis, KRAS was more
+frequently deleted in fast responders at EOI (chr12p, Fig. 5D) and
+Multiple gene loci within chr12 underlie differential drug
+higher expressed in cases with positive EOC MRD (EOC MRD,
+responses ex vivo and in vitro
+p = 0.019, Supplementary Table 22). For comparison, we chose the
+We chose the chr12 p-arm alterations for further analysis based on
+NT5DC1 gene, which was among the top genes whose loss
+the opposing pattern of gains versus deletions in slow- and fast-
+sensitized cells to methotrexate in the CRISPR screen [43], and
+responders, respectively. To further assess their combined impact
+carried SV deletions in two patients with slow treatment response
+SPRINGER NATURE
+Leukemia
+L. Oksa et al.
+7
+A
+Chr9
+0.20
+EOI response
+Slow
+Deletion fraction
+0.15
+(≥ 0.1 % EOI MRD)
+Fast+Intermediate
+0.10
+ПЛ
+0.1% EOI MRD)
+Slow
+0.05
+(positive EOI MRD)
+Fast
+0.00
+(negative EOI MRD)
+0
+50,000,000
+100,000,000
+Coordinates
+ERCC6L2**
+B
+c
+Chr21
+Chr6
+0.20*
+0.6
+0.15
+Gain fraction
+0.4
+Deletion fraction
+0.10
+0.2
+0.05.
+0.0
+0.00
+0
+10,000,000
+20,000,000
+30,000,000
+40,000,000
+50,000,000
+0
+50,000,000
+100,000,000
+150,000,000
+Coordinates
+Coordinates
+D
+E
+Chr12
+Chr12
+0.6
+0.6.
+Deletion fraction
+0.4.
+Gain fraction
+0.4.
+0.2
+0.2
+0.0
+0.0
+0
+50,000,000
+100,000,000
+0
+50,000,000
+100,000,000
+USP5***
+KRAS*
+Coordinates
+KDM5A***
+USP5***ETV6***
+Coordinates
+TIGAR*
+PHB2***
+EMP1***
+SLC2A3***
+Fig. 5 CNV alterations associating with treatment response status at EOI. Fraction of cases in each indicated EOI response group with (A)
+deletion at chromosome 9, (B) gain at chromosome 21, (C) deletion at chromosome 6, (D) partial deletion or (E) gain at chromosome 12. Red
+curves represent the fraction of slow responders (EOI MRD ≥ 0.1%, n = 84) harboring the indicated copy number change at each region of the
+chromosome, whereas the dashed green-orange curves indicate the same for fast and intermediate responders (EOI MRD < 0.1%, n = 272).
+Dashed red-orange curves represent the fraction of slow and intermediate responders (EOI MRD > 0%, n = 240) harboring the indicated copy
+number change at each region of the chromosome, whereas the green curves indicate the same for fast responders (EOI MRD = 0%, n = 116).
+The chromosome structure with relevant expressed genes and their empirical p values visualized below the curves. Grey bars indicate
+cytobands and black lines indicate the location of highlighted genes. Three asterisks indicate an empirical p value < 0.001, two asterisks
+indicate an empirical p value < 0.01, and a single asterisk indicates an empirical p value < 0.05.
+in our cohort. We deleted both gene separately in REH cells
+CN status at bulk RNA-seq level (Fig. 6D, see also Fig. S11 for other
+(Fig. S10A-C), and assessed sensitivity to both vincristine and
+CNV regions). These included 14 genes encoding proteins that
+methotrexate. KRAS knockout (KO) increased sensitivity to both
+directly interact with the target proteins for the induction therapy
+drugs (p < 0.01, Fig. S10D-E), while NT5DC1 Ko specifically
+drugs prednisolone, doxorubicin and vincristine (Fig. 6D), includ-
+enhanced methotrexate sensitivity (p < 0.05) compared to REH
+ing FKBP4 that regulates glucocorticoid receptor nuclear transport
+wild-type (WT) cells in vitro (Fig. S10F).
+upon ligand binding and NCAPD2 that represents a subunit of the
+Overall, out of 377 genes expressed in BM samples and located
+condensin multiprotein complex required for mitotic chromosome
+in response-associated CNV regions, the expression of 178 genes
+condensation with previously reported synthetic lethal interaction
+was significantly influenced by their copy number (CN) status
+with KRAS [63]. In total, 33/73 genes showed a loss of fitness
+(p < 0.05) (Fig. S11, Supplementary Tables 20-21). The levels for top
+phenotype in cell line screens representing hematopoietic and
+markers for chromosome 12p, CLSTN3, COPS7A, EMG1, ERC1,
+lymphoid tissue (Supplementary Table 24). Moreover, the gene-
+FOXJ2, KDM5A, LRP6, MLF2, NCAPD2, PHB2, PHC1, TPI1, USP5, and
+level interaction network (Fig. S10G-I), shortest paths from genes
+ZNF384 (p < 0.01, FDR < 0.1), are shown as violin plots in Fig. 6C.
+to drug target genes through shared biological process, molecular
+Generally, changes in CN led to the corresponding alterations in
+function ontology terms and perturbation assay nodes based on
+gene expression. However, considering that additional epigenetic
+the knowledge graph SPOKE showed significant difference to
+mechanisms can render a similar functional effect, we performed
+random gene sets of the same size based on multiple network
+an additional MRD-stratified response analysis based on the RNA-
+metrics (Fig. S10I).
+seq data, focusing on the genes residing within the significant
+Our integrative analysis highlights the functional relevance of
+CNV regions (Supplementary Table 22). Further integrating the
+chromosome 12p alterations in treatment response, linking CNV-
+scRNA-seq data, we could distinguish 73 genes from chr 12 that
+driven gene expression changes to drug sensitivity. The associa-
+were expressed in leukemic cells and significantly correlated with
+tion of KRAS loss with increased vincristine and methotrexate
+Leukemia
+SPRINGER NATURE
+L. Oksa et al.
+8
+A
+B
+Cell viability %
+Chr12 alterations
+ALL_386
+GE7324
+120
+Deletion
+100
+Gain
+ALL_284
+Cell viability %
+GE7304
+80
+EOI response
+60
+60
+Fast
+ALL_458
+40
+chr12
+40
+Intermediate
+20
+ALL_488
+0
+EOI response
+Dexa 0 nM
+Dexa 10 nM
+Dexa 25 nM
+Slow
+ALL_589
+chr12
+EOI response
+Dexamethasone
+Prednisolone
+Doxorubicin
+Vincristine
+C
+D
+7.
+KDM5A
+6
+CCDC77
+WNK1
+8.
+RAD52
+6.
+ERC1
+FBXL14
+ADIPOR2
+:
+DCP1B
+Expression
+6
+4.
+5.
+FKBP4
+ITFG2
+NRIP2
+TULP3
+com
+4.
+TSPAN9
+4.
+PARP11
+CCND2
+2.
+3.
+C12orf4
+NDUFA9
+TNFRSF1A
+2.
+LTBR
+CD27
+CLSTN3*
+COPS7A*
+EMG1
+TAPBPL
+GCR
+MRPL51
+prednisolone
+NCAPD2
+10
+GAPDH*
+9
+IFFO1
+NOP2
+CHD4
+8
+6
+9.
+LPAR5
+MAP4
+ACRBP
+Expression
+ING4
+ZNF384
+7
+COPS7A
+8
+TOP2A/B
+MLF2
+doxorubicin
+CAPG
+4.
+PTMS
+6.
+GPR162
+USP5
+7.
+TPI1
+LRRC23
+TUB
+5
+ATN1
+2.
+C12orf57
+6.
+PHB2
+4
+EMG1
+ERC1*
+FOXJ2*
+KDM5A**
+LPCAT3
+ACTG
+C1R
+C1RL
+vincristine
+CLSTN3
+8.
+PEX5
+FOXJ2
+8.
+CLEC4E
+RIMKLB
+8.
+PHC1
+M6PR
+6.
+KLRF2
+Expression
+6
+YBX3
+ETV6
+LRP6
+6
+CREBL2
+GPR19
+4.
+CDKN1B
+4.
+APOLD1
+HEBP1
+ATF7IP
+4.
+WBP11
+ERP27
+MLF2
+EPS8
+LRP6
+NCAPD2*
+DERA
+MGST1
+PLEKHA5
+10
+8.
+AEBP2
+RECQL
+LDHB
+C2CD5
+8
+KRAS
+8
+Expression
+6
+6
+6
+4.
+Fisher's p-value (del)
+Emp. p-value (del)
+Fisher's p-value (gain)
+Emp. p-value (gain)
+CN DE p-value
+LFC gain
+LFC del
+DE slow vs fast p-value
+DE slow vs fast coef
+4.
+4
+PHB2*
+PHC1
+TPI1
+9.
+Fisher's test p-value (del/gain)
+LFC (del/gain)
+DE slow vs intermediate + fast p-value
+0.1
+4
+0.1
+2
+8
+7.
+0.05
+0
+0.05
+Copy number
+-2
+7
+status
+0
+-4
+Empirical p-value (del/gain)
+DE slow VS fast p-value
+0
+Expression
+6.
+Gain
+0.1
+0.1
+6
+Deletion
+0.05
+0.05
+5.
+5.
+Neutral
+0
+0
+CN DE p-value
+DE slow vs fast p-value coefficient
+4
+0.1
+1
+4
+0
+0.05
+3
+-1
+USP5 **
+ZNF384
+0
+-2
+sensitivity in vitro, along with the identification of genes directly
+DISCUSSION
+interacting with induction therapy targets, underscores the
+Recent studies have revealed novel genetic alterations that define
+biological impact of these alterations. These findings provide a
+subtypes in ALL and have linked these alterations to patient
+foundation for refining response prediction and developing more
+outcomes. Nevertheless, the absence of consistent diagnostic
+personalized treatment strategies in leukemia.
+genetic biomarkers for predicting treatment response remains an
+SPRINGER NATURE
+Leukemia
+L. Oksa et al.
+9
+Fig. 6 Ex vivo drug responses. A Ex vivo drug response of cells from five ETV6::RUNX1 patients harboring a CNV at chromosome 12. CNV
+status, EOI response groups and drug responses to drugs used in induction therapy are shown (concentrations: dexamethasone 1.4 µg/ml
+(3567 nM), doxorubicine 0.5 µg/ml (920 nM), prednisolone 50 µg/ml (138 uM), and vincristine 2.5 µg/ml (3000 nM)). B Ex vivo dexamethasone
+response of two patients harboring CNV alteration at chromosome 12. CNV status and EOI response group are shown as in (A). c Violin plots
+showing the copy number effect on gene expression of selected genes in chromosome 12. The expression is reported for cases in the RNA-
+seq cohort (n = 50) and the values are CPM-normalized and log2-transformed. The horizontal line indicates the mean expression level in each
+group. Three asterisks indicate FDR 0.01, two asterisks indicate FDR 0.05, and a single asterisk indicates FDR 0.1. D Summary of genes
+affected at expression level by chromosome 12 CNV. Statistical associations in genomics analyses, and protein-level interactions with drug
+target proteins are shown (prednisolone in green, doxorubicin in brown and vincristine in purple). The genes shown are expressed in
+leukemic cells and significant in the EOI Fisher's exact tests comparing deletion/gain prevalence (n = 356) and the gene expression copy
+number DE analysis at EOI treatment groups (slow vs. intermediate + fast) (n = 50, p < 0.05). Genes are ordered according to their chr location
+(chromosome start at the top), and the heatmap visualizes the statistical test p value or log fold change, as indicated. DE differential
+expression, del deletion, Emp p value empirical p value, EOI end of induction, EOC end of consolidation, LFC log fold change.
+unmet need, which served as the motivation for this study. We
+collected at mid-induction therapy shifted to a pre-B cell-like
+focused on the ETV6::RUNX1 subtype of ALL and identified
+phenotype [32]. Moreover, B-ALL cells which were more resistant
+genomic alterations present at diagnosis that associated with
+to glucocorticoids were reported to exhibit a pre-B cell-like
+early treatment response, which is a strong predictor of relapse
+phenotype [70], which makes it plausible that light gene region
+risk. Although the overall mutation rate did not stratify risk groups,
+rearrangements typical of pre-B cell stage could become targets
+the genomic signatures indicated that distinct mutational
+for recombination. Single-cell VDJ profiles during induction
+processes related to RAG and APOBEC activities may shape the
+chemotherapy of a slow-responding case studied here confirmed
+genetic landscapes of slow versus fast responders, respectively.
+that blast cells expressed immunoglobulin light chains, with
+Moreover, the MRD risk groups differed in gains versus deletions
+productive rearrangements enriched in residual blasts after two
+of chromosome 12p that harbored multiple genes affecting the
+weeks of induction therapy. Previously, Kansal et al. (2014)
+induction therapy drug response pathways. Additionally, we
+published a report featuring nine diagnostic pediatric precursor
+identified five other large CNV alterations and mutations in
+B-ALLs with dim IGK expression, including one ETV6::RUNX1
+specific transcriptional regulator and tumor suppressor genes that
+patient [71]. In Ph+ ALL, light chain rearrangements are known
+were associated with chemotherapy response. Overall, our
+to promote the expression of BCL6, a protein associated with
+findings highlight SNV, CNV, and transcriptomic alterations
+survival and drug resistance [72-74], whereas in B cell lymphomas,
+impacting the induction and consolidation treatment response
+active BCR signaling has been shown to drive tumorigenesis and
+among patients with ETV6::RUNX1 leukemia paving the way for
+support leukemia cell survival [73, 75]. Whether ETV6::RUNX1 blast
+more tailored therapy allocation.
+cells with productive rearrangements acquire a survival advantage
+Mutational signatures are a valuable tool for elucidating the
+through active BCR signaling should be explored in future studies
+mutagenic processes that drive cancer development and have
+at protein level. In addition, the role of enriched deletions in
+prognostic significance in patients [64]. In breast, lung, and
+chromosome 9 spanning ERCC6L2 that functions in double-strand
+bladder cancer APOBEC3 levels correlate with APOBEC3-induced
+break end-joining in V(D)J merits further investigation [76].
+mutation burden and are associated with clinical outcomes and
+Alternatively, drug-resistant cells could rely on GATA2 and MYC/
+treatment responses [65-67]. Consistent with previous studies in
+MAX activities implicated by the positive correlation of MRD with
+ALL, our findings showed that the APOBEC mutational signatures
+the respective regulon activity scores. GATA2, whose expression is
+(C + T and CG conversions) are prevalent in ETV6::RUNX1
+typically elevated in hematopoietic progenitor cells, is also highly
+leukemia [14, 17]. Notably, our study uncovered that this signature
+expressed in ETV6::RUNX1 samples at both diagnosis and
+is particularly enriched in patients who exhibited an early fast
+remission [33]. The two alternative phenotypes were found in
+treatment response measured by mid-induction MRD. Moreover,
+KMT2A-rearranged cells, in which RUNX1, GATA2 and MYC down-
+we showed that A3B S-phase expression at single cell level and the
+regulation led to the emergence of drug tolerant cells with active
+gene set scores for S-phase in bulk RNA-seq negatively correlated
+pre-BCR signaling [77].
+with MRD. Previous pan-cancer analyses have demonstrated that
+Overall, our analysis implicated the significant contribution of
+A3B expression correlates with cell cycle and DNA repair genes,
+transcriptional regulators to the differential treatment response.
+unlike other family members that play a role in immune defense.
+Mutations in the TFs ERG and ETV6 and the histone demethylase
+A3B overexpression can therefore contribute to tumorigenesis by
+complex subunit ARID5B, previously linked to poor treatment
+driving replication stress and chromosomal instability
+outcomes in ALL [46, 78], were prevalent in EOI slow responders,
+[27, 31, 67-69]. We demonstrated that cycling precursor B and
+while mutations in IKZF2 and the histone H3K79 methyltransferase
+ETV6::RUNX1 leukemic cells had elevated levels of A3B mRNA and
+DOT1L were enriched in fast responders. The impact of ETV6
+associated its expression with the regulation of G1/S-transition.
+deletions on clinical outcomes remains contentious, with some
+The APOBEC3B locus harbored binding sites for the regulatory
+studies indicating a favorable prognosis [79, 80], while others
+circuit for pro-B cell expansion involving PAX5 and MYC. Our
+reporting neutral or adverse outcomes [81, 82]. Chang et al. [80]
+results on A3B expression in actively cycling leukemic blast are
+recently reported a lower EFS probability in ETV6::RUNX1 patients
+consistent with the previously proposed tumorigenic mechanism
+with unbalanced chromosome 21 translocations compared to
+and provide a compelling rationale for further investigations into
+those with balanced events [80]. We observed that the gain of
+the interplay between cell cycle regulation, APOBEC mutational
+der(21)t(12;21), previously associated with poor outcome and
+signatures, and therapy response in B-ALL.
+relapsed disease [83, 84], was more common in slow responders,
+Previous WGS analysis of ETV6::RUNX1 leukemias established a
+while deletion of 12p was more frequent in fast responders.
+key role for the RAG-driven mutational process in the generation
+Combined, these results suggest that the type of alteration and
+of SV at off-target sites [14]. Surprisingly, in our analysis slow
+dosage of the ETV6 gene are linked to drug sensitivity, with low
+responders exhibited more frequent Ig-kappa rearrangements and
+dosage associated with fast response and high dosage or a
+kappa-deleting elements than fast responders. We have earlier
+mutated gene with slow response. At CNV level, the chr12
+demonstrated that although diagnostic ETV6::RUNX1 blast cells
+alterations further impacted the expression level of the TFs
+closely resemble healthy cells at the pro-B cell stage, cells
+ZNF384 and FOXJ2, representing previously identified fusion
+Leukemia
+SPRINGER NATURE
+L. Oksa et al.
+10
+partners in B-ALL [85], the RNA binding factor YBX3 previously
+Cohort size represents a limitation in studies focused on a
+linked to pre-B cell expansion [86], the chromatin remodeling
+specific subtype. Here, we obtained available diagnostic DNA
+complex subunit CHD4 reported to control lineage-switching and
+samples from ETV6::RUNX1 cases treated under two successive
+drug resistance in leukemia [87, 88], the lysine demethylase
+NOPHO protocols. We leveraged the detailed therapy response
+KDM5A linked to oncogenic functions and drug tolerance [58, 89],
+data, which was integrated into patient stratification in the latest
+and two Polycomb repressive complex subunits, AEBP2 and PHC1
+NOPHO ALL2008 protocol, from which the majority of cases were
+involved in B cell maturation and ALL [90].
+derived. In future, the ongoing ALLTogether trial in Europe, which
+Unexpectedly, when we compared top CNV hits associated with
+tracks MRD levels and uses EOC in addition to EOI in standard
+drug-sensitivity from in vitro genetic screen in ETV6::RUNX1-fusion
+assessment, could help validate the prognostic DNA and RNA
+positive REH cells with patient-derived data, we only found a weak
+signatures identified. One limitation of our study is that each
+association between daunorubicin- or dexamethasone-sensitizing
+biomarker was assessed separately. In future, training classifier
+deletions and mid-induction response. This underscores the
+models that test the predictive power of multiple response-
+importance of validating potentially clinically relevant in vitro
+modifying alterations in combination and identify an optimal
+findings in patient data, as cell lines often have heavily altered
+subset of predictive features is warranted. Moreover, due to
+genomes and may better model relapsed disease [91]. From the
+differences in diagnostic practices, some of our findings may be
+known oncogenic pathways, the strongest link in our analysis was
+more readily translatable for clinical application in prospective
+found to the RAS pathway. In pediatric B-ALL, RAS pathway
+trials. SNP or comparative genomic hybridization (CGH) array data,
+mutations have been linked to relapse and chemotherapy
+which are routinely analyzed within many treatment protocols
+resistance, including prednisolone resistance, which can be
+enables the detection of numerous SVs and CNVs approximately
+overcome with RAS pathway inhibition [61]. RAS mutations occur
+with a resolution of 50-200 kb. For instance, they can reliably
+in about 15% of B-ALL cases; however, their prognostic impact is
+identify 12p alterations, der(21) amplifications, and other altera-
+not well studied. Notably, almost all previous research has focused
+tions in clinical settings, including the deletions affecting the
+on activating mutations of KRAS or NRAS [61]. Our genome-wide
+TBL1XR1 or INO80 genes in chromosome 3 and 15, respectively.
+analysis provides new information on the role of RAS pathway
+Additionally, all variants (within the assay resolution) deviating
+alterations that relate to treatment response. Deleterious muta-
+from normal variation are reported, making this type of analysis a
+tions of NF1, a well-known negative regulator of the RAS pathway,
+straightforward addition to current risk stratification protocols.
+were more common among patients with residual disease at EOC.
+Furthermore, targeted analysis of specific gene loci using panel
+Loss-of-function mutations in this tumor suppressor result in the
+sequencing may also serve as clinically feasible approach to
+accumulation of active, GTP-bound form of RAS and associates
+monitor relevant biomarkers. As demonstrated by our approach,
+with juvenile myelomonocytic leukemia and AML, but rarely ALL
+identification of larger CNVs (> 1 Mb) genome-wide is feasible
+[48, 92]. Similarly, mutations of PLCG1 were more common among
+from both methylation array and targeted panel sequencing data
+the patients having positive MRD at EOC. Activation of PLCG1 is
+if the panel design contains sufficient backbone probes through-
+directly or indirectly related to many signaling pathways, including
+out the genome. Identification of more focal structural variants
+RAS and BCR [93]. Further studies are needed to explore whether
+requires higher probe density, and therefore the CNV results in the
+mutations that we identified in PLCG1 exhibit gain-of-function
+current study focus on the genome-wide events > 1 Mb in size,
+properties and thereby contribute to treatment resistance by
+although we acknowledge that more focal events could also have
+activating the Ras pathway. Finally, chromosome 12 deletions that
+relevance in therapy response. However, if a gene region is
+impacted also KRAS were more frequent in fast responders. This
+specifically targeted, like PAX5 in our panel design, identification
+was consistent with our KRAS KO model, where KO cells showed
+of more focal events would be possible also in the clinical context.
+enhanced sensitivity to methotrexate and vincristine, consistent
+For instance, many clinical laboratories routinely use tumor gene
+with direct protein-protein interaction of KRAS with the drug
+panels, primarily for solid tumors, which almost invariably include
+target proteins.
+the KRAS gene, enabling the incorporation of detection of
+Previous research has shown that certain mutations are
+individual gene alterations also from the ETV6::RUNX1 ALL samples
+chemotherapy-induced, particularly by thiopurines such as 6-
+to diagnostic workflow. In contrast, the clinical implementation of
+mercaptopurine, and can contribute to relapse in ALL [47].
+mutational signatures and RNA-seq -based findings, such as those
+Notably, MSH2 mutations have been detected in over 50% of
+related to cell cycle activity, remains more challenging. Mutational
+relapsed ALL cases but are generally undetectable at diagnosis
+signature analysis requires deep genome-wide sequencing, which
+[47]. However, our in-depth targeted sequencing revealed that
+is not routinely performed in most clinical settings. Likewise, the
+while MSH2 mutations were rare, they were already present at
+limited use of RNA sequencing in routine diagnostics continues to
+diagnosis and associated with a slow EOI treatment response.
+constrain the clinical applicability of these potential biomarkers.
+Similarly, our finding that TP53 mutations, alongside RAS pathway
+While this work was in revision, Li et al. [36] extended the
+mutations, were present already at diagnosis in patients with
+characterization of ETV6::RUNX1 patients with RNA-level analyses
+measurable disease at EOC, suggests that patients at risk of
+and mutational data from three cohorts, where ETV6::RUNX1
+therapy resistance could be detected early. Mutations in INTS1, a
+patients were divided into two groups based on the transcrip-
+component of the Integrator complex involved in small nuclear
+tomic profiles [36]. Their analysis found higher expression of
+RNA processing, and KANSL1, a subunit of the NSL histone
+GATA2 in slow responders, APOBEC mutation signatures and more
+acetyltransferase complex, have previously been associated with
+PAX5 deletions in the patient cluster with fast early treatment
+methotrexate resistance [45], while PLCG1 encodes an enzyme
+response, in agreement with our findings. However, chromosome
+that catalyzes the formation of IP3 and DAG from phosphatidy-
+21 gains that were detected based on RNA-seq copy number
+linositol 4,5-bisphosphate, contributing to cell growth, apoptosis,
+analyses associated in this cohort with the fast-responder group.
+and proliferation [93]. We found two cases carrying these
+At mechanistic level, their findings that the reintroduction of PAX5
+mutations. These mutations are rare and were not found together
+into REH cells induced cell cycle arrest and resulted in a more
+in pediatric ALL studies but show tendency to co-occur in large
+drug-resistant phenotype [36] were consistent with previous
+pan-cancer studies [94-96]. Since these mutations are not found
+mouse study by Somasundaram et al. [35] that explored the
+in other genomic studies related to ETV6::RUNX1, it is possible that
+MYC/PAX5 axis in pro-B cell development and B-cell acute
+these treatment response-related mutations are of germline
+lymphoblastic leukemia. Together, the patient data in our study
+origin, as filtering using a matched normal sample was not
+and Li et al. [35] suggest that in the leukemic context, cells with
+applicable.
+reduced PAX5 may display a more proliferative phenotype that
+SPRINGER NATURE
+Leukemia
+L. Oksa et al.
+11
+distinguishes fast and slow responders ETV6::RUNX1 cases.
+conducted variant calling (see Supplementary Materials and Methods).
+However, neither study addressed whether PAX5 deletion status
+From the WGS data, SNVs and InDels were identified by TNscope, SVs by
+(homozygous or heterozygous) should be distinguished in this
+Manta and Delly, and CNVs by AscatNGS. From the panel sequencing data,
+context. This would be important to confirm in future mechanistic
+SNVs and InDels were identified by VarDict and CNVs by CNVkit, in which
+studies.
+analysis the PON was used to normalize the log2 values The variants were
+In summary, we integrated multiomic data with treatment
+further filtered based on several parameters and quality metrics, including
+read evidence and size, and variants overlapping with Encode Blacklist
+response profiles to characterize the genetic alterations and
+regions [100] were excluded (see supplementary Materials and Methods).
+biological processes associated with therapy response in pediatric
+VEP and AnnotSV were employed in the annotation of SNVs/InDels and
+ETV6::RUNX1 leukemia. Our findings highlight that APOBEC- and
+SVs/CNVs, respectively, and coding variants were determined based on the
+RAG-driven mutational processes distinguish fast and slow
+annotations (see supplementary Materials and Methods). Moreover,
+responders, respectively, while also providing new insights into
+methylation array data (n = 144) [101, 102] was analyzed by utilizing the
+the significance of reciprocal chromosome 12 alterations, and its
+methylumi [103] and conumee R [104] packages to yield the copy number
+impact to treatment response. The identified DNA and RNA
+profiles of the patients. Similarly to WGS data, the CNVs identified from
+markers, which correlate with MRD levels at both EOI and EOC,
+methylation array and panel sequencing data were filtered based on size
+and overlap with Encode Blacklist regions. In addition, mutational
+pave the way for improved disease classification at diagnosis.
+signature analysis was performed using MuSiCa [105], and SigProfiler-
+Assignment [106] using the filtered SNVs (all variants, coding and non-
+coding) from WGS as input. Musica analysis was made using the online tool
+MATERIAL AND METHODS
+provided by the authors using the default settings (https://github.com/
+Detailed Materials and Methods in Supplementary material.
+marcos-diazg/musica) and version 2 COSMIC signatures and vcf-files as
+input. SigProfilerAssignment analysis was respectively made using the
+Patient cohort and response groups
+online tool provided by the authors (https://github.com/AlexandrovLab/
+Samples from 365 ETV6::RUNX1 ALL patients in total were analyzed by
+SigProfilerAssignment/tree/main/SigProfilerAssignment,
+https://
+WGS, methylation array, RNA-seq and/or targeted panel sequencing
+cancer.sanger.ac.uk/signatures/assignment/app/) with the default settings
+(Supplementary Table 1). The ETV6::RUNX1 fusion status was identified
+using the version 3.4 COSMIC signatures and vcf-files as an input. The
+clinically from all patients (Supplementary Table 2). Additionally, the
+aligned WGS data was also used as input for the IgCaller tool [40], which
+t(12;21) resulting in the ETV6::RUNX1 fusion gene was detected in 32/33
+identified the immunoglobulin gene rearrangements present in the tumor
+cases analyzed by WGS. For the remaining case (GE7324), the fusion was
+samples. The rearrangement functionalities (productive/unproductive)
+detected in the clinics by conventional fusion-PCR method, but a more
+were estimated by IgCaller, and complemented with IMGT/V-QUEST and
+complex event was detected by WGS, as the ETV6::RUNX1 fusion was
+IgBlast annotations.
+generated through a combined deletion and translocation event involving
+the neighboring gene locus. In addition, ETV6::RUNX1 fusions were
+Gene expression data analysis
+detected for 18 cases from RNA-sequencing data using FusionCatcher,
+RNA-seq data was available from 51 diagnostic patient samples, and the
+and machine learning (ML) model ALLIUM [97] assigned 166/175 to the
+raw data was processed by using the nf-core/rnaseq workflow [107], which
+ETV6::RUNX1 subtype based on gene expression and/or methylation data
+trimmed the paired-end reads, performed read alignment to GRCh38 with
+(Supplementary Table 2).
+STAR, and quantified transcript abundance with the Salmon tool, which
+The patients were treated according to NOPHO ALL2000 and NOPHO
+was summarized to gene level by tximeta R package. The EdgeR(64) and
+ALL2008 protocols [98, 99], which consisted of induction, consolidation,
+limma R [108] packages were utilized in data normalization and differential
+intensification, and maintenance phases [98, 99]. Four-week induction
+expression (DE) analyses, respectively. The DE analyses encompassed all
+therapy included glucocorticosteroids, vincristine, doxorubicin, and
+the response group comparisons (mid-induction, EOI, EOC, n = 51) and
+intrathecal methotrexate. Bone marrow or blood samples were collected
+copy number status comparisons (n = 50) for 377 genes arising from the
+before the initiation of therapy and at remission, additional blood samples
+CNV analysis. In addition, the expression of S and G2/M phase -associated
+was collected at day 2 after induction therapy, and at mid-induction.
+genes was assessed, and gene set scores calculated for related regulons.
+Treatment response measured by MRD was determined by bone marrow
+See Supplementary Materials and Methods for details.
+sampling at mid-induction, EOI, and EOC using morphology, flow
+cytometry, and/or ASO-PCR (Fig. 1B, Supplementary Table 2). The
+responder groups of this study were determined as follows: mid-
+Determination of response group-differentiating gene
+induction slow group with MRD 10% and fast group with MRD < 10% at
+alterations
+day 15, EOI slow group with MRD 0.1%, intermediate group with
+To distinguish mutations and CNVs that differentiate the responder groups,
+MRD < 0.1% & > 0%, and fast group with MRD = 0 at day 29, EOC slow
+the prevalence of recurrent SNVs and InDels (WGS and panel sequencing,
+group with MRD > 0% and fast group with MRD = 0% at day 79 of
+n = 294) and CNVs (WGS, panel sequencing and methylation array, n = 358)
+treatment.
+among the different responder groups were compared by utilizing the
+Fisher's exact test. The top hits from the SNV/InDel analysis were further
+annotated with functional consequences using the cBioPortal Mutation-
+Library preparation and sequencing
+Mapper tool to yield a list of variants more likely to impact the encoded
+Library preparation and WGS was performed in five different batches (See
+protein. The Fisher's exact tests were repeated for these functionally filtered
+Supplementary Materials and Methods). Paired-end sequencing (150 bp)
+variants, and results compared to drug response -associated genes from
+was performed for all sample libraries: diagnostic samples were sequenced
+CRISPR screens conducted in ALL cell lines, REH [43] and NALM6 [44]
+at the depth of 60x or 90x and remission samples at 30x. The paired-end
+(Fig. S9B, Supplementary Materials and Methods). The top genes affected by
+RNA libraries were prepared and sequenced in four different batches.
+CNVs distinguishing the response groups, in turn, were further filtered based
+Library preparation for targeted panel sequencing libraries of tumor
+on the available gene expression data (n = 50), excluding genes lowly
+samples (n = 261), and the remission samples for the panel-of-normals
+expressed across all responder groups or with expression evidence
+(PON, n = 38) is described in Supplementary Materials and Methods.
+conflicting with the copy number status, 377 genes of interest remaining.
+To assess if the response group differences at these gene loci would be likely
+Sequencing data analysis and variant calling
+to arise randomly, empirical p values were determined by randomizing the
+Both WGS (n = 33, tumor and normal samples) and targeted panel
+CNV coordinates and response groups and comparing the results to patient
+sequencing (261 tumor samples and PON of 38 samples) data were
+data (Fig. S9A, Supplementary Materials and Methods). Moreover, the CNV
+analyzed by using the BALSAMIC workflow v8.2.10 and v16.0.0 (https://
+deletions were also compared to the top CRISPR screen genes associated to
+balsamic.readthedocs.io/en/v8.2.10/, https://balsamic.readthedocs.io/en/
+sensitivity/resistance to ALL drugs [43, 44] to assess if the prevalence of
+latest/), respectively, utilizing the tumor-normal mode in WGS and
+deletions affecting these genes differs among the responder groups. To this
+tumor-only mode in panel sequencing data analysis. The pipeline
+end, empirical p values were also determined to test if the response group
+performed read alignment to GRCh37 (utilizing Sentieon for WGS and
+differences are likely to arise only regarding the drug response -associated
+BWA-MEM for panel sequencing data), produced quality metrics, and
+genes or any random set of genes.
+Leukemia
+SPRINGER NATURE
+L. Oksa et al.
+12
+Single cell genomics from primary ALL cells
+4. Kuster L, Grausenburger R, Fuka G, Kaindl U, Krapf G, Inthal A, et al. ETV6/RUNX1-
+Bone marrow or blood mononuclear cells collected at diagnosis, at day 2
+positive relapses evolve from an ancestral clone and frequently acquire dele-
+and at mid-induction (day 15) were analyzed from cryopreserved samples.
+tions of genes implicated in glucocorticoid signaling. Blood. 2011;117:2658-67.
+Libraries were prepared for transcriptome, cell surface protein marker
+5. Norén-Nyström U, Andersen MK, Barbany G, Dirse V, Eilert-Olsen M, Engvall M,
+(ADT) and BCR VDJ-rearrangement analysis, see detailed description from
+et al. Genetic Subtypes and Outcome of Patients Aged 1 to 45 Years Old With
+Supplementary Materials and Methods.
+Acute Lymphoblastic Leukemia in the NOPHO ALL2008 Trial. Hemasphere.
+2023;7:e883.
+6. Coustan-Smith E, Sancho J, Hancock ML, Boyett JM, Behm FG, Raimondi SC, et al.
+In vitro and ex vivo drug screens
+Clinical importance of minimal residual disease in childhood acute lympho-
+In vitro methotrexate and vincristine responses were studied using CRISPR-
+blastic leukemia. Blood. 2000;96:2691-6.
+Cas9 engineered REH KRAS and NT5DC1 knockout cells (see Supplemen-
+7. Madzo J, Zuna J, Muzíková K, Kalinová M, Krejcí O, Hrusák O, et al. Slower
+tary Materials and Methods). Ex vivo drug screens were performed using
+molecular response to treatment predicts poor outcome in patients with TEL/
+diagnostic bone marrow samples [109] (see Supplementary Materials and
+AML1 positive acute lymphoblastic leukemia: prospective real-time quantitative
+Methods).
+reverse transcriptase-polymerase chain reaction study. Cancer. 2003;97:105-13.
+8. Basso G, Veltroni M, Valsecchi MG, Dworzak MN, Ratei R, Silvestri D, et al. Risk of relapse
+Statistics
+of childhood acute lymphoblastic leukemia is predicted by flow cytometric measure-
+The cumulative incidence (CI) of relapse and death were calculated by
+ment of residual disease on day 15 bone marrow. J Clin Oncol. 2009;27:5168-74.
+using the Fine-Gray model, where death in CR was treated as a competing
+9. O'Connor D, Enshaei A, Bartram J, Hancock J, Harrison CJ, Hough R, et al.
+event. Correlations between COSMIC mutational signatures, gene set
+Genotype-specific minimal residual disease interpretation improves stratifica-
+expression and TF regulons to response measured by MRD were calculated
+tion in pediatric acute lymphoblastic leukemia. J Clin Oncol. 2018;36:34-43.
+using Spearman's rank correlation test. Fisher's exact tests were used to
+10. Wang Y, Zeng HM, Zhang LP. ETV6/RUNX1-positive childhood acute lympho-
+study the top response group -differentiating gene hits (SNVs and InDels,
+blastic leukemia in China: excellent prognosis with improved BFM protocol. Ital J
+CNVs). The significance threshold for DNA alterations was set at 0.1 based
+Pediatr. 2018;44:94.
+on power calculations carried out for MRD response group sizes and
+11. Saygin C, Cannova J, Stock W, Muffly L. Measurable residual disease in acute
+different variant prevalence levels. To complement this analysis, empirical
+lymphoblastic leukemia: methods and clinical context in adult patients. Hae-
+p values for the response-group differentiating CNVs were determined as
+matologica. 2022;107:2783-93.
+described in section titled "Determination of response-group differentiat-
+12. Andreasson P, Schwaller J, Anastasiadou E, Aster J, Gilliland DG. The expression
+ing gene alterations". Wilcoxon test was used to calculate the difference in
+of ETV6/CBFA2 (TEL/AML1) is not sufficient for the transformation of hemato-
+number of IGK rearrangements between slow and fast (combined with
+poietic cell lines in vitro or the induction of hematologic disease in vivo. Cancer
+intermediate group) responders. In the RNA level analysis, which focused
+Genet Cytogenet. 2001;130:93-104.
+on candidate genes picked in the DNA analysis, the significance threshold
+13. Morrow M, Horton S, Kioussis D, Brady HJM, Williams O. TEL-AML1 promotes
+was set at 0.05. Empirical Bayes methods were used in assessing genome-
+development of specific hematopoietic lineages consistent with preleukemic
+wide significance (FDR) in statistical analysis of differential expression.
+activity. Blood. 2004;103:3890-6.
+14. Papaemmanuil E, Rapado I, Li Y, Potter NE, Wedge DC, Tubio J, et al. RAG-
+mediated recombination is the predominant driver of oncogenic rearrangement
+Study approval
+in ETV6-RUNX1 acute lymphoblastic leukemia. Nat Genet. 2014;46:116-25.
+Patients/caretakers were consented to the study either before the sample
+15. Heinäniemi M, Vuorenmaa T, Teppo S, Kaikkonen MU, Bouvy-Liivrand M, Meh-
+collection (ethical permit code #R13109, and 2014/482) or retrospectively
+tonen J, et al. Transcription-coupled genetic instability marks acute lympho-
+using samples stored in local hospitals or Uppsala Leukemia Biobank
+blastic leukemia structural variation hotspots. Elife. 2016;5:e13087.
+(#R19020). A written informed consent was received by the patient and/or
+16. Lilljebjörn H, Soneson C, Andersson A, Heldrup J, Behrendtz M, Kawamata N,
+caretakers. The study was approved by the regional ethical committees
+et al. The correlation pattern of acquired copy number changes in 164 ETV6/
+(Pirkanmaa Hospital District Ethical Committee, Finland, and Regional
+RUNX1-positive childhood acute lymphoblastic leukemias. Hum Mol Genet.
+Ethical Review Board in Uppsala, Sweden). The study was conducted
+2010;19:3150-8.
+according to the principles of the Declaration of Helsinki.
+17. Brady SW, Roberts KG, Gu Z, Shi L, Pounds S, Pei D, et al. The genomic landscape
+of pediatric acute lymphoblastic leukemia. Nat Genet. 2022;54:1376-89.
+18. Mullighan CG, Goorha S, Radtke I, Miller CB, Coustan-Smith E, Dalton JD, et al.
+DATA AVAILABILITY
+Genome-wide analysis of genetic alterations in acute lymphoblastic leukaemia.
+The datasets generated and analyzed in the current study are available in Gene
+Nature. 2007;446:758-64.
+Expression Omnibus under the accession numbers GSE228632 (RNA-seq data),
+19. Alexandrov LB, Nik-Zainal S, Wedge DC, Aparicio SAJR, Behjati S, Biankin AV,
+GSE49031 (array-based DNA methylation data, GSE227832 (RNA-seq data),
+et al. Signatures of mutational processes in human cancer. Nature.
+GSE230295 (sc-RNAseq: CITE-seq+V(D)J-seq), and European Genome-phenome
+2013;500:415-21.
+Archive under the accession number EGAD00001010164 (RNA-seq data),
+20. Ma X, Edmonson M, Yergeau D, Muzny DM, Hampton OA, Rusch M, et al. Rise
+EGAD00001010128 (WGS data), EGAD00001011055 (sc genomics data). Single cell
+and fall of subclones from diagnosis to relapse in pediatric B-acute lympho-
+data from healthy BM B cells: https://bioinformatics.uef.f/cells/public/HCA_Blineage/?
+blastic leukaemia. Nat Commun. 2015;6:6604.
+ds=HCA_Blineage. CNVkit outputs from panel sequencing data are available in
+21. Koh G, Degasperi A, Zou X, Momen S, Nik-Zainal S. Mutational signatures:
+Zenodo under DOIs: https://doi.org/10.5281/zenodo.15167703, https://doi.org/
+emerging concepts, caveats and clinical applications. Nat Rev Cancer.
+10.5281/zenodo.15173882 and https://doi.org/10.5281/zenodo.15174016.
+2021;21:619-37.
+22. Waanders E, Gu Z, Dobson SM, Antic Z, Crawford JC, Ma X, et al. Mutational
+landscape and patterns of clonal evolution in relapsed pediatric acute lym-
+CODE AVAILABILITY
+phoblastic leukemia. Blood Cancer Discov. 2020;1:96-111.
+Code to reproduce key parts of the analysis can be accessed from GitHub: https://
+23. Antic Z, Lelieveld SH, van der Ham CG, Sonneveld E, Hoogerbrugge PM, Kuiper
+github.com/systemsgenomics/ETV6-RUNX1_Genomics_treatment_response.
+RP. Unravelling the sequential interplay of mutational mechanisms during clo-
+nal evolution in relapsed pediatric acute lymphoblastic leukemia. Genes (Basel).
+2021;12:214.
+REFERENCES
+24. Sayyab S, Lundmark A, Larsson M, Ringnér M, Nystedt S, Marincevic-Zuniga Y,
+et al. Mutational patterns and clonal evolution from diagnosis to relapse in
+1. Wiemels JL, Ford AM, Van Wering ER, Postma A, Greaves M. Protracted and
+pediatric acute lymphoblastic leukemia. Sci Rep. 2021;11:15988.
+variable latency of acute lymphoblastic leukemia after TEL-AML1 gene fusion in
+25. Singh VK, Rastogi A, Hu X, Wang Y, De S. Mutational signature SBS8 pre-
+utero. Blood. 1999;94:1057-62.
+dominantly arises due to late replication errors in cancer. Commun Biol.
+2. Mori H, Colman SM, Xiao Z, Ford AM, Healy LE, Donaldson C, et al. Chromosome
+2020;3:421.
+translocations and covert leukemic clones are generated during normal fetal
+26. Langenbucher A, Bowen D, Sakhtemani R, Bournique E, Wise JF, Zou L, et al. An
+development. Proc Natl Acad Sci USA. 2002;99:8242-7.
+extended APOBEC3A mutation signature in cancer. Nat Commun. 2021;12:1602.
+3. Loh ML, Goldwasser MA, Silverman LB, Poon WM, Vattikuti S, Cardoso A, et al.
+27. Zong C, Zhang Z, Gao L, He J, Wang Y, LiQ, et al. APOBEC3B coordinates R-loop
+Prospective analysis of TEL/AML1-positive patients treated on Dana-Farber
+to promote replication stress and sensitize cancer cells to ATR/Chk1 inhibitors.
+Cancer Institute Consortium Protocol 95-01. Blood. 2006;107:4508-13.
+Cell Death Dis. 2023;14:1-12.
+SPRINGER NATURE
+Leukemia
+L. Oksa et al.
+13
+28. Kanu N, Cerone MA, Goh G, Zalmas LP, Bartkova J, Dietzen M, et al. DNA
+52. Marimuthu S, Batra SK, Ponnusamy MP. Pan-cancer analysis of altered glyco-
+replication stress mediates APOBEC3 family mutagenesis in breast cancer.
+syltransferases confers poor clinical outcomes. Clinical Transl Discov.
+Genome Biol. 2016;17:185.
+2022;2:e100.
+29. Jakobsdottir GM, Brewer DS, Cooper C, Green C, Wedge DC. APOBEC3 muta-
+53. Ma X, Qi W, Pan H, Yang F, Deng J. Overexpression of USP5 contributes to
+tional signatures are associated with extensive and diverse genomic instability
+tumorigenesis in non-small cell lung cancer via the stabilization of ß-catenin
+across multiple tumour types. BMC Biol. 2022;20:117.
+protein. Am J Cancer Res. 2018;8:2284-95.
+30. Ng JCF, Quist J, Grigoriadis A, Malim MH, Fraternali F. Pan-cancer transcriptomic
+54. Liu Z, Wu Y, Zhang Y, Yuan M, Li X, Gao J, et al. TIGAR Promotes Tumorigenesis
+analysis dissects immune and proliferative functions of APOBEC3 cytidine
+and Protects Tumor Cells From Oxidative and Metabolic Stresses in Gastric
+deaminases. Nucleic Acids Res. 2019;47:1178-94.
+Cancer. Front Oncol. 2019;9:1258.
+31. Hirabayashi S, Shirakawa K, Horisawa Y, Matsumoto T, Matsui H, Yamazaki H,
+55. Dai W, Xu Y, Mo S, Li Q, Yu J, Wang R, et al. GLUT3 induced by AMPK/CREB1 axis
+et al. APOBEC3B is preferentially expressed at the G2/M phase of cell cycle.
+is key for withstanding energy stress and augments the efficacy of current
+Biochemical Biophysical Res Commun. 2021;546:178-84.
+colorectal cancer therapies. Sig Transduct Target Ther. 2020;5:1-14.
+32. Cuitiño MC, Pécot T, Sun D, Kladney R, Okano-Uchida T, Shinde N, et al. Two
+56. Ziegler GC, Almos P, McNeill RV, Jansch C, Lesch KP. Cellular effects and clinical
+distinct E2F transcriptional modules drive cell cycles and differentiation. Cell
+implications of SLC2A3 copy number variation. J Cell Physiol. 2020;235:9021-36.
+Rep. 2019;27:3547-3560.e5.
+57. Yan B, Guo J, Deng S, Chen D, Huang M. A pan-cancer analysis of the role of
+33. Mehtonen J, Teppo S, Lahnalampi M, Kokko A, Kaukonen R, Oksa L, et al. Single
+USP5 in human cancers. Sci Rep. 2023;13:8972.
+cell characterization of B-lymphoid differentiation and leukemic cell states
+58. Yoo J, Kim GW, Jeon YH, Kim JY, Lee SW, Kwon SH. Drawing a line between
+during chemotherapy in ETV6-RUNX1-positive pediatric leukemia identifies
+histone demethylase KDM5A and KDM5B: their roles in development and
+drug-targetable transcription factor activities. Genome Med. 2020;12:99.
+tumorigenesis. Exp Mol Med. 2022;54:2107-17.
+34. Leone G, DeGregori J, Yan Z, Jakoi L, Ishida S, Williams RS, et al. E2F3 activity is
+59. Yang GJ, Wu J, Miao L, Zhu MH, Zhou QJ, Lu XJ, et al. Pharmacological inhi-
+regulated during the cell cycle and is required for the induction of S phase.
+bition of KDM5A for cancer treatment. European J Medicinal Chem.
+Genes Dev. 1998;12:2120-30.
+2021;226:113855.
+35. Somasundaram R, Jensen CT, Tingvall-Gustafsson J, Ähsberg J, Okuyama K,
+60. Ren L, Meng L, Gao J, Lu M, Guo C, Li Y, et al. PHB2 promotes colorectal cancer
+Prasad M, et al. EBF1 and PAX5 control pro-B cell expansion via opposing
+cell proliferation and tumorigenesis through NDUFS1-mediated oxidative
+regulation of the Myc gene. Blood. 2021;137:3037-49.
+phosphorylation. Cell Death Dis. 2023;14:1-11.
+36. Li Z, Zhao H, Yang W, Maillard M, Yoshimura S, Hsiao YC, et al. Molecular and
+61. Jerchel IS, Hoogkamer AQ, Ariës IM, Steeghs EMP, Boer JM, Besselink NJM, et al.
+pharmacological heterogeneity of ETV6::RUNX1 acute lymphoblastic leukemia.
+RAS pathway mutations as a predictive biomarker for treatment adaptation in
+Nat Commun. 2025;16:1153.
+pediatric B-cell precursor acute lymphoblastic leukemia. Leukemia.
+37. Gellert M. V(D)J recombination: RAG proteins, repair factors, and regulation.
+2018;32:931-40.
+Annu Rev Biochem. 2002;71:101-32.
+62. Oshima K, Khiabanian H, da Silva-Almeida AC, Tzoneva G, Abate F, Ambesi-
+38. Herzog S, Reth M, Jumaa H. Regulation of B-cell proliferation and differentiation
+Impiombato A, et al. Mutational landscape, clonal evolution patterns, and role of
+by pre-B-cell receptor signalling. Nat Rev Immunol. 2009;9:195-205.
+RAS mutations in relapsed acute lymphoblastic leukemia. Proc Natl Acad Sci
+39. Schatz DG, Swanson PC. V(D)J recombination: mechanisms of initiation. Annu
+USA. 2016;113:11306-11.
+Rev Genet. 2011;45:167-202.
+63. Luo J, Emanuele MJ, Li D, Creighton CJ, Schlabach MR, Westbrook TF, et al. A
+40. Nadeu F, Mas-de-les-Valls R, Navarro A, Royo R, Martín S, Villamor N, et al.
+genome-wide RNAi screen identifies multiple synthetic lethal interactions with
+IgCaller for reconstructing immunoglobulin gene rearrangements and onco-
+the Ras oncogene. Cell. 2009;137:835-48.
+genic translocations from whole-genome sequencing in lymphoid neoplasms.
+64. Levatić J, Salvadores M, Fuster-Tormo F, Supek F. Mutational signatures are
+Nat Commun. 2020;11:3390.
+markers of drug sensitivity of cancer cells. Nat Commun. 2022;13:2926.
+41. van der Velden VHJ, Willemse MJ, van der Schoot CE, Hählen K, van Wering ER,
+65. Roelofs PA, Martens JWM, Harris RS, Span PN. Clinical implications of APOBEC3-
+van Dongen JJM. Immunoglobulin kappa deleting element rearrangements in
+mediated mutagenesis in breast cancer. Clin Cancer Res. 2023;29:1658-69.
+precursor-B acute lymphoblastic leukemia are stable targets for detection of
+66. Caswell DR, Gui P, Mayekar MK, Law EK, Pich O, Bailey C, et al. The role of
+minimal residual disease by real-time quantitative PCR. Leukemia.
+APOBEC3B in lung tumor evolution and targeted cancer therapy resistance. Nat
+2002;16:928-36.
+Genet. 2024;56:60-73.
+42. Beishuizen A, de Bruijn MA, Pongers-Willemse MJ, Verhoeven MA, van Wering
+67. Butler K, Banday AR. APOBEC3-mediated mutagenesis in cancer: causes, clinical
+ER, Hählen K, et al. Heterogeneity in junctional regions of immunoglobulin
+significance and therapeutic potential. Journal Hematol Oncol. 2023;16:31.
+kappa deleting element rearrangements in B cell leukemias: a new molecular
+68. McCann JL, Klein MM, Leland EM, Law EK, Brown WL, Salamango DJ, et al. The
+target for detection of minimal residual disease. Leukemia. 1997;11:2200-7.
+DNA deaminase APOBEC3B interacts with the cell-cycle protein CDK4 and dis-
+43. Oshima K, Zhao J, Pérez-Durán P, Brown JA, Patiño-Galindo JA, Chu T, et al.
+rupts CDK4-mediated nuclear import of Cyclin D1. Journal Biol Chem.
+Mutational and functional genetics mapping of chemotherapy resistance
+2019;294:12099.
+mechanisms in relapsed acute lymphoblastic leukemia. Nat Cancer.
+69. Venkatesan S, Angelova M, Puttick C, Zhai H, Caswell DR, Lu WT, et al. Induction
+2020;1:1113-27.
+of APOBEC3 exacerbates DNA replication stress and chromosomal instability in
+44. Poulard C, Kim HN, Fang M, Kruth K, Gagnieux C, Gerke DS, et al. Relapse-
+early breast and lung cancer evolution. Cancer Discov. 2021;11:2456-73.
+associated AURKB blunts the glucocorticoid sensitivity of B cell acute lympho-
+70. Sarno J, Domizi P, Liu Y, Merchant M, Pedersen CB, Jedoui D, et al. Dasatinib
+blastic leukemia. Proc Natl Acad Sci USA. 2019;116:3052-61.
+overcomes glucocorticoid resistance in B-cell acute lymphoblastic leukemia. Nat
+45. Ueno H, Yoshida K, Shiozawa Y, Nannya Y, lijima-Yamashita Y, Kiyokawa N, et al.
+Commun. 2023;14:2935.
+Landscape of driver mutations and their clinical impacts in pediatric B-cell
+71. Kansal R, Deeb G, Barcos M, Wetzler M, Brecher ML, Block AW, et al. Precursor B
+precursor acute lymphoblastic leukemia. Blood Adv. 2020;4:5165-73.
+lymphoblastic leukemia with surface light chain immunoglobulin restriction: a
+46. Yang JJ, Xu H, Bhojwani D, Moriyama T, Qian M, Yang X, et al. ARID5B regulates
+report of 15 patients. Am J Clin Pathol. 2004;121:512-25.
+leukemia sensitivity to antimetabolites in children with acute lymphoblastic
+72. Duy C, Hurtz C, Shojaee S, Cerchietti L, Geng H, Swaminathan S, et al. BCL6
+leukemia via effects on cell cycle progression. Blood. 2014;124:791.
+enables Ph+ acute lymphoblastic leukaemia cells to survive BCR-ABL1 kinase
+47. Li B, Brady SW, Ma X, Shen S, Zhang Y, Li Y, et al. Therapy-induced mutations
+inhibition. Nature. 2011;473:384-8.
+drive the genomic landscape of relapsed acute lymphoblastic leukemia. Blood.
+73. Müschen M. Rationale for targeting the pre-B-cell receptor signaling pathway in
+2020;135:41-55.
+acute lymphoblastic leukemia. Blood. 2015;125:3688-93.
+48. Tao J, Sun D, Dong L, Zhu H, Hou H. Advancement in research and therapy of
+74. Duy C, Yu JJ, Nahar R, Swaminathan S, Kweon SM, Polo JM, et al. BCL6 is critical
+NF1 mutant malignant tumors. Cancer Cell Int. 2020;20:492.
+for the development of a diverse primary B cell repertoire. Journal Exp Med.
+49. Hientz K, Mohr A, Bhakta-Guha D, Efferth T. The role of p53 in cancer drug
+2010;207:1209-21.
+resistance and targeted chemotherapy. Oncotarget. 2016;8:8921-46.
+75. Profitós-Pelejà N, Santos JC, Marín-Niebla A, Roué G, Ribeiro ML. Regulation of
+50. Ariës IM, Jerchel IS, van den Dungen RESR, van den Berk LCJ, Boer JM, Horst-
+B-cell receptor signaling and its therapeutic relevance in aggressive B-cell
+mann MA, et al. EMP1, a novel poor prognostic factor in pediatric leukemia
+lymphomas. Cancers (Basel). 2022;14:860.
+regulates prednisolone resistance, cell proliferation, migration and adhesion.
+76. Liu X, Liu T, Shang Y, Dai P, Zhang W, Lee BJ, et al. ERCC6L2 promotes DNA
+Leukemia. 2014;28:1828-37.
+orientation-specific recombination in mammalian cells. Cell Res.
+51. Singh J, Kumari S, Arora M, Verma D, Palanichamy JK, Kumar R, et al. Prognostic
+2020;30:732-44.
+relevance of expression of EMP1, CASP1, and NLRP3 genes in pediatric B-lineage
+77. Malyukova A, Lahnalampi M, Falqués-Costa T, Pölönen P, Sipola M, Mehtonen J,
+acute lymphoblastic leukemia. Front Oncol. 2021;11:606370.
+et al. Sequential drug treatment targeting cell cycle and cell fate regulatory
+Leukemia
+SPRINGER NATURE
+L. Oksa et al.
+14
+programs blocks non-genetic cancer evolution in acute lymphoblastic leukemia.
+102. Nordlund J, Bäcklin CL, Wahlberg P, Busche S, Berglund EC, Eloranta ML, et al.
+Genome Biol. 2024;25:143.
+Genome-wide signatures of differential DNA methylation in pediatric acute
+78. Xu H, Zhao X, Bhojwani D, E S, Goodings C, Zhang H, et al. ARID5B Influences
+lymphoblastic leukemia. Genome Biol. 2013;14:r105.
+Antimetabolite Drug Sensitivity and Prognosis of Acute Lymphoblastic Leuke-
+103. Davis S, Du P, Bilke S, Triche T, Jr, Bootwalla M. methylumi: Handle Illumina
+mia. Clin Cancer Res. 2020;26:256-64.
+methylation data [Internet]. Bioconductor version: Release (3.17); 2023 [cited
+79. Stams WaG, Beverloo HB, den Boer ML, de Menezes RX, Stigter RL, van Drunen E,
+2023 Jul 31]. Available from: https://bioconductor.org/packages/methylumi/.
+et al. Incidence of additional genetic changes in the TEL and AML1 genes in
+104. Hovestadt V, Zapatka M. conumee: Enhanced copy-number variation analysis
+DCOG and COALL-treated t(12;21)-positive pediatric ALL, and their relation with
+using Illumina DNA methylation arrays [Internet]. Bioconductor version: Release
+drug sensitivity and clinical outcome. Leukemia. 2006;20:410-6.
+(3.17); 2023 [cited 2023 Jul 31]. Available from: https://bioconductor.org/
+80. Chang TC, Chen W, Qu C, Cheng Z, Hedges D, Elsayed A, et al. Genomic deter-
+packages/conumee/.
+minants of outcome in acute lymphoblastic leukemia. JCO. 2024;JCO.23.02238.
+105. Díaz-Gay M, Vila-Casadesús M, Franch-Expósito S, Hernández-Illán E, Lozano JJ,
+81. Alvarez Y, Coll MD, Ortega JJ, Bastida P, Dastugue N, Robert A, et al. Genetic
+Castellví-Bel S. Mutational Signatures in Cancer (MuSiCa): a web application to
+abnormalities associated with the t(12;21) and their impact in the outcome of 56
+implement mutational signatures analysis in cancer samples. BMC Bioinforma.
+patients with B-precursor acute lymphoblastic leukemia. Cancer Genet Cyto-
+2018;19:224.
+genet. 2005;162:21-9.
+106. Díaz-Gay M, Vangara R, Barnes M, Wang X, Islam SMA, Vermes I, et al. Assigning
+82. Attarbaschi A, Mann G, Strehl S, König M, Steiner M, Jeitler V, et al. Deletion of 11q23
+mutational signatures to individual samples and individual somatic mutations
+is a highly specific nonrandom secondary genetic abnormality of ETV6/RUNX1-
+with SigProfilerAssignment. Bioinformatics. 2023;39:btad756.
+rearranged childhood acute lymphoblastic leukemia. Leukemia. 2007;21:584-6.
+107. Ewels PA, Peltzer A, Fillinger S, Alneberg J, Patel H, Wilm A, et al. nf-core:
+83. Hernandes MAF, Marques-Salles T, de J, Mkrtchyan H, Soares-Ventura EM, Leite
+Community curated bioinformatics pipelines [Internet]. bioRxiv; 2019. 610741.
+EP, et al. Extra Copies of der(21)t(12;21) plus Deletion of ETV6 Gene due to
+https://www.biorxiv.org/content/10.1101/610741v1.
+dic(12;18) in B-Cell Precursor ALL with Poor Outcome. Case Rep. Genet.
+108. Ritchie ME, Phipson B, Wu D, Hu Y, Law CW, Shi W, et al. limma powers dif-
+2012;2012:186532.
+ferential expression analyses for RNA-sequencing and microarray studies.
+84. Sun C, Chang L, Zhu X. Pathogenesis of ETV6/RUNX1-positive childhood acute
+Nucleic Acids Res. 2015;43:e47.
+lymphoblastic leukemia and mechanisms underlying its relapse. Oncotarget.
+109. Enblad AP, Krali O, Gezelius H, Lundmark A, Blom K, Andersson C, et al. Ex Vivo
+2017;8:35445-59.
+Drug Responses and Molecular Profiles of 597 Pediatric Acute Lymphoblastic
+85. Gu Z, Churchman M, Roberts K, Li Y, Liu Y, Harvey RC, et al. Genomic analyses
+Leukemia Patients [Internet]. medRxiv; 2024 [cited 2025 Jan 14]. p.
+identify recurrent MEF2D fusions in acute lymphoblastic leukaemia. Nat Com-
+2024.12.17.24319138. Available from: https://www.medrxiv.org/content/10.1101/
+mun. 2016;7:13331.
+2024.12.17.24319138v1.
+86. Lee B, Rizzoti K, Kwon DS, Kim SY, Oh S, Epstein DJ, et al. Direct transcriptional
+regulation of Six6 is controlled by SoxB1 binding to a remote forebrain
+enhancer. Dev Biol. 2012;366:393-403.
+87. Arends T, Dege C, Bortnick A, Danhorn T, Knapp JR, Jia H, et al. CHD4 is essential
+ACKNOWLEDGEMENTS
+for transcriptional repression and lineage progression in B lymphopoiesis. Proc
+This work was supported by the ERAPerMed JTC 2018 "GEPARD" project, the
+Natl Acad Sci USA. 2019;116:10927-36.
+European Union's Horizon 2020 research and innovation program EasiGenomics
+88. Yen WF, Sharma R, Cols M, Lau CM, Chaudhry A, Chowdhury P, et al. Distinct
+under grant agreement No 824110 and grants from the Academy of Finland (OL
+requirements of CHD4 during B cell development and antibody response. Cell
+and MH 321553, OL, 310106 and 341540), Cancer Foundation Finland (OL, MH),
+Rep. 2019;27:1472-1486.e5.
+Jane and Aatos Erkko Foundation (OL, MH), Sigrid Juselius Foundation (OL, MH),
+89. Plch J, Hrabeta J, Eckschlager T. KDM5 demethylases and their role in cancer cell
+Blood Disease Research Foundation (LO), and the Competitive State Research
+chemoresistance. International J Cancer. 2019;144:221-31.
+Financing of the Expert Responsibility Area of Tampere University Hospital (OL,
+90. Tokimasa S, Ohta H, Sawada A, Matsuda Y, Kim JY, Nishiguchi S, et al. Lack of the
+9V033 and 9x027). JN received funding from the Swedish Research Council (2019-
+Polycomb-group gene rae28 causes maturation arrest at the early B-cell devel-
+01976), the Swedish Cancer Society (CAN2022-2395), and the Swedish Childhood
+opmental stage. Experimental Hematol. 2001;29:93-103.
+Cancer Foundation (PR2022-0082; HFT2023-0011). JH was supported by ERC Stg
+91. Lysenkova Wiklander M, Arvidsson G, Bunikis I, Lundmark A, Raine A, Marincevic-
+852222 "PreventALL" and DKH 70114539. JDA received funding from the German
+Zuniga Y, et al. A multiomic characterization of the leukemia cell line REH using
+Research Foundation (DFG, DU 1287/5-1). A subset of whole genome and
+short- and long-read sequencing. Life Sci Alliance. 2024;7:e202302481.
+transcriptomic sequencing, and DNA methylation array analysis was performed
+92. Heatley SL, Page EC, Eadie LN, McClure BJ, Rehn J, Yeung DT, et al. Modeling
+with assistance from the SciLifeLab National Genomics Infrastructure, SNP&SEQ
+Relapsed, Refractory Acute Lymphoblastic Leukemia from a Child with Neuro-
+Technology Platform, which is funded by the Swedish Research Council and the
+fibromatosis. Blood. 2021;138:1317.
+Knut and Alice Wallenberg Foundation. The authors acknowledge the UEF
+93. Wen R, Chen Y, Schuman J, Fu G, Yang S, Zhang W, et al. An important role of
+Bioinformatics Center, University of Eastern Finland, and Teemu Kuulasmaa for
+phospholipase Cy1 in pre-B-cell development and allelic exclusion. EMBO J.
+support. The authors wish to thank Drs. Riitta Niinimäki, Jukka Kanerva, and Laura
+2004. .https://www.embopress.org/doi/10.1038/sj.emboj.7600405.
+Korhonen for their assistance in acquiring patient samples; Saara Mathlein, PhD,
+94. Cerami E, Gao J, Dogrusoz U, Gross BE, Sumer SO, Aksoy BA, et al. The cBio
+for her consultation in clinical genetics; Eini Eskola and Noora Hyvärinen for their
+cancer genomics portal: an open platform for exploring multidimensional
+assistance in laboratory work; and all patients and their guardians for participating
+cancer genomics data. Cancer Discov. 2012;2:401-4.
+in this study.
+95. Gao J, Aksoy BA, Dogrusoz U, Dresdner G, Gross B, Sumer SO, et al. Integrative
+analysis of complex cancer genomics and clinical profiles using the cBioPortal.
+Sci Signal. 2013;6:pl1.
+96. de Bruijn I, Kundra R, Mastrogiacomo B, Tran TN, Sikina L, Mazor T, et al. Analysis
+and visualization of longitudinal genomic and clinical data from the AACR project
+AUTHOR CONTRIBUTIONS
+GENIE biopharma collaborative in cBioPortal. Cancer Res. 2023;83:3861-7.
+LO, OL, MH designed the study. LO and VW coordinated the WGS and panel
+97. Krali O, Marincevic-Zuniga Y, Arvidsson G, Enblad AP, Lundmark A, Sayyab S,
+sequencing, VW provided the BALSAMIC workflow for analysis. SM, KM and HF
+et al. Multimodal classification of molecular subtypes in pediatric acute lym-
+performed WGS analysis with BALSAMIC. LO and SM designed the filtering for WGS
+phoblastic leukemia. npj Precis Onc. 2023;7:1-13.
+results. LO and SM analyzed the WGS data. LO performed mutational signature
+98. Toft N, Birgens H, Abrahamsson J, Griškevičius L, Hallböök H, Heyman M, et al.
+analysis. JS, LO, and SM performed the RNA-seq analysis, and LO performed the
+Results of NOPHO ALL2008 treatment for patients aged 1-45 years with acute
+downstream analyses. JN and OK provided array-based DNA methylation, RNA-seq
+lymphoblastic leukemia. Leukemia. 2018;32:606-15.
+and ex vivo data. RK performed array based CNV analysis, LO, MH and SM contributed
+99. Schmiegelow K, Forestier E, Hellebostad M, Heyman M, Kristinsson J, Söderhäll S,
+to data analysis. SM contributed the CNV and gene expression data integration. SH,
+et al. Long-term results of NOPHO ALL-92 and ALL-2000 studies of childhood
+BJ and MH contributed to network analysis. LO performed in vitro and ex vivo
+acute lymphoblastic leukemia. Leukemia. 2010;24:345-54.
+experiments. LO and ML participated in sample collection. OL coordinated clinical
+100. Amemiya HM, Kundaje A, Boyle AP. The ENCODE blacklist: identification of
+sample collection, KV contributed to clinical sample collection, AM contributed the Ig
+problematic regions of the genome. Sci Rep. 2019;9:9354.
+chain analysis, and SR contributed to MRD flow analysis. AN performed the clinal data
+101. Nordlund J, Bäcklin CL, Zachariadis V, Cavelier L, Dahlberg J, Öfverholm I, et al.
+collection and survival analysis. JH, JDA and MV participated in data analysis and
+DNA methylation-based subtype prediction for pediatric acute lymphoblastic
+interpretation. LO, SM, OL, MH wrote the manuscript. All authors commented on
+leukemia. Clin Epigenetics. 2015;7:11.
+manuscript and approved the final version.
+SPRINGER NATURE
+Leukemia
+L. Oksa et al.
+15
+FUNDING
+Publisher's note Springer Nature remains neutral with regard to jurisdictional claims
+Open access funding provided by Tampere University (including Tampere University
+in published maps and institutional affiliations.
+Hospital).
+Open Access This article is licensed under a Creative Commons
+CC
+COMPETING INTERESTS
+BY
+Attribution 4.0 International License, which permits use, sharing,
+The authors declare no competing interests.
+adaptation, distribution and reproduction in any medium or format, as long as you give
+appropriate credit to the original author(s) and the source, provide a link to the Creative
+Commons licence, and indicate if changes were made. The images or other third party
+ADDITIONAL INFORMATION
+material in this article are included in the article's Creative Commons licence, unless
+indicated otherwise in a credit line to the material. If material is not included in the
+Supplementary information The online version contains supplementary material
+article's Creative Commons licence and your intended use is not permitted by statutory
+available at https://doi.org/10.1038/s41375-025-02683-7.
+regulation or exceeds the permitted use, you will need to obtain permission directly
+from the copyright holder. To view a copy of this licence, visit http://
+Correspondence and requests for materials should be addressed to Laura Oksa,
+creativecommons.org/licenses/by/4.0/.
+Olli Lohi or Merja Heinäniemi.
+Reprints and permission information is available at http://www.nature.com/
+The Author(s) 2025
+reprints
+Leukemia
+SPRINGER NATURE

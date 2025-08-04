@@ -1,0 +1,1876 @@
+
+TYPE Original Research
+frontiers
+Frontiers in Oncology
+PUBLISHED 26 June 2025
+DOI 10.3389/fonc.2025.1569947
+Check for updates
+Investigating the correlation
+OPEN ACCESS
+between tertiary lymphoid
+EDITED BY
+Lei Liang,
+structures and clinical
+Zhejiang Provincial People's Hospital, China
+REVIEWED BY
+outcomes in pancreatic
+Jiachen Ge,
+Henan Provincial People's Hospital, China
+Ayca Sayi Yazgan,
+ductal adenocarcinoma:
+Istanbul Technical University, Türkiye
+*CORRESPONDENCE
+insights into tumor immunology
+Yufen Hu
+Huyf15@163.com
+Liewang Qiu
+Lingbo Hu 1,2,3t Yanhong Xiao Ning Jiang 5,6 Yufen Hu 7*
+qiuliewang@cqmu.edu.cn
+Liewang Qiu 8* and Bo Geng 9*
+Bo Geng
+gengbo421782411@163.com
+¹Department of Hepatobiliary Surgery, The First Affiliated Hospital of Chongqing Medical University,
+These authors have contributed
+Chongqing, China, 2Department of Hepatopancreatobiliary Surgery, Taizhou Hospital of Zhejiang
+equally to this work and share
+Province Affiliated to Wenzhou Medical University, Taizhou, Zhejiang, China, ³Department of
+first authorship
+Hepatopancreatobiliary Surgery, Enze Hospital, Taizhou Enze Medical Center, Taizhou,
+Zhejiang, China, ⁴Department of Pathology, Dianjiang County Hospital of Traditional Chinese
+RECEIVED 02 February 2025
+Medicine, Chongqing, China, ⁵Molecular Medicine Diagnostic and Testing Center, Chongqing Medical
+ACCEPTED 10 June 2025
+University, Chongqing, China, ⁶Department of Pathology, the First Affiliated Hospital of Chongqing
+PUBLISHED 26 June 2025
+Medical University, Chongqing, China, ⁷Department of General Practice, Shiqiaopu Community Health
+Service Center, Chongqing, China, ⁸Department of Gastroenterology, Affiliated Yongchuan Hospital
+CITATION
+of Chongqing Medical University, Chongqing, China, ⁹Department of Hepatobiliary Surgery, People's
+Hu L, Xiao Y, Jiang N, Hu Y, Qiu L
+Hospital of He Chuan Chong Qing, Chongqing, China
+and Geng B (2025) Investigating the
+correlation between tertiary lymphoid
+structures and clinical outcomes in
+pancreatic ductal adenocarcinoma:
+Pancreatic ductal adenocarcinoma (PDAC) is associated with poor prognosis and
+insights into tumor immunology.
+Front. Oncol. 15:1569947.
+high mortality rates, necessitating the identification of reliable biomarkers for patient
+doi: 10.3389/fonc.2025.1569947
+stratification. This study investigates the prognostic significance and biological
+COPYRIGHT
+functions of tertiary lymphoid structures (TLS) in PDAC. We analyzed clinical data
+© 2025 Hu, Xiao, Jiang, Hu, Qiu and Geng.
+from 65 PDAC patients and RNA sequencing data from The Cancer Genome Atlas
+This is an open-access article distributed under
+the terms of the Creative Commons Attribution
+(TCGA) to evaluate the presence of TLS and its impact on overall survival (OS) and
+License (CC BY). The use, distribution or
+recurrence-free survival (RFS). Our results demonstrate that patients with intratumoral
+reproduction in other forums is permitted,
+TLS (iTLS+) exhibit significantly improved OS and RFS compared to those without iTLS
+provided the original author(s) and the
+copyright owner(s) are credited and that the
+(iTLS-). Additionally, the presence of TLS correlates with enhanced immune cell
+original publication in this journal is cited, in
+infiltration, including increased levels of B cells, T cells, and plasma cells, suggesting a
+accordance with accepted academic
+practice. No use, distribution or reproduction
+more active anti-tumor immune response in the TLS+ group. Furthermore, we found
+is permitted which does not comply with
+significant differences in gene expression between TLS+ and TLS- groups, particularly
+these terms.
+in pathways related to tumor proliferation and immune regulation. Notably, our
+findings indicate that the mutation frequency of key oncogenes, such as TP53, differs
+significantly between these groups, potentially influencing patient outcomes. This
+study underscores the potential of TLS as a prognostic biomarker in PDAC and
+highlights their role in modulating the tumor microenvironment. Our findings pave
+the way for further research into TLS-targeted therapeutic strategies aimed at
+improving the clinical management of pancreatic cancer.
+KEYWORDS
+tertiary lymphoid structures, pancreatic ductal adenocarcinoma, immune regulation,
+prognostic biomarker, overall survival
+Frontiers in Oncology
+01
+frontiersin.org
+Hu et al.
+10.3389/fonc.2025.1569947
+1 Introduction
+Atlas (TCGA) database (https://portal.gdc.cancer.gov/). In this
+TCGA cohort, we included 147 patients diagnosed with PDAC
+Pancreatic ductal adenocarcinoma (PDAC) is the most common
+who had corresponding RNA sequencing data and 143 patients
+subtype of pancreatic cancer and holds the position of twelfth in
+with available overall survival data for further analysis.
+incidence and sixth in mortality on a global scale (1). Despite notable
+The primary clinical endpoints of this study were overall
+progress in surgical methods, chemotherapy, and radiation therapy,
+survival (OS) and recurrence-free survival (RFS). OS was defined
+the outlook for PDAC patients remains grim, with a five-year survival
+as the time from the date of hepatectomy to the date of death or, for
+rate falling below 10% (2). The tumor microenvironment plays a key
+living patients, the date of the last follow-up. RFS was defined as the
+role in cancer recurrence and metastasis. For instance, effective
+time from surgical resection to the first occurrence of recurrence or
+infiltration and activation of T cells in the tumor microenvironment
+progression, death from any cause, or the date of the last follow-up.
+(TME) are associated with significantly improved long-term survival
+rates in those with pancreatic cancer (3). Additionally, the arrangement
+and composition of immune cells within this environment have
+2.2 Pathological examination
+emerged as vital factors influencing tumor invasion, metastasis, and
+the overall prognosis of cancer patients (4-6).
+We prepared dual sections for H&E staining to assess tissue
+Tertiary lymphoid structures (TLS) are ectopic lymphoid
+morphology and cellular features. These sections were subjected to
+formations that emerge in non-lymphoid tissues as a consequence
+independent evaluation by two experienced pathologists, each
+of chronic inflammation and tumorigenesis. These structures can be
+possessing extensive expertise in histopathological analysis. The
+classified into distinct categories based on their composition of
+examination of all sections was performed using a high-resolution
+follicles and germinal centers, indicating a multi-stage maturation
+digital imaging system with a 40x objective lens, enabling precise
+process: early TLS (lymphoid aggregates), primary TLS (follicles
+visualization of the tissue architecture and any intra-tumoral
+lacking germinal centers), and secondary TLS (follicles containing
+structures. Subsequently, the digitized images were analyzed using
+germinal centers) (7). The presence of TLS has been linked to
+Motic DSAssistant software, a powerful tool designed for quantitative
+improved prognostic outcomes in several cancers, such as breast
+histopathological assessment. The primary objective of this analysis
+cancer (8), lung cancer (9), colorectal cancer (10), hepatocellular
+was to determine the presence and distribution of intra-tumoral
+carcinoma (11), and pancreatic ductal adenocarcinoma (PDAC)
+tertiary lymphoid structures (iTLS), which are indicative of immune
+(12). Previous studies link TLS presence to better prognosis, but the
+activity within the tumor microenvironment. For the purpose of
+tumor microenvironment in PDAC with or without TLS is still
+interpretation, the pathologists categorized the sections based on the
+poorly understood (12-15). In this study, we utilized clinical data to
+presence of TLS. Sections that lacked any identifiable TLS were
+validate the prognostic significance of TLS in PDAC patients,
+classified as iTLS-, indicating an absence of these structures.
+alongside RNA sequencing data from The Cancer Genome Atlas
+Conversely, sections that exhibited the presence of TLS were
+(TCGA) to investigate the differences in TME between PDAC cases
+classified as iTLS+, signifying the formation of these lymphoid
+with and without TLS.
+aggregates within the tumor. This classification is crucial for further
+understanding the potential implications of iTLS in tumor biology and
+patient prognosis.
+2 Methods
+2.1 Patients and samples
+2.3 Immunohistochemistry
+This study received ethical approval from the Ethics Committee of
+We conducted immunohistochemical analyses on sections
+the First Affiliated Hospital of Chongqing Medical University.
+containing mature tertiary lymphoid structures (TLS) to
+Informed consent was obtained preoperatively for the use of
+characterize the immune cell composition present within these
+surgical specimens and associated clinical data. We conducted a
+structures. For this purpose, formalin-fixed, paraffin-embedded
+retrospective analysis of patients diagnosed with pancreatic ductal
+tumor blocks were utilized to prepare serial sections with a
+adenocarcinoma (PDAC) at the First Affiliated Hospital of Chongqing
+thickness of 4 micrometers. We performed immunohistochemistry
+Medical University from January 2017 to August 2023. The clinical
+and quantified immune cell infiltration using standard protocols (12).
+and biological parameters recorded included age, gender,
+The slides were stained for key immune markers, including CD3,
+carcinoembryonic antigen (CEA) levels, carbohydrate antigen 19-9
+which identifies total T cells; CD4 and CD8, which differentiate
+(CA19-9) levels, disease stage (as per the 8th edition of the American
+between helper T cells and cytotoxic T cells, respectively; and PD-
+Joint Committee on Cancer tumor-node-metastasis [AJCC TNM]
+L1, a critical checkpoint protein that plays a role in regulating immune
+classification system), T classification, N classification, and
+responses. This comprehensive staining approach enabled us to assess
+histological grade.
+the distribution and density of various immune cell populations
+Additionally, we accessed clinical, biological, and gene
+within the mature TLS, thereby providing valuable insights into the
+expression data for pancreatic cancer from The Cancer Genome
+immune microenvironment associated with the tumor.
+Frontiers in Oncology
+02
+frontiersin.org
+Hu et al.
+10.3389/fonc.2025.1569947
+2.4 Evaluation of prognostic value
+providing a comprehensive evaluation of the tumor's immune
+landscape and its associated stromal components. In addition, the R
+Kaplan-Meier survival analysis was performed to compare OS
+package "GSVA" was utilized for single-sample gene set enrichment
+and RFS between PDAC patients with and without iTLS. Univariate
+analysis (ssGSEA) to visualize the differential enrichment of immune-
+and multivariate Cox regression analyses were utilized to determine
+related cell types and functional pathways across high- and low-risk
+whether specific parameters served as significant prognostic factors
+groups. This method allows for a nuanced understanding of how
+for PDAC. Independent prognostic factors were incorporated into a
+specific immune functions vary between these groups, highlighting
+multivariate Cox proportional hazards model to predict survival
+potential immune responses linked to tumor behavior. Furthermore,
+outcomes in PDAC patients.
+the 'CIBERSORT' package was used to analyze the infiltration levels of
+22 distinct immune cell types within the high- and low-risk groups.
+This analysis facilitated a detailed comparison of immune cell
+2.5 Analysis of gene expression differences
+composition, enabling the identification of significant differences in
+between TLS+ and TLS- groups
+immune cell infiltration that may correlate with patient outcomes and
+the tumor microenvironment.
+RNA sequencing raw count data were processed and analyzed
+using the edgeR (v4.2.0) package to assess gene expression variations
+based on TLS status (iTLS+ versus iTLS-). Robustness was verified by
+2.8 Analysis of mutation characteristics in
+filtering using filterByExpr. We applied an adjusted p-value of < 0.05,
+TLS+ and TLS- groups
+coupled with a threshold of |log2 fold change (FC)| > 1, to determine
+statistically significant genes. This approach allowed us to pinpoint
+The R package "mafools" was employed to effectively visualize the
+genes that are differentially expressed and may play a crucial role in
+mutation sites of high-frequency mutant genes within both high-risk
+tumor biology associated with the presence of intra-tumoral TLS,
+and low-risk patient groups. This tool facilitated a comprehensive
+providing insights into the underlying mechanisms of immune
+analysis of the genetic landscape associated with pancreatic ductal
+modulation in the tumor microenvironment.
+adenocarcinoma by enabling the exploration of co-mutation patterns
+and instances of mutual exclusion among these genes. By generating
+detailed mutation maps, "mafools" allowed for an intuitive
+2.6 Biological functional analysis
+comparison of genetic alterations between the distinct risk groups,
+thereby providing valuable insights into the potential interactions and
+We employed the R package "clusterProfiler" to conduct
+functional implications of these mutations. Such analyses are crucial
+comprehensive enrichment analyses, including Gene Ontology (GO)
+for understanding the underlying mechanisms of tumorigenesis and
+assessments for biological processes, cellular components, and
+for identifying potential therapeutic targets in the management of
+molecular functions, as well as Kyoto Encyclopedia of Genes and
+pancreatic cancer.
+Genomes (KEGG) pathway analyses. Different expression genes
+between TLS+ and TLS- groups were included in both the GO and
+KEGG analyses. In addition, we performed Gene Set Enrichment
+2.9 Analysis of small molecule drug
+Analysis (GSEA) using both the Canonical Pathways and ontology
+sensitivity in TLS+ and TLS- groups
+gene sets. The genes for GSEA were ranked by the value of logFC. This
+analysis aimed to elucidate the signaling pathways associated with
+The R package "pRRophetic" was utilized to assess sensitivity
+differentially expressed genes, providing insights into the biological
+scores, thereby predicting the maximum half-inhibitory
+mechanisms underlying the observed gene expression profiles. By
+concentration (IC50) of various therapeutic agents for each patient
+integrating these analytic methodologies, we aimed to enhance our
+(16). This tool leverages gene expression data to estimate the drug
+understanding of the molecular landscape of pancreatic ductal
+response profiles of individual tumors, offering insights into potential
+adenocarcinoma and identify potential therapeutic targets
+treatment efficacy. To investigate the differences in IC50 values
+for intervention.
+between patients with iTLS (+) and those without iTLS (-), a t-test
+analysis was conducted. This statistical approach facilitated the
+comparison of drug sensitivity across the two groups, highlighting
+2.7 Analysis of immune microenvironment
+significant variations that may influence treatment decisions. To
+in TLS+ and TLS- groups
+visually represent the distribution of IC50 values, the 'ggplot2'
+package was employed to generate a violin plot, a powerful
+The R package "estimate" was employed to assess the tumor
+graphical tool that illustrates both the density and distribution of
+microenvironment of each sample within the TLS+ and TLS- groups.
+the data. Through this analysis, we aimed to identify potential
+This analysis calculated key parameters, including the immune score,
+therapeutic agents that may be particularly effective for patients
+matrix score, ESTIMATE score, and tumor purity for each sample,
+with PDAC, thus advancing personalized treatment strategies.
+Frontiers in Oncology
+03
+frontiersin.org
+Hu et al.
+10.3389/fonc.2025.1569947
+2.10 Prediction of response to
+3.2 Association between TLS and survival
+immunotherapy in TLS+ and TLS- groups
+The findings from both univariate and multivariate analyses,
+The Tumor Immune Dysfunction and Exclusion (TIDE)
+along with the survival curves for patients in the clinical cohort, are
+algorithm was employed to predict the response to immunotherapy
+presented in Figure 2. The univariate analysis demonstrated that the
+in the studied cohorts. This algorithm integrates various immune-
+presence of iTLS was associated with improved overall survival (OS)
+related parameters to assess how well a tumor might respond to
+(p = 0.044), while N1 classification was linked to worse OS (p =
+immune checkpoint inhibitors and other immunotherapeutic
+0.035). This positive relationship between iTLS and OS remained
+approaches. To evaluate the differential response predictions between
+significant in the multivariate analysis, adjusting for other
+the groups classified by the presence of iTLS, namely TLS+ and TLS-,
+covariates (HR: 0.407, 95% CI: 0.180-0.921, p = 0.031).
+we utilized the Wilcoxon test. This non-parametric statistical test allows
+Additionally, iTLS was correlated with better recurrence-free
+for the comparison of the response predictions between the two groups,
+survival (RFS) in the univariate analysis (p = 0.012). Conversely,
+providing insights into the potential impact of iTLS on the efficacy of
+both N1 classification and AJCC IIB stage were associated with
+immunotherapy. The results of this comparison will enhance our
+reduced OS (p = 0.0007 and p = 0.040, respectively). The prognostic
+understanding of the immunological landscape within PDAC and its
+significance of iTLS persisted in the multivariate analysis (HR:
+relevance to therapeutic outcomes.
+0.407, 95% CI: 0.145-0.738, p = 0.007).
+The outcomes of both univariate and multivariate analyses and
+survival curves for patients in the TCGA cohort are presented in
+2.11 Statistical analysis
+Figure 3. In the univariate analysis, iTLS+ was associated with
+improved OS (p = 0.046), while R1 resection was associated with
+Categorical variables were compared using either the chi-square
+worse OS (p = 0.001). This prognostic significance of iTLS+
+test or Fisher's exact test. Continuous variables were assessed using the
+remained significant even after adjusting for other factors in the
+t-test, Mann-Whitney U test, or Kruskal-Wallis rank test. Survival
+multivariate analysis (HR: 0.528, 95% CI: 0.307-0.908, p = 0.021).
+curves were constructed with the Kaplan-Meier method and compared
+using the log-rank test. Univariate Cox proportional hazards regression
+analysis was performed to identify prognostic risk factors, and those
+3.3 Differentially expressed genes are
+factors with a p-value < 0.05 were included in the multivariate Cox
+associated with multiple biological
+proportional hazards regression analysis. A significance level of p < 0.05
+functions
+was established. All statistical analyses were conducted using SPSS
+software (version 26.0, SPSS Inc., Chicago, IL, USA). Survival curves
+The differential expression genes (DEGs) between the TLS+ and
+were generated, and bioinformatic analyses were performed using R
+TLS- groups are illustrated in the Volcano and heat maps shown in
+software (version 4.4.0).
+Supplementary Figures S1 and S2. We observed enrichment in
+biological processes such as extracellular matrix organization,
+extracellular structure organization, and external encapsulating
+3 Results
+structure organization. In terms of cellular components (CC),
+enrichment was noted in collagen-containing extracellular matrix,
+3.1 Clinicopathological characteristics of
+blood microparticles, and the endoplasmic reticulum lumen. For
+patients
+molecular functions (MF), key activities included endopeptidase
+activity, metallopeptidase activity, and serine hydrolase activity
+In the clinical cohort, we analyzed 65 patients diagnosed with
+(Figure 4A). KEGG pathway analysis indicated substantial
+PDAC who underwent surgical treatment at our institution. The
+enrichment in pancreatic secretion, protein digestion and
+demographic and clinicopathological characteristics of these patients
+absorption, and neuroactive ligand-receptor interactions
+are detailed in Table 1. Among them, 23 patients (35.4%) were
+(Figure 4B). To further explore the differentially active pathways
+identified as positive for iTLS, while the remaining 42 were classified
+between the TLS+ and TLS- groups, we conducted gene set
+as negative. Notably, the iTLS+ group had a significantly higher
+enrichment analysis (GSEA). The results showed that the TLS+
+proportion of patients at earlier TNM stages (Table 1). Additionally,
+group exhibited enrichment in signal transduction pathways related
+representative images of H&E staining and fluorescent
+to the extracellular matrix, synaptic membranes, passive
+immunohistochemistry (IHC) illustrating iTLS in PDAC patients are
+transmembrane transporter activity, and signaling receptor
+displayed in Figure 1. In the TCGA cohort, a total of 143 patients
+regulation (Figures 4C, D). In contrast, the TLS- group
+diagnosed with surgically treated PDAC from TCGA were included in
+demonstrated significant enrichment in mitotic pathways,
+the study. The demographic and clinicopathological characteristics are
+including chromosome segregation, defense responses to
+outlined in Table 1. In this cohort, 72 patients (50.3%) tested positive
+symbionts, mitotic sister chromatid segregation, mitotic spindle
+for iTLS+, while 71 were negative (iTLS-) (Table 2).
+organization, and centromeric regions (Figures 4E, F).
+Frontiers in Oncology
+04
+frontiersin.org
+Hu et al.
+10.3389/fonc.2025.1569947
+TABLE 1 Characteristic of patients in CQMU cohort.
+Variable
+Total
+iTLS + (n = 23)
+iTLS - (n = 42)
+p value
+Age
+59.8 ± 10.2
+60.5 ± 8.6
+59.4 ± 11.0
+0.227
+Gender
+0.916
+Female
+26
+9
+17
+Male
+39
+14
+25
+Surgical type
+0.516
+PD
+46
+15
+31
+DP
+19
+8
+11
+Tumor size
+3.0 1.1
+2.6 0.8
+3.3 ± 1.1
+0.083
+CA199
+142.5 (69.1-485.4)
+142.5 (33.7-272.2)
+155.4 (77.8-677.9)
+0.859
+CEA
+2.65 (1.64-4.58)
+2.2 (1.5-3.6)
+3.1 (1.8-5.4)
+0.18
+T
+0.019
+T1
+6
+2
+4
+T2
+49
+21
+28
+T3
+8
+0
+8
+TX
+2
+0
+2
+N
+0.158
+N0
+56
+22
+34
+N1
+7
+1
+6
+NX
+2
+0
+2
+Tumor differentiation
+0.719
+Well
+3
+2
+1
+Moderate
+34
+12
+22
+Poor
+25
+8
+17
+Unkown
+3
+1
+2
+AJCC stage
+0.033
+IA
+6
+2
+4
+IB
+44
+20
+24
+IIA
+6
+0
+6
+IIB
+7
+1
+6
+Unkown
+2
+0
+2
+PD, pancreaticoduodenectomy; DP, distal pancreatectomy.
+3.4 Analysis of immune components in
+ssGSEA analysis indicated that the immune indicators in the TLS
+TLS+ and TLS- groups
++ group were comparable to those in the TLS- group (Figure 5B).
+Additionally, ESTIMATE analysis showed that the ESTIMATE
+To investigate the relationship between the presence of TLS
+score, immune score, stromal score, and tumor purity were
+and the regulation of the immune microenvironment, this study
+similar across both groups (Figure 5C). These findings
+assessed the differences in immune cell and component scores
+highlight the distinct immune characteristics between the TLS+
+between the TLS+ and TLS- groups. CIBERSORT analysis
+and TLS- groups, with the higher infiltration of immune
+revealed that levels of B cells, T cells, and plasma cells were
+components in the TLS+ group suggesting enhanced anti-
+significantly elevated in the TLS+ group (Figure 5A). However,
+tumor immune activity.
+Frontiers in Oncology
+05
+frontiersin.org
+Hu et al.
+10.3389/fonc.2025.1569947
+CD3
+CD4
+CD8
+PDL1
+early TLS
+Primary
+TLS
+Secondary
+TLS
+FIGURE 1
+Different maturity of tertiary lymphoid structures (TLSs) identified through hematoxylin and eosin (H&E) staining and the immunohistochemistry of
+immune cell in corresponding maturity tertiary lymphoid structures.
+3.5 Differences in mutation characteristics
+sensitivity could be critical for optimizing individualized
+between TLS+ and TLS- groups
+treatment strategies in patients with PDAC.
+We conducted an analysis of the top 20 genes based on
+mutation frequency in the TLS+ and TLS- groups. Notable
+3.7 Response to the immunotherapy in the
+differences were observed in the mutation profiles of these
+TLS+ and TLS- groups
+groups, with variations in both the identity of the top mutated
+genes and their respective mutation frequencies. Significantly, the
+We investigated the differences in immunotherapy response
+frequency of TP53 mutations was markedly higher in the TLS-
+between the TLS+ and TLS- groups within the prognostic model
+group compared to the TLS+ group (Figure 6A-F). Additionally,
+using the TIDE algorithm. Our analysis revealed that the TIDE
+the co-mutation and mutually exclusive mutation mapping revealed
+scores were comparable between the two groups, indicating that the
+that the TLS- group exhibited a greater proportion of both co-
+presence of tertiary lymphoid structures did not significantly
+mutations and mutually exclusive mutations relative to the TLS+
+influence the predicted response to immunotherapy. This finding
+group (Figure 6G-I). These findings underscore the heterogeneity
+suggests that, despite the distinct immune microenvironments
+in gene mutation patterns between the TLS+ and TLS- cohorts,
+represented by TLS, the overall effectiveness of
+suggesting that these variations may contribute to the differential
+immunotherapeutic approaches may not vary substantially based
+prognostic outcomes observed in the samples.
+on TLS status (Figure 8).
+3.6 Sensitivity analysis of small molecule
+4 Discussion
+drugs in the TLS+ and TLS- groups
+This study employed both a local clinical cohort and data from
+To elucidate the differences in chemotherapy sensitivity
+TCGA to investigate the relationship between the presence of TLS
+between the TLS+ and TLS- groups within the prognostic model,
+and prognosis in patients with PDAC. Additionally, we performed
+this study analyzed the IC50 values of various chemotherapeutic
+comprehensive bioinformatics analyses using TCGA data to
+agents on samples from both groups. The results revealed that six
+compare immune cell composition, gene mutations, signaling
+chemotherapy drugs-AZD8055, EHT.1864, PD.0332991, AICAR,
+pathways, and potential drug sensitivities between TLS+ and TLS-
+CMK, and Camptothecin-exhibited significantly higher IC50
+PDAC patients. Our results revealed that patients with TLS+
+values in the TLS- group, indicating increased resistance to these
+exhibited significantly different prognoses compared to their TLS-
+agents. Conversely, five drugs-JKN.Inhibitor.VII, Bryostatin.1,
+counterparts. Furthermore, we observed marked differences
+KIN001.135, Cyclopamine, and Pyriethamine-showed
+between the two groups regarding immune cell composition, gene
+significantly elevated IC50 values in the TLS+ group (Figure 7).
+mutations, signaling pathways, and drug sensitivity profiles.
+These findings suggest a differential resistance profile to specific
+Our findings indicate that the presence of TLS is associated with
+chemotherapeutic agents between the two groups, highlighting the
+improved overall survival (OS) and recurrence-free survival (RFS)
+potential impact of the tumor immune microenvironment on
+in patients with PDAC, aligning with previous research (12-15).
+treatment efficacy. Understanding these variations in drug
+This suggests that TLS can serve as a positive prognostic indicator
+Frontiers in Oncology
+06
+frontiersin.org
+Hu et al.
+10.3389/fonc.2025.1569947
+TABLE 2 Characteristic of patients in TCGA cohort.
+Variable
+Total
+iTLS + (n = 72)
+iTLS (n = 71)
+p value
+Age
+64.4 ± 10.9
+65.0 ± 10.9
+63.8 + 10.8
+0.522
+Gender
+0.211
+Female
+64
+30
+34
+Male
+79
+42
+37
+T
+0.769
+T1
+4
+2
+2
+T2
+15
+7
+8
+T3
+120
+61
+59
+T4
+3
+1
+2
+TX
+1
+1
+0
+N
+0.394
+NO
+36
+20
+16
+N1
+106
+52
+54
+NX
+1
+0
+1
+Tumor residual
+0.863
+R0
+81
+39
+42
+R1
+46
+25
+21
+R2
+5
+3
+2
+Unkown
+11
+5
+6
+Tumor differentiation
+0.566
+Well
+20
+11
+9
+Moderate
+82
+42
+40
+Poor
+41
+19
+22
+AJCC stage
+0.48
+I
+11
+8
+3
+IIA
+23
+11
+12
+IIB
+104
+50
+52
+III
+3
+1
+2
+IV
+3
+1
+2
+Unkown
+1
+1
+0
+for these patients. Our study provides a more precise classification
+distributions of TLS that gene expression alone could not resolve,
+of TLS in PDAC by directly assessing their presence through
+offering deeper insights into their functional role in tumor-
+histopathological examination, unlike previous approaches that
+immune interactions.
+relied solely on TLS-related gene expression profiles in TCGA
+In terms of biological processes, the differences between the
+datasets (17, 18). This methodological advancement minimizes
+groups primarily focused on tumor proliferation. In the TLS- group,
+biases from transcriptional heterogeneity and non-TLS-specific
+genes with high expression levels were enriched in functions related
+gene expression, thereby enhancing the reliability of subsequent
+to tumor proliferation, including spindle organization and
+analyses. Consistent with prior reports, we confirmed that TLS+
+chromosome segregation. This suggests that tumor cells in the
+cases exhibited higher immune cell infiltration, likely due to the
+TLS- group exhibit more active proliferation compared to those in
+chemokine-mediated recruitment of lymphocytes (19). Notably,
+the TLS+ group, which may contribute to the poorer prognosis
+our histology-based approach revealed nuanced spatial
+observed in TLS- patients (20).
+Frontiers in Oncology
+07
+frontiersin.org
+Hu et al.
+10.3389/fonc.2025.1569947
+A.Univariable and multivariable COX regression analysis for os
+B. KM curve for overall survival
+Strata
+itls=0
+itls=1
+1.00
+0.75
+Survival probability
+0.50-
+12
+0.574
+0.035
+0.25
+p 0.039
+0.700
+0.00
+0.068
+0
+2
+6
+0.536
+Time
+0.101
+Number at risk
+Strata
+itls=0
+42
+7
+0
+itls=1
+23
+8
+0
+2
+4
+6
+Time
+C.Univariable and multivariable COX regression analysis for RFS
+D. KM curve for recurrene-free survival
+Strata
+itls=0
+itls=1
+0.101
+1.00
+0.75
+T1
+Survival probability
+0.50
+T2
+0.100
+T3
+0.400
+0.25
+p 0.009
+0.00
+0
+2
+6
+Time
+0.308
+Number at risk
+0.040
+Strata
+itis=0-
+42
+5
+0
+0
+CEA
+itis=1
+23
+8
+4
+:-
+0
+2
+6
+Time
+FIGURE 2
+The results of univariate and multivariate COX regression analysis and Kaplan-Meier (KM) curve for overall survival (OS) and recurrence-free survival
+(RFS) of patients in CQMU. (A) Univariable and multivariable COX regression analysis for OS. (B) KM curve for OS. (C) Univariable and multivariable COX
+regression analysis for RFS. (D) KM curve for RFS.
+In examining immune cell composition, CIBERSORT analysis
+in immune cell quantities, our analysis revealed no significant variation
+demonstrated that the TLS+ group exhibited significantly higher
+in TIDE scores between the two groups. This finding implies that the
+levels of immune cell populations, including B cells, T cells, and
+responsiveness to immunotherapy may be similar for both TLS+ and
+plasma cells, compared to the TLS- group. This increase in immune
+TLS- patients. The lack of difference in TIDE scores could reflect the
+cell density within the tumor microenvironment of the TLS+ group
+intrinsic challenges associated with treating PDAC, as this type of
+suggests a more robust immune response, which is likely to contribute
+cancer is often resistant to immunotherapeutic agents (22). The limited
+to the improved prognosis observed in these patients (6, 21). The
+effectiveness of such therapies in PDAC may stem from several factors,
+presence of these immune cells may enhance anti-tumor activity,
+including the immunosuppressive tumor microenvironment and the
+leading to better clinical outcomes. However, despite the differences
+unique biological characteristics of the tumor itself, which often impede
+A. Univariable and multivariable COX regression analysis for os
+B. KM curve for overall survival
+and
+regression
+analysis
+os
+Strata
+itis=0
+itis=1
+0.021
+0 129
+1.00
+0.576
+0.75
+0.312
+0.100
+0.001
+Survival probability
+0.50
+0.25
+p 0.044
+12
+0.279
+T3
+0.321
+0.00
+0 155
+0
+3
+6
+0.150
+Time
+AJCC
+Number at risk
+0.738
+Strata
+itls=0
+71
+23
+5
+3
+2
+2
+0
+0.560
+itls=1
+72
+25
+10
+5
+4
+2
+0
+0
+2
+3
+4
+5
+6
+:
+Time
+FIGURE 3
+The results of univariate and multivariate COX regression analysis and KM curve for overall survival of patients in TCGA cohort.
+Frontiers in Oncology
+08
+frontiersin.org
+Hu et al.
+10.3389/fonc.2025.1569947
+A
+B
+matrix organizatio
+Pancreatic secretion
+structure organization
+structure
+organization
+Protein digestion and absorption
+Neuroactive interaction
+positive
+protein
+complex
+assembly
+receptor
+interaction
+bod
+to
+CAMP
+regulation
+actin
+0.002
+hormone
+synthesis
+calcium
+transport
+protein
+interaction
+receptor
+0.00
+collagen-containing
+matrix-
+blood
+0.005
+Cherrokine
+signating
+pathway
+reticul
+MAPK signaling pathway
+0.00
+lumen
+based
+cell
+projections
+Count
+lumen
+border
+Count
+membrane
+vesicle
+lumen
+000000.
+digestion
+and
+metabolism
+endocytic
+Adipocytokine
+activity
+signating
+pathway
+0000
+7.6
+type
+activity
+signating
+pathway
+activity
+Complement and cascades
+type peptidase activity
+hydrolase activity
+1
+Rheumatoid arthrits
+organic binding
+chemokine activity
+signating pathway
+chemokine receptor binding-
+Inflammatory mediator regulation TRP channels
+activity
+glycine binding
+metabolism
+0.02
+0.04
+0.06
+0.08
+0.05
+0.10
+0.15
+GeneRatic
+GeneRatio
+C
+D
+Enriched in TLS+ group
+Enriched in TLS+ group
+0.75
+0.75
+Description
+Description
+Running Enrichment Score
+0.50
+0.25
+Running Enrichment Score
+0.50
+MATRIX
+0.25
+SYNAPTIC
+0.00
+0.00
+COMF
+RECEPTOR
+E
+F
+Enriched in TLS- group
+Enriched in iTLS- group
+00
+Description
+0.0
+Description
+GOBP CHROMOSOME
+CHROMOSOME
+Running Enrichment Score
+0.2
+GOBP
+MITOTIC
+SPINCLE
+ORGANIZATION
+Running Enrichment Score
+-02
+GOBP
+SPINDLE
+0000 CHROMOSOMAL
+-0.4
+-0.4
+CHROVOSOME
+RECION
+FIGURE 4
+Function annotation for differentially expressed genes (DEGs) related to risk score. (A) Functional annotation for DEGs using GO enrichment analysis.
+The size of the plots represented the number of genes enriched. The pathways were grouped by cellular component (CC), molecular function (MF)
+and biological process (BP). (B) Functional annotation for DEGs using KEGG enrichment analysis. The size of the plots represented the number of
+genes enriched. (C, D) Gene sets enrichment analysis (GSEA) in TLS+ group by GO and KEGG. (E, F) Gene sets enrichment analysis (GSEA) in TLS-
+group by GO and KEGG.
+the activation and function of immune cells. These insights highlight
+drug resistance between TLS+ and TLS- patients, suggesting that
+the complexity of the immune landscape in PDAC and underscore the
+TLS status could guide drug selection to improve outcomes (26).
+need for more targeted therapeutic strategies that can effectively engage
+Several limitations should be considered. First, this study is a
+the immune system, particularly in the context of a tumor
+single-center retrospective analysis, which is inherently susceptible
+microenvironment that poses significant challenges to traditional
+to biases. Additionally, our findings require validation through
+immunotherapy approaches.
+larger-scale studies to establish their generalizability. The
+In the context of gene mutations, notable differences were
+adequacy of using a single tissue slice to accurately reflect the
+observed in the frequencies of critical genes (23), including TP53,
+status of TLS is also questionable, highlighting the need for more
+KRAS, SMAD4, and CDKN2A, between the two groups, with TP53
+precise assessment methods. Furthermore, the pancreatic tumor
+mutations showing a variation of up to 16%. A previous study
+microenvironment contains various other cell types, including a
+reported that cases with TP53 alterations had significantly worse
+significant number of fibroblasts and their secreted products, which
+immune status (24). In pancreatic cancer, such gene mutations have
+are linked to both prognosis and TLS formation (27-29). Thus,
+significant implications for patient prognosis (23), and emerging
+concentrating solely on immune cell analysis does not provide a
+therapies targeting specific mutations have been shown to improve
+comprehensive understanding of the differences between the tumor
+survival outcomes (25). Additionally, we also found differences in
+microenvironments of the TLS+ and TLS- groups. Despite these
+Frontiers in Oncology
+09
+frontiersin.org
+Hu et al.
+10.3389/fonc.2025.1569947
+A
+Group
+tis-
+tis+
+0.6
+0.4
+ns
+ns
+ons
+ns
+ns
+ns
+ns
+ns
+ns
+ns
+ns
+ns
+ns
+ns
+ns
+ns
+ns
+Estimated Proportion
+0.2
+0.0
+1/11/11
+T.cells. y.resting / Tregs. //
+///// ///
+T.cells.
+B
+Group
+tis-
+tis+
+0.9
+8
+Estimated Proportion
+0.6
+ns
+ns
+ns
+ns
+ns
+ns
+hs
+ns
+ns
+ns
+ns
+ns
+ns
+hs
+ns
+ns
+ns
+ns
+ns
+ns
+8
+0.3
+:
+APC APC. B.cells
+CCR CD8. 18.T.cells If Check.p
+DCs HLA
+///// 1/1/119
+T.cell. PDCS /
+TTM
+TIL Treg
+C
+ImmuneScore
+StromalScore
+ESTIMATEScore
+Tumor Purity
+tis+
+tis+
+tis-
+tis+
+tis-
+tis+
+4000
+3000
+6000
+p=0.6
+p=0.26
+p=0.38
+p=0.42
+2000
+4000
+0.9
+2000
+1000
+Immune Score
+Stromal Score
+0-
+ESTIMATE Score
+2000
+Tumor Purity
+0.6
+0
+0
+-1000
+0.3
+-2000
+-2000
+-4000
+tis-
+tis+
+tis-
+tis+
+tis-
+tis+
+tis-
+tis+
+TLS Group
+TLS Group
+TLS Group
+TLS Group
+FIGURE 5
+Immune components between high and low risk groups. (A) CIBERSORT visualized the infiltration difference of immune cells between TLS+ and
+TLS- groups. (B) Enrichment difference heat map of immune components and immune cells analyzed by ssGSEA method between TLS+ and TLS-
+groups. (C) The immune score, ESTIMATE score, stromal score and tumor purity in the TLS+ and TLS- groups.
+Frontiers in Oncology
+10
+frontiersin.org
+Hu et al.
+10.3389/fonc.2025.1569947
+A
+Classification
+Wantent Type
+Class
+B
+Variant Classification
+Type
+class
+C
+Varlant Classification
+Variant Type
+BNV Class
+/Auton
+Malation
+THE
+Mission
+THE
+no
+SMP
+SNP
+-
+TVA
+T.A
+Suke_St
+Del
+7-2
+THE
+T-C
+INS
+Ca7
+CAT
+À
+CNS
+CNG
+CNG
+DEL
+DEL
+DEL
+O-A
+Ste
+OA
+CM
+as
+$
+Variant
+Varient
+Top 10
+Too 10
+Top 10
+10
+summary
+musted
+summary
+mutated
+KRAS
+ARAS
+$4%
+TW
+17%
+was
+im
+12%
+SMAD4
+KRAS
+=
+MUCIS
+R
+COKMA
+(
+32
+MUC16
+service
+SMADA
+COMMER
+7TV
+COKNDA
+25%
+21
+MUCH
+PODHIS
+TAXE
+IN
+11%
+MEC#2
+FLIND
+20
+D
+Altered in 114 (83.82%) of 136 samples.
+E
+Altered in 51 (77.27%) of 66 samples.
+F
+Altered in 65 (92.86%) of 70 samples.
+*
+CNL
+KRAS
+63%
+KRAS
+64%
+TP53
+70%
+7753
+62%
+TP53
+SMAD4
+24%
+53%
+KHAS
+63%
+COKNZA
+SMAD4
+21%
+SMAD4
+27%
+18%
+UN
+12%
+COKN2A
+17%
+COKNZA
+MUC16
+0%
+RNF43
+11%
+TTM
+17%
+RNF43
+7%
+MUCTS
+B%
+MUC18
+TNXB
+6%
+TTN
+6%
+KDM6A
+ARIDIA
+5%
+FLAC
+ON
+MYO18
+HECW2
+5%
+RIMS2
+6%
+PODHIS
+7GFBR2
+5%
+TNXO
+6%
+RREST
+CACNA18
+4%
+DAMTS16
+5%
+IGABR2
+GLIJ
+4%
+1NKRO24
+5%
+TPO
+KOMOA
+4%
+ARIDIA
+5%
+AMOB
+KM72C
+4%
+SIRCE
+5%
+ARIDIA
+MYOTE
+4%
+CACHATE
+D/N
+CELSRO
+PCDH15
+1%
+COLL2
+5%
+DIAH10
+PCOHAT
+CSMD2
+ON
+HMCNT
+RRE81
+GLIS
+5%
+KMT2C
+TMO
+NECW2
+5%
+LRP1
+Croup
+HYDIN
+INXY
+Missenee
+Mutation
+Group
+Noneense
+Mulstion
+Frame Shift Ins
+Missanse
+Mutation
+Mutation
+Mesense
+Splice
+Frame
+Nonsence
+Mutation
+Frame
+Spice
+Frame
+Frame Del
+Muli
+Splice
+Frame
+Multi
+G
+Injury
+SMAD4[33]
+CDKN2A [25]
+TTN(17)
+MUCTE(11)
+TNXB[8]
+ARIDIA(7)
+HECW2(7)
+CACHA16/$
+GLI3(6)
+KOMBAIE]
+MY016[6]
+PCDH1516
+PCDNB7[5]
+H
+KDM6A
+TP53 [35]
+SM/D4/14)
+COKN2A/11]
+ADAMTS16/37
+CACHATB/3
+I
+KMT2C/6
+MUC19(5)
+TTN(5)
+FLNC/4)
+TNXB[4]
+BIRCE(3)
+CBLL2/3
+kizonso
+06/3/31
+HECW2(3)
+HYDIN (3)
+TP53[49]
+TP53
+KRAS (M)
+SMAD4[19]
+TTN(12)
+MUC16/6]
+KDMA!S)
+Blowdow
+RRE81(5)
+TGFBR2 [5]
+TPO(5)
+APOR14]
+CELERS(4)
+LAPTIA
+TNXB(4)
+TROIN
+INXB[4]
+HYDIN(S)
+CRP1(4)
+HECW2[3]
+PCDHB7
+KMT2C14)
+PCDN15(6)
+HMCN1(4)
+CSMD2(3)
+MYO15/6)
+DNATITO(4)
+COLL2/37
+KMT2C!6)
+CELSR3147
+KDM6A (6)
+<0.05
+ARIDIAIN
+<0.05
+SIRCE(S)
+0.05
+<0.1
+APOBI4]
+P<0.1
+ARIDIA[3]
+<0.1
+CACNA1810]
+TPO[S]
+ANKRD24[3]
+TGFAR2(7)
+TGFBR215]
+ADAMTS16[3]
+RECW217)
+RRE01/5)
+TNXA(4)
+ARIDIA
+PCDHT5[5]
+HIMS214]
+TNXD(8)
+FLNC(4)
+RNF43 110)
+KDMEA(5)
+TIN(5)
+MUC16(11)
+MUCTOR
+TTW(17)
+>3 (Co-occurence)
+MUCTOIST
+TTN(12]
+>3 (Co-occurence)
+2
+RNF43[7]
+>3 (Co-occurence)
+2
+COKNZA [25]
+-log10(P-value)
+2
+1
+COKN2A (11)
+-log10(P-value)
+COKN24 (14)
+SMAD4
+1
+SMAD4/19)
+0
+SMAD4(14)
+0
+0
+KRAS(44)
+1
+TP53 (35)
+1
+(80)
+2
+TP53(49)
+2
+KRAS(42)
+2
+>3 (Mutually exclusive)
+3 (Mutually exclusive)
+(Mutually exclusive)
+FIGURE 6
+Analysis of genomic mutation frequency in TLS+ and TLS- groups. (A-C) Statistics of high-frequency mutation genes, mutation sites, and mutation
+types in the whole group, TLS+ group, and TLS- group. (D-F) The waterfall diagram of the mutation frequency top20 gene in the whole group, TLS
++ group, and TLS- group group. (G-I) Co-mutation and mutually exclusive mutation map of top20 gene in the whole group, TLS+ group, and TLS-
+group.
+limitations, our study is the first to illustrate the prognostic
+indicating a favorable immune response within the tumor
+significance of iTLS in patients with PDAC.
+microenvironment. The differential analysis between patients with
+iTLS+ and iTLS- reveals critical insights into immune cell
+composition and gene mutation patterns, further supporting the
+5 Conclusion
+notion that iTLS presence contributes positively to patient
+outcomes. While this study is limited by its retrospective design
+This study highlights the significant prognostic implications of
+and single-center cohort, the findings underscore the potential of
+iTLS in patients with PDAC. Our results demonstrate that the
+iTLS as a biomarker for prognosis and a target for future therapeutic
+presence of iTLS is associated with improved OS and RFS,
+strategies in managing PDAC.
+Frontiers in Oncology
+11
+frontiersin.org
+Hu et al.
+10.3389/fonc.2025.1569947
+Drug:AZD8055
+Drug:JNK.Inhibitor.VIII
+Drug:EIIT.1864
+Drug:Bryostatin.1
+15
+T-test, p = 0.0076
+15
+T-test, p = 0.0052
+20
+T-test, p = 0.013
+10
+T-test, p = 0.018
+10
+10
+5
+IC50
+10
+IC50
+IC50
+5
+IC50
+0
+5
+0
+0
+-5
+-10
+0
+tls-
+tls+
+tls-
+tls+
+tls-
+tls+
+tls-
+tls+
+Group
+Group
+Group
+Group
+Drug:PD.0332991
+Drug:KIN001.135
+Drug:Cyclopamine
+Drug:AICAR
+15
+30
+T-test, p = 0.025
+T-test, p = 0.031
+T-test, p = 0.02
+T-test, p = 0.031
+40
+9
+10
+20
+IC50
+IC50
+IC50
+IC50
+20
+10
+6
+5
+0
+0
+3
+0
+-10
+Us-
+us+
+tls-
+Us+
+tls-
+Us+
+tls-
+tls+
+Group
+Group
+Group
+Group
+Drug:Pyrimethamine
+Drug:CMK
+Drug:Camptothecin
+150
+T-test, p =0.037
+T-test, p = 0.038
+30
+T-test, p = 0.043
+3.50
+20
+100
+:
+IC50
+IC50
+3.45
+IC50
+10
+50
+:
+0
+3.40
+10
+0
+tls
+tls
+tls
+tls
+tls
+tls
+Group
+Group
+Group
+FIGURE 7
+Diference evaluation of small molecule drug sensitivity of samples.
+tls
+tls-
+tls+
+0.81
+0.2
+TIDE_score
+0.1
+0.0
+tls-
+tls+
+FIGURE 8
+The response to immunotherapy evaluated by TIDE algorithm.
+Frontiers in Oncology
+12
+frontiersin.org
+Hu et al.
+10.3389/fonc.2025.1569947
+Data availability statement
+China (Grant No. 82203310), Creative Research Group of CQ
+University (Grant No. CXQT21017), The Doctoral "Through
+The datasets presented in this study can be found in online
+Train" Research Program of Chongqing, China (Grant No.
+repositories. The names of the repository/repositories and accession
+CSTB2022BSXM-JCX0053, and Program for Youth Innovation in
+number(s) can be found in the article/Supplementary Material.
+Future Medicine from Chongqing Medical University.
+Ethics statement
+Conflict of interest
+The ethics committee of the First affiliated Hospital of
+The authors declare that the research was conducted in the
+Chongqing Medical University. The studies were conducted in
+absence of any commercial or financial relationships that could be
+accordance with the local legislation and institutional
+constructed as a potential conflict of interest.
+requirements. The participants provided their written informed
+consent to participate in this study.
+Generative AI statement
+Author contributions
+The author(s) declare that no Generative AI was used in the
+creation of this manuscript.
+LH: Conceptualization, Data curation, Formal Analysis,
+Investigation, Validation, Visualization, Writing - original draft.
+YX: Conceptualization, Data curation, Methodology, Supervision,
+Publisher's note
+Writing - original draft. NJ: Conceptualization, Funding
+acquisition, Project administration, Supervision, Writing - review
+All claims expressed in this article are solely those of the authors
+& editing. YH: Project administration, Resources, Software, Writing -
+and do not necessarily represent those of their affiliated organizations,
+review & editing. LQ: Software, Writing - review & editing. BG:
+or those of the publisher, the editors and the reviewers. Any product
+Funding acquisition, Investigation, Methodology, Resources, Writing
+that may be evaluated in this article, or claim that may be made by its
+- review & editing.
+manufacturer, is not guaranteed or endorsed by the publisher.
+Funding
+Supplementary material
+The author(s) declare that no financial support was received for
+The Supplementary Material for this article can be found online
+the research, authorship, and/or publication of this article. This
+at: https://www.frontiersin.org/articles/10.3389/fonc.2025.1569947/
+work was supported by the National Natural Science Foundation of
+full#supplementary-material
+References
+1. Sung H, Ferlay J, Siegel RL, Laversanne M, Soerjomataram I, Jemal A, et al. Global
+patients with hepatocellular carcinoma. Front Immunol. (2022) 12. doi: 10.3389/
+cancer statistics 2020: GLOBOCAN estimates of incidence and mortality worldwide for 36
+fimmu.2021.788640
+cancers in 185 countries. CA Cancer J Clin. (2021) 71:209-49. doi: 10.3322/caac.21660
+8. Lee M, Heo SH, Song IH, Rajayi H, Park HS, Park IA, et al. Presence of tertiary
+2. Tempero MA, Malafa MP, Al-Hawary M, Behrman SW, Benson AB, Cardin DB,
+lymphoid structures determines the level of tumor-infiltrating lymphocytes in primary
+et al. Pancreatic adenocarcinoma, version 2.2021, NCCN clinical practice guidelines in
+breast cancer and metastasis. Mod Pathol. (2019) 32:70-80. doi: 10.1038/s41379-018-
+oncology. J Natl Compr Canc Netw. (2021) 19:439-57. doi: 10.6004/jnccn.2021.0017
+0113-8
+3. Balachandran VP, Luksza M, Zhao JN, Makarov V, Moral JA, Remark R, et al.
+9. Silina K, Soltermann A, Attar FM, Casanova R, Uckeley ZM, Thut H, et al.
+Identification of unique neoantigen qualities in long-term survivors of pancreatic
+Germinal centers determine the prognostic relevance of tertiary lymphoid structures
+cancer. Nature. (2017) 551:512-6. doi: 10.1038/nature24462
+and are impaired by corticosteroids in lung squamous cell carcinoma. Cancer Res.
+4. Fridman WH, Zitvogel L, Sautès-Fridman C, Kroemer G. The immune contexture
+(2018) 78:1308-20. doi: 10.1158/0008-5472.CAN-17-1987
+in cancer prognosis and treatment. Nat Rev Clin Oncol. (2017) 14:717-34. doi: 10.1038/
+10. Posch F, Silina K, Leibl S, Mündlein A, Moch H, Siebenhüner A, et al.
+nrclinonc.2017.101
+Maturation of tertiary lymphoid structures and recurrence of stage II and III
+5. Wang X, Juncker-Jensen A, Huang G, Nagy ML, Lu X, Cheng L, et al. Spatial
+colorectal cancer. Oncoimmunology. (2018) 7:e1378844. doi: 10.1080/
+relationship of tertiary lymphoid structures and tumor-associated neutrophils in
+2162402X.2017.1378844
+bladder cancer and prognostic potential for anti-PD-L1 immunotherapy. Cancer
+11. Hu L, LiX, Yang C, Zhou B, Du C, Jiang N. Prognostic value of tertiary lymphoid
+Commun (Lond). (2023) 44(4):499-503. doi: 10.1002/cac2.12491
+structures in hepatocellular carcinoma: a meta-analysis and systematic review. Front
+6. Bruni D, Angell HK, Galon J. The immune contexture and Immunoscore in
+Immunol. (2024) 15:1390938. doi: 10.3389/fimmu.2024.1390938
+cancer prognosis and therapeutic efficacy. Nat Rev Cancer. (2020) 20:662-80.
+doi: 10.1038/s41568-020-0285-7
+12. Zou X, Lin X, Cheng H, Chen Y, Wang R, Ma M, et al. Characterization of
+intratumoral tertiary lymphoid structures in pancreatic ductal adenocarcinoma:
+7. Wen SD, Chen YZ, Hu CP, Du XY, Xia JW, Wang X, et al. Combination of
+cellular properties and prognostic significance. J Immunother Cancer. (2023) 11(6):
+tertiary lymphoid structure and neutrophil-to-lymphocyte ratio predicts survival in
+e006698. doi: 10.1136/jitc-2023-006698
+Frontiers in Oncology
+13
+frontiersin.org
+Hu et al.
+10.3389/fonc.2025.1569947
+13. Kinker GS, Vitiello GAF, Diniz AB, Cabral-Piccin MP, Pereira PHB, Carvalho
+21. Helmink BA, Reddy SM, Gao J, Zhang S, Basar R, Thakur R, et al. B cells and
+MLR, et al. Mature tertiary lymphoid structures are key niches of tumour-specific
+tertiary lymphoid structures promote immunotherapy response. Nature. (2020)
+immune responses in pancreatic ductal adenocarcinomas. Gut. (2023) 72:1927-41.
+577:549-55. doi: 10.1038/s41586-019-1922-8
+doi: 10.1136/gutjnl-2022-328697
+22. Bear AS, Vonderheide RH, O'Hara MH. Challenges and opportunities for
+14. Kuwabara S, Tsuchikawa T, Nakamura T, Hatanaka Y, Hatanaka KC, Sasaki K,
+pancreatic cancer immunotherapy. Cancer Cell. (2020) 38:788-802. doi: 10.1016/
+et al. Prognostic relevance of tertiary lymphoid organs following neoadjuvant
+j.ccell.2020.08.004
+chemoradiotherapy in pancreatic ductal adenocarcinoma. Cancer Sci. (2019)
+23. Khan AA, Liu X, Yan X, Tahir M, Ali S, Huang H. An overview of genetic
+110:1853-62. doi: 10.1111/cas.14023
+mutations and epigenetic signatures in the course of pancreatic cancer progression.
+15. Tanaka T, Masuda A, Inoue J, Hamada T, Ikegawa T, Toyama H, et al. Integrated
+Cancer Metastasis Rev. (2021) 40:245-72. doi: 10.1007/s10555-020-09952-0
+analysis of tertiary lymphoid structures in relation to tumor-infiltrating lymphocytes
+24. Pu N, Chen Q, Gao S, Liu G, Zhu Y, Yin L, et al. Genetic landscape of prognostic
+and patient survival in pancreatic ductal adenocarcinoma. J Gastroenterol. (2023)
+value in pancreatic ductal adenocarcinoma microenvironment. Ann Transl Med.
+58:277-91. doi: 10.1007/s00535-022-01939-8
+(2019) 7:645. doi: 10.21037/atm.2019.10.91
+16. Geeleher P, Cox N, Huang RS. pRRophetic: an R package for prediction of
+25. Nevala-Plagemann C, Hidalgo M, Garrido-Laguna I. From state-of-the-art
+clinical chemotherapeutic response from tumor gene expression levels. PLoS One.
+treatments to novel therapies for advanced-stage pancreatic cancer. Nat Rev Clin
+(2014) 9:e107468. doi: 10.1371/journal.pone.0107468
+Oncol. (2020) 17:108-23. doi: 10.1038/s41571-019-0281-6
+17. Ma Y, Li X, Zhang J, Zhao X, Lu Y, Shen G, et al. Integrating tertiary lymphoid
+26. Espona-Fiedler M, Patthey C, Lindblad S, Sarró I, Öhlund D. Overcoming
+structure-associated genes into computational models to evaluate prognostication and
+therapy resistance in pancreatic cancer: New insights and future directions. Biochem
+immune infiltration in pancreatic cancer. J Leukoc Biol. (2024) 116:589-600.
+Pharmacol. (2024) 229:116492. doi: 10.1016/j.bcp.2024.116492
+doi: 10.1093/jleuko/qiae067
+27. Sherman MH, Beatty GL. Tumor microenvironment in pancreatic cancer
+18. Zhang E, Ma Y, Liu Z, Zhang J, Liu W, Chen Y, et al. Prognostic implications and
+pathogenesis and therapeutic resistance. Annu Rev Pathol. (2023) 18:123-48.
+characterization of tumor-associated tertiary lymphoid structures genes in pancreatic
+doi: 10.1146/annurev-pathmechdis-031621-024600.
+cancer. J Transl Med. (2025) 23:301. doi: 10.1186/s12967-025-06152-8
+28. Rodriguez AB, Peske JD, Woods AN, Leick KM, Mauldin IS, Meneveau MO, et al.
+19. Schumacher TN, Thommen DS. Tertiary lymphoid structures in cancer. Science.
+Immune mechanisms orchestrate tertiary lymphoid structures in tumors via cancer-
+(2022) 375:eabf9419. doi: 10.1126/science.abf9419
+associated fibroblasts. Cell Rep. (2021) 36:109422. doi: 10.1016/j.celrep.2021.109422
+20. Peng J, Sun BF, Chen CY, Zhou JY, Chen YS, Chen H, et al. Single-cell RNA-seq
+29. Mao X, Xu J, Wang W, Liang C, Hua J, Liu J, et al. Crosstalk between cancer-
+highlights intra-tumoral heterogeneity and Malignant progression in pancreatic ductal
+associated fibroblasts and immune cells in the tumor microenvironment: new findings
+adenocarcinoma. Cell Res. (2019) 29:725-38. doi: 10.1038/s41422-019-0195-y
+and future perspectives. Mol Cancer. (2021) 20:131. doi: 10.1186/s12943-021-01428-1
+Frontiers in Oncology
+14
+frontiersin.org

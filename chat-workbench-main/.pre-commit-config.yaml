@@ -1,0 +1,109 @@
+default_language_version:
+  node: system
+repos:
+  - repo: https://github.com/Lucas-C/pre-commit-hooks
+    rev: v1.5.4
+    hooks:
+      - id: insert-license
+        files: \.(py|sh)$
+        args:
+          - --license-filepath=./NOTICE
+          - --comment-style=#
+      - id: insert-license
+        files: \.(js|jsx|ts|tsx)$
+        args:
+          - --license-filepath=./NOTICE
+          - --comment-style=//
+
+  - repo: https://github.com/astral-sh/uv-pre-commit
+    # uv version.
+    rev: 0.8.1
+    hooks:
+      - id: uv-lock
+
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.4.0
+    hooks:
+      - id: detect-secrets
+        exclude: (?x)^( .*.ipynb|config.yaml|infrastructure/keycloak/realm-export.json|.*docs/.*|.*tests/.*| )$
+        pass_filenames: false
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: check-json
+      - id: check-yaml
+      - id: check-case-conflict
+      - id: mixed-line-ending
+        args:
+          - '--fix=lf'
+      - id: fix-byte-order-marker
+      - id: check-merge-conflict
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.2.6
+    hooks:
+      - id: codespell
+        stages: [pre-commit]
+        entry: codespell
+        args:
+          - '--skip=*.git*,*cdk.out*,*venv*,*.pem*,*mypy_cache*,*package-lock*,*tsconfig*,*node_modules*,*dist/*,*.jsonl,*pyproject.toml*,repomix-output.*,*.json,*.ipynb,THIRD_PARTY_LICENSES,*coverage,*cov,*htmlcov*,*.lock,*ui/out*,./examples/rag_oss/data/*,*cli/src/commands/*,*cli/target/*,*config.js'
+        pass_filenames: false
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.11.4
+    hooks:
+      - id: ruff
+        types_or: [python, pyi]
+        args:
+          - '--fix'
+        exclude: \.ya?ml$
+      - id: ruff-format
+        types_or: [python, pyi]
+        exclude: \.ya?ml$
+
+  - repo: https://github.com/facebook/pyrefly
+    rev: 0.25.0
+    hooks:
+      - id: pyrefly-typecheck
+
+  - repo: local # Stay local
+    hooks:
+      - id: prettier
+        name: prettier
+        language: node
+        entry: prettier # pre-commit passes the file list
+        additional_dependencies:
+          - prettier@3.6.2 # latest stable
+          # add any plugins you use, e.g.:
+          # - '@prettier/plugin-xml@0.17.0'
+        args:
+          - --write # let pre-commit auto-add changes
+          - --cache # skip unchanged files
+          - --cache-location
+          - .cache/.prettier-cache
+          - --log-level=error # less verbose output
+          - --no-config # ignore local config
+          - --single-quote # force single quotes to match ruff
+        files: >-
+          \.(ts|tsx|js|jsx|json|ya?ml|md)$
+        exclude: ^(dist|node_modules|coverage)/
+
+      - id: eslint-ui
+        name: eslint (UI)
+        language: system
+        entry: bash -c 'cd ui && npm run lint -- --fix'
+        files: ^ui/.*\.[jt]sx?$
+        exclude: ^ui/(dist|node_modules|coverage|\.next)/
+        pass_filenames: false
+
+      - id: eslint-cdk
+        name: eslint (CDK)
+        language: system
+        entry: bash -c 'cd infrastructure/cdk && npm run lint'
+        files: ^infrastructure/cdk/.*\.ts$
+        exclude: ^infrastructure/cdk/(dist|node_modules|coverage|cdk\.out)/
+        pass_filenames: false

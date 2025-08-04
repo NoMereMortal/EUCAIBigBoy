@@ -1,0 +1,1606 @@
+
+Oncogene
+www.nature.com/onc
+ARTICLE
+OPEN
+Check for updates
+Colon cancer cells evade drug action by enhancing drug
+metabolism
+Bojie Cong¹, Teena Thakur¹,², Alejandro Huerta Uribe¹,², Evangelia Stamou¹, Sindhura Gopinath³, Owen Sansom²,
+Oliver Maddocks
+1,4
+1X
+ID
+and Ross Cagan
+ID
+The Author(s) 2025
+Colorectal cancer (CRC) is the second leading cause of cancer deaths worldwide. One key reason is the lack of durable therapies
+that target KRAS-dependent disease, which represents approximately 40% of CRC cases. Here, we use liquid chromatography/mass
+spectrometry (LC/MS) analyses on Drosophila CRC tumour models to identify multiple metabolites in the glucuronidation pathway
+-a toxin clearance pathway that impacts most drugs-as upregulated in trametinib-resistant RAS/APC/P53 ("RAP") tumours
+compared to trametinib-sensitive single mutant tumours. Genetic inhibition of different steps along the glucuronidation
+pathway strongly reversed RAP resistance to trametinib; conversely, elevating glucuronidation pathway activity was sufficient to
+direct trametinib resistance in RasG¹²V animals. Mechanistically, pairing oncogenic RAS with hyperactive WNT activity strongly
+elevated PI3K/AKT/GLUT signalling, which in turn directed elevated glucose uptake and glucuronidation; our data also implicate the
+pentose phosphate pathway in this process. We provide evidence that this mechanism of trametinib resistance is conserved in a
+KRAS/APC/TP53 mouse CRC tumour organoid model. Finally, we identify two clinically accessible approaches to inhibiting drug
+glucuronidation: (i) blocking an initial HDAC1-mediated deacetylation step of trametinib with the FDA-approved drug vorinostat; (ii)
+reducing blood glucose by the alpha-glucosidase inhibitor acarbose. Overall, our observations demonstrate a key mechanism by
+which oncogenic RAS/WNT activity promotes increased drug clearance in CRC and provides a practical path towards abrogating
+drug resistance in CRC tumours.
+Oncogene; https://doi.org/10.1038/s41388-025-03472-3
+INTRODUCTION
+drug target-agnostic mechanism in response to genomic com-
+Despite recent advances in RAS pathway therapies, RAS-mutant
+plexity. KRAS, APC and TP53 are the most commonly mutated
+colorectal cancer (CRC) has proven poorly sensitive to most
+genes reported for human CRC [3, 11]: adenoma progression is
+targeted CRC therapies in the clinics [1]. This is somewhat
+associated with loss of APC paired with oncogenic mutations in
+surprising, as RAS pathway inhibitors have shown strong efficacy
+KRAS; malignant transformation is associated with additional
+in RAS-mutant CRC pre-clinical studies. One important factor that
+mutations in TP53 [12, 13]. We therefore focused on this canonical
+has emerged is the role of genetic complexity: drug resistance
+multi-gene mutation profile commonly observed in human CRC
+typically increases in preclinical models that are more genetically
+tumours.
+complex [2, 3]. We recently reported this phenomenon in
+Oncogenic RAS is a key driver for tumour progression in up to
+Drosophila CRC models, both preclinically and in complex fly
+25% of all human cancers [14]. As such, components of the RAS/
+avatars as a part of a clinical trial: compared to oncogenic RAS
+MAPK pathway remain a high priority for targeted therapy. For
+alone, additionally targeting tumour suppressors APC and P53
+example, the Food and Drug Administration (FDA) approved
+("RAP") consistently led to emergent drug resistance [3, 4].
+MEK inhibitor trametinib proved effective in preclinical CRC
+However, the mechanisms that link genetic complexity to
+models, but showed no therapeutic benefit in CRC patients
+resistance across a broad spectrum of targeted therapies remain
+[15, 16]. Here, we report an LC/MS analysis comparing drug
+poorly understood.
+response in Drosophila G12V (trametinib sensitive) and RAS-
+A growing number of studies have shown that genetic and
+APC-P53 (RAP; trametinib resistant) hindgut tumours. We found
+signalling complexity can strongly influence drug response. For
+that drug resistance in RAP tumours was associated with
+example, genomic mutations that lead to amplification or
+upregulated drug metabolism via glucuronidation, a primary
+'rewiring' of key signalling pathways have been linked to failure
+toxin clearance pathway used by cells to clear most cancer
+of targeted therapies [5, 6]; however, co-targeting of these
+drugs. Blocking this upregulation had no direct effect on
+pathways has to date still failed to yield durable KRAS-mutant
+hindgut tumours but restored drug sensitivity in RAP Drosophila
+CRC treatments [7-10]. An alternative possibility is emergence of a
+and mouse organoid tumours to a level that mirrored tumours
+¹School of Cancer Sciences, University of Glasgow, Wolfson Wohl Cancer Research Centre; Garscube Estate, Switchback Road, Bearsden, Glasgow, Scotland, UK. ²CRUK Scotland
+Institute, Garscube Estate, Glasgow, Scotland, UK. ³Department of Cell, Developmental and Regenerative Biology, Icahn School of Medicine at Mount Sinai, New York, NY, USA.
+4Faeth Therapeutics Inc, Austin, TX, USA. email: Ross.Cagan@glasgow.ac.uk
+Received: 13 August 2024 Revised: 29 April 2025 Accepted: 9 June 2025
+Published online: 10 July 2025
+SPRINGER NATURE
+B. Cong et al.
+2
+with Ras alone. We further demonstrate that patient-
+Liquid chromatography-mass spectrometry (LC-MS) in
+accessible drugs such as vorinostat, predicted to block a key
+Drosophila
+pre-glucuronidation step of trametinib, strongly sensitized
+Third instar larvae were dissected in 1x PBS, and hindguts (n = 30) were
+tumours to trametinib. Together, our results demonstrate how
+collected and lysed on ice in 200 of extraction buffer (methanol:ace-
+a canonical CRC mutation profile elevates a key detoxification
+tonitrile:water volume ratio 50:30:20). Tissue was homogenised and
+pathway to promote general drug resistance; interfering with
+centrifuged at 13,000 rpm for 15 min at 4 °C. Supernatants were
+transferred to clean 1.5 ml tubes and stored at -80 °C. Metabolites were
+this process provides a blueprint for sensitizing genetically
+profiled using liquid chromatography-mass spectrometry (LC-MS) with
+complex tumours to targeted therapies.
+an Accela 600 LC system coupled to an Exactive Orbitrap mass
+spectrometer (Thermo Scientific). Chromatographic separation was
+performed using a Sequant ZIC-pHILIC column (4.6 150 mm, 3.5 µm
+MATERIALS AND METHODS
+particle size; Merck). The mobile phase consisted of solvent A (20 mM
+Drosophila strains and genetics
+ammonium carbonate in water) and solvent B (acetonitrile). The gradient
+Fly lines were cultured at room temperature or 25-29 °C on standard fly
+was programmed to increase from 20% to 80% A over 30 minutes,
+food or food-plus-compound. Fly food contained tayo agar 10g, soya flour
+followed by a 5-min wash at 92% A and re-equilibration for 10 minutes at
+5 g, sucrose 15 glucose 33 maize meal 15 wheat germ 10 treacle
+the initial 20% A. Total run duration was 45 min. The mass spectrometer
+molasses 30 yeast 35 nipagin 10 ml, propionic acid 5 ml in 1000
+was operated in full scan mode with polarity switching across a
+water. Transgenes used (Bloomington Drosophila Stock Center number):
+70-1200 m/z range and a resolving power of 50,000. Raw LC-MS files
+byn-gal4 (hindgut-specific line, V. Hartenstein), UAS-RasG¹²V (second
+were converted to mzML format using MSConvert (ProteoWizard,
+chromosome, G. Halder), tub-gal80ᵀ⁵ (BDSC_7017), w¹¹¹⁸ (BDSC_3605),
+RRID:SCR_012056), then processed in MZMine 2.3 for peak detection.
+UAS-mCD8-GFP (BDSC_5137), UAS-Hex-C-RNAi (BDSC_57404), UAS-UGP-
+Metabolites were identified using an in-house spectral library. Metabo-
+RNAi (BDSC_50902), UAS-GlcAT-P-RNAi (BDSC_67771), UAS-sgl-RNAi
+lites were assigned to known pathways with functional and enrichment
+(BDSC_65348), UAS-Akt-RNAi (BDSC_82957), UAS-plx-RNAi (AS160,
+analyses in MetaboAnalyst 5.0 (RRID:SCR_015539) [17].
+BDSC_66313), UAS-HDAC1-RNAi (BDSC_36800), and UAS-Armˢ¹⁰ (ArmᶜA,
+BDSC_4782), UAS-pgd-RNAi (BDSC_65078), UAS-zw-RNAi (BDSC_50667),
+Statistical analysis
+UAS-rpi-RNAi (BDSC_67847), UAS-nej-RNAi (BDSC_37489).
+Eggs were collected for 24h in drug-containing food at 18 °C to minimize
+transgene expression during embryogenesis to prevent embryonic effects
+or lethality. After 3 days, tubes were transferred to the appropriate
+Construction of the Drosophila RAP model
+temperature to induce transgene expression; the number of surviving
+As previously described [4], a pWalium expression vector was engineered
+Drosophila adults including male, and female was quantified after 2 weeks.
+with three Multiple Cloning Sites (MCS) downstream of UAS responsive
+Drawing from our previously published experience, all experiments were
+elements. The RAP model was designed as a single plasmid construct
+repeated three times with a total number of samples exceeding 5.
+incorporating the following: (i) oncogenic mutant Ras85DG¹² in the first
+Statistical analysis was performed using Prism9, and statistical tests were
+multiple cloning site (MCS), (ii) 4 short 21 bp hairpins targeted to
+conducted using the Mann-Whitney test or ordinary one-way ANOVA. N.S
+downregulate Apc plus 4 to downregulate P53 as a single 8-mer hairpin
+0.12), *P(0.033), **P(0.002), ***P(0.001), and ****P( < 0.0001). P-values ≤
+cluster into the third MCS with micro-RNA and intron derived spacers and
+0.033 were considered significant. All statistical data were summarized in
+loop sequences as previously described [4]. The resulting plasmid was then
+Supplementary Table S2. All detailed genotypes were summarized in
+stably inserted into the 2nd chromosome attP40 genome 'landing site'. The
+Supplementary Table S3.
+sequence for the P53-Apc 8-mer:
+1 actctgaata gggaattggg aattgagatc tgttctagac catattcagc ctttgagagt
+tggacgttca gttcaagtct atagttatat tcaagcatat
+Western blot analysis of Drosophila hindguts
+101agacttgaac tgaacgtcca gcgaaatctg gcgagacatc gagtagtgcc
+Third instar larvae were dissected in 1x PBS and hindguts (30) were put
+accaaaagtt agccgcgttg tggaaaatcc ccatattcag cctttgagag
+into 2x Laemmli sample buffer (2.1% SDS, 26.3% glycerol, 65.8 mM Tris-HCI
+201 tcaacgtgga cgttcagttc aatagttata ttcaagcata ttgaactgaa cgtccacgtt
+(pH 6.8), 0.01% bromophenol blue, 5% 2-mercaptoethanol, BIO-
+ggcgaaatct ggcgagacat cggagggaaa tggagaacgc
+RAD_1610747). After homogenization at 100 °C for 5 min, samples were
+301 aaaaatccca ttataatgga accatattca gcctttgaga gtccggatga acaaggcctt
+centrifuged at 13,000 rpm for 10 min, and lysate supernatants were used
+caatagttat attcaagcat attgaaggcc ttgttcatcc
+for western blot analysis. For signal detection, SuperSignal West Pico PLUS
+401 gggcgaaatc tggcgagaca tcgatgtgct tgatcgtaac tccatccaaa ctcgatatta
+Chemiluminescent Substrate (Thermo Fisher Scientific_34580) was used.
+acccatattc agcctttgag agttcggtgg ttattgcttc
+Primary antibodies used were as follows: anti-Phospho-Akt (Cell Signaling
+501 agcatagtta tattcaagca tatgctgaag caataaccac cgagcgaaat ctggcga-
+Technology_4060, 1:500 in 5%BSA/TBST (0.1% Tween20 in TBS)), anti-Akt
+gac atcgacaaat aatgttgcaa taaccagttg aaaccaatgg
+(Cell Signaling Technology_4691, 1:1000 in 5%BSA/TBST), monoclonal anti-
+601 aatccatatt cagcctttga gagtctcaaa gttgtgcaac tcttatagtt atattcaagc
+α-Tubulin (Sigma-Aldrich_T5168-2ML, 1:5000 in 5%BSA/TBST). Secondary
+atataagagt tgcacaactt tgaggcgaaa tctggcgaga
+antibodies used: anti-mouse IgG, HRP-linked antibody (1:2000 in 5%BSA/
+701catcgaacta acccgttcac ctgcgacaat ttttaatcta ttttccatat tcagcctttg
+TBST, Cell Signaling Technology_7076S), anti-rabbit IgG, and HRP-linked
+agagtctgga cgaccagctt cgatgatagt tatattcaag
+antibody (1:2000 in 5%BSA/TBST, Cell Signaling Technology_7074S).
+801 catatcatcg aagctggtcg tccaggcgaa atctggcgag acatcgagac cacgatc-
+gaa agaggaaaaa cggaaaacga acgaaccata ttcagccttt
+Endogenous UDP release assay, glucose assay, and HDAC
+901 gagagtaaag atggacaaga agtacgatag ttatattcaa gcatatcgta cttcttgtcc
+activity assay
+atctttgcga aatctggcga gacatcggga ctagttttca
+Third instar larvae were dissected in 1x PBS and hindguts (2-3) were
+1001 ttatttatca gccagcacca acaacaccat attcagcctt tgagagtgca gctaaagatg
+assayed in 1x PBS. Cell number was measured by CellTiter-Fluor™ Cell
+gacaagaata gttatattca agcatattct tgtccatctt
+Viability Assay kit (Promega_G6080). Endogenous UDP release was
+1101 tagctgcgcg aaatctggcg agacatcgtt ggtactcgag atagtttgta tgaaatattt
+measured by UDP-Gloᵀ Glycosyltransferase Assay kit (Promega_V6961).
+atatttttag cggccgcaag aa
+HDAC activity was detected by HDAC Cell-Based Activity Assay kit
+(Cayman_600150). Glucose levels were detected with the Glucose Assay
+Chemicals
+Kit (Abcam_ab169559): 10 hindguts were homogenized on ice in cold
+Drugs and compounds were as follows: trametinib (Selleckchem_S2673 or
+Glucose Assay Buffer.
+biorbyt), UDP-glucose (Abcam_ab120384), sucrose (Sigma-Aldrich_S0389),
+LY294002 (Selleckchem_S1105), vorinostat (Selleckchem_S1047), phena-
+Imaging of the digestive tract of third instar larvae
+cetin (Selleckchem_S2577), binimetinib (Selleckchem_S7007), selumetinib
+Third instar larvae were dissected in 1x PBS and fixed with 4%
+(Selleckchem_S1008), acarbose (Selleckchem_S1271), D-ribulose (Sigma-
+paraformaldehyde for 25 min at room temperature, then washed 15 min
+Aldrich_83899), fasentin (Sigma-Aldrich_F5557) and alpelisib (Selleck-
+in PBT (0.1% Triton X in 1xPBS). Samples were mounted with DAPI-
+chem_S2814). Drug and compound stocks were diluted in Dimethylsulf-
+containing SlowFade Gold Antifade Reagent (Thermo Fisher Scienti-
+oxide (DMSO) or water; drugs were then mixed into standard fly food with
+fic_S36939). Fluorescence images were visualized on a Leica TSC SPE
+final DMSO concentration 0.1% to prevent toxicity.
+confocal microscope.
+SPRINGER NATURE
+Oncogene
+B. Cong et al.
+3
+3D cell culture
+metabolites associated with the glucuronidation pathway (Fig. 1c),
+AKP intestinal organoids (VilCreERT² Apcf¹/fl, KrasG¹²D/⁺, Trp53fl/f) were
+indicating upregulation of the pathway in byn > RAP tumours
+received from Sansom Laboratory as a gift. Organoids were generated
+compared to byn>RasG12V tumours in the presence of trametinib.
+from age 19-week VilCreERᵀ² Apcfl/fl, KrasG¹²D/⁺, Trp53f¹/f¹ mice (Colony:
+Upregulated metabolites included Glucose-6-phosphate (Glc-6P), UTP,
+RBCVAPK, ID: RCB41.1g) and resuspended in growth factor reduced
+UDP, and UDP-glucose (UDP-GIc; Fig. 1b, c and Supplementary Fig.
+Matrigel (Corning_356231) and overlaid with Organoid Culture (OC) Media
+comprising: Advanced DMEM/F12 supplemented
+S1d). We focussed on glucuronidation as a key correlative of
+with 1% penicillin-streptomycin (GibcoTM_15070063), 10 mM HEPES
+resistance and a key mechanism of drug resistance: cells commonly
+(GibcoTM_15630056), 2 mM glutamine bcoTM_25030081), 1x
+use glucuronidation to solubilize and remove toxins including the
+N2 supplement (GibcoTM_17502048),1x B27 supplement (Gib-
+majority of clinically relevant drugs [21]. Of note, trametinib is
+coᵀM_17504044). OC Media was freshly supplemented with 100 ng/ml
+glucuronidated in colorectal cancer patients [22].
+Noggin (PeproTech_250-38), and 50 ng/ml EGF (PeproTech_315-09).
+To investigate whether the glucuronidation pathway is essential
+For cell viability assessment, mechanically disrupted organoids were
+for trametinib resistance in byn > RAP tumours, we used hindgut-
+resuspended in Matrigel and seeded as 6 µl domes into 96-well plates in
+targeted knockdown to reduce the activity of key glucuronidation
+OC Media (as described above) ±drugs at 37 °C with 5% CO₂. Control wells
+pathway enzymes including Hexokinase c (Hex-C; human
+comprised to organoids treated with 0.1% DMSO (equivalent to final
+DMSO concentration in drug treated wells). Cell viability was assessed after
+ortholog: GCK), UDP-glucose Pyrophosphorylase (UGP; UGP2),
+48 using CellTiter-Blue® Cell Viability Assay kit (Promega_G8080). This
+Sugarless (Sgl; UDP-glucose 6-dehydrogenase, UDGH), and Glu-
+approach can better protect research results from being influenced by
+curonyltransferase P (GIcAT-P). The latter is a member of the
+observer bias. For data analysis, fluorescence intensity of drug treated wells
+human glucuronosyltransferase family that utilizes UDP-
+were compared to that of control wells.
+glucuronate as a substrate in Drosophila and has glucuronosyl-
+Similarly, assessment of UDP release from AKP organoids was
+transferase activity [23] similar to UDP-glucuronosyltransferases;
+performed by multiplexing cell viability assay and UDP-release assay.
+Fig. 1c).
+Briefly, mechanically disrupted organoids were seeded into 96-well
+Knockdown of Sgl or GlcAT-P significantly rescued tumour-
+plate and overlaid with OC media ± drugs as described previously. At
+induced lethality in the presence of trametinib; neither
+time-point, cell viability was measured using CellTiter-Fluor™ Cell
+Viability Assay (Promega_G6080) and UDP-release was measured
+knockdown impacted byn > RAP survival in the absence of
+subsequently from the same plate using UDP-Glo™ Glycosyltransferase
+trametinib or in control animals (Fig. 1d-f). Conversely,
+Assay (Promega_V6961). For data analysis, luminescence intensity from
+increasing the key glucuronidation pathway substrate by
+UDP- GloᵀM assay was normalised to cell number (CellTiter-Fluor™) to
+supplementing the food with UDP-Glc was sufficient to induce
+compare the levels of UDP-release between different treatments. We
+trametinib resistance in otherwise sensitive byn>RasG¹²V
+performed all organoids quantification blinded to genotype or
+tumours (Fig. 1h). UDP-Glc did not affect survival of control
+treatment.
+animals (Fig. 1g). These data indicated that elevated glucur-
+onidation pathway activity induces trametinib resistance in
+Ethical approval
+RAP tumours. Further, the data is consistent with trametinib
+Drosophila is not a protected species under UK law.
+resistance being controlled by glucuronidation.
+Glucuronidation pathway activity is enhanced by the pentose
+RESULTS
+phosphate pathway
+Glucuronidation pathway is required for trametinib resistance
+We observed that Nicotinamide adenine dinucleotide phosphate
+in RAP tumours
+(NADPH) and Ribulose 5-phosphate (Ribulose-5p) were also
+The Drosophila hindgut has proven a useful tool for modelling CRC
+upregulated in byn > RAP tumours when compared with
+including for predicting therapeutics [4]. To identify the most
+byn>RasG12V tumours (Fig. 1b and Supplementary Table 1). These
+effective inhibitor against RasG¹²V tumours, we targeted trans-
+metabolites are major components involved in the pentose
+genes to the developing hindgut using byn-GAL4 and performed a
+phosphate pathway (PPP; Fig. 2a), another pathway involved in
+limited FDA drug screen: the potent and specific MEK inhibitor
+glucose flux. Genetic inhibition of PPP by targeted knockdown of
+trametinib was especially effective in reducing oncogenic RasG¹²V-
+(i) glucose-6-phosphate dehydrogenase (zw, G6PDH) weakly sup-
+mediated transformation in the Drosophila hindgut, leading to
+pressed trametinib resistance in RAP tumours (Fig. 2c); (ii)
+increased animal survival (Supplementary Fig. S1a, b). Feeding
+phosphogluconate dehydrogenase (pgd, 6PGDH) or ribose-5-
+larvae with 1 µM trametinib strongly rescued -induced
+phosphate isomerase (rpi, RPIA) significantly rescued RAP tumour-
+lethality (Fig. 1a). In contrast, a multigenic RasG¹²V,
+induced lethality in the presence of trametinib. Neither knock-
+P53ˢʰRNA CRC model (byn > RAP)-designed to capture the three
+down impacted survival in the absence of trametinib (Fig. 2b, c) or
+most common mutations reported for CRC-was resistant to
+of control animals (Fig. 2b). Furthermore, increasing PPP substrate
+trametinib both for animal survival (Fig. 1a) and for aspects of
+by feeding a high-D-ribulose-5p diet reduced trametinib sensitiv-
+transformation of the hindgut proliferative zone (HPZ, see below).
+ity in byn>RasG12V tumours (Fig. 2d) but did not affect control
+These data indicate an emergent resistance to trametinib in
+animals (Fig. 2e).
+byn > RAP tumours, mirroring the trametinib resistance observed
+The glucuronidation pathway converts circulating glucose to
+in KRAS-mutant CRC patients.
+intracellular UDP-glucuronide (UDP-GlcA); transfer of UDP-GIcA
+Recent studies have linked metabolite changes to drug resistance
+to, e.g., a drug leads to its clearance coupled with UDP release
+in liver, lung, and renal cancer models [18-20]. To identify the
+(Fig. 1c). Hence, UDP release provides a commonly used assay
+mechanisms of emergent trametinib resistance, we performed a
+for measuring levels of glucuronidation (Fig. 1c). Indeed,
+metabolomics analysis by liquid chromatography-mass spectrometry
+inhibiting glucuronidation pathway activity by knockdown of
+(LC-MS), comparing byn>RasG12V and byn > RAP hindguts in the
+sgl significantly suppressed the level of released UDP in
+presence of trametinib. 143 metabolites were altered in byn RAP
+byn > RAP tumours in the present of trametinib (Supplementary
+tumours upon administering trametinib (Fig. 1b and Supplementary
+Fig. S1e), supporting the use of released UDP as an indicator of
+Table 1). An enrichment analysis (MetaboAnalyst 5.0, S1c) highlighted
+glucuronidation pathway activity. High dietary D-ribulose-5p
+key differences between byn > RAP and byn>RasG¹²V in the presence
+led to upregulation of released UDP levels in byn>RasG¹²V
+of trametinib, including transfer of acetyl groups into mitochondria
+tumours (Fig. 2f), while knockdown of pgd significantly reduced
+(TAGIM), anaerobic glycolysis (Warburg effect), glutamate metabolism,
+UDP release in byn > RAP tumours (Fig. 2g); in the absence of
+citric acid cycle, nucleotide sugar metabolism, and purine metabolism
+trametinib, knockdown of pgd did not significantly reduce UDP
+(Supplementary Fig. S1c). The strongest enrichment was for
+release in byn > RAP tumours (Fig. 2h). Taken together, these
+Oncogene
+SPRINGER NATURE
+B. Cong et al.
+4
+a
+***
+b
+d
+***
+RAP+tram
+250
+ns
+100
+***
+***
+ns
+% adult survival vs. control (%)
+200
+150
+% adult survival vs. control (%)
+80
+ns
+ns
+60
+ns
+40
+ns
+100
+50
+20
+UTP
+0
+0
+UDP-Glc
+RAP, RasGV RAP +DMSO Cantrol+DIMSO
++tram
+Hex- UGP GFP C-RNAi
+.RNAi
+RAP+DMSO
+c
+Glucuronidation Pathway
+(RAP+tram VS. RasG12V+tram)
+e
+*
+α-D-glucose
+200
+ATP
+NADPH
+**
+Hex-A, Hex-C
+Ribulose-5p
+ADP + α-D-glucose 6-phosphate
+Glc-6P
+UDP
+UGP
+low
+high
+% adult survival vs. control
+150
+100
+α-D-glucose 1-phosphate
+UTP
+50
+diphosphate + UDP-glucose
+0
+2 NAD+ + H2O
+Sgl (UGDH)
+2 NADH + UDP-glucuronate
+Hex- UGP GFP C-RNAi RNAi
+Sgl-RNAi GICAT- RNAi
+acceptor
+GlcAT-P
+RAP+tram
+UDP + acceptor ß-D-glucuronide
+f
+g
+h
+ns
+**
+250
+200
+ns
+ns
+ns
+250
+ns
+ns
+200
+% adult survival vs. control (%)
+150
+200
+150
+100
+% adult survival vs. control (%)
+% adult survival vs. control (%)
+150
+100
+100
+50
+50
+50
+0
+.RNAi
+RNAi
+0
+0
+UDP-Glc
+-
+0.1
+0.5
+UDP-Glc
+-
+0.1
+0.5
+(mM)
+(mM)
+Control+tram
+DMSO
+tram
+Control
+results suggesting that PPP inhibits trametinib sensitivity by
+High dietary sugar promotes glucuronidation
+enhancing the activity of glucuronidation pathway.
+Transgenic byn > RAP hindguts displayed elevated glucose com-
+We next explored the mechanisms by which CRC-associated
+pared to byn>Ras
+G12V
+hindguts (Supplementary Fig. S1f), prompt-
+gene combinations lead to glucuronidation-dependent drug
+ing us to investigate whether elevated glucose uptake led to
+resistance.
+increased glucuronidation. Our previous work showed that high
+SPRINGER NATURE
+Oncogene
+B. Cong et al.
+5
+Fig. 1 Glucuronidation pathway induces trametinib resistance in Drosophila. Glucuronidation was upregulated in RAP tumours compared
+with G12V tumours and led to trametinib resistance. a, d, e, f, g, h Percent survival of transgenic flies to adulthood relative to control flies
+was quantified in the present or absence of trametinib (1 µM) or UDP-Glc as indicated. a Control (n = 16), RasG¹²V (+DMSO n = 18; +tram
+n = 37) and RAP (+ DMSO n = 12; +tram n = 10); d, e RAP + GFP (control, +DMSO n = 12; +tram = 9), RAP +Hex-C-RNAi (+DMSO n = 5;
++tram n = 9), RAP + UGP-RNAi (+DMSO n = 6; +tram n = 9), RAP +Sgl-RNAi (+DMSO = 12; +tram n = 13), RAP +GlcAT-P-RNAi (+DMSO n = 9;
++tram n = 8); f Control (+DMSO n = 19; +tram n = 19), Sgl-RNAi (+DMSO = 15; +tram n = 15) and GlcAT-P-RNAi (+DMSO n = 14; +tram
+n = 14); g Control (without UDP-Glc n = 12; +0.1 mM n = 12; +0.5 mM n = 6); h RasG¹²V (without UDP-Glc n = 17; +0.1 mM n = 10; +0.5 mM
+n = 14), error bar is a standard deviation (SD). b A heatmap of LC/MS showed top 50 metabolites. c An overview of the glucuronidation
+pathway. Transgene expression was induced in Drosophila hindguts by a byn-GAL4 driver. Experiments were performed at 27 °C (a, b, g, h) or
+29 °C (d, e, f). Drug concentrations indicate final food concentrations. Each data point represents a replicate. N.S P( 0.12), *P(0.033), **P(0.002),
+**P(0.001), and ****P( < 0.0001). P-values ≤ 0.033 were considered significant. All statistical data were summarized in Supplementary Table S2.
+dietary sugar (HDS) promoted glucose uptake in RasG¹²V csk⁻¹⁻
+Glucuronidation promoted trametinib resistance in mouse
+flies, enhancing tumour progression in eye-antennal epithelia as
+AKP organoids
+well as altering drug response [24-26]. Similarly, we found that
+To assess if our Drosophila data is relevant to drug response in a
+HDS enhanced tumour progression in byn>RasG12V hindguts,
+mammalian CRC platform, we investigated whether glucuroni-
+resulting in increased animal lethality (Fig. 3a); control animals
+dation promotes trametinib resistance in a mouse VilCreERT²,
+were not affected (Supplementary Fig. S2a). Importantly, HDS
+Apcf¹/f, Trp53f¹/f¹ transgenic cell line derived from the
+upregulated the level of released UDP, suggesting that HDS
+small intestine. This "AKP" tumour organoid exhibited a high
+promoted trametinib resistance at least in part by elevating
+level of released UDP in the present of trametinib (Fig. 4a).
+glucuronidation pathway activity (Fig. 3b).
+Consistent with our Drosophila results, adding the key glucur-
+These results raised the question as to whether HDS directs
+onidation pathway substrate UDP-Glc to the media inhibited
+drug resistance due to its impact on glucuronidation levels vs.
+response to high-dose trametinib (20 nM) in AKP tumour
+tumour progression. Inhibiting the activity of glucuronidation
+organoids (Supplementary Fig. S3a).
+pathway by knockdown of key glucuronidation enzymes Sgl or
+AKP organoids proved moderately sensitive to trametinib
+GlcAT-P almost entirely suppressed the ability of HDS to reduce
+(Fig. 4b-f). Suppressing glucose uptake with (i) the GLUT1/GLUT4
+trametinib efficacy; knockdown of either enzyme had no effect in
+inhibitor fasentin or (ii) the Pi3k/Akt inhibitors LY294002 and
+the absence of trametinib (Fig. 3c). Inhibiting glucuronidation
+alpelisib significantly increased trametinib sensitivity. Single
+pathway activity did not impact control animals including in the
+agents had no effect on tumour organoid expansion (Fig. 4b-d,
+presence of HDS plus trametinib (Supplementary Fig. S2a). These
+Supplementary Fig. S3b-g). These data suggest that elevated
+data suggest that glucose uptake promotes trametinib resistance
+glucuronidation pathway activity can suppress AKP organoids'
+primarily by enhancing the glucuronidation pathway.
+response to trametinib.
+PI3K/AKT signalling is required for enhancing glucuronidation
+Glucuronidation was blocked by targeting deacetylation or
+pathway activity
+reducing blood glucose
+The Pi3k/Akt signalling pathway, initiated by Ras, plays an
+Interfering with regulatory steps in the glucuronidation path-
+important role in regulating glucose uptake in mammalian cells
+way including Pi3K signalling and glucuronidation enzymes
+by activating AS160 [27]. Previous work demonstrated that HDS
+elevated trametinib activity in our CRC models. However,
+enhances glucose uptake by increasing the levels of phosphory-
+combining inhibition of these pathways with inhibition of MEK
+lated Akt (pAkt) in normal Drosophila [28]. In byn>Ras hindgut
+can lead to unwanted and significant toxicity [21, 30-34]. In
+tumours, HDS administration similarly resulted in elevated Pi3k
+cancer patients, glucuronidation of trametinib occurs in a two-
+activity, as indicated by increased pAkt levels (Fig. 3d). Interest-
+step process: deacetylation followed by glucuronidation of two
+ingly, hindgut tumours in byn > RAP, even without HDS treatment,
+distinct moieties [22]. Histone deacetylases (HDACs) deacety-
+exhibited significantly higher pAkt levels compared to
+late both histone proteins and non-histone cellular substrates
+byn>RasG¹²V alone. This suggests that reduction of Apc plus P53
+that govern a wide array of disease processes including tumour
+amplifies Ras-dependent Pi3k activity, phenocopying the effects of
+progression and tumour therapy, and HDAC inhibitors are a
+HDS (Fig. 3d). Further, knockdown of Akt or the AS160 ortholog Plx
+staple of cancer treatment [35, 36]. We therefore used both
+in byn > RAP tumours strongly reduced both glucuronidation
+genetics and drugs to assess whether blocking deacetylation
+pathway activity-based on decreased levels of released UDP-
+could provide a clinically accessible target to reducing
+and resistance to trametinib (Figs. 1a and 3f-i).
+trametinib glucuronidation.
+Loss of Apc leads to cytoplasmic accumulation of ß-catenin,
+Knockdown of the Drosophila deacetylase HDAC1 significantly
+activating Wnt/B-catenin signalling [29]. Overexpressing a
+suppressed trametinib glucuronidation in byn > RAP animals as
+constitutively active ß-catenin ortholog, Arm (ArmᶜA), signifi-
+determined by reduced UDP release (Fig. 5a). The result was
+cantly boosted both Pi3k and glucuronidation pathway activities
+significantly increased sensitivity to trametinib and improved
+in the presence of RasG¹²V. This resulted in trametinib resistance
+rescue of byn > RAP survival (Fig. 5b). Similarly, co-feeding
+in normally sensitive byn>RasG¹²V tumours (compare Fig. 3e, j, k
+byn > RAP animals with the drug vorinostat (SAHA)-a clinically
+with Fig. 1a). Control animals were not affected (Supplementary
+relevant HDAC inhibitor that binds to the active site of histone
+Fig. S2b).
+deacetylases [37]-significantly reduced trametinib resistance.
+These data indicate that pairing elevated Ras plus Wnt pathway
+Vorinostat had no detectable effect as a single agent (Fig. 5c).
+activities promotes trametinib resistance by (i) promoting glucose
+This suggests that deacetylation is indeed required for glucur-
+uptake in a Pi3K/Akt dependent manner, which in turn (ii)
+onidation and for trametinib resistance in byn > RAP flies. We also
+enhances glucuronidation pathway activity and (iii) resistance to
+examined histone acetyltransferases (HATs), which suppress the
+trametinib. Consistent with this view, pharmacological inhibition
+HDAC enzymes responsible for adding acetyl groups. Knockdown
+of Pi3K/Akt with the compound LY294002 significantly increased
+of Drosophila P300 histone acetyltransferase nejire (nej) signifi-
+trametinib sensitivity in byn > RAP animals (Supplementary Fig.
+cantly suppressed trametinib sensitivity in byn>RasG¹²⁾ tumours,
+S2c) at doses that did not impact control animals (Supplementary
+while it did not affect tumour induced lethality (Supplementary
+Fig. S2d).
+Fig. S4b).
+Oncogene
+SPRINGER NATURE
+B. Cong et al.
+6
+a
+b
+c
+Pentose phosphate Pathway
+300;
+ns
+**
+200
+(RAP+tram VS. RasG¹²V+tram)
+α-D-glucose
+% adult survival vs. control (%)
+ns
+*
+ATP
+200
+Hex-A, Hex-C
+% adult survival vs. control (%)
+150
+ADP + α-D-glucose 6p
+100
+100
+:
+ß-D-glucose 6p
+50
+NADP+
+G6PDH (Zw)
+0
+0
+tram
++
++
+NADPH + D-glucono-1,5-lactone-6p
+tram
++
++
+Control
+Control
+RAP
+RAP
+ZW-RNAI
+ZW-RNAI
+Rpi-RNAi
+RPi-RNAi
+D-gluconate-6p
+Pgd-RNAi
+NADP+
+6PGDH (Pgd)
+RAP
+NADPH + D-ribulose-5p
+e
+RPIA (Rpi)
+200
+ns
+D-ribose-5p
+d
+150
+200
+ns
+% adult survival vs. control (%)
+150
+% adult survival vs. control (%)
+100
+100
+50:
+50
+0
+0
+tram
+-
++
++
+tram
++
++
+D-ribulose-5p
+-
++
+-
++
+D-ribulose-5p
+-
++
+Ras
+G12V
+Control
+f
+g
+2.5
+h
+2.51
+ns
+41
+*
+**
+2.0
+2.0
+3:
+Released UDP level
+(normalized to cell number)
+Released UDP level
+(normalized to cell number)
+1.5
+Released UDP level
+1.5
+2:
+1.0
+(normalized to cell number)
+1.0
+1
+0.5
+0.5
+0.0
+0.0
+0
+D-ribulose-5p
+-
++
+GFP
+POU-RNAI
+GFP
+Pgd-RNAi
+RAP+tram
+RAP+DMSO
+Fig. 2 Pentose phosphate pathway enhanced trametinib resistance by promoting glucuronidation pathway. The pentose phosphate
+pathway was increased in RAP tumours compared with Ras G12V tumours and enhanced glucuronidation of trametinib. a An overview of the
+pentose phosphate pathway. b-e Percent survival of control or tumour flies to adulthood relative to control fly was quantified in the present
+or absence of trametinib (1 µM), D-ribulose-5p (50 µM). b Pgd-RNAi (+DMSO n = 16; +tram n = 16) or RAP +Pgd-RNAi (+DMSO n = 10; +tram
+n = 9), c RAP + Zw-RNAi (+DMSO n = 12; +tram n = 11) or RAP +Rpi-RNAi (+DMSO n = 19; +tram n = 19), d RasG¹²V (+DMSO n = 12; +D-
+ribulose-5p n = 12; +tram n = 12; +tram/D-ribulose-5p n = 12), e Control (+tram n = 12; +tram/D-ribulose-5p n = 12). f-h Released UDP
+analysis of RasG¹²V (+tram n = 14; +tram/D-ribulose-5p n = 14) (f), RAP + GFP (+tram n = 14) or RAP +Pgd-RNAi (+tram = 14) (g), RAP + GFP
+(+ DMSO n = 21) or RAP +Pgd-RNAi (+DMSO n = 21) (h) in the present or absence of trametinib (1 µM), D-ribulose-5p (50 µM) in fly hindguts.
+Experiments were performed at 29 °C (b, c) or 27 °C (d-h). Error bar is a standard deviation (SD). N.S P( > 0.12), *P(0.033), **P(0.002), ***P(0.001),
+and ****P( < 0.0001). P-values ≤ 0.033 were considered significant. All statistical data were summarized in Supplementary Table S2.
+SPRINGER NATURE
+Oncogene
+B. Cong et al.
+7
+a
+b
+c
+ns
+3.0-
+*
+ns
+200:
+***
+250
+***
+***
+***
+***
+% adult survival vs. control (%)
+200
+150
+50.
+Released UDP level
+(normalized to cell number)
+2.0-
+% adult survival vs. control (%)
+150
+100
+100
+50
+1.0
+0
+0
+tram
++
++
+GFP Sgl-RNAi
+RNAi
+sucrose
+-
+0.3
+-
+0.3
+0.0
+(M)
+RasG¹²V
+sucrose
+-
+0.3
+d
+(M)
+tram
+DMSO
+pAkt
+e
+RasG¹²V+0.3M sucrose
+pAkt
+Akt
+Akt
+f
+g
+h
+a-tubulin
+a-tubulin
+1.5
+**
+200
+sucrose
++
+WT Rassamca
+250
+ns
+***
+Rass12V
+R
+% adult survival vs. control (%)
+200
+150
+e'
+150
+4]
+Released UDP level
+(normalized to cell number)
+1.0
+100
+100
+3
+50:
+% adult survival vs. control (%)
+0.5
+50
+Normalized intensity of anti-pAkt
+VS Control in fly hindguts
+0
+2
+GFP
+AKA-RNAi
+GFP
+AKA-RNAi
+0
+DMSO
+tram
+0.0
+1
+DMSO
+tram
+GFP
+Akt-RNAi
+RAP+AS160-RNAi
+RAP
+0
+RAP+tram
+Rass12V
+Rasonzv
+1.5
+j
+k
+**
+4.0
+100
+3.0;
+80
+ns
+1.0
+Released UDP level
+(normalized to cell number)
+Released UDP level
+(normalized to cell number)
+60
+2.0
+40
+0.5
+1.0:
+% adult survival vs. control (%)
+20
+0.0
+0
+0.0
+RasG12V
+Armca
+Rasuma
+tram
+-
++
+GFP AS160-RNAi
+RasG¹²V+ArmᶜA
+RAP+tram
++tram
+Together, this data supports a model in which deacetylation is
+This suggests that, while deacetylation is a necessary first step for
+indeed required for glucuronidation of trametinib, providing
+glucuronidation of trametinib, it likely does not account for the
+an accessible point of interference. Of note, unlike glucuronida-
+differential drug sensitivity observed between byn>RasG¹²V and
+tion, the baseline activity of HDAC did not significantly differ
+byn > RAP animals.
+between byn>Ras and byn > RAP hindguts as assessed by a cell
+We also examined the impact of a competitor drug. Similar to
+permeable, fluorescent HDAC substrate (Supplementary Fig. S4a).
+trametinib, the acetamide-based drug phenacetin is modified by
+Oncogene
+SPRINGER NATURE
+B. Cong et al.
+8
+Fig. 3 Pi3K/Akt signalling induces trametinib resistance by enhancing glucuronidation in Drosophila. Upregulation of Wnt signalling
+enhanced glucose uptake in a Pi3K/Akt-dependent manner, thereby increasing glucuronidation of trametinib. a, C, f, h, k Percent survival of
+transgenic flies to adulthood relative to control flies was quantified in the present or absence of trametinib (1 µM), sucrose, error bar is a
+standard deviation (SD). a RasG¹²V (+DMSO n = 24; +sucrose = 18; +trametinib n = 24; +tram/sucrose = 12); c RasG¹²V + GFP (+tram/
+sucrose = 20), RasG¹²V+Sgl-RNAi (+DMSO/sucrose = 21; +tram/sucrose = 17) and RasG¹²V +GlcAT-P-RNAi (+DMSO/sucrose = 14; +tram/
+sucrose = 15); f RAP + GFP (+ DMSO n = 5; +tram n = 8), RAP +Akt-RNAi (+DMSO n = 8; +tram n = 10); h RAP + AS160-RNAi (+DMSO n = 12;
++tram = 12); k RasG¹²V +ArmᶜA (+DMSO n = 20; +tram n = 20) were induced in Drosophila hindguts. d, e Western blot analysis of Drosophila
+hindguts pAkt and Akt levels in RasG¹²V, RAP, Control, ArmᶜA, or RasG¹²V +ArmᶜA with or without sucrose. e' The median normalised intensity of
+anti-pAKT in hindguts in each genotype compared with Control, error bar is a 95% confidence interval for the median, n = 3. g, i, j Released
+UDP analysis of RAP + GFP (+tram = 5), RAP +Akt-RNAi (+tram = 5) (g); RAP + GFP (+tram = 6), RAP + AS160-RNAi (+tram n = 6) (i); RasG¹²V
+(+tram = 4), ArmᶜA (+tram = 4) or RasG¹²V +ArmᶜA (+tram = 4) (j) with trametinib in Drosophila hindguts, error bar is a standard deviation
+(SD). Transgene expression was induced in Drosophila hindguts by a byn-GAL4 driver. Increased dietary sugar led to increased glucuronidation
+and reduced trametinib activity, while targeting glucuronidation enzymes or Pi3K pathway activity strongly potentiated trametinib activity.
+Experiments were performed at 27 (a-e, g and i-k) or 29 °C (f and h). N.S P( > 0.12), *P(0.033), **P(0.002), ***P(0.001), and ****P( 0.0001). P-
+values ≤ 0.033 were considered significant. All statistical data were summarized in Supplementary Table S2.
+a
+b
+c
+2.5
+***
+***
+***
+***
+150
+*
+150
+***
+ns
+ns
+2.0
+ns
+**
+***
+***
+Released UDP level
+(normalized to cell number)
+100;
+100
+1.5
+Survival (%)
+Survival (%)
+1.0
+50
+50
+0.5
+0
+0
+tram
+-
++
+-
++
+tram
++
+-
+-
++
+0.0
+fasetin
+-
+-
++
++
+LY294002
+-
+-
++
++
+tram
+-
+5nM
+10nM
+AKP
+AKP
+AKP
+d
+e
+***
+f
+DMSO
+8µM LY294002
+***
+150
+**
+150
+***
+10X
+ns
+ns
+**
+***
+***
+***
+100
+Survival (%)
+100.
+AKP
+Survival (%)
+50
+50:
+5nM tram
+tram+LY294002
+0
+0
+tram
++
+-
+-
++
+tram
+-
++
+-
++
+vorinostat
+-
+-
++
++
+phenacetin
+-
+-
++
++
+AKP
+AKP
+Fig. 4 Deacetylation, glucuronidation lead to trametinib resistance in mouse AKP organoids. Glucuronidation contributed to trametinib
+resistance in mouse AKP organoids. a Released UDP analysis of mouse AKP organoids in the present of trametinib. b, C, e, f Percent survival of
+AKP organoids relative to control was quantified in the present or absence of trametinib (5 nM), fasentin (30 µM), LY294002 (8 µM), vorinostat
+(0.5 µM) or phenacetin (100 µM). Error bar is a standard deviation (SD), n = 4. Data points display technical replicates. d Representative images
+showing the impact of drugs on AKP organoids, magnification 10X. Targeting glucuronidation led to increased effectiveness of trametinib. N.S
+P( > 0.12), *P(0.033), **P(0.002), ***P(0.001), and 0.0001). P-values ≤ 0.033 were considered significant. All statistical data were
+summarized in Supplementary Table S2.
+deacetylation and glucuronidation [38]. Administered as a single
+patients [22], byn > RAP animals require a two-step modification to
+agent, phenacetin had no effect on byn > RAP survival (Fig. 5e).
+suppress trametinib: deacetylation followed by glucuronidation.
+However, combining trametinib with phenacetin alleviated drug
+Also, inhibiting the key glucuronidation pathway enzyme Sgl by
+resistance to rescue animals in a dose-dependent manner
+targeted knockdown significantly increased byn > RAP sensitivity to
+(Fig. 5d). This data further supports the view that, similar to human
+MEK inhibitors binimetinib and selumetinib (Fig. 6a). Unlike
+SPRINGER NATURE
+Oncogene
+B. Cong et al.
+9
+a 1.5
+b
+c
+*
+150
+150
+****
+***
+ns
+100
+ns
+***
+1.0
+100
+Released UDP level
+(normalized to cell number)
+% adult survival vs. control (%)
+50
+% adult survival vs. control (%)
+50
+0.5
+0
+0
+DMSO
+tram
+tram
++
++
+0.0
+vorinostat
+-
+0.5
+-
+0.5
+GFP
+HDAC1-RNA
+RAP+HDAC1-RNAi
+(µM)
+RAP
+ns
+d
+RAP+tram
+e
+k
+*
+*
+***
+150
+*
+ns
+150
+ns
+5
+*
+ns
+% adult survival vs. control (%)
+% adult survival vs. control (%)
+***
+ns
+ns
+*
+100
+ns
+100
+ns
+ns
+50
+ns
+The average of HPZ size
+(hindgut proliferation zone)
+4
+3
+2
+50
+1
+0
+0
+0
+tram
++
++
++
++
++
+tram
+tram
+-
++
++
+phenacetin
+-
+5
+10
+15
+20
+phenacetin
+-
+5
+10
+15
+20
+vorin
+-
++
++
+(µM)
+(µM)
+RAP
+RAP
+Control
+RAP
+Control
+RAP+DMSO
+RAP+tram
+RAP+vorinostat
+RAP+tram +vorin
+g
+h
+HPZ
+1mm
+f'
+g
+h'
+i'
+j'
+HPZ
+DAPI
+f"
+h"
+i"
+HPZ
+GFP
+trametinib, binimetinib and selumetinib undergo direct glucuroni-
+reduce glucose in Drosophila [39]. In byn > RAP tumours, acarbose
+dation without an initial deacetylation step, and vorinostat was
+significantly enhanced sensitivity to multiple drugs (Fig. 6b);
+ineffective when paired with either drug.
+feeding acarbose alone did not impact tumour growth (Fig. 6c).
+To further target precursors required for glucuronidation we
+These data suggest that suppression of blood glucose levels
+administered acarbose, an oral alpha-glucosidase inhibitor used in
+provides an additional practical and potent strategy to counteract
+managing type 2 diabetes mellitus and previously shown to
+drug metabolism within tumour cells.
+Oncogene
+SPRINGER NATURE
+B. Cong et al.
+10
+Fig. 5 HDAC1 is required for glucuronidation of trametinib in Drosophila. Trametinib was deacetylated by HDAC1 in Drosophila. a Released
+UDP analysis of RAP + GFP (+tram n = 6) or RAP + HDAC1-RNAi (+tram n = 6) with trametinib in Drosophila hindguts. b-e Percent survival of
+adult tumour flies relative to control flies was quantified in the present or absence of trametinib (1 µM), vorinostat (0.5 µM) or phenacetin.
+b RAP + HDAC1-RNAi (+DMSO = 12; +tram n = 10), c-e RAP (+ DMSO n = 18; +vorinostat = 12; +tram = 18; +tram/vorinostat = 18) (c);
+RAP (+tram = 12; +tram/5 phenacetin = 12; +tram/10 phenacetin = 12; +tram/15 µM phenacetin = 12; +tram/20 µM
+phenacetin n = 12) (d); RAP (+DMSO n = 12; +5 µM phenacetin n = 12; +10 µM phenacetin n = 12; +15 µM phenacetin n = 12; +20 µM
+phenacetin n = 12) (e). Reduced HDAC activity led to reduced trametinib-dependent UDP release. f-j Images of the digestive tract of third
+instar larvae in the present or absence of trametinib (1 µM), vorinostat (0.5 µM) which include the hindgut proliferation zone (HPZ). Nuclei are
+visualized with 4',6-diamidino-2-phenylindole (DAPI) staining, hindgut is marked by GFP. Scale bar 1 mm. k The average of hindgut
+proliferation zone (HPZ) size was measured by Fiji ImageJ and quantified as relative size to control hindgut. Control (n = 7), RAP (+DMSO
+n = 12; +vorinostat n = 7; +tram n = 12; +tram/vorinostat = 11). Experiments were performed at (a, c and d-k) or (b). Error bar is
+a standard deviation (SD). N.S P( > 0.12), *P(0.033), **P(0.002), ***P(0.001), and 0.0001). P-values 0.033 were considered significant. All
+statistical data were summarized in Supplementary Table S2. Transgene expression was induced in Drosophila hindguts by a byn-GAL4 driver.
+Reducing deacetylation/glucuronidation with vorinostat increased trametinib's ability to rescue hindgut size.
+The impact of glucuronidation on drug response extended
+three-mutation combination reported for CRC patients. Expanding
+beyond animal survival. Targeting the hindgut proliferative
+this network, we demonstrate that-compared with byn>RasG¹²
+zone (HPZ) in byn > RAP animals led to significant overgrowth
+tumours-pentose phosphate pathway (PPP) is elevated in
+compared to control animals (Fig. 5g compared to 5 f,
+byn > RAP tumours, leading to reduced trametinib sensitivity by
+quantified in 5k). Consistent with our adult survival assay,
+enhancing the activity of glucuronidation pathway. Therefore, it
+inhibiting deacetylation (vorinostat) in the presence of
+will be interesting to explore the molecular link between PPP and
+trametinib significantly suppressed overgrowth of the HPZ in
+glucuronidation in future studies. Our findings indicate that
+byn > RAP tumours; trametinib or vorinostat alone did not have
+glucuronidation-a major drug detoxification pathway-is upre-
+a strong effect (Fig. 5h-j compared to 5 g, quantified in 5k).
+gulated in the context of oncogenic transformation and that this
+Together, our data indicate that the activity of the glucur-
+regulation is reversible by intervening at several points along the
+onidation pathway is enhanced by reducing Apc plus P53
+network. Future work will need to determine whether similar
+activities in genotypically byn > RASG¹²V hindguts, leading to
+mechanisms are exploitable in patients, who have additional
+emergent drug resistance.
+mutations that can alter tumour networks as well as drug
+targeting.
+Altering glucuronidation impacted drug response in mouse
+More than 70 therapeutic agents have been reported as
+organoids
+metabolised by glucuronidation. Glucuronidation has been
+Our findings extended to Apcf¹ƒ, KrasG¹²D/⁺, Trp53fl/fl (AKP) mouse
+considered as a potential target of anticancer drug resistance
+organoids. Similar to our Drosophila models, inhibiting trametinib
+including for colon cancer [21, 40], but mechanisms for regulating
+deacetylation by HDAC inhibitor (vorinostat) or via a competing
+the pathway have been unclear and the large number of UDP-
+substrate (phenacetin) also significantly suppressed trametinib
+glucuronosyltransferases (UGTs) has made them poor candidates
+resistance in mouse AKP tumour organoids; again, single agents
+for targeting the pathway. Our study demonstrates that elevated
+had no effect in the absence of trametinib (Fig. 4e, f,
+Ras/Erk plus Wnt/ß-catenin signalling upregulates Pi3K/Akt/Glut1
+Supplementary Fig. S3e, h). These data indicate that, similar to
+activity: the result is increased glucose uptake, enhanced
+fly RAP, deacetylation and glucuronidation are required for
+glucuronidation, and emergent drug resistance in byn>RasG12V
+trametinib resistance in mouse AKP tumour organoids. HDAC
+tumours (Fig. 6d). Therapeutic targets include members of the
+inhibitors are well tolerated in the clinics, and this data provides a
+WNT/ß-catenin and PI3K/AKT pathways; for drugs such as
+clinically accessible route to blocking glucuronidation of drugs
+trametinib that require an initial deacetylation step, we demon-
+such as trametinib that require a two-step modification.
+strate the utility of HDAC inhibitors such as vorinostat as adjunct
+therapeutics in preclinical models. We hypothesise that this leads
+to a functional reduction of RAS pathway signalling and tumour
+DISCUSSION
+progression.
+Drug resistance in KRAS-dependent CRC patients remains one of
+This two-step glucuronidation process also suggests a mechan-
+the cancer field's most persistent challenges. In this study, we
+ism by which trametinib remains stable-but-inactive in the body:
+demonstrate a mechanism by which CRC tumours achieve
+initial rapid deacetylation of trametinib keeps a metabolite in
+resistance to targeted therapies by elevating glucuronidation-
+circulation until a slower glucuronidation step leads to its
+mediated drug metabolism. We focused on trametinib, a potent
+clearance. This view is consistent with previously described
+MEK inhibitor that consistently failed to show significant clinical
+distribution of trametinib metabolites in patients [22],and could
+efficacy in KRAS-mutant CRC patients. We confirmed previous
+explain trametinib's persistence in the body despite poor
+observations [22] that trametinib is first deacetylated to prepare
+effectiveness.
+the drug for glucuronidation, which in turn resulted in inactiva-
+Increased glucose uptake is a characteristic of cancer cells, and
+tion/elimination of trametinib in a byn > RAP hindgut tumour
+aerobic glycolysis efficiently produces ATP synthesis that pro-
+model. This upregulation of glucuronidation pathway activity was
+motes cell proliferation, known as the Warburg effect [41].
+achieved by elevated Ras plus Wnt pathway activities in RAP
+Glycolysis also influences drug response including chemother-
+tumours, which in turn increased glucose uptake in a Pi3K/Akt-
+apeutics, immune checkpoint inhibitors and small molecule
+dependent manner.
+therapeutics through induction of autophagy, epithelial-
+Blocking the Ras-Wnt-Pi3K-deacetylation/glucuronidation net-
+mesenchymal transition (EMT), and by enhancing glycolytic
+work at any one of several points along the network strongly
+enzymes impact on nonenzymatic activities [41, 42]. Our data
+suppressed drug resistance in byn > RAP tumours (Fig. 6d). For
+show that the high levels of glucose in transformed cells can also
+example, we provide evidence that trametinib is deacetylated by
+activate glucuronidation pathway activity, enhancing drug meta-
+Histone Deacetylase 1 (HDAC1); combining trametinib with the
+bolism in canonical RAS-APC-P53 CRC tumours. Of note, a high
+HDAC1 inhibitor vorinostat proved potent in both Drosophila and
+sugar diet was sufficient to activate glucuronidation in RasG¹²V
+mouse RAS-APC-P53 CRC models, addressing the most frequent
+tumours, suggesting that high sugar diets can directly impact a
+SPRINGER NATURE
+Oncogene
+B. Cong et al.
+11
+**
+c
+150
+ns
+ns
+*
+% adult survival vs. control (%) a
+ns
+150
+100
+50
+% adult survival vs. control (%) σ
+150
+**
+*
+200
+ns
+**
+***
+100
+% adult survival vs. control (%)
+100
+50
+50
+0
+0
+binimetinib
+-
++
++
+-
+binimetinib
+-
+-
++
++
+0
+selumetinib
++
+selumetinib
++
++
++
+acarbose
+-
++
++
+GFP
+Sgl-RNAi
+GFP
+Sgl-RNAI
+GFP
+acarbose
+-
+-
++
+Sgl-RNAI
+RAP
+RAP
+RAP
+d
+gluc
+tram
+glucose
+PI3K-AKT AS160 GLUT C)
+HEX-A/C
+UGP
+RAS+APC⁻/+
+UGDH
+UGT
+MEK
+glucuronidation
+UDP
+gluc
+P300
+tram
+tram
+HDAC1
+T
+vorinostat
+Fig. 6 Reducing blood glucose levels suppressed drug resistance in RAP tumours. Reducing blood glucose levels by feeding acarbose
+suppressed the glucuronidation of trametinib. a-c Percent survival of control or tumour flies to adulthood relative to control fly was quantified
+in the present or absence of binimetinib (8 µM), selumetinib (8 µM), or acarbose (15 µM). a RAP (+ DMSO n = 7; +binimetinib n = 20;
++selumetinib n = 18) or RAP +Sgl-RNAi (+DMSO n = 8; +binimetinib n = 21; +selumetinib n = 20), b RAP (+selumetinib n = 12; +selumetinib/
+acarbose n = 12; -binimetinib n = 12; +binimetinib/acarbose). c RAP (+ DMSO n = 12; +acarbose n = 12). a-c Experiments were performed at
+27 °C. Error bar is a standard deviation (SD). N.S P( > 0.12), *P(0.033), **P(0.002), P(0.001), and < 0.0001). P-values ≤ 0.033 were
+considered significant. All statistical data were summarized in Supplementary Table S2. d Schematic summary. Trametinib (tram) is a potent
+MEK inhibitor with the demonstrated preclinical ability to block RAS pathway signalling and oncogenic transformation. Pairing activated RAS
+and WNT activities leads to activation of PI3K/AKT signalling, AS160, and GLUT1/4 to increase glucose flux into cells. The result is elevated
+glucuronidation and elimination of trametinib. Potential therapeutic targets include HDAC1: deacetylation is an obligatory pre-step required
+for glucuronidation of some drugs including trametinib. This reaction can be reversed by P300.
+patient's response to anticancer drugs. We found that reducing
+providing a practical strategy to counteract drug metabolism
+blood glucose levels by the administration of type 2 diabetes
+within tumour cells that elevate RAS/WNT.
+mellitus drug acarbose significantly enhanced sensitivity to MEK
+In summary, our study suggests multiple points to target along
+inhibitors trametinib, binimetinib and selumetinib in RAP tumours,
+the emergent RAS-WNT-glucuronidation network for re-sensitizing
+Oncogene
+SPRINGER NATURE
+B. Cong et al.
+12
+tumours to targeted therapies, providing insight into the long-
+24. Hirabayashi S, Baranski TJ, Cagan RL. Transformed drosophila cells evade diet-
+observed difference between genetic and chemical deletion of a
+mediated insulin resistance through wingless signaling. Cell. 2013;154:664-75.
+therapeutic target as well as preclinical and clinical models that
+25. Hirabayashi S, Cagan RL. Salt-inducible kinases mediate nutrient- sensing to link
+differ in genomic complexity.
+dietary sugar and tumorigenesis in Drosophila. Elife. 2015;4:e08501.
+26. Newton H, Wang YF, Camplese L, Mokochinski JB, Kramer HB, Brown AEX, et al.
+Systemic muscle wasting and coordinated tumour response drive tumourigen-
+esis. Nat Commun. 2020;11:4653.
+DATA AVAILABILITY
+27. Cartee GD, Wojtaszewski JFP. Role of Akt substrate of 160 kDa in insulin-
+All raw data are available from the corresponding author upon request.
+stimulated and contraction-stimulated glucose transport. Applied Physiol, Nutr
+Metab. 2007;32:557-66.
+28. Na J, Musselman LP, Pendse J, Baranski TJ, Bodmer R, Ocorr K, et al. A dro-
+REFERENCES
+sophila model of high sugar diet-induced cardiomyopathy. PLoS Genet.
+1. Cagir A, Azmi AS. KRAS G12C inhibitors on the horizon. Future Med Chem.
+2013;9:e1003175.
+2019;11:923-5.
+29. Munemitsu S, Albert I, Souza B, Rubinfeld B, Polakis P. Regulation of intracellular
+2. Caponigro G, Sellers WR. Advances in the preclinical testing of cancer therapeutic
+beta-catenin levels by the adenomatous polyposis coli (APC) tumor-suppressor
+hypotheses. Nat Rev Drug Discov. 2011;10:179-87.
+protein. Proc Natl Acad Sci. 1995;92:3046-50.
+3. Bangi E, Murgia C, Teague AGS, Sansom OJ, Cagan RL. Functional exploration of
+30. Shimizu T, Tolcher AW, Papadopoulos KP, Beeram M, Rasco DW, Smith LS, et al.
+colorectal cancer genomes using Drosophila. Nat Commun. 2016;7:13615.
+The clinical effect of the dual-targeting strategy involving PI3K/AKT/mTOR and
+4. Bangi E, Ang C, Smibert P, Uzilov AV, Teague AG, Antipin Y, et al. A personalized
+RAS/MEK/ERK pathways in patients with advanced cancer. Clin Cancer Res.
+platform identifies trametinib plus zoledronate for a patient with KRAS-mutant
+2012;18:2316-25.
+metastatic colorectal cancer. Sci Adv. 2019;5:eaav6528.
+31. Tolcher AW, Patnaik A, Papadopoulos KP, Rasco DW, Becerra CR, Allred AJ, et al.
+5. Holohan C, Schaeybroeck S, Van, Longley DB, Johnston PG. Cancer drug resis-
+Phase I study of the MEK inhibitor trametinib in combination with the AKT
+tance: an evolving paradigm. Nat Rev Cancer. 2013;13:714-26.
+inhibitor afuresertib in patients with solid tumors and multiple myeloma. Cancer
+6. Kukal S, Guin D, Rawat C, Bora S, Mishra MK, Sharma P, et al. Multidrug efflux
+Chemother Pharm. 2015;75:183-9.
+transporter ABCG2: expression and regulation. Cell Mol Life Sci.
+32. Bedard PL, Tabernero J, Janku F, Wainberg ZA, Paz-Ares L, Vansteenkiste J, et al. A
+2021;78:6887-939.
+Phase lb dose-escalation study of the oral pan-PI3K inhibitor buparlisib (BKM120)
+7. Hallin J, Engstrom LD, Hargi L, Calinisan A, Aranda R, Briere DM, et al. The
+in combination with the oral MEK1/2 inhibitor trametinib (GSK1120212) in
+KRASG12C inhibitor MRTX849 provides insight toward therapeutic susceptibility
+patients with selected advanced solid tumors. Clin Cancer Res. 2015;21:730-8.
+of KRAS-mutant cancers in mouse models and patients. Cancer Discov.
+33. Grilley-Olson JE, Bedard PL, Fasolo A, Cornfeld M, Cartee L, Razak ARA, et al. A
+2020;10:54-71.
+phase lb dose-escalation study of the MEK inhibitor trametinib in combination
+8. Canon J, Rex K, Saiki AY, Mohr C, Cooke K, Bagal D, et al. The clinical KRAS(G12C)
+with the PI3K/mTOR inhibitor GSK2126458 in patients with advanced solid
+inhibitor AMG 510 drives anti-tumour immunity. Nature. 2019;575:217-23.
+tumors. Invest N. Drugs. 2016;34:740-9.
+9. Biller LH, Schrag D. Diagnosis and treatment of metastatic colorectal cancer: a
+34. Shapiro Gl, LoRusso P, Kwak E, Pandya S, Rudin CM, Kurkjian C, et al. Phase lb
+review. JAMA J Am Med Assoc. 2021;325:669-85.
+study of the MEK inhibitor cobimetinib (GDC-0973) in combination with the PI3K
+10. Coupez D, Hulo P, Touchefeu Y, Denis MG, Bennouna J. KRAS mutations in
+inhibitor pictilisib (GDC-0941) in patients with advanced solid tumors. Invest N
+metastatic colorectal cancer: from a de facto ban on anti-EGFR treatment in the
+Drugs. 2020;38:419-32.
+past to a potential biomarker for precision medicine. Expert Opin Biol Ther.
+35. Glozak MA, Seto E. Histone deacetylases and cancer. Oncogene. 2007;26:5420-32.
+2021;21:1325-34.
+36. Li Y, Seto E. HDACs and HDAC inhibitors in cancer development and therapy.
+11. An Y, Zhou J, Lin G, Wu H, Cong L, Y, et al. Clinicopathological and molecular
+Cold Spring Harb Perspect Med. 2016;6:a026831.
+characteristics of colorectal signet ring cell carcinoma: a review. Pathology Oncol
+37. Lee JH, Mahendran A, Yao Y, Ngo L, Venta-Perez G, Choy ML, et al. Development
+Res. 2021;27:1609859.
+of a histone deacetylase 6 inhibitor and its biological effects. Proc Natl Acad Sci
+12. Fearon ER, Vogelstein B. A genetic model for colorectal tumorigenesis. Cell.
+USA. 2013;110:15704-9.
+1990;61:759-67.
+38. Croisy A, Friesen M, Bartsch H. Species-specific activation of phenacetin into
+13. Boutin AT, Liao WT, Wang M, Hwang SS, Karpinets TV, Cheung H, et al. Oncogenic
+bacterial mutagens by hamster liver enzymes and identification of
+Kras drives invasion and maintains metastases in colorectal cancer. Genes Dev.
+n-hydroxyphenacetin o-glucuronide as a promutagen in the urine. Cancer Res.
+2017;31:370-82.
+1982;42:3201-8.
+14. Fernández-Medarde A, Santos E. Ras in cancer and developmental diseases.
+39. Oboh G, Ogunsuyi OB, Adegbola DO, Ademiluyi AO, Oladun FL. Influence of gallic
+Genes Cancer. 2011;2:344-58.
+and tannic acid on therapeutic properties of acarbose in vitro and in vivo in
+15. Nalli M, Puxeddu M, La Regina G, Gianni S, Silvestri R. Emerging therapeutic
+Drosophila melanogaster. Biomed J. 2019;42:317-27.
+agents for colorectal cancer. Molecules. 2021;26:7463.
+40. Cummings J, Ethell BT, Jardine L, Burchell B. Glucuronidation of SN-38 and NU/
+16. Infante JR, Fecher LA, Falchook GS, Nallapareddy S, Gordon MS, Becerra C, et al.
+ICRF 505 in human colon cancer and adjacent normal colon. Anticancer Res.
+Safety, pharmacokinetic, pharmacodynamic, and efficacy data for the oral MEK
+2006;26:2189-96.
+inhibitor trametinib: a phase 1 dose-escalation trial. Lancet Oncol. 2012;13:773-81.
+41. Warburg O. On the origin of cancer cells. Science. 1956;123:309-14.
+17. Falcone M, Uribe AH, Papalazarou V, Newman AC, Athineos D, Stevenson K, et al.
+42. Marcucci F, Rumio C. Glycolysis-induced drug resistance in tumors-a response
+Sensitisation of cancer cells to radiotherapy by serine and glycine starvation. Br J
+to danger signals?. Neoplasia. 2021;23:234-45.
+Cancer. 2022;127:1773-86.
+18. Bao MHR, Wong CCL. Hypoxia, metabolic reprogramming, and drug resistance in
+liver cancer. Cells. 2021;10:1715.
+19. Hirpara J, Eu JQ, Tan JKM, Wong AL, Clement MV, Kong LR, et al. Metabolic
+ACKNOWLEDGEMENTS
+reprogramming of oncogene-addicted cancer cells to OXPHOS as a mechanism
+We thank the Cagan Laboratory members, Andrew Campbell, and Justin Bower for
+of drug resistance. Redox Biol. 2019;25:101076.
+important discussions. We also thank the Bloomington Drosophila Stock Center. This
+20. Shanmugasundaram K, Nayak BK, Friedrichs WE, Kaushik D, Rodriguez R, Block K.
+work was generously supported by grants from the NIH (R01CA258736) and a Royal
+NOX4 functions as a mitochondrial energetic sensor coupling cancer metabolic
+Society Wolfson Fellowship.
+reprogramming to drug resistance. Nat Commun. 2017;8:997.
+21. Allain EP, Rouleau M, Lévesque E, Guillemette C. Emerging roles for UDP-
+glucuronosyltransferases in drug resistance and cancer progression. Br J Cancer.
+2020;122:1277-87.
+AUTHOR CONTRIBUTIONS
+22. Ho MYK, Morris MJ, Pirhalla JL, Bauman JW, Pendry CB, Orford KW, et al. Tra-
+BC, TT, AHU, and ES designed and executed experiments; SG provided Drosophila
+metinib, a first-in-class oral MEK inhibitor mass balance study with limited
+transgenic lines; OS, OM, and RC designed experiments plus provided oversight and
+enrollment of two male subjects with advanced cancers. Xenobiotica.
+funding.
+2014;44:352-68.
+23. Itoh K, Akimoto Y, Kondo S, Ichimiya T, Aoki K, Tiemeyer M, et al. Glucuronylated
+core 1 glycans are required for precise localization of neuromuscular junctions
+and normal formation of basement membranes on Drosophila muscles. Dev Biol.
+COMPETING INTERESTS
+2018;436:108-24.
+The authors declare no competing interests.
+SPRINGER NATURE
+Oncogene
+B. Cong et al.
+13
+ETHICS APPROVAL AND CONSENT TO PARTICIPATE
+Publisher's note Springer Nature remains neutral with regard to jurisdictional claims
+All procedures conformed to institutional, national, and international regulations.
+in published maps and institutional affiliations.
+Work with Drosophila, which is exempt from the UK Animals (Scientific Procedures)
+Act, was nevertheless reviewed under the University of Glasgow Drosophila
+guidelines. Derivation of Vil-CreERT2; Apcf¹/f; KrasG¹²D/⁺; Trp53fl/fl mouse intestinal
+Open Access This article is licensed under a Creative Commons
+CC
+organoids was performed in accordance with Home Office License: PPL 60/4492,
+BY
+Attribution 4.0 International License, which permits use, sharing,
+authorised by the University of Glasgow Animal Welfare and Ethical Review Body, and
+adaptation, distribution and reproduction in any medium or format, as long as you give
+conducted under the UK Animals (Scientific Procedures) Act.
+appropriate credit to the original author(s) and the source, provide a link to the Creative
+Commons licence, and indicate if changes were made. The images or other third party
+material in this article are included in the article's Creative Commons licence, unless
+ADDITIONAL INFORMATION
+indicated otherwise in a credit line to the material. If material is not included in the
+Supplementary information The online version contains supplementary material
+article's Creative Commons licence and your intended use is not permitted by statutory
+available at https://doi.org/10.1038/s41388-025-03472-3.
+regulation or exceeds the permitted use, you will need to obtain permission directly
+from the copyright holder. To view a copy of this licence, visit http://
+Correspondence and requests for materials should be addressed to Ross Cagan.
+creativecommons.org/licenses/by/4.0/.
+Reprints and permission information is available at http://www.nature.com/
+reprints
+The Author(s) 2025
+Oncogene
+SPRINGER NATURE

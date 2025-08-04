@@ -1,0 +1,2204 @@
+
+Infection and Drug Resistance
+Dovepress
+Taylor & Francis Group
+Open Access Full Text Article
+ORIGINAL RESEARCH
+Investigating the Therapeutic Mechanisms of
+Honeysuckle (China) in Sepsis Through Network
+Pharmacology and Experimental Validation
+Pingping Liu¹, Linna Zeng², Hongyun Fu³, Fuzhu Li⁴
+'Emergency Medicine Center, The First Affiliated Hospital, Hengyang Medical School, University of South China, Hengyang, Hunan, 421000, People's
+Republic of China; ²Department of Endocrinology, The Third People's Hospital of Yongzhou, Yongzhou, Hunan, 425000, People's Republic of China;
+³Department of Laboratory Medicine, The Affiliated Nanhua Hospital, Hengyang Medical School, University of South China, Hengyang, Hunan,
+421000, People's Republic of China; ⁴Department of Neurosurgery Intensive Care Unit, The First Affiliated Hospital, Hengyang Medical School,
+Infection and Drug Resistance downloaded from https://www.dovepress.com/
+University of South China, Hengyang, Hunan, 421000, People's Republic of China
+Correspondence: Fuzhu Li, Department of Neurosurgery Intensive Care Unit, The First Affiliated Hospital, Hengyang Medical School, University of
+South China, Hengyang, Hunan, 421000, People's Republic of China, Tel +86 15773435682, Email fuzhul987@163.com
+For personal use only.
+Background: Sepsis is a critical condition characterized by an atypical immune response to infection, resulting in systemic
+inflammatory response syndrome. Honeysuckle, a traditional Chinese medicinal plant with anti-inflammatory, anti-tumor, and anti-
+oxidant characteristics, shows promise in mitigating sepsis-related inflammatory responses. The precise mechanism by which
+honeysuckle confers protection against sepsis remains uncertain. This research utilized network pharmacology to explore the
+mechanisms through which honeysuckle mitigates sepsis.
+Methods: Bioactive compounds of honeysuckle were sourced from the Traditional Chinese Medicine System Pharmacology database,
+and their corresponding targets were identified. Sepsis-associated genes were gathered from the GeneCards and Online Mendelian
+Inheritance in Man databases. The regulatory network depicting "active ingredients-target" relationships was constructed utilizing
+Cytoscape 3.9.1 software. Target genes affected by honeysuckle in sepsis were analyzed utilizing the String database to create a
+protein-protein interaction network. Kyoto Encyclopedia of Genes and Genomes and Gene Ontology analyses were performed through
+the Database for Annotation, Visualization, and Integrated Discovery platform, aiming to identify pathways associated with these
+pivotal targets. Subsequently, molecular docking confirmed the binding capacity of these bioactive ingredients to pivotal targets.
+Subsequent in vitro experiments were conducted for additional validation. Network pharmacology analysis employed R software for
+extensive data processing. A Student's T-test compared the mean values of the two groups in the in vitro experimental data. Statistical
+analysis for multiple group comparisons was carried out utilizing one-way ANOVA, with Tukey's post hoc test applied for further
+analysis.
+Results: The screening process identified 23 active ingredients in honeysuckle, which are linked to 291 targets. Molecular docking
+demonstrated strong binding affinities of kaempferol, luteolin, and quercetin to the target proteins TP53, TLR4, and MYD88. In vitro
+experiments demonstrated that honeysuckle and its active components mitigate sepsis by inhibiting the TLR4/MYD88 signaling
+pathways, thereby reducing proinflammatory cytokine production.
+Conclusion: These findings indicate that honeysuckle may be an effective treatment for sepsis by modulating key proteins such as
+TP53, TLR4, and MYD88.
+Keywords: network pharmacology, sepsis, molecular docking, traditional Chinese medicine, inflammatory response syndrome
+Introduction
+Sepsis, a critical systemic inflammatory reaction to microbial invasion, is notably triggered by lipopolysaccharide (LPS). 1
+It is a systemic inflammatory response syndrome that may progress to septic shock, marked by significant mortality,
+morbidity, and treatment expenses.² When the infection triggers widespread systemic symptoms like fever, increased
+heart rate, or elevated respiratory rate, it is identified as sepsis. If the systemic response escalates and leads to organ
+Infection and Drug Resistance 2025:18 3257-3277
+3257
+Received: 12 November 2024
+cc
+© 2025 Liu et al. This work is published and licensed by Dove Medical Press Limited. The full terms of this license are available at https://www.dovepress.com/terms.php
+Accepted: 27 February 2025
+and incorporate the Creative Commons Attribution - Non Commercial (unported, v4.0) License (http://creativcommons.org/licenses/by-nc/4.0/). By accessing the work
+Published: 3 July 2025
+you hereby accept the Terms. Non-commercial uses of the work are permitted without any further permission from Dove Medical Press Limited, provided the work is properly attributed. For
+permission for commercial use of this work, please see paragraphs 4.2 and 5 of our Terms (https://www.dovepress.com/terms.php).
+Liu et al
+dysfunction remote from the infection site, the condition is classified as severe sepsis. Septic shock, on the other hand, is
+characterized by severe organ dysfunction accompanied by persistent hypotension or hypoperfusion that does not
+improve with initial fluid resuscitation. 3,4 Sepsis is a prevalent, life-threatening condition in clinical practice and a
+leading cause of death in ICU patients. Annually, sepsis impacts approximately 31.5 million individuals worldwide,
+resulting in 5.3 million deaths. 5 In China, sepsis patients have a mortality rate of 35.5%, with severe cases experiencing
+rates over 50%. 6 The management of sepsis primarily involves fluid resuscitation, antibiotics administration, antic-
+oagulation therapy, glucocorticoid usage, and renal replacement therapy; 3,7-9 however, recurrent infections and multi-
+drug resistance pose significant challenges in clinical treatment. 10-12 Recently, the utilization of Chinese herbal medicine
+in the management of sepsis has progressively emerged as a pivotal and efficacious therapeutic approach, significantly
+reducing sepsis-related mortality rates. 13-15 Sepsis falls within the domain of heat disorders in traditional Chinese
+medicine, where the Inner Canon advocates for "treating heat with coldness", thus predominantly emphasizing the
+selection of drugs that possess heat-clearing and detoxifying properties. 16,17
+Honeysuckle (Lonicera japonica Thunb)., a widely recognized traditional Chinese medicinal herb, has a rich history of
+therapeutic use. The first recorded mention appears in the Miscellaneous Records of Famous Physicians (Ming Yi Bie Lu).
+Ethnobotanically, honeysuckle is valued for its ability to clear heat, detoxify, expel wind, and eliminate dampness. 18,19
+According to the Chinese Pharmacopoeia (2020 edition), honeysuckle is described as sweet in taste and cooling properties,
+primarily acting on the stomach and lung meridians. 20,21 Its clinical applications include the treatment of febrile diseases, sore
+throats, dysentery, heat toxicity, and wind-heat colds. Morphologically, honeysuckle is a perennial, twining vine with opposite
+leaves and fragrant, tubular flowers that transition from white to yellow as they age. It is distributed across East Asia, including
+China, Japan, and Korea, thriving in temperate and subtropical climates. Recent pharmacological research indicates that
+honeysuckle exhibits anti-inflammatory, antiviral, antioxidative, antibacterial, and hepatoprotective properties. 22-24 Recent
+research indicates that honeysuckle improves the prognosis and complications of sepsis by exerting anti-inflammatory,
+improving endothelial function, improving renal injury, improving myocardial injury, and regulating gastrointestinal
+function.
+25-27
+However, the key components and specific mechanisms of honeysuckle in sepsis therapy are still unclear.
+Sepsis pathogenesis involves complex genetic and molecular changes, making it challenging for single-target therapies to
+achieve optimal outcomes. 28-30 Network pharmacology is extensively applied in traditional Chinese medicine research to
+clarify drug molecular mechanisms and aid in predicting individual drugs or compounds. 31,32 It can examine the overarching
+relationship between drugs and diseases. This study employs molecular docking and network pharmacology to identify the
+bioactive ingredients, relevant targets, and signaling pathways of honeysuckle in sepsis therapy, aiming to elucidate its
+mechanism of action and offer insights for clinical application and research.
+Methods
+Identification of Bioactive Compounds in Honeysuckle
+The active ingredients of honeysuckle were screened through the use of the Traditional Chinese Medicine System
+Pharmacology (TCMSP) database and analysis platform (https://old.tcmsp-e.com/tcmsp.php). The TCMSP platform is an
+integrated database designed to analyze the pharmacokinetic properties of compounds in Chinese herbal medicine. It
+facilitates the identification of bioactive components and their potential targets through criteria such as drug-likeness
+(DL) and oral bioavailability (OB). To identify the active ingredients, the term "honeysuckle" was searched within the
+TCMSP database. OB and DL were chosen as evaluation indicators due to their roles in the human body's metabolism,
+distribution, absorption, and excretion processes. OB denotes the proportion of a drug's effective concentration that
+reaches systemic circulation following oral administration. A higher OB indicates that the compound can be efficiently
+absorbed through the gastrointestinal tract and retain significant concentrations even after first-pass metabolism in the
+liver. Compounds with OB ≥ 30% generally ensure sufficient biological efficacy without requiring high doses, which is
+crucial for reducing toxicity and improving patient compliance. If OB is insufficient, alternative administration methods
+like injection or structural modifications might be required, leading to increased development costs and time. This
+assessment is grounded in the chemical properties of approved medications to determine if a compound adheres to
+druggability criteria, such as Lipinski's Rule of Five and Veber's Rule. Statistical analyses suggest that compounds with a
+3258
+https://doi.org/10.2147/IDR.S499975
+Infection and Drug Resistance 2025:18
+Liu et al
+DL value ≥ 0.18 are more structurally and chemically similar to known drugs. Conversely, compounds with a DL below
+0.18 may fall outside the chemical space of drugs and require extensive optimization to meet drug development
+requirements. Selecting compounds with DL ≥ 0.18 enhances the accuracy of druggability predictions, avoiding
+excessive resource allocation to potential failures during early screening. Compounds with OB ≥ 30% and DL ≥ 0.18
+are likely to possess favorable ADME properties and align with the chemical space criteria for drug development.
+Screening Targets of Honeysuckle
+The TCMSP was utilized to predict the targets of honeysuckle, which were then uploaded to the UniProt database for
+search, selecting Homo sapiens as the target species. The 2D structures of these active components saved in SDF format
+were obtained from a PubChem search for honeysuckle. The PharmMapper platform was employed to predict honey-
+suckle-related targets through reverse pharmacophore matching, which was also uploaded to the UniProt database for
+screening against human targets. Finally, the BATMAN-TCM database was used to predict high-relevance targets of
+honeysuckle by uploading its PubChem ID. The integration of these three methods facilitated the elimination of
+redundant, non-human, and unqualified targets, thereby identifying honeysuckle-related targets.
+Identification of Sepsis-Related Targets
+The databases GeneCards (https://www.genecards.org) and OMIM (https://www.omim.org) were searched using the
+keyword "Sepsis" to find target genes related to sepsis. Then, Excel software was used to summarize and analyze the
+relevant target genes corresponding to the disease, and duplicate genes were deleted to build the target database of sepsis.
+To determine the crucial intersection between honeysuckle and sepsis, the Venn website (http://bioinformatics.psb.ugent.
+be/webtools/Venn/) was employed.
+Construction of Active Ingredient-Target Network
+To identify common targets between honeysuckle and sepsis, we employed the online Venn diagram tool for visualiza-
+tion. The study identified common targets between sepsis and honeysuckle's active ingredient by intersecting their
+respective targets and visualizing the overlap using Venn diagrams. These overlapping genes indicate potential targets of
+honeysuckle in the therapy of sepsis. Additionally, we predicted the target genes related to active components and sepsis
+and standardized their nomenclature into gene names. To build a network diagram of active components and targets,
+sepsis-related targets were brought into Cytoscape 3.9.1.
+Construction of the Protein-Protein Interaction (PPI) Network
+To establish the PPI network, we first identified the intersection of targets related to honeysuckle and sepsis. These targets
+were submitted to the STRING database (version 12.0), with the species restricted to "Homo sapiens" to ensure the
+results are specific to human biology. The STRING database calculates interactions based on experimental data, curated
+databases, and computational predictions, assigning confidence scores to indicate interaction reliability. To improve data
+reliability, we employed "Homo sapiens" PPI data with a minimum confidence score of 0.7, prioritizing the largest
+connected component in the PPI network. The network created by STRING was brought into Cytoscape 3.9.1 for
+additional analysis. Using the CytoHubba plugin in Cytoscape, we applied topological algorithms (Betweenness, Degree,
+and Closeness) to analyze the network's structure and identify key targets. These algorithms evaluate node significance in
+a network by: 1) Degree, which counts a node's direct connections to indicate centrality; 2) Betweenness, which gauges a
+node's presence on shortest paths between others to reflect its connectivity role; and 3) Closeness, which measures a
+node's communication efficiency with all other nodes. The value of these parameters indicates the importance of a node
+among all targets, with higher values indicating greater significance. Targets surpassing average parameters were chosen,
+and the CytoHubba plugin was employed to determine the leading 10 nodes according to their ranking, as previously
+outlined. This systematic approach ensures the identification of significant targets that are most likely to influence the
+pathophysiology of sepsis and the therapeutic effects of honeysuckle.
+Infection and Drug Resistance 2025:18
+https://doi.org/10.2147/IDR.S499975
+3259
+Liu et al
+Functional Enrichment Analysis
+The intersection of honeysuckle- and sepsis-related key targets were input into the DAVID database (http://david.neferf.gov) with
+the parameters set to human (Homo sapiens). An analysis was conducted on key targets to determine their enrichment in biological
+processes from Gene Ontology (GO) and pathways from KEGG. The GO biological enrichment analysis included molecular
+function (MF), cellular component (CC), and biological process (BP). Genes that had a P-value under 0.05 were identified, with the
+leading 10 from GO analysis and the leading 20 from KEGG pathway analysis chosen for more detailed exploration.
+Molecular Docking of Active Ingredients with Primary Targets
+A 3D structure of the active ingredient was created from its 2D structure, which was sourced from PubChem, utilizing Chem3D
+software version 14.0. The target protein's crystal structure was retrieved from the PDB database (https://www.rcsb.org/) and
+processed in PyMOL software (version 2.5) to delete water molecules. Subsequently, AutoDock Tools software was utilized to
+process the target protein by adding hydrogens, charges, etc. The 2D structure of honeysuckle's active compounds was imported
+into ChemBio3D software and saved in mol2 format to obtain its 3D structure. Both the target protein and original ligand were set
+in pdbqt format recognized by AutoDock Tools software with the original ligand's position serving as an active pocket on the
+target protein. Molecular docking analysis between honeysuckle's active ingredients and the target proteins was conducted to
+evaluate their affinity. The binding energy serves as a crucial indicator for assessing effective binding between ligand and receptor
+molecules; lower values indicate better binding performance.
+Cell Culture and Reagents
+The key active compounds of honeysuckle (Kaempferol, Quercetin, and Luteolin) were investigated in this research. Kaempferol
+(CAS No. 520-18-3), Luteolin (CAS No. 491-70-3), and Quercetin (CAS No. 117-39-5) were acquired from Shanghai Haoyuan
+Medchemexpress Co., Ltd, China. Sigma-Aldrich in St. Louis, MO, USA, supplied LPS (L2880). The RAW264.7 murine
+macrophages were sourced from the Stem Cell Bank of the Chinese Academy of Sciences in Shanghai, China, and obtained from
+ATCC. The culture medium for the cells was DMEM with 100 µg/mL streptomycin, 2 mM L-glutamine, 50 U/mL penicillin, and
+10% FBS (GIBCO), and incubated at 37°C with 5% CO2. The EZ-PCR Mycoplasma Test Kit (Beijing Novo Biotechnology Co.,
+LTD) confirmed the absence of mycoplasma contamination. Cells were pretreated with PBS or a 160 µM solution of kaempferol,
+luteolin, and quercetin for 2 hours, then incubated with 100 ng/mL LPS for 6 hours. Cells and supernatants were subsequently
+collected for enzyme-linked immunosorbent assay (ELISA) and quantitative real-time PCR (qRT-PCR).
+ELISA
+An ELISA Kit from ExCell Bio in Shanghai, China, was used to measure IL-1β and IL-6 concentrations in the
+supernatant, following the instructions provided by the manufacturer.
+qRT-PCR
+The isolation of total RNA from RAW264.7 cells was carried out using TRIzol reagent (Solarbio, China) following the
+manufacturer's instructions. RNA purity and concentration were assessed using ultraviolet spectrophotometry. Following
+extraction, the RNA was reverse-transcribed to generate complementary DNA. An RT-qPCR detection system and SYBR
+Premix Ex Taq II were employed for RT-qPCR assays. Normalization of mRNA expression levels was performed with ß-
+actin as the internal control, and the method was used to determine relative expression levels. Table 1 presents the
+RT-qPCR primer sequences for IL-6, IL-1ß, TP53, TLR4, and MYD88.
+MTT Assay
+MTT (CAS 298-93-1) from Sigma-Aldrich was dissolved in PBS at pH 7.2 to create a stock solution with a concentration of 5
+mg/mL. A final concentration of 0.5 mg/mL was obtained by diluting the stock solution with RPMI 1640 medium, creating the
+MTT working solution. Samples were applied at different concentrations to RAW264.7 cells (5 X 10^4) seeded in 96-well plates
+for a duration of 6.5 hours. Following treatment, wells were rinsed with PBS and then 100 µL of MTT solution was added. To
+dissolve the formazan crystals, 100 µL of dimethyl sulfoxide was added to each well after a 4-hour incubation at 37 °C. Next, the
+3260
+https://doi.org/10.2147/IDR.S499975
+Infection and Drug Resistance 2025:18
+Liu et al
+Table I qRT-PCR Primer Sequences
+Gene
+Forward
+Reverse
+TP53
+5'-CCAGTGGTAATCTACTGGGACG-3'
+5'-CTGACGCACACCTATTGCAAGC-3'
+TLR4
+5'-GACTCTGATCCCAGCCATGG-3'
+5'-AGGAACCACCTCCACGCA-3'
+MYD88
+5'-ATGTCTGCGGGAGACCCCCGCGTG-3'
+5'-TCAGGGCAGGGACAAAGCCTTGG-3'
+IL-6
+5'-ATGAACTCCTTCTCCACAAGCGC-3'
+5'-GAAGAGCCCTCAGGCTGGACTG-3'
+IL-Iß
+5'-ATGGCAGAAGTACCTAAGCTCGC-3'
+5'-ACACAAATTGCATGGTGAAGTCAGTT-3!
+ß-actin
+5'-CATGGATGATGATATCGCCGCG-3'
+5-CCTAAGGTGTGCACTTTTATTCAAC-3'
+plates underwent incubation for a further 10 minutes at 37 °C. To assess cell viability, absorbance was measured at 580 nm
+utilizing a Tecan Infinite M1000 Microplate Reader (Tecan, Männedorf, Switzerland). To calculate cell viability percentage, the
+formula was applied: (%) = [100 X (sample absorbance) / (control absorbance)].
+Statistical Analyses
+Network pharmacology analysis involved comprehensive data processing using R software. In vitro experimental data
+were statistically analyzed with the help of GraphPad Prism 8.0.1 (GraphPad Software Inc., San Diego, CA, USA). A
+Student's T-test compared mean values between two groups, and One-way ANOVA with Tukey's post hoc test enabled
+multiple comparisons. Statistical significance is represented by a p-value of less than 0.05.
+Results
+Identification of Active Compounds in Honeysuckle and their Primary Target Genes
+Active compounds in honeysuckle were identified using the TCMSP database. Applying the criteria of DL ≥ 0.18 and
+OB ≥ 30%, 23 bioactive compounds were identified (Table 2). The TCMSP database was then utilized to identify the
+targets linked to these active compounds, resulting in 291 unique targets after deduplication and summarization.
+Acquisition of Target Genes Related to Sepsis
+A total of 947 potential target genes associated with sepsis were identified by screening and removing redundant entries
+using the GeneCards, OMIM, DrugBank, and TTD databases. The intersection between these 947 sepsis-related targets
+and the 291 active ingredients-related targets yielded 78 key targets as depicted in Figure 1.
+Table 2 Active Compounds in Honeysuckle
+Serial
+CAS
+Active Ingredients
+Chemical Structure
+Number
+MOL000098
+73,123-10-1
+Quercetin
+MOL000006
+491-70-3
+Luteolin
+(Continued)
+Infection and Drug Resistance 2025:18
+https://doi.org/10.2147/IDR.S499975
+3261
+Liu et al
+Table 2 (Continued).
+Serial
+CAS
+Active Ingredients
+Chemical Structure
+Number
+MOL000422
+520-18-3
+Kaempferol
+MOL000449
+83-48-7
+Stigmasterol
+MOL000358
+83-46-5
+Beta-sitosterol
+MOL003117
+Na
+loniceracetalides B_qt
+MOL003124
+74,518-57-3
+XYLOSTOSIDINE
+OH
+Ho
+OH
+OH
+MOL003128
+25,488-59-9
+Dinethylsecologanoside
+MOL003101
+Na
+7-epi-Vogeloside
+(Continued)
+3262
+https://doi.org/10.2147/IDR.S499975
+Infection and Drug Resistance 2025:18
+Liu et al
+Table 2 (Continued).
+Serial
+CAS
+Active Ingredients
+Chemical Structure
+Number
+MOL003108
+Na
+Caeruloside c
+MOL003111
+Na
+Centauroside_qt
+MOL001494
+544-35-4
+Mandenol
+MOL001495
+1191-41-9,
+Ethyl linolenate
+34,079-45-3
+MOL002707
+540-05-6
+Phytofluene
+MOL002914
+4049-38-1
+Eriodyctiol (flavanone)
+MOL003006
+Na
+(-)-(3R,8S,9R,9aS,I0aS)-9-ethenyl-8-(beta-D-glucopyranosyloxy)-
+2,3,9,9a,10,10a-hexahydro-5-oxo-5H,8H-pyrano[4,3-d]oxazolo[3,2-a]
+pyridine-3-carboxylic acid_qt
+(Continued)
+Infection and Drug Resistance 2025:18
+https://doi.org/10.2147/IDR.S499975
+3263
+Liu et al
+Table 2 (Continued).
+Serial
+CAS
+Active Ingredients
+Chemical Structure
+Number
+MOL003014
+Na
+Secologanic dibutylacetal_qt
+MOL002773
+7235-40-7
+Beta-carotene
+MOL003036
+19,716-26-8
+ZINC03978781
+MOL003044
+491-71-4
+Chryseriol
+MOL003059
+472-70-8
+Kryptoxanthin
+MOL003062
+116-30-3
+4,5'-Retro-.beta.,.beta.-Carotene-3,3'-dione, 4',5'-didehydro-
+MOL003095
+18,103-41-8
+5-hydroxy-7-methoxy-2-(3,4,5-trimethoxyphenyl)chromone
+sagn
+Construction of the PPI Networks
+The STRINC11.0 database received 78 potential target genes, with Homo sapiens set as the species, for the purpose of
+constructing a PPI network. The network was subsequently analyzed using Cytoscape 3.9.1 software. The network analysis
+3264
+https://doi.org/10.2147/IDR.S499975
+Infection and Drug Resistance 2025:18
+Liu et al
+Sepsis
+Honeysuckle
+869
+78
+213
+(74.9%)
+(6.7%)
+(18.4%)
+Figure I Venn diagram of honeysuckle's active ingredients and sepsis-related target genes.
+employed degree, betweenness, and closeness as primary criteria for node selection. Nodes were selected if their degree
+exceeded twice the network nodes' median degree, their betweenness surpassed the median degree, and their closeness was
+greater than the median degree. The results were visualized using Cytoscape 3.9.1, as depicted in Figure 2A. There are 867
+nodes and 893 edges in the network, which has an average node degree of 2.06 and a local clustering coefficient of 0.980.
+Using Cytoscape 3.9.1 and the NetworkAnalyzer plug-in, a PPI network diagram (Figure 2B) was created from the imported
+network data, focusing on node density values. A node's size and color intensity increase with its degree. The higher the
+interaction score between proteins, the thicker the line connecting the nodes, and the deeper the color. The proteins TP53,
+TLR4, EP300, MYD88, IL1-ß, FN1, CTNN1, JUN, AKT1, and CXCR4 ranked highest in degree centrality measures,
+including Degree, Betweenness, and Closeness (Figure 2C). TP53, TLR4, and MYD88 were pinpointed at the intersection of
+targets identified by the three methods used (Figure 3 and Table 3). These target proteins are likely to be an important part of
+the pivotal targets for honeysuckle in sepsis therapy.
+A
+B
+C
+CXCR4
+AKT1
+JUN
+STATE
+CTNNB1
+AKT1
+TLR4
+FN1
+JUN
+TP53
+IL1B
+TNNB1
+MYD88
+EP300
+MYD88
+IL1B
+EP300
+FN1
+TLR4
+CXCR
+TP53
+0
+5
+10
+15
+20
+25
+Degree
+TLR3
+.
+Figure 2 The protein-protein interaction (PPI) network of honeysuckle and sepsis targets. (A) PPI network created using STRING. (B) PPI network visualized with
+Cytoscape 3.9.1. Nodes signify proteins, with colors ranging from pink to red indicating the degree of binding between proteins. Edges represent protein-protein
+associations. (C) Histograms displaying the top 10 target genes based on their degree values within the PPI network.
+Infection and Drug Resistance 2025:18
+https://doi.org/10.2147/IDR.S499975
+3265
+Liu et al
+Degree
+BC
+5
+1
+4
+(25%)
+(5%)
+(20%)
+3
+(15%)
+1
+2
+(5%)
+(10%)
+4
+(20%)
+CC
+Figure 3 Selection of key target genes. Key targets identified by intersecting centrality measures (Degree, Closeness, and Betweenness).
+Results of GO Biological Enrichment Analysis
+Using the DAVID database for GO enrichment analysis, the key targets of honeysuckle were primarily associated with
+1600 biological processes (BP), 183 cellular components (CC), and 280 molecular functions (MF). Figure 4 illustrates
+the leading 10 biological processes (BP), cellular components (CC), and molecular functions (MF) identified by a
+screening criterion of P<0.05, ranked by target numbers. The BP included inflammatory and innate immune responses,
+cellular response to lipopolysaccharide, positive modulation of gene expression and angiogenesis, response to hypoxia,
+and production of tumor necrosis factor and interleukin-8. The CC included the extracellular space and region,
+extracellular exosome, plasma membrane's external side, cell surface, blood microparticle, endoplasmic reticulum
+lumen, macromolecular complex, and platelet alpha granule lumen. The MF included receptor binding, cytokine and
+hormone activity, identical protein, integrin, enzyme, and protease binding, transmembrane signaling receptor activity,
+and protein kinase binding. The results of the GO enrichment analysis indicate that these crucial targets are mainly
+associated with the progression of sepsis, particularly in regulating the inflammatory response, though further experi-
+mental validation is required.
+3266
+https://doi.org/10.2147/IDR.S499975
+Infection and Drug Resistance 2025:18
+Liu et al
+Table 3 Information on the Top 10 Key Targets for Honeysuckle in the Treatment of Sepsis
+Top 10 in Network PPI
+Top 10 in Network PPI Ranked by
+Top 10 in network PPI ranked by
+Ranked by Degree
+Betweenness Centrality
+Closeness Centrality
+Rank
+Name
+Score
+Rank
+Name
+Score
+Rank
+Name
+Score
+I
+MYD88
+26
+I
+TLR4
+0.30490603
+I
+TLR4
+0.3010279
+2
+TP53
+24
+2
+FNI
+0.23825175
+2
+MYD88
+0.27424749
+3
+TLR4
+24
+3
+TP53
+0.13204362
+3
+HSP90AAI
+0.27333333
+3
+EP300
+23
+4
+MYD88
+0.12701142
+3
+HSPA4
+0.27296937
+3
+ILIB
+17
+5
+HSP90AAI
+0.12585132
+5
+HMGBI
+0.26797386
+6
+FNI
+17
+6
+CD44
+0.10872326
+6
+TRAF6
+0.26797386
+7
+CTNNBI
+16
+7
+CD40
+0.08693913
+7
+ILIB
+0.266061
+7
+JUN
+15
+8
+VWF
+0.08432187
+8
+TLRI
+0.266061
+9
+AKTI
+15
+9
+ALB
+0.07720472
+9
+TP53
+0.26131294
+10
+CXCR4
+14
+10
+HMGBI
+0.07711109
+10
+BECNI
+0.26015228
+Results of KEGG Pathway Enrichment Analysis
+Through KEGG pathway enrichment analysis utilizing the DAVID database, 172 signaling pathways were found. We
+chose and displayed the top 20 signaling pathways by using a screening criterion of P < 0.05, focusing on target numbers
+(Figure 5). In the visualization, each bubble's size and darkness indicate the significance and abundance of enriched key
+targets within the pathway. The top 20 signaling pathways encompass those associated with cancer, atherosclerosis, lipid
+metabolism, PI3K-Akt, cytokine-cytokine receptor interaction, NF-kappa B, neutrophil extracellular trap formation, TNF,
+tuberculosis, human papillomavirus, NOD-like receptor, Kaposi sarcoma-associated herpesvirus, JAK-STAT, neurode-
+generation, human cytomegalovirus, Epstein-Barr virus, neuroactive ligand-receptor interaction, MAPK, influenza A,
+Herpes simplex virus 1, and Toll-like receptor signaling. Using Cytoscape software, a "target-pathway" network diagram
+was generated to visually represent the primary pathways and their associated targets (Figure 6). The development of
+BP
+CC
+0.6
+MF
+Enrichment score
+0.4
+0.2
+0.0
+response
+response
+binding
+activity
+of cellular positive tumor regulation of of response response to regulation to innate necrosis of regulation of gene factor lipopoly response finterleukin-8 immune inflammatory inflammatory to
+positive response
+positive expression lipopolysaccharide lysaccharide
+positive regulation angiogenesis production production hypoxia
+extracellular space
+extracellular
+extracellular region
+external side of plasma membrane exosome
+cell surface cell surface
+plasma membrane
+blood microparticle
+endoplasmic reticulum
+macromolecular lumen
+platelet alpha granule lumen complex
+receptor binding
+cytokine
+identical protein activity
+protein binding
+integrin binding
+enzyme
+transmembrane signaling protease receptor binding binding
+hormone
+protein kinase activity binding
+positive regulation
+Biological process
+Cellular component
+Molecular function
+Figure 4 Analysis of GO enrichment.
+Infection and Drug Resistance 2025:18
+https://doi.org/10.2147/IDR.S499975
+3267
+Liu et al
+KEGG enrichment
+Pathways in cancer
+Lipid and atherosclerosis
+Cytokine- cytokine receptor interaction
+PI3K- Akt signaling pathway
+NF- kappa B signaling pathway
+log₁₀(pvalue)
+Neutrophil extracellular trap formation
+40
+TNF signaling pathway
+30
+Tuberculosis
+Human papillomavirus infection
+20
+Description
+NOD- like receptor signaling pathway
+10
+Kaposi sarcoma- associated herpesvirus infection
+JAK- STAT signaling pathway
+count
+Pathways of neurodegeneration multiple diseases
+60
+Human cytomegalovirus infection
+80
+Epstein- Barr virus infection
+100
+Neuroactive ligand- receptor interaction
+MAPK signaling pathway
+Influenza A
+Herpes simplex virus 1 infection
+Toll- like receptor signaling pathway
+0.06
+0.08
+0.10
+0.12
+Gene Ratio
+Figure 5 KEGG pathway enrichment analysis.
+Influenza
+PI3K-Akt
+Epstein-
+signaling
+virus infection
+pathway
+Cytokine-cytokine
+MAPK signaling
+receptor
+pathway
+interaction
+Neuroactive
+Pathways of
+igand-receptor
+neurodegeneration
+interaction
+multiple
+AVK
+diseases
+IL10RA
+FCGR2A
+PARP1
+NLRP3
+GDNF
+COX8A
+NOX4
+F2
+NOX1
+MYC
+EIF4E
+NFRSF13
+FCGR2B
+RIPK3
+VIP
+PRKCQ
+FOXO1
+AQP9
+FCGR1A
+STAT1
+EGF
+N
+WASHI
+LA
+THE
+ХДАЯ
+NCF4
+SPI1
+ELANE
+CNR2
+TSC2
+CD247
+CD27
+CYP1A1
+EGLN1
+MAPK8
+TNF
+CX3CR1
+MAP2K3
+MMP9
+EDNRB
+EPO
+DNM1L NFATC3
+CR1
+CEBPB
+NOS3
+your
+THE
+VIIH
+KINS
+NEXAS
+XM
+BAX
+CASP12
+SQSTM1
+PF4
+TGFB1
+IL21
+H4C4
+IL12RB1
+VLDLR
+LBP
+NOS1
+AIM2
+MAPK1
+CXCL12
+IFNA2
+H4C15
+EIF2AK2 IL17RA
+GHRL
+IRGM
+MAP3K8
+BCL2
+CRH
+RAC1
+PTK2B
+CXCL10
+C3AR1
+FN1
+IL17A
+IRAK1
+HRH1
+GRP
+GSK3B
+LY96
+FLNA
+IL6
+ADM
+PSPN
+RET
+CASP3
+HLA-DRA
+ICAM1
+MAN
+NF-kappa B
+signaling
+NFE2L2
+HDAC4
+ITGAX
+MMP3
+TLR3
+IL27
+TRPM7
+GRIN2A
+PIK3CD
+TLR6
+TIRAP
+LEP
+ADAR
+P2RX7
+APLN
+CTSG
+LTA
+MPO
+ITGAM
+CXCL2
+Human
+CASP8
+IDAH
+cytomegaloviru
+pathway
+MAXI
+H4C3
+NQ01
+APOB
+CTNNB1
+CYBA
+CCL4
+PIK3CB
+SUFU
+HSP90AA
+UCHL1
+MAPK3
+CALCRL
+GRPR
+TNFSF13E
+infection
+MTOR
+IFNA13
+PRKCD
+CCL11
+HSPD1
+ADM2
+CD86
+XVA4
+ITPR3
+VIM
+CXCR1
+EDNRA
+IFNA1
+DUSP1
+TNC
+PANX1
+CASP4
+IL3
+FOS
+ERBB4
+UBA1
+EBI3
+PLA2G4A
+H4C1
+NR4A1
+IFNAR2
+IL6ST
+CXCL1
+CD14
+<<<<<<
+XXX
+LDLR
+JUND
+HSPA1B
+HSP90B1
+VWF
+TEK
+IL4
+JUN
+LAMC2
+TLR9
+IFNB1
+G6PC3
+IL2RG
+IL4R
+PINK1
+IRAK4
+ANGPT2
+PLAU
+EDN3
+HSPA1A
+EP300
+May
+WE
+HDAC5
+ITGAL
+IL11
+POMC
+PLD1
+NCF1
+EIF2B5
+S1PR3
+CD40
+MMP2
+GHR
+ITGB1
+KNG1
+JAG1
+IFNAR1
+HSPA5
+HLA-B
+SOD2
+H4C8
+PLG
+CCL20
+XPIXA
+IL31
+GH1
+CHRM3
+DEFA1
+FAS
+CASP9
+MEFV
+IL19
+DLL1
+ARTN
+ERN1
+ACTB
+CXCR2
+ATP5F1A KPNA1
+TOLLIP
+IGF1
+TXNIP
+IL22
+CASP1
+AGTR2
+Neutrophi
+PRKACG
+CD40LG
+ATG5
+ATP2A2
+PPARG
+RIPK1
+ATG16L1
+CREBBP
+C3
+GHSR
+PLCG1
+GPX3
+ACKR3
+FCGR3B
+IL2RA
+IL3RA
+WNT5A
+MC1R
+RYR1
+RPS6KB1
+IL7
+Lipid and
+extracellular
+NA
+MAP3K14
+IL13
+TLR5
+BECN1
+NFRSF1
+IL37
+AVP
+RELA
+IL22RA2
+trap formation
+RYR2
+NFRSF13
+TLR1
+SPP1
+H4C11
+APOA1
+BCAR1
+FGB
+ADORA2A
+CD3D
+CD44
+IL15
+atherosclerosis
+JAK2
+F2R
+SOCS3
+IL7R
+HSPA4
+P2RX1
+SYK
+CCND1
+KDR
+C5AR1
+PTPN11
+HDAC6
+CAT
+MFN2
+IL1R2
+F2RL1
+H4C9
+IL5
+CLEC7A
+EIF4EBP1
+PRKN
+ABIA
+NXX
+THPO
+F2RL3
+RASGRP1
+HSPB1
+DUSP3
+BDNF
+SOCS2
+STAT3
+PIK3CG
+IL16
+IL1A
+S1PR1
+IL36A
+MRC1
+CHRNA7
+TAB3
+GDF15
+PRKCA
+P2RY11
+SOCS1
+IL23A
+KASA
+CFLAR
+ANGPT1
+ARRB2
+SELP
+FPR2
+THBS1
+ATG7
+SLC2A1
+CREB1
+PTGS2
+MMP14
+PTH
+CSF3
+GLP1R
+CORO1AMPRSS11
+TLR8
+CD74
+ITGA2B
+PRKAA1
+PNOC
+TNFRSF6E
+BTK
+COMP
+FOXO3
+NOD1
+CISH
+NCF2
+H4C2
+LAMP1
+CSF2
+TGFBR2
+TNFRSF1
+H4C5
+GFAP
+FZD4
+ADORA28 H4C13
+CCK
+TICAM1
+KEAP1
+IL1B
+MARAH
+VIA
+ZAP70
+CALCA
+PARK7
+ITGB3
+EDN1
+SIGLEC9
+NFKB2
+MDM2
+H4C6
+SELE
+RAB1A
+CCL2
+VCAM1
+CDKN1A
+H4C14
+IL1RN
+ITGB4
+AMH
+SST
+NRTN
+TRAF6
+N/A
+Kaposi
+Herpes simplex
+HMOX1
+PTEN
+CD19
+IL17D
+APC
+VDR
+TLR4
+FCGR3A
+IRF3
+RAB11A
+STING1
+AGTR1
+NAMPT
+FASLG
+ENTPD1
+BLNK
+PIK3R1
+CCR5
+TLR2
+IL9
+CCL5
+sarcoma associated
+virus infection
+XXI
+VIMIX
+NR3C1
+CALR
+IL2
+CXCL8
+NLRX1
+IRS1
+TERT
+FPR1
+TSLP
+PKM
+CXCR4
+FGA
+AGT
+IL32
+PADI4
+AKT1
+IL12B
+AGER
+herpesvirus
+NLRP1
+SELPLG
+IL1RL1
+infection
+THINK
+280
+IL18
+IL10
+PIK3CA
+DEFB4A
+IRF1
+MYD88
+ADRB2
+MCL1 TNFRSF11BVEGFA
+HIF1A
+DUSP6
+TLR7
+CAMP
+SPHK1
+H4C12
+NOS2
+SMAD2
+IFNG
+SOD1
+IL33
+MACK
+AU
+TAC1
+CYBB
+TP53
+NOD2
+GCG
+NFKB1
+RELB
+CALML3
+ADRB3
+CIR1
+VTN
+CD80
+ITGB2
+CNR1
+SMAD3
+HMGB1
+BAD
+TXN
+C5
+B2M
+SNCA
+MAS
+CTSB
+AZU1
+TNFSF10 MMP1
+BRCA1
+GSDMD
+MAPK14
+Toll-like
+JAK-STAT
+receptor
+signaling
+signaling
+pathway
+pathway
+NOD like
+TNF signaling
+pathway
+signaling
+pathway
+Pathways in
+Tuberculosis
+Human
+cancer
+papillomavirus
+infection
+Figure 6 Figure 8 Diagram depicting the network connections between targets and signaling pathways.
+3268
+https://doi.org/10.2147/IDR.S499975.
+Infection and Drug Resistance 2025:18
+Liu et al
+sepsis heavily relies on the TLR signaling pathway, which is also significantly related to inflammatory infiltration.
+Figure 7 illustrates that TLR signaling pathways, influenced by honeysuckle's active ingredient targets, play a role in
+sepsis development, as evidenced by data integration from KEGG and the Genome Encyclopedia. The Pi3k-Akt and NF-
+kappa B pathways play a role in creating an inflammatory microenvironment and are implicated in sepsis development.
+Overall, the findings indicate that honeysuckle primarily influences mechanisms related to the inflammatory response,
+offering potential treatment for sepsis.
+Results of Molecular Docking
+The protein targets of honeysuckle's active compounds were connected to their respective genes using the UniProt
+protein database. Cytoscape 3.9.1 was used to create a network diagram depicting the interactions between honeysuckle,
+its active components, and target genes. As illustrated in Figure 8, this network comprises a total of 315 nodes (including
+1 Traditional Chinese Medicine node, 23 nodes representing active ingredients, and 291 nodes representing correspond-
+ing target proteins). Notably, kaempferol, luteolin, and quercetin showed the highest degree of centrality and stronger
+binding to TP53, TLR4, and MYD88 (Figure 9). The main active compounds in honeysuckle demonstrated significant
+binding energies with the targets TLR4 (-4.39, -4.59, and -4.81 kcal/mol), TP53 (-6.31, -4.59, and -5.05 kcal/mol),
+and MYD88 (-5.6, -4.84, and -4.69 kcal/mol). These results indicate robust binding interactions between honeysuckle's
+main active ingredients and their target proteins. In molecular docking analyses (Figures 10-12), TP53 established
+hydrogen bonds with kaempferol through GLU-1575, GLU-1573, and PHE-1553 residues, whereas TLR4 interacted via
+the ALA-287 residue. MYD88 engaged with kaempferol through GLN-181, TRP-286, THR-287, and LYS-282 residues,
+forming multiple hydrogen bonding sites. Similarly, luteolin utilized GLN-181 and TYR-276 residues for binding to
+MYD88, while it binds to TP53 via MET1584, LEU-1547, and PHE-1553 residues, and binds to TLR4 by GLY-291,
+LYS-288, SER-286 residues. Quercetin interacted with TLR4 via ASN-260, LYS-288, and THR-259 residues, TP53 by
+GLU-1575 and SER-1554, and MYD88 through ASP-162, ARG-160, LEU-191, VAL-1, and CYS-203. These findings
+underscore the significant binding affinity between honeysuckle's active components and their respective protein targets.
+TOLL-LIKE RECEPTOR SIGNALING PATHWAY
+Ubiquitin mediated
+PI3K-Akt
+proteolysis
+signaling pathway
+TLR1
+Degradation
+Peptidoglycan (G+)
+TLR2
+Rac1
+P13K
+AKT
+Inflammatory cytokines
+Lipoprotein
+4
+Lipoarabinomannan
+TNFα
+(Mycobacteria)
+NF-x signaling
+Zymosan (Yeast)
+TLR6
+TOLLIP
+pathway
+IL-1ß
+TLR2
+MvD88
+FADD
+CASP8
+Apoptosis
+IKK
+IL-6
+Proinflammatory
+DNA
+effects
+TIRAP
+IKKy
+NF-kB
+IL-12
+IKKα.
+LBP
+MyD88-dependent
++p
++p
+IKKB
+IkBa
+IL-8
+LPS (G-)
+pathway
+Chemotactic effects
+CD14
+RANTES
+(Nutrophil, Immature DC
+TAB1
+TIRAP
+TAB2
+p105
+(NK cell)
+Lipopolysaccharide
+MIP-1α.
+biosynthesis
+MD-2
+IRAK4
+TLR4
+MyD88
+TRAF6
+TAK1
++p.
+MIP-16
+IRAK1
+Tpl2
+MEK1/2
+ERK
+Complement and
+coagulation cascade
++p
+MAPK
+signaling pathway
+TRAM
+AP-1
++p
++p
+Flagellar assembly
+TRAF6
+MKK3/6
+p38
++p
+Costimulatory molecules
+RIP1
+Flagellin
+TLRS
+MyD88
+MKK4/7
++p
+JNK
+CD40
+IRFS
+CD80
+cell stimulation
+CD86
+Specific pathway
+TRAF6
++p
+Imidazoquinolin
+in pDCs
+(anti-viral compounds)
++p
+TLR7/8
+MyD88
+IRAK4
+IRAK1
+IRF7
+ssRNA
++p
+Inflammatory cytokines
+Unmethylated
+CTSK
++p
++p
+CpG DNA
+TLR9
+IKKα
+OPN
+IFN-α
+IKKε
+Antiviral effects
+dsRNA
+IRF3
+IFN-β
+TLR3
+TRIF
+TRAF3
+TBK1
++p
+MyD88-independent
+Cytokine-
+Endosome
+pathway
+cytokine receptor
+interaction
+Autocrine/Paracrine
+IP-10
+IFN-α.
+JAK1
+STAT1
+IFN-α/BR
+IRF9
+MIG
+Antiviral effects
+IFN-B
+TYK2
+STAT2
+JAK-STAT
+I-TAC
+signaling pathway
+04620 9/26/23
+(c) Kanehisa Laboratories
+Figure 7 TLR signaling pathways by which honeysuckle protects against sepsis.
+Infection and Drug Resistance 2025:18
+https://doi.org/ 0.2147/IDR.S499975
+3269
+Liu et al
+FDFT1
+PPARA
+DYRK1A
+CA3
+KLK1
+TTR
+AKT1
+APEX1
+ARG1
+TNKS
+CHRNA7
+GRK1
+MAPT
+DAO
+AMY1A
+PLAU
+FABP3
+(-)-(3R,
+10aS)
+FFAR1
+SLC6A9
+MME
+AXL
+SRC
+ACHE
+HAO1
+NR1H3
+CA6
+IGFBP3
+ACACA
+PTK2
+PNP
+HSPA8
+SLC22A12
+ABCB1
+MPO
+dibutylacetal_qt
+MMP1
+QPCT
+GAA
+AVPR1A
+MMP13 HSD11B2
+INSR
+PTPN1
+PLG
+ABCC1
+C
+SLC28A2
+SOAT2
+LCK
+AKR1C4
+TBXA2R
+GL01
+MAOA
+PPARG
+AVPR2
+RXRA
+HK2
+FUT4
+GRIN2B
+AKR1A1
+CYP26A1
+NR3C1
+HIF1A
+TOP1
+ADORA3
+DRD2
+NR3C2
+NQO2
+RARA
+CA7
+NEK6
+NUAK1
+TSPO
+SYK
+ADORA2A
+KIT
+EGFR
+BCHE
+GBA
+CFTR
+SLC5A1
+GLRA1
+AKR1B10
+F2RL3
+F10
+FUT7
+CCNE1
+RORA
+TBXAS1
+OPRD1
+VDR
+CDK2
+FABP1
+CA12
+NAAA
+TYR
+SLC6A2
+GAPDH
+SCARB1
+KCNH2
+FABP4
+OGA
+PRKCA
+AURKB
+B_qt
+PTGES
+MPC
+EDNRA
+CASB
+RARB
+CD38
+SLC29A1
+PTGER2
+FABPS
+ACACB
+MMP12
+CSNK2A1
+AKR1C3
+ABL1
+MYLK
+HSD11B1
+CBR1
+PIM1
+PPARD
+GPR35
+HRH4
+TOP2A
+SLC6A4
+MAOB
+DYRK1B
+CDK1
+ALOX15
+CA13
+RARG
+SLC5A4
+CAMK2B
+F2R
+MTTP
+PARP1
+CTSL
+ALOX5AP
+LGALS9
+TGM2
+ST6GAL1
+ABCG2
+APP
+PTPRS
+PSEN2
+GRM1
+INCENP
+CDC25A
+NR113
+PYGM
+CXCR1
+NOX4
+CNR2
+SHBG
+CA14
+PIK3CG
+GRK6
+PIK3R1
+CYP17A1
+POLB
+FGFR1
+CA9
+TNKS2
+IDH1
+ECE1
+NPC1L1
+PRKCD
+CASR
+PLA2G5
+ADA
+DHCR7
+CLK1
+CTSK
+EPHX1
+ELANE
+HK1
+NPY1R
+PFKFB3
+RBP4
+CTSS
+ALOX12
+PRKCQ
+ADAM17
+AGTR1
+NR1H2
+NOS2
+KLK2
+HSD17B2
+AURKA
+HSPA5
+MMP2
+ADK
+DAPK1
+CA1
+UGT2B7
+PTAFR
+PYGL
+NEK2
+CA2
+SNCA
+ATIC
+FLT1
+KDM4E
+SREBF2
+DRD4
+SLC5A11
+PLA2G10
+CA4
+GCGR
+UPP1
+ROCK1
+CTSB
+NLRP3
+LGALS3
+KDR
+PDE10A
+HRH3
+CHRM2
+CNR1
+HMGCR
+SLC5A2
+CYP19A1
+FLT3
+IGF1R
+PTGER1
+MMP3
+MET
+TGM1
+PKN1
+CYP2C19
+PTGS1
+MAP2K1
+ODC1
+CYPS1A1
+GRMS
+CYP1B1
+uteolin
+AHR
+ESR1
+FNTA
+PLK1
+PTPN6
+AKR1C2
+NPYSR
+SOAT1
+AR
+CDK5R1
+RXRG
+SQLE
+F2
+CA5A
+PGR
+SERPINA6
+ADORA2B
+BACE1
+ROCK2
+CDK6
+ALOX5 TAS2R31
+SCD
+ALK
+BCL2
+AKR1B1
+CES2
+MMP9
+CES1
+PTGS2
+GSK3B
+ADORA1
+SMO
+CDC25B
+G6PD
+XDH
+PLA2G2A
+RORC
+PLA2G1B
+MCL1
+OPRM1
+MANBA
+ST3GAL3
+SHH
+GRM2
+AKR1C1
+CCNB3
+TERT
+ESRRA
+APOB
+FAAH
+ESR2
+GC
+Figure 8 The active ingredient-target network diagram illustrating active ingredients and targets for honeysuckle in sepsis treatment. The green circular node signifies the
+active components of honeysuckle, whereas the other nodes denote their respective targets.
+Group
+4.5
+Group
+A
+5
+-6.31
+-4.39
+-5.6
+kaempferol
+-5.5
+6
+-4.59
+-4.59
+-4.84
+luteolin
+-5.05
+-4.81
+-4.69
+quercetin
+TP53
+TLR4
+MYD88
+Figure 9 Heat map displaying binding affinities between active ingredients and selected key targets based on molecular docking results.
+Honeysuckle Mitigates LPS-Induced Sepsis in Macrophages by Decreasing
+Proinflammatory Cytokine Production
+Excessive proinflammatory cytokine production during infections can trigger a cytokine storm, which significantly
+increases mortality in sepsis syndrome. 33,34 Macrophages are essential to innate immunity, initiating inflammatory
+responses against diverse pathogens. To investigate the impact of honeysuckle and its active constituents on sepsis,
+RAW 264.7 cells were subjected to different concentrations of honeysuckle and its active components, kaempferol,
+luteolin, and quercetin, to assess their effects on sepsis. The MTT assay indicated that 160 µM concentrations of
+honeysuckle, kaempferol, luteolin, and quercetin were non-cytotoxic to RAW 264.7 cells (Figure 13A). Therefore,
+3270
+https://doi.org/10.2147/IDR.S499975
+Infection and Drug Resistance 2025:18
+Liu et al
+A
+GLU-1575
+LYS-1574
+SER-1554
+PHC-1553
+GLU-1573
+kaempferol-TP53
+B
+MET-1584
+TYR-1552
+ASP-1521
+MET-1584
+PHC-1553
+LEU-1547
+luteolin-TP53
+C
+SER-1554
+GLU-1575
+quercetin-TP53
+Figure 10 Molecular docking analysis of active compounds with TP53. (A) kaempferol-TP53; (B) luteolin-TP53; (C) quercetin-TP53.
+subsequent experiments were conducted using a concentration of 160 µM. We investigated the impact of honeysuckle
+and its active components on LPS-induced inflammation in RAW264.7 macrophages by assessing mRNA levels of
+proinflammatory cytokines. Our results demonstrated that honeysuckle and its active components significantly lowered
+the mRNA expression of IL-1β and IL-6 induced by LPS in RAW264.7 cells (Figure 13B-E). ELISA assays demon-
+strated that honeysuckle and its active components reduced LPS-induced IL-1β and IL-6 protein production in macro-
+phages (Figure 13F-I). The results indicate that honeysuckle reduces LPS-induced inflammation by suppressing
+inflammatory cytokine production in both macrophages and mice.
+Infection and Drug Resistance 2025:18
+https://doi.org/10.2147/IDR.S499975
+3271
+Liu et al
+A
+-
+TRP-262
+LYS-288
+ASN-260
+ALA-287
+B
+kaempferol-TLR4
+ASN-260
+GLY-291
+THR-259
+LYS-288
+SER-286
+luteolin-TLR4
+C
+ASN-260
+THR-259
+IYS-288
+LYS-294
+SCR 206
+quercetin-TLR4
+Figure II Molecular docking analysis of active compounds with TLR4. (A) kaempferol-TLR4; (B) luteolin-TLR4; (C) quercetin-TLR4.
+Active Components of Honeysuckle Suppress LPS-Induced Activation of the TLR4/
+MYD88 Signaling Pathways
+Molecular docking and network pharmacology experiments revealed a strong binding affinity between honeysuckle's
+active ingredient and the key target genes TLR4, TP53, and MYD88. The planar structures of kaempferol, luteolin, and
+quercetin in silico active compounds are shown in Figure 14A. Prior research has emphasized the crucial involvement of
+TLR4, TP53, and MYD88 in sepsis development. 35-37 LPS, acting as a TLR4 agonist, primarily induces proinflamma-
+tory responses via the TLR4/MYD88 signaling pathway. To validate the impact of honeysuckle's active components on
+these core targets, qRT-PCR assays were conducted. The results indicated significant reductions in TLR4, TP53, and
+MYD88 expression levels following treatment with honeysuckle, kaempferol, luteolin, and quercetin (Figure 14B-D).
+3272
+https://doi.org/10.2147/IDR.S499975
+Infection and Drug Resistance 2025:18
+Liu et al
+A
+IBR 182
+GLN-184
+THR-287
+GLN-181
+TRP-280
+LYS-202
+kaempferol-MYD88
+B
+GLN-181
+TRP-286
+TYR276
+-
+luteolin-MYD88
+C
+ARG-217
+ASP-162
+LEU-191
+VAL-
+ARG-160
+CYS-203
+PHE-161
+TRP-205
+quercetin-MYD88
+Figure 12 Molecular docking analysis of active compounds with MYD88. (A) kaempferol-MYD88; (B) luteolin-MYD88; (C) quercetin-MYD88.
+The study indicates that honeysuckle's active components alleviate LPS-induced sepsis by inhibiting the TLR4/MYD88
+signaling pathways, supporting conclusions from molecular docking and network pharmacology analyses.
+Discussion
+Honeysuckle, a traditional tonic medicine, demonstrates anti-inflammatory, antiviral, antioxidative, and antibacterial
+properties. 38,39 This research employed molecular docking and network pharmacology to explore the mechanisms by
+which honeysuckle combats sepsis. Our findings suggest that kaempferol, luteolin, and quercetin are the principal
+bioactive compounds responsible for honeysuckle's therapeutic effects, particularly through their interaction with key
+Infection and Drug Resistance 2025:18
+https://doi.org/10.2147/IDR.S499975
+3273
+Liu et al
+A
+B
+C
+D
+honeysuckle
+IL-1β
+kaempferol
+IL-1ß
+IL-1ß
+4
+IL-6
+150
+luteolin
+4
+IL-6
+4
+IL-6
+quercetin
+****
+3
+Cell viability (%)
+3
+Relative mRNA levels
+3
+100
+2
+ns
+ns
+Relative mRNA levels
+Relative mRNA levels
+2
+####
+2
+###
+50
+###
+ns
+ns ns
+ns
+1
+1
+1
+0
+10 pM
+20
+µM
+40
+µM
+80
+µM
+160
+µM
+0
+0
+0
+Control
+honeysuckle
+LPS
+Control
+C
+kaempferol
+LPS
+Control
+luteolin
+LPS
+E
+F
+G
+IL-1ß
+IL-6
+4
+200
+2500
+200
+2000
+****
+2000
+****
+3
+Relative mRNA levels
+150
+1500
+150
+1500
+IL-1ß (pg/mL)
+####
+IL-6 (pg/mL)
+1000
+####
+100
+IL-1ß (pg/mL)
+100
+IL-6 (pg/mL)
+1000
+####
+2
+###
+500
+ns
+ns
+500
+ns
+1
+50
+200
+ns
+50
+200
+100
+ns
+100
+ns
+0
+0
+0
+0
+0
+Control
+LPS
+Control
+LPS
+LPS
+Contromplerel
+LPS
+Contrompteral
+LPS
+quercetin
+H
+I
+200
+2000
+200
+2500
+****
+2000
+****
+1500
+150
+1500
+150
+1000
+IL-1ß (pg/mL)
+100
+IL-6 (pg/mL)
+IL-1ß (pg/mL)
+100
+IL-6 (pg/mL)
+1000
+####
+1000
+####
+#
+####
+500
+500
+ns
+200
+50
+200
+50
+ts
+ns
+ns
+100
+100
+0
+0
+0
+0
+Control
+luteolin
+Lpstituteolin
+Control
+luteolin
+LPS
+Controlercetin
+Controlercetin
+LPS
+Figure 13 Effect of honeysuckle on the production of proinflammatory cytokines in macrophages. (A) The MTT assay indicated that treatment with 160 µM of honeysuckle,
+kaempferol, luteolin, and quercetin did not cause cytotoxic effects in RAW 264.7 cells (n = 3). (B-E) IL-Iβ and IL-6 mRNA levels in macrophages were measured by qRT-PCR (n = 5).
+The data are presented as mean ± standard deviation (SDW). ***P < 0.001, ****p < 0.0001. (F-I) The secretion of IL-Iß and IL-6 in macrophages was detected by ELISA (n = 5). The data
+are presented as mean ± standard deviation (SD), determined using a two-tailed Student's t-test or one-way analysis of variance (ANOVA). ***P < 0.001, ****P < 0.0001 vs control,
+######## P < 0.0001, """P < 0.001, "P < 0.01 vs LPS. ns: no significance vs control.
+proteins TP53, TLR4, and MYD88. These compounds play crucial roles in modulating inflammation-related pathways,
+as confirmed by both computational docking and experimental validation.
+In this study, we collected 23 chemical components from the TCMSP database, with kaempferol, luteolin, and quercetin
+identified as the principal ones. These compounds target multiple nodes within the network alongside other active components.
+Kaempferol, luteolin, and quercetin, among the identified active ingredients, have demonstrated significant therapeutic efficacy
+against sepsis. A functional enrichment analysis involving 78 core targets was executed with the help of the GO and KEGG
+databases. Protein binding was highlighted as the most enriched GO term by the results, suggesting that honeysuckle could
+modulate sepsis progression by influencing protein-protein interactions. Furthermore, analysis of 172 KEGG pathways revealed
+enrichment of sepsis-related genes primarily within inflammatory pathways, indicating that honeysuckle's intervention in sepsis
+could involve modulation of inflammation-associated signaling pathways.
+We explored the molecular mechanisms by which honeysuckle may treat sepsis using network pharmacology, focusing on
+active ingredient and target screening within the PPI network. We identified three primary bioactive ingredients and their
+corresponding representative targets. Specifically, kaempferol, luteolin, and quercetin were molecularly docked with TP53,
+TLR4, and MYD88 proteins to validate our network pharmacology predictions. The docking results confirmed that these
+ingredients bind effectively to the proteins. Additionally, our findings demonstrated that honeysuckle mitigates LPS-induced
+sepsis in macrophages and mice by reducing proinflammatory cytokine production. Kaempferol, luteolin, and quercetin, the
+3274
+https://doi.org/10.2147/IDR.S499975
+Infection and Drug Resistance 2025:18
+Liu et al
+A
+H
+H
+H
+H
+H
+o
+o
+H
+o
+o
+o
+H
+H
+H
+H
+H
+o
+H
+H
+kaempferol
+luteolin
+quercetin
+B
+C
+D
+1.5
+1.5
+1.5
+Relative TLR4 mRNA expression
+1.0
+Relative MYD88 mRNA expression
+1.0
+0.5
+Relative TP53 mRNA expression
+1.0
+0.5
+0.5
+0.0
+0.0
+0.0
+Model
+Model
+Model
+Figure 14 Effect of active constituents of honeysuckle on expression of key target genes and TLR4/MYD88 signaling pathway. LPS-induced RAW 264.7 cells were exposed
+to 160 µM concentrations of honeysuckle, kaempferol, luteolin, and quercetin. (A) The planar structures of the in silico kaempferol, luteolin, and quercetin. (B-D) Real-time
+qRT-PCR was utilized to analyze the mRNA levels of TP53, TLR4, and MYD88 in LPS-induced RAW 264.7 cells treated with these active compounds (n = 5). The data are
+presented as mean ±SD, determined using a two-tailed Student's t-test or ANOVA. **P < 0.01, ***P < 0.001 vs model.
+active components of honeysuckle, inhibit LPS-induced activation of the TLR4/MYD88 signaling pathways. TP53, a well-
+documented tumor suppressor protein, has been increasingly recognized for its role in regulating immune responses. Recent
+studies have highlighted TP53's involvement in modulating immune response and ferroptosis, which are critical during
+sepsis. 40 For example, p53 is closely associated with poor outcomes in sepsis and exerts an immunosuppressive effect by
+promoting the expansion of functional Tregs during the development of sepsis. 41 Similarly, TLR4 and MYD88, as pivotal
+components of innate immunity, initiate macrophage proinflammatory cascades and regulate macrophage polarization during
+sepsis.
+42,43
+Suppression of these targets has been shown to alleviate sepsis-related organ dysfunction, consistent with the
+findings of our study. Kaempferol, luteolin, and quercetin exhibited high docking affinities with TP53, TLR4, and MYD88,
+suggesting their potential to disrupt the progression of sepsis by modulating these proteins. Comparatively, prior studies have
+shown that traditional Chinese medicines mitigate sepsis-related multiple organ dysfunction in rats by modulating the
+inflammatory response and macrophage activation via the TLR4/MYD88 signaling pathways. For instance, Xijiao Dihuang
+decoction was reported to reduce sepsis-induced cardiac inflammation by inhibiting TLR4/NF-kB signaling and modulating
+cytokine expression. 44 Similarly, Wang et al demonstrated that puerarin attenuates sepsis-induced multiple-organ injury and
+Inflammatory response via regulation of TLR and MAPK signaling. 45 In line with these studies, our findings revealed that
+honeysuckle's active components inhibit the TLR4/MYD88 pathway, a key mediator of proinflammatory cytokine release in
+sepsis. This consistency reinforces the role of honeysuckle as an anti-sepsis agent targeting inflammatory signaling.
+This study has certain limitations. Our research on honeysuckle's effects on sepsis employed modern bioinformatics
+methods, such as network pharmacology and molecular docking. The existing network information technology necessi-
+tates further enhancement, and the precision and promptness of database information require scientific verification. Our
+Infection and Drug Resistance 2025:18
+https://doi.org/10.2147/IDR.S499975
+3275
+Liu et al
+analysis may exclude compounds or targets that are unconfirmed or unrecorded. While luteolin, kaempferol, and
+quercetin were identified as the main bioactive ingredients of honeysuckle for sepsis treatment, they do not fully
+encapsulate the plant's therapeutic potential. Therefore, additional pharmacodynamic and molecular biology experiments
+are necessary to expand our current findings. Furthermore, some of our results have limited precedent in previous studies.
+The absence of prior explanations and validations regarding the effects and mechanisms of these potential active
+ingredients on sepsis presents substantial opportunities for future research.
+Conclusion
+The research utilized network pharmacology to determine the active compounds and crucial targets of honeysuckle in
+addressing sepsis. Molecular docking analysis demonstrated a high binding affinity between honeysuckle's active
+compounds and key targets, including TP53, TLR4, and MYD88. In vitro experiment results indicated that honeysuckle
+has a protective effect against sepsis by reducing proinflammatory cytokine production. Additionally, the active
+compounds in honeysuckle (kaempferol, luteolin, and quercetin) exhibit therapeutic potential by inhibiting the TLR4/
+MYD88 signaling pathways. These findings highlight the significance of understanding honeysuckle's mechanisms,
+providing valuable insights for developing new therapeutic strategies for sepsis management.
+Disclosure
+The authors report no conflicts of interest in this work.
+References
+1. Li R, Li X, Zhao J, et al. Mitochondrial STAT3 exacerbates LPS-induced sepsis by driving CPT1a-mediated fatty acid oxidation. Theranostics.
+2022;12(2):976-998.
+2. Meyhoff TS, Hjortrup PB, Wetterslev J, et al. Restriction of intravenous fluid in ICU patients with septic shock. N Engl J Med. 2022;386(26):2459-
+2470.
+3. Vincent JL. Current sepsis therapeutics. EBioMedicine. 2022;86:104318.
+4. Barichello T, Generoso JS, Singer M, Dal-Pizzol F. Biomarkers for sepsis: more than just fever and leukocytosis-a narrative review. Crit Care.
+2022;26(1):14.
+5. Fleischmann C, Scherag A, Adhikari NK, et al. Assessment of global incidence and mortality of hospital-treated sepsis. Current estimates and
+limitations. Am J Respir Crit Care Med. 2016;193(3):259-272.
+6. Xie J, Wang H, Kang Y, et al. The epidemiology of sepsis in Chinese ICUs: a national cross-sectional survey. Crit Care Med. 2020;48(3):e209-
+e218.
+7. Fleiss N, Schwabenbauer K, Randis TM, Polin RA. What's new in the management of neonatal early-onset sepsis? Arch Dis Child Fetal Neonatal
+Ed. 2023;108(1):10-14. doi:10.1136/archdischild-2021-323532
+8. Kheterpal S, Singh K, Topol EJ. Digitising the prediction and management of sepsis. Lancet. 2022;399(10334):1459. oi:10.1016/S0140-6736(22)
+00658-4
+9. Mushtaq A, Kazi F. Updates in sepsis management. Lancet Infect Dis. 2022;22(1):24. i:10.1016/S1473-3099(21)00773-8
+10. Sands K, Carvalho MJ, Portal E, et al. Characterization of antimicrobial-resistant gram-negative bacteria that cause neonatal sepsis in seven low-
+and middle-income countries. Nat Microbiol. 2021;6(4):512-523. doi:10.1038/s41564-021-00870-7
+11. Thomson KM, Dyer C, Liu F, et al. Effects of antibiotic resistance, drug target attainment, bacterial pathogenicity and virulence, and antibiotic
+access and affordability on outcomes in neonatal sepsis: an international microbiology and drug evaluation prospective substudy (BARNARDS.
+Lancet Infect Dis. 2021;21(12):1677-1688.
+12. Solomon S, Akeju O, Odumade OA, et al. Prevalence and risk factors for antimicrobial resistance among newborns with gram-negative sepsis.
+PLoS One. 2021;16(8):e0255410.
+13. Wang XH, Xu DQ, Chen YY, et al. Traditional Chinese medicine: a promising strategy to regulate inflammation, intestinal disorders and impaired
+immune function due to sepsis. Front Pharmacol. 2022;13:952938.
+14. Wu X, He C, Liu C, et al. Mechanisms of JinHong formula on treating sepsis explored by randomized controlled trial combined with network
+pharmacology. J Ethnopharmacol. 2023;305:116040.
+15. Song Y, Lin W, Zhu W. Traditional Chinese medicine for treatment of sepsis and related multi-organ injury. Front Pharmacol. 2023;14:1003658.
+16. Fan TT, Cheng BL, Fang XM, Chen YC, Su F. Application of Chinese medicine in the management of critical conditions: a review on sepsis. Am J
+Chin Med. 2020;48(6):1315-1330. doi:10.1142/S0192415X20500640
+17. Lim CL. Heat sepsis precedes heat toxicity in the pathophysiology of heat stroke-a new paradigm on an ancient disease. Antioxidants. 2018;7
+(11):149.
+18. Shang X, Pan H, Li M, Miao X, Ding H. Lonicera japonica Thunb.: ethnopharmacology, phytochemistry and pharmacology of an important
+traditional Chinese medicine. J Ethnopharmacol. 2011;138(1):1-21. doi:10.1016/j.jep.2011.08.016
+19. Li W, Zhang L, He P, et al. Traditional uses, botany, phytochemistry, and pharmacology of Lonicerae japonicae flos and Lonicerae flos: a systematic
+comparative review. J Ethnopharmacol. 2024;322:117278. doi:10.1016/j.jep.2023.117278
+20. Feng YF, Qin GZ, Jing ZX, Wang YH, Zhou YY. Anaphylaxis effect and substance basis of honeysuckle extract. Chin Herb Med. 2021;13(3):403-
+409. doi:10.1016/j.chmed.2021.04.013
+3276
+https://doi.org/10.2147/IDR.S499975
+Infection and Drug Resistance 2025:18
+Liu et al
+21. Xu X, Xu H, Shang Y, et al. Development of the general chapters of the Chinese Pharmacopoeia 2020 edition: a review. J Pharm Anal. 2021;11
+(4):398-404. oi:10.1016/j.jpha.2021.05.001
+22. Guo L, Qiao J, Zhang L, et al. Critical review on anthocyanins in blue honeysuckle (Lonicera caerulea L.) and their function. Plant Physiol
+Biochem. 2023;204:108090. doi:10.1016/j.plaphy.2023.108090
+23. Du XQ, Shi LP, Cao WF, Chen ZW, Zuo B, Hu JY. Add-on effect of honeysuckle in the treatment of coronavirus disease 2019: a systematic review
+and meta-analysis. Front Pharmacol. 2021;12:708636. loi:10.3389/fphar.2021.708636
+24. Wang H, Tian L, Han Y, Ma X, Hou Y, Bai G. Mechanism assay of honeysuckle for heat-clearing based on metabolites and metabolomics.
+Metabolites. 2022;12(2);121.
+25. Feng J, Liu Z, Chen H, et al. Protective effect of cynaroside on sepsis-induced multiple organ injury through Nrf2/HO-1-dependent macrophage
+polarization. Eur J Pharmacol. 2021;911:174522. doi:10.1016/j.ejphar.2021.174522
+26. Palíková I, Valentová K, Oborná I, Ulrichová J. Protectivity of blue honeysuckle extract against oxidative human endothelial cells and rat
+hepatocyte damage. J Agric Food Chem. 2009;57(15):6584-6589. doi:10.1021/jf9003994
+27. Ma J, Miao Y, Li J, et al. Incorporation of blue honeysuckle juice into fermented goat milk: physicochemical, sensory and antioxidant
+characteristics and in vitro gastrointestinal digestion. Foods. 2022;11(19):3065. doi:10.3390/foods11193065
+28. van der Poll T, van de Veerdonk FL, Scicluna BP, Netea MG. The immunopathology of sepsis and potential therapeutic targets. Nat Rev Immunol.
+2017;17(7):407-420. doi:10.1038/nri.2017.36
+29. Huang M, Cai S, Su J. The pathogenesis of sepsis and potential therapeutic targets. Int J Mol Sci. 2019;20(21):5376. i:10.3390/ijms20215376
+30. Zhang YY, Ning BT. Signaling pathways and intervention therapies in sepsis. Signal Transduct Target Ther. 2021;6(1):407. doi:10.1038/s41392-
+021-00816-9
+31. Nogales C, Mamdouh ZM, List M, Kiel C, Casas AI, Schmidt H. Network pharmacology: curing causal mechanisms instead of treating symptoms.
+Trends Pharmacol Sci. 2022;43(2):136-150. doi:10.1016/j.tips.2021.11.004
+32. Zhao L, Zhang H, N, et al. Network pharmacology, a promising approach to reveal the pharmacology mechanism of Chinese medicine formula.
+J Ethnopharmacol. 2023;309:116306. doi:10.1016/j.jep.2023.116306
+33. Athale J, Busch LM, O&apos NP. Grady, cytokine release syndrome and sepsis: analogous clinical syndromes with distinct causes and challenges
+in management. Infect Dis Clin North Am. 2022;36(4):735-748. doi:10.1016/j.idc.2022.07.001
+34. Li XY, Liu M, Fu YJ, Jiang YJ, Zhang ZN. Alterations in levels of cytokine following treatment to predict outcome of sepsis: a meta-analysis.
+Cytokine. 2023;161:156056. doi:10.1016/j.cyto.2022.156056
+35. Ye W, Liu X, Bai Y, et al. Sepsis activates the TLR4/MyD88 pathway in Schwann cells to promote infiltration of macrophages, thereby impeding
+neuromuscular function. Shock. 2021;55(1):90-99. loi:10.1097/SHK.0000000000001557
+36. Yang Q, Wang Y, Cao G, Li X, Zhao T. Anti-sepsis effect of Xiaochaihu decoction based on the TLR4/MyD88/NF-kB signalling pathway. Heliyon.
+2024;10(5):e26712. loi:10.1016/j.heliyon.2024.e26712
+37. Sun M, Li J, Mao L, et al. p53 deacetylation alleviates sepsis-induced acute kidney injury by promoting autophagy. Front Immunol.
+2021;12:685523. doi:10.3389/fimmu.2021.685523
+38. Jurikova T, Rop O, Mlcek J, et al. Phenolic profile of edible honeysuckle berries (Genus Lonicera) and their biological effects. Molecules. 2011;17
+(1):61-79. oi:10.3390/molecules17010061
+39. Golubev D, Zemskaya N, Shevchenko O, et al. Honeysuckle extract (Lonicera pallasii L.) exerts antioxidant properties and extends the lifespan and
+healthspan of Drosophila melanogaster. Biogerontology. 2022;23(2):215-235. oi:10.1007/s10522-022-09954-1
+40. Gao N, Tang AL, Liu XY, Chen J, Zhang GQ. p53-Dependent ferroptosis pathways in sepsis. Int Immunopharmacol. 2023;118:110083.
+doi:10.1016/j.intimp.2023.110083
+41. Zhang H, Wu T, Ren C, Dong N, Wu Y, Yao Y. p53 promotes the expansion of regulatory T cells via DNMT3a- and TET2- mediated Foxp3
+expression in sepsis. Burns Trauma. 2023;11:tkad021. oi:10.1093/burnst/tkad021
+42. Hering M, Madi A, Sandhoff R, et al. Sphinganine recruits TLR4 adaptors in macrophages and promotes inflammation in murine models of sepsis
+and melanoma. Nat Commun. 2024;15(1):6067. doi:10.1038/s41467-024-50341-w
+43. Li X, Li X, Huang P, et al. Acetylation of TIR domains in the TLR4-Mal-MyD88 complex regulates immune responses in sepsis. EMBO 2024;43
+(21):4954-4983. doi:10.1038/s44318-024-00237-8
+44. Li W, Lin M, Li J, et al. Xijiao Dihuang decoction protects against murine sepsis-induced cardiac inflammation and apoptosis via suppressing
+TLR4/NF-kB and activating PI3K/AKT pathway. J Inflamm Res. 2024;17:853-863. loi:10.2147/JIR.S428305
+45. Wang L, Liang Q, Lin A, et al. Puerarin increases survival and protects against organ injury by suppressing NF-kB/JNK signaling in experimental
+sepsis. Front Pharmacol. 2020;11:560. doi:10.3389/fphar.2020.00560
+Infection and Drug Resistance
+Dovepress
+Taylor & Francis Group
+Publish your work in this journal
+Infection and Drug Resistance is an international, peer-reviewed open-access journal that focuses on the optimal treatment of infection (bacterial,
+fungal and viral) and the development and institution of preventive strategies to minimize the development and spread of resistance. The journal is
+specifically concerned with the epidemiology of antibiotic resistance and the mechanisms of resistance development and diffusion in both hospitals and
+the community. The manuscript management system is completely online and includes a very quick and fair peer-review system, which is all easy to use.
+Visit http://www.dovepress.com/testimonials.php to read real quotes from published authors.
+Submit your manuscript here: https://www.dovepress.com/infection-and-drug-resistance-journal
+Infection and Drug Resistance 2025:18
+f
+X
+in
+3277

@@ -1,0 +1,41 @@
+[package]
+name = "cwb"
+version = "0.1.0"
+edition = "2021"
+description = "Chat Workbench - Full-stack deployment and development CLI"
+license = "MIT"
+authors = ["Your Name <your.email@example.com>"]
+repository = "https://github.com/your-org/chat-workbench"
+
+[[bin]]
+name = "cwb"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4.4", features = ["derive", "color", "help", "usage", "error-context"] }
+tokio = { version = "1.35", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.9"
+serde_json = "1.0"
+anyhow = "1.0"
+thiserror = "1.0"
+colored = "2.1"
+indicatif = "0.17"
+dialoguer = "0.11"
+dirs = "5.0"
+uuid = { version = "1.6", features = ["v4"] }
+
+# Optional dependencies for specific features
+reqwest = { version = "0.11", features = ["json", "rustls-tls"], optional = true }
+futures = "0.3"
+
+[features]
+default = ["http-client"]
+http-client = ["reqwest"]
+
+[profile.release]
+strip = true
+opt-level = "z"
+lto = true
+codegen-units = 1
+panic = "abort"

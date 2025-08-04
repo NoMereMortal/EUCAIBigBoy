@@ -1,0 +1,3412 @@
+
+Blood Cancer Journal
+www.nature.com/bcj
+ARTICLE
+OPEN
+Check for updates
+Integrated genomics with refined cell-of-origin subtyping
+distinguishes subtype-specific mechanisms of treatment
+resistance and relapse in diffuse large B-cell lymphoma
+Janek S. Walker ID 1,9 Kerstin Wenzl Joseph P. Novak¹, Matthew E. Stokes², Melissa A. Hopper ID 1 Abigail R. Dropik
+1
+ID
+Miranda
+S.
+Siminski
+1
+ID
+Allison M. Bock
+1,3 Vivekananda Sarangi⁴, Maria Ortiz⁵, Nicholas Stong
+2
+ID
+ID
+,
+C. Chris Huang
+6
+ID
+Matthew J. Maurer ID 1,4 Brian K. Link⁷, Stephen M. Ansell ID 1 Thomas M. Habermann ID 1 Thomas E. Witzig ID Rebecca L. King⁸,
+1
+James R. Cerhan
+4
+Grzegorz Nowakowski
+ID
+ID
+Anita
+K.
+Gandhi⁶,⁹
+and Anne J. Novak
+1,9
+ID
+© The Author(s) 2025
+Up to 40% of diffuse large B-cell lymphoma (DLBCL) patients do not experience a durable response to frontline
+immunochemotherapy, and prospective identification of high-risk cases that may benefit from personalized therapeutic
+management remains an unmet need. Molecular phenotyping techniques have established a landscape of genomic variants in
+diagnostic DLBCL; however, these have not yet been applied in large-scale studies of relapsed/refractory DLBCL, resulting in
+incomplete characterization of mechanisms driving tumor progression and treatment resistance. Here, we performed an integrated
+multiomic analysis on 228 relapsed/refractory DLBCL samples, including 24 with serial biopsies. Refined cell-of-origin subtyping
+identified patients harboring GCB and DZsig+ relapsed/refractory tumors in cases with primary refractory disease with remarkably
+poor outcomes, and comparative analysis of genomic features between relapsed and diagnostic samples identified subtype-
+specific mechanisms of therapeutic resistance driven by frequent alteration to MYC, BCL2, BCL6, and TP53 among additional strong
+lymphoma driver genes. Tumor evolution dynamics suggest innate mechanisms of chemoresistance are present in many DLBCL
+tumors at diagnosis, and that relapsed/refractory tumors are primarily comprised of a homogenous clonal expansion with reduced
+tumor microenvironment activity. Adaptation of personalized therapeutic strategies targeting DLBCL subtype-specific resistance
+mechanisms should be considered to benefit these high-risk populations.
+Blood Cancer Journal (2025)15:120; https://doi.org/10.1038/s41408-025-01326-5
+INTRODUCTION
+Recent efforts to define the high degree of complexity among
+Diffuse large B-cell lymphoma (DLBCL) is a highly heterogeneous
+DLBCL tumors have been dominated by advancements in high-
+lymphoma representing ~30% of non-Hodgkin lymphoma cases
+throughput systems facilitating the identification of molecular
+worldwide. Patient outcomes are favorable, with more than 65%
+subtypes with distinct pathogenic mechanisms that respectively
+of patients experiencing durable remission following standard-of-
+associate with clinical features and risk factors. [12-17] Adoption
+care rituximab with cyclophosphamide, vincristine, doxorubicin,
+of these classifications by research groups has expanded
+and prednisone (R-CHOP) or polatuzumab vedotin (pola-R-CHP)
+comprehension of genomic landscapes underlying DLBCL tumors
+immunochemotherapy [1-5]. In contrast, 30-40% of DLBCL
+at diagnosis [18-21], and recent studies have begun to utilize
+patients will relapse following an initial response, with ~10% of
+these techniques to evaluate rrDLBCL. These studies have
+cases exhibiting primary refractory disease [6]. Outcomes for
+described disruption to apoptotic, senescence, and NF-kB signal-
+relapsed/refractory DLBCL (rrDLBCL) cases remain poor, particu-
+ing pathways as factors driving therapeutic resistance, and
+larly for those with tumor progression within 24 months from
+provide evidence suggesting distinct tumor evolutionary
+diagnosis [7, 8]. rrDLBCL cases may be eligible for autologous
+dynamics in early vs late relapse cases [8, 22-26]; overall
+stem-cell transplantation (ACST), chimeric antigen-receptor T-cell
+broadening the scope of understanding of rrDLBCL tumor biology.
+(CAR-T), or bispecific T-cell engager (epcoritamab, glofitamab)
+However, the studies to date remain restricted by sample size with
+therapy, however complete responses in this setting remain below
+limited evaluation of subtype-specific disease biology, insufficient
+50%, representing a major clinical challenge with significant
+to comprehensively describe resistance mechanisms and translate
+unmet needs [4, 9-11].
+to benefit high-risk patients.
+¹Division of Hematology, Mayo Clinic, Rochester, MN, USA. ²Informatics and Predictive Sciences, Bristol Myers Squibb, Summit, NJ, USA. ³Division of Hematology and Hematologic
+Malignancies, Huntsman Cancer Institute/University of Utah, Salt Lake City, UT, USA. ⁴Department of Quantitative Health Sciences Research, Mayo Clinic, Rochester, MN, USA.
+⁵Informatics and Predictive Sciences, Celgene Institute for Translational Research Europe (CITRE), Seville, Spain. ⁶Translational Medicine Hematology, Bristol Myers Squibb,
+Summit, NJ, USA. Division of Hematology, University of lowa, lowa City, IA, USA. ⁸Department of Laboratory Medicine and Pathology, Mayo Clinic, Rochester, MN, USA. ⁹These
+authors contributed equally: Janek S. Walker, Kerstin Wenzl, Anita K. Gandhi, Anne J. Novak. email: Novak.Anne@mayo.edu
+Received: 6 January 2025 Revised: 5 June 2025 Accepted: 25 June 2025
+Published online: 12 July 2025
+SPRINGER NATURE
+J.S. Walker et al.
+2
+Table 1. Patient characteristics.
+Patient characteristics
+All eligible rrDLBCL
+Patient characteristics
+All eligible rrDLBCL
+(N = 228)
+(N = 228)
+Age at diagnosis
+Dark-zone signature, n (%)
+Mean (SD)
+62.4 (13)
+ABC
+68 (46.6%)
+Median
+64.0
+GCB
+39 (26.7%)
+IQR
+55.0, 72.0
+DZsig+
+24 (16.4%)
+Range
+24.0, 91.0
+Unclassified
+15 (10.3%)
+Age Group, n (%)
+EFS24, n (%)
+≤60
+91 (41.0%)
+Achieved
+36 (23.8%)
+>60
+131 (59.0%)
+Failed
+115 (76.2%)
+Sex, n (%)
+Last follow-up, n (%)
+Male
+142 (64.0%)
+Alive
+52 (28.0%)
+Female
+80 (36.0%)
+Dead
+134 (72.0%)
+PS Group, n (%)
+Primary COD, n (%)
+<2
+120 (85.7%)
+Disease
+88 (88.0%)
+≥2
+20 (14.3%)
+Therapy
+5 (5.0%)
+Ann Arbor Stage, n (%)
+Other
+7 (7.0%)
+I-II
+37 (24.2%)
+Dx to relapse sample (Mo)
+III-IV
+116 (75.8%)
+Mean (SD)
+24.9 (28)
+aalPI, n (%)
+Median
+13.8
+0
+33 (15.1%)
+IQR
+7.9, 29.0
+1
+87 (39.7%)
+Range
+1.64, 149.8
+2
+82 (37.4%)
+Relapse to last follow-up
+3
+17 (7.8%)
+Mean (SD)
+39.9 (53)
+Extranodal sites, n (%)
+Median
+10.2
+0-1 extranodal sites
+122 (77.2%)
+IQR
+3.45, 65.0
+2 or more extranodal sites
+36 (22.8%)
+Range
+0.03, 210.1
+Bulky disease, n (%)
+Sample Type, n (%)
+Yes
+13 (8.4%)
+R1
+96 (60.8%)
+No
+142 (91.6%)
+R2
+36 (22.8%)
+Bone marrow involv., n (%)
+R3
+17 (10.8%
+Yes
+33 (23.2%)
+R4
+4 (2.5%)
+None
+109 (76.8%)
+R5
+2 (1.3%)
+B symptoms, n (%)
+R6
+1 (0.6%)
+Yes
+44 (30.1%)
+R7
+1 (0.6%)
+No
+102 (69.9%)
+R10
+1 (0.6%)
+LDH group, n (%)
+Elevated
+110 (67.5%)
+Not elevated
+53 (32.5%)
+To expand upon the current etiology and driving mechanisms of
+molecular features in rrDLBCL tumors and establish a framework to
+resistance in DLBCL, the study presented herein describes the
+identify potential high-risk cases and proactively strategize clinical
+largest multiomic analysis in rrDLBCL tumor samples to date,
+management beyond frontline treatment.
+utilizing clinical and biologic variables from 228 rrDLBCL and 444
+newly diagnosed DLBCL (ndDLBCL). We report that the genomic
+landscape among rrDLBCL tumors collectively shares considerable
+MATERIALS/SUBJECTS AND METHODS
+overlap with diagnostic DLBCL, validating literature describing very
+Study populations
+few genomic variants enriched in rrDLBCL vs ndDLBCL. Alternatively,
+Participants were not prospectively identified for this study. All
+leveraging refined cell-of-origin (COO) subtyping including the dark-
+samples had a diagnosis of DLBCL. All patients provided written
+zone signature positive (DZsig+) classification [17] to facilitate
+informed consent at study enrollment, including use of clinical
+comparative analysis of genomic and transcriptomic alterations
+samples in accordance with the Declaration of Helsinki, and
+within tumor sub-groups, we identify GCB and DZsig+ subtype
+approved by the institutional review board (IRB) at study
+rrDLBCL tumors more frequently observed in aggressive, primary
+centers. We utilized clinical and high-throughput sequencing
+treatment refractory, cases with differential underlying biology
+data from 228 relapsed/refractory and 444 diagnostic DLBCL
+defined by enrichment for somatic variants and copy number
+tumors. [27] rrDLBCL tumors obtained from n = 85 participants
+alterations affecting MYC, BCL2, BCL6 and TP53 among additional
+enrolled in the Mayo Clinic/University of lowa Lymphoma
+strong lymphoma driver genes. Clonal evolution analysis in rrDLBCL
+Molecular Epidemiology Resource (MER) program; n = 73 in
+suggests the genomic landscape driving treatment resistance is
+the Mayo Clinic Lymphoma Biobank; and n = 70 rrDLBCL
+strongly present at diagnosis, and exceedingly evident in cases of
+collected as part of the clinical study NCT01421524 (Table 1).
+primary refractory disease. Herein, we explore subtype-specific
+Similar clinical characteristics were observed in patients across
+SPRINGER NATURE
+Blood Cancer Journal (2025)15:120
+J.S. Walker et al.
+3
+A
+Freq. (n)
+B
+Freq (n)
+0 20 40 60
+0 20 40
+KMT2D
+40%
+18q21.33
+PCLO
+IGLL5
+39%
+17p11.2
+21%
+TP53
+38%
+17p13.1
+20%
+CREBBP
+37%
+15%
+B2M
+6q23.3
+HIST1H1E
+36%
+6q21
+15%
+LRP1B
+14%
+35%
+SOCS1
+19q13.42
+14%
+MYD88
+33%
+1p36.32
+13%
+EP300
+33%
+12%
+CD79B
+1q32.1
+11%
+BCL2
+32%
+1q23.3
+11%
+DUSP2
+31%
+11%
+OSBPL10
+4q35.1
+11%
+ITPKB
+30%
+8q24.21
+11%
+NOTCH2
+29% IIII
+SPEN
+6q14.3
+11%
+10%
+CARD11
+27% II
+2p16.1
+10%
+ARID1A
+27%
+10%
+BIRC6
+6q14.1
+10%
+RELN
+25%
+3q28
+9%
+BTG1
+25%
+15q15.3
+9%
+PIM1
+8%
+PRDM1
+24%
+9p21.3
+PRKDC
+23%
+12p12.1
+ZFHX3
+8%
+ETV6
+22%
+19p13.3
+8%
+FOXO1
+22%
+1p36.11
+8%
+LCOR
+8%
+STAT6
+19%
+17q24.3
+8%
+TLN2
+19%
+4q21.22
+TRRAP
+CIITA
+17%I
+13q31.3
+7%
+EBF1
+17%
+14q32.31
+7%
+IRF8
+7%
+VPS13B
+17%
+6p21.1
+7%
+BTG2
+17%
+9p24.1
+HIST1H1D
+SETD1B
+17%
+3p21.31
+SETD2
+16%
+1p13.1
+7%
+SGK1
+7%
+SMARCA4
+16%
+1p31.1
+7%
+TNFRSF14
+15%
+10q23.31
+7%
+ZFP36L1
+14%
+ZNF608
+11q23.3
+6%
+MGA
+14%
+13q14.2
+6%
+MPEG1
+14%
+6%
+MTOR
+13q34
+6%
+MYC
+14%
+18q23
+6%
+TBL1XR1
+13%
+6%
+2q22.2
+TET2
+6%
+TNFAIP3
+13%
+9q21.13
+6%
+ATR
+6%
+12%
+BCL7A
+19p13.2
+6%
+DTX1
+11%
+16q12.1
+6%
+HIST1H1B
+10%
+1q42.12
+6%
+IKZF3
+6%
+NAV1
+10%
+6p21.33
+6%
+STAT3
+8%
+8q12.1
+ATM
+BCR
+5%
+17q25.1
+5%
+CHD8
+2%
+5%
+12p13.2
+IL4R
+NFKBIE
+COO
+III
+NOL9
+PRKCB
+TRIP12
+Alterations
+COO
+ZNF292
+COO
+Del
+Gain
+ABC
+GCB
+Alterations
+COO
+Loss
+Amp
+DZsig+
+Unclassified
+Missense
+Multi_Hit
+ABC
+GCB
+Truncating
+In_frame
+DZsig+
+Unclassified
+C
+D
+Variable
+OR
+CI
+P-value
+rrDLBCL
+ndDLBCL
+Variable
+OR
+CI
+P-value
+rrDLBCL
+ndDLBCL
+TNFRSF14
+0.41
+[0.21,0.77]
+.003
+14 (6.86%)
+58 (15.18%)
+19q13.42 gain
+HH
+4.1
+[2.47,6.84]
+<.001
+46 (34.85%)
+42 (11.51%)
+S1PR2
+0.16
+[0.02,0.67]
+004
+2 (0.98%)
+22 (5.76%)
+4q35.1 loss
+HH
+3.04
+[1.83,5.05]
+<.001
+41 (31.06%)
+47 (12.88%)
+GNA13
+0.39
+[0.17,0.8]
+007
+10 (4.90%)
+45 (11.78%)
+17p11.2 loss
+2.73
+[1.73,4.33]
+<.001
+52 (39.39%)
+70 (19.18%)
+EZH2
+0.4
+[0.17,0.82]
+.01
+10 (4.90%)
+44 (11.52%)
+8q24.21 gain
+I
+2.21
+[1.35,3.59]
+001
+40
+(30.30%)
+60 (16.44%)
+MS4A1
+6.73
+[1.27,67.07]
+.01
+7 (3.43%)
+2 (0.52%)
+18q21.33 gain
+2.05
+[1.31,3.19]
+.001
+53 (40.15%)
+90 (24.66%)
+HLA-B
+0.19
+[0.02,0.8]
+017
+2 (0.98%)
+19 (4.97%)
+19p13.3 loss
+HH
+2.49
+[1.4,4.39]
+.001
+29 (21.97%)
+37 (10.14%)
+HIST2H2BE
+5.74
+[1.01,58.57]
+024
+6 (2.94%)
+2 (0.52%)
+1q23.3 gain
+HH
+1.9
+[1.18,3.04]
+.006
+42
+(31.82%)
+72 (19.73%)
+RFX7
+0.13
+[0,0.86]
+025
+1 (0.49%)
+14 (3.66%)
+2q22.2 loss
+2.69
+[1.26,5.66]
+.006
+17 (12.88%)
+19 (5.21%)
+HVCN1
+0.13
+[0,0.86]
+025
+1 (0.49%)
+14 (3.66%)
+17p13.1 loss
+HH
+1.81
+[1.15,2.82]
+.007
+50 (37.88%)
+92 (25.21%)
+SGK1
+0.49
+[0.24,0.93]
+025
+14 (6.86%)
+50 (13.09%)
+10q23.31 loss
+2.42
+[1.23,4.74]
+.007
+20 (15.15%)
+25 (6.85%)
+FOXC1
+0.21
+[0.02,0.91]
+026
+2 (0.98%)
+17 (4.45%)
+14q32.31 loss
+H
+2.19
+[1.17,4.05]
+.009
+23 (17.42%)
+32 (8.77%)
+ZFAT
+0.26
+[0.05,0.88]
+.026
+3 (1.47%)
+21 (5.50%)
+13q34 loss
+2.38
+[1.19,4.73]
+01
+19 (14.39%)
+24 (6.58%)
+CD79A
+3.85
+[1.02,17.67]
+029
+8 (3.92%)
+4 (1.05%)
+9q21.13 loss
+I
+2.42
+[1.15,5]
+.012
+17 (12.88%)
+21 (5.75%)
+MEF2B
+0.44
+[0.18,0.96]
+034
+9(4.41%)
+36 (9.42%)
+1q32.1 gain
+HH
+1.8
+[1.13,2.87]
+.012
+43 (32.58%)
+77 (21.10%)
+NAV1
+2.59
+[0.98,7.08]
+036
+12 (5.88%)
+9(2.36%)
+4q21.22 loss
+2.07
+[1.14,3.71]
+.013
+25 (18.94%)
+37 (10.14%)
+PPP1R9B
+4.48
+[1.01,27.12]
+038
+7 (3.43%)
+3 (0.79%)
+17q24.3 gain
+1.9
+[1.05,3.37]
+.024
+25 (18.94%)
+40 (10.96%)
+MYBPC2
+0.14
+[0,0.95]
+042
+1 (0.49%)
+13(3.40%)
+1q42.12 loss
+2.38
+[1.02,5.45]
+.029
+13 (9.85%)
+16 (4.38%)
+STAT6
+2.23
+[1,5.06]
+047
+16 (7.84%)
+14 (3.66%)
+0.05
+0.25
+1.0
+5.0
+25.0
+0.05
+0.25
+1.0
+5.0
+25.0
+OR
+OR
+E
+40
+F
+ndDLBCL
+rrDLBCL
+30
+Composite
+Altered ndDLBCL Samples (%)
+EZB
+(4.3%)
+BN2
+A53
+17p13.1 loss
+(15.8%)
+(5.4%)
+(38.9%)
+BN2
+1q32. gain
+18q21.33 gain
+MCD
+A53
+(2.3%)
+20
+(1.7%)
+1q23.3 gain
+(15.5%)
+17p11.2 loss
+Composite
+TNFRSF14
+8q24 gain
+N1
+SGK1
+9q21.13 loss
+4q35. loss
+(9.9%)
+GNA13
+17q24.3 gain
+(0.3%)
+EZH2
+ST2
+HLA-B
+ST2
+10
+MEF2B
+S1PR2®
+ZFAT
+19p13.3 loss
+(4.9%)
+(3.1%)
+gain
+1q42.
+EZB
+4q21. loss
+10q23.31
+FOXC STAT6
+14q32.31 loss
+(10.7%)
+RFX7
+MYBPC2
+13q34 loss
+NAV1
+MCD
+HVCN1
+CD79A
+2q22.2 loss
+0
+other
+(3.8%) N1
+other
+HIST2H2BE
+MS4A1
+PPP1R9B
+(52.1%)
+(0.8%)
+(30.5%)
+0
+10
+20
+30
+40
+Altered rrDLBCL Samples (%)
+Alteration
+-Log10(p-value)
+ndDLBCL
+Mutation Gain Loss
+enrichment
+rrDLBCL
+2
+4
+6
+enrichment
+the study sources (Supplemental Table 1). A majority of rrDLBCL
+al. [27]. A total of 693 DLBCL tumor samples were evaluated for
+patients (72.8%) received frontline R-CHOP (Supplemental
+comparative analysis of features between diagnostic and relapsed
+Table 2).
+DLBCL, n = 444 ndDLBCL and n = 249 rrDLBCL (Supplemental
+Clinical and HTS data from ndDLBCL tumors were obtained
+Fig. 1). In the case where both relapsed and diagnostic tumor
+from the MER or trial NCT00670358 [28], as described in Wenzl et
+samples were collected from the same patient, that sample was
+Blood Cancer Journal (2025)15:120
+SPRINGER NATURE
+J.S. Walker et al.
+4
+Fig. 1 Genomic landscape and enrichment of genetic variants in rrDLBCL tumors. A Oncoplot representing recurrent non-silent somatic
+single variants or insertions/deletions in rrDLBCL tumor samples (n = 204). Predicted functional consequence represented by color (missense,
+green; truncating, red; in-frame, orange; multi-hit, black). Bar plot (right) represents the sum of samples with a mutation in the respective gene.
+Genes depicted were filtered for genes with established potential in lymphoma (see Supplemental Table 5). B Oncoplot representing
+recurrent copy number alterations detected in rrDLBCL tumor samples (n = 132). Predicted event is represented by color (Amplification [Amp],
+dark red; Gain, light red; Deletion [Del], dark blue; Loss, light blue). Genomic regions depicted were filtered for locations with established
+potential in lymphoma (see Supplemental Table 6). c Forest plot and enrichment analysis comparing recurrent non-silent somatic single
+variants or insertions/deletions between rrDLBCL (n = 204) and ndDLBCL (n = 382) tumors. OR 1 indicates enrichment in rrDLBCL tumors.
+D Forest plot and enrichment analysis comparing recurrent copy number alterations between rrDLBCL (n = 132) and ndDLBCL (n = 365)
+tumors. OR > 1 indicates enrichment in rrDLBCL. E Summary visualizing frequency of recurrent non-silent somatic single variants or insertions/
+deletions and copy number alterations in rrDLBCL and ndDLBCL tumors. Alteration type represented by color (mutation, green; gain, red; loss,
+blue). For clarity, only SNV and CNV data from genes/regions from C, D are shown. Bubble size represents -Log10(p value). Points above
+dotted line indicate enrichment in ndDLBCL tumor samples, points below dotted line indicate enrichment in rrDLBCL tumor samples.
+F LymphGen classification in ndDLBCL (n = 349) and rrDLBCL (n = 131) tumor samples.
+removed from the ndDLBCL cohort (n = 24). Comparative analysis
+RNA for RNA sequencing was extracted from FFPE tissue
+between ndDLBCL was conducted using the first available rrDLBCL
+sections, and sequencing was performed at Expression Analysis,
+sample for a given patient, removing n = 21 serial samples from
+Inc. using the Illumina TruSeq RNA Exome Kit (Illumina) for library
+the rrDLBCL cohort. Unless otherwise stated, genetic and clinical
+preparation, sequencing platform HiSeq 4000, 100 2 paired-end
+variables were evaluated between n = 420 ndDLBCL and n = 228
+reads. Paired-end fastq files were processed on a cloud-based
+rrDLBCL cases. The differences in clinical characteristics in rrDLBCL
+platform at Bristol Myers Squibb. Similar transcript profiles were
+and ndDLBCL were as expected (Supplemental Table 3). Clinical
+observed in patient samples from all sample sources (Supple-
+characteristics in rrDLBCL and ndDLBCL cohorts were largely
+mental Fig. 3A-D). Cell of origin (COO) in ndDLBCL samples was
+representative of a tertiary care center and similar to population-
+obtained from Wenzl et al. [27], determined by the Lymph2Cx
+based cohorts from studies in the USA, Canada, Denmark, and
+assay (NanoString; n = 224) [40] or from RNA-Seq data (n = 81)
+Sweden [8, 29-31]. The median age at relapse among rrDLBCL
+using the method described by Reddy et al. [32]. For rrDLBCL
+patients was 64.0 years [range 24-91], and 64% were male. The
+samples, COO status was assigned from RNA-Seq data according
+median time from initial DLBCL diagnosis to relapse/refractory
+to the Reddy method and was shown to have excellent
+sample acquisition was 13.8 months (range 1.64-149.8), with 76%
+concordance (Pearson's = 0.95, CI = [0.93-0.96], p < 0.001) with
+of patients failing to achieve event-free status at 24 months
+the gneSeqCOO method [41] (Supplemental Fig. 3E). "Refined
+(EFS24; Table 1, Supplemental Fig. 2A). Patients failing to achieve
+COO" subtype was assigned by applying the DHIT/DZsig method
+event-free status at 24 months demonstrated inferior overall
+[17, 42]. Full sequencing and analysis details are available in the
+survival (OS, measured from the time of rr sample collection to last
+supplemental methods.
+follow-up; Log-rank p = 0.03; Supplemental Fig. 2B).
+DNA and RNA sequencing and analysis
+RESULTS
+The mutational profiles of n = 204 rrDLBCL tumors were assessed
+Landscape of somatic mutations and structural variants in
+by whole-exome (WES) or whole-genome sequencing (WGS;
+rrDLBCL
+Supplemental Fig. 2C). Paired germline DNA (from blood PBMC)
+Single-nucleotide variants (SNVs) and short somatic insertions or
+was available for n = 143 rrDLBCL samples. All samples used for
+deletions were called across rrDLBCL samples for a median tumor
+DNA and RNA extraction were reviewed by a Mayo Clinic
+mutation burden (TMB) of 134.5 per patient (range 9-4534) and
+hematopathologist prior to sectioning. All tumor DNA was
+2.69 per Mb (range 0.18-90.76). Evaluating SNVs and insertion/
+extracted from formalin-fixed, paraffin-embedded (FFPE) tissue
+deletion events across a landscape of genes or gene regions with
+sections, and WES was performed at Expression Analysis using the
+established potential in lymphoma (Supplemental Tables 5 and 6),
+Agilent SureSelect XT All Exon V6 + UTR kit, and sequencing was
+mutations affecting KMT2D, PCLO, IGLL5, TP53, and CREBBP were
+carried out on an Illumina NovaSeq, 100 x 2 paired-end reads.
+most frequently observed in rrDLBCL tumors (Fig. 1A). Evaluating
+Average median sequencing coverage was reported at 78.4x across
+copy number variants (CNVs), rrDLBCL tumors were dominated by
+samples analyzed by WES and 38.2x across samples analyzed by
+gains/amplifications in regions affecting 18q21.33 (BCL2 locus),
+WGS (Supplemental Table 4). Similar mutational profiles were
+19q13.42 (BIRC8), 1q32.1 (MDM4, IL10), 1q23.3 (CD244, PBX1), and
+observed in tumors between study and sequencing sources
+8q24.21 (MYC) and losses/deletions in regions affecting 17p11.2
+(Supplemental Fig. 2D, E). ndDLBCL samples were solely analyzed
+(NCOR1), 17p13.1 (TP53, EIF5A), 6q23.3 (TNFAIP3, IL20RA, IL22RA2),
+by WES using identical methods as above [27] with a median target
+6q21 (FOXO3, HDAC2), and 1p36.32 (TP73; Fig. 1B).
+coverage distribution similar to that observed in rrDLBCL samples
+(average median coverage = 80.7x). All ndDLBCL samples analyzed
+Genomic enrichments in rrDLBCL
+by WES had matched constitutional DNA sequencing. Gene
+With the intent to describe genomic variants in rrDLBCL and
+mutations (n = 292) and genomic regions (n = 45) highlighted for
+enrichment for events occurring more frequently in the diagnostic
+enrichment analyses have been previously reported with impact on
+or relapsed setting, we next leveraged a catalog of ndDLBCL
+lymphoma biology (Supplemental Tables 5 and 6) [15, 32-38].
+tumor samples recently described by our group [27]. We observed
+Frequency of mutations in genes with established potential in
+a reduction in total SNVs and insertion/deletions in rrDLBCL
+DLBCL in ndDLBCL and rrDLBCL cohorts was similar to three
+compared to ndDLBCL (134.5/pt, 2.69/Mb vs 181.0/pt, 3.62/Mb;
+ndDLBCL validation cohorts: NCI (n = 489) [33], BCCA (n = 153) [21],
+p = 1.5e-5, effect size (r) = -0.18; Supplemental Fig. 4A). rrDLBCL
+and MSK-IMPACT (n = 220 [39]; Supplemental Fig. 2F). CNV analysis
+TMB interrogated here is a modest reduction compared to
+was conducted on n = 365 ndDLBCL and n = 132 rrDLBCL cases, all
+literature reporting non-synonymous somatic mutation rate of
+with matched constitutional DNA sequencing. High concordance in
+3.2/Mb and 3.3/Mb in smaller studies of both diagnostic and
+CNV frequency was observed in rrDLBCL samples sequenced by
+rrDLBCL [20, 23, 43].
+WES (n = 62) or WGS (n = 70) (Pearson's = 0.82, CI = [0.68-0.90],
+To explore mutation signatures attributed to tumorigenic
+p < 0.001; Supplemental Fig. 2G).
+processes in rrDLBCL, we evaluated single base substitutions
+SPRINGER NATURE
+Blood Cancer Journal (2025)15:120
+J.S. Walker et al.
+5
+A
+ndDLBCL
+B
+ndDLBCL
+rrDLBCL
+ABC
+100
+100
+DZsig+
+33%
+14%
+75
+75
+12%
+40%
+os probability (%)
+50
+Unclassified
+25
+Log-rank
+os probability (%)
+50
+25
+Log-rank
+p=0.11
+p=0.0027
+GCB
+0
+0
+rrDLBCL
+0
+24
+48
+72
+96
+120
+0
+24
+48
+72
+96
+120
+ABC
+Number at risk
+Number at risk
+ABC
+102
+81
+63
+38
+25
+14
+ABC
+46
+35
+31
+26
+17
+13
+47%
+DZsig+
+44
+32
+25
+19
+9
+4
+DZsig+
+19
+4
+2
+2
+2
+2
+GCB
+122
+106
+84
+61
+34
+19
+GCB
+27
+15
+12
+10
+6
+5
+UNC
+37
+32
+27
+17
+10
+7
+UNC
+10
+7
+7
+6
+2
+1
+16%
+10%
+DZsig+
+Unclassified
+0
+24
+48
+72
+96
+120
+0
+24
+48
+72
+96
+120
+Months
+Months
+27%
+GCB
+c
+ABC
+D
+ABC
+100
+100
+20
+oz
+MPEG1
+80
+80
+40
+PRDM1
+=
+9p21.3 loss
+60
+60
+MYD88
+JGLL5
+6q21
+CD79B
+18q21.33 ga
+60
+15g15.3 loss
+EP300
+HIST1H1E
+40
+40
+SPEN
+gain
+12p12.1 gain
+80
+LRP1B
+80
+13q31.3\gain
+TP53
+17p13.1 loss
+PRKDO
+FOXO1/
+20
+14q32.31 loss
+20
+17p11.2 loss
+CIITA
+ARID1A
+19p13.3 loss
+17q24.3 gain
+BCR
+TAT6
+BCL2
+CREBBP
+VPS13B
+1q23.3 gain
+B2M
+TNFRSF14
+BCL7A
+2p16.1
+IKZF3
+6p21 gain\
+0
+0
+/EZH2
+HIST1H1C
+3p21.31 loss
+GCB
+0
+40
+DZsig+
+GCB
+0
+09
+80
+100
+DZsig+
+DZsig+
+DZSig+
+E
+ABC
+GCB
+DZsig+
+Variable
+OR
+CI
+P-value
+rrDLBCL
+ndDLBCL
+Variable
+OR
+CI
+P-value
+rrDLBCL
+ndDLBCL
+Variable
+OR
+CI
+P-value
+rrDLBCL
+ndDLBCL
+ACTB
+Inf
+[1.01,Inf]
+025
+4 (6.90%)
+0 (0.00%)
+B2M
+3.96
+[1.57,10.08]
+002
+15 (40.54%)
+16(14.55%)
+BCL6
+10.44
+[1.05,526.57]
+021
+5 (22.73%)
+1 (2.63%)
+B2M
+0.2
+[0.02,0.95]
+027
+2 (3.45%)
+13 (15.12%)
+CD79B
+Inf
+[2.06,Inf]
+.004
+4 (10.81%)
+0 (0.00%)
+PARD3
+Inf
+[0.74,Inf]
+045
+3 (13.64%)
+0 (0.00%)
+PTPRD
+0
+[0,0.99]
+042
+0 (0.00%)
+7 (8.14%)
+CIITA
+4
+[1.06,15.6]
+02
+7 (18.92%)
+6(5.45%)
+TAF1
+Inf
+[0.74,Inf]
+045
+3 (13.64%)
+0 (0.00%)
+HIST1H3B
+Inf
+[0.62,Inf]
+.063
+3(5.17%)
+0 (0.00%)
+PRKCB
+6.44
+[0.88,74.04]
+035
+4 (10.81%)
+2(1.82%)
+MAP4K4
+Inf
+[0.74,Inf]
+045
+3(13.64%)
+0 (0.00%)
+NCOR2
+Inf
+[0.62,Inf]
+063
+3(5.17%)
+0 (0.00%)
+GNA13
+0.14
+[0,0.97]
+044
+1 (2.70%)
+18 (16.36%)
+PIM1
+7.93
+[0.72,414.53]
+056
+4 (18.18%)
+1 (2.63%)
+CD79A
+Inf
+[0.62,Inf]
+063
+3(5.17%)
+0 (0.00%)
+LCOR
+4.09
+[0.83,21.91]
+045
+5 (13.51%)
+4 (3.64%)
+SPEN
+7.93
+[0.72,414.53]
+056
+4 (18.18%)
+1 (2.63%)
+CHD1
+0
+[0,1.59]
+082
+0 (0.00%)
+5(5.81%)
+SETD2
+4.09
+[0.83,21.91]
+045
+5 (13.51%)
+4 (3.64%)
+VPS13B
+7.93
+[0.72,414.53]
+056
+4 (18.18%)
+1 (2.63%)
+MYD88
+0.51
+[0.2,1.23]
+117
+10 (17.24%)
+(29.07%)
+CD83
+9.43
+[0.73,507.76]
+049
+3 (8.11%)
+1 (0.91%)
+IGLL5
+0.22
+[0.02,1.17]
+061
+2 (9.09%)
+12 (31.58%)
+MGA
+3.92
+[0.62,42.58]
+.118
+5(8.62%)
+2 (2.33%)
+EP300
+2.95
+[0.84,10.19]
+.059
+7 (18.92%)
+8 (7.27%)
+IKZF3
+5.14
+[0.75,59.16]
+.088
+5 (22.73%)
+2(5.26%)
+PTPN6
+3.92
+[0.62,42.58]
+.118
+5 (8.62%)
+2 (2.33%)
+SCRIB
+Inf
+[0.57,Inf]
+062
+2(5.41%)
+0 (0.00%)
+MYD88
+Inf
+[0.33,Inf]
+131
+2 (9.09%)
+0 (0.00%)
+CBLB
+0.2
+[0,1.62]
+.144
+1 (1.72%)
+7 (8.14%)
+NCOR2
+Inf
+[0.57,Inf]
+.062
+2(5.41%)
+FOXC1
+0 (0.00%)
+ATM
+Inf
+[0.33,Inf]
+.131
+2 (9.09%)
+0 (0.00%)
+0.2
+[0,1.62]
+.144
+1 (1.72%)
+7 (8.14%)
+MS4A1
+Inf
+[0.57,Inf]
+062
+2(5.41%)
+0 (0.00%)
+SETD5
+Inf
+EZH2
+[0.33,Inf]
+131
+0
+[0,2.23]
+.148
+0 (0.00%)
+4 (4.65%)
+2 (9.09%)
+0 (0.00%)
+KMT2D
+ZFAT
+0
+[0,2.23]
+148
+0 (0.00%)
+4 (4.65%)
+2.12
+[0.9,4.94]
+.065
+16 (43.24%)
+29 (26.36%)
+MCL1
+Inf
+[0.33,Inf]
+.131
+2 (9.09%)
+0 (0.00%)
+PTPRD
+PARD3
+0
+[0,2.23]
+.148
+0 (0.00%)
+4 (4.65%)
+0
+[0,1.28]
+066
+0 (0.00%)
+10 (9.09%)
+WAC
+Inf
+[0.33,Inf]
+.131
+2(9.09%)
+0 (0.00%)
+TLN2
+4.27
+[0.68,30.65]
+067
+(10.81%)
+3 (2.73%)
+BTK
+5.67
+[0.42,314.16]
+.135
+3(13.64%)
+1 (2.63%)
+OR
+0
+OR
+OR
+F
+ABC
+GCB
+DZsig+
+Variable
+OR
+CI
+P-value
+rrDLBCL
+ndDLBCL
+Variable
+OR
+CI
+P-value
+rrDLBCL
+ndDLBCL
+Variable
+OR
+CI
+P-value rrDLBCL ndDLBCL
+4q35.1 loss
+4.44
+[1.55,13.34]
+.002
+13 (34.21%)
+9 (10.34%)
+8q24.21 gain
+5.74
+[2,16.79]
+<.001
+12 (48.00%)
+15(13.64%)
+2q22.2 loss
+Inf
+[1.22,Inf]
+016
+3 (21.43%)
+0 (0.00%)
+1q32.1 gain
+3.28
+[1.24,8.81]
+.009
+14 (36.84%)
+(14.94%)
+4q35.1 loss
+5.33
+[1.87,15.42]
+.001
+12 (48.00%)
+16(14.55%)
+3p21.31 loss
+9.54 [0.69,541.54]
+055
+3 (21.43%)
+1 (2.63%)
+1p13.1 loss
+3.1
+[1.07,9.19]
+021
+11 (28.95%)
+(11.49%)
+14q32.31 loss
+6.19
+[1.87,20.75]
+001
+9 (36.00%)
+9(8.18%)
+19q13.42 gain
+4.73
+[0.48,63.46]
+.114
+3 (21.43%)
+2(5.26%)
+1q23.3 gain
+3.16
+[1.12,8.98]
+.022
+12 (31.58%)
+(12.64%)
+4q21.22 loss
+5.52
+[1.71,17.96]
+002
+9 (36.00%)
+10 (9.09%)
+17p11.2 loss
+2.75
+[0.6,12.53]
+.161
+6 (42.86%)
+8 (21.05%)
+19q13.42 gain
+2.52
+[1.04,6.13]
+.034
+17 (44.74%)
+(24.14%)
+19q13.42 gain
+6.6
+[1.69,26.87]
+003
+7 (28.00%)
+6(5.45%)
+2p16.1 gain
+0.29
+[0.03,1.62]
+179
+2 (14.29%)
+(36.84%)
+13q34 loss
+4.93
+[0.67,56.79]
+069
+4 (10.53%)
+2 (2.30%)
+1p36.32 loss
+3.68
+(1.36,10.79)
+006
+17 (68.00%)
+40 (36.36%)
+1q23.3 gain
+2.74
+[0.64,11.96]
+.181
+7 (50.00%)
+(26.32%)
+1p31.1 loss
+2.67
+[0.85,8.43]
+093
+9 (23.68%)
+9 (10.34%)
+19p13.3 loss
+4.18
+[1.26,13.45]
+009
+8 (32.00%)
+1 (10.00%)
+17p13.1 loss
+2.74
+[0.64,11.96]
+181
+7 (50.00%)
+10
+(26.32%)
+6q14.1 loss
+0.44
+[0.15,1.13]
+.097
+8 (21.05%)
+33 (37.93%)
+17p11.2 loss
+3.87
+[1.31,11.22]
+009
+10 (40.00%)
+(14.55%)
+15q15.3 loss
+0.22
+[0,1.86]
+251
+1 (7.14%)
+(26.32%)
+15q15.3 loss
+2.22
+[0.77,6.33]
+124
+10 (26.32%)
+12 (13.79%)
+17q24.3 gain
+5.38
+[1.29,22.54]
+.01
+6 (24.00%)
+6 (5.45%)
+1q42.12 loss
+Inf
+[0.07,Inf]
+.269
+1 (7.14%)
+0 (0.00%)
+6q14.3 loss
+0.51
+[0.19,1.28]
+151
+9 (23.68%)
+33 (37.93%)
+18q21.33 gain
+3.27
+[1.08,9.59]
+021
+9 (36.00%)
+(14.55%)
+loss
+2.93
+[0.19,44.52]
+291
+2 (14.29%)
+2(5.26%)
+4q21.22 loss
+2.29
+[0.7,7.42]
+154
+8 (21.05%)
+9 (10.34%)
+1p36.11 loss
+3.11
+[1.14,8.48]
+023
+12 (48.00%)
+25(22.73%)
+9p24.1 gain
+0
+[0,2.95]
+307
+0 (0.00%)
+5(13.16%)
+19p13.3 loss
+2.04
+[0.63,6.39]
+.175
+8 (21.05%)
+10 (11.49%)
+6q23.3 loss
+2.74
+[1.03,7.38]
+032
+13 (52.00%)
+(28.18%)
+12p13.2 loss
+0
+[0,2.95]
+307
+0 (0.00%)
+5 (13.16%)
+12p12.1 gain
+2.13
+[0.7,6.34]
+183
+9 (23.68%)
+11 (12.64%)
+17p13.1 loss
+2.8
+[0.98,7.81]
+.035
+10 (40.00%)
+21
+(19.09%)
+14q32.31 loss
+0
+[0,2.95]
+.307
+0 (0.00%)
+5 (13.16%)
+13q14.2 loss
+2.51 [0.62,10.17]
+183
+6 (15.79%)
+6 (6.90%)
+2q22.2 loss
+3.63
+[0.82,14.89]
+046
+5(20.00%)
+7 (6.36%)
+13q31.3 gain
+2.28
+[0.29,15.89]
+.37
+3 (21.43%)
+4 (10.53%)
+3q28 gain
+1
+0.54
+[0.19,1.39]
+204
+8 (21.05%)
+(33.33%)
+3p21.31 loss
+2.85
+[0.96,8.2]
+.049
+9 (36.00%)
+18
+(16.36%)
+4q21.22 loss
+0.35
+[0.01,3.17]
+423
+1 (7.14%)
+7 (18.42%)
+0.050.251.0
+5.025.0
+0.050.251.0
+5.025.0
+5.025.0
+OR
+OR
+OR
+(SBS) in the context of signature patterns described in the COSMIC
+missense mutations in the MS4A1 gene (encoding the CD20
+database [44, 45]. Mutational patterns in rrDLBCL displayed
+protein) were almost exclusively present in the CD20 transmem-
+elevated weight toward SBS signatures related to defective DNA
+brane domain (Supplemental Fig. 4D), similar to previous reports
+mismatch repair (SBS15, p = 0.003, r = 0.12; SBS6, p = 0.13,
+in rrDLBCL [25]. Mutations affecting TNFRSF14, S1PR2, GNA13, and
+r = 0.06), activity of activation-induced cytidine deaminase
+EZH2 were among genes more frequently observed in ndDLBCL.
+(SBS84, p = 0.049, r = 0.08), and chemotherapy treatment
+Further, CNV events were exclusively observed at a higher
+(SBS86, p = 0.002, r = 0.13; Supplemental Fig. 4B).
+frequency in rrDLBCL-highlighted by gains at 19q13.42 (ZNF628,
+Comparing mutation frequency between rrDLBCL and
+NAT14, SSC5D locus), 8q24.21 (CASC11, MYC), 18q21.33 (PIGN,
+ndDLBCL, low-frequency mutations including MS4A1, HIST2H2BE,
+BCL2), 1q23.3 (FCGR2B), and 1q32.1 (TMCC2, IL10), and losses at
+CD79A, NAV1, PPP1R9B, and STAT6 were more frequently present
+4q35.1 (CYP4V2, TLR3), 17p11.2 (TOP3A, FOXO3B), 19p13.3 (CD70),
+in rrDLBCL (Fig. 1C, Supplemental Fig. 4C). Both truncating and
+2q22.2 (KYNU, ARHGAP15), and 17p13.1 (TP53; Fig. 1D). SNV and
+Blood Cancer Journal (2025)15:120
+SPRINGER NATURE
+J.S. Walker et al.
+6
+Fig. 2 High-risk molecular features and poor outcomes in rrDLBCL tumors harboring dark-zone COO gene expression signature. A COO
+composition in ndDLBCL (ABC, n = 102; GCB, n = 122; DZsig+, n = 44; Unclassified, = 37) and rrDLBCL (ABC, n = 68; GCB, n = 39; DZsig+,
+n = 24; unclassified, = 15) tumors. B Kaplan-Meier estimation of overall survival (OS, from the time of original diagnosis) for patients from
+ndDLBCL cohort (left, n = 305) and rrDLBCL cohorts (right, n = 102) stratified by COO subtype. Patients analyzed at the indicated time points
+are shown in the table. ABC Blue, GCB yellow, Unclassified green, DZsig+ red. P value determined via Log-rank test. c Ternary plot visualizing
+the relative frequency of recurrent non-silent somatic single variants or insertions/deletions in rrDLBCL tumors stratified by COO subtypes
+ABC (n = 58, blue), GCB (n = 37, yellow), and DZsig+ (n = 22, red). Mutations affecting >15% of tumors within each respective subtype were
+labeled. D Ternary plot visualizing the relative frequency of recurrent copy number alterations in rrDLBCL tumors stratified by COO subtypes
+ABC (n = 37, blue), GCB (n = 25, yellow), and DZsig+ (n = 14, red). CNVs affecting >25% of tumors within each respective subtype were
+labeled. E Forest plot and enrichment analysis comparing recurrent non-silent somatic single variants or insertions/deletions between
+rrDLBCL and ndDLBCL tumors stratified by COO subtypes ABC (left; n = 58 rrDLBCL, = 86 ndDLBCL), GCB (middle; n = 37 rrDLBCL, n = 110
+ndDLBCL), and DZsig+ (right; n = 22 rrDLBCL, n = 38 ndDLBCL). OR > 1 indicates enrichment in rrDLBCL. F Forest plot and enrichment analysis
+comparing recurrent copy number alterations between rrDLBCL and ndDLBCL tumors stratified by COO subtypes ABC (left; n = 38 rrDLBCL,
+n = 87 ndDLBCL), GCB (middle; n = 25 rrDLBCL, = 110 ndDLBCL), and DZsig+ (right; = 14 rrDLBCL, = 38 ndDLBCL). OR > 1 indicates
+enrichment in rrDLBCL.
+CNV frequency for enriched genes/loci between rrDLBCL and
+Similarly, enrichment for CNV events was restricted to COO
+ndDLBCL samples are visualized in Fig. 1E. A higher proportion of
+subtypes in rrDLBCL. Gains at 19q13.42 appeared as a consistent
+LymphGen-subtype A53 were observed in rrDLBCL (38.9% vs
+feature in rrDLBCL regardless of COO (Fig. 2F). ABC rrDLBCL
+15.5%, p < 0.001), as were a modest reduction in the frequency of
+featured enrichment for losses at 4q35.1 and gains/losses
+EZB (10.7% vs 15.8%, p = 0.19) and BN2 (2.3% vs 5.4%, p = 0.22;
+affecting chromosome 1 (1q32.1 gain, 1p13.1 loss, 1q23.3 gain).
+Fig. 1F). 'Genetically Composite' LymphGen cases appeared more
+Increased genomic complexity was overall observed in GCB
+abundant in rrDLBCL (9.9% vs. 4.3%; p = 0.03), while tumors in
+rrDLBCL, where samples at relapse demonstrated enrichment for
+both rrDLBCL and ndDLBCL calculated >90% probability for EZB
+several CNV events, including gains at 8q24.21, 17q24.3, and
+and A53 core subtypes.
+18q21.33, and losses at 4q35.1, 14q32.31, 4q21.22, and 1p36.32,
+among others. Enrichment for CNV events in DZsig+ rrDLBCL
+GCB and DZsig+ tumors highlight aggressive molecular
+tumors was limited, only observing losses at 2q22.2 and 3p21.31.
+features in rrDLBCL
+The LymphGen A53 classification was more abundantly observed
+Compared to ndDLBCL, rrDLBCL samples were enriched for the
+in ABC (43% vs 17%, p = 0.005) and GCB (40% vs 14%, p = 0.009)
+ABC subtype (47% vs 33%; p = 0.01), and fewer GCB-subtype
+rrDLBCL (Supplemental Fig. 5C).
+tumors (27% vs 40%; p = 0.006, Fig. 2A). Among COO subtypes,
+there was no difference in the distribution of age at original
+Transcriptional programming in rrDLBCL
+diagnosis in cases from ndDLBCL and rrDLBCL cohorts,
+To evaluate the transcriptional profile of rrDLBCL, we conducted
+although rrDLBCL patients >80 years of age at diagnosis
+RNA sequencing in rrDLBCL tumors (n = 144) and compared
+predominantly contained ABC subtype tumors (Supplemental
+against profiles established from ndDLBCL (n = 303), with any
+Fig. 5A). rrDLBCL patients with DZsig+ subtype tumors
+overlapping (paired ndDLBCL and rrDLBCL) cases removed from
+experienced a shorter DTI during the diagnostic phase of their
+analysis. Differential expression analysis revealed minimal tran-
+disease than patients with ABC (p = 0.001, = -0.40) or GCB
+scriptional variance between relapsed and diagnostic tumors,
+(p = 0.04, r = 0.32) tumors (Supplemental Fig. 5B). Amongst
+observing 709 up- or down-regulated genes (FDR 0.05, |Log2FC
+rrDLBCL patients, variance in overall survival (measured from
+>0.5) including enrichment for genes with established potential in
+time of original diagnosis; log-rank p = 0.003) was observed
+lymphoma in rrDLBCL such as CELSR2 (Log2FC = 0.51, FDR = 1.95
+between COO subtypes, with poor outcomes in patients
+e-5), MYC (Log2FC = 0.55, FDR = 2.06e-4), CD274 (PD-L1; Log2FC =
+harboring DZsig+ (median 15.0 mo) and GCB (36.5 mo)
+0.52, FDR = 3.19e-3), and USP6 (Log2FC = 0.76, FDR = 4.25e-3;
+compared to ABC tumors (74.4 mo; Fig. 2B).
+Fig. 3A). Transcriptional programming within COO subtypes was
+In rrDLBCL, somatic mutations affecting genes with established
+also similar between diagnostic and relapsed tumors, however
+potential in lymphoma were more frequently present in GCB and
+overexpression genes including CELSR2 (Log2FC = 0.53, FDR =
+DZsig+ tumors relative to ABC tumors (Fig. 2C). Mutations
+0.02), MYBPC2 (Log2FC = 1.68, FDR = 4.77e-4), MYC (Log2FC =
+affecting IKZF3, BCL6, ARID1A, CREBBP, TP53, and SPEN were more
+0.61, FDR = 0.04), and MYOM2 (Log2FC = 1.33, FDR = 6.93e-3) was
+frequently present in DZsig+ tumors, and KMT2D, B2M, SOCS1,
+observed in ABC rrDLBCL, and modest downregulation of MS4A1
+CIITA, EP300, and STAT6 mutations were more frequently observed
+(Log2FC = 0.77, FDR = 0.33) in DZsig+ rrDLBCL (Supplemental
+with in GCB rrDLBCL. rrDLBCL mutations appearing more
+Fig. 5D).
+frequently in ABC tumors included MPEG1, PRDM1, MYD88, IGLL5,
+Our previous work in DLBCL utilized transcriptional program-
+and CD79B. Alternatively, nearly all CNV events in rrDLBCL were
+ming to establish a high-risk signature genomic classification tool
+observed at a higher frequency in GCB tumors, headlined by gains
+[27]. Here, we observed significant negative enrichment for genes
+at 2p16.1, 9p24.1, and 8q24.21, or losses at 1p36.32, 14q32.31,
+whose reduced expression is associated with high risk for EFS24
+1p36.11, 3p21.31, and 19p13.3 (Fig. 2D).
+failure (RNASig-DOWN; NES = -1.99, FDR = 3.15e-4) and modest
+Directly comparing mutation frequency between rrDLBCL and
+positive enrichment for genes whose elevated expression is
+ndDLBCL tumors within respective subtypes, enrichment for a few
+associated with high risk for EFS24 failure (RNASig-UP; NES = 1.78,
+mutations was observed between ABC tumors at diagnosis or relapse,
+FDR = 0.197; Fig. 3B, C). Furthermore, gene set enrichment
+with only B2M and PTPRD mutations appearing more frequently in
+analysis (GSEA) identified positive enrichment for genes con-
+ndDLBCL and ACTB mutations more frequent at relapse (Fig. 2E).
+tributing to the Ecotyper classification B-cell state S05 in rrDLBCL
+Alternatively, GCB-subtype tumors featured numerous mutations
+(NES = 1.66, FDR = 0.181; Fig. 3B).
+enriched or depleted at relapse, including GNA13 mutations in
+RNA-sequencing was further utilized to estimate the diversity
+ndDLBCL and B2M, CD79B, CIITA, PRKCB, LCOR, SET2D, and CD83
+and composition of the lymphoma microenvironment (LME) [46].
+mutations in rrDLBCL. rrDLBCL DZsig+ tumors demonstrated enrich-
+Minimal changes in the distribution of LME classifications were
+ment for mutations in BCL6, PARD3, TAF1 and MAP4K4, whereas only
+observed between ndDLBCL and rrDLBCL, although an LME-
+IGLL5 mutations appeared modestly enriched in ndDLBCL.
+depleted (LME-DE) signature was slightly more evident in rrDLBCL
+SPRINGER NATURE
+Blood Cancer Journal (2025)15:120
+J.S. Walker et al.
+7
+A
+Diagnosis
+Relapse/Refractory
+B
+c
+5
+DLBCL_RNASig-DOWN
+GOBP Neural
+Nucleus Development
+RNASig-down
+0.00
+30
+GOBP Hydrogen Peroxide
+4
+Metabolic Process
+CNS PNS
+Enrichment Score
+-0.25
+-0.50
+NES 1.99
+-0.75
+FDR 3.15e-04
+PRB4
+GOBP Reactive Oxygen
+PRB1.
+3
+Node 1663
+-Log₁₀(FDR)
+-Log₁₀(FDR)
+Species Metabolic Process
+0
+5000
+10000
+15000
+20
+PRB2
+PRH2
+ENK UV Response
+Keratinocyte-UP
+Rank
+PRH1
+MUC6
+PRB3
+Bcell Ecotyper
+CBLIF
+SOX2-OT
+2
+S05 20pct
+DLBCL_RNASig-UP
+LRTM1
+KIM PTEN
+Targets-UP
+0.8
+10
+Enrichment Score
+NES 1.78
+CELSR2
+0.6
+1
+FDR 1.97e-01
+TOX
+0.4
+MYC
+GOBP Central Nervous
+MET
+System Development
+0.2
+KIT-
+CD274
+0.0
+0
+0
+USP6
+RNASig-up
+0
+5000
+10000
+15000
+-7.5
+-5.0
+-2.5
+0.0
+2.5
+0.0
+0.5
+1.0
+1.5
+2.0
+Rank
+Log₂(Fold Change)
+abs(NES)
+not significant
+Set Size
+NES
+ndDLBCL
+2000
+-1 0 1
+rrDLBCL
+D
+E
+ndDLBCL
+rrDLBCL
+ndDLBCL
+LME
+Plasma cells
+LME-GC
+LME-DE
+B cells naive
+B cells memory
+9%
+31%
+cells CD4 memory resting
+cells CD4 naive
+T cells CD4 memory activated
+27%
+T cells gamma delta
+LME-IN
+T cells follicular helper
+T cells CD8
+34%
+T cells regulatory
+Macrophages M2
+LME-ME
+Macrophages M1
+Macrophages MO
+Mast cells activated
+rrDLBCL
+NK cells activated
+Neutrophils
+LME
+Monocytes
+LME-DE
+Dendritic cells resting
+Eosinophils
+LME-GC
+36%
+Mast cells resting
+9%
+Dendritic cells activated
+1
+NK cells resting
+25%
+0.5
+abundances
+LME-IN
+30%
+0
+COO
+LME-ME
+COO
+Group
+Zscore
+ABC
+GCB
+Bcell
+Macrophage
+2 4
+DZsig+
+UNC
+CD4 Tcell
+Other
+Tcell
+F
+p=0.004
+G
+p<0.001
+p=0.01
+r=-0.14
+1.25
+r=-0.21
+r=-0.12
+1.2
+1.00
+0.1
+cells CD8
+0.8
+cells CD8
+0.75
+0.50
+0.4
+0.25
+T cells regulatory
+0.05
+0
+0
+0
+ndDLBCL
+rrDLBCL
+GCB
+GCB
+DZsig+
+DZsig+
+ndDLBCL
+rrDLBCL
+ndDLBCL
+rrDLBCL
+p=0.002
+p=0.004
+p=0.03
+r=-0.15
+0.8
+r=-0.14
+r=-0.10
+0.6
+0.6
+0.1
+T cells CD4
+memory resting
+0.4
+cells CD4
+0.4
+0.2
+memory activated
+cells CD4
+0.2
+memory resting
+0.05
+0
+0
+0
+ndDLBCL
+rrDLBCL
+GCB
+GCB
+DZsig+
+DZsig+
+ndDLBCL
+rrDLBCL
+ndDLBCL
+rrDLBCL
+p<0.001
+p=0.001
+p=0.007
+r=-0.20
+r=-0.16
+r=-0.13
+0.8
+0.8
+T cells follicular helper
+0.6
+cells follicular helper
+0.6
+cells follicular helper
+0.2
+0.4
+0.4
+0.1
+0.2
+0.2
+0
+0
+0
+ndDLBCL
+rrDLBCL
+GCB
+GCB
+DZsig+
+DZsig+
+ndDLBCL
+rrDLBCL
+ndDLBCL
+rrDLBCL
+(36% vs 31%; p = 0.24, Fig. 3D). The CIBERSORTx tool [47] was
+evaluating individual cell types, including a reduction in abun-
+employed to infer cell type abundance and corroborated LME
+dance of CD8+T cells = 0.004, r = -0.14), CD4+ resting
+classifications, observing a similar distribution and activity of
+memory cells (p = 0.002, r = -0.15), and T follicular helper cells
+immune cell infiltrates in ndDLBCL and rrDLBCL (Fig. 3E). Evidence
+< 0.001, r = -0.20; Fig. 3F). LME signature abundance followed
+of an LME-depleted class was further evident in rrDLBCL when
+patterns of COO subtype with stronger LME involvement
+Blood Cancer Journal (2025)15:120
+SPRINGER NATURE
+J.S. Walker et al.
+8
+Fig. 3 Transcriptional programming in rrDLBCL. A Differential gene expression analysis from bulk RNA-sequencing in rrDLBCL (n = 144) and
+ndDLBCL (n = 303) tumor samples. Genes with significant enrichment (FDR 0.05, |Log2FC|>0.5) in rrDLBCL tumors (maroon) or ndDLBCL
+tumors (gray) are indicated by color. Dotted line indicates -Log10(FDR) = 0.05 and Log2|FoldChange| = 0.5. B Gene set enrichment analysis
+(GSEA) describing disrupted pathways as indicated from differential gene expression in A. X axis represents the absolute value of normalized
+enrichment score (NES), y axis represents -Log10(adj p value). Gene set size indicated by bubble size. NES indicated by color (Blue-negative
+enrichment, red-positive enrichment). Dotted line indicates -log₁₀(0.05). c Leading edge plots visualizing enrichment score for
+DLBCL_RNASig-DOWN and RNASig-UP gene sets from GSEA in (B). D Classification of lymphoma microenvironment (LME) signatures
+inferred from gene expression profiling in ndDLBCL (n = 303) and rrDLBCL (n = 143) tumor samples. LME-DE red, LME-GC blue, LME-IN teal,
+LME-ME purple. E Cell type abundance of the associated lymphoma microenvironment inferred from gene expression analysis using the
+CIBERSORTx tool in ndDLBCL (n = 303) and rrDLBCL (n = 144) tumor samples. Cell types are grouped by rows. COO annotation is indicated
+below. F Enrichment of inferred T-cell subtypes from E. p-value determined using Wilcoxon rank sum test. G Enrichment of inferred T-cell
+subtypes among GCB (n = 39 rrDLBCL, n = 121 ndDLBCL) and DZsig+ (n = 22 rrDLBCL, n = 44 ndDLBCL) tumors from E. p-value determined
+using Wilcoxon rank sum test.
+clustering in ABC/Unclassified tumor samples (Supplemental Fig.
+kappa = 0.4; Fig. 5C). The majority of shifts in Refined COO after
+5F). Within COO subtypes, an LME-depleted class was again
+relapse occurred between GCB and DZsig+ classifications. The
+evident in rrDLBCL including reduction of CD8 + T cells (p < 0.001,
+variant allele frequency (VAF) of recurrently mutated genes (e.g.,
+r = 0.21) CD4 + activated memory cells (p = 0.004, = -0.14),
+BCL2, CREBBP, KMT2D, TP53) was consistently elevated in paired
+and T follicular helper cells = 0.001, = -0.16) in GCB rrDLBCL
+rrDLBCL samples, suggesting these rrDLBCL tumors feature
+and reduction of regulatory T cells = 0.01, r = -0.12,), CD4
+selection and expansion of a tumor clone that is present amongst
+resting memory cells (p = 0.03, r = -0.10), and T follicular helper
+the tumor burden at diagnosis (Fig. 5D). In accordance, clonal
+cells (p = 0.007, r = -0.13) and in DZsig+ rrDLBCL (Fig. 3G).
+expansion of tumor populations harboring mutations in genes
+with established potential in lymphoma was observed in rrDLBCL
+Primary refractory DLBCL and mechanisms of early relapse/
+tumors, noting expansion in clonal frequency of populations with
+refractory disease
+ATM, B2M, BCL2, CD79B, CREBBP, KMT2D, SOCS1, STAT6, and TP53
+With regard to relapse timing, patient outcomes appeared
+mutations (Fig. 5E). Clonal dynamics estimation revealed a linear
+consistent with previous reports [8, 48, 49] where rrDLBCL patients
+pattern of stepwise evolution along a singular clonal 'trunk'
+that progressed or relapsed less than 6 months from initial
+predominantly evident in cases relapsing within 9 months, which
+diagnosis (defined here as primary refractory disease, 30% of
+was in stark contrast to patterns of branched clonal evolution
+eligible rrDLBCL) demonstrated inferior OS (measured from the
+more frequently observed in later relapses.
+time the patient's first relapse sample was collected-median 4.8
+We further employed the TRUST4 [50] algorithm to reconstruct
+mo.) compared to those relapsing between 6 and 24 months
+BCR repertoires from bulk RNA-sequencing. Evaluation of CDR3
+(early relapse, 46% of eligible rrDLBCL;-median 64.0 mo.) or after
+sequence identity in paired samples revealed reduction in BCR
+24 months (late relapse, 24% of eligible rrDLBCL; median-83.9
+repertoire diversity (inversely related to clonality score) in
+mo.; Log-rank p = 0.008; Fig. 4A). Patients with primary refractory
+subsequent tumor samples, indicative of clonal enrichment at
+disease featured a more even refined COO distribution (ABC-23%,
+time of relapse and is supportive of an evolutionary dynamic
+GCB-35%, DZsig+-26%) than patients with early (ABC-51%,
+driven by clonal selection and expansion (Fig. 5F). In paired
+GCB-22%, DZsig+-22%) or late relapses (ABC-62%, GCB-19%,
+samples, the most abundant CDR3aa usage in relapsed samples
+DZsig+-4%), which were predominantly ABC (Fig. 4B; Supple-
+was identified as dominant usage or subclonal usage in the
+mental Table 7). Somatic mutation analysis in rrDLBCL grouped by
+previous sample in all cases, indicating hypermutation of the IGH
+relapse timing revealed that mutations in TP53, SOCS1, CD36, BTK,
+locus has continued after diagnosis in some cases. BCR repertoire
+and EZH2 were more frequently observed in primary refractory
+analysis in all ndDLBCL and rrDLBCL samples further supports the
+tumors (Fig. 4C, D). Mutations affecting CD79B and MYD88 were
+observation of clonal selection and expansion, where ndDLBCL
+more frequently observed in early relapse cases. For CNV events,
+tumors were heterogeneously comprised of diverse, polyclonal
+gains at 18q21.33 and losses at 18q23, 13q14.2, 17p13.1, 17p11.2
+BCR repertoire and rrDLBCL tumors were more consistently
+and 4q35.1 were more frequently observed in primary refractory
+comprised of a highly clonal tumor population with minimal
+tumors (Fig. 4E). Differential gene expression analysis in primary
+diversity in BCR repertoire (p 0.001, r = 0.29; Fig. 5G).
+refractory against early + late relapse tumors combined revealed
+upregulation of PCLO and CASP8 and downregulation of USP6
+among 168 differentially expressed genes (Fig. 4F). Here, GSEA
+DISCUSSION
+identified significant positive enrichment for the high-risk RNASig-
+This study nearly doubles the collective abundance of high-
+UP gene set (NES = 1.62, FDR = 2.78e-9) among several metabolic
+throughput sequencing in rrDLBCL presented to date, and with
+processes and negative enrichment for the B-cell state S05
+robust clinical annotations, we provide detailed characterization of
+Ecotyper classification (NES = -2.11, FDR = 2.21e-6) with addi-
+this high-risk patient population. Our study is supportive of the
+tional ABC subtype-specific gene sets (Fig. 4G).
+hypothesis that many diagnostic DLBCL tumors contain genomic
+signatures that converge on a phenotype of innate chemoresis-
+Evolutionary dynamics among rrDLBCL tumors
+tance and are predisposed to a trajectory of relapsed/refractory
+To investigate evolutionary dynamics in rrDLBCL, we next
+clinical events. Collectively, we find that rrDLBCL tumors are prone
+evaluated 24 patients with serial biopsies collected at diagnosis
+to DNA losses, gains, and rearrangements that result in amplifica-
+and relapse. Reflective of the cohort of rrDLBCL samples in this
+tion of lymphoma driver genes (e.g., MYC, BCL2, IL10) or depletion
+study, relapsed samples were collected prior to 24 months from
+of critical tumor suppressor genes (e.g., TOP3A, CD70, TP53). The
+diagnosis in 79% of paired cases (Fig. 5A). LymphGen phenotypes
+mutational landscape of rrDLBCL tumors remains largely similar to
+appeared to be fluid between paired samples with multiple 'other'
+ndDLBCL, although enrichment for low frequency mutations such
+or EZB diagnostic tumors called as A53 in the paired relapsed
+as MS4A1 (3.4% vs 0.5%), CD79A (3.9% vs 1.0%), or STAT6 (7.8% vs
+sample (Fig. 5B), while RNA-seq based genetic classifiers remained
+3.7%) suggest mechanisms of resistance to anti-CD20 driven
+largely concordant between paired diagnostic and relapsed
+therapy, constitutive activation of B-cell receptor signaling, and
+tumors (COO-Cohen's kappa = 0.55; Refined COO-Cohen's
+remodeling of the tumor microenvironment are highly specific
+SPRINGER NATURE
+Blood Cancer Journal (2025)15:120
+J.S. Walker et al.
+9
+A
+100
+B
+Late Relapse
+1.00
+Early Relapse
+Primary Refractory
+23%
+OS probability (%)
+75
+0.75
+51%
+50
+62%
+26%
+25
+0.50
+Log-rank
+=0.0076
+22%
+4%
+0
+35%
+0
+24
+48
+72
+96
+120
+0.25
+19%
+COO
+22%
+ABC
+Number at risk
+16%
+15%
+DZsig+
+Late
+20
+14
+12
+10
+6
+5
+6%
+GCB
+Relapse
+0.00
+UNC
+Early
+Relapse
+34
+20
+18
+13
+11
+8
+Primary
+Early
+Late
+Refractory
+Relapse
+Relapse
+Primary
+Refractory
+23
+5
+5
+4
+1
+1
+0
+24
+48
+72
+96
+120
+D
+Primary
+Months
+Refractory
+c
+Freq. (n)
+0 10 20 30
+28%
+KMT2D
+100
+27%
+PCLO
+24%
+IGLL5
+21%
+II
+TP53
+02
+18%
+LRP1B
+BCL7A
+EZH2
+16%
+CREBBP
+16%
+MYD88
+15%
+B2M
+WOTCH1
+80
+CD36\
+14%
+EP300
+14%
+OSBPL10
+XPO1
+EBF1
+14%
+SPEN
+=
+HIST1H1B
+13%
+HIST1H1E
+/HIST1H1C
+SOCS1
+13%
+CD79B
+ФТРКВ
+SMARCA4
+60
+13%
+NOTCH2
+13%
+Early
+VPS13B
+STAT3
+BIRC6
+12%
+RELN
+TP53
+ARID1A
+HIST1H1E
+TNFRSF14 Primary
+11%
+SOCS1
+60
+11%
+DUSP2
+SGK1
+11%
+ZFHX3
+-IKZF3
+11%
+TRRAP
+40
+10%
+PRDM1
+EP300
+9%
+CARD11
+MAP4K4
+9%
+ZFHX3
+ARID1A
+PRKDC
+80
+9%
+9%
+CHD8
+RELN
+GNAI2
+IRF8
+ETV6
+CD79B
+9%
+BCL2
+9%
+"
+PIM1
+BTG2
+20
+9% I
+MGA
+SETD2
+PRDM1
+8%
+ITPKB
+TBL1XR1
+8%
+ETV6
+KMT2D
+8%
+BTG2
+NF1
+8%
+SETD2
+MYD88
+8%
+SGK1
+0
+8%
+Early
+GRHPR
+MTOR
+Late
+8%
+TBL1XR1
+8%
+Relapse
+20
+Relapse
+8%
+BCL7A
+8%
+IKZF3
+Late Relapse
+8%
+CHD8
+8%
+PRKCB
+7%
+BTG1
+7%
+LCOR
+7%
+TLN2
+Primary
+7%
+VPS13B
+7%
+ZFP36L1
+7%
+"
+MYC
+7%
+E
+Refractory
+DTX1
+7%
+STAT3
+7%
+ATM
+100
+6%
+CIITA
+6%
+SMARCA4
+6%
+TNFRSF14
+6%
+ZNF608
+20
+6%
+MPEG1
+6%
+TRIP12
+6%
+STAT6
+80
+6%
+ATR
+6%
+HIST1H1B
+6%
+NAV1
+FOXO1
+Prolase
+40
+6%
+ZNF292
+18g23 loss
+60
+HIST1H1D
+TNFAIP3
+Early
+18g21 gain/
+13q14.2 loss
+IL4R
+60
+loss
+NFKBIE
+loss
+4g351 loss
+Primay Refractory 40
+SETD1B
+BCR
+1 gain
+2%
+NOL9
+gain
+COO
+1p36
+3q28 gain
+Relapse Time
+20
+1g32.1 gain
+Alterations
+COO
+Relapse Time
+9q21
+6q23.3
+loss
+Missense
+ABC
+GCB
+Primary Refractory
+loss
+Multi-Hit
+6p21.1 gain
+0
+Truncating
+In-Frame
+DZsig+
+Unclass.
+Early Relapse
+Early
+\6q14.1 loss/
+Late
+Late Relapse
+Relapse
+Relapse
+F
+Early Late
+Primary Refractory
+G
+Late Relapse
+15
+12
+ABCgtGCB_U133AB
+ALDOB
+NES
+RNASig-up
+1
+GOBP Small Molecule
+Metabolic Process
+0
+ITIH2
+10
+8
+Bcell Ecotyper
+S05 3pct
+-1
+-Log₁₀(FDR)
+GOBP Organic Acid
+Metabolic Process
+-2
+SLITRK5
+-Log₁₀(FDR)
+GOBP Steroid
+size
+Metabolic Process
+TCF4 Overexpression
+SLC12A1
+5
+4
+down ChIP
+15
+CYP2A6
+100
+GOMF Oxidoreductase
+Activity
+1000
+USP6
+L1TD1
+2000
+IRF4 ABC
+PCLO
+0
+0
+Induced ABC-DLBCL
+CASP8
+0
+5
+0.0
+0.5
+1.0
+1.5
+2.0
+Log₂(Fold Change)
+abs(NES)
+features in a subset of DLBCL tumors refractory to immunochem-
+resistance, should not be considered a major factor for the
+otherapy [24, 25, 51, 52].
+majority of rrDLBCL tumors. None of the rrDLBCL MS4A1
+Enrichment for MS4A1 mutations (encoding the CD20
+missense mutations were predicted to directly affect residues
+protein) at low frequency (<5% of rrDLBCL cases) suggests
+comprising the rituximab epitope [53], instead likely resulting
+this mechanism, likely driving progression via rituximab
+in impaired and unstable protein folding [25]. CD20
+Blood Cancer Journal (2025)15:120
+SPRINGER NATURE
+J.S. Walker et al.
+10
+Fig. 4 Relapse timing and tumor biology. A Kaplan-Meier estimation of overall survival (OS) for rrDLBCL patients stratified by the time at
+which their first relapse sample (R1) was collected. Patients available for analysis at the indicated time points are shown in the table. Primary
+refractory (n = 23)-Purple, early relapse (n = 34)-blue, late relapse (n = 20)-teal. P value determined via Log-rank test. B Proportion of COO
+among bins grouping rrDLBCL tumors by time at which the relapse sample was collected. Primary refractory, n = 31; early relapse, n = 51; late
+relapse, n = 26. ABC-blue, DZsig+-red, GCB-orange, Unclassified (UNC)-green. c Oncoplot representing recurrent non-silent somatic single
+variants or insertions/deletions detected in rrDLBCL tumor samples (n = 127) grouped by time at which the relapse sample was collected.
+Primary refractory, n = 38; early relapse, n = 60; late relapse, n = 29. Predicted functional consequence represented by color (missense, green;
+truncating, red; in-frame, orange; multi-hit, black). The bar plot (right) represents the sum of samples with a mutation in the respective gene.
+Genes depicted were filtered for genes with established potential in lymphoma (see Supplemental Table 5). D Ternary plot visualizing the
+relative frequency of recurrent non-silent somatic single variants or insertions/deletions in rrDLBCL tumors stratified by time at which the
+relapse sample was collected. Primary refractory (n = 38, purple), early relapse (n = 60, blue), late relapse (n = 29, teal). Mutations affecting
+>10% of tumors within each respective group were labeled. E Ternary plot visualizing the relative frequency of recurrent copy number
+alterations in rrDLBCL tumors stratified by time at which the relapse sample was collected. Primary refractory (n = 22, purple), early relapse
+(n = 26, blue), late relapse (n = 13, teal). Mutations affecting >25% of tumors within each respective group were labeled. F Differential gene
+expression analysis from bulk RNA-sequencing in rrDLBCL comparing primary refractory tumors (n = 30) against early + late relapse tumors
+(n = 77). Genes with significant enrichment (FDR < 0.05, |Log2FC|>0.5) are indicated by color. Genes with -Log(FDR) > 1.5 & |Log2FC|>2.5 are
+labeled in gray, while genes with established potential in lymphoma are labeled in black. G Gene set enrichment analysis (GSEA) describing
+disrupted pathways as indicated from differential gene expression between cases from F. X-axis represents absolute value of normalized
+enrichment score (NES), y axis represents -Log10(FDR). Dotted line indicates -Log₁₀(0.05). Gene set size indicated by bubble size. NES
+indicated by color (Blue negative enrichment, red positive enrichment).
+downregulation may be a more consistent mechanism in DZsig
+STAT6) samples, and CNV events were observed with higher
++ rrDLBCL tumors, as seen by RNA-seq in Supplemental Fig. 5D,
+relative frequency in GCB rrDLBCL. Considering enrichment for
+yet understanding mechanisms facilitating CD20 downregula-
+mutations within rrDLBCL COO subtypes against diagnostic
+tion via alternative mechanisms or post-translational modifica-
+samples, recurrent mutations affecting genes including CIITA,
+tions [54] in the context of DZsig+ tumors remains to be
+EP300, NCOR2, BCL6, and SPEN in GCB and DZsig+ rrDLBCL
+explored. Alternatively, microenvironment reprogramming
+tumors suggest disruption to these transcriptional/epigenetio
+mechanisms from TNFRSF14 (6.9% vs 15.2%), S1PR2 (1.0% vs
+regulatory molecules has a significant impact on downstream
+5.8%), GNA13 (4.9% vs 11.8%), or EZH2 (4.9% vs 11.5%)
+pathogenic mechanisms that contribute to LME reprogram-
+mutations enriched in ndDLBCL (of which, the later three are
+ming/immune evasion signatures in rrDLBCL and in partner-
+notably absent in ABC subtype DLBCL) [55-59] may confer
+ship with COO subtyping should be considered high-risk
+more sensitivity to standard immunochemotherapy.
+variants. Further, it is of considerable interest that numerous
+While numerous large-scale sequencing studies have produced
+genomic alterations appear enriched in rrDLBCL DZsig+ or
+a comprehensive database for evaluating the genomic complexity
+rrDLBCL GCB tumors that have been previously described as
+of ndDLBCL, few studies of limited size have addressed mechan-
+defining features of ABC or Unclassified COO subtype
+isms supporting therapeutic resistance and relapse. Previously,
+diagnostic DLBCL [33, 60]. This includes enrichment for BCL6
+Morin and colleagues [24] (n = 38 rrDLBCL) and Rushton and
+or SPEN mutations and mild enrichment for copy number
+colleagues [25] (n = 135 rrDLBCL) utilized high-throughput
+events such as 13q31.3 gain (MIRHG1 locus-mechanism of MYC
+sequencing techniques to evaluate genetic variants with higher
+activation) and 9p21 loss (INK4/ARF locus-loss of tumor
+frequency at relapse and for evidence of clonal selection. It is
+suppressors CDKN2A and CDKN2B) in rrDLBCL DZsig+ tumors,
+encouraging that the cohort of rrDLBCL samples presented here is
+or enrichment for CD79B mutations and copy number events
+congruent with several of these previously established results,
+such as 19q13.4 gain (SPIB locus-mechanism of BCR signaling)
+reiterating the notion that the landscape of genetic variants in
+and 6q23.3 loss (TNFAIP3 [A20] locus-mechanism of NF-kB
+rrDLBCL is highly concordant with what is observed at diagnosis
+activation) in rrDLBCL GCB tumors. Future studies should
+and that very few mutations demonstrate significant enrichment
+emphasize the evaluation of these genomic enrichments
+post-exposure to current frontline treatment.
+among COO subtypes to better identify aggressive cases.
+Our cohort size additionally permitted enrichment analysis for
+The dynamics of DLBCL tumor evolution have been a topic of
+genetic variants by refined COO subtype, and it is our hope that
+considerable interest [61], and Hilton and colleagues [8] (n = 221
+the results presented herein may contribute rationale for utilizing
+rrDLBCL) recently reported on evolutionary dynamics in rrDLBCL,
+tumor mutation/CNV calling with genomic classifications to guide
+reporting notable differences in underlying biology and outcomes
+individualized patient risk stratification and influence recommen-
+in patients with late relapse (>24 months). While our study does
+dations for clinical management. We report that patients
+not match the extensive analysis of 129 serial DLBCL biopsies by
+harboring rrDLBCL DZsig+ subtype tumors have truly dreadful
+Hilton et al., we provide invaluable data that similarly conclude
+prognosis, and while patients harboring GCB (non-DZsig+)
+distinct evolutionary mechanisms drive primary treatment resis-
+subtype tumors have historically positive treatment outcomes,
+tance and early relapse. In our study, given that the median DTI in
+our study reports that patients with GCB tumors that do
+patients from the rrDLBCL cohort during the diagnostic phase of
+experience a relapse/refractory event have very poor survival
+their disease was 15.0 days, we defined primary refractory disease
+even compared to patients with ABC and Unclassified subtype
+as those with EFS failure prior to 6 months from initial diagnosis to
+tumors. This implies distinct mechanisms are likely driving more
+solely capture patients with progression during or by the end of
+advanced tumors within these subsets, and prospective identifica-
+frontline treatment. These patients featured drastically poor
+tion of tumors with or without defined driving mechanisms could
+outcomes and were heavily skewed against ABC subtype tumors
+provide critical insight into the clinical trajectory of the affected
+in favor of GCB and DZsig+, the former being much more
+patient.
+prevalent in early and late relapse cases. Lack of chemosensitivity
+Here, DZsig+ and GCB-subtype rrDLBCL tumors demon-
+and high rate of clinical progression highlight the urgent need for
+strated distinct mutational profiles, observing several muta-
+a robust understanding of disease-driving mechanisms in these
+tions in genes with established potential in lymphoma,
+cases. As such, further evaluation of mechanisms derived from
+predominantly impacting DZsig+ (ARID1A, BCL2, BCL6, CREBBP,
+TP53 [62], SOCS1 [63], CD36 [64], BTK [65], or EZH2 [66] mutations
+EZH2, IKZF3, SPEN, TP53) and GCB (CIITA, EP300, KMT2D, SOCS1,
+in primary refractory DLBCL may shed light on disease driving
+SPRINGER NATURE
+Blood Cancer Journal (2025)15:120
+J.S. Walker et al.
+11
+A
+B
+C
+SPUB16365
+LymphGen (n=18)
+COO (n=18)
+Refined COO (n=14)
+SPUB16602
+SPUB17460
+UNC
+UNC
+UNC
+UNC
+SPUB15126
+Other
+SPUB14142
+SPUB17035
+SPUB17545
+Other
+SPUB15209
+GCB
+SPUB19005
+GCB
+SPUB18021
+EZB
+SPUB18620
+GCB
+GCB
+SPUB12857
+SPUB16939
+Comp.
+SPUB17577
+SPUB12553
+Dx
+EZB
+DZsig+
+DZsig+
+SPUB16064
+R1
+SPUB16315
+SPUB14663
+R2
+A53
+SPUB16011
+R3
+Comp.
+ABC
+SPUB19213
+ABC
+ABC
+ABC
+SPUB15663
+A53
+SPUB16043
+nd
+nd
+nd
+SPUB14020
+rr
+rr
+rr
+SPUB14664
+0
+12
+24
+36
+48
+60
+72
+Time From Dx (Months)
+D
+E
+Relapse <9 Months
+Relapse >24 Months
+SPUB16365 3.5 mo
+SPUB16602 4.6 mo
+SPUB19213 26.7 mo
+SPUB16043 30.8 mo
+1.00
+BCL2
+1.00
+CREBBP
+0.75
+XPO1
+0.75
+TP53
+0.50
+Dx
+EZH2
+Dx
+BTG1
+0.50
+Dx
+ARID1A
+0.25
+0.25
+0.00
+0.00
+VAF
+nd
+rr
+nd
+rr
+XPO1
+B2M,
+CREBBP
+1.00
+KMT2D
+1.00
+TP53
+TP53
+0.75
+R1
+EZH2
+0.75
+R1
+R1
+ARID1A
+BTG1
+R1
+0.50
+0.50
+CD83, EZH2,
+SOCS1, STAT6
+0.25
+0.25
+0.00
+0.00
+SPUB14142 5.7 mo
+SPUB18021 8.7 mo
+SPUB15663 32.8 mo
+SPUB14020 54.1 mo
+nd
+rr
+nd
+rr
+MYD88
+ARID1B, CREBBP
+000
+CREBBP
+SPEN, TP53
+BCL2,
+F
+Dx
+CIITA
+Dx
+Dx
+BCL7A
+Dx
+ATM
+KMT2D
+1.0
+TP53
+IGH Clonality Score
+0.8
+ARID1B, CREBBP
+MYD88
+R1
+BCL2,
+CREBBF
+SPEN, TP53
+0.6
+CIITA
+R1
+R3
+BCL7A
+R1
+ATM
+KMT2D
+0.4
+TP53
+0.2
+SPUB18620 8.7 mo
+SPUB12857 9.1 mo
+SPUB14664 76.9 mo
+nd
+R1
+R2
+ARID1A,
+BCL2
+G
+Dx
+MYD88
+Dx
+KMT2D
+Dx
+p<0.001
+SOCS1
+CD70
+r=0.29
+1.00
+ARID1A, DTX1
+0.75
+MYD88CD79B
+BCL2
+R1
+R1
+KMT2D
+R1
+IGH Clonality Score
+SOCS1
+CD70
+0.50
+0.25
+ndDLBCL
+rrDLBCL
+Fig. 5 Patterns of clonal evolution in rrDLBCL tumors. A Time from diagnosis to relapse sample acquisition (months) from samples from A.
+Sample type indicated by color (Dx gray, R1 red, R2 dark red, R3 brown). Line breaks indicate a previous relapse event was clinically annotated,
+but no sample was available for analysis. The dashed line visualizes 24 months from diagnosis. B Sankey plots visualizing LymphGen (n = 18)
+molecular classifications in paired diagnostic and relapsed/refractory tumor samples. c Sankey plots visualizing COO (n = 18) and Refined
+COO (n = 14) molecular classifications in paired diagnostic and relapsed/refractory tumor samples. D Raw vaf assessed in BCL2, CREBBP, KMT2D,
+and TP53 genes between paired diagnostic and relapsed/refractory tumor samples. Connecting lines indicate the same variant present in both
+paired samples from respective patients. E Clonal population structure in representative paired ndDLBCL and rrDLBCL samples inferred from
+PyClone-VI and ClonEvol tools using bulk SNV and CNV data as input, visualized by bell plot and sphere of cells. Colors represent distinctly
+inferred clones. Colored dots comprising spheres of cells are representative of the clonal abundance depicted in respective bell plots. Samples
+relapsing before 24 months are shown on the left, and samples relapsing after 24 months are shown on the right. Mutations in select
+lymphoma-driving genes are shown in affected clones. F IGH clonality score determined from the TRUST4 tool using bulk RNA-sequencing as
+input in paired ndDLBCL and rrDLBCL (R1 and R2) tumor samples. Dots represent individual samples. Lines connect paired samples. G IGH
+clonality score determined from the TRUST4 tool in ndDLBCL (n = 303) and rrDLBCL (n = 114) tumor samples. Dots represent individual
+samples. P value determined using the Wilcoxon rank sum test.
+mechanisms in these highly aggressive cases and present
+whether enrichment of genomic features is more strongly
+opportunities for more targeted second line therapy for those
+attributed to COO or relapse timing.
+not eligible for ACST or CAR-T. Given the differential distribution of
+Clonal evolution analysis suggests the mutational landscape
+refined COO subtypes between primary refractory vs early or late
+and transcriptional signatures driving rrDLBCL tumors are strongly
+relapse DLBCL, however, further evaluation is necessary to address
+present at diagnosis, especially in primary refractory cases, where,
+Blood Cancer Journal (2025)15:120
+SPRINGER NATURE
+J.S. Walker et al.
+12
+upon exposure to treatment, rrDLBCL tumors are comprised of a
+phs003868.v1.p1. Genomic data from the ndDLBCL patients utilized in this study can
+highly clonal population of B cells enriched for lymphoma-driving
+be accessed in dbGAP under accession code phs003634v1. ndDLBCL and rrDLBCL
+genomic variants supporting therapeutic resistance. Evaluating
+cohorts were compared to three publicly available ndDLBCL validation cohorts: NCI
+patterns of clonal evolution in diagnostic tumor samples may be a
+(n = 489; phs001444.v2.p1) [33], BCCA (n = 153) [21], and MSK-IMPACT (n = 220 [39];
+useful tool for predicting cases likely to progress with relapse,
+Supplemental Fig. 2F). Additional data are available upon request.
+where, as shown in paired analysis here, tumor evolution along a
+linear pattern with minimal clonal branching was highly evident in
+REFERENCES
+primary refractory and early relapse cases. With the data
+1. Coiffier B, Lepage E, Briere J, Herbrecht R, Tilly H, Bouabdallah R, et al. CHOP
+presented in this study, in late relapse cases, while the patient
+chemotherapy plus rituximab compared with CHOP alone in elderly patients with
+experiences an initial response to frontline treatment, selective
+diffuse large-B-cell lymphoma. N Engl J Med. 2002;346:235-42.
+pressure and continued hypermutation likely lead to outgrowth of
+2. Pfreundschuh M, Trumper L, Osterborg A, Pettengell R, Trneny M, Imrie K, et al.
+branched tumor clones. From these observations, we may
+CHOP-like chemotherapy plus rituximab versus CHOP-like chemotherapy alone in
+conclude that routine serial tumor sampling with extensive
+young patients with good-prognosis diffuse large-B-cell lymphoma: a rando-
+genomic analyses is not then needed in primary treatment-
+mised controlled trial by the MabThera International Trial (MInT) Group. Lancet
+resistant cases, as the genomic profile of the relapsed/refractory
+Oncol. 2006;7:379-91.
+tumor is likely to be highly similar to what has been analyzed in
+3. Habermann TM, Weller EA, Morrison VA, Gascoyne RD, Cassileth PA, Cohn JB,
+et al. Rituximab-CHOP versus CHOP alone or with maintenance rituximab in
+the diagnostic sample. Alternatively, non-invasive techniques
+(mutation analysis of ctDNA from liquid biopsies) to evaluate
+older patients with diffuse large B-cell lymphoma. J Clin Oncol.
+2006;24:3121-7.
+mechanisms driving later relapse tumors (>6 months) should be
+4. Sehn LH, Salles G. Diffuse large B-cell lymphoma. N Engl J Med. 2021;384:842-58.
+considered, as significant divergence from the original diagnostic
+5. Tilly H, Morschhauser F, Sehn LH, Friedberg JW, Trneny M, Sharman JP, et al.
+sample is likely.
+Polatuzumab vedotin in previously untreated diffuse large B-cell lymphoma. N
+Collectively, we present an update to the genomic landscape of
+Engl J Med. 2022;386:351-63.
+rrDLBCL tumors with optimism that a more detailed under-
+6. Bock AM, Mwangi R, Wang Y, Khurana A, Maurer MJ, Ayers A, et al. Defining
+standing of mechanisms driving relapsed/refractory disease may
+primary refractory large B-cell lymphoma. Blood Adv. 2024;8:3402-15.
+guide targeted therapeutic strategies for the management of
+7. Maurer MJ, Ghesquieres H, Jais JP, Witzig TE, Haioun C, Thompson CA, et al.
+rrDLBCL and strongly encourage the adoption of comprehensive
+Event-free survival at 24 months is a robust end point for disease-related out-
+genomic characterization of DLBCL tumors as routine clinical
+come in diffuse large B-cell lymphoma treated with immunochemotherapy. J Clin
+Oncol. 2014;32:1066-73.
+practice. As financial barriers and turnaround time for high-
+8. Hilton LK, Ngu HS, Collinge B, Dreval K, Ben-Neriah S, Rushton CK, et al. Relapse
+throughput sequencing efforts continues to decline, the approach
+timing is associated with distinct evolutionary dynamics in diffuse large B-cell
+utilized in this study to determine COO subtypes from gene
+lymphoma. J Clin Oncol. 2023;41:4164-77.
+expression analysis paired with the potential for a targeted
+9. Dickinson MJ, Carlo-Stella C, Morschhauser F, Bachy E, Corradini P, lacoboni G,
+sequencing panel of n = 292 genes and copy number evaluation
+et al. Glofitamab for relapsed or refractory diffuse large B-cell lymphoma. N Engl J
+of n = 45 genomic locations may sufficiently provide clinicians
+Med. 2022;387:2220-31.
+and investigators information to identify high-risk patient
+10. Landsburg DJ, Nasta SD, Svoboda J, Gerson JN, Schuster SJ, Barta SK, et al. Sur-
+populations and proactively strategize therapeutic management
+vival outcomes for patients with relapsed/ refractory aggressive B cell lympho-
+beyond standard immunochemotherapy.
+mas following receipt of high-dose chemotherapy/autologous stem
+transplantation and/or chimeric antigen receptor-modified t cells. Transplant Cell
+For example, patients harboring GCB-subtype rrDLBCL tumors
+Ther. 2023;29:495-503.
+may be strong candidates for intervention with a lenalidomide-
+11. Thieblemont C, Phillips T, Ghesquieres H, Cheah CY, Clausen MR, Cunningham D,
+based/inspired regimen (e.g., Lenalidomide-rituximab [R2],
+et al. Epcoritamab, a novel, subcutaneous CD3xCD20 bispecific T-cell-engaging
+Tafasitamab-Lenalidomide [Tafa-Len], Golcadomide), as lenalido-
+antibody, in relapsed or refractory large B-cell lymphoma: dose expansion in a
+mide has been shown to downregulate expression of PD-L1 in
+phase I/II trial. J Clin Oncol. 2023;41:2238-47.
+addition to downregulation of MYC and MYC target genes [67, 68].
+12. Alizadeh AA, Eisen MB, Davis RE, Ma C, Lossos IS, Rosenwald A, et al. Distinct
+Likewise, in line with the recently reported high-risk DLBCL cluster
+types of diffuse large B-cell lymphoma identified by gene expression profiling.
+'A7' featuring primarily ABC subtype tumors with abundant MYC
+Nature. 2000;403:503-11.
+13. Shipp MA, Ross KN, Tamayo P, Weng AP, Kutok JL, Aguiar RC, et al. Diffuse large
+pathway activation [69], enrichment for gains at 18q21 fostering
+B-cell lymphoma outcome prediction by gene-expression profiling and super-
+upregulation of TCF4, a transcription factor known to regulate MYC
+vised machine learning. Nat Med. 2002;8:68-74.
+expression [70], may support rrDLBCL patients as strong
+14. Wright G, Tan B, Rosenwald A, Hurt EH, Wiestner A, Staudt LM. A gene
+candidates for MYC pathway targeting agents (BETi). Further,
+expression-based method to diagnose clinically distinct subgroups of diffuse
+elevated frequency of copy number gains at 2p16.1 (genomic
+large B cell lymphoma. Proc Natl Acad Sci USA. 2003;100:9991-6.
+region containing the XPO1 gene) among GCB-subtype rrDLBCL
+15. Chapuy B, Stewart C, Dunford AJ, Kim J, Kamburov A, Redd RA, et al. Molecular
+tumors indicates these affected patients may be candidates for
+subtypes of diffuse large B cell lymphoma are associated with distinct pathogenic
+intervention with a small molecule XPO1 inhibitor [71, 72]. Or, due
+mechanisms and outcomes. Nat Med. 2018;24:679-90.
+to enhanced frequency of mutations and/or copy number gains
+16. Wright GW, Huang DW, Phelan JD, Coulibaly ZA, Roulland S, Young RM, et al. A
+affecting BCL2 in DZsig+ and GCB-subtype rrDLBCL tumors, a
+probabilistic classification tool for genetic subtypes of diffuse large B cell lym-
+phoma with therapeutic implications. Cancer Cell. 2020;37:551-68.e14.
+venetoclax-based therapeutic intervention may be considered
+17. Alduaij W, Collinge B, Ben-Neriah S, Jiang A, Hilton LK, Boyle M, et al. Molecular
+[73]. With elevated frequency of MS4A1 mutations and a decrease
+determinants of clinical outcomes in a real-world diffuse large B-cell lymphoma
+in MS4A1 expression in DZsig+ rrDLBCL, CD19-directed CAR-T
+population. Blood. 2023;141:2493-507.
+therapy may be a highly effective alternative strategy in patients
+18. Morin RD, Mendez-Lago M, Mungall AJ, Goya R, Mungall KL, Corbett RD, et al.
+no longer presenting tumors with surface expression of CD20.
+Frequent mutation of histone-modifying genes in non-Hodgkin lymphoma.
+Targeted therapeutic strategies should be considered beyond
+Nature. 2011;476:298-303.
+these established molecules, as the development of a more
+19. Pasqualucci L, Trifonov V, Fabbri G, Ma J, Rossi D, Chiarenza A, et al. Analysis of
+personalized therapeutic approach remains an unmet need of
+the coding genome of diffuse large B-cell lymphoma. Nat Genet.
+2011;43:830-7.
+critical importance in this high-risk patient population.
+20. Lohr JG, Stojanov P, Lawrence MS, Auclair D, Chapuy B, Sougnez C, et al. Dis-
+covery and prioritization of somatic mutations in diffuse large B-cell lymphoma
+(DLBCL) by whole-exome sequencing. Proc Natl Acad Sci USA. 2012;109:3879-84.
+DATA AVAILABILITY
+21. Arthur SE, Jiang A, Grande BM, Alcaide M, Cojocaru R, Rushton CK, et al. Genome-
+DNA and RNA-sequencing data generated from study participants providing consent
+wide discovery of somatic regulatory variants in diffuse large B-cell lymphoma.
+for release of genomic data have been deposited in dbGAP under accession code
+Nat Commun. 2018;9:4001.
+SPRINGER NATURE
+Blood Cancer Journal (2025)15:120
+J.S. Walker et al.
+13
+22. Jiang Y, Redmond D, Nie K, Eng KW, Clozel T, Martin P, et al. Deep sequencing
+46. Kotlov N, Bagaev A, Revuelta MV, Phillip JM, Cacciapuoti MT, Antysheva Z, et al.
+reveals clonal evolution patterns and mutation events associated with relapse in
+Clinical and biological subtypes of B-cell lymphoma revealed by microenviron-
+B-cell lymphomas. Genome Biol. 2014;15:432.
+mental signatures. Cancer Discov. 2021;11:1468-89.
+23. Mareschal S, Dubois S, Viailly PJ, Bertrand P, Bohers E, Maingonnat C, et al. Whole
+47. Newman AM, Steen CB, Liu CL, Gentles AJ, Chaudhuri AA, Scherer F, et al.
+exome sequencing of relapsed/refractory patients expands the repertoire of
+Determining cell type abundance and expression from bulk tissues with digital
+somatic mutations in diffuse large B-cell lymphoma. Genes Chromosomes Can-
+cytometry. Nat Biotechnol. 2019;37:773-82.
+cer. 2016;55:251-67.
+48. Gisselbrecht C, Glass B, Mounier N, Singh Gill D, Linch DC, Trneny M, et al. Salvage
+24. Morin RD, Assouline S, Alcaide M, Mohajeri A, Johnston RL, Chong L, et al. Genetic
+regimens with autologous transplantation for relapsed large B-cell lymphoma in
+landscapes of relapsed and refractory diffuse large B-cell lymphomas. Clin Cancer
+the rituximab era. J Clin Oncol. 2010;28:4184-90.
+Res. 2016;22:2290-300.
+49. Wang Y, Farooq U, Link BK, Larson MC, King RL, Maurer MJ, et al. Late relapses in
+25. Rushton CK, Arthur SE, Alcaide M, Cheung M, Jiang A, Coyle KM, et al. Genetic and
+patients with diffuse large B-cell lymphoma treated with immunochemotherapy.
+evolutionary patterns of treatment resistance in relapsed B-cell lymphoma. Blood
+J Clin Oncol. 2019;37:1819-27.
+Adv. 2020;4:2886-98.
+50. Song L, Cohen D, Ouyang Z, Cao Y, Hu X, Liu XS. TRUST4: immune repertoire
+26. Ren W, Wan H, Own SA, Berglund M, Wang X, Yang M, et al. Genetic and tran-
+reconstruction from bulk and single-cell RNA-seq data. Nat Methods.
+scriptomic analyses of diffuse large B-cell lymphoma patients with poor out-
+2021;18:627-30.
+comes within two years of diagnosis. Leukemia. 2023;38:610-20.
+51. Davis RE, Ngo VN, Lenz G, Tolar P, Young RM, Romesser PB, et al. Chronic active B-
+27. Wenzl K, Stokes ME, Novak JP, Bock AM, Khan S, Hopper MA, et al. Multiomic
+cell-receptor signalling in diffuse large B-cell lymphoma. Nature. 2010;463:88-92.
+analysis identifies a high-risk signature that predicts early clinical failure in DLBCL.
+52. Benoit A, Abraham MJ, Li S, Kim J, Estrada-Tejedor R, Bakadlag R, et al. STAT6
+Blood Cancer J. 2024;14:100.
+mutations enriched at diffuse large B-cell lymphoma relapse reshape the tumor
+28. Nowakowski GS, LaPlant B, Macon WR, Reeder CB, Foran JM, Nelson GD, et al.
+microenvironment. Int J Hematol. 2024;119:275-90.
+Lenalidomide combined with R-CHOP overcomes negative prognostic impact of
+53. Binder M, Otto F, Mertelsmann R, Veelken H, Trepel M. The epitope recognized by
+non-germinal center B-cell phenotype in newly diagnosed diffuse large B-Cell
+rituximab. Blood. 2006;108:1975-8.
+lymphoma: a phase Il study. J Clin Oncol. 2015;33:251-7.
+54. Ang Z, Paruzzo L, Hayer KE, Schmidt C, Torres Diz M, Xu F, et al. Alternative
+29. Maurer MJ, Habermann TM, Shi Q, Schmitz N, Cunningham D, Pfreundschuh M,
+splicing of its 5'-UTR limits CD20 mRNA translation and enables resistance to
+et al. Progression-free survival at 24 months (PFS24) and subsequent outcome for
+CD20-directed immunotherapies. Blood. 2023;142:1724-39.
+patients with diffuse large B-cell lymphoma (DLBCL) enrolled on randomized
+55. Cattoretti G, Mandelbaum J, Lee N, Chaves AH, Mahler AM, Chadburn A, et al.
+clinical trials. Ann Oncol. 2018;29:1822-7.
+Targeted disruption of the S1P2 sphingosine 1-phosphate receptor gene leads to
+30. Al-Mashhadi AL, Jakobsen LH, Brown P, Gang AO, Thorsteinsson AL, Rasoul K,
+diffuse large B-cell lymphoma formation. Cancer Res. 2009;69:8686-92.
+et al. Real-world outcomes following third or subsequent lines of therapy: a
+56. Morin RD, Johnson NA, Severson TM, Mungall AJ, An J, Goya R, et al. Somatic
+Danish population-based study on 189 patients with relapsed/refractory large
+mutations altering EZH2 (Tyr641) in follicular and diffuse large B-cell lymphomas
+B-cell lymphomas. Br J Haematol. 2024;204:839-48.
+of germinal-center origin. Nat Genet. 2010;42:181-5.
+31. Harrysson S, Eloranta S, Ekberg S, Enblad G, Jerkeman M, Wahlin BE, et al. Inci-
+57. Morin RD, Mungall K, Pleasance E, Mungall AJ, Goya R, Huff RD, et al. Mutational
+dence of relapsed/refractory diffuse large B-cell lymphoma (DLBCL) including
+and structural analysis of diffuse large B-cell lymphoma using whole-genome
+CNS relapse in a population-based cohort of 4243 patients in Sweden. Blood
+sequencing. Blood. 2013;122:1256-65.
+Cancer J. 2021;11:9.
+58. Muppidi JR, Schmitz R, Green JA, Xiao W, Larsen AB, Braun SE, et al. Loss of
+32. Reddy A, Zhang J, Davis NS, Moffitt AB, Love CL, Waldrop A, et al. Genetic and
+signalling via Galpha13 in germinal centre B-cell-derived lymphoma. Nature.
+functional drivers of diffuse large B cell lymphoma. Cell. 2017;171:481-94.e15.
+2014;516:254-8.
+33. Schmitz R, Wright GW, Huang DW, Johnson CA, Phelan JD, Wang JQ, et al.
+59. Xia Z, Zhang X, Liu P, Zhang R, Huang Z, Li D, et al. GNA13 regulates BCL2
+Genetics and pathogenesis of diffuse large B-cell lymphoma. N Engl J Med.
+expression and the sensitivity of GCB-DLBCL cells to BCL2 inhibitors in a
+2018;378:1396-407.
+palmitoylation-dependent manner. Cell Death Dis. 2021;12:54.
+34. Dreval K, Boutros PC, Morin RD. Minimal information for reporting a genomics
+60. Testoni M, Zucca E, Young KH, Bertoni F. Genetic lesions in diffuse large B-cell
+experiment. Blood. 2022;140:2549-55.
+lymphomas. Ann Oncol. 2015;26:1069-80.
+35. Pillonel V, Juskevicius D, Ng CKY, Bodmer A, Zettl A, Jucker D, et al. High-
+61. Melchardt T, Hufnagl C, Weinstock DM, Kopp N, Neureiter D, Trankenschuh W,
+throughput sequencing of nodal marginal zone lymphomas identifies recurrent
+et al. Clonal evolution in relapsed and refractory diffuse large B-cell lymphoma is
+BRAF mutations. Leukemia. 2018;32:2412-26.
+characterized by high dynamics of subclones. Oncotarget. 2016;7:51494-502.
+36. Spina V, Khiabanian H, Messina M, Monti S, Cascione L, Bruscaggin A, et al. The
+62. Lund S, Ngisa V, Weber K, Rutz A, Guidinger J, Hartert KT. Enrichment of TP53
+genetics of nodal marginal zone lymphoma. Blood. 2016;128:1362-73.
+alterations within GCB-like DNA subclassifications of diffuse large B-cell lym-
+37. Parry M, Rose-Zerilli MJ, Ljungstrom V, Gibson J, Wang J, Walewska R, et al.
+phoma after transition from de-novo to relapsed or refractory disease. Blood Res.
+Genetics and prognostication in splenic marginal zone lymphoma: revelations
+2022;57:164-9.
+from deep sequencing. Clin Cancer Res. 2015;21:4174-83.
+63. Mellert K, Martin M, Lennerz JK, Ludeke M, Staiger AM, Kreuz M, et al. The impact of
+38. Rossi D, Trifonov V, Fangazio M, Bruscaggin A, Rasi S, Spina V, et al. The coding
+SOCS1 mutations in diffuse large B-cell lymphoma. Br J Haematol. 2019;187:627-37.
+genome of splenic marginal zone lymphoma: activation of NOTCH2 and other
+64. Danilova OV, Dumont LJ, Levy NB, Lansigan F, Kinlaw WB, Danilov AV, et al. FASN
+pathways regulating marginal zone development. J Exp Med.
+and CD36 predict survival in rituximab-treated diffuse large B-cell lymphoma. J
+2012;209:1537-51.
+Hematop. 2013;6:11-8.
+39. Zehir A, Benayed R, Shah RH, Syed A, Middha S, Kim HR, et al. Mutational land-
+65. Phelan JD, Scheich S, Choi J, Wright GW, Haupl B, Young RM, et al. Response to
+scape of metastatic cancer revealed from prospective clinical sequencing of
+Bruton's tyrosine kinase inhibitors in aggressive lymphomas linked to chronic
+10,000 patients. Nat Med. 2017;23:703-13.
+selective autophagy. Cancer Cell. 2024;42:238-52.e9.
+40. Scott DW, Wright GW, Williams PM, Lih CJ, Walsh W, Jaffe ES, et al. Determining
+66. Scholze H, Stephenson RE, Reynolds R, Shah S, Puri R, Butler SD, et al. Combined
+cell-of-origin subtypes of diffuse large B-cell lymphoma using gene expression in
+EZH2 and Bcl-2 inhibitors as precision therapy for genetically defined DLBCL
+formalin-fixed paraffin-embedded tissue. Blood. 2014;123:1214-7.
+subtypes. Blood Adv. 2020;4:5226-31.
+41. Harris W, Cao Y, Morschhauser F, Salles G, Jiang Y, Bottos A, et al. gneSeqCOO: a
+67. Lopez-Girona A, Heintel D, Zhang LH, Mendy D, Gaidarova S, Brady H, et al.
+novel method for classifying diffuse large B-cell lymphoma cell of origin based on
+Lenalidomide downregulates the cell survival factor, interferon regulatory factor-
+bulk tumor RNA sequencing profiles. Leuk Lymphoma. 2025;66:898-905.
+4, providing a potential mechanistic link for predicting response. Br J Haematol.
+42. Ennishi D, Jiang A, Boyle M, Collinge B, Grande BM, Ben-Neriah S, et al. Double-hit
+2011;154:325-36.
+gene expression signature defines a distinct subgroup of germinal center B-cell-
+68. Ramsay AG, Clear AJ, Fatah R, Gribben JG. Multiple inhibitory ligands induce
+like diffuse large B-cell lymphoma. J Clin Oncol. 2019;37:190-201.
+impaired T-cell immunologic synapse function in chronic lymphocytic leukemia
+43. Lawrence MS, Stojanov P, Mermel CH, Robinson JT, Garraway LA, Golub TR, et al.
+that can be blocked with lenalidomide: establishing a reversible immune evasion
+Discovery and saturation analysis of cancer genes across 21 tumour types. Nat-
+mechanism in human cancer. Blood. 2012;120:1412-21.
+ure. 2014;505:495-501.
+69. Stokes ME, Wenzl K, Huang CC, Ortiz M, Hsu CC, Maurer MJ, et al. Transcriptomic
+44. Sondka Z, Dhir NB, Carvalho-Silva D, Jupe S, Madhumita, McLaren K, et al. COS-
+classification of diffuse large B-cell lymphoma identifies a high-risk activated B-
+MIC: a curated database of somatic variants and clinical data for cancer. Nucleic
+cell-like subpopulation with targetable MYC dysregulation. Nat Commun.
+Acids Res. 2024;52:D1210-D7.
+2024;15:6790.
+45. Rosenthal R, McGranahan N, Herrero J, Taylor BS, Swanton C. DeconstructSigs:
+70. Jain N, Hartert K, Tadros S, Fiskus W, Havranek O, Ma MCJ, et al. Targetable
+delineating mutational processes in single tumors distinguishes DNA repair
+genetic alterations of TCF4 (E2-2) drive immunoglobulin expression in diffuse
+deficiencies and patterns of carcinoma evolution. Genome Biol. 2016;17:31.
+large B cell lymphoma. Sci Transl Med. 2019;11:eaav5599.
+Blood Cancer Journal (2025)15:120
+SPRINGER NATURE
+J.S. Walker et al.
+14
+71. Kalakonda N, Maerevoet M, Cavallo F, Follows G, Goy A, Vermaat JSP, et al.
+ETHICS APPROVAL AND CONSENT TO PARTICIPATE
+Selinexor in patients with relapsed or refractory diffuse large B-cell lymphoma
+All studies were performed in accordance with the Declaration of Helsinki.
+(SADAL): a single-arm, multinational, multicentre, open-label, phase 2 trial. Lancet
+Participants were not prospectively identified for this study. All patients provided
+Haematol. 2020;7:e511-e22.
+written informed consent at study enrollment, including use of clinical samples in
+72. Marullo R, Rutherford SC, Revuelta MV, Zamponi N, Culijkovic B, Kotlov N, et al.
+accordance with the Declaration of Helsinki, and approved by the IRB at the Mayo
+XPO1 enables adaptive regulation of mRNA export required for genotoxic stress
+Clinic and study centers.
+tolerance in cancer cells. Cancer Res. 2023;84:101-17.
+73. Rossi A, Orecchioni S, Falvo P, Tabanelli V, Baiardi E, Agostinelli C, et al. Dual
+targeting of the DNA damage response pathway and BCL-2 in diffuse large B-cell
+ADDITIONAL INFORMATION
+lymphoma. Leukemia. 2022;36:197-209.
+Supplementary information The online version contains supplementary material
+available at https://doi.org/10.1038/s41408-025-01326-5.
+AUTHOR CONTRIBUTIONS
+Correspondence and requests for materials should be addressed to Anne J. Novak.
+JSW and KW designed and conducted analyses, generated data and figures,
+interpreted results and wrote the manuscript. JPN, MS, MAH, ARD, MSS, and AMB
+Reprints and permission information is available at http://www.nature.com/
+conducted experiments, interpreted results, and generated figures. VS, MO, NS, CCH,
+reprints
+and MJM collected and assembled data. BKL, SMA, TMH, TEW, RLK, and GN provided
+study materials or patients. JRC, AKG and AJN planned the project, acquired funding,
+Publisher's note Springer Nature remains neutral with regard to jurisdictional claims
+supervised the study, interpreted results, and reviewed the manuscript. Authors read
+in published maps and institutional affiliations.
+and approved the final version of the manuscript.
+Open Access This article is licensed under a Creative Commons
+cc
+FUNDING
+BY
+Attribution 4.0 International License, which permits use, sharing,
+This work was supported in part by National Institutes of Health (NCI/NIH) grant
+adaptation, distribution and reproduction in any medium or format, as long as you give
+SPORE-P50 CA97274 (JR Cerhan and AJ Novak), R01 CA212162-01A1 (AJ Novak and
+appropriate credit to the original author(s) and the source, provide a link to the Creative
+JR Cerhan), U01 CA195568 (JR Cerhan), T32AI170478 (MA Hopper), Mayo Clinic
+Commons licence, and indicate if changes were made. The images or other third party
+Comprehensive Cancer Center 2024 Eagles 5th District Cancer Telethon Funds for
+material in this article are included in the article's Creative Commons licence, unless
+Cancer Research Fellowship Program (JS Walker), Postdoctoral Fellowship PF-24-
+indicated otherwise in a credit line to the material. If material is not included in the
+1301715-01-CCB from the American Cancer Society (doi.org/10.53354/ACS.PF-24-
+article's Creative Commons licence and your intended use is not permitted by statutory
+1301715-01-CCB.pc.gr.222062; JS Walker), the Predolin Foundation Biobank, and the
+regulation or exceeds the permitted use, you will need to obtain permission directly
+generosity of the Tanoto Foundation.
+from the copyright holder. To view a copy of this licence, visit http://
+creativecommons.org/licenses/by/4.0/.
+COMPETING INTERESTS
+© The Author(s) 2025
+AJN has received research funding from Bristol Myers Squibb. KW, MES, MO, NS, CCH,
+and AKG are employed by Bristol Myers Squibb.
+SPRINGER NATURE
+Blood Cancer Journal (2025)15:120

@@ -1,0 +1,476 @@
+@import 'tailwindcss';
+
+@import './typography.css' layer(utilities);
+
+@config '../tailwind.config.ts';
+
+@layer base {
+
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@layer base {
+
+  /* Base theme variables */
+  :root {
+    --radius: 0.5rem;
+    /* Light mode */
+    --background: 0 0% 97%;
+    /* #F7F8F9 */
+    --foreground: 0 0% 33%;
+    /* #545454 */
+    --card: 0 0% 95%;
+    --card-foreground: 0 0% 33%;
+    /* #545454 */
+    --popover: 0 0% 95%;
+    --popover-foreground: 0 0% 33%;
+    /* #545454 */
+    --primary: 207 82% 37%;
+    /* #116AAB */
+    --primary-foreground: 210 40% 98%;
+    --secondary: 213 38% 93%;
+    /* #E5ECF4 */
+    --secondary-foreground: 0 0% 33%;
+    /* #545454 */
+    --muted: 0 0% 60%;
+    /* #999999 */
+    --muted-foreground: 0 0% 60%;
+    /* #999999 */
+    --accent: 209 52% 57%;
+    /* #5792c9 - UN blue */
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 100% 30%;
+    /* #980000 - Emergency */
+    --destructive-foreground: 210 40% 98%;
+    --border: 0 0% 95%;
+    /* #F2F2F2 */
+    --input: 0 0% 95%;
+    /* #F2F2F2 */
+    --ring: 207 82% 37%;
+    /* #116AAB */
+    --caption: 208 57% 26%;
+    /* #1C4767 */
+    --warning: 27 91% 54%;
+    /* #F58320 - Orange */
+    --shadow-light: 0 2px 8px rgba(0, 0, 0, 0.05);
+    --shadow-medium: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-heavy: 0 8px 24px rgba(0, 0, 0, 0.12);
+    --transition-speed: 0.2s;
+  }
+
+  .dark {
+    --background: 0 0% 9%;
+    --foreground: 210 40% 98%;
+    --card: 0 0% 18%;
+    --card-foreground: 210 40% 98%;
+    --popover: 0 0% 15%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 207 82% 37%;
+    /* #116AAB */
+    --primary-foreground: 210 40% 98%;
+    --secondary: 213 38% 93%;
+    /* #E5ECF4 */
+    --secondary-foreground: 210 40% 98%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 60%;
+    /* #999999 */
+    --accent: 209 52% 57%;
+    /* #5792c9 - UN blue */
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 100% 30%;
+    /* #980000 - Emergency */
+    --destructive-foreground: 210 40% 98%;
+    --border: 0 0% 25%;
+    --input: 0 0% 25%;
+    --ring: 207 82% 37%;
+    /* #116AAB */
+    --caption: 208 57% 26%;
+    /* #1C4767 */
+    --warning: 27 91% 54%;
+    /* #F58320 - Orange */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    transition: background-color var(--transition-speed, 0.2s) ease,
+      color var(--transition-speed, 0.2s) ease;
+  }
+
+  /* Ensure full height layout */
+  html,
+  body {
+    @apply h-full overflow-hidden;
+  }
+
+  /* Typography improvements */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-medium tracking-tight;
+  }
+
+  /* Button enhancements */
+  button,
+  .button {
+    @apply transition-all;
+  }
+}
+
+/* Enhanced animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes breathing {
+
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+}
+
+/* Custom utility classes */
+/* Standard icon sizing for Lucide icons */
+.lucide {
+  width: 1.5rem;
+  /* h-6 in Tailwind (24px) */
+  height: 1.5rem;
+  /* w-6 in Tailwind (24px) */
+  color: hsl(var(--primary));
+}
+
+/* Icon size utility classes */
+.icon-xxs {
+  width: .75rem !important;
+  height: .75rem !important;
+}
+
+.icon-xs {
+  width: 1rem !important;
+  height: 1rem !important;
+}
+
+.icon-sm {
+  width: 1.25rem !important;
+  height: 1.25rem !important;
+}
+
+.icon-md {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+}
+
+.icon-lg {
+  width: 2rem !important;
+  height: 2rem !important;
+}
+
+.icon-xl {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+}
+
+/* Custom icon size - allows specifying exact dimensions */
+.icon-custom {
+  width: var(--icon-size, 1.5rem) !important;
+  height: var(--icon-size, 1.5rem) !important;
+}
+
+/* Make icons use card-foreground color in dark mode */
+.dark .lucide {
+  color: hsl(var(--card-foreground));
+}
+
+/* Stroke width control for icons */
+.stroke-thin * {
+  stroke-width: 1 !important;
+}
+
+.stroke-regular * {
+  stroke-width: 1.5 !important;
+}
+
+.stroke-medium * {
+  stroke-width: 2 !important;
+}
+
+.stroke-thick * {
+  stroke-width: 2.5 !important;
+}
+
+/* Custom stroke width */
+.stroke-custom * {
+  stroke-width: var(--stroke-width, 1.5) !important;
+}
+
+/* Relative stroke width based on icon size */
+.icon-xxs * {
+  stroke-width: calc(1px * 0.75) !important;
+}
+
+.icon-xs * {
+  stroke-width: calc(1.5px * 0.8) !important;
+}
+
+.icon-sm * {
+  stroke-width: calc(1.5px * 0.9) !important;
+}
+
+.icon-md * {
+  stroke-width: 1.75px !important;
+}
+
+.icon-lg * {
+  stroke-width: calc(1.5px * 1.25) !important;
+}
+
+.icon-xl * {
+  stroke-width: calc(1.5px * 1.5) !important;
+}
+
+/* Allow custom classes to override the relative stroke width */
+.stroke-thin *,
+.stroke-regular *,
+.stroke-medium *,
+.stroke-thick *,
+.stroke-custom * {
+  /* These classes take precedence over automatic relative sizing */
+}
+
+/* Default: non-scaling stroke for consistent appearance */
+.lucide * {
+  vector-effect: non-scaling-stroke;
+}
+
+/* Override non-scaling stroke when precise control is needed */
+.stroke-scale * {
+  vector-effect: none;
+}
+
+
+.svg-fill path {
+  fill: hsl(var(--primary));
+}
+
+.dark .svg-fill path {
+  fill: hsl(var(--foreground));
+}
+
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.animate-slide-in {
+  animation: slideIn 0.4s ease-out;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.3s ease-in-out;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.3s ease-in-out;
+}
+
+.animate-pulse-subtle {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  background: linear-gradient(90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.05) 50%,
+      rgba(255, 255, 255, 0) 100%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+.animate-breathing {
+  animation: breathing 3s ease-in-out infinite;
+}
+
+.hover-scale {
+  transition: transform var(--transition-speed, 0.2s) ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.02);
+}
+
+.hover-shadow {
+  transition: box-shadow var(--transition-speed, 0.2s) ease;
+}
+
+.hover-shadow:hover {
+  box-shadow: var(--shadow-medium);
+}
+
+.hover-lift {
+  transition: transform var(--transition-speed, 0.2s) ease,
+    box-shadow var(--transition-speed, 0.2s) ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-medium);
+}
+
+/* Button ripple effect */
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, currentColor 10%, transparent 10.01%);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  transform: scale(10);
+  opacity: 0;
+  transition: transform 0.5s, opacity 0.8s;
+}
+
+.ripple:active:after {
+  transform: scale(0);
+  opacity: 0.3;
+  transition: 0s;
+}
+
+/* Enhanced scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--popover));
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground) / 0.4);
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground) / 0.7);
+}
+
+/* End of file */

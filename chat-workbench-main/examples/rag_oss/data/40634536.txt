@@ -1,0 +1,3309 @@
+
+www.nature.com/scientificreports
+scientific reports
+Check for updates
+OPEN
+ABCE1 facilitates tumour
+progression via aerobic glycolysis
+and inhibits cell death in human
+colorectal cancer cells through the
+p53 signalling pathway
+Sathan Raj Natarajan¹, Rajapandiyan Krishnamoorthy², Mohammad A Alshuniaber²,
+Tawfiq S Alsulami², Mansour K. Gatasheh³, Ponnulakshmi Rajagopal4,
+Chella Perumal Palanisamy⁵, Ramajayam Govindan⁶, Vishnu Priya Veeraraghavan¹ &
+Selvaraj Jayaraman1
+Colorectal cancer (CRC) poses a formidable challenge to global health, necessitating the quest for
+novel biomarkers to improve therapeutic strategies. This study explores ABCE1 (ATP-binding cassette
+subfamily E member 1) as a potential biomarker for CRC and delves into its intricate molecular
+mechanisms. Through integrated bioinformatic analyses, this study underscores the significant
+oncogenic role of ABCE1 in CRC, opening new avenues for promising therapeutic interventions.
+Deletion of ABCE1 reduced cell growth, abrogated aerobic glycolysis, and promoted apoptosis
+in HT-29 and HCT-116 cells. Further validation through experimentation with irinotecan revealed
+compelling outcomes, including diminished cell growth, induces G1 phase cell cycle arrest, and
+promotes apoptosis in HCT-116 and HT-29 colorectal cancer cells. ABCE1 Ko with irinotecan combined
+treatment significantly increased the inhibition of cell proliferation and aerobic glycolysis in CRC
+cells, accentuating the multifaceted role of ABCE1 in CRC progression. Moreover, this work also
+demonstrated the complex relationship between ABCE1 and the p53 signalling pathway, which was
+confirmed in experimental assays. These assays also revealed that deletion of ABCE1 with irinotecan
+might regulate G1 phase cell cycle arrest, inhibit metabolic regulation, and activate the p53 pathway
+to induce apoptosis in HCT-116 cells. Molecular docking analyses further supported these findings,
+revealing the strong binding affinity of irinotecan for targets of the p53 signalling cascade. Collectively,
+these comprehensive insights support the potential therapeutic efficacy of targeting ABCE1 in CRC
+treatment strategies. Overall, the findings from this study underscore the importance of ABCE1 as
+a potential biomarker in CRC and illuminate its complex molecular mechanisms. The demonstrated
+effectiveness of ABCE1 inhibition, particularly through irinotecan, coupled with its interplay with
+crucial signalling pathways such as p53, highlights its potential as a promising therapeutic option for
+colorectal cancer treatment.
+Keywords Colorectal cancer, ABCE1, Biomarker, Integrated bioinformatic analysis, Irinotecan, G1 phase
+cell cycle arrest, Apoptosis, Aerobic Glycolysis
+¹Centre of Molecular Medicine and Diagnostics (COMManD), Department of Biochemistry, Saveetha Institute of
+Medical & Technical Sciences, Saveetha Dental College & Hospitals, Saveetha University, Chennai 600 077, India.
+²Department of Food Science and Nutrition, College of Food and Agriculture Sciences, King Saud University, Riyadh
+11451, Kingdom of Saudi Arabia. ³Department of Biochemistry, College of Science, King Saud University, P.O.Box
+2455, Riyadh 11451, Saudi Arabia. ⁴Central Research Laboratory, Meenakshi Ammal Dental College and Hospital,
+Meenakshi Academy of Higher Education and Research (Deemed to Be University), Chennai 600095, India. ⁵Center
+for Global Health Research, Saveetha Medical College and Hospital, Saveetha Institute of Medical and Technical
+Sciences (SIMATS), Chennai 602105, India. ⁶Multidisciplinary Research Unit, Madurai Medical College, Madurai 625
+020, India. email: selvarajj.sdc@saveetha.com
+Scientific Reports
+(2025) 15:24674
+|
+https://doi.org/10.1038/s41598-025-92436-4
+natureportfolio
+1
+www.nature.com/scientificreports/
+Colorectal cancer, encompassing malignancies originating in the colon or rectum, constitutes a substantial
+global health burden¹. The genesis of this condition, which usually starts as adenomatous polyps that
+progressively develop into malignant growths, is a complicated interaction between hereditary predisposition
+and environmental variables. Its incidence increases with age, and various risk factors, including family history,
+inflammatory bowel diseases, and lifestyle choices, such as diet and smoking, contribute to its development. The
+clinical presentation varies widely, with symptoms ranging from subtle changes in bowel habits to overt rectal
+bleeding and abdominal discomfort². Crucially, early-stage disease may often be asymptomatic, underscoring
+the critical importance of regular screening initiatives. Diagnosis relies on a combination of screening tests such
+as colonoscopy, imaging studies, and biopsy for confirmation³. Based on patient characteristics and cancer stage,
+several treatment techniques, including radiation therapy, chemotherapy, surgery, and targeted treatments, are
+used. Prognosis hinges on timely detection and intervention, with early-stage cancers resulting in significantly
+better outcomes. Prevention strategies help for lifestyle modifications and adherence to screening guidelines⁴.
+The current paradigm for treating colorectal cancer involves a multidisciplinary approach that is usually
+customized based on the disease's stage and particular features. Surgical resection remains a cornerstone,
+particularly for localized tumours, yet it may not always be feasible for advanced or metastatic cases due to
+anatomical constraints or patient comorbidities⁵. Chemotherapy, often combined with surgery or used as
+adjuvant therapy, targets rapidly dividing cancer cells but is associated with significant side effects and the
+potential for drug resistance⁶⁷. Targeted therapies, such as anti-EGFR or anti-VEGF antibodies, offer precision
+by inhibiting specific molecular pathways involved in cancer growth, but their efficacy may be limited by the
+absence of targetable mutations or the development of resistance⁸⁻¹⁰. Clinical trials offer hope for innovative
+treatments, but their accessibility and potential risks must be considered. Although these strategies have
+advanced treatment outcomes, their limitations underscore the ongoing need for research and development to
+refine existing approaches and explore new therapeutic avenues.
+Molecular targeted therapy has revolutionized the landscape of cancer treatment, including that of
+colorectal cancer, by offering highly specific interventions aimed at disrupting key molecular pathways driving
+tumorigenesis¹¹. To reduce systemic toxicity, these treatments are designed to specifically target certain molecules
+or biological processes that are aberrantly triggered in cancer cells while leaving normal cells unaffected. Anti-
+EGFR monoclonal antibodies such as cetuximab and panitumumab disrupt EGFR signalling, which prevents
+the growth of cancer cells and promotes their death¹². One of the primary advantages of molecular targeted
+therapies is their precision, which allows for more effective tumour eradication with fewer adverse effects than
+conventional chemotherapy13. Additionally, the advent of targeted medicines has increased the number of
+therapeutic choices accessible, especially for patients with metastatic or advanced colorectal cancer, who may not
+have access to many other medications. Despite these advantages, challenges such as the emergence of resistance
+mechanisms and the need for reliable predictive biomarkers for treatment response remain areas of active
+research¹⁴. Nonetheless, molecular targeted therapies represent a cornerstone of modern oncology, offering hope
+for improved outcomes and quality of life for patients with colorectal cancer. In the realm of cancer research, the
+correlation of biomarkers identified through bioinformatic analysis holds profound importance for diagnosis,
+prognosis, and treatment strategies. Bioinformatics facilitates the discovery and analysis of several biomarkers,
+including gene expression patterns, epigenetic alterations, genetic mutations, and protein signatures, linked to
+distinct forms of cancer through the use of advanced computer algorithms and statistical models¹⁵.
+ABCE1, often referred to as ATP-binding cassette subfamily E member 1, is an essential component of several
+biological activities, such as ribosome synthesis, translation initiation, and mRNA decay¹⁶. The role of ABCE1
+in translational process involves its ability to control protein synthesis, which could influence tumour growth
+and progression¹⁷ ABCE1 participates in ribosome biogenesis, the process by which ribosomes, the cellular
+machinery responsible for protein synthesis, are assembled. The onset and spread of cancer are linked to aberrant
+ribosome biosynthesis¹⁸. Dysregulated expression or activity of ABCE1 may impact ribosome biogenesis, thereby
+influencing protein synthesis and cellular proliferation in cancer cells. Through the modulation of the amounts
+of particular mRNA transcripts, ABCE1 contributes to the maintenance of cellular homeostasis through the
+regulation of mRNA decay¹⁹. Dysregulation of mRNA decay pathways can contribute to tumorigenesis by
+altering the expression of genes involved in survival and metastasis. According to a previous study, the abnormal
+expression of the ABCE1 gene in human lung adenocarcinoma and its effect on lung cancer cell proliferation
+revealed that ABCE1-specific shRNA inhibits A549 cell growth²⁰. Studies have reported dysregulated expression
+of ABCE1 in various cancer types, including breast, lung, colorectal, and prostate cancers. It is possible that
+ABCE1 might be used as a biomarker for cancer diagnosis, prognosis, or therapeutic targeting because changes
+in its expression levels have been linked to clinicopathological characteristics and patient prognosis in several
+tumours²¹,²². Through the use of a wide range of bioinformatics studies, the aim of this study was to determine
+the oncogenic function of ABCE1 in the development of colorectal cancer. The work was also intended to clarify
+how ABCE1 is related to prognostic markers such as mRNA expression, DNA methylation patterns, mutations,
+and immunological infiltration. Additionally, this study delves into the therapeutic potential of irinotecan, a
+drug used for colorectal cancer treatment and the deletion of ABCE1, which are known to reduce colorectal
+cancer cell growth, regulate metabolic dysfunctions, induce G1 phase cell cycle arrest, and promotes apoptosis
+specifically in HCT-116 and HT-29 cells. Furthermore, to corroborate the bioinformatic findings regarding the
+prediction of the involvement of the p53 signalling pathway, experimental validation was conducted through
+assessments of cell cycle progression, apoptotic rates, and gene expression levels by RT-PCR in HCT-116 cells.
+Results
+ABCE1 upregulation in COAD datasets
+The flow chart of the study is shown in Fig. 1. Using bioinformatic analysis of datasets related to colorectal
+cancer, early work was performed to examine the expression profile of the ABCE1 gene. Initially, ABCE1 mRNA
+Scientific Reports
+I
+(2025) 15:24674
+I
+https://doi.org/10.1038/s41598-025-92436-4
+natureportfolio
+2
+www.nature.com/scientificreports/
+Expression
+cancers
+LUSC
+TCGA Samples
+RNA expression (TCGA dataset)
+Immune infiltration (TIMER 2.0 Database)
+Cytotoxicity evaluation in CRC cell lines
+GSEA (Gene Set Enriched Analysis)
+Alteration & Mutation
+Networking and Gene ontologies
+Flow cytometry analysis
+ABCE1
+Protein Level
+(IHC) &
+5
+Computational
+analysis
+os and DFS (KM Plot)
+Bonds
+-
+DNA Methylation
+Molecular docking & Dynamics
+ABCE1 p53 signaling pathway
+Fig. 1. Flow chart of the study.
+expression was examined for its pan-cancer status using the UALCAN, GEPIA, and TIMER databases. As shown
+in Fig. 2 (A-C), ABCE1 was significantly upregulated across various cancers, including breast, lung, liver, and
+colorectal cancers. Figure 2D shows the comparison of ABCE1 expression between normal (n=275) = and tumour
+samples (n=349) in the COAD datasets, revealing the upregulation of ABCE1. Additionally, through analysis
+of GDC datasets, clinical factors and vital status, as well as data types such as clinical, single-nucleotide variant
+(SNV), biospecimen, and copy number variant (CNV) data, revealed significant upregulation and high mutation
+frequency in ABCE1, as shown in Fig. 2E. Furthermore, the heatmap visualization in Fig. 2F highlights the
+association of ABCE1 with high expression in colorectal cancer tissue samples compared with healthy tissues.
+Overall, our early bioinformatic studies point to a potential oncogenic function for ABCE1 in the development
+of colorectal cancer.
+ABCE1 mRNA expression and protein status in the COAD datasets
+Using the GSE database, we performed a thorough study of gene expression patterns in colorectal cancer based
+on preliminary findings. Significant gene regulation in pathways linked to colorectal cancer and cancer was
+found in analyses using GSEA software. These findings suggest that ABCE1 overexpression is associated with
+colorectal cancer datasets, as shown in Fig. 3A and B. Dysregulation of alternative splicing, as well as exon and
+junction expression profiles, can contribute to cancer development and progression²³ We also analysed the exon,
+junction, and isoform expression profiles of ABCE1, which were significantly correlated with altered function
+in colon datasets, as depicted in Fig. 3C-E. The UALCAN and GEPIA databases were utilized to investigate the
+expression levels of ABCE1 mRNA in both advanced and early stages of colorectal cancer. The results revealed
+a noteworthy elevation in advanced stages as opposed to early stages in the tissue samples of patients with
+colorectal cancer, as depicted in Fig. 3F and G. Additionally, the oncogenic role of ABCE1 was found to affect
+mostly the 41-60-year age group of patients with colorectal cancer, as shown in Fig. 3H.
+Metastasis, a hallmark of cancer, was also examined using the UALCAN database, which revealed significant
+upregulation of ABCE1 expression in patients with N2-stage colorectal cancer, as depicted in Fig. 3I. The
+predictive significance of ABCE1 in colorectal cancer was evaluated using overall survival plots generated
+from the GEPIA database. As shown in Fig. 3J, increased ABCE1 expression was linked to low survival rates in
+colorectal cancer tissue samples. Figure 3K shows an increase in ABCE1 protein expression in tumour samples
+relative to normal colon samples according to the CPTAC data. Western blotting analysis of the expression of
+the ABCE1 protein in colon tumour cell lines (HCT-116 and HT-29) and normal colon mucosa (NCM-460)
+cell lines revealed that the protein expression levels were greater in the tumour cells than in the normal colon
+mucosa, as shown in Fig. 3L. Analysis of TCGA datasets of colon cancer clinical samples further confirmed the
+upregulation of ABCE1 mRNA expression in tumour samples compared with healthy colon tissue samples, as
+shown in Fig. 3M. Furthermore, gene expression patterns in colorectal cancer cells were analysed by qRT-PCR
+to confirm the bioinformatic predictions, which revealed an increased ABCE1 expression in HCT-116 and HT-
+29 cells (Fig. 3N). Taken together, the findings of ABCE clearly imply that ABCE1 may be carcinogenic in the
+development of colorectal cancer.
+Scientific Reports
+(2025) 15:24674
+-
+https://doi.org/10.1038/s41598-025-92436-4
+natureportfolio
+3
+www.nature.com/scientificreports/
+A
+B
+Expression of ABCE1 across TCGA cancers
+8
+8
+6
+log2 (TPM+1)
+4
+ABCE1 Expression Level (log2 TPM)
+6
+4
+2
+2
+0
+0
+BLCA
+BRCA
+CESC
+CHOL
+COAD
+ESCA
+GBM
+HNSC
+KICH
+KIRC
+KIRP
+LIHC
+LUAD
+LUSC
+PAAD
+PRAD
+PCPG
+READ
+SARC
+SKCM
+THCA
+THYM
+STAD
+UCEC
+Tumor
+TCGA Samples
+BLCA
+10HC
+<CilTanar
+LGG.Taner
+LIHC.Nome
+LUSC.Nermal
+OV.Tanor
+READ.
+READ.Normal
+SARC.Tuner
+UCFC.Normal
+BROM
+C
+D
+100
+80
+180
+90
+tumor
+80
+Transcript Per Million (TPM)
+normal
+150
+60
+70
+Transcript per million (TPM)
+120
+60
+40
+50
+90
+40
+20
+60
+30
+13.15
+Normal
+20
+30
+0
+10
+111111
+@@@@@@@
+111111
+LGUHCAUSC
+########
+!!!!!!!!!!!
+############
+//////
+mmm
+0
+E
+F
+Mutation freq.
+266
+133
+Mutation freq.
+278
+Gene
+GDC
+Clinical
+Data Types
+Fig. 2. The mRNA expression of ABCE1 among various cancers. (A-C) Expression levels of ABCE1 in
+different cancer types from TCGA datasets from UALCAN, TIMER and GEPIA databases. The graphs were
+represented in box plot, x-axis denotes the different types of cancer, and y-axis denotes the expression level
+(log₂ [TPM]). The cancer expression levels were compared between normal (blue color) and tumour cancer
+samples (red color). (D) GEPIA datasets represents the pan-cancer view and highlighted particularly COAD
+datasets of ABCE1 expression. (E) GDC datasets represents the heatmap using TCGA datasets by clinical
+characteristics (Race, age at diagnosis, vital status, and Days to death) and data types (clinical, biospecimen,
+sequencing reads, SNV, CNV, and transcriptome profiling) of COAD samples. It denotes the mutation
+frequency and list of genes (y-axis) associated with ABCE1 in COAD datasets. (F) The heat map illustration
+denotes the expression levels of ABCE1 in TCGA-COAD datasets. The expression levels were denoted from
+low (normal) to high (high) by blue to red color. ABCE1 expression results among various cancers were
+displayed as histogram and color images are available online. Statistical significance: *p <0.05, **p <0.001,
+and ***p<0.0001. TCGA, The Cancer Genome Atlas; TIMER, Tumour Immune Estimation Resource; TPM,
+Transcript Per Million; GDC, Genomic Data Commons; COAD, Colon Adenocarcinoma; SNV, Single
+Nucleotide Variant; CNV, Copy Number Variant.
+ABCE1 survival profiles
+To validate the oncogenic role of ABCE1 in colorectal cancer, we investigated its prognostic value in survival
+profiles using KM plots derived from COAD datasets. The overall survival plot based on early and advanced
+stages of ABCE1 expression was generated using Kaplan-Meier analysis. The results depicted in Fig. 4A clearly
+illustrate those patients with high ABCE1 expression in advanced stages (stage III - HR-1.91; stage IV - HR-
+3.23) of colorectal cancer exhibited poor overall survival (OS) rates compared with those in early stages (stage
+I - HR-0.48; stage II - HR-0.77) of the disease. Similarly, ABCE1 expression in disease-free survival (DFS)
+analysis of colorectal cancer patients revealed that those with low ABCE1 expression in advanced stages (stage
+III, HR=0.51; stage IV, HR=0.23) had higher survival rates than those with low ABCE1 expression in early
+stages (stage I, HR=0.76; stage II, HR=0.57), as shown in Fig. 4B. These findings clearly imply that ABCE1
+could function as an oncogene and might be a potential target for the development of colorectal cancer.
+Scientific Reports
+I
+(2025) 15:24674
+I
+https://doi.org/10.1038/s41598-025-92436-4
+natureportfolio
+www.nature.com/scientificreports/
+DNA methylation status of ABCE1 in COAD
+Further, compared to the expression levels of ABCE1 in primary tumours with those in normal colon tissues
+to investigate the possible function of ABCE1 in DNA methylation dynamics in colorectal cancer, as shown in
+Fig. 5A. The results of this investigation revealed that ABCE1 expression was upregulated in primary tumours,
+indicating that ABCE1 is involved in the development of colorectal cancer. In addition, we investigated the
+relationships between promoter methylation levels and ABCE1 expression and overall survival rates in
+clinical samples from patients with colorectal cancer. Figure 5B shows that poor survival is linked to increased
+expression of ABCE1, suggesting that ABCE1 may have prognostic value in colorectal cancer. We also examined
+the relationship between methylation status and ABCE1 expression levels in colorectal cancer tissues. The
+expression of ABCE1 was more strongly correlated with tumour samples than with normal colon tissues, as
+shown in Fig. 5C and D. This finding raises the possibility that methylation regulates ABCE1 expression in
+colorectal cancer. Moreover, analysis of ABCE1 methylation at CpG islands revealed higher methylation levels
+in colon tumours than in normal colon mucosa, as shown in Fig. 5E and F. Furthermore, the heatmap shown in
+Fig. 5G highlights the elevated expression levels of ABCE1 in CpG islands in colorectal cancer samples across
+various characteristics. To confirm the results of the bioinformatic analysis, 5-Aza, a DNA methylation inhibitor,
+was used to treat ABCE1 KO HCT-116 cells, and the resulting cytotoxicity was measured. These results suggest
+that the presence of 5-Aza with ABCE1 KO reduces the cell growth of HT-29 and HCT-116 cells as shown in
+Fig. 5H. Moreover, metabolic assays, such as glucose uptake and lactate production assays, revealed that the
+deletion of ABCE1 and treatment with 5-Aza significantly inhibited aerobic glycolysis in HCT-116 cells, as
+shown in Fig. 5I and J. Moreover, gene expression of ABCE1 reduced by treating 5-Aza with ABCE1 KO in
+HCT-116 as shown in Fig. 5K. The findings of the present study suggest that ABCE1 could be important for the
+dynamics of DNA methylation during colorectal carcinogenesis, which could influence the course and outcome
+of the CRC progression.
+ABCE1 immune infiltration and mutation in COAD datasets
+Using the TIMER 2.0 database, we were able to decipher the complex connections between immune cells in the
+tumour microenvironment while studying the immune cell response to ABCE1 in colorectal cancer. The findings,
+depicted in Fig. 6A, elucidate a favourable immune response to ABCE1, as indicated by positive correlations
+with Pearson's coefficient across various immune cell types: B cells (r=0.157), CD8+T cells (r=0.336), CD4+T
+cells (r=0.082), macrophages (r=0.208), neutrophils (r=0.218), and dendritic cells (r=0.17). This well-thought-
+out investigation clarifies ABCE1's possible function in influencing several immune cell types in relation to
+colorectal cancer.
+Furthermore, we conducted Kaplan-Meier analysis²⁴ to explore overall survival rates in relation to immune
+cell infiltration and ABCE1 expression in patients with colorectal cancer. As depicted in Fig. 6B, indicating
+that high ABCE1 expression (top 35%) was correlated with poorer overall survival rates for immune cells.
+This finding highlights the important role of ABCE1 in the interaction between immune cells and the
+development of colorectal cancer. Moreover, we investigated the mutational alterations in ABCE1, revealing
+genetic variations such as missense, splice, and truncating mutations, as illustrated in Fig. 6C and D. These
+findings contribute to our understanding of the genetic landscape associated with ABCE1 in colorectal cancer.
+Additionally, we explored the disparity in ABCE1 protein expression between normal and colon cancer tissues
+using immunohistochemical staining data obtained from the HPA database. A substantial increase in ABCE1
+expression within colon tissue shown in Fig. 6E and F, further emphasizing the potential relevance of ABCE1
+in the context of colon cancer. Molecular dynamics analysis using GROMACS package for the ABCE1 protein
+exhibited stability over 50 nanoseconds, with strong metrics in RMSD, RMS fluctuations, radius of gyration
+(Rg), and hydrogen bonds, as demonstrated in Fig. 6G.
+Protein-protein interactions of ABCE1 and associated targets
+To identify potent targets and enriched pathways associated with ABCE1 in colorectal cancer, we leveraged
+multiple resources, including GSE33113 (Supplementary Table 1), the CTD database (Supplementary Table 2),
+and GeneCards²⁶ (Supplementary Table 3), to identify significant targets and pathways associated with ABCE1
+in colorectal cancer. From these sources, we discovered 64 targets (Supplementary Table 4) that overlapped
+across the datasets, indicating their relevance to ABCE1 in venn diagram, as shown in Fig. 7A. We next used
+the STRING database to create a protein-protein interaction (PPI) network, and we used a variety of Cytoscape
+plugins (such as Clustvis, MCODE and Cytohubba) to conduct a thorough study (Fig. 7B-D). This analysis
+revealed the top 15 hub genes intricately linked to ABCE1 in colorectal cancer, as shown in Fig. 7E and F.
+Exploring the functional aspects, our gene ontology predictions highlighted the involvement of ABCE1 in crucial
+biological processes, such as the glycolytic process, glucose homeostasis, the apoptotic process, and regulation
+of the cell cycle and growth. The molecular functions associated with ABCE1 include kinase binding, channel
+activity, glucose membrane transporter, and protein kinase binding, whereas the cellular components associated
+with ABCE1 include organelle outer membranes, mitochondrial membranes, nucleus, and nuclear membranes,
+as depicted in Fig. 7G. Furthermore, as illustrated in Fig. 7H, butterfly plot highlighted the critical functions of
+ABCE1 involved in a number of signalling pathways, including the p53, PI3K/Akt, and glycolytic pathways. This
+comprehensive network analysis and functional annotations collectively suggest that targeting ABCE1 through
+signalling pathways could offer therapeutic potential against colorectal tumorigenesis.
+Irinotecan inhibits cell growth and metabolically regulates colorectal cancer cells
+Most genes in the integrated cancer pathway were shown to be favourably regulated according to gene set
+enrichment analysis (GSEA), especially those in the colorectal cancer pathways, as shown in Fig. 8A. Analysis
+Scientific Reports
+(2025) 15:24674
+I
+https://doi.org/10.1038/s41598-025-92436-4
+natureportfolio
+5
+www.nature.com/scientificreports/
+A
+B
+E
+Inform
+TABCEL
+binding
+casselle
+subfirmily
+member
+601
+Enrichment plot: KEGG_PATHWAYS_IN_CANCER
+Enrichment plot: KEGG_COLORECTAL_CANCER
+0.3
+NES 1.12
+NES 1.22
+pvalue-0.242
+0.2
+pvalue-0.1652
+0.1
+0.0
+0.1
+-0.2
+De
+CHHH
+MN
+0
+00
+C
+Exon
+Expression
+ABCE1:
+10
+binding
+cassette
+subtamily
+member
+Symbol:
+F
+ABCE1-Stages (UALCAN)
+G
+ABCE1-Stages (GEPIA)
+80
+7
+F value 2.95
+****
+Pr(>F) 0.0331
+Transcript per million (TPM)
+60
+****
+6
+40
+5
+A
+20
+(n=39)
+4
+(n=80)
+(n=45)(n=110)
+(n=41)
+0
+normal
+1
+2
+3
+4
+I
+=
+≡
+IV
+Stages
+Stages
+TCGA Samples
+TCGA Samples
+H
+ABCE1- Age differences
+ABCE1- Nodal metastasis
+80
+80
+****
+****
+****
+****
+Transcript per million (TPM)
+60
+****
+110
+ДАР
+Transcript per million (TPM)
+60
+****
+****
+40
+40
+(n=47)
+(n=12)
+20
+(n=90)
+20
+CHK
+(n=166)
+00
+(n=149)
+(n=70)
+(n=32)
+(n=41)
+(n=41)
+HHO
+0
+0
+normal 21-40 41-60 61-80 81-100
+normal
+NO
+N1
+N2
+D
+age
+nodal metastasis
+Juaction Expression ABCE1: ENSG00000164163 10 binding cassette subtanity member Symbol;/
+TCGA Samples
+TCGA Samples
+J
+K
+ABCE1-Overall Survival
+ABCE1-Protein expression
+1.0
+2
+Low ABCE1 TPM
+****
+L
+High TPM
+Logrank p=0 3
+0.8
+HR(high)=2
+p(HR)=0. 14
+Percent survival (%)
+n(low):
+0.6
+0.2
+Transcript Per Million (TPM)
+0
+h(high)=257
+-2
+ABCE1
+0.4
+(n=97)
+3-actin
+-4
+(n=100)
+0.0
+-6
+0
+50
+100
+150
+normal
+tumor
+Time (months)
+CPTAC samples
+M
+ABCE1-mRNA expression
+N
+80
+2.0
+2.0
+****
+Transcript per million (TPM)
+60
+Fold change over control
+1.5
+1.5
+"
+110
+...
+40
+(ABCE1/ß-actin)
+1.0
+100
+20
+0.5
+Fold change over control
+(ABCE1/B-actin)
+1.0
+0.5
+00
+(n=286)
+(n=41)
+0
+0.0
+0.0
+HHO
+HCT-116
+HT-29
+normal
+tumor
+TCGA samples
+Control
+ABCE1
+of the Cancer Cell Line Encyclopaedia (CCLE) heatmap revealed the upregulation of ABCE1 expression in
+numerous colon cancer cell lines, with notably high expressions were observed in the HCT-116 and HT-29 cell
+lines, as shown in Fig. 8B. The 2D structure of irinotecan is shown in Fig. 8C. Treatment of NCM-460, HCT-116,
+and HT-29 cells with irinotecan for 24 and 48 h resulted in the inhibition of cell growth. Notably, compared with
+normal colon mucosa, NCM-460, and HCT116 and HT-29 tumour cells exhibited significant inhibition of cell
+growth at 48 h (Fig. 8D). The IC₅₀ values of irinotecan for 48 h (HCT-116: 53.98 µM; HT-29: 39.17 µM) were
+determined for additional experiments. Further investigations into the role of irinotecan in regulating glycolysis
+involved treating colorectal cancer cells with the glycolytic inhibitor 2DG along with irinotecan. The results
+indicated that 2DG at various concentrations (4 mM and 8 mM) in combination with irinotecan reduced the
+growth of HCT-116 and HT-29 colorectal cancer cells, as shown in Fig. 8E. The GSEA data shown in Fig. 8F
+suggest a correlation between ABCE1 and the upregulation of glycolysis and metabolic reprogramming in colon
+cancer tissue samples. To validate these bioinformatic findings, glucose uptake and lactate production were
+measured in colorectal cancer cells treated with irinotecan. The results demonstrated that irinotecan treatment
+reduced glucose consumption and lactate production in HCT-116 and HT-29 cells (Fig. 8G and H). Moreover,
+the antioxidant role of irinotecan was examined by measuring cellular catalase and SOD activity in colorectal
+Scientific Reports
+|
+(2025) 15:24674
+I
+https://doi.org/10.1038/s41598-025-92436-4
+natureportfolio
+6
+www.nature.com/scientificreports/
+Fig. 3. The mRNA expression levels of ABCE1 in COAD datasets. (A, B) The GSEA plot from GSE33113
+datasets indicates the upregulation of ABCE1 from KEGG pathways denotes highly involved in Pathways in
+cancer (NES-1.12) and colorectal cancer (NES-1.22). The green line indicates the NES and red color to blue
+color mentions the tumour (positively correlated) and normal (negatively correlated) from COAD datasets.
+The bar code represents each gene involved in expression levels in COAD datasets. (C-D) Bioinformatic
+analysis mentioned the exon, Junction, and Isoform expression level of ABCE1 from HGNC datasets among
+various cancers, in colon, ABCE1 has highlighted. (F) mRNA expression levels of ABCE1 in COAD datasets
+from UALCAN in various stages (Stage I (n=45), II (n=110), III (n=80), and IV (n=39) compared to normal
+(n=41) colon tissues from TCGA clinical samples. Moreover, (G) GEPIA datasets also shows high elevation
+of advanced stage mRNA expression (F value=2.95) compared to an early stage from COAD datasets. (H)
+ABCE1 expression levels in different age groups (21-100) compared with normal (n=41) colon tissues were
+also visualized using UALCAN database. (I) To find the prognostic value of ABCE1 in COAD datasets, nodal
+metastasis (NO (n=166); N1 (n=70); N2 (n=47)) for ABCE1 from TCGA datasets. (J) The overall survival
+of ABCE1 from COAD datasets were retrieved from GEPIA database and visualized by Kaplan-Meier plotter.
+The red color mentioned the high ABCE1 and blue color denotes the low ABCE1 expression. (K) The protein
+expression levels of ABCE1 from CPTAC samples of COAD datasets shows high expression level (n=97)
+compared with normal (n=100). (L) The protein expression levels of ABCE1 were visualized by immunoblot
+in normal colon mucosa, NCM-460 and colorectal cancer cells, HCT-116 and HT-29. ß-actin as an internal
+control. (M) ABCE1 mRNA expression levels between control (n=41) and tumour samples (n=286) were
+monitored using TCGA-COAD datasets. (N) The gene expression of ABCE1 by qRT-PCR was examined in
+HCT-116 and HT-29 cells. Statistical significance: *p<0.05, **p <0.001, and ***p<0.0001. Uncropped western
+blot images corresponding to Fig. 2 can be found in Supplementary Fig. 4a. GSEA, Gene Set Enrichment
+Analysis; KEGG, Kyoto Encyclopedia of Genes and Genomes; NES, Normalized Enrichment Score; HGNC,
+HUGO Gene Nomenclature Committee; CPTAC, Clinical Proteomic Tumour Analysis Consortium; RT-PCR,
+Reverse Transcription Polymerase Chain Reaction.
+A
+ABCE1 Stage I
+ABCE1 Stage II
+ABCE1 Stage III
+ABCE1 Stage IV
+1.0
+HR 0.48 (0.2 1.19)
+1.0
+HR 0.77 (0.5 1.17)
+1.0
+HR 1.91 (1.1 3.32)
+1.0
+HR 3.23 (0.97 10.73)
+logrank P 0.11
+logrank 0.22
+logrank 0.02
+logrank 0.044
+0.8
+0.8
+0.8
+0.8
+Overal Survival (OS)
+0.6
+0.6
+0.6
+0.6
+Probability
+0.4
+Probability
+0.4
+Probability
+0.4
+Probability
+0.4
+0.2
+Expression
+0.2
+Expression
+0.2
+Expression
+0.2
+Expression
+low
+low
+low
+low
+0.0
+high
+0.0
+high
+0.0
+high
+0.0
+high
+0
+50
+100
+150
+200
+0
+50
+100
+150
+200
+0
+50
+100
+150
+0
+50
+100
+150
+200
+Time (Months)
+Time (Months)
+Time (Months)
+Time (Months)
+number at risk
+number at risk
+number at risk
+number at risk
+low 63
+38
+13
+3
+1
+low 100
+8
+3
+1
+0
+low 105
+65
+19
+2
+low 55
+33
+12
+3
+1
+high 104
+57
+14
+0
+0
+high 35
+5
+0
+0
+0 high 61
+28
+8
+0
+high 28
+20
+2
+0
+0
+B
+ABCE1 Stage I
+ABCE1 Stage II
+ABCE1 Stage III
+ABCE1 Stage IV
+0.7
+1.0
+HR = 0.76 (0.56 1.04)
+HR 0.57 (0.32 1.01)
+1.0
+HR 0.51 (0.34 0.77)
+1.0
+HR 0.23 (0.04 - 1.23)
+logrank 0.09
+0.6
+logrank 0.051
+logrank P 0.0012
+logrank P 0.06
+Disease Free Survival (DFS)
+0.8
+0.8
+0.8
+0.5
+0.6
+0.6
+0.6
+Probability
+Probability
+0.4
+0.3
+0.4
+Probability
+0.4
+Probability
+0.4
+0.2
+0.2
+Expression
+Expression
+0.2
+Expression
+0.2
+Expression
+0.1
+low
+low
+low
+low
+0.0
+high
+0.0
+high
+0.0
+high
+0.0
+high
+0
+50
+100
+150
+0
+20
+40
+60
+80
+100
+120
+0
+50
+100
+150
+200
+0
+50
+100
+150
+200
+Time (Months)
+Time (Months)
+Time (Months)
+Time (Months)
+number at risk
+number at risk
+number at risk
+number at risk
+low 131
+47
+10
+0
+low 53
+8
+6
+3
+2
+1
+0
+low 140
+71
+24
+4
+1
+low 39
+21
+4
+1
+0
+high 357
+148
+29
+2
+high 34
+12
+5
+3
+2
+1
+0
+high 409
+206
+40
+7
+1
+high 85
+52
+10
+1
+1
+Fig. 4. Survival status of ABCE1 in colon adenocarcinoma datasets. (A) The overall survival (OS) plots of
+ABCE1 expression in early (Stage I and II) and advanced (Stage III and IV) stages were monitored using KM
+plot. (B) The Disease-Free Survival plots by Kaplan-Meier method indicates the survival rate (%) of ABCE1
+in early (Stage I and II) and advanced (Stage III and IV) stages from TCGA datasets. Red color indicates the
+ABCE1 high expression with poor survival and red color denotes the ABCE1 low expression with prolonged
+survival rate. The x-axis denotes the time (months) and y-axis denotes the survival probability.
+Scientific Reports I (2025) 15:24674
+I
+https://doi.org/10.1038/s41598-025-92436-4
+natureportfolio
+www.nature.com/scientificreports/
+A
+B
+G
+ABCE1 Promoter methylation level
+ABCE1 Overall Survival
+0.14
+1.0
+LR test p-value=0.041
+0.12
+****
+HR=1.966
+ethnicity
+0.8
+race
+BMI
+age
+event
+0.1
+0.6
+cg01783195
+0.08
+0.4
+cg00000029
+ethnicity
+(n=37)
+0.2
+NA
+0.06
+NA
+cg02851944
+lower (n=74)
+Unknown
+(n=313)
+0.0
+higher (n=219)
+HISPANIC OR LATINO
+NOT HISPANIC OR LATINO
+0.04
+normal
+primary tumour
+cg07396495
+0
+1000
+2000
+3000
+4000
+race
+NA
+Survival time (days)
+AMERICAN INDIAN OR ALASKA NATIVE
+TCGA samples
+cg12190057
+ASIAN
+BLACK OR AFRICAN AMERICAN
+C
+D
+WHITE
+cg02976952
+BMI
+ABCE1 Normal
+ABCE1 Tumor
+[14.7,23.9]
+[23.9,27.1]
+Colon adenocarcinoma
+Colon Adenocarcinoma
+(27.1.31.7)
+n=19 Spearman rho=0.198
+n=249
+Spearman rho=0.354
+cg02119764
+[31.7,52.1]
+age
+12.0
+12.0
+[31,55]
+cg01016459
+[55,66]
+[66,75]
+log2 (normalized rsem+1) of ABCE1
+11.5
+log2 (normalized rsem+1) of ABCE1
+11.5
+[75,90]
+cg13426503
+event
+Alive
+11.0
+11.0
+Dead
+Relation to UCSC CpG Islans
+10.5
+10.5
+cg00011284
+Island
+N_Shore
+Open_Sea
+10.0
+10.0
+cg02021817
+S. Shore
+UCSC RefGene Group
+3'UTR
+9.5
+9.5
+cg03943270
+5'UTR; Exon
+Body
+TSS1500
+TSS200
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+methylation beta value of cg01940055
+methylation beta value of cg01940055
+H
+E
+F
+120
+**
+100
+Methylation of ABCE1 in normal (n=30)
+Methylation of ABCE1 in normal (n=30)
+100
+80
+Colon adenocarcinoma
+Colon adenocarcinoma
+Chr4: 146018000 146051000
+146,024,000
+146,031,000
+146,038,000
+146,045,000
+146,024,000 146,031,000 146,038,000 146,045,000
+Cell Viability (%)
+80
+Chr4: 146018000 146051000
+5kb
+2DG pmol
+60
+60
+40
+1.0
+1.0
+40
+20
+20
+0.8
+0.8
+Methylation (beta value)
+0.6
+Methylation (beta value)
+0
+0
+0.6
+J
+K
+0.4
+0.4
+15
+1.2
+0.2
+0.2
+1.0
+0
+0
+10
+Over control (ABCE1/B-actin)
+0.8
+Lactate (nM)
+Fold Change
+0.6
+TTE
+0.4
+cg07702259
+cg26690672
+0.2
+ch.4.2662600F
+cg07702259
+cg26690672
+ch.4.2662600F
+0
+0.0
+WT
+ABCE1 KO
+5AZA
+ABCE1 KO+5AZA
+Fig. 5. ABCE1 plays a major role in DNA methylation visualized from TCGA-COAD datasets. (A) The
+promoter methylation level of ABCE1 from TCGA-COAD datasets was retrieved from UALCAN database
+compared between tumour (n=313) = and normal samples (n=37). (B) The overall survival plot by Kaplan-
+Meier method denotes the higher expression level of ABCE1 has poor survival rate (HR-1.96) in COAD
+datasets. (C and D) The correlation of ABCE1 with DNA methylation has been examined by retrieving TCGA-
+COAD samples from wanderer database. Blue dots denoted normal spearman coefficient value and red dots
+indicates the tumour samples with spearman coefficient values. (E and F) The methylation levels for ABCE1
+have measured between normal and tumour samples in COAD datasets. (G) The clinical characteristics of
+ABCE1 in DNA methylation for COAD datasets illustrated by heatmap in accordance to their ethnicity, race,
+BMI, age and event. (H) Cytotoxicity of ABCE1 KO with or without DNA methylation inhibitor, 5-Aza (10µM)
+for 24 h was measured by MTT assay in HCT-116 cells. (I and J) Deletion of ABCE1 treating in presence and
+absence of 5-Aza (10µM) was measured glucose uptake and lactate production in HCT-116 cells. (I) ABCE1
+expression levels were measured by RT-PCR by treating ABCE1 KO HCT-116 cells with 5-Aza (10µM) for
+24 h. Statistical significance: <0.05, <0.001, and ***p<0.0001.
+cells, which revealed inhibition of cellular CAT and SOD activity levels, whereas treatment with irinotecan
+decreased SOD and CAT activity in HCT-116 and HT-29 cells (Fig. 8I and J). Overall, our findings provide
+strong evidence that the irinotecan inhibits cell growth and controls metabolism in colorectal cancer cells.
+Irinotecan promotes cell cycle arrest and induces apoptosis in HCT-116 and HT-29
+cells
+To further corroborate the effectiveness of irinotecan against colorectal cancer, flow cytometry analysis was
+conducted. Compared with untreated and treatment with irinotecan for 48 h resulted in inhibition of the
+synthesis phase in HCT-116 and HT-29 colorectal cancer cells, as shown in Fig. 9A. These results suggest that
+irinotecan causes HCT-116 and HT-29 colorectal cancer cells to undergo G1 phase cell cycle arrest. Furthermore,
+annexin V-FITC/PI double staining method was used to measure cell death. Figure 9B shows that, compared
+Scientific Reports
+|
+(2025) 15:24674
+|
+https://doi.org/10.1038/s41598-025-92436-4
+natureportfolio
+8
+www.nature.com/scientificreports/
+A
+Purity
+B cell
+CD8+ Tcell
+CD4+ Tcell
+Macrophage
+Neutrophil
+Dendritic Cell
+0.045
+partial.cor 0.157
+partial.com 0.336
+partial.cor 0.082
+partial cor 0.208
+partial cor 0.218
+partial cor 0.17
+6
+p=1.52e-03
+3.41e-12
+9.94e-02
+2.53e-05
+1.10e-05
+5.99e-04
+ABCE1 expression (log2 TPM)
+4
+COAD
+2
+0.25
+0.50
+0.75
+1.00.0
+0.1
+0.2
+0.3
+0.4
+0.0
+0.2
+0.4
+0.60.0
+0.1
+0.2
+0.3
+0.4
+0.0
+0.1
+0.2
+0.3
+0.1
+0.2
+0.3
+0.3
+0.6
+0.9
+B
+Infiltration level
+B Cell
+CD8+ TCell
+CD4+ TCell
+Macrophage
+Neutrophil
+Dendritic Cell
+ABCE1
+1.00
+Log-rank 0.357
+Log-rank 0.121
+Log-rank 0.186
+Log-rank 0.259
+Log-rank 0.661
+Log-rank 0.772
+Log-rank 0.013
+Cumulative Survival
+0.75
+0.50
+COAD
+1-11-11-11
+0.25
+0.00
+0
+50
+100
+150
+0
+50
+100
+150
+0
+50
+100
+150
+0
+50
+100
+0
+50
+100
+0
+50
+100
+0
+50
+100
+150
+Low (Bottom 35%)
+-
+High (Top 35%)
+Time to Follow-Up (months)
+C
+D
+Study of Origin
+3
+Samples
+Alteration Frequency (%)
+Profiles in Mutations
+Profiles in putative-copy number
+2
+alterations from GISTIC
+Profiles
+ABCE1
+1
+Mutation
+Genetic alterations
+Missense Mutation
+Splice Mutation
+Truncating Mutation
+No alterations
+Structural variant data
+Mutation data
+Samples per patient
+0
+10
+CNA data
+CPTAC2 DFCI. AC-ICAM, MSK Cell Genetech. Cance Caseccc. Cell 2016 Nature PNAS 2012 2015
+Profiled for CNA
+Yes
+No
+Profiled for mutation
+Yes
+No
+Nat
+Cell
+Profiled for SNV
+Yes
+No
+MED
+2019
+2023
+G
+RMSD
+Backbone after Isq fit
+RMS fluctuation
+E
+0.5
+0.8
+0.4
+0.6
+RMSD (nm)
+0.3
+(nm)
+0.4
+0.2
+0.2
+0.1
+normal ABCE1
+0
+0
+0
+10
+20
+30
+40
+50
+0
+100
+200
+300
+400
+500
+600
+F
+Radius of gyration
+Hydrogen Bonds
+480
+tumor ABCE1
+2.66
+460
+2.64
+Number
+440
+Rg (nm)
+2.62
+420
+2.6
+400
+2.58
+0
+10
+20
+30
+40
+50
+0
+10
+20
+30
+40
+50
+Time (ns)
+Time (ns)
+Fig. 6. Immune infiltration, mutation frequency, and IHC of ABCE1 in COAD datasets. (A) ABCE1 in COAD
+datasets correlated with the immune cells (B cells, CD8 + T cells, CD4 + T cells, macrophages, neutrophils, and
+dendritic cells) were retrieved from TIMER 2.0 database. The partial coefficient curve (r, Pearson's co-efficient)
+and p values were denoted. (B) The cumulative survival of immune cells (B cells, CD8 + T cells, CD4+T
+cells, macrophages, neutrophils, and dendritic cells) were represented according to Kaplan-Meier plot. High
+expression (Top 35%) and low expression (bottom 35%) were represented in red and blue color. (C and D)
+The alteration frequency for ABCE1 in colon adenocarcinoma was visualized by cBioportal database. Among
+structural variant, mutation and CNA were monitored for ABCE1 expression from various datasets. Moreover,
+genetic alterations (Missense, Splice, and Truncating mutations) were visualized according to GISTIC profiles,
+Sample origins, and Study of origin. (E and F) The expression level of ABCE1 in colorectal cancer tissues
+were visualized by retrieving the immunohistochemical tissues (normal and tumour colon samples) from
+the Human Protein Atlas (HPA) database. (G) Molecular dynamic simulations by GROMACS package were
+processed by consecutively 50 nanoseconds to check the stability of ABCE1 protein. RMSD, RMS fluctuation,
+Radius of gyration (Rg), and hydrogen bonds were visualized.
+Scientific Reports
+|
+(2025) 15:24674
+|
+https://doi.org/10.1038/s41598-025-92436-4
+natureportfolio
+9
+www.nature.com/scientificreports/
+A
+B
+C
+CTD Database
+FFE
+PCKT
+DRA
+-
+ЯРЯКИН
+SLCIAL
+RRPID
+158
+CSTB
+HIC
+WILL
+TOMMED
+TRNTI
+8
+23
+HOPET
+64
+000
+CPSF)
+1509
+153
+3175
+TURMAI
+ABOUT
+BAX
+BAD
+GSE33113
+Genecards
+CDINIA
+IMC2
+.
+D
+HK1
+F
+SLC2A4
+STAU1
+HK2
+PDKI
+PFKFB3
+LDHA
+E
+CPSF3
+RPS6KB1
+PIK3CA
+PKM
+ABCE1
+Network
+Details
+RRP1B
+NOC3L
+Rank: 1
+TP53
+ABCE1
+NOP14
+MDM2
+Nodes: 15
+SDAD1
+DDX18
+TRMT1
+Edges: 120
+FBL
+Modularity: 2.308
+RPL35A
+RPL35A
+SDAD1
+POLR1B
+PSMD4
+InDeg: 120 OutDeg: 52
+PSMC2
+GTPBP4
+FBL
+POLR1B
+RRP18
+PSMA2
+PSMA5
+DDX18
+EIF3A
+ABCF2
+NOC3L
+NOP14
+GTPBP4
+G
+H
+Gene Ontologies (GO)
+Pathway analysis
+Glycolytic Process
+-log,(ovalue)
+Pathways in cancer
+Organelle Outer Membrane
+Colorectal cancer
+6
+Glucose Homeostasis
+p53 signaling pathway
+HIF-1 signaling pathway
+Apoptotic Process
+4
+Glycolysis/Gluconeogenesis
+Mitochondrial Menbrane
+2
+PI3K-Akt signaling pathway
+Regulation of Cell cycle
+Class
+AMPK signaling pathway
+Mitochondrial Matrix
+BP
+Sphingolipid signaling pathway
+Regulation of Cell Growth
+TP53 signaling pathway
+CC
+Glycolysis
+Glucose membrane transporter
+MF
+mTOR-C1 mediated signaling
+Nucleus
+Count
+Pl3k/Akt signaling in cancer
+Channel Activity
+5.0
+Signaling by NOTCH
+7.5
+Kinase Binding
+Glucose Metabolism
+10.0
+Nuclear Membrane
+AKT phosphorylates Targets in Cytosol
+12.5
+G1/S DNA damage Checkpoints
+Death Domain Binding
+15.0
+6
+4
+2
+0
+2
+4
+6
+8
+10
+12
+14
+Protein Kinase Binding
+17.5
+Enrichment score (-log10(p))
+100
+200
+300
+400
+500
+Enriched Score
+Fig. 7. ABCE1 interacts highly associated targets and functional annotations in COAD datasets. (A) CTD
+database (n = 253), GSE33113 (n= 3415), and gene cards (n = 1734) retrieval of target genes were illustrated
+as Venn diagram denotes commonly overlapping targets (n=64) which are strongly associated with ABCE1.
+(B) Using STRING, web-server for protein-protein interaction was visualized. (C) The interaction file was
+illustrated in cytoscape software. The diagram shows the association of potent targets by interaction of ABCE1.
+(D) Using MCODE plugin the PPI has scrutinized. (E and F) Using ClustVis, plugin scrutinized top 15 hub
+genes in accordance to their Rank (1), nodes (15), edges (120), modularity (2.308), InDeg (120), and their
+OutDeg (52), indicated in green color. (G) The functional annotation (GO) was visualized in bubble chart (BP,
+CC, MF) according to their p value and gene count. (H) Butterfly plot represents the highly enriched pathways
+from KEGG (Pink color) and Reactome (Brown color) with the top 15 genes by their enrichment score
+(-log₁₀(p value)). CTD, Comparative Toxicogenomic Database; GO - Gene Ontology; BP, Biological Processes;
+CC, Cellular Component; MF, Molecular Functions.
+Scientific Reports I (2025) 15:24674
+|
+https://doi.org/10.1038/s41598-025-92436-4
+natureportfolio
+10
+www.nature.com/scientificreports/
+A
+Enrichment plot: INTEGRATED CANCER
+B
+C
+2
+Forichment
+SW480
+Caco-2
+HCT-116
+HT-29
+Colo-205
+HCT-15
+CL-11
+Cuv-2
+CL-40
+CaR-1
+N
+CCLE
+N
+HCRC
+N
+O
+N
+H675
+Irinotecan (CID:60838)
+100
+200
+300
+HO
+O
+D
+E
+HCT-116
+HT-29
+120
+120
+120
+120
+***
+**
+100
+100
+100
+100
+**
+***
+80
+80
+80
+***
+80
+*
+Cell viability (%)
+60
+Cell viability (%)
+60
+Cell viability (%)
+60
+Cell viability (%)
+60
+40
+40
+40
+40
+20
+IC₅₀-88.46µM
+20
+IC₅₀-53.98µM
+20
+20
+IC₅₀-62.13µM
+IC₅₀-39.176µM
+0
+0
+0
+0
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+0
+10
+20
+30
+40
+50
+60
+70
+80
+90
+100
+2DG
+0
+4
+8
+2DG
+0
+4
+8
+Irinotecan (pM)
+Irinotecan (pM)
+Control
+ITN
+NCM-460
+HCT-116
+HT-29
+F
+G
+H
+I
+J
+100
+20
+15
+20
+Enrichment plot: HALLMARK_GLYCOLYSIS
+***
+0.5
+****
+***
+Control
+0.4
+****
+:
+1.3
+80
+15
+60
+HCT-116
+2DG pmol
+40
+Lactate (nM)
+10
+5
+Total catalase activity (Unit/mg)
+15
+ITN
+:
+0.1
+10
+5
+Total SOD activity (Unit/mg)
+10
+5
+20
+10.000
+0
+0
+0
+0
+80
+20
+10
+15
+Enrichment plot:
+***
+WP_METABOLIC_REPROGRAMMING_IN_COLON_CANC
+***
+**
+ER
+Control
+***
+0.0
+8
+0.5
+:
+60
+15
+Total catalase activity (Unit/mg)
+ITN
+0.4
+10
+0.2
+HT-29
+2DG pmol
+40
+Lactate (nM)
+6
+10
+4
+Total SOD activity (Unit/mg)
+5
+20
+5
+2
+Ranking
+0
+0
+0
+0
+Fig. 8. ABCE1 plays an oncogenic role in colorectal cancer cells. (A) GSEA plots from Wiki pathway shows
+the involvement of ABCE1 in Integrated cancer pathway. (B) The heatmap illustration mentioned the ABCE1
+expression levels (TPM) among various colon cancer cell lines. (C) Chemical structure of irinotecan. (D) MTT
+assay for cell viability shows the increasing concentration of irinotecan (10-100µM) for 24-48 h intervals
+in NCM-460, HCT-116, and HT-29 cells. IC, 50 values were calculated using Graphpad prism software. IC₅₀
+concentration value of irinotecan for 48 h (HCT-116: 53.98µM; HT-29: 39.17µM) was followed for further
+experiments. (E) Cell viability by MTT assay was examined by pre-treating with glycolytic inhibitor, 2DG
+(4 mM and 8 mM) along with irinotecan in HCT-116 and HT-29 cells. (F) GSEA plots represents the role
+of glycolysis and metabolic reprogramming in colon cancer from GSE33113 dataset. (G and H) The glucose
+uptaken and lactose production was examined by treating irinotecan in HCT-116 and HT-29 cells. (I and
+J) The cellular catalase (CAT) and Superoxide Dismutase (SOD) was measured comparing untreated and
+irinotecan treated in HCT-116 and HT-29 cells. Statistical significance: p<0.05, *p<0.001, and ***p<0.0001.
+with the control cells, the HCT-116 and HT-29 cells induced early and late apoptosis. These biological results
+were corroborated by GSEA plots (Fig. 9C), which revealed that tumour samples from CRC datasets exhibited
+positive regulation of the cell cycle and negative regulation of apoptosis and the TCA cycle relative to normal
+tissues. Decreased ABCE1 expression in colorectal cancer cells is also shown in Fig. 9D, providing additional
+support for the bioinformatic analysis. RT-PCR was used to measure ABCE1 expression levels in HCT-116
+and HT-29 cells treated with irinotecan. Immunoblot analysis confirmed these results, revealing reduced levels
+of ABCE1 after 48 h of irinotecan treatment in HCT-116 and HT-29 cells, as shown in Fig. 9E. These findings
+clearly demonstrated that the treatment of irinotecan regulates the cell cycle and induces cell death in HCT-116
+and HT-29 cells. Furthermore, a significant binding relationship between ABCE1 and irinotecan was found
+by molecular docking analysis, with hydrogen bond interactions shown (TYR A: 281) in Fig. 9F. To further
+analyse the interaction between ABCE1 and irinotecan, molecular dynamics simulations were performed using
+the GROMACS software package. These interactions significantly affected the results of the energy calculations
+Scientific Reports I (2025) 15:24674
+|
+https://doi.org/10.1038/s41598-025-92436-4
+natureportfolio
+11
+www.nature.com/scientificreports/
+A
+B
+Control
+Irinotecan
+Control
+Irinotecan
+80
+10⁶
+10⁶
+20
+G0/G1-45.13%
+G0/G1-61.17%
+Q1-UL(0.00%)
+Q1-UR(0.00%)
+Q1-UL(9.70%)
+Q1-UR(3.36%)
+S-32.34%
+S-24.12%
+***
+M-22.51%
+300
+M-14.28%
+300
+60
+105
+10⁵
+15
+HCT-116
+Percentage of cells (%)
+**
+Count
+200
+40
+HCT-116
+FITC-A
+104
+104
+Percent survival (%)
+10
+150
+**
+100
+20
+10³
+10³
+5
+0
+0
+0
+Q1-LL(99.17%)
+Q1-LR(0.83%)
+Q1-LL(81.12%)
+Q1-LR(5.82%)
+0
+200
+400
+800
+G0/G1
+S
+10²
+102
+0
+600
+800
+1000
+0
+200
+400
+600
+1000
+M
+10²
+10³
+104
+105
+106
+102
+10³
+10⁴
+10⁵
+10⁶
+Live
+Control
+Irinotecan
+ECD-A
+(x 10³)
+ECD-A
+Control
+Irinotecan
+Control
+Irinotecan
+Control
+Irinotecan
+80
+10
+106
+25
+G0/G1-43.91%
+G0/G1-62.01%
+Q1-UL(1.50%)
+Q1-UR(1.86%)
+H1-UL(14.91%)
+H1-UR(4.98%)
+***
+S-34.52%
+400
+S-21.16%
+***
+M-21.29%
+M-16.71%
+20
+300
+60
+105
+105
+300
+Percentage of cells (%)
+Percent survival (%)
+15
+HT-29
+Count
+200
+40
+200
+HT-29
+FITC-A
+104
+104
+10
+100
+100
+20
+10³
+10³
+5
+Q1-LL(92 13%)
+Q1-LR(4.51%)
+H1-LL(74 29%)
+H1-LR(5.83%)
+0
+0
+0
+102
+102
+0
+0
+200
+400
+600
+800
+1000
+0
+200
+400
+600
+800
+1000
+G0/G1
+S
+M
+102
+10³
+104
+105
+10
+102
+10³
+104
+105
+106
+Control
+Irinotecan
+ECD-A
+10³)
+ECD-A
+C
+D
+Control
+Irinotecan
+1.5
+Enrichment plot: BIOCARTA CELLCYCLE PATHWAY
+Enrichment plot: KEGG APOPTOSIS
+Enrichment plot: KEGG CITRATE CYCLE CYCLE
+E
+1.5
+****
+****
+ITN
++
++
+****
+***
+0.2
+Fold change
+Over control (ABCE1/ß-actin)
+1.0
+ABCE1
+Protein expression level
+1.0
+-
+ß-actin
+0.5
+HCT-116
+HT-29
+0.5
+0.0
+5,000
+0.0
+10,000
+5,000
+10,000
+5.000
+HCT-116
+HT-29
+HCT-116
+HT-29
+Control
+Irinotecan
+Control
+Irinotecan
+G
+RMSD
+Solvent Accessible Surface
+F
+0.5
+310
+0.4
+300
+RMSD (nm)
+0.3
+ABCE1
+Complex (ABCE1+ITN)
+0.2
+ITN
+Area (nm2)
+290
+280
+0.1
+0
+270
+25
+50
+75
+100
+20
+40
+60
+80
+100
+Time (ns)
+Time (ns)
+H-Bonds
+Donor
+Radius of gyration
+RMS fluctuation
+3
+0.5
+Acceptor
+0.4
+2.5
+2
+Interactions
+Fluctuations (nm)
+0.3
+(nm)
+0.2
+Van der Waals
+Conventional hydrogen Bond
+1.5
+284
+0.1
+Carbon Hydrogen Bond
+Pi-Alkyl
+1
+0
+20
+40
+60
+80
+100
+0
+100
+200
+300
+400
+500
+600
+Time (ns)
+Residues (AA)
+Fig. 9. Irinotecan promotes cell cycle and induces cell death in HCT-116 and HT-29 cells. (A) The cell cycle
+analysis by flow cytometry was measured by treating irinotecan in colorectal cancer cells. (B) Cell death by
+Annexin V-FITC/PI double staining was measured by flow cytometry in HCT-116 and HT-29 cells. (C) Gene
+Set Enrichment Analysis (GSEA) plots represent interaction of ABCE1 with cell cycle pathway, Apoptosis,
+and negative regulation of TCA cycle from GSE33113 colon adenocarcinoma datasets. (D) The treatment of
+irinotecan was subjected to evaluate the gene expression levels of ABCE1 in HCT-116 and HT-29 cells by RT-
+PCR. (E) Immunoblot analysis shows the expression level of ABCE1 with and without treatment of irinotecan
+in HCT-116 and HT-29 cells. ß-actin was used as an internal control. Uncropped western blot images
+corresponding to Fig. 9E can be found in Supplementary Fig. 4b. (F) To find out the binding association with
+ABCE1 and irinotecan, molecular docking was implemented. 3D and 2D structure illustrations shows the
+binding amino residues between the ligand and protein complex. Hydrogen bond binding between ABCE1
+and irinotecan was visualized using Biovia Discover studio. (G) Molecular dynamics was executed using
+GROMACS software package to understand the atomic level interactions between ABCE1 and irinotecan. Root
+Mean Square Deviation (RMSD), Solvent accessible surface, Radius of gyration (Rg), and RMS fluctuation
+plots and energy calculations were generated from GROMACS software.
+(Supplementary Table 5), with RMSD, solvent-accessible surfaces, radius of gyration, and RMS fluctuations
+reported for ABCE1 with irinotecan, as shown in Fig. 9G.
+Deletion of ABCE1 reduced cell growth and abrogates metabolic reprogramming in HCT-116
+and HT-29 cells
+ABCE1 was deleted with the CRISPR/Cas9 system, which reduced the growth of HT-29 and HCT-116 cells in a
+time-dependent manner, as shown in Fig. 10A. ABCE1 KO HT-29 and HCT-116 cells demonstrated inhibited
+glucose uptake and lactose production, which led to the inhibition of aerobic glycolysis in CRC cells, as shown in
+Fig. 10B. Moreover, ABCE1 KO confirmed by western blot as shown in Fig. 10C and cell death was also measured
+Scientific Reports
+I
+(2025) 15:24674
+|
+https://doi.org/10.1038/s41598-025-92436-4
+natureportfolio
+12
+www.nature.com/scientificreports/
+A
+B
+C
+HT-29
+HCT-116
+1.5-
+100
+1.5-
+***
+10-
+***
+***
+WT
+80
+***
+8-
+ABCEINO
+ABCEIKO
+Absorbance OD value
+:-
+Absorbance OD value
+in
+1.0-
+1.0-
+ABCE1 KO
+WT
+i
+2DG pmol
+60
+Lactate (nM)
+ABCEI
+6
+ABCE1 KO
+**
+B-actin
+40-
+4
+0.5
+0.5
+HT-29
+HCT-116
+20
+2-
+0.0
+0.0
+0
+0
+0
+24
+48
+72
+0
+24
+72
+HT-29
+HCT-116
+HT-29
+HCT-116
+48
+Time (h)
+Time (h)
+D
+E
+**
+F
+G
+H
+WT
+**
+***
+ABCE1 KO
+10
+10
+40
+**
+***
+Q1-UL(0.92%)
+Q1-UR(0.24%)
+Q1-UL(15.58%)
+Q1-UR(8.87%)
+***
+**
+***
+WT
+120
+**
+100
+20-
+**
+20-
+***
+ABCE1 KO
+107
+"
+30-
+***
+Apoptotic Cells (%)
+WT
+100
+80
+Total SOD activity (Unit/mg)
+Irinotecan
+15
+15-
+ABCE1 KO
+HT-29
+FTCA
+FITC-A
+20-
+Cell Viability (%)
+80
+ABCE1 KO+Irinotecan
+HT-29
+2DG pmol
+60
+60
+Lactate (nM)
+10
+10-
+10
+40
+10
+10
+40
+5-
+5-
+20
+0
+20-
+10
+Q1-LR(5.74%)
+01
+Q1-LL(68.54%)
+Q1-LR(6.73%)
+0
+10
+103
+10'
+10
+10%
+10'
+10
+10
+0
+0
+0
+102
+10"
+ECD-A
+FCD-A
+***
+WT
+**
+ABCE1 KO
+**
+:
+***
+189;
+H1-U-(20.83%)
+***
+**
+H1-UR/0.00%)
+***
+WT
+30
+120-
+**
+80
+25-
+***
+15-
+**
+ABCE1 KO
+***
+103
+WT
+100
+20-
+60-
+Irinotecan
+Apoptotic Cells (%)
+20
+ABCE1 KO
+10
+Cell Viability (%)
+80
+10
+HCT-116
+60
+2DG pmol
+Lactate (nM)
+15
+40
+10-
+Total SOD activity (Unit/mg)
+ABCE1 KO+Irinotecan
+HCT-116
+40
+5-
+10
+20
+20
+5-
+12"
+13'
+0
+0
+0
+0
+0
+of
+10'
+10
+1C'
+FCDA
+FCC-4
+Fig. 10. ABCE1 promotes cell growth and abrogates cell death in CRC cells. (A) Cell viability of WT or
+ABCE1 KO HT-29 and HCT-116 cells were measured by MTT at 24 h to 72 h. (B) Glucose uptake and lactate
+production assays were measured at 24 h in WT and ABCE1 KO HT-29 and HCT-116 cells. (C) Western
+blot analysis shows the depletion of ABCE1 in HT-29 and HCT-116 cells. (D) WT and ABCE1 KO HT-29
+and HCT-116 cells were examined for apoptotic rate by flow cytometry. (LL: Live cells, UL: Early apoptosis,
+UR: Late apoptosis, LR: Necrosis). (E) ABCE1 KO and Irinotecan combined treatment shows cytotoxicity in
+HCT-116 and HT-29 cells. (F and G) Glucose uptake and lactose production assays were measured by treating
+ABCE1 KO and irinotecan. (H) Total SOD activity was measured. Statistical significance: <0.05, **p <0.001,
+and 0.0001. Uncropped western blot images corresponding to Fig. 10 C can be found in Supplementary
+Fig. 4c.
+by flow cytometry, which revealed that the deletion of ABCE1 induced apoptosis in HT-29 and HCT-116 cells
+(Fig. 10D). Furthermore, to examine the combined therapy of ABCE1 deletion with irinotecan was investigated
+and resulted significant inhibition of cell growth by treating ABCE1 KO and Irinotecan in HCT - 116 and HT-
+29 cells as shown in Fig. 10E. The glucose uptaken and production of lactic acid were reduced in combined
+treatment compared to alone in CRC cells as shown in Fig. 10F and G. To check the anti-oxidant property, total
+cellular SOD levels were observed and result demonstrated that ABCE1 KO with irinotecan reduced the SOD
+levels in HCT - 116 and HT-29 cells in Fig. 10H. The gene expression by RT-PCR was experimented shows
+reduced ABCE1 expression by treating ABCE1 KO with irinotecan in HCT-116 and HT-29 cells (Supplementary
+Fig. 1). These results suggested that knockout of ABCE1 with irinotecan significantly reduced cell growth and
+induced apoptosis in CRC cells.
+ABCE1 modulates aerobic glycolysis and cell growth via the p53 signalling pathway in HCT-
+116 cells
+The results of the bioinformatic analysis depicted in Fig. 11A revealed that colorectal cancer datasets are highly
+associated with the p53 signalling pathway. Bubble plot data derived from colorectal cancer tissues which
+revealed a substantial correlation between ABCE1 and the p53 signalling pathway. These findings suggest a
+significant association between ABCE1 and the p53 signalling pathway in colorectal cancer cells (Supplementary
+Fig. 2A). To validate these findings, cell viability was assessed by treating HCT-116 cells with the p53 pathway
+activator nutlin-3a (nut-3a). The results of the MTT assays (IC₅₀-68.74µM) demonstrated that nut-3a inhibits
+the growth of colorectal cancer cells (Supplementary Fig. 2B). Irinotecan and nut-3a were used to treat HCT-116
+cells to study the modulation of p53 signalling pathway. The results revealed significant inhibition of cell growth
+when both irinotecan and nut-3a were administered to HCT-116 cells (Fig. 11B). Furthermore, metabolic assays
+of glucose uptake and lactose production revealed reduced levels in HCT-116 cells, as shown in Fig. 11C and
+D. In addition, antioxidant analysis was performed, and the results revealed that catalase (CAT) and superoxide
+dismutase (SOD) activities were reduced in response to irinotecan and nut-3a treatment in HCT-116 cells
+(Fig. 11E and F). Treatment of HCT-116 cells with irinotecan and nut-3a significantly increased G1 phase cell
+cycle arrest, as shown in Fig. 11G. These results suggest that an irinotecan enhances G1 phase cell cycle arrest by
+modulating the p53 signalling pathway in colorectal cancer cells. Furthermore, apoptosis was also confirmed that,
+compared with the individual treatments, the combination treatment clearly induced early and late apoptosis in
+HCT-116, as shown in Fig. 11H. Gene expression analysis was performed by RT-PCR, and the results revealed
+that HCT-116 cells treated with the combination of irinotecan and nut-3a clearly presented increased expression
+levels of p53, CDKN1A, and BAX but reduced expression levels of BCL2, LDHA and GLUT2, as shown in
+Fig. 11I. Moreover, deletion of ABCE1 treated with nut-3a resulted reduced cell growth, altered glucose uptake,
+Scientific Reports
+I
+(2025) 15:24674
+|
+https://doi.org/10.1038/s41598-025-92436-4
+natureportfolio
+13
+www.nature.com/scientificreports/
+B
+C
+D
+E
+F
+***
+****
+****
+**
+****
+A
+***
+****
+****
+***
+***
+120
+100
+***
+20
+15
+25
+***
+Enrichment p BIOCARTA P53HYPOXIA PATHWAY
+****
+**
+****
+100
+Control
+80
+20
+15
+Nutlin-3a
+Cell viability (%)
+80
+Total SOD activity (Unit/mg)
+10
+Total catalase activity (Unit/mg)
+Irinotecan
+60
+15
+Irinotecan+Nutlin-3a
+HCT-116
+60
+2DG pmol
+40
+Lactate (nM)
+10
+10
+40
+5
+5
+20
+5
+20
+10,000
+0
+0
+0
+0
+0
+G
+Nutlin-3a(-)
+Nutlin-3a(+)
+Control
+Irinotecan
+Control
+Irinotecan
+300
+100
+****
+G0/G1-46.96%
+G0/G1-61.25%
+G0/G1-64.83%
+400
+G0/G1-73.33%
+S-29.19%
+S-23.79%
+S-21.08%
+S-15.54%
+***
+M-23.87%
+M-15.02%
+M-14.46%
+M-11.06%
+80
+***
+300
+300
+300
+HCT-116
+Cell number
+200
+150
+150
+Percentage of cells (%)
+60
+**
+150
+40
+100
+20
+0
+0
+0
+0
+0
+0
+200
+400
+600
+800
+1000
+0
+200
+400
+600
+800
+1000
+0
+200
+400
+600
+800
+1000
+0
+200
+400
+600
+800
+1000
+G0/G1
+S
+M
+Control
+Irinotecan
+ECD-A
+10³)
+Nutlin-3a
+Irinotecan+Nutlin-3a
+H
+Nutlin-3a(-)
+Nutlin-3a(+)
+Control
+Irinotecan
+Control
+Irinotecan
+10⁶
+10⁶
+10⁶
+10⁶
+30
+Q1-UL(11.79%)
+Q1-UR(1.82%)
+Q1-UL(8.31%)
+Q1-UR(2.62%)
+Q1-UL(20.90%)
+Q1-UR(3.15%)
+***
+Q1-UL(0.80%)
+Q1-UR(0.06%)
+***
+10⁵
+10⁵
+10⁵
+10⁵
+Control
+20
+Irinotecan
+HCT-116
+FITC-A
+10⁴
+10⁴
+10⁴
+10⁴
+Percent survival (%)
+****
+Nutlin-3a
+Irinotecan+Nutlin-3a
+10
+10³
+10³
+10³
+10³
+10²
+Q1-LL(96.04%)
+Q1-LR(3.09%)
+Q1-LL(76.24%)
+Q1-LR(10 15%)
+Q1-LL(82.33%)
+Q1-LR(6.73%)
+Q1-LL(69.63%)
+Q1-LR(6.32%)
+102
+10²
+10²
+0
+10²
+10³
+10⁴
+105
+10⁶
+10²
+10³
+10⁴
+105
+10⁶
+10²
+10³
+10⁴
+10⁵
+10⁶
+10²
+10³
+10⁴
+10⁵
+10⁶
+ECD-A
+***
+****
+****
+****
+***
+****
+2.0
+2.0
+2.0
+1.5
+1.5
+1.5
+****
+***
+***
+***
+****
+Control
+****
+Irinotecan
+****
+****
+Nutlin-3a
+****
+***
+1.5
+***
+1.5
+1.5
+Irinotecan+Nutlin-3a
+HCT-116
+Fold Change
+Over Control (p53/ß-actin)
+Over Control (p21/ß-actin)
+Over Control (Bax/B-actin)
+1.0
+1.0
+1.0
+Fold Change
+1.0
+Fold Change
+1.0
+Fold Change
+Over Control (Bcl2/ß-actin)
+Fold Change
+Over Control (LDHA/ß-actin)
+0.5
+Over Control (GLUT2/ß-actin)
+1.0
+Fold Change
+0.5
+0.5
+0.5
+0.5
+0.5
+0.0
+0.0
+0.0
+0.0
+0.0
+0.0
+Fig. 11. Irinotecan inhibits cell growth and aerobic glycolysis via p53 signalling in HCT-116 cells. (A) Gene
+Set Enrichment Analysis (GSEA) plot illustrate the involvement of p53 signalling pathway from COAD dataset
+(GSE33113). (B) HCT-116 cells were subjected to treat with irinotecan with and without nut-3a cell viability
+was measured. (C and D) Glucose uptake and lactose production were measured by treating irinotecan and
+combing with nut-3a in HCT-116 cells. (E and F) ROS activity was also measured by evaluating the cellular
+SOD and CAT by treating irinotecan and nut-3a alone and in combined in HCT-116 cells. (G) cell cycle
+analysis by flow cytometry was measured by treating irinotecan with and without nut-3a in HCT-116 cells.
+(H) Cell death by Annexin V-FITC/PI double staining was measured by treatment of irinotecan and nut-3a
+in HCT-116 cells. (I) Gene expression of p53, p21, BAX, BCl2, LDHA, and GLUT2 was examined by RT-PCR
+by treating irinotecan and nut-3a alone and in combined in HCT-116 cells. Statistical significance: *p <0.05,
+<0.001, and 0.0001.
+lactate production, and promotes G1 phase cell cycle arrest in HCT-116 cells (Supplementary Fig. 3). These
+experimental validations concluded that the ABCE1 KO or irinotecan in presence of nut-3a alters the p53
+signalling in HCT-116 cells. The results of the molecular docking analysis also demonstrated that irinotecan
+exhibited high binding affinity with p53 signalling targets such as TP53, GLUT2, BAX, LDHA, BCL2, MDM2,
+CDKN1A, and PDK1 (Supplementary Table 6) (Fig. 12). These findings imply that p53 signalling pathway
+activation through ABCE1 regulates cell proliferation and the warburg effect in colorectal cancer cells.
+Discussion
+Cancer, an intricate and diverse problem, is typified by unchecked cell growth that frequently results in the
+formation of malignant tumours²⁷,²⁸. Its impact can be felt across various organs and tissues, disrupting normal
+bodily functions and presenting formidable obstacles in terms of diagnosis, treatment, and overall management.
+Typically, colon cancer begins as benign polyps on the inner linings of these organs, gradually progressing into
+cancerous growth over time. Risk factors for this disease include age, genetic predispositions, lifestyle choices
+including food and exercise, and family history²⁹,³⁰. Early detection facilitated through screening measures
+such as colonoscopies significantly enhances patient prognosis and treatment efficacy. However, despite strides
+in diagnosis and treatment, colorectal cancer remains a pressing public health concern, underscoring the
+imperative for ongoing research and innovation in cancer prevention, detection, and therapeutic strategies. In
+current treatment strategies for colorectal cancer, a combination of approaches is often employed to effectively
+Scientific Reports
+|
+(2025) 15:24674
+I
+https://doi.org/10.1038/s41598-025-92436-4
+natureportfolio
+14
+www.nature.com/scientificreports/
+BILEU:93
+A:PRO:433
+A:THR:182
+B:PRO:98 B:ILE:254
+AGLY:186
+TP53
+A;MET:174
+A:PHE:421
+B:ARG:267
+A:GLY:115
+A:ALA:424
+BILEU:264
+B:TRP:91
+A:GLY:170
+B:MET:160
+BIALA:159
+A:ALA:437
+BISER:100
+B:SER:90
+nano
+AGLU:426
+A,ARG:365
+A SER:112
+A:ARG:185
+AGLU:361
+BITYR:103
+B:SER:99
+BISER:215
+ALEU:436
+A;ALA:440
+D:LYS:370
+GLUT2
+A SER:169
+A:HIS:192
+B:ASN:100
+A:PRO:51
+B:MET:99
+8:PHE:71
+A:GLU:41
+C:SER:184
+A:GLN:32
+DEILE:187
+B:ASN:10:ASP:102
+B:VAL:180
+C:LYS:42
+B:LEU:70
+A)MET:137
+D:ASP:43
+B:ARG:73
+CLEU:183
+A:HIS:271
+B:ASP:98
+A:LEU:102RG:269
+B;SER:184
+A:GLN:28
+AILEU:47
+A:ALA:46
+A:ILE:133
+D:PHE:71
+AILE:31
+A:PRO:49
+LDHA
+C:ASP:258
+BAX
+A:PRO:43
+A:TRP:188
+C:ARG:171
+D:LEU:70
+A:GLU:42
+A:HIS:186
+AITHR:41
+A:LYS:17
+A:ASP:194
+A:ASN:39
+A:TYR:281
+A:LEU:191
+A:GLU:50
+A:GLU:195
+A:GLU
+ATYR:104
+A:HIS 94
+AILEUI95
+A:ARG:12
+A:SER:49
+A:MET:15A:ASP:31
+A:TYR:21
+AVALIDE
+A:ALA:32
+MDM2
+A:TYR:100 A:PHE:193
+A:THR:279
+BCL2
+A:ASP:25
+A:ARG:97 A:VAL:278
+B:SER:75
+A:GLU:CC
+A:ARG:83
+A:ARG:67
+A:ARG:86
+A:PHE:53
+A:GLU:56
+B:LEU:194
+B:GLN:197
+B:PHE:52
+B:LEU:79
+B:GLN:81
+B:PHE:62
+A:TYR:77
+B:HIS:198
+A:PHE:51
+B:GLN:61 B:LEU:57
+A:VAL:68
+A:LEU:73
+PDK1
+B:MET:77
+CDKN1A
+A:TRP:65
+Fig. 12. Molecular docking shows binding energy between irinotecan and p53 signalling targets (p53,
+CDKN1A, BAX, BCL2, LDHA, PDK1, MDM2 and GLUT2). 3D and 2D structural illustrations were visualized
+using Biovia Discover studio.
+combat the disease³¹. Chemotherapy, administered either before or after surgery, uses drugs to kill cancer cells
+or inhibit their growth, often in combination regimens such as FOLFOX (fluorouracil, leucovorin, oxaliplatin)³².
+Moreover, irinotecan, a topoisomerase I inhibitor, is a key chemotherapeutic agent for treating metastatic
+colorectal cancer (CRC). It induces DNA damage by preventing the re-ligation of single-stranded DNA breaks,
+causing double-strand breaks and triggering apoptosis in cancer cells. Combining irinotecan with molecular
+targeted therapies, which inhibit critical pathways involved in cancer survival, proliferation, and metastasis, has
+shown promise in enhancing treatment efficacy, reducing drug resistance, and minimizing toxicity, making it a
+vital strategy in advanced CRC management33-35. In this study, we utilised irinotecan combined with deletion
+of ABCE1 in CRC cells.
+Before surgery, radiation therapy can be used to reduce the tumour size. In more advanced situations, it can be
+used as a palliative measure to improve symptoms. Targeted therapy has emerged as a significant advancement in
+CRC treatment, with a focus on specific molecular targets involved in cancer growth and progression³³ In CRC,
+biomarkers are essential for guiding therapy choices and enhancing patient outcomes. These biomarkers, which
+can be proteins, genes, or other molecules, provide valuable information about the molecular characteristics
+of a tumour, its prognosis, and its response to specific treatments³⁴,³⁵ Personalized treatment plans are made
+possible using biomarker-driven techniques, guaranteeing that patients receive the best medications suited to
+their unique tumour biology³ ABCE1 has emerged as a pivotal player in cancer cells and influences multiple
+facets of malignant behaviour. Within the intricate landscape of cancer progression, ABCE1 orchestrates diverse
+cellular processes that collectively contribute to tumorigenesis and metastatic dissemination.
+Additionally, ABCE1 is a potential target for cytotoxic T lymphocytes (CTLs). Two peptides derived from
+ABCE1 demonstrate the capacity to efficiently stimulate HLA-A2-restricted CTLs with cancer reactivity from
+the peripheral blood mononuclear cells (PBMCs) of patients with colon cancer³⁷. Moreover, its involvement
+in translation regulation underscores its importance in sculpting the proteomic landscape of cancer cells,
+potentially tipping the balance towards oncogenic phenotypes. Furthermore, increased ABCE1 expression,
+which is clinically linked to aggressive tumour growth and invasion, likely increases the G-actin reservoir, which
+promotes the ability of lung cancer cells to invade and produce protrusions³⁸. Indeed, the prospect of targeting
+ABCE1 in cancer therapy looms large, with the promise of restraining tumour growth and sensitizing cancer
+cells to conventional treatment modalities. One of our previous studies identified ABCE1 as a potent molecular
+prognostic biomarker against colorectal cancer (CRC)³⁹.
+Numerous biological activities, including translation, antiapoptotic activity, and cell proliferation, have been
+linked to the ABCE1 gene. Preliminary bioinformatic analyses across multiple cancer datasets revealed significant
+upregulation of ABCE1 expression in various cancers, including colorectal cancer (Fig. 1). In particular,
+ABCE1 expression was greater in tumour samples than in normal samples in colorectal cancer datasets, and
+these differences were significantly correlated with clinical parameters such as race, age at diagnosis, and vital
+status. Moreover, analysis of genetic data types revealed a high mutation frequency in ABCE1. Further analysis
+Scientific Reports
+(2025) 15:24674
+-
+https://doi.org/10.1038/s41598-025-92436-4
+natureportfolio
+15
+www.nature.com/scientificreports/
+using GSEA software revealed significant regulation of cancer-related pathways in colorectal cancer datasets,
+indicating the association of ABCE1 upregulation with colorectal cancer progression.
+One of the previous studies aimed to identify genetic markers that can be used to predict treatment outcomes
+and survival rates in patients with CRC⁴¹. We used Kaplan-Meier (KM) plots from the COAD datasets to perform
+a thorough investigation of the predictive value of ABCE1 to confirm the possible carcinogenic role of this gene
+in colorectal cancer. KM analysis revealed compelling evidence indicating that patients with elevated ABCE1
+expression in advanced stages (Stages III and IV) of colorectal cancer experienced notably poorer OS rates than
+those with elevated ABCE1 expression in early stages (Stages I and II). Similarly, the DFS analysis corroborated
+these findings, demonstrating that patients with low ABCE1 expression in advanced stages exhibited higher
+survival rates than did those with low ABCE1 expression in early stages, as shown in Fig. 4B. These findings
+highlight the potential of ABCE1 as an oncogene and a viable target for the treatment of colorectal cancer. A
+previous study investigated the role of upstream open reading frames (uORFs) within the 5' leader sequence of
+the human ABCE1 gene, employing experimental techniques such as semiquantitative RT-PCR and statistical
+analysis to explore translation regulation. These findings suggested that specific uORFs in the 5'-leader sequence
+could effectively suppress translation of the main coding sequence⁴⁰.
+Our analysis of ABCE1 expression levels in primary tumours versus normal colon tissues revealed its
+upregulation in tumours, suggesting its potential role in colorectal cancer progression. Additionally, we examined
+the relationship between promoter methylation levels and ABCE1 expression. ABCE1 plays in epigenetic
+process that governs chromatin shape and gene expression is DNA methylation. Mutant DNA methylation
+patterns, such as worldwide hypomethylation and hypermethylation of oncogenes and tumour suppressor gene
+promoters, are frequently observed in cancers, particularly colorectal cancer⁴¹. Additionally, analysis of ABCE1
+methylation at CpG islands revealed higher methylation levels in colon tumours than in normal colon mucosa,
+as demonstrated in Fig. 5E and F. The heatmap in Fig. 5G further highlights the elevated expression levels of
+ABCE1 in CpG islands across various characteristics in colorectal cancer samples. These results suggest that
+ABCE1 affects DNA methylation dynamics during colorectal carcinogenesis, which may have an impact on the
+course and prognosis of the illness.
+Our investigation of the immune response to ABCE1 in colon cancer using the TIMER database revealed
+intriguing interactions within the tumour microenvironment. These results provide insight into the capacity of
+ABCE1 to influence various immune cell types in relation to colon cancer. To further elucidate the impact of
+ABCE1 on patient outcomes, we conducted Kaplan-Meier analysis to explore overall survival rates in relation
+to immune cell infiltration and ABCE1 expression in patients with colon cancer. Figure 6B reveals a notable
+trend, indicating that high ABCE1 expression is correlated with poorer overall survival rates for immune
+cells, underscoring the significant impact of ABCE1 on the interplay between immune cells and colon cancer
+progression. Moreover, we delved into mutation alterations in ABCE1, revealing genetic variations such as
+missense, splice, and truncating mutations (Fig. 6C and D), contributing to our understanding of the genetic
+landscape associated with ABCE1 in colon cancer. By examining the disparity in ABCE1 protein expression
+between normal and colon cancer tissues using IHC staining data obtained from the HPA database (Fig. 6E
+and F), we observed a substantial increase in ABCE1 expression within colon tissues, further emphasizing its
+potential relevance in the context of colon cancer. Furthermore, molecular dynamics simulations performed
+using the GROMACS package for the ABCE1 protein exhibited stability over 50 nanoseconds, with strong
+metrics in RMSD, RMS fluctuations, radius of gyration (Rg), and hydrogen bonds (Fig. 6G), providing valuable
+insights into the structural stability and dynamics of ABCE1. To identify potent targets and enriched pathways
+associated with ABCE1 in colorectal cancer, we integrated data from multiple resources, including GSE33113,
+the CTD database, and GeneCards. This comprehensive analysis revealed 64 targets overlapping across datasets,
+highlighting their relevance to ABCE1 in colorectal cancer.
+ABCE1 plays crucial roles in the proliferation, invasion, and apoptosis of MCF-7 human breast cancer cells.
+Furthermore, it has been proposed that ABCE1 inhibits intracellular RNase L activity, which disrupts the 2-5 A/
+RNase L pathway and affects a number of biological properties of breast cancer cells⁴²,⁴³. This study investigated
+the efficacy of irinotecan in colorectal cancer cells using a comprehensive approach involving GSEA, cancer
+cell line profiling, metabolic regulation, antioxidant activity, flow cytometry, molecular docking, and molecular
+dynamics simulations. Initially, GSEA revealed positive regulation of genes within the integrated cancer pathway,
+particularly in colorectal cancer targets. Analysis of a heatmap generated from Cancer Cell Line Encyclopaedia
+(CCLE) data demonstrated the upregulation of ABCE1 expression in various colon cancer cell lines, notably
+HCT-116 and HT-29 cells.
+The 2D structure of irinotecan was visualized, and compared with normal colon mucosa, treatment with
+irinotecan significantly inhibited the growth of colorectal cancer cells. Further investigation into the role of
+irinotecan in regulating glycolysis revealed its inhibitory effect on cell growth when combined with the glycolytic
+inhibitor 2DG. GSEA data revealed a correlation between ABCE1 expression and the upregulation of glycolysis
+and metabolic reprogramming in colon cancer tissue samples. Glucose uptake and lactate production assays
+confirmed that the levels were reduced upon irinotecan treatment in colorectal cancer cells. Additionally,
+irinotecan inhibited cellular catalase and SOD activity, indicating its antioxidant role. ABCE1 is involved in
+translation, DNA synthesis, and cell cycle progression through its regulation of histone protein synthesis⁴⁴.
+Following irinotecan therapy, flow cytometry analysis revealed G1 phase cell cycle arrest and the induction of
+apoptosis in colorectal cancer cells. GSEA plots demonstrating positive control of the cell cycle and negative
+control of apoptosis in tumour samples provided evidence for this effect. RT-PCR and immunoblot analysis
+confirmed that ABCE1 expression was reduced after irinotecan treatment (Fig. 9D and E). Molecular docking
+analysis revealed that ABCE1 has a strong binding relationship with irinotecan, and hydrogen bond interactions
+were observed (Fig. 9). Molecular dynamics simulations further supported these interactions, indicating
+stability and favourable energy calculations. ABCE1 deletion decreased the growth of HT-29 and HCT-116 cells
+Scientific Reports
+(2025) 15:24674
+I
+https://doi.org/10.1038/s41598-025-92436-4
+natureportfolio
+16
+www.nature.com/scientificreports/
+in a time-dependent manner. The knockout of ABCE1 in these cells led to reduced glucose uptake and lactate
+production, thereby inhibiting aerobic glycolysis in colorectal cancer (CRC) cells. Additionally, flow cytometry
+analysis demonstrated that ABCE1 deletion induced apoptosis in HT-29 and HCT-116 cells.
+The bioinformatic analysis depicted in Fig. 10A revealed a significant association between colorectal cancer
+datasets and the p53 signalling pathway. Further investigations into the role of ABCE1 in mediating the p53
+signalling pathway involved treating colorectal cancer cells with a combination of irinotecan and nut-3a. When
+irinotecan and nut-3a were given to HCT-116 cells, the findings demonstrated considerable suppression of cell
+proliferation.
+Furthermore, the antioxidant properties were assessed, revealing reduced levels of cellular catalase (CAT)
+and superoxide dismutase (SOD) activity upon treatment with both irinotecan and nut-3a in HCT-116 cells.
+These results suggest that the activation of the p53 signalling pathway by ABCE1 modulates cell growth and
+the warburg effect in colorectal cancer cells. Cell death was confirmed by flow cytometry, which revealed that,
+compared with the individual treatments, the combination treatment induced early and late apoptosis more
+effectively in HCT-116 cells (Fig. 11). Additionally, gene expression analysis by RT-PCR confirmed the increased
+expression levels of p53, CDKN1A, and BAX and the reduced expression levels of BCL2, LDHA, and GLUT2 in
+colorectal cancer cells treated with the combination of irinotecan and nut-3a. Molecular docking analysis revealed
+the high binding affinity of irinotecan for p53 signalling targets such as TP53, GLUT2, BAX, LDHA, BCL2,
+MDM2, CDKN1A, and PDK1, further supporting the role of ABCE1 in modulating the p53 signalling pathway.
+3D and 2D structure visualizations confirmed these interactions (Fig. 12). Similarly, another study reported that
+increased expression levels of ABC transporters (ABCA12, ABCC2, and ABCE1) were observed in oxaliplatin-
+resistant CRC cells, with CK2a knockdown effectively reversing these effects. Lowering CK2a expression led to
+the inhibition of oxaliplatin resistance, the induction of apoptosis, and the suppression of sphere formation⁴⁵
+Overall, these results confirm that inhibition of ABCE1 through the p53 signalling pathway promotes G1 phase
+cell cycle arrest and induces death in CRC cells. From these analyses, we confirmed that targeting ABCE1 could
+be a better therapeutic option as a molecular targeted therapy against colorectal tumorigenesis.
+Conclusion
+The findings of the present study highlight ABCE1 as a promising biomarker in CRC and elucidate its intricate
+molecular mechanisms. Integrated bioinformatic analyses and experimental validation revealed that ABCE1
+KO and irinotecan reduced cell growth, induced G1 phase cell cycle arrest, and promoted apoptosis in CRC
+cells. This study also highlights the involvement of ABCE1 in aerobic glycolysis and oxidative processes, as
+demonstrated through the modulation of the p53 pathway in HCT-116 cells. To conclude, ABCE1 is a possible
+therapeutic target for the management of CRC, highlighting its importance in developing treatment approaches
+for CRC progression.
+Materials and methods
+GEO datasets from colorectal clinical samples
+The Gene Expression Omnibus (GEO), overseen by the National Centre for Biotechnology Information
+(NCBI) and accessible at https://www.ncbi.nlm.nih.gov/geo/, serves as a comprehensive repository for genetic
+expression data⁴. Stringent inclusion criteria guided our selection process for datasets. Following these criteria,
+we identified and obtained the gene expression profile(s) designated as GSE33113 (6 colorectal cancer samples
+and 90 healthy controls), which comprises colorectal carcinoma (CRC) samples⁴⁷ This dataset was meticulously
+curated and organized utilizing the GPL570 Affymetrix Human Genome U133 Plus 2.0 Array platform.
+Normalizing GSE datasets
+Transforming each dataset's probes into standard gene symbols was the initial stage in evaluating the colorectal
+cancer datasets found in the Series Matrix File for GSE33113. In order to make the interpretation of microarray
+findings easier, this conversion is necessary to make sure that gene identities are consistent with a standard
+nomenclature. We used the multi-array average approach to normalize the colorectal cancer clinical samples
+from these datasets in order to improve comparability and minimize any technical biases. Through the use of R
+software (version 2.6.0), the gene expression data within each dataset were normalized to a similar distribution
+and scale. By reducing systematic differences between samples or experimental settings, normalizing the data
+made it easier to compare and analyze different datasets.
+Identification of potent DEGs in CRC datasets
+DEGs in CRC dataset were created using GEO2R⁴⁸. The Volcano Plot, accessed via the GEO2R tool at https
+://www.ncbi.nlm.nih.gov/geo/geo2r/, The depiction shows statistical significance (p-value) on the y-axis and
+fold change in gene expression on the x-axis. This graphical presentation assists in identifying genes exhibiting
+significant alterations in expression levels. Furthermore, a comprehensive analysis of the dataset was conducted
+utilizing GEO2R (GSE33113), the Comparative Toxicogenomics Database (CTD), and Genecards. Targets
+associated with CRC, as well as ABCE1, were extracted and visually presented using FunRich V3.1.3 software.
+mRNA expression status for COAD datasets
+The mRNA expression levels of ABCE1 in colorectal cancer were analysed across multiple datasets, including
+those from The Cancer Genome Atlas (TCGA) (https://www.cancer.gov/ccg/research/genome-sequencing/tcg.
+a)⁴⁹. mRNA expression data for ABCE1 were obtained from TCGA datasets, comprising 41 normal samples
+and 286 tumour samples. Analysis was performed across various stages of colorectal cancer (I-IV), different
+age groups (21-100 years), and nodal metastasis statuses (N0-N2) using the UALCAN database. Furthermore,
+Scientific Reports
+(2025) 15:24674
+I
+https://doi.org/10.1038/s41598-025-92436-4
+natureportfolio
+17
+www.nature.com/scientificreports/
+overall survival plots for ABCE1, including high and low expression curves with Hazardous Ratio (HR), were
+generated using data from the GEPIA database. Furthermore, from datasets made available by The Clinical
+Proteomic Tumour Analysis Consortium (CPTAC), the protein expression levels of ABCE1 were retrieved for
+100 normal samples and 97 tumour samples.
+Survival analysis from COAD datasets
+To investigate survival rates, encompassing Overall Survival (OS) and Disease-Free Survival (DFS), and assess
+the correlation between potential targets in colorectal cancer (CRC) patients, the study leveraged multiple
+databases, including UALCAN (http://ualcan.path.uab.edu/) and GEPIA (http://gepia.cancer-pku.cn/)³0,51. The
+Kaplan-Meier (KM) technique was used to calculate survival rates, and log-rank tests were added to assess
+statistical significance. The study employed a significance criterion of p <0.05 to detect noteworthy correlations
+between the gene expression levels and the survival of patients.
+DNA methylation status from COAD datasets
+The DNA methylation status of colorectal adenocarcinoma (COAD) datasets was investigated using the Wanderer
+database (http://maplab.imppc.org/wanderer/)°2. This analysis aimed to explore the epigenetic modifications
+associated with COAD development and progression. The Wanderer database's COAD datasets were used in this
+investigation to compare the DNA methylation patterns of CpG sites in COAD tumour samples (n=313) to their
+counterparts in normal tissue (n=37).
+Immune infiltration and correlation of immune cells from COAD datasets
+Using the TIMER database (https://cistrome.shinyapps.io/timer/), we conducted an extensive analysis of
+immune infiltration associated with ABCE1 in colorectal cancer (CRC)⁵³. These quantifications were based
+on the gene expression profile of ABCE1 within colon cancer samples. Furthermore, we examined the overall
+survival patterns of ABCE1 in colorecatal cancer by categorizing high and low expression rates for each of the
+six immune cell types. This examination was conducted by analyzing cumulative survival rates (%) and time in
+months, providing a comprehensive overview of the impact of ABCE1 expression.
+Mutation and immunohistochemical analysis for COAD samples
+Target gene mutation and expression profiles from colorectal tissue samples were collected using the cBio
+Cancer Genomics Portal (http://cbioportal.org) in TCGA datasets⁵⁴. Through three colorectal cancer (CRC)
+investigations, a comprehensive mutation analysis encompassing the identification of mutations, amplifications,
+and deletions is made possible by this site. Additionally, utilizing the Human Protein Atlas (HPA) database,
+which is accessible at (https://www.proteinatlas.org/), the study examined the protein levels of ABCE1 in tumour
+and normal tissues⁵⁵.
+Protein-Protein interactions
+The Protein-Protein Interaction (PPI) network was assessed by utilizing targets sourced from the Comparative
+Toxicogenomic Database (CTD) (https://ctdbase.org/) and GeneCards (https://www.genecards.org/). Venn
+diagrams generated from the FunRich tool aided in identifying overlapping genes, while the STITCH database
+(https://stitch.embl.de/) dedicated to analyzing protein-protein interactions, contributed to further insights.
+The identified Differentially Expressed Genes (DEGs) were then employed to construct and visually represent
+the PPI network using Cytoscape software (version 3.5.1; http://www.cytoscape.org). The edges that connected
+the proteins in this created PPI network were scaled based on the total score, which indicated how strongly the
+proteins interacted with one another. Visualization of this network was facilitated through the utilization of
+ClustVis, cytohubba, and MCODE plugins.
+Functional annotations and pathway prediction
+In order to clarify the biological significance of the discovered Differentially Expressed Genes (DEGs) and gene
+clusters, a thorough functional and pathway enrichment analysis is essential. We thoroughly investigated the
+biological roles and possibly enhanced pathways connected to the biomolecules that were up-regulated. To
+achieve this, we utilized the g: Profiler database⁵⁶, accessible at https://biit.cs.ut.ee/gprofiler/. Furthermore, to
+find pathways exhibiting notable enrichment with the discovered DEGs in colorectal cancer, KEGG pathway
+analyses⁵⁷ were carried out.
+Molecular Docking
+The study explores the binding interactions between Irinotecan (CID: 60838) and several proteins, including
+TP53 (1TUP), GLUT2 (4YBQ), BAX (1F16), LDHA (4029), BCL2 (4IEH), and MDM2 (1YCR), CDKN1A
+(1AXC), AND PDK1 (2028) structures were obtained from the PDB (https://www.pdb.org/pdb). Docking
+calculations were performed using the Lamarckian Genetic Algorithm (LGA) with a maximum of 100 genetic
+algorithm cycles. PyRx software was used to make the docking analysis easier. The outcomes of the docking
+study were then seen and examined using Discovery Studio 2021, which included both 3D and 2D structural
+evaluations.
+Molecular dynamic simulations
+Molecular dynamics (MD) studies were conducted using the GROMACS package. The docked complexes were
+initially separated into protein (ABCE1) and ligand (Irinotecan). Receptor topology was generated using the
+GROMOS all-atom force field, and water was added explicitly using the Simple Point Charge (SPC) water model.
+Subsequently, the ABCE1-irinotecan complex was constructed using both the receptor and ligand topologies.
+Scientific Reports
+(2025) 15:24674
+I
+https://doi.org/10.1038/s41598-025-92436-4
+natureportfolio
+18
+www.nature.com/scientificreports/
+Additional file preparation steps included adding ions, performing energy minimization for 1000 steps, and
+equilibration (NVT, NPT) for 300 picoseconds at 300 K temperature and 1 bar pressure, following the MDP files.
+Particle Mesh Ewald (PME) was employed to calculate the electrostatic forces. Neutralization of the complexes
+was performed by adding 0.15 M NaCl salt to the system. The prepared files were transferred to the cluster using
+the SFTP command in Ubuntu for MD simulations spanning 100 nanoseconds. Subsequently, various analyses
+such as RMSD, RMSF, Radius of Gyration, SASA, Hydrogen bond analysis, and MMPBSA were performed using
+the trajectory file (XTC) of the complexes.
+Cell culture and ABCE1 deletion cell lines
+The HCT-116 and HT-29, colorectal cancer cells were acquired from NCCS, Pune. Normal colon mucosa,
+NCM460 cells were purchased from ATCC, Manassas, VA, USA. The CRC cells were maintained and passaged
+in a CO₂ incubator, with culture media consisting of DMEM media from HiMedia supplemented with 10%
+FBS and a combination of 1% penicillin and streptomycin antibiotics. ABCE1 knockout (KO) cells were
+generated in HCT-116 and HT-29 cell lines using CRISPR/Cas9 genome editing. Cells were transfected with
+1 µg of the ABCE1 plasmid (Santa Cruz Biotechnology, catalog no: sc-423949) and transfection reagent (Santa
+Cruz Biotechnology, catalog no: sc-395739), following the manufacturer's instructions. GFP-positive cells were
+identified and confirmed in colorectal cancer cells by western blot analysis.
+Cell viability by MTT assay
+The MTT test was performed in accordance with the recommended methodology to assess the cytotoxic effects
+of irinotecan and nut-3a on the HCT-116 cell lines⁵. ABCE1 KO cells with or without methylation inhibitor,
+5-AZAcytidine (Cat no. A2385, Sigma-Aldrich) were measured the cytotoxicity at 24-72 h. The experimental
+procedure commenced by seeding an initial population of 3000 cells in 96-well plate, which were allowed to
+incubate overnight. The formazan crystals that formed during this incubation period were dissolved with DMSO
+(100 µl) after the cell culture was exposed to the MTT reagent (5 mg/ml). Cell viability was then assessed by
+measuring absorbance at 570 nm using Elisa Reader (Robonik, India).
+Metabolic assays
+Briefly, 1 X 10⁴ HCT-116 cells per well were seeded in 96-well plate and the cells were allowed to proliferate
+for 24 h before receiving another 48 h of treating irinotecan concentration) and nut-3 A. Similarly, after
+deletion of ABCE1 in CRC cells were further treated with or without 5-AZA for another 24 h. Glucose uptake
+was measured using a colorimetric kit following the manufacturer's instructions⁵⁹ Prior to drug treatment,
+HCT-116 and HT-29 cells were pre-treated with 4mM and 8mM glycolytic inhibitor, 2-DG for 6 h. Colorimetric
+kits were used to assess lactate levels in accordance with the guidelines given. LDH enzyme activity was assessed
+in HCT-116 cells, which were seeded at a density of 10⁴ cells in 6 well plate and exposed to irinotecan (IC₅₀
+concentration) and nut-3a for 48 h. Cell lysates were extracted and incubated with LDH enzymatic mix for an
+hour before measuring the samples at OD of 450 nm at microplate reader.
+Measurement of cellular catalase activity
+With the use of a catalase assay kit purchased from Thermo Fisher Scientific, USA, the activity of the cellular
+catalase (CAT) enzyme was measured. To sum up, irinotecan and nut-3a were applied 1 10⁴ of HCT-116 cells
+in 96 well plate during a 48-hour period. Following the treatment, the cells were lysed in lysis buffer and cleaned
+with PBS before the lysates were collected. After that, these samples were combined in a centrifuge tube with
+assay buffer. At 25°C for five minutes, a 200 mM H2O2 solution was added to start the reaction, and a stop
+solution was added to end it. After 10 min of additional incubation at 25°C to turn the color reagent red, the
+mixture was tested for absorbance at 520 nm at microplate reader.
+Measurement of cellular SOD activity
+The activity of cellular Superoxide Dismutase (SOD) enzyme was evaluated using a SOD Assay Kit from Thermo
+Fisher Scientific, USA. HCT-116 cells at a population of 1x 10⁴ were treated with irinotecan (53.98µM) and
+nut-3a (68.74µM) for 48 h in 96-well plate. Supernatant samples comprising 30 µg of total protein were used to
+measure SOD enzyme activity after quantification using the Bradford assay. These samples were put into each
+well of a 96-well microtiter plate that had been filled with an enzyme working solution. The plate was then
+incubated for 10 min at 25°C to produce a water-soluble formazan dye. A microplate reader was then used to
+measure the absorbance at 450 nm.
+Cell cycle analysis by PI staining using flow cytometry
+To find out how DNA content varied between cell cycle stages, flow cytometric technique was utilized⁶⁰. HCT-
+116 cells were seeded at a density of 1x 10⁵ cells per well in 6 well plate and treated with irinotecan (HCT-116:
+53.98µM; HT-29: 39.17µM) and nut-3a at their respective IC₅₀ concentrations for 48 h, following a 24-hour
+incubation period. The cells were treated with 10 mg/mL of RNase A and then fixed for the night in 70% ice-cold
+ethanol. The fixed cells were then stained with Propidium Iodide (PI) dye. A BD FACS Calibur flow cytometer
+(Becton Dickinson, USA) was used to measure the fluorescence emitted by the PI-labelled nuclei.
+Cell death assay by dual staining
+To assess cell death in CRC cells, an Annexin V-FITC/PI Apoptosis Kit was employed according to the
+manufacturer's instructions⁶ 1 X 10⁶ of HCT-116 were initially incubated in 6 well plate for 24 h and then
+treated with irinotecan (53.98µM) and nut-3a (68.74µM) for 48 h at the IC₅₀ dose. Briefly, WT and ABCE1 KO
+CRC cells were seeded in a 6 well plate at a density of 1 X 10⁵ and incubated for 24 h. Subsequently, the cells were
+Scientific Reports
+(2025) 15:24674
+I
+https://doi.org/10.1038/s41598-025-92436-4
+natureportfolio
+19
+www.nature.com/scientificreports/
+stained with Propidium Iodide (PI) and Annexin V-FITC for 15 min at 25 °C in the dark. Flow cytometry was
+utilized to analyze the apoptotic index using a BD FACS Calibur instrument, and the data were interpreted using
+Cell Quest Pro V 3.2.1 software (Becton Dickinson, USA).
+Protein expression by Western blot
+Briefly, 10⁶ NCM-460, HCT-116, and HT-29 cells were sown in a 100 mm culture plate. Following treatment
+with irinotecan (HCT-116: 53.98µM; HT-29: 39.17µM) for 48 h, the cells were trypsinized, and proteins were
+extracted using Radioimmune Assay Precipitation (RIPA) buffer (#Cat no. R0278, Sigma). Also, WT and
+ABCE1 KO CRC cells were incubated for 24 h and then cell lysates were subjected to immunoblot. Total protein
+content was quantified using Lowry's method. The proteins were then moved onto a PVDF membrane after
+being separated by SDS-PAGE. After blocking the membrane for an hour with 2% blocking solution, primary
+antibodies (anti-ABCE1 antibody, diluted at 1:1000) were added and left to incubate overnight. After washing
+the membrane with TBS-T and TBS, it was probed with horseradish peroxidase (HRP)-conjugated secondary
+antibody (diluted at 1:5000) for 1 h. Following another round of washing, enhanced chemiluminescence
+substrate (ECL) was added. Protein band intensity was quantified using the Quantity One image analysis system
+(Bio-Rad, USA), with ß-actin serving as an invariant control in this study.
+Gene expression by RT-PCR
+Briefly, 1 X 10⁵of HCT-116 and HT-29 cells were seeded in 6 well plate. The Takara RNA isolation kit was used
+to extract RNA following an overnight incubation by the methods as described⁶¹. The concentration of the
+extracted RNA was quantified in micrograms (µg) by spectrometric measurement. A reaction mixture was
+carefully produced using Takara SyBr green master mix and specially made forward and reverse primers that
+targeted the particular gene ABCE1 for mRNA expression analysis by RT-PCR. The thermal cycling protocol
+comprised an initial activation step lasting 5 minutes at 95 °C, followed by 40 cycles of a two-step cycling process.
+This involved denaturation for 5 seconds at 95 °C, followed by combined annealing and extension for 10 S at the
+specific primer temperature, which ranged between 55 and 62.5 °C. For Real-Time PCR analysis of other genes
+(ABCE1, TP53, CDKN1A, BAX, BCL2, LDHA, and GLUT2), a reaction mixture was prepared using Takara
+SyBr green master mix, along with specifically designed forward and reverse primers targeting these genes as
+detailed in Supplementary Table 7.
+Statistical analysis
+For thorough data analysis in this work, the statistical programming language R-which is renowned for its
+skill in statistical computing was employed. The log-rank test was carefully used with GraphPad Prism 8 to
+get appropriate p-values in order to assess the significance of mRNA and protein expressions. All experiments
+involving cells treatment with drugs utilized a minimum of three independent biological replicates. To evaluate
+overall survival trends, Kaplan-Meier graphs were also carefully constructed. *p<0.05, **p<0.001, and
+***p<0.0001 were the different significance thresholds used to assess statistical significance across groups.
+Data availability
+Data availability' The datasets used in this paper are available online, as described in the methodology section.
+Received: 9 May 2024; Accepted: 27 February 2025
+Published online: 09 July 2025
+References
+1. Tirendi, S. et al. Colorectal cancer and therapy response: a focus on the main mechanisms involved. Front. Oncol. 13, 1208140
+(2023).
+2. Colombel, J. F., Shin, A. & Gibson, P. R. AGA clinical practice update on functional Gastrointestinal symptoms in patients with
+inflammatory bowel disease: expert review. Clin. Gastroenterol. Hepatol. 17(3), 380-390 (2019).
+3. González-Puga, C., Palomeque-Jiménez, A., García-Saura, P. L., Pérez-Cabrera, B. & Jiménez-Ríos, J. A. Colonic tuberculosis
+mimicking Crohn's disease: an exceptional cause of massive surgical rectal bleeding. Méd. Mal. Infect. 45(1-2), 44-46 (2015).
+4.
+Rock, C. L. et al. American Cancer society guideline for diet and physical activity for cancer prevention. Cancer J. Clin. 70(4),
+245-271 (2020).
+5. Bertagnolli, M. M., Mahmoud, N. N. & Daly, J. M. Surgical aspects of colorectal carcinoma. Hematol. Oncol. Clin. N. Am. 11(4),
+655-677 (1997).
+6. Anand, U. et al. Cancer chemotherapy and beyond: Current status, drug candidates, associated risks and progress in targeted
+therapeutics. Genes & Diseases. (2022).
+7. Pérez-Herrero, E. & Fernández-Medarde, A. Advanced targeted therapies in cancer: drug nanocarriers, the future of chemotherapy.
+Eur. J. Pharm. Biopharm. 93, 52-79 (2015).
+8. Scarini, J. F. et al. Potential role of the Eph/ephrin system in colorectal cancer: emerging druggable molecular targets. Front. Oncol.
+14, 1275330 (2024).
+9. Dienstmann, R., Salazar, R. & Tabernero, J. Overcoming resistance to anti-EGFR therapy in colorectal cancer. Am. Soc. Clin. Oncol.
+Educational Book. 35(1), e149-e156 (2015).
+10. Yang, Y., Li, S., Wang, Y., Zhao, Y. & Li, Q. Protein tyrosine kinase inhibitor resistance in malignant tumors: molecular mechanisms
+and future perspective. Signal. Transduct. Target. Therapy. 7(1), 329 (2022).
+11. Kung, C.P., Maggi, L. B. Jr & Weber, J. D. The role of RNA editing in cancer development and metabolic disorders. Front. Endocrinol.
+9, 762 (2018).
+12. Tufail, M. & Wu, C. Targeting the IGF-1R in prostate and colorectal cancer: reasons behind trial failure and future directions.
+Therapeutic Delivery. 13(3), 167-186 (2022).
+13. Anand, P., Soni, S. & Padwad, Y. S. Targeted Molecular Therapies in Cancer. Mod. Cancer Ther. Tradit. Med. An Integr59-101
+(Approach to Combat Cancers, 2021).
+14. La Thangue, N.B. & Kerr, D. J. Predictive biomarkers: a paradigm shift towards personalized cancer medicine. Nat. Reviews Clin.
+Oncol. 8(10), 587-596 (2011).
+Scientific Reports
+(2025) 15:24674
+|
+https://doi.org/10.1038/s41598-025-92436-4
+natureportfolio
+20
+www.nature.com/scientificreports/
+15. Menyhárt, O. & Györffy, B. Multi-omics approaches in cancer research with applications in tumor subtyping, prognosis, and
+diagnosis. Comput. Struct. Biotechnol. J. 19, 949-960 (2021).
+16. Nogimori, T. et al. ABCE1 acts as a positive regulator of exogenous RNA decay. Viruses 12(2), 174 (2020).
+17. Sun, L., Ding, X. & Kang, Y.J. ABCE1 selectively promotes HIF-1a transactivation of angiogenic gene expression. J. Trace Elem.
+Med Biol. 80, 127307 (2023).
+18. Li, S. et al. Mouse ATP-binding cassette (ABC) transporters conferring multi-drug resistance. Anti-Cancer agents in medicinal
+chemistry (Formerly current medicinal chemistry-Anti-Cancer agents) 15(4), 423-432 (2015).
+19. Rowley, J. W., Weyrich, A. S. & Bray, P. F. The platelet transcriptome in health and disease. In Platelets (139-153). Academic. (2019).
+20. Ren, Y., Li, Y. & Tian, D. Role of the ABCE1 gene in human lung adenocarcinoma. Oncol. Rep. 27(4), 965-970 (2012).
+21. Hlaváč, V. et al. The expression profile of ATP-binding cassette transporter genes in breast carcinoma. Pharmacogenomics 14(5),
+515-529 (2013).
+22. Chu, P. Y., Tzeng, Y. D. T., Tsui, K. H., Chu, C. Y. & Li, C. J. Downregulation of ATP binding cassette subfamily a member 10 acts
+as a prognostic factor associated with immune infiltration in breast cancer. Aging (albany NY). 14(5), 2252 (2022).
+23. Kitamura, K. & Nimura, K. Regulation of RNA splicing: aberrant splicing regulation and therapeutic targets in cancer. Cells 10(4),
+923 (2021).
+24. Goel, M. K., Khanna, P. & Kishore, J. Understanding survival analysis: Kaplan-Meier estimate. Int. J. Ayurveda Res. 1(4), 274
+(2010).
+25. Davis, A. P. et al. Comparative toxicogenomics database (CTD): update 2021. Nucleic Acids Res. 49(D1), D1138-D1143 (2021).
+26. Stelzer, G. et al. The genecards suite: from gene data mining to disease genome sequence analyses. Curr. Protocols Bioinf. 54(1),
+1-30 (2016).
+27. Patangia, B. Biopsychosocial impact of discrimination on cancer risk and outcome: A conceptual review. Psychosom. Med. Res.
+5(4), 18 (2023).
+28. Keum, N. & Giovannucci, E. Global burden of colorectal cancer: emerging trends, risk factors and prevention strategies. Nat.
+Reviews Gastroenterol. Hepatol. 16(12), 713-732 (2019).
+29. Ranasinghe, R., Mathai, M. & Zulli, A. A synopsis of modern-day colorectal cancer: where we stand. Biochim. Et Biophys. Acta
+(BBA)-Reviews Cancer. 1877(2), 188699 (2022).
+30. Osei-Bordom, D. C., Kamarajah, S. & Christou, N. Colorectal cancer, liver metastases and biotherapies. Biomedicines 9(8), 894
+(2021).
+31. McQuade, M., Stojanovska, R., Bornstein, V. C., Nurgali, K. & J., & Colorectal cancer chemotherapy: the evolution of treatment
+and new approaches. Curr. Med. Chem. 24(15), 1537-1557 (2017).
+32. Ke, X. & Shen, L. Molecular targeted therapy of cancer: the progress and future prospect. Front. Lab. Med. 1(2), 69-75 (2017).
+33. Chai, Y. et al. The effective combination therapies with Irinotecan for colorectal cancer. Front. Pharmacol. 15, 1356708 (2024).
+34. Kelly, C. & Cassidy, J. Chemotherapy in metastatic colorectal cancer. Surg. Oncol. 16(1), 65-70 (2007).
+35. Ogunwobi, O. O., Mahmood, F. & Akingboye, A. Biomarkers in colorectal cancer: current research and future prospects. Int. J. Mol.
+Sci. 21(15), 5311 (2020).
+36. Li, G., Hu, J. & Hu, G. Biomarker studies in early detection and prognosis of breast cancer. Translational Research in Breast Cancer:
+Biomarker Diagnosis, Targeted Therapies and Approaches to Precision Medicine, 27-39. (2017).
+37. Baghban, R. et al. Tumor microenvironment complexity and therapeutic implications at a glance. Cell. Communication Signal. 18,
+1-19 (2020).
+38. Márquez, C. P. Leveraging Protein Evolution To Elucidate Oncogenic Cytokine Signaling Axes and Develop Novel Therapeutics for
+Highly Lethal Cancers (Stanford University, 2020).
+39. Shichijo, S. et al. ABCE1, a member of ATP-binding cassette transporter gene, encodes peptides capable of inducing HLA-A2-
+restricted and tumor-reactive cytotoxic T lymphocytes in colon cancer patients. Oncol. rep. 13(5), 907-913 (2005).
+40. Han, X., Tian, Y. & Tian, D. Tumor metastatic promoter ABCE1 interacts with the cytoskeleton protein actin and increases cell
+motility. Oncol. Rep. 35(6), 3623-3629 (2016).
+41. Gatasheh, M. K. et al. Molecular analysis to identify novel potential biomarkers as drug targets in colorectal cancer therapy: an
+integrated bioinformatics analysis. Mol. Cell. Oncol. 11(1), 2326699 (2024).
+42. Hlavata, I. et al. The role of ABC transporters in progression and clinical outcome of colorectal cancer. Mutagenesis 27(2), 187-196
+(2012).
+43. Silva, J. Pedro Nina, and Luísa Romão. Translation of ABCE1 is tightly regulated by upstream open reading frames in human
+colorectal cells. Biomedicines 9, 8 (2021).
+44. Kim, M. S., Lee, J. & Sidransky, D. DNA methylation markers in colorectal cancer. Cancer Metastasis Rev. 29, 181-206 (2010).
+45. Dai, G. P., Wang, L. P. & WEn, Y. U. Q.I. G. XUE-QUn REn, and Shu-Guang Zuo. Identif. Key Genes Predicting Colorectal cancer
+Prognosis Integr. Bioinf. Anal. Oncol. Lett. 19(1), 388-398 (2020).
+46. Huang, B. O., Zhou, H., Lang, X. & Liu, Z. siRNA-induced ABCE1 Silencing inhibits proliferation and invasion of breast cancer
+cells. Mol. Med. Rep. 10(4), 1685-1690 (2014).
+47. Toompuu, M., Kärblane, K., Pata, P., Truve, E. & Sarmiento, C. ABCE1 is essential for S phase progression in human cells. Cell.
+Cycle. 15(9), 1234-1247 (2016).
+48. Yun, C. W., Lee, J. H. & Lee, S. H. Casein kinase 2a augments oxaliplatin resistance in colorectal Cancer cells by increasing ABCE1
+expression. Anticancer Res. 43(6), 2519-2525 (2023).
+49. Clough, E. & Barrett, T. The Gene Expression Omnibus Database 93-110 (Methods and Protocols, 2016).
+50. Sun, G. et al. Identification of a five-gene signature with prognostic value in colorectal cancer. J. Cell. Physiol. 234(4), 3829-3836
+(2019).
+51. Barrett, T. et al. NCBI GEO: archive for functional genomics data sets-update. Nucleic Acids Res. 41(D1), D991-D995 (2012).
+52. Weinstein, J. N. et al. The cancer genome atlas pan-cancer analysis project. Nat. Genet. 45(10), 1113-1120 (2013).
+53. Chandrashekar, D. S. et al. UALCAN: a portal for facilitating tumor subgroup gene expression and survival analyses. Neoplasia
+19(8), 649-658 (2017).
+54. Tang, Z. et al. GEPIA: a web server for cancer and normal gene expression profiling and interactive analyses. Nucleic Acids Res.
+45(W1), W98-W102 (2017).
+55. Díez-Villanueva, A., Mallona, I. & Peinado, M. A. Wanderer, an interactive viewer to explore DNA methylation and gene expression
+data in human cancer. Epigenetics Chromatin. 8, 1-8 (2015).
+56. Zhang, B., Wang, Q., Fu, C., Jiang, C. & Ma, S. Exploration of the immune-related signature and immune infiltration analysis for
+breast ductal and lobular carcinoma. Ann. translat. med. 7(23). (2019).
+57. Cerami, E. et al. The cBio cancer genomics portal: an open platform for exploring multidimensional cancer genomics data. Cancer
+Discov. 2(5), 401-404 (2012).
+58. Thul, P.J. & Lindskog, C. The human protein atlas: a Spatial map of the human proteome. Protein Sci. 27(1), 233-244 (2018).
+59. Reimand, J., Kull, M., Peterson, H., Hansen, J. & Vilo, J. G: Profiler-a web-based toolset for functional profiling of gene lists from
+large-scale experiments. Nucleic Acids Res. 35(suppl_2), W193-W200 (2007).
+60. Kanehisa, M. & Goto, S. KEGG: Kyoto encyclopedia of genes and genomes. Nucleic Acids Res. Vol. 28(1), 27-30 (2000).
+61. Jayaraman, S., Natarajan, S. R., Veeraraghavan, V. P. & Jasmine, S. Unveiling the anti-cancer mechanisms of Calotropin: insights
+into cell growth Inhibition, cell cycle arrest, and metabolic regulation in human oral squamous carcinoma cells (HSC-3). J. Oral
+Biology Craniofac. Res. 13(6), 704-713 (2023).
+Scientific Reports
+(2025) 15:24674
+https://doi.org/10.1038/s41598-025-92436-4
+natureportfolio
+21
+www.nature.com/scientificreports/
+Acknowledgements
+The authors extend their appreciation to the Ongoing Research Funding Program, (ORF-2025-393), King Saud
+University, Riyadh, Saudi Arabia.
+Author contributions
+S.N. and S.J. conceived and designed experiments. S.N., S.J., and P.R. performed all parameters. S.N., C.P.P. and
+S.J. conducted in vitro experiments. S.N. and R.G. performed Bioinformatics analysis. S.N., V.P.V. and R.P. draft-
+ed manuscript. R.K., M.A.A., T.S.A., and M.K.G. writing review, edited and revised the manuscript. All authors
+have read and approved the final version of the manuscript before publication.
+Declarations
+Competing interests
+The authors declare no competing interests.
+Ethical statement
+In this study, we utilized online bioinformatic databases and in vitro cell line models. Ensuring scrupulous
+respect to ethical issues, the bioinformatic techniques carried out in this work closely conformed to the
+principles specified in the Declaration of Helsinki. Therefore, ethical approval from human or animal review
+boards is not applicable to our research approach.
+Additional information
+Supplementary Information The online version contains supplementary material available at https://doi.org/1
+0.1038/s41598-025-92436-4.
+Correspondence and requests for materials should be addressed to S.J.
+Reprints and permissions information is available at www.nature.com/reprints.
+Publisher's note Springer Nature remains neutral with regard to jurisdictional claims in published maps and
+institutional affiliations.
+Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives
+4.0 International License, which permits any non-commercial use, sharing, distribution and reproduction in
+any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide
+a link to the Creative Commons licence, and indicate if you modified the licensed material. You do not have
+permission under this licence to share adapted material derived from this article or parts of it. The images or
+other third party material in this article are included in the article's Creative Commons licence, unless indicated
+otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence
+and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to
+obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creativecommo
+ns.org/licenses/by-nc-nd/4.0/.
+The Author(s) 2025
+Scientific Reports
+|
+(2025) 15:24674
+|
+https://doi.org/10.1038/s41598-025-92436-4
+natureportfolio
+22

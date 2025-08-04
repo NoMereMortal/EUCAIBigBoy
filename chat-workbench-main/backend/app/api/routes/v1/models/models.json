@@ -1,0 +1,47 @@
+[
+  {
+    "id": "us.anthropic.claude-3-7-sonnet-20250219-v1:0",
+    "name": "Claude 3.7 Sonnet",
+    "provider": "Anthropic",
+    "description": "Claude 3.7 Sonnet is Anthropic's latest mid-range model with significantly improved reasoning, coding abilities, and instruction following compared to earlier versions.",
+    "features": [],
+    "provider_link": "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+    "order": 0
+  },
+  {
+    "id": "us.anthropic.claude-sonnet-4-20250514-v1:0",
+    "name": "Claude Sonnet 4",
+    "provider": "Anthropic",
+    "description": "high-performance model with exceptional reasoning and efficiency",
+    "features": [],
+    "provider_link": "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+    "order": 1
+  },
+  {
+    "id": "us.amazon.nova-pro-v1:0",
+    "name": "Nova Pro",
+    "provider": "Amazon",
+    "description": "Amazon Bedrock's Nova Pro is a high-performance general-purpose model for enterprise AI applications. It excels in reasoning, writing, and solving complex problems.",
+    "features": [],
+    "provider_link": "https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html",
+    "order": 2
+  },
+  {
+    "id": "us.amazon.nova-lite-v1:0",
+    "name": "Nova Lite",
+    "provider": "Amazon",
+    "description": "Amazon Bedrock's Nova Lite balances performance and cost, making it suitable for a wide range of general-purpose applications.",
+    "features": [],
+    "provider_link": "https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html",
+    "order": 3
+  },
+  {
+    "id": "us.amazon.nova-micro-v1:0",
+    "name": "Nova Micro",
+    "provider": "Amazon",
+    "description": "Amazon Bedrock's Nova Micro is a small, fast, text only model, designed for cost-effective, high-throughput use cases where rapid responses are needed.",
+    "features": [],
+    "provider_link": "https://docs.aws.amazon.com/nova/latest/userguide/what-is-nova.html",
+    "order": 4
+  }
+]

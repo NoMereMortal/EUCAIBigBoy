@@ -1,0 +1,15 @@
+# Only include backend files for type checking
+project-includes = ["backend"]
+project-excludes = [
+    "**/node_modules/**",
+    "ui/**",
+    "infrastructure/**",
+    "**/.[!/.]*",
+    "**/*venv/**"
+]
+
+[errors]
+# Disable specific error types (from mypy config)
+bad-return = false  # Corresponds to warn_return_any = True
+import-error = false  # Corresponds to ignore_missing_imports = True
+unsupported = false  # For misc-related errors

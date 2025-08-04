@@ -1,0 +1,2183 @@
+
+Clinical and Experimental Medicine
+(2025) 25:240
+https://doi.org/10.1007/s10238-025-01795-9
+REVIEW
+Check for
+updates
+The AML immune paradox: decoding escape pathways and pioneering
+checkpoint, vaccine, and combination strategies
+Hamed Soleimani Samarkhazan¹
+ID
+Fatemeh Sadat Shafiei²
+Zahra Taghinejad³
+ID
+Mohsen Maleknia⁴
+ID
+Hanieh Noormohamadi5 ID
+Atieh Raoufi⁶
+ID
+Sina Nouri⁷
+ID
+Received: 15 May 2025 / Accepted: 24 June 2025
+© The Author(s) 2025
+Abstract
+Acute myeloid leukemia (AML) remains a high-mortality cancer due to its aggressive nature and immunosuppressive tumor
+microenvironment (TME), which enables evasion of immune surveillance. Despite chemotherapy and targeted therapies,
+5-year survival is ~ 30%, necessitating novel immunotherapies. AML suppresses cytotoxic T/NK cells by co-opting regulatory
+pathways, creating an "immune paradox." Emerging strategies aim to disrupt this evasion. Immune checkpoint inhibitors
+(ICIs), such as anti-PD-1 nivolumab and anti-CD47 magrolimab, combined with hypomethylating agents (HMAs), enhance
+T-cell activity and phagocytosis, especially in TP53-mutated AML. Therapeutic vaccines targeting leukemia-associated anti-
+gens (e.g., WT1, PRAME) via dendritic cell fusion show early success in prolonging remission. Combinatorial approaches,
+like HMAs with STING agonists or dual checkpoint blockade, target multiple immunosuppressive pathways to overcome
+resistance. Challenges include TME heterogeneity, therapy-resistant leukemia stem cells, toxicities (e.g., anemia, cytokine
+release syndrome), relapse from clonal evolution, and a lack of predictive biomarkers. Autologous therapies face economic
+and logistical hurdles, driving demand for scalable solutions. Advances in single-cell genomics, AI, and synthetic biology
+are identifying novel targets (TIM-3, TIGIT, VISTA) and improving patient stratification. Integrating these innovations may
+transform AML into a chronic condition, bridging preclinical potential to clinical impact. In this review, we aim to evalu-
+ate mechanisms, challenges, and future directions of immunotherapies in AML with highlighting ICIs and vaccination to
+improve therapeutic outcomes.
+Keywords Acute myeloid leukemia (AML) Tumor microenvironment (TME) Immune checkpoint inhibitors
+Therapeutic vaccines . Leukemia stem cells (LSCs)
+Hamed Soleimani Samarkhazan
+2
+Department of Medical Laboratory Sciences, School
+Hamed.soleiamni.s@gmail.com
+of Paramedical Sciences, Zanjan University of Medical
+Sciences, Zanjan, Iran
+Fatemeh Sadat Shafiei
+Alashafiee1@gmail.com
+3
+Department of Hematology, School of Medical Sciences,
+Tarbiat Modares University, Tehran, Iran
+Zahra Taghinejad
+Zahrataghinejad2020@gmail.com
+4
+Masih Daneshvari Hospital, National Research Institute
+of Tuberculosis and Lung Diseases (NRITLD), WHO
+Mohsen Maleknia
+Collaborating Centre (WHOCC), Shahid Beheshti University
+maleknia.m94@gmail.com
+of Medical Sciences, Tehran, Iran
+Hanieh Noormohamadi
+5
+Department of Hematology and Blood Banking, School
+haniehnoormohamadi@gmail.com
+of Allied Medical Sciences, Shahid Beheshti University
+Atieh Raoufi
+of Medical Sciences, Tehran, Iran
+ath.raoufi@gmail.com
+6
+Department of Immunology, School of Medicine, Zanjan
+Sina Nouri
+University of Medical Science, Zanjan, Iran
+nouri.sina@tbzmed.ac.ir
+7
+Department of Immunology, Faculty of Medicine, Tabriz
+1
+University of Medical Science, Tabriz, Iran
+Student Research Committee, Department of Hematology
+and Blood Banking, School of Allied Medical Sciences,
+Shahid Beheshti University of Medical Sciences, Tehran,
+Iran
+Published online: 09 July 2025
+Springer
+240
+Page 2 of 20
+Clinical and Experimental Medicine
+(2025) 25:240
+Introduction
+The advent of combination therapies represents a para-
+digm shift in AML management. Synergistic strategies
+Acute myeloid leukemia (AML), a heterogeneous hema-
+pairing checkpoint inhibitors with chemotherapy, targeted
+tologic malignancy characterized by the rapid prolifera-
+agents, or vaccines aim to dismantle multiple layers of
+tion of immature myeloid blasts, remains a therapeutic
+immune suppression. For example, the CD47 inhibitor mag-
+challenge due to its aggressive biology and high relapse
+rolimab, which blocks the "don't eat me" signal on AML
+rates. Despite advancements in chemotherapy and targeted
+blasts, enhances phagocytosis when combined with azaciti-
+therapies, the 5-year survival rate for AML patients hovers
+dine, showing remarkable efficacy in TP53-mutated AML
+at a dismal 30%, underscoring the urgent need for innova-
+[19, 20]. Similarly, STING agonists and PI3K/AKT/mTOR
+tive treatment strategies [1, 2]. A critical barrier to durable
+pathway inhibitors are being explored to amplify innate
+remission lies in AML's ability to evade immune surveil-
+immune responses and counteract PD-L1 upregulation [21,
+lance, creating an "immune paradox" where the host's
+22]. These multidimensional approaches reflect a growing
+defenses are subverted to foster leukemic survival [3]. This
+understanding of AML's genetic and immunological het-
+paradoxical interplay between AML cells and the immune
+erogeneity, where personalized immunotherapy could tailor
+system is orchestrated through dynamic interactions within
+treatments to individual immune landscapes [23, 24].
+the tumor microenvironment (TME), a complex ecosystem
+This review synthesizes the latest insights into AML's
+of stromal cells, immune subsets, and soluble factors that
+immune escape mechanisms and evaluates pioneering strate-
+enable leukemic stem cells (LSCs) to escape elimination
+gies to reinstate antitumor immunity. We explore the clinical
+[4, 5].
+potential of checkpoint inhibitors, vaccine platforms, and
+Central to AML's immune evasion is its capacity to
+combination therapies while addressing challenges such as
+exploit immune checkpoints, downregulate antigen presenta-
+toxicity, relapse, and biomarker-driven patient stratifica-
+tion, and remodel the TME into an immunosuppressive sanc-
+tion. By bridging preclinical discoveries with translational
+tuary. For instance, AML blasts diminish human leukocyte
+applications, we aim to chart a roadmap for next-generation
+antigen (HLA) expression, impairing T-cell recognition and
+immunotherapies that could transform AML from a lethal
+synapse formation, while upregulating inhibitory ligands
+malignancy into a manageable chronic disease.
+such as PD-L1 and CTLA-4 to induce T-cell exhaustion [6,
+7]. These mechanisms are further amplified by myeloid-
+derived suppressor cells (MDSCs), which secrete arginase,
+Immune evasion mechanisms in AML:
+indoleamine 2,3-dioxygenase (IDO), and TGF-β to cripple
+a multifaceted battle
+effector T and NK cell function [8, 9]. The resultant immu-
+nosuppressive milieu not only shields LSCs but also cor-
+TME, comprising stromal, endothelial, and immune cells
+relates with poor clinical outcomes, highlighting the need
+alongside soluble factors, serves as a dynamic ecosystem
+to decode these escape pathways [10].
+critical for tumor cell survival, progression, and immune
+Recent breakthroughs in cancer immunotherapy have
+evasion in AML [4]. During leukemogenesis, LSCs employ
+reignited interest in targeting AML's immune vulnerabilities.
+tumor immunoediting-a process encompassing three
+Immune checkpoint inhibitors (ICIs), such as anti-PD-1/
+phases: elimination, equilibrium, and escape-to reshape
+PD-L1 and anti-CTLA-4 antibodies, have shown promise
+the TME, favoring their proliferation and survival [3, 5]. In
+in reversing T-cell exhaustion, particularly when combined
+the escape phase, genetic and epigenetic alterations enable
+with hypomethylating agents (HMAs) like azacitidine [11,
+AML cells to suppress immune responses, evade detection,
+12]. Preclinical studies reveal that HMAs upregulate tumor-
+and sustain uncontrolled growth [3].
+associated antigens and checkpoint ligands, priming AML
+cells for immune-mediated destruction [13]. However, mon-
+HLA downregulation and checkpoint exploitation
+otherapy with ICIs has yielded modest clinical responses,
+necessitating combinatorial approaches to overcome resist-
+AML blasts diminish HLA expression, impairing antigen
+ance [14]. Beyond checkpoints, therapeutic vaccines target-
+presentation and reducing T-cell recognition [25]. They also
+ing leukemia-associated antigens (LAAs), such as Wilms'
+disrupt immune synapse formation, a critical step for T-cell
+tumor 1 (WT1) and proteinase 3 (PR3), aim to re-educate the
+activation, further hindering antitumor responses [26]. Addi-
+immune system to recognize and eliminate residual disease
+tionally, AML exploits immune checkpoint pathways, such
+[15, 16]. Dendritic cell (DC)-based vaccines, engineered to
+as programmed death-1 (PD-1) and cytotoxic T lympho-
+present LAAs, have demonstrated feasibility in early-phase
+cyte antigen-4 (CTLA-4). Persistent antigen exposure in the
+trials, with evidence of prolonged remission in patients
+TME drives PD-1 overexpression on CD8 cells, while
+achieving molecular responses [17, 18].
+AML cells upregulate PD-L1 in response to IFN-γ, lead-
+ing to T-cell exhaustion and dysfunction [6, 27]. Elevated
+Springer
+Clinical and Experimental Medicine
+(2025) 25:240
+Page 3 of 20
+240
+PD-1 levels correlate with disease relapse, underscoring its
+T-reg expansion [9, 50]. This dual mechanism not only
+prognostic significance [10]. Regulatory T cells (T-regs)
+impairs effector T-cell function but also reinforces immune
+expressing PD-1 exacerbate immunosuppression, creating
+tolerance, enabling AML persistence [51].
+a permissive environment for AML progression [28].
+AML's immune evasion strategies are multifaceted.
+CTLA-4, another checkpoint receptor, binds CD80/CD86
+These mechanisms collectively establish an immunosup-
+on AML blasts, outcompeting the costimulatory receptor
+pressive TME that thwarts both innate and adaptive immu-
+CD28 on T cells and dampening their activation [29, 30].
+nity. Targeting these pathways-through checkpoint inhibi-
+Similarly, T-cell immunoglobulin and mucin domain-3
+tors, MDSC depletion, or IDO blockade-holds promise
+(TIM-3) interacts with galectin-9 (Gal-9) on AML cells,
+for restoring antitumor immunity and improving clinical
+triggering downstream pathways (e.g., MAPK/ERK, PI3K/
+outcomes.
+AKT) that induce apoptosis in Th-1 lymphocytes and sup-
+press IFN-y-driven immunity [31-34]. AML also upregu-
+lates inducible T-cell costimulator ligand (ICOSL), promot-
+Immune checkpoint inhibitors
+ing T-reg expansion and interleukin-10 (IL-10) secretion,
+which sustains AML stemness [35].
+Checkpoint proteins, such as PD-L1 on tumor cells and PD-1
+on T cells, help keep immune responses in check. The bind-
+NK cell evasion: undermining innate immunity
+ing of PD-L1 to PD-1 prevents T cells from killing tumor
+cells in the body. Blocking the binding of PD-L1 to PD-1
+Natural killer (NK) cells, pivotal for tumor surveillance, are
+with an immune checkpoint inhibitor (anti-PD-L1 or anti-
+neutralized by AML through multiple mechanisms. Down-
+PD-1) allows T cells to kill tumor cells. Immune checkpoints
+regulation of NKG2D, an activating receptor on NK cells,
+serve to maintain a delicate equilibrium between proinflam-
+coupled with secretion of soluble NKG2D ligands, impairs
+matory and anti-inflammatory signals in homeostatic states
+tumor recognition [36, 37]. Immunosuppressive cytokines
+[52]. These immunological checkpoints constitute a net-
+(IL-10, TGF-β) and AML-derived microvesicles enriched
+work of inhibitory and stimulatory pathways that modulate
+with TGF-β further suppress NK cytotoxicity [38-41]. Non-
+immune cell functionality [53]. ICIs constitute a category
+classical HLA-G expression on AML cells engages inhibi-
+of cancer immunotherapies that enhance antitumor immune
+tory receptors ILT-2 and KIR-2DL4 on NK cells, effectively
+responses by specifically targeting immunological receptors
+paralyzing their antitumor activity [42, 43].
+located on the surface of T lymphocytes [54]. Accordingly,
+ICIs emerged as a pioneering therapeutic modality in 2011
+MDSCs: architects of Immunosuppression
+with the regulatory approval of ipilimumab [55], transform-
+ing the cancer treatment landscape. These pharmacological
+MDSCs, expanded in AML patients, orchestrate a pro-
+agents have enabled enduring therapeutic outcomes accom-
+foundly immunosuppressive TME. Polymorphonuclear
+panied by a reduced toxicity profile in certain contexts [56].
+(PMN-MDSCs: CD11b+CD14-HLA-DR-CD15+) and
+In contrast to conventional therapeutic modalities, ICIs
+monocytic subsets (M-MDSCs: CD11b+CD14+/-HLA-
+rejuvenate the host immune response to combat neoplas-
+DR -CD15-) secrete IDO, arginase, IL-10, and TGF-ß,
+tic cells [52]. Antibodies directed against immune inhibi-
+which deplete tryptophan, inhibit T-cell proliferation, and
+tory receptors, including CTLA-4, PD-1, and PD-L1, have
+polarize immune responses toward tolerance [8, 44, 45].
+emerged as the most prevalent immunotherapeutic agents
+IDO catabolizes tryptophan into kynurenine, starving T
+in the past decade [57]. A variety of antibodies and small
+cells of this essential amino acid while promoting T-reg dif-
+molecules aimed at different immune checkpoint proteins
+ferentiation [46, 47]. MDSCs also release prostaglandin E2
+are currently under clinical investigation, TIM-3, the adeno-
+(PGE2) and exosomes that suppress NK and T-cell function,
+sine A2A receptor, and CD47 [57, 58]. Recent investigations
+alongside expressing PD-L1 to induce T-cell exhaustion
+have revealed several novel immune checkpoint targets, such
+[48]. Furthermore, MDSC-mediated nitrosylation of MHC-
+as lymphocyte activation gene-3 (LAG-3), T-cell immuno-
+peptide complexes disrupts antigen recognition, complicat-
+globulin and ITIM domain (TIGIT), and V-domain Ig sup-
+ing immune targeting [49].
+pressor of T-cell activation (VISTA), among others [59, 60].
+IDO: a metabolic gatekeeper of immune tolerance
+Overview of checkpoint proteins (e.g., PD-1, CTLA-4)
+IDO, highly expressed in AML blasts and MDSCs, catalyzes
+Programmed death-ligand 1 (PD-1/PD-L1) inhibitors and
+tryptophan degradation, creating an immunosuppressive
+CTLA-4 inhibitors represent the most prominent ICIs within
+milieu. Tryptophan scarcity stalls T-cell proliferation and
+the adaptive immune system and are the initial receptors
+induces apoptosis, while kynurenine accumulation fosters
+for clinical targeting in oncological therapeutics [61],
+Springer
+240
+Page 4 of 20
+Clinical and Experimental Medicine
+(2025) 25:240
+demonstrating efficacy across various malignancies and
+has been increasingly recognized. CD47 functions as a pre-
+leading to numerous approvals by regulatory agencies for
+dominant macrophage immune checkpoint that neoplastic
+application in solid tumors and certain lymphoid neoplasms
+cells exploit to circumvent innate immune responses, repre-
+[62]. PD-1 inhibitors, which include agents such as pidili-
+senting a promising target for AML [74, 75]. CD47 transmits
+zumab, nivolumab, pembrolizumab, durvalumab, and ate-
+an antiphagocytic"do eat me" signal upon interaction with
+zolizumab, currently constitute the most extensively devel-
+its receptor, signal-regulatory protein alpha (SIRPα), located
+oped ICIs for patients diagnosed with AML [63, 64]. PD-1
+on macrophage membranes. The engagement of CD47 with
+functions as a negative coreceptor that is expressed by acti-
+SIRPα facilitates the recruitment of downstream Src homol-
+vated T cells. The interaction between PD-1 and its ligand,
+ogy-2 domain-containing protein tyrosine phosphatases
+PD-L1, which is expressed by neoplastic cells, attenuates
+(SHP-1 and SHP-2), which obstruct the accumulation of
+antitumor T-cell responses by inducing T-cell apoptosis and
+myosin-IIA at phagocytic synapses, thereby inhibiting the
+diminishing T-cell receptor signaling, thereby obstructing
+phagocytic activity of macrophages against tumors [76]. The
+effector T-cell functions [65]. Disruption of the PD-1/PD-L1
+equilibrium between pro- and antiphagocytic signals is cru-
+signaling axis can rejuvenate exhausted T cells and rein-
+cial for the maintenance of cellular homeostasis [77]. Com-
+state antitumor immune responses [6, 65]. PD-1 is an inhibi-
+pared with that in normal hematopoietic stem cells, CD47
+tory receptor that plays a pivotal role in programmed death
+expression is significantly increased in AML and high-risk
+signaling to modulate T-cell-mediated responses [66]. The
+myelodysplastic syndrome (HR-MDS) patients, suggesting
+engagement of PD-1 diminishes the secretion of cytokines
+a correlation with poor prognosis attributable to the evasion
+such as interleukin-2 (IL-2), interferon-gamma (IFN-γ),
+of phagocyte-mediated immune surveillance [65, 78]. Cal-
+and tumor necrosis factor-alpha (TNF-α) and impedes cell
+reticulin, a prominent prophagocytic signal, is also overex-
+proliferation through interference with the CD28 costim-
+pressed on the surface of LSCs, rendering them particularly
+ulatory signaling pathway [67]. PD-1 is expressed across
+vulnerable to CD47 blockade [77]. Both in vivo and in vitro
+various immune cell types within TME, including activated
+studies have indicated preferential phagocytosis and subse-
+monocytes, DCs, NK cells, T cells, and B cells [67]. The
+quent elimination of AML LSCs using anti-CD47 monoclo-
+food and drug administration (FDA) has sanctioned three
+nal antibodies, thereby reinforcing their therapeutic potential
+monoclonal antibodies, specifically nivolumab, pembroli-
+in the management of AML and HR-MDS [79]. Currently,
+zumab, and cemiplimab, as PD-1 inhibitors [59, 68]. Con-
+a multitude of agents targeting the CD47-SIRPα axis are
+sequently, elevated expression levels of PD-1 in blasts and
+under examination in clinical trials [19]. These innovative
+T cells have been documented in a subset of patients with
+agents consist of monoclonal antibodies that either directly
+AML, particularly in those with relapsed/refractory disease,
+inhibit CD47 or function as decoy receptors (SIRPα-IgG Fc
+and are correlated with a dismal prognosis. Furthermore,
+domain). Magrolimab has exhibited promising clinical effi-
+therapeutic benefits have been observed in patients exhibit-
+cacy in AML when administered in combination with azac-
+ing increased PD-1 expression [69]. In addition, encourag-
+itidine, particularly among patients with a TP53 mutation,
+ing outcomes have been reported with the application of
+which provides a rationale for several ongoing randomized
+ipilimumab, a CTLA-4 inhibitor, in individuals diagnosed
+clinical trials [65, 80]. T-cell immunoglobulin domain and
+with high-risk AML, including those experiencing relapse
+mucin domain-3 (TIM-3), another immune checkpoint asso-
+following allogeneic hematopoietic stem cell transplanta-
+ciated with T cells, is being evaluated as a therapeutic target
+tion (allo-HSCT) [21, 70]. By competing with the T-cell
+in AML. Its selective expression on LSCs and its correlation
+costimulatory receptor CD28 for binding to CD80 and CD86
+with an immunosuppressive phenotype render it a compel-
+ligands, CTLA-4, which is expressed on the surface of T
+ling target in the domain of myeloid malignancies (Fig. 1)
+cells, functions to inhibit T-cell maturation and differentia-
+[65].
+tion, thereby antagonizing CD28 signaling and obstructing
+T-cell activation [61]. In preclinical investigations, blockade
+Clinical trials and efficacy
+of CTLA-4 in murine bone marrow chimeras elicited signifi-
+cant antileukemic responses while simultaneously mitigating
+Table 1 delineates the ongoing clinical trials investigating ICIs
+the incidence of graft-versus-host disease (GVHD), indicat-
+in AML. The utilization of ICIs in conjunction with inten-
+ing the potential utility of adjuvant CTLA-4 inhibition after
+sive chemotherapy, HMAs, or alternative targeted therapies is
+allo-SCT in AML. Moreover, research has demonstrated
+increasingly attracting attention in the therapeutic landscape
+elevated levels of costimulatory molecules, such as CD80
+of hematological malignancies, including AML. Nevertheless,
+and CD86, within the context of AML, which have been
+the findings derived from these clinical trials are relatively
+correlated with elevated relapse rates and unfavorable prog-
+modest and constrained by the nature of the study design and
+nostic outcomes [71-73]. Recently, the importance of the
+the clinical trial phase [35]. Notably, several trials listed in
+innate immune system in the etiology of myeloid neoplasms
+Table 1, including those evaluating magrolimab (anti-CD47)
+Springer
+Clinical and Experimental Medicine
+(2025) 25:240
+Page 5 of 20
+240
+A
+B
+APC
+APC
+Cancer cell proliferation
+Cancer cell proliferation
+T cell
+T cell
+AML
+AML
+Stimulation cytokine release
+Figure guide
+CD28/CD80-CD86
+Anti-CTLA4
+CTLA-4/CD80-CD86
+Anti-PD1
+MHC/TCR
+Anti-PD-L
+PD1/PD1-L
+Fig. 1 The role of immune checkpoint inhibitors in the treatment
+molecular entities, such as PD-1 (Nivolumab, Pembrolizumab, Cam-
+of AML. A The expression of CD80/86 on antigen-presenting cells
+relizumab, Tislelizumab), PD-L1 (Atezolizumab, Durvalumab), and
+(APCs) engages with CTLA-4 and its analogous receptor CD28,
+CTLA-4 (Ipilimumab, Tremelimumab), have garnered significant
+while PDL-1 interacts with its counterpart PD-1 located on the sur-
+attention. The inhibition of the PD-1/PD-L1 axis or the CTLA-4/
+face of activated T cells, respectively. These interactions result in
+CD80/CD86 pathway engenders T-cell dysfunction, whereby such
+the inhibition of T-cell proliferation, activation, or the secretion
+interactions culminate in the modulation of T-cell activities and the
+of cytokines, which frequently engage with their respective recep-
+secretion of cytokines, ultimately resulting in the suppression of
+tors and ligands. B Immune checkpoint inhibitors that target various
+tumor cell proliferation
+and pembrolizumab combinations, have since reported nega-
+tive results or been terminated due to lack of efficacy, under-
+scoring the challenges in clinical translation [81, 82].
+Springer
+240
+Page 6 of 20
+Clinical and Experimental Medicine
+(2025) 25:240
+Table 1 Overview of ongoing trials of ICIs in AML
+Target
+Regimen
+Ages eligible for study
+Study population
+Study start
+Enrollment
+Phase
+NCT. identifier
+PD-1
+PD-1i+ venetoclax + decitabine or
+18 years to 70 years
+R/R AML
+2024-07
+67 estimated
+II
+NCT06536959
+azacytidine
+(adult, older adult)
+Camrelizumab (SHR-1210) + decit-
+60 years to
+Elderly patients
+2020-04
+29 estimated
+II
+NCT04353479
+abine
+75 years (adult, older
+with R/R AML
+adult)
+Camrelizumab + azacitidine + low-
+Child, adult, older adult
+AML relapse
+2023-03
+43 estimated
+N/A
+NCT05772273
+dose donor lymphocyte infusion
+after allo-
+HSCT
+Anti-PD-1 + azacytidine + HAG regi-
+18 years to
+R/R AML
+2021-05
+30 estimated
+III
+NCT04722952
+men (homoharringtonine, cytara-
+85 years (adult, older
+bine, G-CSF)
+adult)
+Cytarabine and idarubicin/daunoru-
+18 years to 75 years
+ND AML
+2021-02
+50 estimated
+II
+NCT04214249
+bicin ± pembrolizumab
+(adult, older adult)
+Azacytidine + venetoclax ± pembroli-
+60 years and
+ND AML
+2021-02
+75 estimated
+II
+NCT04284787
+zumab
+older (adult, older
+adult)
+Tislelizumab + DNA demethylation
+18 years and older
+High-risk AML
+2020-09
+55 estimated
+II
+NCT04541277
+agent ± CAG regimen (cytarabine,
+(adult, older adult)
+or elderly
+aclarubicin/idarubicin, G-CSF)
+patients with
+AML
+Fludarabine + melphalan + pembroli-
+18 years to
+High-risk AML
+2016-09
+20 actual
+II
+NCT02771197
+zumab
+78 years (adult, older
+adult)
+Azacytidine + nivolumab + relatlimab
+18 years and older
+R/R AML
+2021-05
+30 estimated
+II
+NCT04913922
+(adult, older adult)
+Decitabine + nivolumab + venetoclax
+18 years and
+ND TP53 gene
+2020-03
+1 actual
+I
+NCT04277442
+older (adult, older
+mutated AML
+adult)
+Nivolumab or ipilimumab
+18 years to 70 years
+High risk for
+2019-03
+8 actual
+I
+NCT02846376
+(adult, older adult)
+post allo-HST
+transplant
+recurrence
+Decitabine + pembrolizumab + vene-
+18 Years and
+ND and R/R
+2020-05
+54 estimated
+I
+NCT03969446
+toclax
+older (adult, older
+AML
+adult)
+Nivolumab
+18 years and older
+AML in remis-
+2015-10
+8 actual
+II
+NCT02532231
+(adult, older adult)
+sion at high
+risk for relapse
+CD47
+CD47 Monoclonal Ab
+18 years and
+Recurrent AML
+2021-12
+69 estimated
+N/A
+NCT05266274
+older (adult, older
+after transplan-
+adult)
+tation
+CC-90002
+18 years and older
+R/RAML
+2016-03
+28 actual
+I
+NCT02641002
+(adult, older adult)
+Magrolimab + azacitidine
+18 years to
+After allogeneic
+2024-06
+44 estimated
+I
+NCT05823480
+75 years (adult, older
+HCT in treating
+adult)
+patients with
+high-risk AML
+Evorpacept (ALX148) + Veneto-
+18 years and older
+AML
+2021-05
+97 estimated
+I/II
+NCT04755244
+clax + azacitidine
+(adult, older adult)
+Gentulizumab
+18 years to
+R/R AML
+2021-04
+58 estimated
+I
+NCT05263271
+75 years (adult, older
+adult)
+AK117 + azacitidine + venetoclax
+18 years and older
+AML
+2024-04
+180 estimated
+I/II
+NCT06387420
+(adult, older adult)
+AK117 + azacitidine
+18 years and
+AML
+2021-08
+160 estimated
+I/II
+NCT04980885
+older (adult, older
+adult)
+Springer
+Clinical and Experimental Medicine
+(2025) 25:240
+Page 7 of 20
+240
+Table 1 (continued)
+Target
+Regimen
+Ages eligible for study
+Study population
+Study start
+Enrollment
+Phase
+NCT. identifier
+IBI188 + azacitidine + decitabine
+18 years and older
+AML
+2020-09
+222 estimated
+I/II
+NCT04485052
+(adult, older adult)
+TQB2928 + azacitidine
+18 years to
+AML
+2023-09
+48 estimated
+I
+NCT06008405
+90 years (adult, older
+adult)
+AUR103
+18 years to 99 (adult,
+AML
+2022-09
+80 estimated
+I
+NCT05607199
+older adult)
+TIM-3 Decit-
+18 years and
+AML
+2017-07
+241 actual
+I
+NCT03066648
+abine + PDR001 + MBG453 + azac-
+older (adult, older
+itidine
+adult)
+Sabatolimab + azacytidine
+12 years to 99 (child,
+AML and pres-
+2021-09
+24 actual
+I/II
+NCT04623216
+adult, older adult)
+ence of MRD
+after allo-HST
+HDM201 + MBG453 + venetoclax
+18 years and
+AML
+2019-06
+52 actual
+I
+NCT03940352
+older (adult, older
+adult)
+TQB2618 injection azacyti-
+18 years and older
+R/R AML
+2022-04
+73 estimated
+I
+NCT05426798
+dine + AZA DECITABINE + DAC
+(adult, older adult)
+allo-SCT allogeneic stem cell transplantation, AML acute myeloid leukemia, AZA azacytidine, CMML chronic myelomonocytic leukemia, HMA
+hypomethylating agent, HR-MDS higher-risk myelodysplastic syndrome, IC intensive chemotherapy, LR lower-risk, MEC mitoxantrone/etopo-
+side/cyclophosphamide, MRD measurable residual disease, ND newly diagnosed, PD-1 programmed cell death-1, R/R relapsed/refractory, VEN
+venetoclax
+Vaccination strategies
+immune responses in phase I trials in patients with AML
+(NCT00665002, NCT00398138, and NCT00672152) [89,
+The role of the immune system in eliminating cancer cells
+90]. A phase II trial involving a WT1 analog peptide vac-
+has led to the development of therapeutic cancer vaccines
+cine focused on patients who achieved complete remission
+for AML [83]. They help immune cells recognize hard-to-
+(CR) from AML aimed at assessing whether the WT1 vac-
+target immune escape tumor cells [83]. Multiple vaccination
+cine causes a safe immune response that prevents leukemia
+strategies for AML have been investigated to elicit leukemia-
+recurrence (NCT01266083) [15]. Among 22 patients with
+specific immune responses [84, 85]. These strategies can be
+AML in their first CR, 64% presented increased proliferation
+macroscopically classified into two main groups on the basis
+of CD4+ T cells, increased secretion of IFN-γ by CD8+ T
+of the type of construct: peptide vaccines and DC-based vac-
+cells, and a greater frequency of WT1-specific CD8+ T cells
+cines targeting LAAs [86].
+[15]. Consequently, the WT1 vaccine is thought to activate a
+targeted immune response and is linked to improved 5-year
+Peptide vaccines
+survival rates among the trial participants, and the trial has
+progressed to phase III [15, 84].
+Peptide vaccines function by presenting LAAs to antigen-
+RHAMM is another highly expressed antigen in AML
+presenting cells (APCs), thereby activating a targeted
+patients [86]. In a phase I clinical trial, 10 individuals with
+immune response [86]. The currently developed AML vac-
+hematological malignancies received RHAMM-R3 peptide
+cines primarily target WT1, receptor for hyaluronic acid-
+vaccination (ISRCTN32763606) [87]. RHAMM-R3 is an
+mediated motility (RHAMM), Pr3, and mucin 1 (MUC1)
+RHAMM-derived epitope peptide for CD8⁺ T cells [87].
+[15, 87]. Each of these antigens is capable of inducing a
+This trial confirmed the safety and feasibility of RHAMM-
+specific cytotoxic T-cell response [84]. Additionally, a newly
+R3 peptide vaccination for those with hematological malig-
+developed multiepitope vaccine aimed at KIT mutations,
+nancies [87, 91]. Among the three AML patients, one
+which uses CD8 + and CD4 + epitopes in AML, has shown
+showed a significant decrease in the number of bone marrow
+high levels of immunogenicity [88].
+blasts after the last vaccination [87].
+WT1 regulates zinc-finger transcription factors that
+PR1 is a HLA-A2-restricted peptide targeted by cytotoxic
+influence cell growth and differentiation [84]. In the case
+T lymphocytes. In a phase I/II clinical trial involving 42
+of AML, there are both humoral and cytotoxic responses
+patients with AML, a robust immune response was observed,
+to the WT1 protein [86]. The WT1 vaccine is regarded as
+resulting in both clinical improvements and molecular
+safe, well tolerated, effective, and beneficial for sustaining
+remission [16]. PR3 is another LAA that is implicated in
+Springer
+240
+Page 8 of 20
+Clinical and Experimental Medicine
+(2025) 25:240
+the deregulation of the nuclear factor kappa B (NFkB) path-
+DCs are crucial APCs that present antigens to both
+way in AML [86]. Combined vaccine strategies that include
+adaptive and innate immune cells in lymphoid organs [93].
+WT1-, Pr3-, and MUC1-derived class I-restricted peptides
+AML-DCs can arise from various progenitor sources, but
+and the pan-HLA-DR T helper cell epitope (PADRE) or
+the most studied vaccine therapies are those derived from
+MUC1-helper epitopes paired with CpG7909 and Monta-
+leukemic cells (AML-DCs) and those derived from mono-
+nideISA51 have been investigated for their safety and immu-
+cytes (mo-DCs) [86]. AML-DCs can naturally present LAAs
+nogenicity in AML patients [86, 92]. In a phase I clinical
+on their cell membrane along with HLA molecules [94].
+trial, four AML patients received repeated vaccinations;
+In contrast, mo-DCs need to be loaded with LAAs, which
+however, no clinical responses were observed. Research-
+can be accomplished by exposing them to apoptotic AML
+ers have concluded that vaccination with LAAs might be
+cells or using messenger RNA (mRNA) through a process
+counterproductive when administered in conjugation with
+called electroporation [94]. Recent vaccination approaches
+montanide ISA51 and CpG7909 (Table 2) [92].
+tested in recent clinical trials can be categorized primarily
+into autologous or allogeneic DC vaccines [94]. They can
+DC vaccines
+be loaded with AML antigenic peptides or RNA obtained
+from outside the body and peptide or genetic material vac-
+Several studies have explored the use of DC-based vac-
+cines that aim to target DCs directly within the body [95].
+cines as a treatment option for AML patients [93]. They
+Autologous mo-DCs are obtained from peripheral blood
+have focused on DC-based vaccine use in cases of minimal
+monocytes or stem cells collected through leukapheresis in
+residual disease (MRD) to prevent leukemia relapse, par-
+AML patients who are in remission [96, 97]. These cells
+ticularly in patients deemed unsuitable for more intensive
+are then differentiated and undergo ex vivo loading with
+treatment strategies (Table 3) [86].
+LAAs [94]. Various methods exist for delivering antigens
+Table 2 Summary of recent clinical trials of peptide vaccines in AML
+Type
+NCT ID
+Vaccine antigen
+Phase
+Enrollment
+Study start and end
+Study population
+Peptide vaccines
+NCT01266083
+WT1
+II
+22
+2010/12-2018/02
+18 years and older morphologically
+confirmed AML, achieved 1st CR, and
+not candidates for allogeneic stem cell
+transplantation
+NCT00672152
+WT1
+I
+8
+2007/06-2013/04
+18 years and older patients with con-
+firmed AML, subgroups of patients
+who are not eligible for allogeneic
+hematopoietic stem cell transplant,
+subjects must have a CD4+count
+is 200/mm
+NCT00665002
+WT1
+I
+14
+2008/06-2015/02
+Cytological or histological diagnosis of
+AML, achieved 1st CR, patients must
+have documented WT1+ disease
+NCT00398138
+WT1
+I
+8
+2006/10-2009/06
+Cytological or histological confirmed
+diagnosis of AML, achieved 1st CR,
+and WT1+ disease demonstrated by
+WT1 protein on a pretreatment bone
+marrow biopsy or RQ-PCR
+ISRCTN32763606
+RHAMM-R3
+I/II
+10
+2004/11-2008/02
+18 years and older AML patients, up
+http://ISRCTN.
+to 25% blasts in the bone marrow,
+org
+RHAMM mRNA expression, HLA-
+A2 expression, survival time at least
+6 months
+WT1, PR3, PADRE
+I
+4
+2010/10-
+18 years and older primary or secondary
+AML or relapse of an AML, including
+RAEB/RAEB-T, IPSS score ≥ 1.5; and
+minimal residual disease (MRD)
+NCT00004918
+PR1
+I-II
+66
+18 years and older HLA-A2 positive
+AML patients with relapsed/refractory
+disease (44 patients)
+NCT00454168
+PR1
+III
+244
+2005/05-2009/04
+AML patients who are in remission with
+persistent MRD
+Springer
+Table 3 Summary of the clinical trials of DC-based vaccines in AML
+DCs type
+NCT ID
+Vaccine antigen
+Phase Enrollment Study start and end
+Study population
+Autologous DC vaccines NCT00834002 WT1 mRNA-transfected
+I
+10
+2007/11-2008/12
+18 years and confirmed AML according to the
+WHO criteria (at least 20% blasts in the mar-
+row), All FAB subtypes except M3, achieved
+CR, Overexpression of WT1 RNA (> 50 copies
+of WT1 per 1000 copies ABL in bone mar-
+row or> 2 copy/1000 copies ABL in peripheral
+Clinical and Experimental Medicine
+blood) as assessed by quantitative RT-PCR at
+the time of presentation
+NCT01734304 TLR7/8-matured DCs+mRNA-transfected
+I
+13
+2013/11/05-2018/03/31
+18 years and older patients with confirmed AML
+encoding WT1, PRAME and CMVpp65
+of nonfavorable risk profile or with AML and
+sole NPM1 mutation and confirmed increase
+in MRD load as detected by RQ-PCR, Nega-
+tive pregnancy test in women of childbearing
+(2025) 25:240
+potential
+NCT00923910 WT1 peptide-loaded
+I-II
+10
+2008/02/22-2013/10/18
+AML patients between 1 and 75 years old with
+HLA-A2 and the WT1 cancer protein with per-
+sistent or recurrent blood cancers after hemat-
+opoietic stem cell transplantation
+NCT03083054 Electroporated with WT1 mRNA
+I-II
+5
+2016-08-2020-07-12
+18 years and older High-risk myelodysplasia
+(AREB 1 or AREB 2 subtypes) and AML with
+the absence of blasts in peripheral blood
+NCT00965224 Electroporated with WT1 mRNA
+II
+60
+2010/01-2014/12
+AML patients achieved 1st CR, all FAB subtypes
+except M3 with high risk of relapse due to age
+(> 60 years) or poor risk cytogenetic/molecular
+markers or hyperleukocytosis at presentation or
+previous relapse
+NCT01686334 Electroporated with WT1 mRNA
+II
+130
+2012/10-2025/12
+18 years and older AML patients, All FAB
+subtypes, except M3, with the completion of at
+least one cycle of induction and consolidation
+chemotherapy
+NCT02405338 mRNA-transfected encoding WT1 and PRAME I-II 20
+2015/03-2019/11
+18-75 years AML patients with WT1 and with or
+without PRAME positivity by qPCR, All FAB
+subtypes, except M3, morphologic remission
+(CR) and with or without hematological recovery
+following induction chemotherapy
+NCT00510133 GRNVAC1 transfected with mRNA encoding
+II
+244
+2007/07-2011/12
+AML patients who are in CR1 or CR2 with
+hTERT
+CR1>/=6 months, and has completed at least
+one cycle of consolidation chemotherapy in past
+6 months
+NCT01096602 DC-AML fusion vaccines
+I-II
+63
+2010/05-2023-12
+18 years of age or older patients with AML at
+initial diagnosis or at first relapse and the life
+Springer
+expectancy of greater than 9 weeks
+Page 9 of 20 240
+240
+Page 10 of 20
+Clinical and Experimental Medicine
+(2025) 25:240
+to these cells; however, loading mo-DCs with both tumor
+lysates and mRNAs results in a higher antigenic load than
+does using each method individually, particularly in the con-
+hand, AML-DCs are derived from blast cells obtained from
+Study population
+2008/02/22-2013/10/18 1-75 years of old AML patients with the blood
+antigen HLA-A2 and the WT1 cancer protein
+who have persistent or recurrent blood cancers
+after stem cell transplantation
+Confirmed diagnosis of AML based on WHO2016
+criteria, including cytological, molecular and
+cytogenetic criteria (except acute pro-myelocytic
+text of T lymphocyte activation in vitro [94]. On the other
+the peripheral blood or bone marrow of AML patients and
+are cultured with various combinations of response modi-
+fiers [94]. This process results in leukemic blasts adopting a
+typical DC appearance, along with increased expression of
+costimulatory molecules and improved antigen presentation
+capabilities [96]. A comparison of AML-DCs with ex vivo-
+leukemia)
+loaded mo-DCs revealed that AML-DCs were less effective
+at mobilizing antitumor lymphocytes [96]. This reduced effi-
+ciency might stem from the expression of IDO-1 in AML-
+DCs, which may promote immune tolerance, along with the
+absence of a crucial costimulatory ligand, 4-1 BB [96].
+Like peptide vaccines, WT1 is one of the most exten-
+sively researched antigens, both on its own and in com-
+Phase Enrollment Study start and end
+2018/10/15-2025/12
+bination with other LAAs. Several phase I clinical trials
+have investigated the safety, tolerability, and efficiency of
+autologous DCs loaded with WT1 in patients with AML
+(NCT00834002, NCT01734304, NCT03083054, and
+NCT00923910) [86, 98]. In a phase II study, the clinical
+efficacy of autologous WT1 mRNA-electroporated DC
+10
+20
+vaccination in patients with AML in remission was dem-
+onstrated (NCT00965224). These findings indicate that
+I-II
+II
+this treatment approach can increase overall survival (OS),
+which is associated with the activation of WT1-specific
+CD8 + T-cell immunity [17]. Additionally, a clinical trial
+revealed a reduction in T-reg among eight out of eleven
+AML patients who received WT1 peptide-loaded DC vac-
+cination in conjugation with the OK-432 adjuvant [99].
+NCT01686334 is an additional phase II study investigating
+the efficacy and safety of WT1 peptide-loaded autologous
+DC vaccination in AML patients [23]. Recently, a phase I/
+II clinical trial investigated the effectiveness of WT1 and
+preferentially expressed antigen in melanoma (PRAME)
+Vaccine antigen
+NCT00923910 WT1 peptide-loaded
+RNA-loaded autologous DC vaccines as maintenance ther-
+apy in de novo AML after intensive induction chemother-
+apy (NCT02405338). This treatment was generally well
+NCT03697707 DCP-001
+tolerated, causing only mild and temporary reactions at the
+injection site. More than half of the patients achieved CR,
+and the five-year OS rate was 75% (95% CI: 50-89), with
+NCT ID
+70% of patients aged 60 years and older being long-term
+survivors [18]. Similarly, in another phase I/II trial, the
+one-year safety and feasibility of active immunotherapy
+with WT1 and PRAME antigen-loaded autologous DCs
+were assessed in 20 patients with AML who were in CR
+Table 3 (continued)
+DCs type
+allogenic DC vaccines
+and deemed unfit for transplantation. A previous study
+revealed that WT1- and PRAME-specific T-cell responses
+were more frequently observed in the peripheral blood of
+patients who experienced relapse than in those who expe-
+rienced remission [25].
+Springer
+Clinical and Experimental Medicine
+(2025) 25:240
+Page 11 of 20
+240
+As telomerase activity is often elevated in leukemic
+DC-AML fusion vaccines represent a personalized
+blasts in AML patients, research has focused on evaluat-
+approach to treat AML, in which fusion hybrids of autolo-
+ing the safety and efficiency of human telomerase reverse
+gous mo-DCs and patient-derived AML cells are used to
+transcriptase (hTERT) autologous DC vaccines. A phase
+stimulate antileukemic responses [23]. Like AML-DCs,
+II clinical trial (NCT00510133) included 22 patients who
+ex vivo antigenic loading is not required for DC-AML fusion
+achieved either early or subsequent CR. Most participants
+vaccines [94]. In a phase I/II clinical trial (NCT01096602),
+exhibited hTERT-specific T-cell responses and experi-
+significant T-cell expansion was observed in both peripheral
+enced no significant toxicity [100].
+blood and bone marrow, leading to extended five-year OS.
+In the case of allogenic DC vaccines, a phase I/II
+These results indicate that personalized vaccine strategies
+clinical trial explored the safety and efficacy of WT1
+can effectively boost leukemia-targeting T-cell responses
+peptide-loaded allogenic DC vaccines. Preliminary find-
+and help prevent relapse in AML patients in remission [23,
+ings indicate that this DC-based vaccination is both safe
+104].
+and feasible following allo-HCT (NCT00923910) [101].
+Another phase I clinical trial developed an allogeneic DC
+vaccine, DCP-001, sourced from a cell line derived from
+Combination therapies
+AML and designed to express a range of LAAs for use
+in the postremission treatment of elderly AML patients
+Combination therapy for AML represents a critical area
+(NCT03697707). The results demonstrated a superior anti-
+of investigation in hematological research. Single-agent
+leukemic response to that of autologous cell therapies, as
+immunotherapeutic approaches have yielded a spectrum
+the activation of Thelper-1 lymphocytes in response to
+of efficacy in treating AML. Nevertheless, immunother-
+alloantigens enhances antitumor immunity. On the basis
+apy combined with other therapeutic methods, especially
+of these findings, a randomized, multicenter phase II trial
+chemotherapy and targeted therapies, could provide a poten-
+was launched to gather more robust data (Fig. 2) [94, 102,
+tial basis for further improving therapeutic outcomes. The
+103].
+complexity of the rich immunosuppressive TME, as well
+Fig. 2 Vaccination strategies for
+treatment of AML
+HTERT
+Loaded with Ag Autologus and RNA
+DC-AML fusion
+peptide Loaded or with mRNA
+DC vaccines
+WT1 Loaded peptide with
+WT1
+WT1
+Nacines
+Expressing: Allogenic DCP
+Springer
+240
+Page 12 of 20
+Clinical and Experimental Medicine
+(2025) 25:240
+as the heterogeneity of genetic alterations in AML, are the
+exploits vital cellular processes and pathways (such as the
+most important reasons for the development of combination
+cell cycle, gene expression, and receptor signaling) and
+therapies [105]. Indeed, increasing evidence supports the
+their subsequent consequences, including the deregulation
+notion that chemotherapy can increase the immunogenicity
+of DC function, impaired activity of NK cells, the upregu-
+of AML cells, increasing their sensitivity to immune-medi-
+lation of antiapoptotic mechanisms, the downregulation
+ated elimination when combined with immunotherapeutic
+of HLA-I and II genes, the expansion of T-reg cells, the
+modalities such as chimeric antigen receptor (CAR)-T-cell
+secretion of immunosuppressive cytokines, and the loss of
+therapy or checkpoint inhibitors [14, 106]. Combination
+tumor antigen expression, and is considered to be an exten-
+therapies simultaneously target different aspects of immu-
+sion of immune response shields [109, 110]. Despite the
+nomodulation for a multidimensional approach toward over-
+emergence of novel pharmacological agents, combination
+coming resistance to therapies, relieving immune evasion
+chemotherapy with anthracycline and cytarabine, such as
+mechanisms, and improving patient response [107]. Com-
+the 7+3 regimen (seven days of cytarabine and three days
+bination therapy has demonstrated significant advantages
+of an anthracycline antibiotic or an anthracenedione) with
+over monotherapy in hematologic malignancies because the
+or without allo-HSCT, remains the foundational treatment
+heterogeneity of AML might lead to different subclones in
+approach for AML patients [1].
+the same patient, resulting in different sensitivities to indi-
+Despite optimal therapy with standard chemotherapies,
+vidual treatments [108]. In addition, the immunosuppressive
+almost 60% of AML patients in all age groups ultimately
+TME often limits the efficacy of single immunotherapies.
+experience relapse [2]. Moreover, conventional chemo-
+Moreover, the high recurrence rate among patients with
+therapies might induce adverse short-term and long-term
+AML must be considered, which certainly highlights the role
+effects, particularly in elderly patients. In recent years,
+of synergistic methods with chemotherapy and combining
+new agents for treating AML patients have been devel-
+immunotherapy with targeted therapies aimed at preventing
+oped and approved by FDA. Selected novel agents and the
+or reducing its occurrence.
+primary immunomodulatory effects of AML therapeutic
+approaches are proposed in Table 4 (Fig. 3).
+Synergistic approaches with chemotherapy
+The development of AML therapy approaches stems from
+the immune-suppressive nature of this neoplasm, which
+Table 4 Immunomodulatory impacts of selected agents in AML therapeutic approaches
+Therapeutic approaches
+Function
+Agents
+Immunomodulatory effects
+References
+Standard chemotherapy
+Cell death induction
+Daunorubicin
+Induces blast cell death via damage-associated molecular
+[111]
+patterns
+Cytarabine
+Alters T-cell reduction and damage-associated molecular
+[112]
+pattern expression
+FLT3 blockers
+Kinase inhibition
+Midostaurin
+Enhances graft-versus-leukemia effect
+[113]
+Sorafenib
+Increases CD8+ CD279+ T cells, regulates angiogenic
+[114]
+genes
+Gilteritinib
+Increases NK cells and CD8+ T cells
+[115]
+BCL-2 suppressors
+Apoptosis induction
+Venetoclax
+Disrupts homeostasis of B, T, and myeloid immune cells
+[116]
+DNA methylation inhibitors
+Gene expression activation
+Decitabine
+Inhibit T cells by PD-1/PD-L1 axis, activate DC cell, NK
+[116]
+cells, and increase in T-cell detection of CD34+
+Azacytidine
+[117]
+IDH inhibitors
+IDH blockade
+Ivosidenib
+Potentially restore immune balance disrupted by R-2-HG
+[118]
+buildup, with no direct data available in AML
+Enasidenib
+Hh pathway inhibitors
+Cell cycle regulation
+Glasdegib
+No AML-specific data; inferred from solid tumors show-
+[119]
+ing restored T-cell and recruits MDSCs
+p53 targeted therapies
+Apoptosis
+APR-246
+Boosts cytotoxicity of CD8⁺ T cells (based on studies
+[120]
+from solid tumors)
+MDM2 blockade
+DS-5272
+Activates NK cells, overexpresses blast PD-L1
+AML acute myeloid leukemia, NK cell natural killer cell, DC dendritic cell, TH T helper, FLT3 FMS-like tyrosine kinase 3, BCL-2 B-cell lym-
+phoma 2, IDH isocitrate dehydrogenase, Hh Hedgehog
+Springer
+Clinical and Experimental Medicine
+(2025) 25:240
+Page 13 of 20
+240
+Monoclonal antibody-drug conjugates
+Hedgehog Pathway Inhibitors
+death
+CD33
+California
+GO
+Tp53 targeted therapies
+CD33
+SMO
+16
+AURN-6924
+63
+Apoptosis
+AURN-6924
+FAS/TRAIL
+Tp53
+Tp53
+Tp53
+FAS/TRAIL-R
+VEN
+MDM2
+CAR
+CD16
+CAR
+NKG2D
+Vector
+Ab
+CD16
+VEN
+BIM
+BAX
+VEN
+CAR-NK Cell Therapy
+VEN
+BIM
+BCL-2 suppressors
+BAX
+Apoptosis
+Fig. 3 The diagram represents various therapeutic strategies targeting
+clax) induce apoptosis by disrupting interactions between BCL-2 and
+AML through different molecular mechanisms. The key treatments
+pro-apoptotic proteins like BIM and BAX, leading to increased cell
+include monoclonal antibody-drug conjugates, Hedgehog pathway
+death in AML cells. CAR-NK Cell Therapy: Genetically engineered
+inhibitors, Tp53-targeted therapies, BCL-2 suppressors, and CAR-NK
+chimeric antigen receptor (CAR)-modified NK cells target AML cells
+cell therapy. Monoclonal Antibody-Drug Conjugates: This approach
+by recognizing tumor-associated antigens (TAA), triggering immune-
+involves antibodies conjugated with cytotoxic drugs targeting CD33-
+mediated cytotoxicity. AML Acute Myeloid Leukemia, CD33 Cluster
+positive AML cells. The antibody binds to the CD33 antigen, deliver-
+of Differentiation 33, CAR-NK Chimeric Antigen Receptor-Natural
+ing the drug (e.g., calicheamicin) directly to the cancer cell, causing
+Killer, BCL-2 B-cell lymphoma 2, Tp53 Tumor protein p53, MDM2
+cell death. Hedgehog Pathway Inhibitors: Drugs like Glasdegib tar-
+Mouse double minute 2 homolog, AURN-6924 Aurora kinase inhibi-
+get the Hedgehog signaling pathway, which plays a role in maintain-
+tor, VEN Venetoclax, FA5/TRAIL Fas Ligand/Tumor Necrosis Factor-
+ing leukemia stem cells. Tp53 Targeted Therapies: AURK inhibitors
+Related Apoptosis-Inducing Ligand, TAA Tumor-Associated Antigen,
+(AURN-6924) are depicted in this strategy, which targets MDM2 to
+NK Natural Killer, Ag Antigen, Ab Antibody, SMO Smoothened,
+stabilize the tumor suppressor protein Tp53, leading to apoptosis in
+TRAIL-R Tumor Necrosis Factor-Related Apoptosis-Inducing Ligand
+cancer cells. BCL-2 Suppressors: BCL-2 inhibitors (e.g., Veneto-
+Receptor
+Combining immunotherapy with targeted therapies
+(e.g., venetoclox) in AML patients who acquire mutations
+in other BCL-2 family proteins and FMS-like tyrosine kinase
+Recent improvements in OS have predominantly been
+3 (FLT3) family proteins highlight the importance of com-
+noted among younger patients. Indeed, approximately 40%
+bination therapy approaches. Since alterations in epigenetic
+of patients younger than 60 years might achieve long-term
+regulators are pharmacologically reversible and contribute to
+disease-free survival with contemporary therapeutic inter-
+the pathogenesis of AML, epigenetic drugs have been placed
+ventions. Regrettably, CR rates of < 50% and cure rates of
+at the center of both clinical and preclinical research in AML
+10%-15% are observed in elderly AML patients (aged≥60),
+[122, 123]. This advance led to a fundamental paradigm shift
+which presents a significant challenge for the therapeutic
+in AML treatment from a "one-fits-all" strategy to preci-
+management of AML, which occurs more commonly in
+sion therapy. In recent decades, azacitidine and decitabine,
+older individuals [121].
+which are HMAs, have become the preferred low-intensity
+The significant toxicity associated with nonspecific stand-
+options in AML therapy for unfit patients, allowing roughly
+ard chemotherapy and the short remission period with early
+one-third of treated patients to achieve remission and trans-
+relapse following the inhibition of antiapoptotic proteins
+fusion independence, improving their OS and quality of life.
+Springer
+240
+Page 14 of 20
+Clinical and Experimental Medicine
+(2025) 25:240
+In particular, azacitidine has demonstrated better outcomes
+recent randomized trials have tempered initial optimism.
+than intensive chemotherapy in patients with poor cytoge-
+The phase 3 study comparing azacitidine-venetoclax-pem-
+netic risk and less myelotoxicity than decitabine [124]. In
+brolizumab versus azacitidine-venetoclax in untreated AML
+addition, the use of targeted therapies synergistically and
+patients (presented at ASH 2024) showed no significant
+the combination of immunotherapy methods with targeted
+improvement in efficacy, indicating limited clinical benefit
+therapeutic agents have recently shown promising synergis-
+for PD-1 blockade in this combinatorial approach [82].
+tic effects in AML treatment, which will be discussed below.
+Combining anti-CD47 monoclonal antibodies with HMAs
+Combining checkpoint inhibitors with HMAs
+CD47 is a transmembrane agent that delivers antiphago-
+Various methodologies have been investigated for the appli-
+cytic signals, and its inhibition has demonstrated potential
+cation of ICIs in AML. Investigations of the CTLA-4 and
+for eradicating leukemia stem cells in preclinical models
+PD-1/PDL-1 axes are currently underway in multiple clini-
+[128]. The IgG4 anti-CD47 magrolimab demonstrated an
+cal trials, exploring their potential utility in the innovative
+acceptable tolerability profile, exhibiting limited antileuke-
+management of patients diagnosed with AML. Although
+mic activity as a monotherapy in patients with R/R AML
+the antileukemic efficacy of PD-1 inhibition in isolation
+during a phase I trial [129]. Considering that azacitidine
+appears to be limited, the finding that HMAs promote the
+enhances the expression of antiphagocytic signals on leu-
+upregulation of inhibitory molecules, such as PD-1 and
+kemic cells, increasing the efficacy of magrolimab serves as
+CTLA-4, supports the rationale for achieving a synergistic
+the basis for investigating the combined use of these agents.
+effect through the combination of HMAs and checkpoint
+In a recent phase Ib trial, combining magrolimab with azac-
+inhibitors [125]. Compared with HMAs alone, the combi-
+itidine demonstrated a cCR rate of 64% in untreated AML
+nation of nivolumab and azacitidine has greater efficacy in
+patients and 91% in high-risk MDS patients who were not
+patients with R/R AML under early salvage conditions, spe-
+eligible for intensive chemotherapy [130]. Notably, 74% of
+cifically those who have received fewer than two prior lines
+cCRs were observed within the subgroup of AMLs charac-
+of therapy [11]. In this context, Daver and colleagues docu-
+terized by mutations in the TP53 gene. A phase III investi-
+mented a median OS of 10.5 months alongside a 12-month
+gation assessing the efficacy of magrolimab in conjunction
+OS rate of 50% within a nonrandomized, open-label phase
+with azacitidine (NCT04778397) is currently in progress,
+II study [11]. Promising outcomes have been documented
+alongside a phase I study examining the combination of
+for the combination of azacitidine and pembrolizumab, as
+magrolimab, azacitidine, and venetoclax (NCT04435691).
+evaluated in a phase II trial involving patients with R/R and
+However, updated results from the phase 1b/2 trial of azac-
+ND AML who are over 65 years of age, with a composite
+itidine-venetoclax-magrolimab presented at ASH 2024 dem-
+complete response (CCR) rate of 47% observed in the ND
+onstrated poor overall outcomes with no meaningful clinical
+cohort [126].
+advantage. Consequently, phase 3 development of magroli-
+Additionally, a number of studies that examined the
+mab for AML/MDS has been discontinued, halting further
+potential therapeutic benefit of combining checkpoint
+investigation of this agent in myeloid malignancies [81].
+immune inhibitors with innate immune agonists pro-
+duced encouraging preclinical outcomes. For example,
+Combining cancer vaccines with HMAs
+5,6-dimethylxanthenone-4-acetic acid (DMXAA) improves
+the response to treatment by activating stimulator of inter-
+The administration of HMAs in patients with AML and
+feron genes (STING), which in turn activates antileukemic
+MDS results in the upregulation of cancer/testis antigens
+T cells. A study revealed that the survival rate significantly
+(CTAs), notably the highly immunogenic CTA NY-ESO-1
+increases when this agonist is combined with a PD-1
+[131].
+inhibitor, although this drug induces IFN-x and ultimately
+A preliminary clinical trial involving the combination
+increases the amount of PD-L1. Other STING agonists are
+of decitabine with the NY-ESO-1 vaccine, particularly the
+SHR1032 and GSK3745417 [105]. Furthermore, a different
+anti-DEC-205-NY-ESO-1 fusion protein and poly-ICLC, has
+study demonstrated that inhibitors of the PI3K/Akt/mTOR
+produced promising outcomes. This finding demonstrated
+pathway, such as idelalicib, MK-2206, and everolimus,
+the consistent upregulation of NY-ESO-1 expression to
+lower the expression of checkpoint immune ligands such as
+enhance T-cell immune responses directed against leukemia.
+PD-L1, GAL-9, and CD155. This increases the degree of
+An additional early-phase clinical trial (NCT03358719) is
+apoptosis of tumor cells, particularly when these cells are
+currently in progress to examine the combination of decit-
+used in combination [22]. AML patients' NK cells express
+abine with the NY-ESO-1 vaccine and nivolumab (an anti-
+PVRIG and TIGIT, which combine to inhibit both proteins
+PD-1 monoclonal antibody) in patients with AML and MDS.
+to increase the ability of NK cells to kill [127]. However,
+The ability of decitabine to increase the expression of both
+Springer
+Clinical and Experimental Medicine
+(2025) 25:240
+Page 15 of 20
+240
+Table 5 Clinical trials of decitabine combined with cancer vaccines and other immunotherapies in AML
+Therapeutic approaches
+Phase & ID
+Patients
+Primary & secondary outcome
+measures
+Decitabine + DLI + Autolo-
+Phase I; NCT01483274
+Relapsed AML post-HSCT
+Primary: Safety; Secondary: Disease
+gous DC vaccine (Pulsed with
+responses, and T-cell responses to
+MAGE-A1, MAGEA3, NY-ESO-1)
+the CTAs
+Decit-
+Phase I; NCT02316964
+R/R AML
+Primary: Safety; Secondary:
+abine + Donor NK cells + aldesleu-
+Responses, detection of infused NK
+kin (recombinant IL-2)
+cells
+Decitabine + NY-
+Phase I; NCT03358719
+AML and MDS
+Primary: Safety; Secondary: Immune
+ESO-1 + nivolumab (anti-PD-1
+cell profile, and peripheral blood
+mAb)
+and BM cells responses (NY-ESO-1
+expression and methylation)
+Decitabine + cytarabine + all-tran-
+Phase II; NCT03356080 R/R AML and MDS with blast excess
+Primary: Safety; Secondary: Survival,
+sretinoic acid + G-CSF (DLAAG)
+adverse reactions, duration of hospi-
+talization, rate of relapse
+AML Acute myeloid leukemia, DLI Donor lymphocyte infusion, CTA Cancer/testis antigen, DC Dendritic cell, HSCT Hematopoietic stem cell
+transplantation, R/R Refractory/relapsed, IL-2 Interleukin-2, mAb Monoclonal antibody, BM Bone marrow, NK cell Natural killer cell, G-CSF
+Granulocyte colony stimulating factor, MDS Myelodysplastic syndrome
+NY-ESO-1 and PD-1 in leukemia cells may serve as a sig-
+over 60% of patients, limiting their utility in frail populations
+nificant complement to preparing patients for the NY-ESO-1
+[11, 70]. Similarly, CD47-targeting agents like magrolimab
+vaccine and the anti-PD-1 monoclonal antibody regimen.
+risk anemia due to erythrocyte CD47 expression, necessitat-
+Furthermore, the combination of guadecitabine with atezoli-
+ing careful dose escalation [20].
+zumab in patients with R/R AML has recently been reported,
+Recent failures of late-stage trials-including mag-
+with primary outcomes focused on CR, which are underway,
+rolimab combinations and pembrolizumab with azaciti-
+and the findings are highly anticipated (NCT02892318). The
+dine-venetoclax-highlight the persistent gap between
+results of clinical trials investigating the combination of
+preclinical promise and clinical success, partly attributable
+decitabine with cancer vaccines or other immunotherapeutic
+to the complex immunosuppressive TME and clonal hetero-
+agents in AML patients are presented in Table 5.
+geneity [81, 82].
+Relapse and therapeutic resistance remain formidable
+obstacles. LSCs, characterized by low antigen presenta-
+Challenges and limitation
+tion and high expression of TIM-3 or CD47, evade immune
+detection and drive recurrence [12, 36]. Even therapies
+Despite the transformative potential of immunotherapies in
+targeting LSCs, such as DC vaccines, face challenges in
+AML, several challenges impede their widespread clinical
+sustaining durable T-cell responses due to TME-driven
+application. A primary hurdle lies in the profound immu-
+exhaustion [17]. Additionally, AML's genetic and epigenetic
+nosuppressive TME of AML, which orchestrates immune
+heterogeneity fosters clonal evolution, enabling subpopula-
+evasion through MDSCs, T-regs, and inhibitory cytokines
+tions to bypass targeted immune attacks [108, 122].
+like TGF-β and IL-10 [8, 9, 44]. These components dampen
+The lack of reliable biomarkers for patient stratification
+effector T and NK cell activity, creating a sanctuary for
+further complicates immunotherapy deployment. While
+LSCs that resist elimination even after targeted therapies
+PD-L1 expression and tumor mutational burden guide solid
+[12, 36]. Furthermore, AML blasts exploit immune check-
+tumor therapies, their predictive value in AML remains
+points such as PD-1/PD-L1 and CTLA-4, but monotherapy
+inconsistent [12, 105]. Emerging markers like WT1 or
+with inhibitors has shown only modest clinical responses,
+PRAME expression in DC vaccines show potential but
+underscoring the need for combinatorial strategies to over-
+require validation in larger cohorts [15, 18]. Moreover,
+come resistance [11, 14, 21].
+dynamic changes in immune checkpoint profiles during
+Toxicity and immune-related adverse events (irAEs) asso-
+treatment complicate biomarker-driven strategies [10, 69].
+ciated with checkpoint inhibitors, including cytokine release
+Finally, logistical and economic barriers hinder personal-
+syndrome and autoimmune complications, pose significant
+ized approaches. Autologous DC vaccines and CAR-T thera-
+risks, particularly in elderly or comorbid patients [52, 56].
+pies demand costly, time-intensive manufacturing, limiting
+For instance, combinations like azacitidine-nivolumab,
+accessibility [93, 104]. Allogeneic alternatives, though scal-
+while promising, have reported grade ≥ 3 adverse events in
+able, risk GVHD or off-target effects [101]. These challenges
+Springer
+240
+Page 16 of 20
+Clinical and Experimental Medicine
+(2025) 25:240
+underscore the need for innovative platforms, such as off-
+Epigenetic synergy with immunotherapies
+the-shelf vaccines or dual-targeting antibodies, to balance
+efficacy with practicality [127, 132].
+HMAs like azacitidine prime AML cells for immune
+recognition by upregulating tumor-associated antigens
+(TAAs) and PD-L1 [11]. Future studies could explore
+Future direction
+"epigenetic vaccines," where HMAs are combined with
+neoantigen-targeting DC vaccines to amplify T-cell
+The evolving landscape of AML immunotherapy is poised
+responses. Notably, decitabine-induced NY-ESO-1 expres-
+to transcend current limitations through cutting-edge strate-
+sion synergizes with anti-PD-1 therapy in early trials, a
+gies that integrate novel targets, advanced technologies, and
+strategy warranting expansion to other CTAs [131]. Simi-
+larly, IDH1/2 inhibitors may reverse R-2-hydroxyglutarate
+personalized approaches. Below, we highlight transforma-
+(R-2-HG)-mediated T-cell suppression, creating a permis-
+tive directions poised to redefine AML treatment paradigms.
+sive milieu for checkpoint blockade [118].
+Multifunctional immune checkpoint blockades
+Multi-antigen vaccines and in situ activation
+Beyond PD-1/CTLA-4, simultaneous targeting of emerging
+Next-generation vaccines incorporating WT1, PRAME,
+inhibitory receptors-such as TIGIT, LAG-3, and CD39-
+and neoantigens may overcome antigenic escape. RNA-
+holds promise for overcoming T-cell and NK-cell exhaus-
+tion. Preclinical studies demonstrate that dual blockade of
+electroporated DCs co-expressing WT1 and PRAME have
+already shown 75% 5-year survival in remission patients,
+TIGIT and CD96 enhances NK-mediated cytotoxicity in
+suggesting multi-targeting improves durability [18, 138].
+AML, while LAG-3 inhibition reverses T-cell dysfunction
+In situ vaccination strategies-using STING agonists or
+in refractory cases [52, 127, 132]. Additionally, VISTA, a
+oncolytic viruses to convert AML blasts into immuno-
+checkpoint expressed on MDSCs, is a compelling target
+genic hubs-could bypass ex vivo manufacturing hurdles.
+given its role in fostering immune tolerance via GAL-9
+Preclinical data show that STING activation enhances
+interactions [34, 133, 134]. Combinatorial regimens target-
+CD8 + T-cell infiltration and synergizes with PD-1 inhibi-
+ing these pathways may dismantle the immunosuppressive
+tors [21, 105].
+TME more effectively than single-agent approaches.
+Dual-targeting antibodies and bispecifics
+CRISPR-engineered cellular therapies
+Bispecific antibodies (BsAbs) engaging both T cells (via
+CRISPR-Cas9 technology enables the design of "smart"
+CD3) and AML antigens (e.g., CD33, CD123) are under
+CAR-T/NK cells resistant to TME suppression. For instance,
+investigation. Similarly, trispecifics incorporating check-
+knocking out PD-1 or TIM-3 in CAR-T cells could prevent
+point blockade (e.g., anti-CD3/CD123/PD-L1) could co-
+exhaustion, while inserting IL-15 transgenes may enhance
+stimulate T cells while neutralizing immunosuppressive
+persistence [23, 104]. Early-phase trials of CD123-directed
+signals [127, 139]. Despite setbacks with first-generation
+CAR-NK cells show reduced GVHD risk compared to CAR-
+CD47 inhibitors like magrolimab, next-generation agents
+T, offering a safer allogeneic platform [127]. Further engi-
+engineered to minimize on-target anemia (e.g., by avoid-
+neering to target LSC-specific antigens like CLEC12A or
+ing erythrocyte binding) remain under exploration [81].
+CD47 could eradicate MRD [19, 36, 135, 136].
+Al-powered predictive models
+Conclusion
+Artificial intelligence (AI) can decode AML's genetic and
+AML remains a formidable challenge in oncology, char-
+immunological heterogeneity to predict immunotherapy
+acterized by its ability to hijack immune checkpoints,
+responses. Machine learning algorithms analyzing bulk or
+remodel TME, and evade both innate and adaptive immune
+single-cell RNA-seq data may identify biomarkers-such as
+surveillance. This review underscores the intricate
+T-cell clonality, neoantigen load, or MDSC abundance-to
+"immune paradox" of AML, where leukemic cells exploit
+stratify patients for checkpoint inhibitors or vaccines [12,
+pathways such as PD-1/PD-L1, CTLA-4, and TIM-3 to
+105]. AI-driven models could also optimize combination
+induce T-cell exhaustion, suppress NK cell activity, and
+therapies by simulating dynamic interactions between drugs,
+foster a sanctuary for LSCs. Despite advancements in
+immune cells, and leukemic blasts [108, 137].
+Springer
+Clinical and Experimental Medicine
+(2025) 25:240
+Page 17 of 20
+240
+chemotherapy and targeted therapies, relapse rates remain
+material in this article are included in the article's Creative Commons
+high, and long-term survival is dismal, particularly in
+licence, unless indicated otherwise in a credit line to the material. If
+material is not included in the article's Creative Commons licence and
+elderly patients.
+your intended use is not permitted by statutory regulation or exceeds
+Emerging immunotherapies-checkpoint inhibitors,
+the permitted use, you will need to obtain permission directly from the
+DC- and peptide-based vaccines, and combination strate-
+copyright holder. To view a copy of this licence, visit http://creativeco
+gies-offer renewed hope. Checkpoint blockade, particu-
+mmons.org/licenses/by-nc-nd/4.0/.
+larly when synergized with HMAs or CD47 inhibitors, has
+demonstrated promising clinical responses, while therapeu-
+tic vaccines targeting WT1, PRAME, and other LAAs aim
+References
+to reawaken dormant antitumor immunity. Combinatorial
+approaches, integrating chemotherapy, targeted agents, and
+1. Döhner H, et al. Diagnosis and management of AML in adults:
+2017 ELN recommendations from an international expert panel.
+immunomodulators, are poised to dismantle the immuno-
+Blood. 2017;129(4):424-47.
+suppressive TME and address AML's genetic heterogene-
+2. Ravandi F. Relapsed acute myeloid leukemia: why is
+ity. However, challenges persist, including therapy-related
+there no standard of care? Best Pract Res Clin Haematol.
+toxicities, resistance mechanisms, relapse driven by LSCs,
+2013;26(3):253-9.
+3. O'Donnell JS, Teng MWL, Smyth MJ. Cancer immunoediting
+and the lack of robust biomarkers for patient stratification.
+and resistance to T cell-based immunotherapy. Nat Rev Clin
+Looking ahead, the future of AML therapy lies in person-
+Oncol. 2019;16(3):151-67.
+alized immunotherapy, leveraging novel targets like TIGIT,
+4. Hanahan D, Coussens LM. Accessories to the crime: functions
+of cells recruited to the tumor microenvironment. Cancer Cell.
+LAG-3, and VISTA, and optimizing vaccine platforms to
+2012;21(3):309-22.
+sustain durable immune responses. Advances in understand-
+5. Sendker S, Reinhardt D, Niktoreh N. Redirecting the immune
+ing the dynamic interplay between leukemic cells and the
+microenvironment in acute myeloid leukemia. Cancers (Basel).
+TME will guide the design of next-generation therapies.
+2021. https://doi.org/10.3390/cancers13061423.
+Collaborative efforts to validate biomarkers, refine combi-
+6. Zhou Q, et al. Program death-1 signaling and regulatory T cells
+collaborate to resist the function of adoptively transferred cyto-
+nation regimens, and conduct large-scale clinical trials are
+toxic T lymphocytes in advanced acute myeloid leukemia. Blood.
+critical to translating preclinical breakthroughs into clinical
+2010;116(14):2484-93.
+success. With these strides, the vision of transforming AML
+7. Graf M, et al. High expression of costimulatory molecules corre-
+into a manageable chronic disease, or even achieving cura-
+lates with low relapse-free survival probability in acute myeloid
+leukemia (AML). Ann Hematol. 2005;84(5):287-97.
+tive outcomes, grows increasingly attainable.
+8. Bewersdorf JP, Zeidan AM. Myeloid-derived suppressor cells:
+a grey eminence in the AML tumor microenvironment? Expert
+Acknowledgements Although the authors received no financial sup-
+Rev Anticancer Ther. 2022;22(3):239-41.
+port, they would like to express their gratitude to the researchers whose
+9. Curti A, et al. Modulation of tryptophan catabolism by human
+articles were used in this study.
+leukemic cells results in the conversion of CD25- into CD25+ T
+regulatory cells. Blood. 2007;109(7):2871-7.
+Author contributions HSS and FSS were involved in the conception
+10. Schnorfeil FM, et al. T cells are functionally not impaired in
+of the study, data analysis, manuscript preparation, and monitoring.
+AML: increased PD-1 expression is only seen at time of relapse
+Moreover, MM, ZT, HM, and HSS contributed to the search for rel-
+and correlates with a shift towards the memory T cell compart-
+evant manuscripts and the preparation of the manuscript HN, AR
+ment. J Hematol Oncol. 2015;8:93.
+and SN contributed to the development of the search strategy, article
+11. Daver N, et al. Efficacy, safety, and biomarkers of response to
+search, and manuscript preparation. Finally, all the authors reviewed
+Azacitidine and Nivolumab in relapsed/refractory acute myeloid
+and approved the manuscript.
+leukemia: a nonrandomized, open-label, phase II study. Cancer
+Discov. 2019;9(3):370-83.
+Funding This research did not receive any financial support from pub-
+12. Abaza Y, Zeidan AM. Immune checkpoint inhibition in acute
+lic, commercial, or nonprofit organizations.
+myeloid leukemia and myelodysplastic syndromes. Cells. 2022.
+https://doi.org/10.3390/cells11142249.
+Data availability No datasets were generated or analysed during the
+13. Yang H, Xun Y, You H. The landscape overview of CD47-based
+current study.
+immunotherapy for hematological malignancies. Biomark Res.
+2023;11(1):15.
+Declarations
+14. Stahl M, Goldberg AD. Immune checkpoint inhibitors in acute
+myeloid leukemia: novel combinations and therapeutic targets.
+Conflict of interest The authors declare no competing interests.
+Curr Oncol Rep. 2019;21(4):37.
+15. Maslak PG, et al. Phase 2 trial of a multivalent WT1 peptide
+Open Access This article is licensed under a Creative Commons
+vaccine (galinpepimut-S) in acute myeloid leukemia. Blood Adv.
+Attribution-NonCommercial-NoDerivatives 4.0 International License,
+2018;2(3):224-34.
+which permits any non-commercial use, sharing, distribution and repro-
+16. Qazilbash MH, et al. PR1 peptide vaccine induces specific immu-
+duction in any medium or format, as long as you give appropriate credit
+nity with clinical responses in myeloid malignancies. Leukemia.
+to the original author(s) and the source, provide a link to the Creative
+2017;31(3):697-704.
+Commons licence, and indicate if you modified the licensed material.
+17. Anguille S, et al. Dendritic cell vaccination as postremission
+You do not have permission under this licence to share adapted material
+treatment to prevent or delay relapse in acute myeloid leukemia.
+derived from this article or parts of it. The images or other third party
+Blood. 2017;130(15):1713-21.
+Springer
+240
+Page 18 of 20
+Clinical and Experimental Medicine
+(2025) 25:240
+18. Fløisand Y, et al. WT1 and PRAME RNA-loaded dendritic cell
+40. Tumino N, et al. PMN-MDSC are a new target to rescue graft-
+vaccine as maintenance therapy in de novo AML after inten-
+versus-leukemia activity of NK cells in haplo-HSC transplanta-
+sive induction chemotherapy. Leukemia. 2023;37(9):1842-9.
+tion. Leukemia. 2020;34(3):932-7.
+19. Jiang Z, et al. Targeting CD47 for cancer immunotherapy. J
+41. Kubaev A, et al. Platelet-derived extracellular vesicles: emerg-
+Hematol Oncol. 2021;14(1):180.
+ing players in hemostasis and thrombosis. J Liposome Res.
+20. Sallman DA, et al. Magrolimab in combination with azacitidine
+2025;25:1-11.
+in patients with higher-risk myelodysplastic syndromes: final
+42. Colonna M, et al. Human myelomonocytic cells express an
+results of a phase Ib study. J Clin Oncol. 2023;41(15):2815-26.
+inhibitory receptor for classical and nonclassical MHC class I
+21. Bewersdorf JP, Stahl M, Zeidan AM. Immune checkpoint-
+molecules. J Immunol. 1998;160(7):3096-100.
+based therapy in myeloid malignancies: a promise yet to be
+43. Gros F, et al. Soluble HLA-G molecules increase during acute
+fulfilled. Expert Rev Anticancer Ther. 2019;19(5):393-404.
+leukemia, especially in subtypes affecting monocytic and lym-
+22. Taghiloo S, Norozi S, Asgarian-Omran H. The effects of PI3K/
+phoid lineages. Neoplasia. 2006;8(3):223-30.
+Akt/mTOR signaling pathway inhibitors on the expression of
+44. Pyzer AR, et al. MUC1-mediated induction of myeloid-derived
+immune checkpoint ligands in acute myeloid leukemia cell
+suppressor cells in patients with acute myeloid leukemia.
+line. Iran J Allergy Asthma Immunol. 2022;21(2):178-88.
+Blood. 2017;129(13):1791-801.
+23. Chen Y, et al. A perspective of immunotherapy for acute mye-
+45. Nagaraj S, et al. Altered recognition of antigen is a mech-
+loid leukemia: current advances and challenges. Front Phar-
+anism of CD8+ T cell tolerance in cancer. Nat Med.
+macol. 2023;14:1151032.
+2007;13(7):828-35.
+24. Farrokhi M, et al. Role of precision medicine and per-
+46. Mellor AL, Munn DH. Tryptophan catabolism and T-cell tol-
+sonalized medicine in the treatment of diseases. Kindle.
+erance: immunosuppression by starvation? Immunol Today.
+2023;3(1):1-164.
+1999;20(10):469-73.
+25. Christopher MJ, et al. Immune escape of relapsed AML
+47. Sun H, et al. Increase in myeloid-derived suppressor cells
+cells after allogeneic transplantation. N Engl J Med.
+(MDSCs) associated with minimal residual disease (MRD)
+2018;379(24):2330-41.
+detection in adult acute myeloid leukemia. Int J Hematol.
+26. Le Dieu R, et al. Peripheral blood T cells in acute myeloid leu-
+2015;102(5):579-86.
+kemia (AML) patients at diagnosis have abnormal phenotype
+48. Vago L, Gojo I. Immune escape and immunotherapy of acute
+and genotype and form defective immune synapses with AML
+myeloid leukemia. J Clin Invest. 2020;130(4):1552-64.
+blasts. Blood. 2009;114(18):3909-16.
+49. Zhang L, Gajewski TF, Kline J. PD-1/PD-L1 interactions inhibit
+27. Yoyen-Ermis D, et al. Myeloid maturation potentiates STAT3-
+antitumor immune responses in a murine acute myeloid leukemia
+mediated atypical IFN-γ signaling and upregulation of PD-1
+model. Blood. 2009;114(8):1545-52.
+ligands in AML and MDS. Sci Rep. 2019;9(1):11697.
+50. Mangaonkar A, et al. A novel immunohistochemical score to
+28. Huang S, et al. Higher PD-1/Tim-3 expression on IFN-γ+ T
+predict early mortality in acute myeloid leukemia patients
+cells is associated with poor prognosis in patients with acute
+based on indoleamine 2,3 dioxygenase expression. Sci Rep.
+myeloid leukemia. Cancer Biol Ther. 2023;24(1): 2278229.
+2017;7(1):12892.
+29. Pentcheva-Hoang T, et al. B7-1 and B7-2 selectively recruit
+51. Le Naour J, et al. Trial watch: IDO inhibitors in cancer therapy.
+CTLA-4 and CD28 to the immunological synapse. Immunity.
+Oncoimmunology. 2020;9(1):1777625.
+2004;21(3):401-13.
+52. Cai X, et al. Current progress and future perspectives of immune
+30. Re F, et al. Expression of CD86 in acute myelogenous leuke-
+checkpoint in cancer and infectious diseases. Front Genet.
+mia is a marker of dendritic/monocytic lineage. Exp Hematol.
+2021;12: 785153.
+2002;30(2):126-34.
+53. Pardoll DM. The blockade of immune checkpoints in cancer
+31. Anderson AC, Joller N, Kuchroo VK. Lag-3, Tim-3, and
+immunotherapy. Nat Rev Cancer. 2012;12(4):252-64.
+TIGIT: co-inhibitory receptors with specialized functions in
+54. Robert C. A decade of immune-checkpoint inhibitors in cancer
+immune regulation. Immunity. 2016;44(5):989-1004.
+therapy. Nat Commun. 2020;11(1):3801.
+32. Rezaei M, et al. TIM-3 in leukemia; immune response and
+55. Ledford H. Melanoma drug wins US approval. Nature.
+beyond. Front Oncol. 2021;11: 753677.
+2011;471(7340):561.
+33. Zhu C, et al. The Tim-3 ligand galectin-9 negatively regulates
+56. Johnson DB, et al. Immune-checkpoint inhibitors: long-term
+T helper type 1 immunity. Nat Immunol. 2005;6(12):1245-52.
+implications of toxicity. Nat Rev Clin Oncol. 2022;19(4):254-67.
+34. Aval OS, et al. Galectin-9: a double-edged sword in Acute
+57. Chrétien S, et al. Beyond PD-1/PD-L1 inhibition: what the
+Myeloid Leukemia. Ann Hematol. 2025;9:1-4.
+future holds for breast cancer immunotherapy. Cancers (Basel).
+35. Han Y, et al. Acute myeloid leukemia cells express ICOS
+2019;11(5):628.
+ligand to promote the expansion of regulatory T cells. Front
+58. Mohsenzadegan M, et al. The potential of T cell immunoglobu-
+Immunol. 2018;9:2227.
+lin and mucin-domain containing-3 (Tim-3) in designing novel
+36. Paczulla AM, et al. Absence of NKG2D ligands defines leu-
+immunotherapy for bladder cancer. Endocr Metab Immune Dis-
+kaemia stem cells and mediates their immune evasion. Nature.
+ord Drug Targets. 2021;21(12):2131-46.
+2019;572(7768):254-9.
+59. Shiravand Y, et al. Immune checkpoint inhibitors in cancer ther-
+37. Baragaño Raneros A, et al. Methylation of NKG2D ligands
+apy. Curr Oncol. 2022;29(5):3044-60.
+contributes to immune system evasion in acute myeloid leuke-
+60. Saleh R, et al. Breast cancer cells and PD-1/PD-L1 blockade
+mia. Genes Immun. 2015;16(1):71-82.
+upregulate the expression of PD-1, CTLA-4, TIM-3 and LAG-3
+38. Stringaris K, et al. Leukemia-induced phenotypic and func-
+immune checkpoints in CD4+ T cells. Vaccines. 2019;7(4):149.
+tional defects in natural killer cells predict failure to achieve
+61. Giannopoulos K. Targeting immune signaling checkpoints in
+remission in acute myeloid leukemia. Haematologica.
+acute myeloid leukemia. J Clin Med. 2019;8(2):236.
+2014;99(5):836-47.
+62. Tsirigotis P, Savani BN, Nagler A. Programmed death-1 immune
+39. Szczepanski MJ, et al. Blast-derived microvesicles in sera from
+checkpoint blockade in the treatment of hematological malignan-
+patients with acute myeloid leukemia suppress natural killer cell
+cies. Ann Med. 2016;48(6):428-39.
+function via membrane-associated transforming growth factor-
+63. Damiani D, Tiribelli M. Checkpoint inhibitors in acute myeloid
+betal. Haematologica. 2011;96(9):1302-9.
+leukemia. Biomedicines. 2023;11(6):1724.
+Springer
+Clinical and Experimental Medicine
+(2025) 25:240
+Page 19 of 20
+240
+64. Spagnuolo A, Gridelli C. Comparison of the toxicity profile of
+84. Wu Y, et al. Immunotherapies of acute myeloid leukemia: ration-
+PD-1 versus PD-L1 inhibitors in non-small cell lung cancer:
+ale, clinical evidence and perspective. Biomed Pharmacother.
+is there a substantial difference or not? J Thorac Dis. 2018.
+2024;171: 116132.
+https://doi.org/10.21037/jtd.2018.09.83.
+85. Rajabi L, et al. Aqueous and ethanolic extracts of Moringa oleif-
+65. Abaza Y, Zeidan AM. Immune checkpoint inhibition in acute
+era leaves induce selective cytotoxicity in Raji and Jurkat cell
+myeloid leukemia and myelodysplastic syndromes. Cells.
+lines by activating the P21 pathway independent of P53. Mol
+2022;11(14):2249.
+Biol Rep. 2025;52(1):102.
+66. Riella LV, et al. Role of the PD-1 pathway in the immune
+86. Barbullushi K, et al. Vaccination therapy for acute myeloid leu-
+response. Am J Transplant. 2012;12(10):2575-87.
+kemia: where do we stand? Cancers (Basel). 2022. https://doi.
+67. Han Y, Liu D, L. PD-1/PD-L1 pathway: current researches
+org/10.3390/cancers14122994.
+in cancer. Am J Cancer Res. 2020;10(3):727.
+87. Schmitt M, et al. RHAMM-R3 peptide vaccination in patients
+68. Huang Q, et al. Comparative efficacy and safety of PD-1/
+with acute myeloid leukemia, myelodysplastic syndrome, and
+PD-L1 inhibitors for patients with solid tumors: a system-
+multiple myeloma elicits immunologic and clinical responses.
+atic review and Bayesian network meta-analysis. J Cancer.
+Blood. 2008;111(3):1357-65.
+2021;12(4):1133.
+88. Kim M, Savsani K, Dakshanamurthy S. A peptide vaccine design
+69. Liao D, et al. A review of efficacy and safety of checkpoint
+targeting KIT mutations in acute myeloid leukemia. Pharmaceu-
+inhibitor for the treatment of acute myeloid leukemia. Front
+ticals (Basel). 2023. https://doi.org/10.3390/ph16070932.
+Pharmacol. 2019;10:609.
+89. Brayer J, et al. WT1 vaccination in AML and MDS: a
+70. Gómez-Llobell M, et al. Immune checkpoint inhibitors in acute
+pilot trial with synthetic analog peptides. Am J Hematol.
+myeloid leukemia: a meta-analysis. Front Oncol. 2022;12:
+2015;90(7):602-7.
+882531.
+90. Maslak PG, et al. Vaccination with synthetic analog peptides
+71. Alatrash G, Daver N, Mittendorf EA. Targeting immune
+derived from WT1 oncoprotein induces T-cell responses in
+checkpoints in hematologic malignancies. Pharmacol Rev.
+patients with complete remission from acute myeloid leukemia.
+2016;68(4):1014-25.
+Blood. 2010;116(2):171-9.
+72. Graf M, et al. High expression of costimulatory molecules
+91. Jochen G, et al. High-dose RHAMM-R3 peptide vaccination for
+correlates with low relapse-free survival probability in acute
+patients with acute myeloid leukemia, myelodysplastic syndrome
+myeloid leukemia (AML). Ann Hematol. 2005;84:287-97.
+and multiple myeloma. Haematologica. 2010;95(7):1191-7.
+73. Raoufi A, et al. Macrophages in graft-versus-host disease
+92. Kuball J, et al. Pitfalls of vaccinations with WT1-, Protein-
+(GVHD): dual roles as therapeutic tools and targets. Clin Exp
+ase3- and MUC1-derived peptides in combination with Mon-
+Med. 2025;25(1):73.
+tanideISA51 and CpG7909. Cancer Immunol Immunother.
+74. Chao MP, Weissman IL, Majeti R. The CD47-SIRPα pathway
+2011;60(2):161-71.
+in cancer immune evasion and potential therapeutic implica-
+93. Motallebzadeh Khanmiri J, et al. Dendritic cell vaccination strat-
+tions. Curr Opin Immunol. 2012;24(2):225-32.
+egy for the treatment of acute myeloid leukemia: a systematic
+75. Majeti R, et al. CD47 is an adverse prognostic factor and thera-
+review. Cytotherapy. 2024;26(5):427-35.
+peutic antibody target on human acute myeloid leukemia stem
+94. Palomares F, et al. Dendritic cells as a therapeutic strategy in
+cells. Cell. 2009;138(2):286-99.
+acute myeloid leukemia: vaccines. Vaccines. 2024. https://doi.
+76. Tsai RK, Discher DE. Inhibition of "self" engulfment through
+org/10.3390/vaccines12020165.
+deactivation of myosin-II at the phagocytic synapse between
+95. Chevallier P, et al. A phase I/II feasibility vaccine study
+human cells. J Cell Biol. 2008;180(5):989-1003.
+by autologous leukemic apoptotic corpse-pulsed dendritic
+77. Chao MP, et al. Calreticulin is the dominant pro-phagocytic
+cells for elderly AML patients. Hum Vaccin Immunother.
+signal on multiple human cancers and is counterbalanced by
+2021;17(10):3511-4.
+CD47. Sci Transl Med. 2010;2(63):63ra94-63ra94.
+96. Amberger DC, Schmetzer HM. Dendritic cells of leukemic
+78. Ahmad I, et al. Mesenchymal stem cell-derived exosomes
+origin: specialized antigen-presenting cells as potential treat-
+(MSC-exosomes) in hematology: from mechanisms to clini-
+ment tools for patients with myeloid leukemia. Transfus Med
+cal breakthroughs. Cell Immunol. 2025;414: 104986.
+Hemother. 2020;47(6):432-43.
+79. Liu J, et al. Pre-clinical development of a humanized anti-
+97. Saadh MJ, et al. Mesenchymal stem cell-derived exosomes:
+CD47 antibody with anti-cancer therapeutic potential. PLoS
+a novel therapeutic frontier in hematological disorders. Med
+ONE. 2015;10(9): e0137345.
+Oncol. 2025;42(6):199.
+80. Sallman D, et al. Poster: AML-196: the first-in-class anti-CD47
+98. Lichtenegger FS, et al. Toll-like receptor 7/8-matured RNA-
+antibody magrolimab in combination with azacitidine is well
+transduced dendritic cells as post-remission therapy in acute
+tolerated and effective in AML patients: phase 1b results. Clin
+myeloid leukaemia: results of a phase I trial. Clin Transl Immu-
+Lymphoma Myeloma Leuk. 2021;21:S213.
+nol. 2020;9(3): e1117.
+81. Arora S, et al. Phase 1b/2 study of Magrolimab (Magro), Azac-
+99. Ogasawara M, et al. Wilms' tumor 1 peptide-loaded dendritic cell
+itidine (AZA) and Venetoclax (VEN) in patients (pts) with
+vaccination in patients with relapsed or refractory acute leuke-
+newly diagnosed (ND) older/unfit or high risk acute myeloid
+mia. Ther Apher Dial. 2022;26(3):537-47.
+leukemia (AML) and relapsed refractory (R/R) AML: final
+100. Khoury HJ, et al. Immune responses and long-term disease
+clinical data and genomic markers of resistance/relapse. Blood.
+recurrence status after telomerase-based dendritic cell immu-
+2024;144(Supplement 1):735-735.
+notherapy in patients with acute myeloid leukemia. Cancer.
+82. Stempel JM, et al. Efficacy and safety of pembrolizumab added
+2017;123(16):3061-72.
+to azacitidine plus venetoclax for patients with acute myeloid
+101. Shah NN, et al. Induction of immune response after allogeneic
+leukemia: results from an investigator-initiated, multi-center,
+Wilms' tumor 1 dendritic cell vaccination and donor lympho-
+CTEP-sponsored randomized, phase II trial (BLAST AML-2).
+cyte infusion in patients with hematologic malignancies and
+Blood. 2024;144:736.
+post-transplantation relapse. Biol Blood Marrow Transplant.
+83. Wu M, et al. Therapeutic cancer vaccine therapy for acute
+2016;22(12):2149-54.
+myeloid leukemia. Immunotherapy. 2021;13(10):863-77.
+102. van de Loosdrecht AA, et al. A novel allogeneic off-the-shelf
+dendritic cell vaccine for post-remission treatment of elderly
+Springer
+240
+Page 20 of 20
+Clinical and Experimental Medicine
+(2025) 25:240
+patients with acute myeloid leukemia. Cancer Immunol Immu-
+122. Liu H. Emerging agents and regimens for AML. J Hematol
+nother. 2018;67:1505-18.
+Oncol. 2021;14(1):49.
+103. Noroozi Aghide A, Soleimani Samarkhazan H, Ahmadnezhad
+123. Zehtabcheh S, et al. Insights into KMT2A rearrangements in
+M. Effect of harmine alkaloid on the expression of P16 and
+acute myeloid leukemia: from molecular characteristics to tar-
+DAPK in HL60 leukemia cell line. Paramed Sci Military Health.
+geted therapies. Biomark Res. 2025;13(1):73.
+2016;11(3):28-33.
+124. DiNardo CD, et al. Venetoclax combined with decitabine or azac-
+104. Rosenblatt J, et al. Individualized vaccination of AML patients
+itidine in treatment-naive, elderly patients with acute myeloid
+in remission is associated with induction of antileukemia immu-
+leukemia. Blood. 2019;133(1):7-17.
+nity and prolonged remissions. Sci Transl Med. 2016;8(368):
+125. Daver N, et al. Hypomethylating agents in combination with
+368ra171-368ra171.
+immune checkpoint inhibitors in acute myeloid leukemia and
+105. Aru B, et al. A potential area of use for immune checkpoint inhib-
+myelodysplastic syndromes. Leukemia. 2018;32(5):1094-105.
+itors: targeting bone marrow microenvironment in acute myeloid
+126. Gojo I, et al. Multi-center phase 2 study of Pembroluzimab (Pem-
+leukemia. Front Immunol. 2023;14:1108200.
+bro) and Azacitidine (AZA) in patients with relapsed/refractory
+106. Rab SO, et al. Targeting platelet-tumor cell interactions: a novel
+acute myeloid leukemia (AML) and in newly diagnosed (≥65
+approach to cancer therapy. Med Oncol. 2025;42(7):232.
+years) AML patients. Blood. 2019;134(Supplement_1):832-832.
+107. Maleknia M, et al. Immunomodulation in leukemia: cellu-
+127. Brauneck F, et al. Combined blockade of TIGIT and CD39 or
+lar aspects of anti-leukemic properties. Clin Transl Oncol.
+A2AR enhances NK-92 cell-mediated cytotoxicity in AML. Int
+2020;22(1):1-10.
+J Mol Sci. 2021. https://doi.org/10.3390/jims222312919.
+108. Nair R, Salinas-Illarena A, Baldauf HM. New strategies to treat
+128. Chao MP, Weissman IL, Park CY. Cancer stem cells: on the verge
+AML: novel insights into AML survival pathways and combina-
+of clinical translation. Lab Med. 2008;39(11):679-86.
+tion therapies. Leukemia. 2021;35(2):299-311.
+129. Vyas PK, Kelly R, Salim R, Lubowiecki M, Royston D, Johnson
+109. Kayser S, Levis MJ. Updates on targeted therapies for acute
+H, Roberts C, Chen J, Agoram B, et al. Initial phase 1 results
+myeloid leukaemia. Br J Haematol. 2022;196(2):316-28.
+of the first-in-class anti-Cd47 antibody Hu5f9-G4 in relapsed/
+110. Shahrabi S, et al. Neutropenia and leukemia develop-
+refractory acute myeloid leukemia patients. 2018
+ment: genetic risk factors and prognosis. Leuk Lymphoma.
+130. Sallman DA, et al. Tolerability and efficacy of the first-in-class
+2019;60(14):3363-74.
+anti-CD47 antibody magrolimab combined with azacitidine
+111. Catellani S, et al. Imatinib treatment induces CD5+ B lympho-
+in MDS and AML patients: phase Ib results. J Clin Oncol.
+cytes and IgM natural antibodies with anti-leukemic reactivity
+2020;38(15_suppl):7507-7507.
+in patients with chronic myelogenous leukemia. PLoS ONE.
+131. Song X, et al. Microrna-874 functions as a tumor suppressor by
+2011;6(4): e18925.
+targeting cancer/testis antigen HCA587/MAGE-C2. J Cancer.
+112. Döhner H, et al. Diagnosis and management of AML in adults:
+2016;7(6):656-63.
+2022 recommendations from an international expert panel on
+132. van de Loosdrecht AA, et al. A novel allogeneic off-the-shelf
+behalf of the ELN. Blood. 2022;140(12):1345-77.
+dendritic cell vaccine for post-remission treatment of elderly
+113. Mathew NR, et al. Sorafenib promotes graft-versus-leukemia
+patients with acute myeloid leukemia. Cancer Immunol Immu-
+activity in mice and humans through IL-15 production in FLT3-
+nother. 2018;67(10):1505-18.
+ITD-mutant leukemia cells. Nat Med. 2018;24(3):282-91.
+133. Gao Y, et al. VISTA: a novel checkpoint for cancer immuno-
+114. Kiyoi H, Kawashima N, Ishikawa Y. FLT3 mutations in acute
+therapy. Drug Discov Today. 2024;29(7): 104045.
+myeloid leukemia: therapeutic paradigm beyond inhibitor devel-
+134. Shekari N, et al. VISTA and its ligands: the next generation of
+opment. Cancer Sci. 2020;111(2):312-22.
+promising therapeutic targets in immunotherapy. Cancer Cell Int.
+115. Levis M, Perl AE. Gilteritinib: potent targeting of FLT3 muta-
+2023;23(1):265.
+tions in AML. Blood Adv. 2020;4(6):1178-91.
+135. Soleimani Samarkhazan H, et al. Unveiling the potential of
+116. Short NJ, et al. Azacitidine, venetoclax, and gilteritinib in newly
+CLL-1: a promising target for AML therapy. Biomark Res.
+diagnosed and relapsed or refractory FLT3-mutated AML. J Clin
+2025;13(1):28.
+Oncol. 2024;42(13):1499-508.
+136. Soleimani Samarkhazan H, et al. C-type lectin-like molecule-1
+117. Donnette M, et al. Cytidine deaminase status as a marker of
+as a diagnostic, prognostic, and therapeutic marker in leukemia.
+response to azacytidine treatment in MDS and AML patients.
+Mol Biol Rep. 2025;52(1):464.
+Br J Haematol. 2023;203(4):625-36.
+137. Bishoyi AK, et al. Nanotechnology in leukemia therapy: revolu-
+118. IDH-Mutated AML: Beyond Enasidenib and Ivosidenib Mon-
+tionizing targeted drug delivery and immune modulation. Clin
+otherapy: Highlights From SOHO 2021. J Adv Pract Oncol.
+Exp Med. 2025;25(1):166.
+2022;13(Suppl 1): 12-14
+138. Bayani A, et al. Aptamer-based approaches in leukemia: a para-
+119. Sekeres MA, et al. Glasdegib plus intensive or non-intensive
+digm shift in targeted therapy. Clin Exp Med. 2025;25(1):186.
+chemotherapy for untreated acute myeloid leukemia: results from
+139. Soleimani Samarkhazan H, et al. Curcumin and acute myeloid
+the randomized, phase 3 BRIGHT AML 1019 trial. Leukemia.
+leukemia: a golden hope, updated insights. Mol Biol Rep.
+2023;37(10):2017-26.
+2025;52(1):583.
+120. Tarantini F, et al. Can the new and old drugs exert an immu-
+nomodulatory effect in acute myeloid leukemia? Cancers (Basel).
+Publisher's Note Springer Nature remains neutral with regard to
+2021. https://doi.org/10.3390/cancers13164121.
+jurisdictional claims in published maps and institutional affiliations.
+121. Récher C, et al. Long-term survival after intensive chemotherapy
+or hypomethylating agents in AML patients aged 70 years and
+older: a large patient data set study from European registries.
+Leukemia. 2022;36(4):913-22.
+Springer

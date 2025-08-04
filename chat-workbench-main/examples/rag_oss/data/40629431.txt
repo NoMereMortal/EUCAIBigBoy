@@ -1,0 +1,2473 @@
+
+Rizvi et al. Breast Cancer Research
+(2025) 27:127
+Breast Cancer Research
+https://doi.org/10.1186/s13058-025-02080-z
+RESEARCH
+Open Access
+Mutational landscape of pure ductal
+Check for
+updates
+carcinoma in situ and associations with disease
+prognosis and response to radiotherapy
+Noor Rizvi¹, Eliseos J. Mucaki¹,², Emily L. Salmini¹, Monica Zhang², Sabina Trebinjac³, Ezra Hahn³,
+Lawrence Paszat³, Sharon Nofech-Mozes⁴, Michael T. Hallett Eileen Rakovitch³ and Vanessa Dumeaux 1,2,5,6*
+Abstract
+Background Managing Ductal Carcinoma in Situ (DCIS) remains challenging due to the lack of reliable biomark-
+ers to predict radiotherapy (RT) response, leading to both overtreatment of indolent disease and undertreatment
+of aggressive cases.
+Results Through whole-exome sequencing of 147 DCIS cases, we characterized the genomic landscape of pure
+DCIS and identified genetic alterations associated with the risk of recurrence, either in-situ or invasive. DCIS lesions
+harbored frequent mutations in established cancer drivers (PIK3CA, TP53) and genes regulating tissue architecture,
+which likely enhanced pre-invasive cell fitness but lacked prognostic value. A subset of younger patients exhibited
+distinct mutational processes characterized by high mutational burden, though these were not linked to recurrence
+risk. Across the cohort, five mostly mutually exclusive genes (SH2B2, PDZD8, MYO7A, MUCL3, DNASE2B), involved in cell
+adhesion, membrane organization, and DNA degradation, were significantly associated with 10-year risk of local
+recurrence. In RT-treated patients, we identified 27 additional mutated genes uniquely associated with recurrence,
+along with SH2B2 and MUCL3. Most of these genes were involved in cytoskeletal regulation, cell adhesion, and cell-
+environment interactions. Mutations in metabolic regulators (MGAM2 and AADACL3) and REV1, which mediates DNA
+damage tolerance, may impair cellular responses to RT-induced stress. Notably, we identified distinct genes prog-
+nostic for in-situ versus invasive recurrence: nineteen genes predominantly involved in tissue structural maintenance
+in in-situ relapse, and thirteen genes primarily affecting cell-cycle and genome-stability pathways in invasive pro-
+gression. Copy number analyses revealed that pure DCIS exhibits molecular subtype-specific patterns characteristic
+of invasive disease, with novel alterations associated with recurrence, including three non-adjacent gains and five
+losses in regions harboring oncogenes, tumor suppressor genes, and genes regulating structural integrity, cell-cell
+adhesion and interactions.
+Conclusions While TP53, PIK3CA, and recurrent copy number alterations represent early events in tumorigenesis, they
+lack prognostic value in pure DCIS, underscoring the need for alternative biomarkers. Our findings identify key genetic
+alterations associated with local recurrence and RT resistance. We further uncovered distinct molecular programs
+underlying in-situ versus invasive recurrence, with mutations affecting tissue structural maintenance in in-situ relapse
+and cell-cycle/genome-stability pathways in invasive progression.
+*Correspondence:
+Vanessa Dumeaux
+vdumeaux@uwo.ca
+Full list of author information is available at the end of the article
+BMC
+© The Author(s) 2025. Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0
+International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long
+as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if
+you modified the licensed material. You do not have permission under this licence to share adapted material derived from this article or
+parts of it. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated
+otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not
+permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To
+view a copy of this licence, visit http://creativecommons.org/licenses/by-nc-nd/4.0./.
+Rizvi et al. Breast Cancer Research
+(2025) 27:127
+Page 2 of 19
+Introduction
+fitness advantages, allowing them to expand into ductal
+Ductal Carcinoma in Situ (DCIS) is a non-invasive, non-
+regions without directly driving invasive behavior [10].
+obligate precursor of invasive breast cancer characterized
+This suggests that driver mutations, alongside fre-
+by clonal proliferation of neoplastic cells confined within
+quently mutated genes, may serve as these early fitness
+the breast ducts [1]. DCIS is primarily detected through
+enhancers rather than drivers of progression. Several
+screening and diagnostic mammograms due to its char-
+copy number aberrations (CNAs) have also been identi-
+acteristic presentation with microcalcifications. The
+fied by these studies [10-15, 17-20] including frequent
+widespread implementation of mammographic screen-
+gains at 1q, 8q, 11q, and 17q, and losses at 16q, however
+ing programs has led to a substantial increase in DCIS
+the specific associations of these CNAs to DCIS prog-
+detection, with incidence rates rising from four to eleven
+nosis remain unclear.
+cases per 100,000 women between 1993 and 2007 [2, 3].
+To address these critical gaps, we conducted compre-
+This trend is expected to continue as screening programs
+hensive exome sequencing analysis of 147 pure DCIS
+expand to include younger women [4].
+cases, including patients treated with and without RT, to
+There are currently no definitive markers to predict
+investigate markers of local recurrence within 10 years of
+which cases will progress to invasive, life-threatening
+diagnosis. Our study characterizes the mutational land-
+lesions [5, 6]. Consequently, treatment, usually involv-
+scape in pure DCIS and identifies novel genomic altera-
+ing breast-conserving surgery (BCS) followed by breast
+tions associated with tumor grade, molecular subtypes,
+radiation therapy (RT), is recommended for all women
+and patient age. Most importantly, we discovered specific
+diagnosed with DCIS [5]. However, many DCIS would
+variants and CNAs predictive of local recurrence risk,
+not transit to invasive life-threatening disease even if
+including genetic markers associated with RT response.
+left untreated [7]. The absence of known markers pre-
+These findings provide insights into the genomic deter-
+dictive of a patient benefit to RT results in both over-
+minants of DCIS prognosis and treatment response,
+treatment for indolent lesions and under-treatment for
+establishing a foundation for improved risk stratification
+some aggressive DCIS likely to evolve to an invasive state.
+and personalized treatment strategies for DCIS patients.
+Markers that identify such cases could enable tailored
+treatments, such as full mastectomy or adjuvant systemic
+Results
+therapies for patients at risk of in situ or invasive local
+A unique cohort of pure DCIS patients
+recurrence (LR) despite receiving RT [8], or more fre-
+We assembled a cohort of 147 pure DCIS patients treated
+quent watch-and-wait strategies for those with indolent
+with BCS, with or without subsequent RT, incorporating
+lesions.
+comprehensive genomic profiling through whole-exome
+Cancer emerges from the accumulation of genetic
+DNA analysis of primary DCIS tumors and matched nor-
+aberrations in neoplastic cells and genomic instability [9].
+mal tissues (Table 1). The study design was balanced to
+Mutations can disrupt normal cellular processes, leading
+include at least a third of patients who experienced an
+to uncontrolled cell growth, impaired DNA repair, and
+ipsilateral invasive or in-situ LR within a 10-year follow-
+other aberrant cellular behaviours that may contribute to
+up period and about half received radiotherapy as part of
+cancer development [9]. Previous studies have revealed
+their standard-of-care (Table 1). In clinical settings, RT is
+important insights into DCIS progression by highlight-
+omitted in some patients with low-risk features of DCIS
+ing specific mutations and chromosomal alterations that
+or due to patient preference. The median time to recur-
+may influence the progression towards invasive disease
+rence was 4.2 years for invasive disease and 2.1 years for
+[10-17]. Many of these studies, however, focus on syn-
+in-situ disease. Most tumors were of intermediate to high
+chronous DCIS - concurrent presentation of DCIS and
+grade spanning all five molecular subtypes, with normal-
+invasive ductal carcinoma (IDC). These studies explore
+like and luminal A subtypes more frequently observed in
+the overlap between DCIS and IDC, and recognize the
+patients without LR within 10 years (Table 1). A minor-
+potential differences between them. However, these find-
+ity of tumors exhibited multifocality (24.5%) and positive
+ings might be reflective of a timepoint beyond the evolu-
+margins (6.8%). Clinical characteristics were comparable
+tionary bottleneck.
+between RT-treated and untreated patients across all var-
+TP53 and PIK3CA are among the most frequently
+iables except age, with women aged 60 years or older less
+observed mutations in these studies [11-17] and are
+likely to receive RT (Supplementary Table 1).
+often characterized as key drivers of tumorigenesis,
+promoting growth and spread of cancer cells. How-
+Mutational landscape of DCIS reveals distinct processes
+ever, this may not necessarily be the case, as mutant
+driving high mutational burden in early-onset cases
+field clonalization could equip pre-malignant cells
+The mutational load of pure DCIS lesions varied con-
+with additional (epi-) genetic mutations that confer
+siderably, ranging from. 3 to 3,482 non-synonymous
+Rizvi et al. Breast Cancer Research
+(2025) 27:127
+Page 3 of 19
+Table 1 Patient and tumor clinical attributes
+Without Local Recurrence
+With Local Recurrence (n
+p-valueᵃ
+(n = 96)
+= 51)
+Type of 10-year Local Recurrence
+DCIS
+0
+24 (47.0%)
+Invasive
+0
+27 (53.0%)
+Time to Recurrence in years
+DCIS
+NA
+2.1 (0.5 9.7)
+Median (Range)
+Invasive
+NA
+4.2 (0.6 9.7)
+Radiotherapy (RT)
+Yes
+51 (53.1%)
+22 (43.1%)
+0.32
+N (%)
+No
+45 (46.9%)
+29 (56.9%)
+Clear Margins
+Positive
+5 (5.2%)
+5 (9.8%)
+0.57
+N (%)
+Negative
+79 (82.3%)
+40 (78.4%)
+Undetermined
+12 (12.5%)
+6 (11.8%)
+Tumor size (mm),
+16.3 (4.0 90.0)
+21.3 (2.0 76.0)
+0.05
+Median (Range)
+Nuclear Grade
+Low
+2 (2.1%)
+2 (3.9%)
+0.31
+N (%)
+Moderate
+61 (63.5%)
+26 (51.0%)
+High
+33 (34.4%)
+23 (45.1%)
+Multifocality
+Present
+19 (19.8%)
+17 (33.3%)
+0.14
+N (%)
+Absent
+48 (50.0%)
+24 (47.1%)
+Undetermined
+29 (30.2%)
+10 (19.6%)
+Age
+<50 Years Old
+37 (38.5%)
+15 (29.4%)
+0.11
+N (%)
+50-60 Years Old
+34 (35.4%)
+14 (27.5%)
+>60 Years Old
+25 (26.1%)
+22 (43.1%)
+PAM50 Subtype (Pearson Correction)
+Basal-like
+12 (12.5%)
+9 (17.6%)
+0.01
+N (%)
+Her2-enriched
+9 (9.4%)
+9 (17.6%)
+Luminal-A
+27 (28.1%)
+5 (9.8%)
+Luminal-B
+9 (9.4%)
+12 (23.5%)
+Normal-Like
+20 (20.8%)
+5 (9.8%)
+Undetermined
+19 (19.8%)
+11 (21.6%)
+a Chi-square and t-test statistics for categorical and quantitative variables, respectively
+variants per sample (median 75). The majority (74.2%)
+tumor genomes, is difficult to distinguish from repaired
+were missense mutations, constituting approximately
+FFPE-related artifacts due to their high similarity [22,
+52K unique variants identified in ~ 14K genes. Most of
+25]. However, previous research has demonstrated that
+these genes were not frequently mutated, with only 2,030
+mutational profiles from repaired FFPE samples closely
+genes (14.5%) harboring non-synonymous aberrations in
+match true tumor mutational profiles [25], and we expect
+at least 5 patients.
+that our careful processing of mutation calling-pipeline
+As expected, most mutations are of C>T type (bar-
+minimizes the impact of these artefacts [23].
+plot in Fig. 1), a common mutational pattern attributed
+Interestingly, a subset of DCIS samples exhibit a sig-
+to the spontaneous deamination of 5-methylcytosine,
+nificantly higher tumor mutational burden (TMB), char-
+a process frequently observed in many cancer genomes
+acterized by an increase in frequency of C>G, T>C,
+[21, 22]. Spontaneous deamination can be exacerbated
+and C>A mutations, and enrichment of specific SBS
+in formalin-fixed paraffin-embedded (FFPE) samples due
+signatures including SBS26, SBS7b, and SBS5 (Fig. 1, 12
+to DNA damage [23]. FFPE-related mutational artefacts
+samples on the right). The causes underlying these muta-
+are known to resemble certain COSMIC signatures [24],
+tional signatures remain incompletely understood. How-
+such as SBS30 and SBS1 [25]. During library preparation,
+ever, SBS26 has been linked to impaired mismatch repair
+formalin-induced DNA lesions are chemically repaired
+and microsatellite instability. These cases were not more
+with unrepaired profiles resembling SBS30 and repaired
+likely to have a recurrence, of a higher grade or of a spe-
+profiles resembling SBS1 [25]. While SBS30 was not
+cific molecular subtype but were predominantly found in
+identified in our dataset, SBS1 was detected in a large
+younger patients (8 out of 12 under 50 years; Chi-square
+number of samples (Fig. 1). SBS1, commonly found in
+test p-value 0.05).
+Rizvi et al. Breast Cancer Research
+(2025) 27:127
+Page 4 of 19
+Point mutation type
+C>A
+6000
+C>G
+C>T at CpG
+TMB
+4000
+C>T other
+T>A
+2000
+T>C
+T>G
+0
+local recurrence
+grade
+subtype
+age
+local recurrence
+invasive LR
+SBS10b
+Signature
+relative
+in-situ LR
+SBS1
+contribution
+no LR
+(z-score)
+SBS15
+grade
+High
+6
+SBS31
+Moderate
+4
+Low
+SBS12
+2
+subtype
+SBS13
+LumA
+0
+LumB
+SBS19
+-2
+Basal
+Normal
+SBS5
+-4
+Her2
+SBS7b
+-6
+NA
+age
+SBS26
+over60
+SBS6
+50-60
+under50
+Fig. 1 Mutational signatures in pure DCIS samples. The top panel shows tumor mutational burden (TMB) with distribution of point mutation
+types. Clinical annotations display 10-year local recurrence outcome, tumor grade, molecular subtype, and patient age. The bottom heatmap
+depicts the row-scaled relative contribution of single base substitution (SBS) signatures detected in at least 10 samples (z-score). Samples (columns)
+and signatures (rows) are ordered based on a rank-sum statistic that maximizes the coherence of contribution patterns. The method first splits
+signatures into two groups using medoid clustering. For each signature, relative contributions are ranked within each group, and the final sample
+ordering is determined by the average rank-sum across all signatures
+These findings highlight distinct mutational processes
+and MYOB15; 12% each), collagen genes (COL18A1 and
+in some early-onset DCIS cases, though these molecular
+COL4A3; 12% and 10%, respectively), and mucin genes
+features were not associated with prognosis.
+(МИСЗА, MUC4, MUC22, and MUC5AC) also showed
+alterations (10-12% of cases each). While mucin genes are
+Pure DCIS is associated with high frequency of mutations
+typically large and can accumulate mutations by chance,
+in genes involved cell adhesion, polarity, tissue structure
+these specific mucin genes were not identified as FLAGS
+and function
+(FrequentLy mutAted GeneS) and therefore not excluded
+Analysis of pure DCIS revealed distinct patterns of recur-
+in our analysis (See Methods). Given our stringent rules
+rent mutations across multiple genes (Fig. 2). PIK3CA
+for mutation calling, these findings suggest that muta-
+was the most frequently mutated gene (15% of cases),
+tions in mucin and other genes controlling epithelial-
+followed by FSIP2 and KIR3DL3 (14%). We also identi-
+components including cellular morphology, epithelial
+fied functional gene groups among the most frequently
+function and adhesion are central to the physiopathology
+mutated genes including several motor genes converting
+of pure DCIS.
+chemical energy to mechanical force (DNAH12, DNHD1,
+Rizvi et al. Breast Cancer Research
+(2025) 27:127
+Page 5 of 19
+a
+3482
+TMB
+# samples
+0
+22
+0
+PIK3CA
+15%
+FSIP2
+14%
+KIR3DL3
+14%
+ADGRV1
+13%
+13%
+DNAH12
+12%
+DNHD1
+CCDC168
+12%
+12%
+GRIN3B
+12%
+KIAA1109
+12%
+RELN
+12%
+ZFYVE26
+12%
+BIRC6
+11%
+CACNA1H
+11%
+CFAP46
+11%
+PKD1L3
+11%
+SPATA31E1
+11%
+11%
+CCDC880
+10%
+10%
+10%
+HMCN2
+10%
+10%
+MUC22
+10%
+NAV2
+10%
+RREB1
+10%
+STARD9
+10%
+AC099489.1
+10%
+ACACB
+10%
+C10orf71
+10%
+CEACAM20
+10%
+COL4A3
+10%
+GOLGB1
+10%
+HEG1
+10%
+HIVEP1
+10%
+IQCA1L
+10%
+LOXHD1
+10%
+LRBA
+10%
+MUC3A
+10%
+PCDH15
+10%
+PRAG1
+10%
+PTPRB
+10%
+WDFY4
+10%
+age
+grade
+subtype
+Age
+Grade
+Subtype
+Variant classification
+under50
+High
+Basal
+Missense mutation
+Translation start site
+50-60
+Low
+Her2
+Splice site
+Nonsense mutation
+over60
+Moderate
+LumA
+Frame-shift deletion
+In-frame insertion
+LumB
+In-frame deletion
+Multi hit
+Normal
+Frame-shift insertion
+NA
+b
+Age
+Grade
+Subtype
+0.75
+0.75
+0.75
+5/18
+5/18
+6/18
+11/52
+0.5
+13/56
+0.5
+6/47
+7/52
+7/52
+0.5
+proportiion of mutated samples
+0.25
+proportiion of mutated samples
+0.25
+proportiion of mutated samples
+0.25
+0
+0
+0
+0.25
+0/100
+0/95
+0/95
+2/95
+0.25
+3/87
+0.25
+1/99
+1/99
+4/99
+0.5
+0.5
+0.5
+0.75
+ERBB4
+FILIP1L
+CFAP61
+FREM1
+0.75
+TP53
+0.75
+ASH1L
+NAGPA
+DMD
+under50
+over60
+Rest
+High grade
+Rest
+Her2-subtype
+Rest
+Fig. 2 The most frequently mutated genes and association with clinico-pathological variables in pure DCIS patients. a The top 50 most frequent
+non-synonymous small variants identified in pure DCIS lesions. Samples are in columns and variants are color-coded based on their classification.
+The TMB for each lesion is displayed at the top of the heatmap. Samples are organized by age at diagnosis, with additional clinico-pathological
+features-grade and subtype-depicted at the bottom. b Mutated genes significantly associated with specific clinico-pathological variables (False
+discovery rate [FDR] <0.001). The barplots show the proportion of mutated samples within specific categories: age group (left), high grade (middle),
+and Her2-subtype (right). Proportions for each category are compared to the proportions of mutated samples in the other respective groups
+(shown in grey)
+Rizvi et al. Breast Cancer Research
+(2025) 27:127
+Page 6 of 19
+We also identified a few mutated genes enriched in dis-
+p-value 0.05; Fig. 3a-b). These mutations, occurring
+tinct clinico-pathological groups including patients with
+in 4-7% of cases, were largely mutually exclusive and
+early-onset DCIS (FILP1L, CFAP61, FREM1) or later-
+occurred across molecular subtypes and grades.
+onset (ERBB4), high-grade lesions (TP53) and Her2-
+The presence of mutations in at least one of these genes
+enriched subtype (ASHIL, NAGPA, DMD) (Fig. 2B).
+was significantly associated with increased recurrence
+Collectively, these findings highlight that pure DCIS
+risk (Fig. 3c, log-rank p-value p<0.0001), with MYO7A
+harbors frequent mutations in genes governing tissue
+and PDZD8 showing the strongest associations (Firth's
+architecture and cell- cell interactions, suggesting these
+penalized likelihood Cox regression HR 4.4, Fig. 3b).
+alterations may be fundamental to DCIS development.
+Gene Ontology analysis revealed that most genes are
+involved in multiple interrelated cellular processes
+Established cancer driver genes are present in pure DCIS
+including cell adhesion (MYO7A, SH2B2), organization
+but lack prognostic capacity
+and function of the cellular membrane (PDZD8, MUCL3,
+To identify potential cancer driver genes, we analyzed
+MYO7A), and cellular organization and cytoskeleton
+the ratio of non-synonymous to synonymous mutations
+(MYO7A, PDZD8) (Fig. 3d). Additionally, DNASE2B, a
+(dN/dS) across all genes, which can indicate positive
+member of the DNase II family of endonucleases, was
+selection of mutations that provide growth advantages
+identified among the significant genes. These findings
+to cancer cells [26]. This analysis identified two signifi-
+underscore how cytoskeletal reorganization, changes
+cantly mutated driver genes in pure DCIS: PIK3CA and
+in cell structure, and compromised cell adhesion might
+TP53 (FDR Both genes were also among the most
+contribute to increased risk of recurrence within 10 years
+frequently mutated genes (Fig. 2a, red-labelled genes).
+after a DCIS diagnosis.
+While PIK3CA mutations were not enriched in specific
+molecular subtypes, TP53 mutations were significantly
+more frequent in basal-like and Her2-enriched subtypes
+Mutations in genes governing cytoskeletal organization
+compared to other subtypes (19% in basal-like [4/21],
+and membrane dynamics associated with radiotherapy
+33% in Her2-enriched [6/18] vs 5% in other subtypes
+resistance
+[4/78], Chi-square test <0.005).
+To identify predictive biomarkers for RT response, we
+Out of 34 samples carrying a mutation in at least one
+analyzed mutations associated with 10-year local recur-
+of these driver genes, 15 samples harbored at least one
+rence in a cohort restricted to patients who received RT.
+potentially actionable alteration as indicated by OncoKB
+This analysis revealed 29 genes significantly associated
+(Supplementary Fig. 1). The mutation spectrum in
+with an increased risk of recurrence (Firth's penalized
+PIK3CA was dominated by the activating H1047R hot-
+likelihood Cox regression p-value 0.05 & permuted
+spot mutation (~50%) in the kinase domain of exon 21,
+p-value 0.05; Fig. 4a). Notably, these mutations often
+known to enhance PI3K-mitigated pathway signaling
+co-occurred, with at least two mutated genes present
+(Supplementary Fig. 1a) [27, 28]. Similarly, TP53 muta-
+in approximately 27% of lesions (20/73 patients treated
+tions clustered in known hotspots within the DNA-
+with RT).
+binding domain, which may result in the loss of tumor
+In RT-treated patients, lesions harboring mutations in
+suppression by affecting its ability to bind to DNA (Sup-
+at least two of these genes exhibited a markedly increased
+plementary Fig. 1b).
+risk of LR (Firth's penalized likelihood Cox regression
+Despite their established roles in cancer progression,
+HR=4.8, 95% CI: 2.1-11.2, =0.0002), with most muta-
+none of these driver mutations was associated with
+tion-positive recurrences occurring within 5 years post-
+10-year LR risk (Firth's penalized likelihood Cox regres-
+RT (Fig. 4b). Notably, while mutations in SH2B2 and
+sion p-value 0.5), suggesting that additional factors
+MUCL3 were significantly associated with prognosis in
+influence DCIS prognosis.
+both the overall cohort and the RT-treated subgroup, an
+RT-stratified analysis revealed that lesions harboring two
+Identification of mutations associated with increased local
+mutations in the remaining 26 genes (which were altered
+recurrence risk regardless of treatment
+in at least five lesions in the no-RT group) were predic-
+To identify potential prognostic markers, we analyzed
+tive of prognosis only in RT-treated patients <0.0001)
+mutated genes associated with the risk of invasive or
+and not in those who did not receive RT (p>0.5) (Sup-
+in-situ LR in the ipsilateral breast occurring between
+plementary Fig. 2).
+6 months and 10 years after diagnosis. Our survival
+Given the frequent co-occurrence of these muta-
+analysis identified five biomarkers each significantly
+tions, we assessed whether overall TMB might explain
+associated with increased 10-year LR risk (Firth's penal-
+the increased recurrence risk. Although several high-
+ized likelihood Cox regression p-value 0.01 & permuted
+TMB lesions were observed among patients with these
+Rizvi et al. Breast Cancer Research
+(2025) 27:127
+Page 7 of 19
+a
+b
+3396-
+TMB
+HR
+0
+# samples
+11
+(95% CI)
+p-value
+Gene
+0
+SH2B2
+7%
+3.71
+0.003
+SH2B2
+(1.65-7.38)
+MYO7A
+6%
+6.26
+0.001
+MYO7A
+(2.26-
+14.16)
+MUCL3
+5%
+4.21
+0.004
+MUCL3
+(1.67-8.93)
+DNASE2B
+5%
+3.72
+0.008
+DNASE2B
+(1.48-7.91)
+PDZD8
+4%
+4.45
+0.006
+PDZD8
+(1.62-9.95)
+local recurrence
+3
+10
+30
+age
+grade
+subtype
+Age
+Grade
+Subtype
+Local recurrence
+Variant classification
+under50
+High
+Basal
+invasive LR
+Missense mutation
+d
+50-60
+Low
+Her2
+in-situ LR
+Nonsense mutation
+Cellular Component GO Terms
+over60
+Moderate
+LumA
+no LR
+Frame-shift deletion
+LumB
+In-frame deletion
+supramolecular complex
+Normal
+NA
+Multi hit
+stereocilium base
+stereocilia tip-link density
+c
+stereocilia coupling link
+photoreceptor outer segment
+1.00
+Non-mutated
+photoreceptor inner segment
+organelle subcompartment
+Mutated
+0.75
+organelle membrane contact site
+organelle
+LRFS
+myosin complex
+0.50
+membrane
+intracellular anatomical structure
+0.25
+extracellular region
+p < 0.0001
+endomembrane system
+cytosol
+0.00
+cytoplasm
+0
+3
+6
+9
+Time in years
+cluster of actin-based cell projections
+ciliary transition zone
+Number at risk: n (%)
+cell projection
+cell periphery
+Major annotations
+123 (100)
+107 (87)
+100(81)
+92 (75)
+cell leading edge
+Strata
+Cellular organizaiton &
+cell junction
+cytoskeleton
+apical part cell
+24 (100)
+12(50)
+9 (38)
+(29)
+Organization and function
+of the cellular membrane
+actomyosin
+actin filament bundle
+0
+3
+6
+9
+Cell adhesion
+Time in years
+Others
+DNASE2B
+MYO7A
+Fig. 3 Gene variants associated with an increased 10-year LR risk in DCIS. a Samples are in columns and variants are color-coded based on their
+classification. LR status and clinico-pathological characteristics of each lesion are depicted at the bottom. LR is defined as any recurrence, in situ
+or invasive, in the ipsilateral breast occurring between 6 months and 10 years after diagnosis. Right-hand side reports the proportion of each variant
+classification type. b Hazard ratio and confidence intervals for each significant mutated gene associated with increased 10-year LR risk (Firth's
+penalized likelihood Cox regression). c Kaplan-Meier analysis of local recurrence-free survival (LRFS) comparing patients with mutations in at least
+one of the 5 genes (red) versus those without mutations (blue). d Cellular component Gene Ontology (GO) terms annotations for each significant
+gene
+mutations (Fig. 4a,c), TMB itself was not significantly
+regulation, cellular polarity, and membrane dynamics-
+associated with LR risk (Firth's penalized likelihood Cox
+processes essential for invasive behavior (Fig. 4d).
+regression p=0.8). Indeed, many lesions with high TMB
+Alterations in SH2B2 and SORBS1, which modu-
+remained recurrence-free over 10 years, suggesting that
+late stress fiber formation and actin remodeling, and in
+specific mutations-not overall mutation load-drive LR
+PTPN13 and WWC1, which affect actomyosin tension
+after RT. We further examined potential confounding
+at the cell leading edge, suggest disruptions in cytoskel-
+by clinico-pathological variables (i.e. age, grade, tumor
+etal dynamics. Additional genes associated with progno-
+size, multifocality and subtype) by adjusting our survival
+sis in RT-treated include KRT1, MUCL3, TMEM132C,
+model for each factor. The predictive value of these muta-
+TTLL10, EML5, CEP128, CFAP47, and KIF24, all of
+tions remained significant (Firth's penalized likelihood
+which contribute to maintaining cellular architecture,
+Cox regression p-values 0.005), supporting their role as
+polarity, and adhesion (Fig. 4a). In addition, alterations in
+an independent risk factor for recurrence following RT.
+metabolic regulators-such as MGAM2 and AADACL3-
+Functional analysis revealed a network of interre-
+could influence the energetic and biosynthetic demands
+lated cellular functions involved in actin cytoskeleton
+required in response to RT-induced stress, while REV1 is
+Rizvi et al. Breast Cancer Research
+(2025) 27:127
+Page 8 of 19
+a
+3148
+c
+TMB
+0
+8
+0
+# samples
+WWC1
+11%
+KRT1
+11%
+p
+^
+0.001
+ABCA2
+10%
+CEP128
+10%
+8
+PTPN13
+10%
+AADACL3
+10%
+PCSK1
+8%
+TMEM132C
+8%
+SORBS1
+8%
+CTBP2
+8%
+TTLL10
+8%
+EML5
+8%
+MGAM2
+8%
+CFAP47
+8%
+TBC1D4
+8%
+non-synonymous variants (log2)
+6
+ANO6
+7%
+4
+SH2B2
+7%
+REV1
+7%
+C6orf1
+7%
+MUCL3
+7%
+MAGEC3
+7%
+EXD3
+7%
+NPFFR1
+7%
+2
+GLI3
+7%
+ZNF641
+7%
+Non-mutated
+Mutated
+AFF3
+7%
+MROH2B
+7%
+CALU
+7%
+KIF24
+7%
+Local recurrence
+local recurrence
+age
+No
+grade
+Yes
+subtype
+Age
+Grade
+Subtype
+Local recurrence
+Variant classification
+d
+under50
+High
+Basal
+invasive LR
+Missense mutation
+50-60
+Low
+Her2
+in-situ LR
+Nonsense mutation
+over60
+Moderate
+LumA
+no LR
+Frame-shift deletion
+actin filament bundle
+LumB
+In-frame deletion
+actomyosin
+Normal
+Frame-shift insertion
+NA
+Multi hit
+b
+1.00
+contractile actin filament bundle
+0.75
+cell leading edge
+LRFS probability
+0.50
+ruffle
+0.25
+centriole
+Non-mutated
+p
+0.0001
+transcription repressor complex
+Mutated
+0.00
+0
+3
+6
+9
+stress fiber
+FDR
+Time in years
+0.21
+Number at risk: n (%)
+0.19
+number of genes
+0.17
+53 (100)
+50 (94)
+46 (87)
+44 (83)
+2
+Strata
+0.15
+20 (100)
+12 (60)
+(45)
+(40)
+3
+0.13
+0
+3
+6
+9
+Time in years
+Fig. 4 Mutations associated with radiotherapy resistance in DCIS. a An oncoplot showing the distribution of mutations in 29 genes significantly
+associated with LR in RT-treated patients. Color-coding indicates mutation types; clinical annotations show age, grade, molecular subtype,
+and 10-year recurrence status. b Kaplan-Meier analysis of LRFS comparing patients with mutations in at least two of the 29 genes (red)
+versus those without mutations (blue). c Distribution of TMB, shown as number of non-synonymous variants, log2 scale) for lesions with at least
+one mutation in two genes associated with LRFS colored by recurrence status at 10 years. d GO cellular component enrichment network analysis
+of recurrence-associated genes in RT-treated DCIS. Network visualization shows enriched GO terms (FDR (0.2) from genes linked to LR following RT.
+Nodes represent individual GO terms with size proportional to gene count (>2), and edges indicate significant semantic similarity between terms.
+Node color intensity corresponds to enrichment significance
+implicated in DNA damage tolerance, a critical safeguard
+Differential mutational associations with in-situ
+following genotoxic stress.
+versus invasive local recurrence after radiotherapy
+Collectively, these findings highlight the pivotal roles
+To investigate whether individual mutations are preferen-
+of cytoskeletal reorganization, membrane remodeling,
+tially linked to either in-situ or invasive LR, we refitted
+metabolic regulation, and DNA repair pathways in the
+the gene-based survival models using each LR type as the
+response to RT. The prognostic significance of these
+sole endpoint (the alternative event was censored) and
+mutations in RT-treated patients suggests that these gene
+stratified the analyses by RT. For the full cohort we had
+alterations may mediate resistance mechanisms triggered
+retained genes with p<0.01 and permutation p<0.05;
+by RT-induced stress.
+for the smaller RT-treated group we used p 0.05 and
+Rizvi et al. Breast Cancer Research
+(2025) 27:127
+Page 9 of 19
+a
+c
+30
+3148-
+Set Size
+20
+TMB
+10
+0
+samples
+7
+0
+0
+ZSWIM6
+10%
+CEP295
+8%
+19
+SETX
+8%
+15
+CACNA11
+7%
+EPRS1
+7%
+13
+HDAC6
+7%
+9
+NEXMIF
+7%
+2 MYO7A, PDZD8
+NIBAN1
+7%
+CFAP47, KRT1
+PDCD6IP
+7%
+PRRT4
+7%
+TENM4
+SLC3A1
+7%
+DNASE2B
+TNKS1BP1
+7%
+TYK2
+7%
+MUCL3
+local recurrence
+SH2B2
+age
+grade
+C6orf118
+subtype
+0
+5
+10
+15
+20
+IIII
+d
+In-situ LR
+Non-mutated
+Intersection Size
+Invasive LR
+Mutated
+1.00
+1.00
+b
+3148-
+0.75
+0.75
+TMB
+LRFS
+0.50
+LRFS
+0.50
+0
+samples
+10
+0
+0.25
+0.25
+PIEZO1
+p 0.0001
+p=0.35
+14%
+PRAG1
+14%
+WDFY4
+0.00
+0.00
+14%
+FOCAD
+0
+3
+9
+0
+3
+11%
+Time in years
+Time years
+DMD
+10%
+MSLNL
+10%
+Number at risk: (%)
+Number at risk: (%)
+OR52L1
+10%
+PLBD1
+10%
+53 (100)
+49 (92)
+44 (83)
+42 (79)
+53 (100)
+49 (92)
+44 (83)
+42 (79)
+PRUNE2
+10%
+Strata
+SH3TC1
+10%
+20
+(100)
+13(65)
+11(55)
+10(50)
+20 (100)
+13(65)
+11(55)
+10(50)
+XYLT2
+10%
+ZNF646
+10%
+0
+3
+6
+9
+0
+3
+6
+ACTL9
+8%
+Time years
+Time years
+FANCM
+8%
+e
+NAA25
+In-situ LR
+Non-mutated
+8%
+Invasive LR
+PCDHB10
+Mutated
+8%
+ECPAS
+1.00
+7%
+1.00
+GPR150
+7%
+SHANK3
+7%
+0.75
+0.75
+local recurrence
+age
+LRFS
+0.50
+grade
+0.50
+subtype
+Age
+Grade
+Subtype
+Local recurrence (LR)
+Variant classification
+0.25
+p 0.47
+0.25
+p=0.00065
+under50
+High
+Basal
+no LR
+Missense mutation
+50-60
+Low
+Her2
+. in-situ l
+over60
+invasive LR
+Nonsense mutation
+Moderate
+LumA
+0.00
+0.00
+Frame deletion
+LumB
+0
+3
+6
+9
+in-frame deletion
+0
+3
+6
+Normal
+Time in years
+NA
+In- frame insertion
+Time years
+Splice site
+Multi hit
+Number at risk: (%)
+Number at risk: (%)
+57 (100)
+50 (88)
+48 (84)
+45(79)
+Strata
+57 (100)
+50 (88)
+48 (84)
+45(79)
+Strata
+16(100)
+12(75)
+7 (44)
+7 (44)
+16(100)
+12(75)
+7 (44)
+7 (44)
+0
+3
+6
+9
+0
+3
+6
+9
+Time years
+Time years
+Fig. 5 Differential mutational associations with in-situ versus invasive local recurrence after radiotherapy. a An UpSet plot showing the number
+of genes significantly associated with risk of invasive, in-situ or any LR in the whole cohort (all) and in RT-treated (RT) or untreated patients (noRT),
+with intersections between gene lists indicated by connected dots below and corresponding size of the intersection depicted in the barplot
+on the right. b Oncoplot showing mutations in genes uniquely associated with in-situ LR (n = 19) in RT-treated patients. Color-coding indicates
+mutation types; clinical annotations show age, grade, molecular subtype, and recurrence status. c Similar to b but showing mutations in genes
+uniquely associated with invasive LR (n= 13) in RT-treated patients. d Kaplan-Meier analysis of in-situ (left) or invasive (right) LRFS comparing
+patients with mutations in at least two of the 19 genes uniquely associated with in-situ LR (red) versus those without mutations (blue). e Similar
+to d but comparing in-situ or invasive LRFS between patients with mutations in at least two of the 13 genes uniquely associated with invasive LR
+versus those without mutations
+permutation p < 0.05. As in the main analysis, many sig-
+thirteen were unique to invasive LR (Fig. 5c) within the
+nificant associations were found in RT-treated patients,
+RT subgroup. The Kaplan-Meyer analyses demonstrate
+with some overlap with significant genes found in the
+that patients whose lesions harbor mutations in at least
+whole cohort (Fig. 5a).
+two genes from either the in-situ-specific or invasive-
+Three genes-MUCL3, SH2B2 and C6orf118-were
+specific gene sets show significantly worse LR-free
+associated with outcome in at least three out of six anal-
+survival only for the corresponding recurrence type
+yses (Fig. 5a). In RT-treated tumours, fifteen genes were
+(Fig. 5d,e).
+associated with in-situ LR or with "any LR", and two
+Functional annotation indicates that mutations
+genes (CFAP47, KRT1) were associated with invasive or
+uniquely linked to in-situ LR occur mainly in genes that
+with "any LR" (Fig. 5a). Nineteen additional genes were
+preserve epithelial architecture and mechanosensing:
+uniquely associated with in-situ LR (Fig. 5b), whereas
+anchoring-junction components that couple cells to
+Rizvi et al. Breast Cancer Research
+(2025) 27:127
+Page 10 of 19
+neighbouring cells or to the extracellular matrix (DMD,
+invasive LR specifically, four regions were shared (losses
+FOCAD), the stretch-activated channel PIEZO1, and
+in 5q32-33, 9p21, 18p11), with two additional losses
+scaffolds/adaptors localised to actin-rich membrane
+identified in 9p13 and 8q11 and one gain in 5p15 (Firth's
+projections such as invadopodia (SHANK3, PRAG1).
+penalized likelihood Cox regression p-value 0.01 & per-
+The set also includes WDFY4, a WD-repeat/FYVE-
+muted p-value 0.05).
+domain autophagy adaptor implicated in MHC-II antigen
+Copy number losses could alter critical tumor sup-
+presentation.
+pressor functions, as evidenced by the presence of sev-
+Conversely, mutations associated with invasive LR
+eral well-known tumor suppressor genes within these
+after RT mapped to genes involved in late cytokinetic
+regions. Notable examples include CDKN2A at 9p21 (a
+abscission (PDCD6IP), centriole-to-centrosome matura-
+key regulator of cell cycle progression), PRDM4 at 12q23-
+tion (CEP295), DNA-damage sensing and repair (SETX,
+24 (involved in cell differentiation and tumorigenesis)
+TNKS1BP1), calcium-regulated motility (CACNA11) and
+[29], SPARC at 5q33 (important for extracellular matrix
+cytokine-dependent inflammatory signalling (TYK2).
+synthesis and modulation of cell shape) [30] and MITO-
+Because stratifying simultaneously by treatment and
+STATIN at 12q24 (a mitochondrial protein with tumor
+LR type reduces sample size and event numbers, we can-
+suppressor activity) [31]. Additional loss highlights dis-
+not exclude the possibility that some endpoint-specific
+ruptions in cell adhesion and intercellular contacts as
+associations-or the absence of others-reflect differ-
+loss of 18p11 may affect DAL-1, a known regulator of cell
+ences in statistical power. Nevertheless, these findings
+adhesion and link between cell membrane and cytoskel-
+suggest that distinct biological programs-structural
+eton [32, 33].
+maintenance versus cell-cycle, genome-stability and
+Gains were identified in regions harboring oncogenes
+inflammatory pathways-underlie in-situ and invasive
+or potential cancer-related genes. For example, amplifi-
+patterns of recurrence after RT.
+cation in the 11q region-including 11q13, which con-
+tains CCND1 and CTTN- previously associated with
+Copy number alterations display molecular
+breast cancer aggressiveness [34, 35]. Additionally, a gain
+subtype-specific patterns with select genomic regions
+in 5p14 includes four cadherin genes (CDH10, CDH9,
+linked to local recurrence
+CDH12, CDH18) and PRDM9, whose aberrant expres-
+Analysis of copy number alterations (CNAs) revealed
+sion has been associated with genomic instability [36].
+recurrent chromosomal changes similar to those
+Collectively, these findings demonstrate that the CNAs
+reported in invasive breast cancer (Fig. 6a). Significant
+associated with 10-year LR not only affect regions har-
+gains were identified on chromosomal arms 1q, 8q, 16p,
+boring established tumor suppressors and oncogenes but
+17q, 20p, and 20q, while losses predominantly occurred
+also target regions involved in cell structural integrity
+on 8p, 9p, 11q, 13q, 14q, 16q, and 17p (binomial test,
+and cell-cell interactions, potentially contributing to an
+FDR 0.05).
+aggressive and treatment-resistant phenotype.
+Global CNA burden varied considerably across sam-
+ples, with approximately half showing minimal altera-
+tions (global CNA score -0.58; Fig. 6b). Basal-like
+Contextualizing our genomic findings with prior profiling
+tumors exhibited greater CNA burden, while normal-like
+studies: consistent early mutational drivers, novel
+tumors showed fewer alterations (Fig. 6b, Supplementary
+subtype-specific CNA patterns, and predictors of RT
+Fig. 2a). Similarly, high-grade lesions showed a greater
+response
+CNA burden compared to low-grade lesions (Supple-
+Most prior DCIS genomic studies analyzed small cohorts
+mentary Fig. 3b).
+(<100 cases) and primarily focused on DCIS cases with
+We identified distinct CNA patterns across molecular
+concurrent invasive disease (synchronous DCIS) rather
+subtypes: basal-like tumors showed enrichment for gains
+than pure DCIS (Supplementary Table 2). While recent
+on 8q, 13q, and 19q; LumA tumors frequently exhibited
+larger studies, such as those by Strand et al. (2022) [20]
+16q loss; and Her2-enriched tumors showed characteris-
+and Kader et al. (2024) [37], examined hundreds of pure
+tic 17q12 gains corresponding to the ERBB2 locus (Fish-
+DCIS cases, their reliance on low-pass sequencing or
+er's exact test, p 0.005; Supplementary Fig. 3c).
+lack of matched normal tissues limits the sensitivity for
+Fourteen cytoband regions were significantly associ-
+detecting genomic changes, particularly when working
+ated with increased 10-year LR risk after grade adjust-
+with FFPE samples, which are often the only available
+ment (Firth's penalized likelihood Cox regression p-value
+option for DCIS studies.
+& permuted p-values 0.05; Fig. 6c). These included
+Across studies, PIK3CA and TP53 consistently
+copy number losses in five non-adjacent cytobands and
+emerged as the most frequently mutated genes in DCIS
+gains in three non-adjacent cytobands. When analyzing
+(and invasive disease), with mutation rates ranging
+Rizvi et al. Breast Cancer Research
+(2025) 27:127
+Page 11 of 19
+a
+Chromosomes
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+50
+gain loss, copy neutral LOH
+25
+0
+25
+50
+CN-LOH
+CNA
+-4
+-3
+-2
+-1
+1
+2
+3
+4
+5
+≥ 6
+b
+c
+GCS
+subtype
+grade
+GCS
+age
+GCS
+subtype
+grade
+chr 5p15
+chr 5p14
+chr 5p13
+chr 17q21
+chr 11q12
+chr 11q13
+chr 14q23
+chr 14q24
+chr 9p22
+chr 9p21
+chr 18p11
+chr 12q24
+age
+chr 5q32
+chr 5q33
+Ir
+5
+Ir
+chr1
+-1
+chr2
+Subtype
+LumA
+chr3
+LumB
+Basal
+chr4
+Normal
+Her2
+chr5
+NA
+Grade
+chr6
+High
+Moderate
+chr7
+Low
+chr8
+Age
+chr9
+over60
+chr10
+50-60
+chr11
+under50
+chr12
+Local
+chr13
+recurrence
+invasive LR
+chr14
+in-situ LR
+chr15
+no LR
+chr16
+chr17
+chr18
+chr19
+chr20
+chr21
+chr22
+log2 (seg. mean)
+-3
+-10 1
+3
+gain
+loss
+Fig. 6 Frequent copy number alterations in pure DCIS and associations with 10-year LR risk. a Genome-wide frequency of absolute copy
+number gains and losses across chromosomes 1-22 (1 Mb window). The estimated ploidy for each sample is subtracted from the copy number
+values of each segment which means that a copy number of 0 is no copy number change. The y-axis shows the percentage of samples
+with each alteration type. Asterisks indicate statistical significance for chromosomal arm alterations b Heatmap showing copy number
+profiles per cytoband across samples (rows), ordered by global CNA score (GCS). Sample annotations include age, grade, molecular subtype
+and LR status at 10 years. c Heatmap of twenty genomic regions significantly associated with 10-year risk of local recurrence (Firth's penalized
+likelihood Cox regression p-value < 0.05 adjusted for grade), showing copy number status. CNAs present in at least 5 patients are shown, with copy
+number gains in red and losses in blue. Samples and regions were clustered using Ward's hierarchical clustering with Minkowski distance metric
+Rizvi et al. Breast Cancer Research
+(2025) 27:127
+Page 12 of 19
+from 21-55% and 17-52%, respectively (Supplementary
+role in resistance mechanisms activated by RT-induced
+Tables 2-3). In our cohort, PIK3CA and TP53 were also
+stress.
+among the most frequently mutated genes and identi-
+fied as tumorigenesis drivers in pure DCIS. Mutations
+Discussion
+in GATA3 and ERBB2, which were reported in several
+Our study provides a comprehensive analysis of pure
+studies, were only detected in a small number of lesions
+DCIS, focusing on DNA profiles associated with disease
+in our cohort (n=3 and 7, respectively, Supplementary
+prognosis and response to RT. While previous research
+Table 3). Overall, we observe very little overlap between
+has primarily examined genomic changes in synchronous
+genes reported as frequently mutated across studies
+DCIS compared to IDC or pure DCIS, our work offers
+(Supplementary Table 3). Differences across studies likely
+a detailed view of the mutational landscape specific to
+reflect variations in methodology, including variant-call-
+pure DCIS and its association with LR. Importantly, we
+ing pipelines, sample types (e.g., synchronous vs. pure
+identified genomic alterations associated with molecu-
+DCIS), cohort composition (e.g., histological grade and
+lar subtypes and, most critically, LR-both regardless of
+ER/HER2 status), and our study's specific focus on LR
+treatment and specifically in cases following RT-high-
+and RT response, complicating direct comparisons. Nev-
+lighting potential molecular drivers of treatment out-
+ertheless, the consistent identification of PIK3CA and
+comes. We also observed distinct mutational processes
+TP53 as the most frequently mutated genes across stud-
+in early-onset DCIS with high tumor mutational burden
+ies and in our cohort reinforces their pivotal roles in the
+potentially driven by impaired mismatch repair, but these
+early stages of breast tumorigenesis.
+were not associated with prognosis.
+Recurrent CNAs in regions such as 1q, 8q, and 17q
+While driver genes like TP53 and PIK3CA are critical
+gains, as well as 8p, 11q, and 16q losses, were observed
+in the early stages of tumorigenesis, our study did not
+in our study, consistent with prior DCIS findings, includ-
+find any significant associations between their muta-
+ing those from Strand et al. (2022) [20] and Abba et al.
+tions and disease progression or response to treatment.
+(2015) [15]. For example, Strand et al. (2022) identified
+These findings suggest that TP53 and PIK3CA mutations
+29 recurrent CNAs in DCIS but found no single CNA
+are essential for overcoming initial biological constraints
+predictive of recurrence [20]. In contrast, we identified
+during early tumor development but may become less
+twenty genomic regions significantly associated with
+relevant to progression once these barriers are surpassed.
+10-year LR risk, including regions containing known
+This aligns with prior research showing that these muta-
+tumor suppressors and oncogenes. These differences may
+tions are frequently retained in invasive carcinoma but
+reflect the higher resolution of our sequencing approach
+occur at higher prevalence in hyperplastic and DCIS
+(100X whole-exome sequencing) compared to the low-
+lesions [38].
+pass sequencing used in prior studies. Our study also
+Furthermore, their prognostic relevance appears to
+provides valuable new insights into molecular subtype-
+depend on tumor clinicopathological characteristics. For
+specific CNA patterns in DCIS. In our cohort, basal-like
+example, Lin et al. [11] observed an inverse association
+tumors exhibited gains on 8q, 13q, and 19q; Luminal A
+between PIK3CA kinase domain mutations in high-grade
+tumors displayed 16q loss; and Her2-enriched tumors
+DCIS tumors and progression, while Silwal-Pandit et al.
+showed 17q12 gains encompassing ERBB2. Aside from
+[39] reported that the prognostic impact of TP53 muta-
+amplifications in HER2-positive subtypes, subtype-
+tions varied across molecular subtypes of invasive breast
+specific CNA analyses remain poorly represented in the
+cancer. These findings underscore the complexity of
+DCIS literature but are well established in invasive breast
+breast cancer progression, where early driver mutations
+cancer (see Supplementary Text). These findings suggest
+interact with additional genetic and microenvironmental
+that genetic and molecular aberrations defining subtypes
+factors to shape disease outcomes.
+likely arise early and are at least partially established at
+We identified recurrent CNAs frequently reported
+the DCIS stage.
+in the literature, including gains on 8q [10-12, 14, 15,
+Finally, while several studies have explored prognos-
+37, 40], 17q [10, 12, 15, 18-20, 37, 40], 20q [37, 40], and
+tic markers of recurrence, few account for treatment
+losses on 11q [10-12, 18, 19, 37] and 16q [10, 13, 14,
+variation, and none specifically examined markers of RT
+20, 40]. These CNAs mirror those observed in invasive
+response (Supplementary Table 2). Our study uniquely
+ductal carcinoma, suggesting that pure DCIS already
+identified genetic alterations within a gene network that
+harbors genomic features characteristic of invasive can-
+integrates cytoskeletal integrity, cell-cell interactions, cell
+cer-including alterations that define molecular subtypes
+adhesion, and metabolism which are associated with an
+(e.g., basal-like, luminal-A, or Her2-enriched tumors; see
+increased risk of LR within ten years following RT. These
+Supplementary Text). Moreover, this observation is con-
+findings suggest that these alterations may play a critical
+sistent with earlier transcriptional and epigenetic studies
+Rizvi et al. Breast Cancer Research
+(2025) 27:127
+Page 13 of 19
+that show subtype-specific alterations in gene expression
+regions like 11q, which includes oncogenic drivers such
+and DNA methylation are already evident in DCIS [41,
+as CCND1 and CTTN, suggest that oncogene amplifica-
+42]. These findings suggest that genetic and molecular
+tion may further contribute to tumor aggressiveness and
+aberrations defining subtypes likely emerge early - being
+ultimately patient prognosis. Gains at 5p14, containing
+at least partially established at the DCIS stage - and sup-
+cadherin genes (CDH10, CDH9, CDH12, CDH18), again
+port a model of subtype-specific progression from DCIS
+emphasize the importance of maintaining epithelial
+to invasive breast cancer [41].
+integrity to prevent LR in pure DCIS patients.
+Importantly, our study also revealed novel associations
+Future studies are warranted to investigate how these
+between mutations in genes regulating cytoskeletal integ-
+mutations interact with other molecular pathways and
+rity, cell membrane organization and function, cell-cell
+microenvironmental factors to elucidate their contribu-
+interactions, and cell adhesion, and the risk of LR in pure
+tion to DCIS prognosis and the adverse effects of RT.
+DCIS. Across the cohort, five genes were significantly
+Such research could help identify strategies to mitigate
+associated with LR, underscoring their potential roles in
+recurrence risk following RT and improve treatment out-
+tumor progression. These mutations were not frequently
+comes [47-49].
+co-occurring in the same patient, and involved genes
+maintaining cell adhesion (MYO7A, SH2B2), organizing
+Conclusions
+and supporting cellular organization, cytoskeleton and
+Our findings uncover the genomic landscape of pure
+membrane function (PDZD8, MUCL3, MYO7A). When
+DCIS and highlight key factors that contribute to LR
+the cohort was stratified by RT administration, 27 unique
+and mediate the adverse effects of RT. While TP53 and
+genes - excluding SH2B2 and MUCL3 - were significantly
+PIK3CA mutations play important roles in early tumo-
+associated with increased LR risk in RT-treated patients.
+rigenesis, they do not predict recurrence, emphasizing
+Many of these mutations were identified in genes criti-
+the need for alternative biomarkers. We identify distinct
+cal for maintaining cellular architecture, polarity, and
+mutational processes and genetic alterations that dis-
+adhesion, such as KRT1, MUCL3, TMEM132C, TTLL10,
+rupt cytoskeletal integrity, cell-cell interactions and cell
+EML5, CEP128, CFAP47, and KIF24, highlighting how
+adhesion, potentially destabilizing the epithelial tissue
+disruptions in structural integrity and epithelial cell
+environment and contributing to recurrence, particu-
+organization may undermine the effectiveness of RT and
+larly following RT-induced stress. Importantly, our data
+contribute to LR. In addition to structural changes, meta-
+also suggest that in-situ and invasive recurrences after
+bolic regulators like MGAM2 and AADACL3 may influ-
+RT may follow divergent molecular trajectories-muta-
+ence the energetic and biosynthetic demands required for
+tions affecting structural maintenance and mechanosen-
+cell survival and adaptation under genotoxic conditions.
+sory pathways were specifically linked to in-situ relapse,
+Alterations in REV1, a key player in DNA damage toler-
+whereas alterations in cell-cycle regulation, genome sta-
+ance, underscore the importance of effective DNA repair
+bility, and inflammatory signaling characterized inva-
+mechanisms following RT. These findings expand upon
+sive progression. These insights provide a foundation
+prior studies linking disruptions in tissue structure and
+for understanding the genetic basis of DCIS progression
+cell adhesion to DCIS progression [43-46], while provid-
+and identifying potential molecular drivers of treatment
+ing novel insights into their specific roles in recurrence
+resistance. Future research will be essential to translate
+following RT in pure DCIS.
+these insights into clinical practice, guiding the devel-
+Notably, our analysis also revealed distinct biological
+opment of more targeted therapeutic approaches to
+programs underlying in-situ versus invasive recurrence
+improve outcomes for patients with DCIS.
+following RT. Specifically, while some mutations in genes
+involved in structural maintenance and mechanosensory
+Methods
+pathways were uniquely associated with in-situ relapse,
+The Ontario DCIS cohort
+invasive progression was characterized by alterations in
+The Ontario DCIS Cohort was established at the Sun-
+cell-cycle regulation, genome stability, and inflammatory
+nybrook Health Sciences Center (Toronto, Canada) as
+signaling. Because stratifying by both treatment and LR
+a population-based sample of women diagnosed with
+type reduced our statistical power, these molecular dis-
+pure DCIS defined as in situ cancer without any inva-
+tinctions will require confirmation in larger cohorts.
+sive component between 1994 and 2003 [50-52]. All
+Finally, we uniquely identified losses in cytobands har-
+patients underwent BCS, with a subset receiving sub-
+boring established tumor suppressor genes-such as
+sequent RT as part of their standard-of-care. Adjuvant
+CDKN2A in 9p21 and PRDM4 in 12q23-24-as well as
+endocrine therapy was administered to less than 15%
+regions containing genes crucial for cell adhesion and
+of individuals, while none received systemic chemo-
+migration, including DAL-1 in 18p11. In parallel, gains in
+therapy or neoadjuvant endocrine therapy. The cohort
+Rizvi et al. Breast Cancer Research
+(2025) 27:127
+Page 14 of 19
+features comprehensive annotation of clinical annota-
+using the Burrows-Wheeler Aligner (BWA) [64]. Post-
+tion and expert pathology review. Previous studies of this
+alignment procedures included sorting, annotating reads
+cohort have characterized outcomes based on clinical
+with read groups, and marking duplicate reads with
+factors including age at diagnosis, pathological features
+Picard. Base quality score recalibration was conducted
+(tumor size and nuclear grade), and treatment modalities
+using GATK4 tools. A recalibration table was generated
+[53-56].
+with the BaseRecalibrator function using known
+Sample selection was prioritized to achieve bal-
+variant sites (dbSNP138 for SNPs and Mills and 1000
+anced representation between RT-treated and untreated
+Genomes for indels), and recalibration was applied with
+patients, with equivalent distributions of individuals who
+ApplyBQSR to adjust base quality scores and correct for
+did or did not develop an invasive or in-situ ipsilateral
+systematic technical errors. The process focused on Sure-
+recurrence within ten years. Tissue cores were obtained
+Select Human Exons v7 regions with a 100 bp padding.
+from FFPE blocks, sampling DCIS tumors without
+Finally, properly paired reads were extracted, excluding
+microinvasion alongside adjacent normal and stromal
+secondary alignments and low-quality reads, with the
+tissues. DNA and RNA were extracted using the Qiagen
+resulting files indexed using Samtools [65]. After filtra-
+AllPrep FFPE DNA/RNA kit (Qiagen). Samples yielding
+tion, samples had a mean coverage depth of 152X (range:
+sufficient DNA quantities underwent library construc-
+52-308X, standard deviation: 42X).
+tion using the Agilent SureSelect Human Exome library
+preparation kit and were sequenced on the NovaSeq6000
+Single nucleotide variant & indel calling
+platform (100 bp paired-end, 100 M reads/sample) at the
+For variant calling, we used NeuSomatic [66], a deep
+Genome Quebec Innovation Centre (Montreal, Canada).
+learning approach that leverages both tumor and
+While high-quality sequencing data was obtained for 300
+matched normal sequence alignment information, along-
+tumor tissues, downstream analyses focused on 147 sam-
+side somatic mutation calls from six different approaches:
+ples with matched normal profiles (144 normal tissue and
+MuTect2, MuSE, VarDict, VarScan2, Strelka2, and
+3 stroma non-epithelial samples).
+SomaticSniper [67-72]. This method was selected
+Molecular subtypes were determined using RNA pro-
+because of the low level of agreement between callers in
+files available for a subset of patients (n=122). Sequenc-
+our data - the majority of mutations (88.7%) were iden-
+ing libraries were prepared using RNA Flex kit (Illumina).
+tified by only one caller (Supplementary Fig. 4a) - an
+Raw reads were processed using TrimGalore to remove
+observation consistent with previous studies [73-75].
+adapters and low-quality reads [57], followed by align-
+The number of mutations detected varied significantly
+ment to the human genome (Ensembl release v104) using
+across samples, with the minimum identified in any sin-
+STAR [58]. Reads counts were mapped to genomic fea-
+gle sample being 1,563 mutations, and the maximum
+tures using Rsubread R package [59] and gene counts
+reaching 283,247 mutations (Supplementary Fig. 4a).
+were normalized using the variance stabilizing trans-
+Small-variant calling has become increasingly amena-
+formation implemented in the DESeq2 R package [60].
+ble to deep learning approaches, thanks to the availability
+PAM50 subtype classification was performed using the
+of extensive sequencing data and robust benchmarking
+genefu R package [61] with established centroids [62].
+datasets that cover millions of variants across diverse
+Specifically, normalized expression data of the 50 PAM50
+genomic contexts [76]. A convolutional neural network
+genes were obtained using variance stabilizing transfor-
+architecture leverages information from sequencing
+mation implemented in the DESeq2 R package [60] and
+reads and the reference genome in the vicinity of each
+compared to subtype-specific centroids using Pearson
+candidate variant to approximate complex, nonlinear
+correlations. Each sample was assigned to the molecu-
+functions, accurately classifying loci as homozygous vari-
+lar subtype with which it showed the highest correlation
+ant, heterozygous variant or homozygous reference (non-
+coefficient.
+variant) [66].
+Best practices established using well-characterized
+Whole-exome sequencing data preprocessing
+somatic reference datasets from the SEQC-II consor-
+Raw reads were processed using Trimmomatic [63] (ver-
+tium demonstrated that NeuSomatic models achieve
+sion 0.39) to remove adaptor sequences and low-qual-
+robust performance across various sequencing tech-
+ity bases. Reads were trimmed to retain high-quality
+nologies - including both fresh and FFPE DNA inputs
+sequences, applying quality thresholds of 10 at read ends
+- across a range of tumor/normal purities and sequenc-
+and 20 within a 4-base sliding window. The remain-
+ing coverages, significantly outperforming conventional
+ing paired reads were processed following the GATK4
+approaches [73]. Accordingly, we used the ensemble
+best practices. Briefly, reads were aligned to the human
+extension of NeuSomatic. This extension combines out-
+reference genome (GRCh38, GATK resource bundle)
+puts from six individual variant callers by integrating
+Rizvi et al. Breast Cancer Research
+(2025) 27:127
+Page 15 of 19
+features from 93 channels and incorporates an addi-
+Mutation patterns and frequencies were visualized
+tional 26 channels to capture alignment information in
+using the oncoplot function from the maftools R
+a window of seven bases around the candidate mutation,
+package [80], which displays mutation types and frequen-
+resulting in a total of 119 input channels per candidate
+cies across samples.
+matrix. We used the recommended pre-trained model
+SEQC-II (SEQC-WGS-Spike model), which was trained
+Mutational signatures
+on 20 whole-genome sequencing replicate pairs contain-
+We performed mutational signature analysis using the
+ing in silico somatic mutations with allele frequencies
+COSMIC database of single-base substitution (SBS) sig-
+ranging from 1 to 100% (with matched normals at both
+natures [24]. First, the trinucleotide context of each single
+95% and 100% purity, and sequencing coverage rang-
+nucleotide variant was characterized. We then used the
+ing from 220x) and using five variant callers:
+fit_to_signature function in the MutationalPat-
+MuTect2, Strelka2, MuSE, SomaticSniper, VarDict. After
+terns R package (version 3.19) [81] to find the linear
+mutation calling, the recommended post-processing was
+combination of COSMIC mutation signatures that most
+applied to resolve long INDEL sequences and the final
+closely reconstructs the mutation spectra for each sam-
+NeuSomatic predictions were used for all downstream
+ple by solving the nonnegative least-squares constraints
+analyses.
+problem. We used strict refit where the signature with
+We obtained comprehensive genomic information for
+the lowest contribution is removed; refitting is repeated
+each variant using the Ensembl Variant Effect Predictor
+until the cosine similarity between the original and recon-
+(VEP) [77]. This included the effects on gene and pro-
+structed profile becomes more than max_delta=0.004).
+tein function, such as consequence types and amino acid
+We selected signatures that contributed to the mutation
+changes, variant frequencies in different populations,
+spectrum of at least 10 samples and plotted their relative
+impact on regulatory regions, and potential associations
+contributions using the pheatmap R package [82].
+with diseases and phenotypes. Following annotation
+with the Ensembl VEP, we used the vcf2maf tool to
+Driver genes
+transform VEP-annotated VCF files into the Mutation
+To identify driver genes (i.e., genes under positive selec-
+Annotation Format (MAF). This conversion ensures
+tion in cancer), we used the dNdScv analysis method
+each variant is uniquely associated with a single gene
+[26]. This approach is based on the evaluation of the ratio
+transcript or isoform, despite the potential for a variant
+between synonymous (silent) mutations and non-syn-
+to impact multiple isoforms. Particularly in cases where
+onymous (missense) mutations in genes. A higher ratio
+variants could be classified under different effects - such
+of non-synonymous to synonymous mutations in a gene
+as a Missense_Mutation near a Splice Site-
+indicates positive selection for mutations that may confer
+the MAF format forces a singular designation for each
+a growth advantage to cancer cells, suggesting the poten-
+variant by leveraging VEP's determinations for canonical
+tial role of the gene as a driver in tumorigenesis.
+isoforms.
+The dNdScv method estimates the background mutation
+We excluded 100 genes commonly mutated in public
+rate of each gene by combining local information (synony-
+exome datasets (FLAGS) due to their lower likelihood
+mous mutations within the gene) with global information
+of disease association [78]. This decision stems from
+(variation of mutation rates across genes). This approach
+their longer coding regions, which inherently increase
+controls for the sequence composition of genes and accounts
+mutation probability, and the presence of paralogs
+for mutational signatures, providing a more accurate estima-
+that might offset functional loss these mutations could
+tion of the expected neutral mutation rate. In particular, the
+cause [78, 79].
+dNdScv R package [83] implementation uses trinucleotide
+High-confidence variants (identified with a probability
+context-dependent substitution matrices to mitigate com-
+score of 0.7 or higher) consistently showed higher allele
+mon mutation biases that can affect dN/dS calculations [26].
+frequencies compared to those categorized as low-qual-
+To visualize and analyze the distribution and nature of
+ity (with scores between 0.4 and 0.7) and rejected vari-
+mutations in driver genes, we used lollipop plots gener-
+ants (with scores below 0.4) (Supplementary Fig. 4b). To
+ated from the maftools R package [80] and annotation
+reduce potential false positives, we selected high-confi-
+tracks from cBioPortal [84]. These plots provide a repre-
+dence variants with allele frequency above 0.1. To further
+sentation of mutation types and their locations along the
+confirm that variants detected were not technical arti-
+protein sequence as well as annotations including likely
+facts, we assessed the relationship between tumor muta-
+mutation hotspots as identified by Memorial Sloan Ket-
+tional burden and sequencing depth (Supplementary
+tering Cancer Hotspots and 3D Hotspots databases [85],
+Fig. 5). The lack of correlation supports robust variant
+and annotation records of therapeutic indication from
+detection independent of coverage.
+OncoKB [86].
+Rizvi et al. Breast Cancer Research
+(2025) 27:127
+Page 16 of 19
+Copy Number Alterations (CNAs)
+in the analysis only if detected in at least five lesions
+To investigate copy number alterations, we applied
+(2,030 genes; 303 cytobands). This analysis was per-
+the Allele-Specific Copy Number Analysis of Tumours
+formed across the entire patient cohort. To further
+(ASCAT v3) on our tumor normal pairs estimating tumor
+investigate mutated genes associated with response to
+purity, ploidy, and allele-specific copy number [87]. The
+RT, a stratified analysis was conducted based on treat-
+runAscat function was executed with default settings
+ment groups.
+optimized for high-throughput exome sequencing data,
+To control for multiple testing in the identification of
+with the gamma parameter set to 1. After examination of
+mutated genes associated with LR, we employed per-
+ASCAT sunrise plots, we identified a subset of samples
+mutation-based testing (1,000 permutations) to estab-
+(n=35 samples), for which the initial estimates of tumor
+lish empirical significance thresholds. We required both
+purity and ploidy did not align with the regions of highest
+a traditional p-value threshold (p<0.01 for full-cohort
+confidence on the sunrise plots. The runAscat was re-
+analyses; p 0.05 for RT-stratified analyses) and a per-
+run for these samples by manually assigning the aberrant
+muted p-value
+cell fraction (tumor purity) and tumor ploidy parameters
+Kaplan-Meier survival curves were used to visualize
+corresponding to the regions of highest probability as
+the results, illustrating event-free survival probabilities
+depicted on the sunrise plots. Overall, eight samples were
+over time for patients stratified by mutational status in
+excluded from further analysis due to poor goodness of fit
+the specified genes or gene sets.
+leaving 139 samples with CNA profiles for downstream
+GO enrichment analyses were performed using the
+analyses. Absolute number gains and losses shared across
+clusterProfiler R package [91]. Entrez gene identifiers
+samples were visualized across whole chromosomal
+were mapped to GO terms using the eg. db
+regions using aCNViewer [88] (window size of 1 Mbp).
+annotation database [92]. All GO terms with FDR <0.2
+The estimated ploidy for each sample is subtracted from
+were considered. Semantic similarity between GO terms
+the copy number values of each segment which means
+was calculated using the Wang method implemented in
+that a copy number of 0 is copy number change. These
+the pairwise_termsim function [93]. The enrich-
+adjusted windows at base resolution are then plotted into
+ment map was visualized using the emapplot function
+a stacked histogram representing genome-wide absolute
+[94] which displays the significantly enriched terms with
+copy number and copy neutral variations over all samples
+at least 2 genes.
+in a group.
+We applied a re-segmentation approach to adjust for
+amplitude divergence due to technical variability imple-
+Third-party studies
+mented in CNApp [89] using the default settings (mini-
+A systematic literature search was performed using
+mum segment length=100 Kbp, minimum amplitude
+PubMed to identify previous studies that conducted
+deviation from segment to zero=0.16, maximum dis-
+DNA profiling on pure DCIS or DCIS mixed with inva-
+tance between segments= Mb, maximum amplitude
+sive lesions. The search strategy included terms related
+deviation between segments=0.16, and maximum BAF
+to "ductal carcinoma in situ", "genetic markers", "DCIS
+deviation between segments=0.1). Re-segmented data
+prognosis", "DCIS progression", "DCIS to IDC", "dcis
+were then used to calculate the broad, focal and global
+dna", "dcis prognosis dna markers", "copy number altera-
+CNA scores. We then transformed re-segmented data
+tions", and "somatic mutations". Studies were included if
+into genomic regions profiles (chromosome arms, cyto-
+they reported genomic analyses of DCIS samples using
+bands and sub-cytobands) using both focal and broad
+sequencing or copy number profiling techniques and
+segments. Length-relative means are computed for each
+were published within the last 10 years. Twelve stud-
+window by considering amplitude values from those seg-
+ies met the inclusion criteria, and their key findings
+ments included in each specific window. Default cutoffs
+were summarized in Supplementary Table 2. The review
+for low-level copy number gains and losses (i.e., |0.2|)
+emphasized genetic alterations and pathway dysregula-
+were used to infer CNA frequencies.
+tion that may drive DCIS initiation and progression to
+invasive disease.
+Survival analyses
+We evaluated the association between gene muta-
+Supplementary Information
+tions or copy number aberrations in cytobands and
+The online version contains supplementary material available at https://doi.
+org/10.1186/s13058-025-02080-z.
+10-year LRFS using Firth's penalized likelihood Cox
+regression which accounts for small sample sizes and
+Supplementary Material 1.
+rare events. This analysis was conducted using the
+Supplementary Material 2.
+coxphf R package [90]. Aberrations were included
+Rizvi et al. Breast Cancer Research
+(2025) 27:127
+Page 17 of 19
+Acknowledgements
+References
+We thank Genome Quebec Innovation Center for RNA processing and
+1. Harbeck N, Penault-Llorca F, Cortes J, Gnant M, Houssami N, Poortmans P,
+sequencing. This study was supported by ICES, which is funded by an annual
+et al. Breast cancer Nat Rev Dis Primer. 2019;5:1-31.
+grant from the Ontario Ministry of Health (MOH) and the Ministry of Long-
+2. Sørum R, Hofvind S, Skaane P, Haldorsen T. Trends in incidence of ductal
+Term Care (MLTC). The opinions, results and conclusions reported in this paper
+carcinoma in situ: The effect of a population-based screening pro-
+are those of the authors and are independent from the funding sources. No
+gramme. The Breast. 2010;19:499-505.
+endorsement by ICES, the MOH or MLTC is intended or should be inferred. As
+3. Gangnon RE, Sprague BL, Stout NK, Alagoz O, Weedon-Fekjær H, Holford
+a prescribed entity under Ontario's privacy legislation, ICES is authorized to
+TR, et al. The contribution of mammography screening to breast cancer
+collect and use health care data for the purposes of health system analysis,
+incidence trends in the United States: an updated age-period-cohort
+evaluation and decision support. Secure access to these data is governed by
+model. Cancer Epidemiol Biomark Prev Publ Am Assoc Cancer Res
+policies and procedures that are approved by the Information and Privacy
+Cosponsored Am Soc Prev Oncol. 2015;24:905-12.
+Commissioner of Ontario.
+4. Force UPST, Nicholson WK, Silverstein M, Wong JB, Barry MJ, Chelmow
+D, et al. Screening for Breast Cancer: US Preventive Services Task Force
+Authors' contributions
+Recommendation Statement. JAMA. 2024;331:1918-30.
+Conceptualization, S.N.M, L.P., E.R., M.T.H and V.D.; Methodology, N.R, E.S, V.D.;
+5. Tomlinson-Hansen S, Khan M, Cassaro S. Breast Ductal Carcinoma in Situ.
+Investigation, N.R., E.S., M.Z., V.D.; Software N.R., E.J.M., V.D.; Writing - Original
+StatPearls. Treasure Island (FL): StatPearls Publishing; 2023. Available from:
+Draft, N.R. and V.D.; Writing - Review & Editing, E.S., M.Z., E.J.M., E.H., S.N.M., S.T.,
+http://www.ncbi.nlm.nih.gov/books/NBK567766/. Cited 2023 Nov 16.
+L.P., M.T.H. and E.R.; Funding Acquisition, E.R., M.T.H, E.H., S.N.M, S.T., L.P. and V.D.;
+6.
+Zhang Y, Weinberg RA. Epithelial-to-mesenchymal transition in cancer:
+Resources, E.R., S.N.M, S.T., L.P.; Supervision, V.D.
+complexity and opportunities. Front Med. 2018;12:361-73.
+7. Maxwell AJ, Hilton B, Clements K, Dodwell D, Dulson-Cox J, Kearins
+Funding
+O, et al. Unresected screen-detected ductal carcinoma in situ: Out-
+This work was supported by Canadian Institute for Health Research (CIHR) pro-
+comes of 311 women in the Forget-Me-Not 2 study. Breast Edinb Scotl.
+ject grant #391682. We thank the Canadian Foundation for Innovation J. Evans
+2022;61:145-55.
+Leaders Fund grant #43481 for the support of the computing infrastructure
+8. Rakovitch E, Gray R, Baehner FL, Sutradhar R, Crager M, Gu S, et al. Refined
+used throughout our analyses.
+estimates of local recurrence risks by DCIS score adjusting for clinico-
+ER holds LC Campbell Chair for breast cancer research. NR received Breast
+pathological features: a combined analysis of ECOG-ACRIN E5194 and
+Cancer Canada and Ontario Graduate Scholarships.
+Ontario DCIS cohort studies. Breast Cancer Res Treat. 2018;169:359-69.
+9. Andor N, Maley CC, Ji HP. Genomic instability in cancer: Teetering on the
+Data availability
+limit of tolerance. Cancer Res. 2017;77:2179-85.
+The dataset analyzed in this study is not publicly available due the personal,
+10. Trinh A, Gil Del Alcazar CR, Shukla SA, Chin K, Chang YH, Thibault G,
+sensitive, and inherently identifying nature of raw genomic data. Access to
+et al. Genomic Alterations during the In Situ to Invasive Ductal Breast
+raw data and patient metadata may be provided but is controlled and requires
+Carcinoma Transition Shaped by the Immune System. Mol Cancer Res.
+institutional material data transfer agreements (contact person: eileen.rako-
+2021;19:623-35.
+vitch@sunnybrook.ca).
+11. Lin C-Y, Vennam S, Purington N, Lin E, Varma S, Han S, et al. Genomic
+The scripts used to reproduce the analyses performed in this study are avail-
+landscape of ductal carcinoma in situ and association with progression.
+able in the Dumeaux Lab GitHub Repository https://github.com/dumeaux-
+Breast Cancer Res Treat. 2019;178:307-16.
+lab/dcis-dna_paper.
+12. Hernandez L, Wilkerson PM, Lambros MB, Campion-Flora A, Rodrigues
+DN, Gauthier A, et al. Genomic and mutational profiling of ductal
+carcinomas in situ and matched adjacent invasive breast cancers reveals
+Declarations
+intra-tumour genetic heterogeneity and clonal selection. J Pathol.
+2012;227:42-52.
+Ethics approval and consent to participate
+13. Nagasawa S, Kuze Y, Maeda I, Kojima Y, Motoyoshi A, Onishi T, et al.
+Research ethics board approval was obtained from Sunnybrook Health Sci-
+Genomic profiling reveals heterogeneous populations of ductal carci-
+ences Centre, Toronto, Ontario (#2738). This study was facilitated through ICES
+noma in situ of the breast. Commun Biol. 2021;4:1-13.
+which is named as a prescribed entity in Sect. 45 of PHIPA (Regulation 329/04,
+14. Nachmanson D, Officer A, Mori H, Gordon J, Evans MF, Steward J, et al. The
+Sect. 18) which allows access and utilization of administrative data for research
+breast pre-cancer atlas illustrates the molecular and micro-environmental
+purposes with a waived requirement for consent. Secure access to these data
+diversity of ductal carcinoma in situ. Npj Breast Cancer. 2022;8:1-13.
+is governed by policies and procedures that are approved by the Information
+15. Abba MC, Gong T, Lu Y, Lee J, Zhong Y, Lacunza E, et al. A Molecu-
+and Privacy Commissioner of Ontario.
+lar Portrait of High-Grade Ductal Carcinoma In Situ. Cancer Res.
+2015;75:3980-90.
+Consent for publication
+16. Kaplan HG, Dowdell AK, Berry AB, Shimol RB, Robinson FL, Carney CA,
+Not Applicable.
+et al. Multi-omic profiling of simultaneous ductal carcinoma in situ and
+invasive breast cancer. Breast Cancer Res Treat. 2024;205:451-64.
+Competing interests
+17. Kader T, Hill P, Zethoven M, Goode DL, Elder K, Thio N, et al. Atypical
+The authors declare no competing interests.
+ductal hyperplasia is a multipotent precursor of breast carcinoma. J
+Pathol. 2019;248:326-38.
+Author details
+18. Kim SY, Jung S-H, Kim MS, Baek I-P, Lee SH, Kim T-M, et al. Genomic
+Department of Biochemistry, Western University, London, Canada. ²Depart-
+differences between pure ductal carcinoma in situ and synchronous
+ment of Anatomy and Cell Biology, Western University, London, Canada.
+ductal carcinoma in situ with invasive breast cancer. Oncotarget.
+³Department of Radiation Oncology, Sunnybrook Health Sciences Centre, Uni-
+2015;6:7597-607.
+versity of Toronto, Toronto, Canada. ⁴Department of Pathology, Sunnybrook
+19. Pareja F, Brown DN, Lee JY, Da Cruz Paula A, Selenica P, Bi R, et al. Whole-
+Health Sciences Centre, University of Toronto, Toronto, Canada. ⁵Department
+Exome Sequencing Analysis of the Progression from Non-Low-Grade
+of Oncology, Lawson Research Institute, London Health Sciences Centre,
+Ductal Carcinoma In Situ to Invasive Ductal Carcinoma. Clin Cancer Res.
+London, Canada. ⁶Centre for Translational Cancer Research, Western University,
+2020;26:3682-93.
+London, Canada.
+20. Strand SH, Rivero-Gutiérrez B, Houlahan KE, Seoane JA, King LM, Risom T,
+et al. Molecular classification and biomarkers of clinical outcome in breast
+Received: 22 April 2025 Accepted: 24 June 2025
+ductal carcinoma in situ: Analysis of TBCRC 038 and RAHBT cohorts.
+Published online: 08 July 2025
+Cancer Cell. 2022;40:1521-36.e7.
+Rizvi et al. Breast Cancer Research
+(2025) 27:127
+Page 18 of 19
+21. Cooper DN, Mort M, Stenson PD, Ball EV, Chuzhanova NA. Methylation-
+44. Glukhova MA, Streuli CH. How integrins control breast biology. Curr Opin
+mediated deamination of 5-methylcytosine appears to give rise to muta-
+Cell Biol. 2013;25:633-41.
+tions causing human inherited disease in CpNpG trinucleotides, as well
+45. Maxwell CA, Benítez J, Gómez-Baldó L, Osorio A, Bonifaci N, Fernández-
+as in CpG dinucleotides. Hum Genomics. 2010;4:406-10.
+Ramires R, et al. Interplay between BRCA1 and RHAMM regulates epithe-
+22. Alexandrov LB, Jones PH, Wedge DC, Sale JE, Campbell PJ, Nik-Zainal S,
+lial apicobasal polarization and may influence risk of breast cancer. PLoS
+et al. Clock-like mutational processes in human somatic cells. Nat Genet.
+Biol. 2011;9: e1001199.
+2015;47:1402-7.
+46. Qin X, Strand SH, Lee MR, Saraswathibhatla A, van Izendoorn DGP, Zhu
+23. Steiert TA, Parra G, Gut M, Arnold N, Trotta J-R, Tonda R, et al. A critical
+C, et al. Single Cell Expression Analysis of Ductal Carcinoma in Situ Identi-
+spotlight on the paradigms of FFPE-DNA sequencing. Nucleic Acids Res.
+fies Complex Genotypic-Phenotypic Relationships Altering Epithelial
+2023;51:7143-62.
+Composition. Cancer Res. 2025. Available from: https://doi.org/10.1158/
+24. Alexandrov LB, Nik-Zainal S, Wedge DC, Aparicio SAJR, Behjati S, Biankin
+0008-5472.CAN-24-3023. Cited 2025 Apr 21.
+AV, et al. Signatures of mutational processes in human cancer. Nature.
+47. Deng Y, Chen G, Xiao J, Deng H. Role and potential therapeutic strategies
+2013;500:415-21.
+of matrix mechanics for optimizing tumor radiotherapy. Mechanobiol
+25. Guo Q, Lakatos E, Bakir IA, Curtius K, Graham TA, Mustonen V. The muta-
+Med. 2024;2: 100037.
+tional signatures of formalin fixation on the human genome. bioRxiv;
+48. Prakash J, Shaked Y. The Interplay between Extracellular Matrix Remod-
+2021. p. 2021.03.11.434918. Available from: https://www.biorxiv.org/
+eling and Cancer Therapeutics. Cancer Discov. 2024;14:1375-88.
+content/10.1101/2021.03.11.434918v1. Cited 2024 Dec 6.
+49. Frascogna C, Mottareale R, La Verde G, Arrichiello C, Muto P, Netti PA, et al.
+26. Martincorena I, Raine KM, Gerstung M, Dawson KJ, Haase K, Loo PV,
+Role of the mechanical microenvironment on CD-44 expression of breast
+et al. Universal Patterns of Selection in Cancer and Somatic Tissues. Cell.
+adenocarcinoma in response to radiotherapy. Sci Rep. 2024;14:391.
+2017;171:1029-1041.e21.
+50. Rakovitch E, Nofech-Mozes S, Narod SA, Hanna W, Thiruchelvam D, Saskin
+27. Yuan T, Cantley L. PI3K pathway alterations in cancer: variations on a
+R, et al. Can we select individuals with low risk ductal carcinoma in situ
+theme. Oncogene. 2008;27:5497-510.
+(DCIS)? A population-based outcomes analysis. Breast Cancer Res Treat.
+28. Bader AG, Kang S, Zhao L, Vogt PK. Oncogenic PI3K deregulates transcrip-
+2013;138:581-90.
+tion and translation. Nat Rev Cancer. 2005;5:921-9.
+51. Rakovitch E, Nofech-Mozes S, Hanna W, Baehner FL, Saskin R, Butler SM,
+29. Yang XH, Huang S. PFM1 (PRDM4), a new member of the PR-domain fam-
+et al. A population-based validation study of the DCIS Score predicting
+ily, maps to a tumor suppressor locus on human chromosome 12q23-
+recurrence risk in individuals treated by breast-conserving surgery alone.
+q24.1. Genomics. 1999;61:319-25.
+Breast Cancer Res Treat. 2015;152:389-98.
+30. Arnold SA, Brekken RA. SPARC: a matricellular regulator of tumorigenesis.
+52. Rakovitch E, Nofech-Mozes S, Hanna W, Sutradhar R, Baehner FL, Miller DP,
+J Cell Commun Signal. 2009;3:255-73.
+et al. Multigene Expression Assay and Benefit of Radiotherapy After Breast
+31. Vecchione A, Fassan M, Anesti V, Morrione A, Goldoni S, Baldassarre G,
+Conservation in Ductal Carcinoma in Situ. J Natl Cancer Inst. 2017;109:djw256.
+et al. MITOSTATIN, a putative tumor suppressor on chromosome 12q24.1,
+53. Paszat L, Sutradhar R, Zhou L, Nofech-Mozes S, Rakovitch E. Including the
+is downregulated in human bladder and breast cancer. Oncogene.
+Ductal Carcinoma-In-Situ (DCIS) Score in the Development of a Multivari-
+2009;28:257-69.
+able Prediction Model for Recurrence After Excision of DCIS. Clin Breast
+32. Heller G, Geradts J, Ziegler B, Newsham I, Filipits M, Markis-Ritzinger E-M,
+Cancer. 2019;19:35-46.
+et al. Downregulation of TSLC1 and DAL-1 expression occurs frequently in
+54. Klein J, Kong I, Paszat L, Nofech-Mozes S, Hanna W, Thiruchelvam D, et al.
+breast cancer. Breast Cancer Res Treat. 2007;103:283-91.
+Close or positive resection margins are not associated with an increased
+33. Kittiniyom K, Gorse KM, Dalbegue F, Lichy JH, Taubenberger JK, Newsham
+risk of chest wall recurrence in women with DCIS treated by mastectomy:
+IF. Allelic loss on chromosome band 18p11.3 occurs early and reveals het-
+a population-based analysis. Springerplus. 2015;4:335.
+erogeneity in breast cancer progression. Breast Cancer Res. 2001;3:192-8.
+55. Lalani N, Paszat L, Sutradhar R, Thiruchelvam D, Nofech-Mozes S, Hanna
+34. Schuuring E, Verhoeven E, Mooi WJ, Michalides RJ. Identification and
+W, et al. Long-term outcomes of hypofractionation versus conventional
+cloning of two overexpressed genes, U21B31/PRAD1 and EMS1, within
+radiation therapy after breast-conserving surgery for ductal carcinoma
+the amplified chromosome 11q13 region in human carcinomas. Onco-
+in situ of the breast. Int J Radiat Oncol Biol Phys. 2014;90:1017-24.
+gene. 1992;7:355-61.
+56. Rakovitch E, Parpia S, Koch A, Grimard L, Soliman H, Stevens C, et al.
+35. Ormandy CJ, Musgrove EA, Hui R, Daly RJ, Sutherland RL. Cyclin D1,
+DUCHESS: an evaluation of the ductal carcinoma in situ score for deci-
+EMS1 and 11q13 Amplification in Breast Cancer. Breast Cancer Res Treat.
+sions on radiotherapy in patients with low/intermediate-risk DCIS. Breast
+2003;78:323-35.
+Cancer Res Treat. 2021;188:133-9.
+36. Houle AA, Gibling H, Lamaze FC, Edgington HA, Soave D, Fave M-J, et al.
+57. Krueger F. FelixKrueger/TrimGalore. 2025. Available from: https://github.
+Aberrant PRDM9 expression impacts the pan-cancer genomic landscape.
+com/FelixKrueger/TrimGalore. Cited 2025 Jun 2.
+Genome Res. 2018;28:1611-20.
+58. Dobin A, Davis CA, Schlesinger F, Drenkow J, Zaleski C, Jha S, et al. STAR:
+37. Kader T, Zethoven M, Mahale S, Saunders H, Tjoeka L, Lehmann R, et al.
+ultrafast universal RNA-seq aligner. Bioinforma Oxf Engl. 2013;29:15-21.
+Predictive biomarkers of breast ductal carcinoma in situ may underesti-
+59. Liao Y, Smyth GK, Shi W. The R package Rsubread is easier, faster, cheaper
+mate the risk of recurrence due to de novo ipsilateral breast carcinoma
+and better for alignment and quantification of RNA sequencing reads.
+development. bioRxiv; 2024. p. 2024.05.19.594731. Available from: https://
+Nucleic Acids Res. 2019;47:
+www.biorxiv.org/content/10.1101/2024.05.19.594731v1.Cited 2025 Jan 3.
+60. Anders S, Huber W. Differential expression analysis for sequence count
+38. Ang DC, Warrick AL, Shilling A, Beadling C, Corless CL, Troxell ML.
+data. Genome Biol. 2010;11:R106.
+Frequent phosphatidylinositol-3-kinase mutations in proliferative breast
+61. Gendoo DMA, Ratanasirigulchai N, Schröder MS, Paré L, Parker JS, Prat A,
+lesions. Mod Pathol. 2014;27:740-50.
+et al. Genefu: an R/Bioconductor package for computation of gene expres-
+39. Silwal-Pandit L, Langerød A, Børresen-Dale A-L. TP53 Mutations in Breast
+sion-based signatures in breast cancer. Bioinforma Oxf Engl. 2016;32:1097-9.
+and Ovarian Cancer. Cold Spring Harb Perspect Med. 2017;7: a026252.
+62. Parker JS, Mullins M, Cheang MCU, Leung S, Voduc D, Vickery T, et al.
+40. Pang J-MB, Savas P, Fellowes AP, Mir Arnau G, Kader T, Vedururu R, et al.
+Supervised Risk Predictor of Breast Cancer Based on Intrinsic Subtypes. J
+Breast ductal carcinoma in situ carry mutational driver events representa-
+Clin Oncol. 2009;27:1160-7.
+tive of invasive breast cancer. Mod Pathol. 2017;30:952-63.
+63. Bolger AM, Lohse M, Usadel B. Trimmomatic: a flexible trimmer for Illu-
+41. Lesurf R, Aure MR, Mørk HH, Vitelli V, Lundgren S, Børresen-Dale A-L, et al.
+mina sequence data. Bioinforma Oxf Engl. 2014;30:2114-20.
+Molecular Features of Subtype-Specific Progression from Ductal Carci-
+64. LiH. Aligning sequence reads, clone sequences and assembly contigs
+noma In Situ to Invasive Breast Cancer. Cell Rep. 2016;16:1166-79.
+with BWA-MEM. arXiv.org. 2013. Available from: https://arxiv.org/abs/
+42. Bergholtz H, Lien TG, Swanson DM, Frigessi A, Daidone MG, Tost J, et al.
+1303.3997v2. Cited 2024 Apr 8.
+Contrasting DCIS and invasive breast cancer by subtype suggests basal-
+65. Danecek P, Bonfield JK, Liddle J, Marshall J, Ohan V, Pollard MO, et al.
+like DCIS as distinct lesions. NPJ Breast Cancer. 2020;6:26.
+Twelve years of SAMtools and BCFtools. GigaScience. 2021;10:giab008.
+43. Emery LA, Tripathi A, King C, Kavanah M, Mendez J, Stone MD, et al. Early
+66. Sahraeian SME, Liu R, Lau B, Podesta K, Mohiyuddin M, Lam HYK. Deep
+Dysregulation of Cell Adhesion and Extracellular Matrix Pathways in
+convolutional neural networks for accurate somatic mutation detection.
+Breast Cancer Progression. Am J Pathol. 2009;175:1292-302.
+Nat Commun. 2019;10:1041.
+Rizvi et al. Breast Cancer Research
+(2025) 27:127
+Page 19 of 19
+67. Benjamin D, Sato T, Cibulskis K, Getz G, Stewart C, Lichtenstein L. Calling
+90. Heinze G, Ploner M, Jiricka L, Steiner G. coxphf: Cox Regression with Firth's
+Somatic SNVs and Indels with Mutect2. 201. Available from: http://biorxiv.
+Penalized Likelihood. 2023. Available from: https://cran.r-project.org/
+org/lookup/doi/10.1101/861054. Cited 2024 Apr 8.
+web/packages/coxphf/index.html. Cited 2025 May 20.
+68. Fan Y, Xi L, Hughes DST, Zhang J, Zhang J, Futreal PA, et al. MuSE:
+91. Yu G, Wang L-G, Han Y, He Q-Y. clusterProfiler: an R Package for Compar-
+accounting for tumor heterogeneity using a sample-specific error model
+ing Biological Themes Among Gene Clusters. OMICS J Integr Biol.
+improves sensitivity and specificity in mutation calling from sequencing
+2012;16:284-7.
+data. Genome Biol. 2016;17:178.
+92. org.Hs.eg.db. Bioconductor. Available from: http://bioconductor.org/
+69. Lai Z, Markovets A, Ahdesmaki M, Chapman B, Hofmann O, McEwen
+packages/org.Hs.eg.db/. Cited 2025 May 20.
+R, et al. VarDict: a novel and versatile variant caller for next-generation
+93. pairwise_termsim: pairwise_termsim in enrichplot: Visualization of Func-
+sequencing in cancer research. Nucleic Acids Res. 2016;44: e108.
+tional Enrichment Result. Available from: https://rdrr.io/bioc/enrichplot/
+70. Koboldt DC, Zhang Q, Larson DE, Shen D, McLellan MD, Lin L, et al.
+man/pairwise_termsim.html. Cited 2025 May 20.
+VarScan 2: somatic mutation and copy number alteration discovery in
+94. emapplot function RDocumentation. Available from: https://www.
+cancer by exome sequencing. Genome Res. 2012;22:568-76.
+rdocumentation.org/packages/enrichplot/versions/1.13.1.994/topics/
+71. Kim S, Scheffler K, Halpern AL, Bekritsky MA, Noh E, Källberg M, et al.
+emapplot. Cited 2025 May 20.
+Strelka2: fast and accurate calling of germline and somatic variants. Nat
+Methods. 2018;15:591-4.
+Publisher's Note
+72. Larson DE, Harris CC, Chen K, Koboldt DC, Abbott TE, Dooling DJ, et al.
+SomaticSniper: identification of somatic point mutations in whole
+Springer Nature remains neutral with regard to jurisdictional claims in pub-
+genome sequencing data. Bioinformatics. 2012;28:311.
+lished maps and institutional affiliations.
+73. Sahraeian SME, Fang LT, Karagiannis K, Moos M, Smith S, Santana-
+Quintero L, et al. Achieving robust somatic mutation detection with deep
+learning models derived from reference data sets of a cancer sample.
+Genome Biol. 2022;23:12.
+74. Barbitoff YA, Abasov R, Tvorogova VE, Glotov AS, Predeus AV. Systematic
+benchmark of state-of-the-art variant calling pipelines identifies major
+factors affecting accuracy of coding sequence variant discovery. BMC
+Genomics. 2022;23:155.
+75. de Schaetzen van Brienen L, Larmuseau M, Van der Eecken K, De Ryck F,
+Robbe P, Schuh A, et al. Comparative analysis of somatic variant calling
+on matched FF and FFPE WGS samples. BMC Med Genomics. 2020;13:94.
+76. Olson ND, Wagner J, Dwarshuis N, Miga KH, Sedlazeck FJ, Salit M, et al.
+Variant calling and benchmarking in an era of complete human genome
+sequences. Nat Rev Genet. 2023;24:464-83.
+77. McLaren W, Gil L, Hunt SE, Riat HS, Ritchie GRS, Thormann A, et al. The
+Ensembl Variant Effect Predictor. Genome Biol. 2016;17:122.
+78. Shyr C, Tarailo-Graovac M, Gottlieb M, Lee JJ, van Karnebeek C, Wasser-
+man WW. FLAGS, frequently mutated genes in public exomes. BMC Med
+Genomics. 2014;7:64.
+79. Alfieri F, Caravagna G, Schaefer MH. Cancer genomes tolerate deleterious
+coding mutations through somatic copy number amplifications of wild-
+type regions. Nat Commun. 2023;14:3594.
+80. Mayakonda A, Lin D-C, Assenov Y, Plass C, Koeffler HP. Maftools: efficient
+and comprehensive analysis of somatic variants in cancer. Genome Res.
+2018;28:1747-56.
+81. Blokzijl F, Janssen R, van Boxtel R, Cuppen E. MutationalPatterns: compre-
+hensive genome-wide analysis of mutational processes. Genome Med.
+2018;10:33.
+82. Raivo Kolde. pheatmap: Pretty Heatmaps. 2010. p. 1.0.12. Available
+from: https://CRAN.R-project.org/package=pheatmap. Cited 2025 May
+20.
+83. Martincorena I. im3sanger/dndscv. 2025. Available from: https://github.
+com/im3sanger/dndscv. Cited 2025 May 20.
+84. Mutation data transcript annotation. Available from: https://docs.cbiop
+ortal.org/mutation-data-transcript-annotation/. Cited 2025 May 20.
+85. Chang MT, Bhattarai TS, Schram AM, Bielski CM, Donoghue MTA, Jonsson
+P, et al. Accelerating Discovery of Functional Mutant Alleles in Cancer.
+Cancer Discov. 2018;8:174-83.
+86. Suehnholz SP, Nissan MH, Zhang H, Kundra R, Nandakumar S, Lu C,
+et al. Quantifying the Expanding Landscape of Clinical Actionability for
+Patients with Cancer. Cancer Discov. 2024;14:49-65.
+87. Lesluyes T, Tarabichi M, Haase K, Demeulemeester J, Loo P. Robust and
+platform-independent CNA calling with ASCAT v3. 2023.
+88. Renault V, Tost J, Pichon F, Wang-Renault S-F, Letouzé E, Imbeaud S, et al.
+aCNViewer: Comprehensive genome-wide visualization of absolute copy
+number and copy neutral variations. PLoS ONE. 2017;12: e0189334.
+89. Franch-Expósito S, Bassaganyas L, Vila-Casadesús M, Hernández-Illán E,
+Esteban-Fabró R, Díaz-Gay M, et al. CNApp, a tool for the quantification of
+copy number alterations and integrative analysis revealing clinical impli-
+cations. Robles-Espinoza CD, Cheah KSE, editors. eLife. 2020;9:e50267.

@@ -1,0 +1,1128 @@
+
+Original Article
+Chirurgia (2025) 120: 265-274
+No. 3,
+May June
+Copyright© Celsius
+http://dx.doi.org/10.21614/chirurgia.3151
+Toward Personalized Surgery in Advanced Prostate Cancer:
+Stratification by PTEN, AR-V7, TP53, TMPRSS2-ERG, and ERBB2
+Genetic Alterations
+Cristina Anita lonescu (Mitu)1,2+, Georgeta Camelia Cozaru³,⁴,⁵, Mariana Aschie4,5, Nicoleta Leopa6*,
+Bogdan Cîmpineanu²⁺, Felix Voinea2,⁷⁺, Elena Matei³, Anca Mitroi³,⁴, Mariana Deacu²,⁴, lonut lorga²,⁷, Mihaela Pundiche2,6
+¹Department of Genetics, Prof. Dr. Alexandru Trestioreanu Institute of Oncology, Bucharest, Romania
+²Ovidius University, Faculty of Medicine, Constanta, Romania
+³Center for Research and Development of the Morphological and Genetic Studies of Malignant Pathology,
+Ovidius University, Constanta, Romania
+⁴Department of General Surgery, Cai Ferate Clinical Hospital Constanta, Romania
+⁵Academy of Romanian Scientists, Bucharest, Romania
+⁶Department of General Surgery, Emergency County Hospital, Constanta, Romania
+⁷Department of Urology, Emergency County Hospital, Constanta, Romania
+*Corresponding author:
+Rezumat
+Nicoleta Leopa, MD
+Ovidius University,
+Chirurgia personalizată în cancerul de prostată avansat: rolul alterărilor
+Faculty of Medicine and Pharmacy
+genetice PTEN, AR-V7, TP53, TMPRSS2-ERG si ERBB2 în orientarea
+General Surgery Department
+Emergency Hospital of Constanta
+deciziilor terapeutice
+No 145 Tomis Boulevard, 900591
+Introducere: Cancerul de prostată avansat este o afectiune biologic heterogenă,
+Constanta, Romania
+marcată frecvent de multiple alterări genetice si epigenetice care
+E-mail: gherghe_nicoleta02@yahoo.com
+influentează progresia tumorală, rezistenta la tratament si prognosticul.
+*These authors contributed equally
+Printre genele cel mai frecvent afectate se numără PTEN, AR-V7, TP53,
+to this work.
+TMPRSS2-ERG si ERBB2, fiecare cu un potential rol important în stratificarea
+riscului si ghidarea terapiei tintite.
+Metode: Acest studiu retrospectiv a inclus 43 de pacienti cu cancer de prostată
+avansat care au suferit prostatectomie radicală. Probele tumorale au fost
+analizate prin tehnica FISH (fluorescentă in situ) pentru a evalua statusul
+mutational al celor cinci markeri. Parametrii clinicopatologici, precum nivelul
+PSA, scorul Gleason, stadiul tumoral si invazia locală, au fost corelati cu
+alterările moleculare utilizând modele de regresie logistică multinomială.
+Rezultate: Cea mai frecventă alterare genetică izolată a fost pierderea expresiei
+PTEN (20,9%), urmată de amplificarea TP53 (16,3%), fuziunea TMPRSS2-ERG
+(13,9%), expresia AR-V7 (11,6%) si amplificarea ERBB2 (7%). De asemenea, au
+fost observate combinatii de doi sau trei markeri în cazuri cu profil agresiv.
+PTEN- si AR-V7+ s-au asociat cu valori scăzute ale PSA, în ciuda agresivitătii
+tumorale, în timp ce ERBB2+ s-a corelat cu valori crescute ale PSA si scor
+Gleason înalt. TP53+ si ERBB2+ au fost semnificativ asociate cu forme tumorale
+de grad înalt (Gleason >7), iar AR-V7+ a fost singurul marker asociat cu invazia
+Received: 25.04.2025
+veziculelor seminale. Vârsta tânără a fost slab corelată cu AR-V7+ si TP53+.
+Accepted: 20.06.2025
+Concluzii: Profilul molecular a tumorilor prostatice avansate prin evaluarea
+Chirurgia, 120 (3), 2025
+www.revistachirurgia.ro
+265
+C.A. lonescu (Mitu) et al
+markerilor PTEN, AR-V7, TP53 si ERBB2 identifică subtipuri distincte cu semnificatie clinică si terapeutică.
+Integrarea acestor markeri în practica clinică poate îmbunătăți stratificarea pacientilor si ghidarea terapiei
+personalizate. Sunt necesare studii suplimentare pe cohorte mai mari pentru validarea acestor asocieri si
+dezvoltarea unor modele biomoleculare de risc.
+Cuvinte cheie: cancerul de prostată, profil genetic, chirurgie personalizată, marker biologici, prognostic
+Abstract
+Background: Advanced prostate cancer is a biologically heterogeneous disease often marked by multiple genetic and
+epigenetic alterations that influence tumor progression, treatment resistance, and prognosis. Among the most
+frequently altered genes are PTEN, AR-V7, TP53, TMPRSS2-ERG, and ERBB2, each with potential relevance for
+stratifying risk and guiding targeted therapy.
+Methods: This retrospective study included 43 patients with advanced prostate cancer who underwent radical
+prostatectomy. Tumor specimens were analyzed using fluorescence in situ hybridization (FISH) to assess the
+mutational status of the five markers. Clinicopathological parameters, including PSA levels, Gleason score, tumor
+stage, and invasion status, were correlated with molecular alterations using multinomial logistic regression.
+Results: The most common isolated alteration was PTEN loss (20.9%), followed by TP53 amplification (16.3%),
+TMPRSS2-ERG fusion (13.9%), AR-V7 expression (11.6%), and ERBB2 amplification (7%). Combined alterations
+were also observed, with dual or triple marker expression in select aggressive cases. PTEN- and AR-V7+ were
+associated with low PSA values despite aggressive pathology, while ERBB2+ correlated with high PSA levels and
+high Gleason scores. TP53+ and ERBB2+ were also significantly associated with high-grade tumors (Gleason >7).
+AR-V7+ was the only marker significantly associated with seminal vesicle invasion. Younger age was weakly
+correlated with AR-V7+ and TP53+ status.
+Conclusions: The molecular profile defined by PTEN, AR-V7, TP53, and ERBB2 identifies distinct biological subtypes
+in advanced prostate cancer, each with specific prognostic and therapeutic implications. Integration of these bio-
+markers into routine clinical assessment may improve treatment personalization and risk stratification. Validation
+in larger, prospective cohorts is warranted.
+Keywords: prostate cancer, genetic profile, personalized surgery, biomarkers, prognosis
+Introduction
+In addition to genetic alterations, epigenetic
+alterations, such as aberrant DNA methylation
+Advanced prostate cancer is a complex clinical
+and post-translational modifications of histones,
+entity characterized by a series of cellular and
+can influence gene expression without altering the
+molecular mechanisms that contribute to disease
+genetic sequence itself (6,7). These alterations can
+progression, resistance to treatments, and the
+lead to the repression of tumor suppressor genes or
+development of metastases (1,2). These processes
+the activation of oncogenic genes, playing a critical
+involve significant genetic and epigenetic
+role in tumor initiation and progression. In this
+alterations, which determine heterogeneous tumor
+context, targeted epigenetic therapies, such as
+phenotypes and varied clinical outcomes. At
+HDAC, EZH2, or DNMT inhibitors, are being
+the molecular level, prostate cancer is often char-
+investigated for their potential to reverse these
+acterized by DNA alterations, including deletions,
+aberrant alterations (8,9).
+amplifications, and genetic rearrangements (3).
+The androgen receptor (AR) remains a central
+Among the most common are MYC gene amplifica-
+element in the pathophysiology of prostate cancer.
+tion and the TMPRSS2-ERG gene fusion, present
+In advanced forms, persistent activation of the AR
+in approximately 50% of cases, which activate
+can occur even in the absence of circulating andro-
+oncogenic signaling pathways, such as the ERG-
+gens, due to mutations, amplifications, or activation
+mediated one. In addition, recurrent mutations in
+by alternative ligands (10). Furthermore, splicing
+genes such as TP53, PTEN, RB1, BRCA1/2, and
+isoforms of AR, such as AR-V7, are constitutively
+PIK3CA contribute to genomic instability and
+active and associated with resistance to androgen
+disease progression (4,5).
+deprivation therapies (ADT), representing impor-
+266
+www.revistachirurgia.ro
+Chirurgia, 120 (3), 2025
+Toward Personalized Surgery in Advanced Prostate Cancer: Stratification by PTEN, AR-V7, TP53, TMPRSS2-ERG, and ERBB2 Genetic Alterations
+tant markers for prognostic assessment and choice
+frequently supported by biological markers of
+of therapies (11,12). The understanding of these
+tumor aggressiveness such as a PSA >20 ng/mL, a
+molecular mechanisms has been facilitated by
+Gleason score >8 or a Grade Group ≥ IV according
+recent genomic and epigenetic studies, which
+to the ISUP classification (International Society of
+have highlighted tumor diversity and allowed the
+Urological Pathology) (15).
+identification of relevant biomolecular markers (13).
+The inclusion criteria were: confirmed
+These can be used not only for diagnosis and
+histopathological diagnosis, availability of tumor
+monitoring, but especially for risk stratification and
+tissue for molecular analysis and complete
+prognosis estimation of patients with advanced
+existence of relevant clinicopathological data,
+prostate cancer. There is no single biomarker
+including preoperative PSA level, Gleason score,
+capable of completely characterizing the evolution of
+tumor extension and lymph node status. Patients
+the disease, but the combination of several markers
+with a history of other malignant neoplasms or
+- genetic, epigenetic, and protein - can provide
+who underwent hormonal treatment before
+valuable information for personalizing treatment
+surgery were excluded. During the study period, a
+and improving clinical outcomes (14). The identifica-
+total of 440 malignant prostate tumors were
+tion and validation of these markers represents
+diagnosed, of which 43 cases met the predefined
+an essential step towards precision medicine in
+inclusion criteria.
+urologic oncology. Although each molecular marker
+The biological material used was represented
+has been analyzed individually in various cohorts,
+by tumor tissue fragments obtained from radical
+few studies have investigated their combined and
+prostatectomy pieces. These were fixed in 10%
+differential impact on the clinicopathological
+buffered formalin and processed using the standard
+characteristics of advanced prostate cancer, in a
+paraffin embedding technique. Sections of 3-4 µm
+comparative and integrative manner.
+thickness were stained with Hematoxylin-Eosin
+In this context, the present study aims to
+(HE) and histopathologically evaluated in the
+explore the associations between the expression of
+Clinical Pathology Department of the same
+PTEN, AR-V7, TMPRSS2-ERG, TP53, and ERBB2
+hospital. Tumor classification was performed
+markers and relevant clinicopathological variables,
+according to the Gleason system, in line with the
+using multinomial logistic regression models. The
+updated recommendations of the international
+main objective is to evaluate the potential of these
+guidelines for reporting prostate cancer.
+biomarkers as risk stratification factors and as
+possible therapeutic targets, thus contributing to
+Evaluation of Genetic Markers
+the personalization of therapeutic strategies in an
+oncological pathology marked by biological and
+To assess the expression and mutational status of
+evolutionary heterogeneity.
+the PTEN, AR-V7, TMPRSS2-ERG, TP53, and
+ERBB2 markers, the FISH (Fluorescence In Situ
+Material and Methods
+Hybridization) technique was used, applied on
+paraffin-embedded tumor tissue sections. This
+Study Design and Population
+method allows the direct detection of gene
+rearrangements, deletions, amplifications or
+The study included a sample of 43 patients
+translocations at the individual cell level, providing
+diagnosed with advanced prostate cancer, who
+a precise profile of genetic alterations.
+underwent radical prostatectomy within the
+For each gene analyzed, specific fluorescently
+Urology Department of Sf. Apostol Andrei County
+labeled samples were used, in accordance with the
+Emergency Hospital in Constanta, between 2020-
+manufacturer's recommended protocols and
+2024. Advanced prostate cancer represents a
+international standards in the field of molecular
+progressive stage of the disease, in which the
+pathology. To determine the genetic status of the
+malignant process has extended beyond the
+genes analyzed in the study, specific commercial kits
+anatomical boundaries of the prostate gland,
+were used: PTEN/CEN10p (Abnova) - for PTEN
+invading adjacent structures or spreading to
+gene deletions; CytoCell P53 Deletion (CytoCell) -
+distant sites (1,2). Thus, from an a pathological
+for TP53 deletions; CytoCell TMPRSS2/ERG
+and oncological perspective, prostate cancer is
+Breakapart (CytoCell) - for TMPRSS2-ERG fusion;
+considered advanced in the presence of significant
+mutaFISH™ ARwt/AR-V7 RNA Probes (Abnova) -
+local extension (T3-T4), regional lymph node
+for identification of the AR-V7 isoform; ERBB2
+involvement (N1) or distant metastases (M1),
+FISH Probe Kit (Vysis, Abbott) - for ERBB2
+Chirurgia, 120 (3), 2025
+www.revistachirurgia.ro
+267
+C.A. lonescu (Mitu) et al
+amplifications. Histological sections were processed
+research purposes, and the study protocol was
+according to standard protocols, and FISH signal
+approved by the Ethics Committee for the Approval of
+evaluation was performed on a Zeiss Axioscop
+Clinical and Research Developmental Studies (No
+fluorescence microscope, using specific filters. For
+14/29.12.2023) in compliance with the Declaration of
+each case, 200 tumor nuclei were analyzed,
+Helsinki on human testing.
+excluding overlapping or artifactual nuclei. Genetic
+aberrations were defined as follows:
+Statistical Analysis
+Normal status: 1-2 gene signals and 1-2
+Associations between molecular marker status and
+centromeric signals per nucleus.
+clinicopathological characteristics were assessed
+Moderate amplification: ≥30% nuclei with >6
+using multivariate multinomial logistic regression.
+gene copies/nucleus and a gene/centromere
+The significance of differences between groups was
+ratio >2 in at least 15% of them.
+tested with analysis of variance (ANOVA). Results
+High-grade amplification: >10 gene copies/
+were expressed as odds ratios (OR) and 95%
+nucleus or gene/centromere ratio >5, or the
+confidence intervals (CI), with a statistical
+presence of "clusters" of fluorescent signals.
+significance threshold set at p < 0.05.
+Deletions or losses: defined if ≥30% of nuclei
+showed losses of the signal specific to the
+Results
+gene analyzed.
+Split signals were considered as a single signal,
+The study cohort included 43 patients diagnosed
+and the interpretation of the results was performed
+with advanced prostate cancer, with a mean age of
+independently by two evaluators. In addition to the
+63 years (range 47-76). Most of the patients
+molecular analysis, relevant clinicobiological
+(74.4%) underwent radical prostatectomy. Pre-
+data were collected and noted for each patient,
+operative PSA levels were above 20 ng/mL in over
+including: age at diagnosis, preoperative PSA
+half of the cases (53.5%), suggesting a biologically
+value, Gleason score (according to ISUP classifica-
+aggressive disease. Histopathological evaluation
+tion), local tumor extension stage (pT), lymph node
+revealed that 54% of tumors had a Gleason score of
+invasion status (pN), presence of positive margin
+7, while 16% had scores of 8 or higher. Locally
+(R1), relevant medical history.
+advanced tumor stages (pT3 or higher) were
+observed in 63% of patients, 38% had regional
+Study Endpoints
+lymph node invasion (N1), and 28% presented with
+The primary endpoint to evaluate the association
+distant metastases (M1) (Table 1).
+between the mutational status of PTEN, AR-V7,
+TP53, TMPRSS2-ERG, and ERBB2 and key
+clinicopathological variables (e.g., PSA level,
+Table 1. Clinicopathological characteristics analyzed in patients in the
+Gleason score, tumor stage), in order to identify
+study group
+their potential as prognostic and stratification bio-
+Variable
+No. cases (%)
+p
+markers in advanced prostate cancer.
+Average age (range, years)
+63 (47-76)
+0.837
+Gleason Score
+0.168
+The secondary endpoints:
+≤6
+13 (30%)
+7
+23 (54%)
+To assess whether specific combinations of
+≥8
+7 (16%)
+genetic alterations are associated with more
+Preoperative PSA (ng/ml) (median)
+17.8
+0.177
+aggressive tumor features or local extension
+< 10
+4 (9.3%)
+(e.g., extraprostatic invasion, seminal vesicle
+10-20
+16 (37.2%)
+> 20
+23 (53.48%)
+involvement).
+Radical prostatectomy
+0.308
+To determine the prevalence and distribution
+Yes
+32 (74.41)
+of individual and combined genetic altera-
+No
+11 (25.59)
+tions in the studied population.
+Tumor stage
+0.982
+≤T2
+16 (37%)
+To explore the potential utility of molecular
+≥T3 ≥
+27 (63%)
+markers in identifying tumor subtypes that
+N stage
+0.490
+may benefit from targeted therapies.
+NO
+27 (62.79%)
+N1
+16 (37.21%)
+Ethical Approval
+M stage
+0.751
+MO
+31 (72%)
+All patients included in the study signed an informed
+M1
+12 (28%)
+consent regarding the use of biological material for
+PSA: prostate-specific antigen; T: Tumor; N: Node; M: Metastasis.
+268
+www.revistachirurgia.ro
+Chirurgia, 120 (3), 2025
+Toward Personalized Surgery in Advanced Prostate Cancer: Stratification by PTEN, AR-V7, TP53, TMPRSS2-ERG, and ERBB2 Genetic Alterations
+Table 2.
+Relationship between the architectural pattern of prostate adenocarcinomas and tumor aggressiveness, measured by the Gleason score
+Variable
+Patterns 1
+Patterns 2
+Patterns 3
+Patterns 4
+ANOVA
+OR
+*p-value
+OR
+*p- value
+OR
+*p- value
+OR
+*p- value
+p-value
+(95% CI)
+(95% CI)
+(95% CI)
+(95% CI)
+Gleason Score <7
+0.38
+<0.001
+0.56
+<0.001
+1.31
+0.392
+0.93
+0.961
+<0.001
+(0.29-0.6)
+(0.41-0.75)
+(0.78-2.21)
+(0.41-2.13)
+Gleason Score >7
+1.27
+0.421
+0.75
+0.464
+2.12
+<0.001
+0.79
+0.693
+<0.001
+(0.77-2.11)
+(0.45-1.26)
+(1.47-3.06)
+(0.38-2.14)
+ANOVA - analysis of variance; OR - odds ratio; CI - confidence interval; *MVA - multivariate analysis; Pattern 1 - adenocarcinomas with atrophic patterns;
+Pattern 2 - adenocarcinomas with pseudohyperplastic and microcystic patterns; Pattern 3 - adenocarcinomas with glomeruloid, cribriform, comedonecrotic
+and signet ring cell components; Pattern 4 - conventional and foam cell tumors. Values in italics indicate statistical significance (p <0.050).
+A detailed assessment of architectural patterns
+and ERBB2 amplification (7%). While single
+revealed important correlations with tumor
+mutations were predominant, nine patients
+aggressiveness. Tumors exhibiting atrophic or
+exhibited co-alterations of two markers, and two
+pseudo-hyperplastic/microcystic features (Patterns 1
+cases harbored three simultaneous genetic
+and 2) were significantly associated with lower
+changes. The most common combination was
+Gleason scores (<7), indicating a more indolent
+PTEN loss and TP53 amplification, a pattern
+behavior. In contrast, tumors with glomeruloid,
+associated with genomic instability and a high-risk
+cribriform, comedonecrotic, or signet-ring cell
+phenotype. Other relevant combinations included
+features (Pattern 3) were strongly correlated with
+PTEN loss together with AR-V7 or TMPRSS2-ERG
+higher Gleason scores (>7), consistent with a more
+positivity, as well as triple profiles such as PTEN-/
+aggressive histological profile (OR = 2.12, p < 0.001).
+AR-V7+/TP53+ or PTEN-/TP53+/ERBB2+, which
+Conventional and foamy cell patterns (Pattern 4) did
+may indicate rare but highly aggressive molecular
+not demonstrate a statistically significant associa-
+subtypes (Table 3, Figs. 3-6).
+tion with tumor grade, suggesting a more hetero-
+Multinomial logistic regression analysis
+geneous biological behavior (Table 2; Figs. 1, 2).
+revealed several clinically relevant associations.
+From a molecular perspective, at least one
+Notably, PTEN loss and AR-V7 expression were
+genetic alteration was detected in 95.3% of
+both associated with low preoperative PSA levels
+patients. The most frequent alteration was PTEN
+(OR = 0.47 and OR = 0.48, respectively), despite
+loss, found in 9 cases (20.9%), followed by TP53
+their known link to tumor aggressiveness. This
+amplification (16.3%), TMPRSS2-ERG gene fusion
+finding suggests that some biologically aggressive
+(13.9%), AR-V7 splice variant expression (11.6%),
+tumors may elude PSA-based monitoring, high-
+Figure 1. Prostate adenocarcinoma. FISH image for PTEN
+Figure 2.
+Prostate adenocarcinoma. FISH image for PTEN
+status -1 red signal (locus 10q23.3) and two green
+status - no red signals (locus 10q23.3) and two
+signals (centromere 10) per nucleus indicating
+green signals (centromere 10) per nucleus indicating
+hemizygous PTEN deletion.
+homozygous PTEN deletion.
+Chirurgia, 120 (3), 2025
+www.revistachirurgia.ro
+269
+C.A. lonescu (Mitu) et al
+Table 3.
+Incidence of genetic
+No. of markers identified
+Mutational status
+No. cases
+Frequency (%)
+alterations in patients
+A single marker modified
+in the study group.
+(n = 30 cases)
+PTEN-
+9
+20.90%
+AR-V7+
+5
+11.60%
+TMPRSS2-ERG+
+6
+13.90%
+TP53+
+7
+16.30%
+ERBB2+
+3
+7.00%
+Two markers modified simultaneously
+(n = 9 cases)
+PTEN-/AR-V7+
+2
+4.70%
+PTEN-/TMPRSS2-ERG+
+2
+4.70%
+PTEN-/TP53+
+3
+7.00%
+AR-V7 +/TP53+
+1
+2.30%
+TP53+/ERBB2+
+1
+2.30%
+Three markers modified simultaneously
+(n = 2 cases)
+PTEN-/AR-V7+/TP53+
+1
+2.30%
+PTEN-/ERBB2+/TP53+
+1
+2.30%
+Note: "_" = gene deletion (loss); "+" = gene amplification.
+Figure 3.
+Prostate adenocarcinoma. FISH image suggestive
+Figure 4.
+Prostate adenocarcinoma. FISH image for ERBB2
+of TP53 marker (P53, 17p13.1, Red; D17Z1,
+status - moderate amplification of the ERBB2
+17p11.1-q11.1, Green), moderate gene
+gene.
+amplification.
+Figure 5.
+Prostate adenocarcinoma. FISH image suggestive
+Figure 6.
+Prostate adenocarcinoma. FISH image suggestive
+of nuclei with negative AR-V7 marker (no red
+of positive TMPRSS2-ERG marker (gene fusion
+signals) and positive AR-V7 (areas with red
+bydeletion) (TMPRSS2, 21q22.2-q22.3, Red;
+signals).
+TMPRSS2, 21q22.2-q22.3, Green; ERG, 21q22.
+13-q22.2, Blue)
+270
+www.revistachirurgia.ro
+Chirurgia, 120 (3), 2025
+Toward Personalized Surgery in Advanced Prostate Cancer: Stratification by PTEN, AR-V7, TP53, TMPRSS2-ERG, and ERBB2 Genetic Alterations
+lighting the importance of molecular profiling in
+patient evaluation. On the other hand, ERBB2
+amplification was significantly correlated with
+p-value
+<0.001
+<0.001
+0.01
+<0.001
+<0.001
+0.60
+0.24
+high PSA levels (OR=2.12, p<0.001), possibly
+reflecting intense proliferative activity.
+The presence of PTEN loss was also associated
+*p-value
+<0.001
+<0.001
+0.24
+0.93
+<0.001
+0.29
+0.71
+with extraprostatic extension (OR=1.80, p<0.001),
+underscoring its role in promoting local invasive-
+ness. Interestingly, TP53 and ERBB2 alterations
+were negatively associated with extraprostatic
+TP53+
+OR
+(95% CI)
+2.12
+extension, indicating that these alterations might
+(1.47-3.06)
+0.56
+(0.41-0.75)
+0.86
+(0.62-1.2)
+1.04
+(0.66-1.64)
+2.30
+(1.68-3.15)
+1.18
+(0.89-1.56)
+1.01
+(0.98-1.05)
+be more linked to distant dissemination or
+systemic progression rather than local invasion.
+AR-V7 expression emerged as the only genetic
+*p-value
+0.05
+0.001
+0.37
+0.96
+0.05
+0.73
+0.08
+marker significantly associated with seminal
+vesicle invasion (OR=2.27, p=0.004), suggesting its
+value as a marker of local aggressiveness and
+therapeutic resistance (Table 4).
+OR
+(95% CI)
+1.73
+Additional associations were found between
+(0.91-3.27)
+0.42
+(0.25-0.7)
+0.73
+(0.4-1.32)
+0.93
+(0.41-2.13)
+1.74
+(1.05-2.88)
+1.16
+(0.49-2.76)
+0.97
+(0.94-1.00)
+molecular markers and tumor grade. PTEN loss
+was paradoxically associated with lower Gleason
+scores (<7), a finding that may reflect morpho-
+TMPRSS2-ERG+
+*p-value
+0.42
+0.37
+0.51
+0.79
+0.39
+0.22
+0.62
+logical underestimation of biologically aggressive
+disease. Conversely, TP53 amplification and
+ERBB2 overexpression were both significantly
+associated with high-grade tumors (Gleason >7),
+OR
+(95% CI)
+0.81
+(0.44-1.51)
+0.76
+(0.46-1.26)
+0.84
+(0.47-1.53)
+0.89
+(0.39-2.04)
+1.31
+(0.78-2.21)
+1.6
+(0.78-3.27)
+1.01
+reinforcing their role as indicators of poor
+(0.97-1.05)
+prognosis.
+A weak but statistically significant association
+was observed between younger age and AR-V7
+4. Multivariate multinomial logistic regression analysis between clinicopathological parameters and mutational status
+AR-V7+
+*p-value
+0.021
+0.34
+0.004
+0.58
+0.46
+0.53
+0.045
+positivity (OR=0.97, p=0.045), with a similar trend
+for TP53 amplification (p=0.08). These findings
+suggest that younger patients may harbor more
+aggressive molecular phenotypes, requiring earlier
+OR
+(95% CI)
+0.48
+(0.26-0.88)
+1.23
+(0.75-2.01)
+2.27
+(1.35-3.82)
+0.75
+intervention or intensified therapeutic strategies.
+(0.31-1.81)
+0.75
+(0.45-1.26)
+1.27
+(0.79-2.04)
+0.97
+(0.94-1.00)
+Interestingly, none of the investigated genetic
+markers showed a significant correlation with
+lymph node status, indicating that nodal involve-
+*p-value
+<0.001
+<0.001
+0.24
+0.93
+<0.001
+0.42
+0.71
+ment may be influenced by factors beyond the five
+analyzed alterations. Altogether, these results
+PTEN-
+ANOVA
+emphasize the biological complexity of advanced
+prostate cancer and support the role of molecular
+profiling in risk stratification and personalized
+OR
+(95% CI)
+0.47
+(0.33-0.68)
+1.80
+(1.34-2.41)
+1.16
+(0.83-1.62)
+0.96
+(0.61-1.51)
+0.43
+(0.32-0.6)
+1.27
+(0.77-2.11)
+1.00
+(0.98-1.02)
+therapeutic planning.
+Discussions
+ANOVA = analysis of variance; OR = odds ratio; CI = confidence interval; *MVA = multivariate analysis; PSA = prostate-specific antigen.
+Isolated expression of altered genetic markers was
+observed in 30 cases. Loss of PTEN (9 cases;
+20.9%) was the most common single genetic
+alteration observed. This is consistent with the
+literature, which indicates PTEN as an essential
+tumor suppressor. Its absence favors activation of
+Variable
+ERBB2+
+Preoperative PSA
+Extraprostatic extension
+Invasion of the seminal vesicles
+the PI3K/AKT pathway, with effects on tumor
+Table
+Gleason Score <7
+Gleason Score >7
+Nodule involvement
+Age
+Chirurgia, 120 (3), 2025
+www.revistachirurgia.ro
+271
+C.A. lonescu (Mitu) et al
+growth and aggressiveness of the disease. In this
+potential resistance to multiple therapeutic lines)
+group, (PTEN-) was frequently associated with
+and one case with (PTEN-) &(ERBB2+)&(TP53+)
+Gleason scores >7. AR-V7 expression (5 cases;
+(this combination could describe a rare subgroup
+11.6%) suggests the presence of a splice variant of
+of patients who would benefit from targeted
+the androgen receptor, associated with resistance
+therapies, especially HER2 inhibitors or combina-
+to hormonal therapy. According to the data
+tion therapies). To assess the clinical relevance of
+published to date, these patients may present a
+the identified molecular markers (PTEN, AR-V7,
+refractory tumor form, requiring alternative
+TMPRSS2-ERG, TP53 and ERBB2), a multi-
+therapeutic approaches (16).
+variate multinomial logistic regression analysis
+TMPRSS2-ERG fusion (6 cases; 13.9%),
+was performed. The results obtained indicate
+although relatively rare in this group, remains a
+significant associations between certain genetic
+relevant marker for activation of the androgen
+alterations and key clinicopathological variables,
+pathway. Generally, this alteration is associated
+relevant for risk stratification in advanced prostate
+with better differentiated subtypes, but may
+cancer.
+contribute to progression when it coexists with
+(PTEN-) and (AR-V7+) were associated with
+other mutations. TP53 amplification (7 cases;
+low PSA levels (PTEN: OR=0.47, p<0.001; AR-V7:
+16.3%) reflects increased genomic instability.
+OR=0.48, p=0.021), suggesting that these tumors,
+Studies published to date have shown that (TP53+)
+although they may have an aggressive biological
+mutations are usually associated with poor
+potential, do not proportionally express PSA,
+prognosis, resistance to treatments and accelerated
+which may lead to an underestimation of the
+disease progression. Although rare, (ERBB2+)
+severity of the disease. (ERBB2+) was correlated
+amplification (only 3 cases; 7.0%) may indicate a
+with an elevated PSA (OR=2.12, p<0.001),
+tumor subgroup susceptible to targeted therapies
+indicating intense tumor activity in these cases.
+(anti-HER2). This finding supports the idea of a
+We consider that the low PSA level in (PTEN-) and
+personalized approach in the treatment of advanced
+(AR-V7+) tumors may mask the real aggressive-
+prostate cancer.
+ness of the disease. Conversely, (ERBB2+) may
+In 9 cases of advanced prostate cancer tumors,
+constitute a marker of increased tumor activity
+simultaneous expression of two markers was
+and a possible criterion for the selection of
+observed simultaneously, such as (PTEN-)&
+targeted therapies.
+(AR-V7+) or (PTEN-)&(TMPRSS2-ERG+) The
+(PTEN-) was also positively associated with
+associations between PTEN loss and androgen
+extraprostatic extension (OR=1.80, p<0.001),
+pathway activation suggest a cooperation between
+reflecting the increased invasiveness of these
+tumor proliferation and therapeutic resistance
+tumors. Unexpectedly, (TP53+) (OR=0.42, p=0.001)
+mechanisms. These combinations may characterize
+and (ERBB2+) (OR=0.56, p<0.001) were negatively
+particularly aggressive tumor forms. In three cases,
+associated with extraprostatic extension, which
+tumor heterogeneity consisted of the presence of
+may indicate a different pattern of progression.
+PTEN gene deletion and amplified TP53 gene
+These results may reflect that (PTEN-) tumors are
+(PTEN-&TP53+).
+at increased risk of local invasion, while the
+This was the most frequent dual combination
+presence of (TP53+) or (ERBB2+) may signal a
+observed. According to other studies, the coexistence
+different pathway of tumor progression, less
+of PTEN loss and TP53 amplification increases the
+dependent on local invasion and perhaps more
+risk of rapid progression and unfavorable prognosis.
+focused on metastasis or genomic instability.
+The mutational status (AR-V7+)&(TP53+) and
+Only (AR-V7+) showed a significant association
+(TP53+)&(ERBB2+), was identified in isolation, in a
+with seminal vesicle invasion (OR=2.27, p=0.004),
+single case each. These combinations indicate the
+suggesting a tumor with locally advanced potential
+simultaneous activation of multiple oncogenic
+and resistance to conventional hormonal therapies.
+pathways, which can lead to cancers refractory to
+Thus, (AR-V7+) is confirmed as a marker of tumor
+conventional therapies.
+aggressiveness and loco-regional extension, poten-
+Another situation recorded was increased
+tially useful for the selection of patients requiring
+heterogeneity with the simultaneous expression of
+early systemic treatments.
+three genetic markers. One case identified with
+We also note that (PTEN-) was associated with
+mutational status (PTEN-)&(AR-V7+)&(TP53+)
+Gleason scores <7 (OR=0.43, p < 0.001), which may
+(suggesting an extremely aggressive molecular
+seem contradictory in the context of aggressive
+profile, characterized by genomic instability and
+behavior. This discrepancy can be explained by the
+272
+www.revistachirurgia.ro
+Chirurgia, 120 (3), 2025
+Toward Personalized Surgery in Advanced Prostate Cancer: Stratification by PTEN, AR-V7, TP53, TMPRSS2-ERG, and ERBB2 Genetic Alterations
+biological heterogeneity of these tumors, which may
+information for targeting patients to chemotherapy
+be morphologically underestimated. In contrast,
+or PARP inhibitors (23).
+(TP53+) (OR=1.74, p=0.05) and (ERBB2+) (OR=
+Regarding TP53, mutations are recognized
+2.30, p<0.001) were significantly associated with
+as predictors of reduced overall survival and
+Gleason scores >7, indicating a more aggressive
+associated with poor response to conventional
+tumor phenotype. TP53 and ERBB2 markers are
+therapies (24). Zhu KL et al. (2024) showed that
+correlated with high-grade tumor forms, with poten-
+TP53 dysfunction facilitates immunological escape
+tial for rapid evolution, justifying more aggressive
+and remodeling of the tumor microenvironment,
+therapeutic strategies and careful monitoring.
+disturbing the immune-suppressive balance - our
+A weak but statistically significant association
+results confirm the associations of TP53+ with high
+was observed between younger age and expression
+Gleason scores and more frequent occurrence in
+of (AR-V7+) (OR=0.97, p=0.045), and a similar
+young patients.
+trend was observed for (TP53+) (p=0.08). These
+ERBB2 (HER2) amplification in prostate cancer
+results may suggest that younger patients present
+is relatively rare, but increasingly relevant due to
+with more aggressive molecular subtypes (AR-V7+,
+emerging targeted therapies (e.g. trastuzumab
+TP53+), which may require an early personalized
+derivatives), evaluated in phase II and III trials (25).
+approach, given the risk of hormonal resistance
+In available clinical studies, ERBB2+ has been
+and rapid progression. No molecular marker
+associated with elevated PSA and high Gleason score
+demonstrated a significant association with lymph
+signals of a biologically active and potentially
+node involvement in this analysis. Although nodal
+aggressive subtype. Furthermore, the combination of
+invasion is an important prognostic indicator, in
+ERBB2 amplification with PTEN loss appears to be
+this study, no significant genetic associations were
+a promising target for combination therapies with
+identified, suggesting that nodal involvement may
+PI3K AKT inhibitors (26).
+be influenced by other factors independent of the
+This study has several limitations. First, the
+molecular profile analyzed (17).
+relatively small sample size (n=43) may limit
+The results obtained highlight the importance
+the statistical power and generalizability of the
+of evaluating the molecular profile in advanced
+findings. Second, the retrospective and single-
+prostate cancer (14). The loss of PTEN expression
+center design may introduce selection bias and
+and the presence of AR-V7 are associated in the
+limit external validity. Third, the absence of
+literature with a more aggressive tumor pheno-
+follow-up data precluded correlation with long-
+type, but with relatively low PSA levels, which may
+term oncological outcomes such as biochemical
+make it difficult to effectively monitor the disease.
+recurrence or survival. Fourth, only five molecular
+(18). A preclinical study in animal models demon-
+markers were analyzed, and the potential
+strated that the concomitant loss of PTEN and TP53
+contribution of other relevant genetic or epigenetic
+accelerates tumor progression and confers
+alterations was not explored. Finally, FISH
+resistance to standard therapies (18). At the same
+analysis, although precise, may not detect subclonal
+time, AR-V7 has been repeatedly associated with
+or low-level alterations present in heterogeneous
+resistance to second-line hormonal therapies, such
+tumor populations.
+as enzalutamide and abiraterone, especially in
+castration-resistant prostate cancer (19). For
+Conclusions
+example, Antonarakis et al. (2014) reported that
+AR-V7-positive patients had a PSA response of 0%
+The molecular characterization of advanced
+to enzalutamide, compared with 53% in AR-V7-
+prostate cancer using PTEN, AR-V7, TP53,
+negative patients (P=0.004), with a significant
+TMPRSS2-ERG, and ERBB2 reveals distinct
+decrease in overall survival (20,21).
+tumor subtypes with prognostic and therapeutic
+A recent meta-analysis confirms these
+significance. PTEN loss and AR-V7 expression are
+observations, showing a 3.4-fold increased risk of
+linked to aggressive behavior with low PSA levels,
+mortality and shortened progression-free survival
+while TP53 and ERBB2 alterations are associated
+in AR-V7-positive patients (22).
+with high-grade tumors. These findings support
+The importance of AR-V7 testing before second-
+the integration of molecular markers into clinical
+line hormonal treatments is also supported by data
+practice to improve patient stratification and guide
+in the literature, which highlight that the presence
+personalized treatment. Further studies on larger
+of AR-V7 is an independent predictor of poor
+cohorts are needed to validate these associations
+response and reduced survival - essential
+and develop biomolecular risk models.
+Chirurgia, 120 (3), 2025
+www.revistachirurgia.ro
+273
+C.A. lonescu (Mitu) et al
+Author's Contributions
+Autophagy Molecular Mechanisms Network in Heterogeneous Aggressive Phenotype
+Prostate Hyperplasia Primary Cell Cultures Have a Prognostic Role. Int J Mol Sci.
+2024;25(17):9329.
+Conceptualization: Cristina Anita Ionescu (Mitu),
+5.
+Dai W, Qiao X, Fang Y, Guo R, Bai P, Liu S, et al. Epigenetics-targeted drugs: current
+Nicoleta Leopa, Bogdan Cîmpineanu, Felix Voinea,
+paradigms and future challenges. Signal Transduct Target Ther. 2024;9(1):332.
+6.
+Lue JK, Prabhu SA, Liu Y, Gonzalez Y, Verma A, Mundi PS, et. al. Precision Targeting
+Mihaela Pundiche; methodology: Cristina Anita
+with EZH2 and HDAC Inhibitors in Epigenetically Dysregulated Lymphomas. Clin
+Ionescu (Mitu), Georgeta Camelia Cozaru, Mariana
+Cancer Res. 2019;25(17):5271-5283.
+7.
+Antonarakis ES, Lu C, Wang H, Luber B, Nakazawa M, Roeser JC, et al.
+Aşchie, Anca Mitroi, Mariana Deacu; software,
+AR-V7 and resistance to enzalutamide and abiraterone in prostate cancer. N Engl J
+Georgeta Camelia Cozaru; validation: Cristina
+Med. 2014;371(11):1028-38.
+8.
+Anita Ionescu (Mitu), Georgeta Camelia Cozaru,
+Bernemann C, Schnoeller TJ, Luedeke M, Steinestel J, Schrader AJ, Schrader M, et al.
+Expression of androgen receptor variant AR-V7 in circulating tumour cells does not
+Mariana Aşchie, Bogdan Cîmpineanu, Felix Voinea,
+preclude response to next-generation androgen deprivation therapy in prostate cancer.
+Elena Matei, Anca Mitroi, Mariana Deacu; investi-
+Eur Urol. 2017;71(1):1-3.
+9.
+Zhu Y, Li Luo Y, Lin M, Zhang M, Tang J, et al. Prognostic and predictive significance
+gation: Cristina Anita Ionescu (Mitu), Nicoleta
+of AR-V7 in prostate cancer: A meta-analysis. Oncotarget. 2017;8(33):57863-57872.
+Leopa, Bogdan Cîmpineanu, Felix Voinea, Mihaela
+10.
+Pejčić T, Todorović Z, Durašević S, Popović L. Mechanisms of Prostate Cancer Cells
+Survival and Their Therapeutic Targeting. Int J Mol Sci. 2023; 24(3):2939.
+Pundiche; resources: Georgeta Camelia Cozaru,
+11.
+He MX, Cuoco MS, Crowdis J, Bosma-Moody A, Zhang Z, Bi K, et al. Transcriptional
+Mariana Aschie, Anca Mitroi, Mariana Deacu, Elena
+mediators of treatment resistance in lethal prostate cancer. Nat Med. 2021;27(3):426-
+433.
+Matei, Felix Voinea, Ionut Iorga; data curation:
+12.
+Leinonen KA, Saramäki OR, Furusato B, Kimura T, Takahashi H, Egawa S, et al. Loss of
+Cristina Anita Ionescu (Mitu), Georgeta Camelia
+PTEN is associated with aggressive behavior in ERG-positive prostate cancer. Cancer
+Cozaru, Mariana Aşchie, Nicoleta Leopa, Bogdan
+Epidemiol Biomarkers Prev. 2013;22(12):2333-44.
+13.
+Pedrani M, Barizzi J, Salfi G, Nepote A, Testi I, Merler S, et al. The Emerging Predictive
+Cîmpineanu, Felix Voinea; writing - original draft
+and Prognostic Role of Aggressive-Variant-Associated Tumor Suppressor Genes
+preparation, Cristina Anita Ionescu (Mitu), Nicoleta
+Across Prostate Cancer Stages. Int J Mol Sci. 2025; 26(1):318.
+14.
+Leopa N, Pundiche M, Dan C, Nitu TS, Paitici S, Badea A, et al. The Impact of
+Leopa, Bogdan Cîmpineanu, Felix Voinea, Mihaela
+Minimally Invasive Surgery in Patients with Colorectal Cancer and Type 2 Diabetes
+Pundiche; writing - review and editing: Cristina
+Mellitus. Chirurgia (Bucur). 2025; 120(1):71-78.
+15.
+Anita Ionescu (Mitu), Nicoleta Leopa, Bogdan
+Epstein JI, Egevad L, Amin MB, Delahunt B, Srigley JR, Humphrey PA; Grading
+Committee. The 2014 International Society of Urological Pathology (ISUP) Consensus
+Cîmpineanu, Felix Voinea, Mihaela Pundiche; visu-
+Conference on Gleason Grading of Prostatic Carcinoma: Definition of Grading Patterns
+alization: Cristina Anita Ionescu (Mitu), Georgeta
+and Proposal for a New Grading System. Am J Surg Pathol. 2016 ;40(2):244-52.
+16.
+Couto SS, Cao M, Duarte PC, Banach-Petrosky W, Wang S, Romanienko P, et. al.
+Camelia Cozaru, Mariana Aşchie, Nicoleta Leopa,
+Simultaneous haploinsufficiency of Pten and Trp53 tumor suppressor genes
+Bogdan Cîmpineanu, Felix Voinea, Elena Matei,
+accelerates tumorigenesis in a mouse model of prostate cancer. Differentiation. 2009;
+77(1):103-11.
+Anca Mitroi, Mariana Deacu, Ionut Iorga, Mihaela
+17.
+Armstrong AJ, Halabi S, Luo J, Nanus DM, Giannakakou P, Szmulewitz RZ, et al.
+Pundiche; supervision: Cristina Anita Ionescu
+Prospective multicenter validation of androgen receptor splice variant 7 detection in
+(Mitu), Georgeta Camelia Cozaru, Mariana Aşchie,
+circulating tumor cells for guiding treatment of metastatic castration-resistant prostate
+cancer. JAMA Oncol. 2023;9(2):233-241.
+Nicoleta Leopa, Bogdan Cîmpineanu, Felix Voinea,
+18.
+Antonarakis S, Lu C, Wang H, Luber B, Nakazawa M, Roeser JC, et. al. AR-V7 and
+Elena Matei, Anca Mitroi, Mariana Deacu, Ionut
+resistance to enzalutamide and abiraterone in prostate cancer. N Engl J Med. 2014;
+371(11):1028-38.
+Iorga, Mihaela Pundiche; administration: Cristina
+19.
+Khan T, Becker TM, Scott KF, Descallar J, de Souza P, Chua W, et. al. Prognostic and
+Anita Ionescu (Mitu), Georgeta Camelia Cozaru,
+Predictive Value of Liquid Biopsy-Derived Androgen Receptor Variant 7 (AR-V7) in
+Prostate Cancer: A Systematic Review and Meta-Analysis. Front Oncol. 2022;
+Mariana Aşchie, Anca Mitroi, Mariana Deacu,
+12:868031.
+Leopa Nicoleta, Mihaela Pundiche. All authors have
+20.
+Massah S, Pinette N, Foo J, Datta S, Guo M, Bell R, et. al. AR-V7 condensates drive
+read and agreed to the published version of the man-
+androgen-independent transcription in castration resistant prostate cancer. bioRxiv
+[Preprint]. 2025 Jan 13:2025.01.08.631986.
+uscript.
+21.
+Lu C, Brown LC, Antonarakis ES, Armstrong AJ, Luo J. Androgen receptor variant-driv-
+en prostate cancer II: advances in laboratory investigations. Prostate Cancer Prostatic
+Dis (2020) 23(3):381-97.
+Conflict of Interest: None to declaire.
+22.
+Beltran H, Wyatt AW, Chedgy EC, Zafeiriou Z, Sboner A, McNair C, et al. Impact of
+therapy on genomics and transcriptomics in high-risk prostate cancer treated with
+neoadjuvant androgen deprivation therapy. J Clin Invest. 2020;130(10):4492-4504.
+23.
+Kim JY, Jung J, Kim KM, Lee J, Im YH. TP53 mutations predict poor response to
+References
+immunotherapy in patients with metastatic solid tumors. Cancer Med. 2023;12(11):
+12438-12451.
+24.
+Zhu KL, Su F, Yang JR, Xiao RW, Wu RY, Cao MY, et. al. TP53 to mediate immune
+1.
+Maekawa S, Takata R, Obara W. Molecular Mechanisms of Prostate Cancer
+escape in tumor microenvironment: an overview of the research progress. Mol Biol
+Development in the Precision Medicine Era: A Comprehensive Review. Cancers
+Rep. 2024 Jan 25;51(1):205.
+(Basel). 2024;16(3):523.
+25.
+Matei E, lonescu AC, Enciu M, Popovici V, Mitroi AF, Aschie M, et.al. Cell death and
+2.
+Sekhoacha M, Riet K, Motloung P, Gumenku L, Adegoke A, Mashele S. Prostate Cancer
+DNA damage via ROS mechanisms after applied antibiotics and antioxidants doses in
+Review: Genetics, Diagnosis, Treatment Options, and Alternative Approaches.
+prostate hyperplasia primary cell cultures. Medicine (Baltimore). 2024;103(37):
+Molecules. 2022;27(17):5730.
+e39450.
+3.
+Testa U, Castelli G, Pelosi E. Cellular and Molecular Mechanisms Underlying Prostate
+26.
+Sweeney CJ, Yu EY, Smith MR, Saad F, McDermott RS, Meinhardt G, et al. A randomized,
+Cancer Development: Therapeutic Implications. Medicines (Basel). 2019;6(3):82.
+open-label, phase || study of trastuzumab emtansine (T-DM1) in metastatic castration-
+4.
+Matei E, Enciu M, Rosu MC, Voinea F, Mitroi AF, Deacu M, et al. Apoptosis-Cell Cycle-
+resistant prostate cancer (mCRPC). Ann Oncol. 2021;32(suppl_5):S686.
+274
+www.revistachirurgia.ro
+Chirurgia, 120 (3), 2025

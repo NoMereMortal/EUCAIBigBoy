@@ -1,0 +1,490 @@
+stages:
+  - pre-commit
+  - test
+  - coverage
+  - infrastructure
+
+variables:
+  # Registry configuration
+  INTERNAL_REGISTRY: 'registry.gitlab.aws.dev/genaiic-reusable-assets/shareable-assets/chat-workbench'
+  # UV configuration
+  UV_VERSION: '0.8.1'
+  PYTHON_VERSION: '3.11'
+  BASE_LAYER: slim
+  UV_CACHE_DIR: '$CI_PROJECT_DIR/.uv-cache'
+  UV_LINK_MODE: 'copy' # GitLab CI needs copy instead of hard links
+  UV_SYSTEM_PYTHON: 1
+  # Node.js configuration
+  NPM_CONFIG_CACHE: '$CI_PROJECT_DIR/.cache/npm'
+  # Rust configuration
+  CARGO_HOME: '$CI_PROJECT_DIR/.cache/cargo'
+  # Docker configurations
+  DOCKER_DRIVER: overlay2
+  DOCKER_TLS_CERTDIR: '/certs'
+  # Common test environment variables
+  AWS_ACCESS_KEY_ID: 'testing'
+  AWS_SECRET_ACCESS_KEY: 'testing' # pragma: allowlist secret
+  AWS_SESSION_TOKEN: 'testing'
+  AWS_DEFAULT_REGION: 'us-east-1'
+  DYNAMODB_TABLE_NAME: 'test-app-data'
+  AUTH_ENABLED: 'false'
+  RATE_LIMIT_ENABLED: 'false'
+
+# Global cache configuration
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - .cache/
+
+# ================================
+# Stage 1: Pre-commit Hooks
+# ================================
+
+pre-commit-hooks:
+  stage: pre-commit
+  image:
+    name: ${INTERNAL_REGISTRY}/uv:python3.13-bookworm-slim
+  before_script:
+    - apt-get update && apt-get install -y git curl build-essential
+    - curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
+    - apt-get install -y nodejs
+    # Install pre-commit and pyrefly
+    - uv pip install pre-commit pyrefly==0.25.0 --system
+    # Install project dependencies
+    - uv sync --dev
+    - uv pip install -e backend/
+    # Set up environment
+    - export PATH="$HOME/.local/bin:$PATH"
+    # Install frontend dependencies
+    - cd ui && npm ci && cd $CI_PROJECT_DIR
+    - cd $CI_PROJECT_DIR/infrastructure/cdk && npm ci && cd $CI_PROJECT_DIR
+  script:
+    - cd $CI_PROJECT_DIR
+    - echo "Running pre-commit hooks..."
+    - pre-commit run --all-files || (echo "Running pyrefly directly for debugging..." && cd $CI_PROJECT_DIR && pyrefly check)
+    - uv cache prune --ci # Clean up the cache for better performance in future runs
+  cache:
+    key:
+      files:
+        - uv.lock
+        - backend/pyproject.toml
+    paths:
+      - $UV_CACHE_DIR
+      - ui/node_modules/
+      - infrastructure/cdk/node_modules/
+  artifacts:
+    when: always
+    expire_in: 1 week
+  allow_failure: false
+
+# ================================
+# Stage 2: Unit Tests
+# ================================
+
+# Backend Unit Tests
+backend-unit-tests:
+  stage: test
+  image: ${INTERNAL_REGISTRY}/uv:python3.13-alpine
+  services:
+    - name: ${INTERNAL_REGISTRY}/valkey:alpine
+      alias: valkey
+  variables:
+    VALKEY_HOST: 'valkey'
+    VALKEY_PORT: '6379'
+  before_script:
+    - apt-get update && apt-get install -y git build-essential
+    - pip install uv
+    - cd backend
+    - uv sync --dev
+  script:
+    - cd backend
+    # Run unit tests with coverage
+    - uv run pytest -xvs -m "unit" --junitxml=unit-tests.xml --cov=app --cov-report=term --cov-append
+    - mv .coverage .coverage.unit
+  cache:
+    key: backend-$CI_COMMIT_REF_SLUG
+    paths:
+      - .cache/
+      - backend/.venv/
+  artifacts:
+    reports:
+      junit: backend/unit-tests.xml
+    paths:
+      - backend/.coverage.unit
+    when: always
+    expire_in: 1 week
+  allow_failure: true
+
+# Backend Repository Tests (Database Tests)
+backend-repository-tests:
+  stage: test
+  image: ${INTERNAL_REGISTRY}/uv:python3.13-alpine
+  services:
+    - name: ${INTERNAL_REGISTRY}/valkey:alpine
+      alias: valkey
+    - name: ${INTERNAL_REGISTRY}/dynamodb-local:latest
+      alias: dynamodb-local
+  variables:
+    VALKEY_HOST: 'valkey'
+    VALKEY_PORT: '6379'
+    DYNAMODB_ENDPOINT_URL: 'http://dynamodb-local:8000'
+  before_script:
+    - apt-get update && apt-get install -y git build-essential
+    - pip install uv boto3
+    - cd backend
+    - uv sync --dev
+  script:
+    - cd $CI_PROJECT_DIR/backend
+    # Run repository tests with coverage
+    - uv run pytest -xvs -m "repository" --junitxml=repository-tests.xml --cov=app --cov-report=term --cov-append
+    - mv .coverage .coverage.repository
+  cache:
+    key: backend-$CI_COMMIT_REF_SLUG
+    paths:
+      - .cache/
+      - backend/.venv/
+  artifacts:
+    reports:
+      junit: backend/repository-tests.xml
+    paths:
+      - backend/.coverage.repository
+    when: always
+    expire_in: 1 week
+  allow_failure: true
+
+# Frontend Tests
+frontend-tests:
+  stage: test
+  image: ${INTERNAL_REGISTRY}/node:20-alpine
+  before_script:
+    - cd ui
+    - npm ci
+  script:
+    - cd ui
+    # Run linting
+    - npm run lint
+    # Build the application to verify it compiles
+    - npm run build
+  cache:
+    key: frontend-$CI_COMMIT_REF_SLUG
+    paths:
+      - .cache/
+      - ui/node_modules/
+      - ui/.next/cache/
+  artifacts:
+    paths:
+      - ui/.next/
+      - ui/out/
+    expire_in: 1 week
+  allow_failure: true
+
+# CLI Tests
+cli-tests:
+  stage: test
+  image: ${INTERNAL_REGISTRY}/rust:1.70-slim
+  before_script:
+    - apt-get update && apt-get install -y pkg-config libssl-dev
+    - cd cli
+  script:
+    - cd cli
+    # Check formatting
+    - cargo fmt --check
+    # Run clippy for linting
+    - cargo clippy -- -D warnings
+    # Build the project
+    - cargo build --release
+    # Run tests
+    - cargo test --verbose
+  cache:
+    key: cli-$CI_COMMIT_REF_SLUG
+    paths:
+      - .cache/cargo/
+      - cli/target/
+  artifacts:
+    paths:
+      - cli/target/release/
+    expire_in: 1 week
+  allow_failure: true
+
+# ================================
+# Stage 3: Integration Tests
+# ================================
+
+# Backend API Tests
+backend-api-tests:
+  stage: test
+  image: ${INTERNAL_REGISTRY}/uv:python3.13-alpine
+  services:
+    - name: ${INTERNAL_REGISTRY}/valkey:alpine
+      alias: valkey
+    - name: ${INTERNAL_REGISTRY}/dynamodb-local:latest
+      alias: dynamodb-local
+  variables:
+    VALKEY_HOST: 'valkey'
+    VALKEY_PORT: '6379'
+    DYNAMODB_ENDPOINT_URL: 'http://dynamodb-local:8000'
+  before_script:
+    - apt-get update && apt-get install -y git build-essential
+    - pip install uv boto3
+    - cd backend
+    - uv sync --dev
+  script:
+    - cd $CI_PROJECT_DIR/backend
+    # Run API tests with coverage
+    - uv run pytest -xvs -m "api" --junitxml=api-tests.xml --cov=app --cov-report=term --cov-append
+    - mv .coverage .coverage.api
+  cache:
+    key: backend-$CI_COMMIT_REF_SLUG
+    paths:
+      - .cache/
+      - backend/.venv/
+  artifacts:
+    reports:
+      junit: backend/api-tests.xml
+    paths:
+      - backend/.coverage.api
+    when: always
+    expire_in: 1 week
+  allow_failure: true
+
+# Backend Integration Tests
+backend-integration-tests:
+  stage: test
+  image: ${INTERNAL_REGISTRY}/uv:${UV_VERSION}-python${PYTHON_VERSION}-${BASE_LAYER}
+  services:
+    - name: ${INTERNAL_REGISTRY}/valkey:alpine
+      alias: valkey
+    - name: ${INTERNAL_REGISTRY}/dynamodb-local:latest
+      alias: dynamodb-local
+  variables:
+    VALKEY_HOST: 'valkey'
+    VALKEY_PORT: '6379'
+    DYNAMODB_ENDPOINT_URL: 'http://dynamodb-local:8000'
+  before_script:
+    - apt-get update && apt-get install -y git build-essential
+    - pip install uv boto3
+    - cd backend
+    - uv sync --dev
+  script:
+    - cd $CI_PROJECT_DIR/backend
+    # Run integration tests with coverage (excluding api tests that are run separately)
+    - uv run pytest -xvs -m "integration and not api" --junitxml=integration-tests.xml --cov=app --cov-report=term --cov-append
+    - mv .coverage .coverage.integration
+  cache:
+    key: backend-$CI_COMMIT_REF_SLUG
+    paths:
+      - .cache/
+      - backend/.venv/
+  artifacts:
+    reports:
+      junit: backend/integration-tests.xml
+    paths:
+      - backend/.coverage.integration
+    when: always
+    expire_in: 1 week
+  allow_failure: true
+
+# Backend Slow Tests
+backend-slow-tests:
+  stage: test
+  image: ${INTERNAL_REGISTRY}/uv:python3.13-alpine
+  services:
+    - name: ${INTERNAL_REGISTRY}/valkey:alpine
+      alias: valkey
+    - name: ${INTERNAL_REGISTRY}/dynamodb-local:latest
+      alias: dynamodb-local
+  variables:
+    VALKEY_HOST: 'valkey'
+    VALKEY_PORT: '6379'
+    DYNAMODB_ENDPOINT_URL: 'http://dynamodb-local:8000'
+  before_script:
+    - apt-get update && apt-get install -y git build-essential
+    - pip install uv boto3
+    - cd backend
+    - uv sync --dev
+  script:
+    - cd $CI_PROJECT_DIR/backend
+    # Run slow tests with coverage
+    - uv run pytest -xvs -m "slow" --junitxml=slow-tests.xml --cov=app --cov-report=term --cov-append
+    - mv .coverage .coverage.slow
+  cache:
+    key: backend-$CI_COMMIT_REF_SLUG
+    paths:
+      - .cache/
+      - backend/.venv/
+  artifacts:
+    reports:
+      junit: backend/slow-tests.xml
+    paths:
+      - backend/.coverage.slow
+    when: always
+    expire_in: 1 week
+  allow_failure: true
+
+# ================================
+# Stage 4: AWS Tests
+# ================================
+
+# Backend AWS Tests
+backend-aws-tests:
+  stage: test
+  image: ${INTERNAL_REGISTRY}/uv:python3.13-alpine
+  services:
+    - name: ${INTERNAL_REGISTRY}/valkey:alpine
+      alias: valkey
+  variables:
+    VALKEY_HOST: 'valkey'
+    VALKEY_PORT: '6379'
+  before_script:
+    - apt-get update && apt-get install -y git build-essential
+    - pip install uv
+    - cd backend
+    - uv sync --dev
+  script:
+    - cd backend
+    # Run AWS tests with coverage
+    - uv run pytest -xvs -m "aws" --junitxml=aws-tests.xml --cov=app --cov-report=term --cov-append
+    - mv .coverage .coverage.aws
+  cache:
+    key: backend-$CI_COMMIT_REF_SLUG
+    paths:
+      - .cache/
+      - backend/.venv/
+  artifacts:
+    reports:
+      junit: backend/aws-tests.xml
+    paths:
+      - backend/.coverage.aws
+    when: always
+    expire_in: 1 week
+  allow_failure: true
+
+# ================================
+# Stage 5: Coverage Reporting
+# ================================
+
+coverage-report:
+  stage: coverage
+  image: ${INTERNAL_REGISTRY}/uv:python3.13-alpine
+  needs:
+    - backend-unit-tests
+    - backend-repository-tests
+    - backend-api-tests
+    - backend-integration-tests
+    - backend-slow-tests
+    - backend-aws-tests
+  before_script:
+    - pip install uv
+    - cd backend
+    - uv sync --dev
+  script:
+    - cd backend
+    # Combine coverage reports
+    - uv run python -m coverage combine .coverage.*
+    - uv run python -m coverage report
+    - uv run python -m coverage xml -o coverage.xml
+    - uv run python -m coverage html
+  coverage: '/(?i)total.*? (100(?:\.0+)?\%|[1-9]?\d(?:\.\d+)?\%)$/'
+  artifacts:
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: backend/coverage.xml
+    paths:
+      - backend/htmlcov/
+    when: always
+    expire_in: 2 weeks
+  allow_failure: true
+
+# ================================
+# Stage 6: Infrastructure
+# ================================
+
+# CDK Nag Security Checks
+cdk-nag:
+  stage: infrastructure
+  image: ${INTERNAL_REGISTRY}/node:20-alpine
+  before_script:
+    - cd $CI_PROJECT_DIR/infrastructure/cdk
+    - npm ci
+  script:
+    # Build TypeScript
+    - npm run build
+    # Run CDK Nag for security and compliance checks
+    - npx cdk synth --app="node bin/cdk.ts" --output=cdk.out --strict
+    # The cdk-nag checks are integrated into the CDK app and will run during synth
+  cache:
+    key: cdk-$CI_COMMIT_REF_SLUG
+    paths:
+      - .cache/
+      - infrastructure/cdk/node_modules/
+  artifacts:
+    paths:
+      - infrastructure/cdk/cdk.out/
+    when: always
+    expire_in: 1 week
+  allow_failure: true
+
+# CDK Synth - Generate CloudFormation Templates
+cdk-synth:
+  stage: infrastructure
+  image: ${INTERNAL_REGISTRY}/node:20-alpine
+  needs:
+    - cdk-nag
+  before_script:
+    - cd $CI_PROJECT_DIR/infrastructure/cdk
+    - npm ci
+  script:
+    # Build TypeScript
+    - npm run build
+    # Synthesize CloudFormation templates
+    - npx cdk synth --app="node bin/cdk.ts" --output=cdk.out --all
+    # List generated stacks
+    - ls -la cdk.out/
+    # Validate generated templates
+    - |
+      for template in cdk.out/*.template.json; do
+        echo "Validating $template"
+        node -e "JSON.parse(require('fs').readFileSync('$template', 'utf8'))"
+      done
+  cache:
+    key: cdk-$CI_COMMIT_REF_SLUG
+    paths:
+      - .cache/
+      - infrastructure/cdk/node_modules/
+  artifacts:
+    paths:
+      - infrastructure/cdk/cdk.out/
+    expire_in: 4 weeks
+  when: on_success
+  allow_failure: true
+
+# ================================
+# Additional Jobs (Optional)
+# ================================
+
+# Dependency Check
+dependency-check:
+  stage: test
+  image: ${INTERNAL_REGISTRY}/uv:python3.13-alpine
+  script:
+    # Check for outdated Python dependencies
+    - cd $CI_PROJECT_DIR/backend && pip install uv && uv sync --dev
+    - uv run pip list --outdated
+    # Check for outdated Node.js dependencies
+    - cd $CI_PROJECT_DIR/ui && npm ci && npm outdated || true
+    - cd $CI_PROJECT_DIR/infrastructure/cdk && npm ci && npm outdated || true
+  allow_failure: true
+  when: manual
+
+# ================================
+# Rules and Conditions
+# ================================
+
+# Run full pipeline on main/master branch and merge requests
+workflow:
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_TAG
+    - if: $CI_PIPELINE_SOURCE == "web"

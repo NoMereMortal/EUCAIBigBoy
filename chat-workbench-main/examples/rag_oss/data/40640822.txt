@@ -1,0 +1,1504 @@
+
+Li et al. BMC Pulmonary Medicine
+(2025) 25:336
+BMC Pulmonary Medicine
+https://doi.org/10.1186/s12890-025-03805-8
+RESEARCH
+Open Access
+Non-invasive identification of TKI-resistant
+Check for
+updates
+NSCLC: a multi-model AI approach
+for predicting EGFR/TP53 co-mutations
+Jiayi Li¹,²,³⁺, Renjie Xu Dan Wang Zhanlue Liang 1,2,3 Yangqian Li¹,²,³, Qinglan Wang¹, Lingfeng Bi¹,²,³,
+Yawen Qi¹,²,³, Yaojie Zhou⁵* and Weimin Li 1,2,3,4*
+Abstract
+Objectives To investigate the value of multi-model based on preoperative CT scans in predicting EGFR/TP53
+co-mutation status.
+Methods We retrospectively included 2171 patients with non-small cell lung cancer (NSCLC) with pre-treatment
+computed tomography (CT) scans and predicting epidermal growth factor receptor (EGFR) gene sequencing from
+West China Hospital between January 2013 and April 2024. The deep-learning model was built for predicting EGFR
+/ tumor protein 53 (TP53) co-occurrence status. The model performance was evaluated by area under the curve
+(AUC) and Kaplan-Meier analysis. We further compared multi-dimension model with three one-dimension models
+separately, and we explored the value of combining clinical factors with machine-learning factors. Additionally, we
+investigated 546 patients with 56-panel next-generation sequencing and low-dose computed tomography (LDCT) to
+explore the biological mechanisms of radiomics.
+Results In our cohort of 2171 patients (1,153 males, 1,018 females; median age 60 years), single-dimensional models
+were developed using data from 1,055 eligible patients. The multi-dimensional model utilizing a Random Forest
+classifier achieved superior performance, yielding the highest AUC of 0.843 for predicting EGFR/TP53 co-mutations in
+the test set.
+Conclusion The multi-dimensional model demonstrates promising potential for non-invasive prediction of EGFR
+and TP53 co-mutations, facilitating early and informed clinical decision-making in NSCLC patients at risk of treatment
+resistance.
+Keywords Non-small-cell lung cancer, Genotype, Machine learning, Radiomics, Multi-model
+Jiayi Li, Renjie Xu and Dan Wang these authors made equal
+Network, West China Hospital, Sichuan University, Guo Xue Xiang 37,
+contribution and designated as co-first authors.
+Chengdu, Sichuan 610041, China
+²Institute of Respiratory Health, State Key Laboratory of Respiratory
+Zhanlue Liang author responsible for statistical analysis.
+Health and Multimorbidity, West China Hospital, Sichuan University,
+*Correspondence:
+Chengdu, Sichuan, China
+Yaojie Zhou
+³Precision Medicine Center, Precision Medicine Key Laboratory of Sichuan
+zhouyj95@qq.com
+Province, West China Hospital, Sichuan University, Chengdu, Sichuan,
+Weimin Li
+China
+weimin003@163.com
+⁴The Research Units of West China, Chinese Academy of Medical Sciences,
+Department of Respiratory and Critical Care Medicine, Institute of
+West China Hospital, Chengdu, Sichuan, China
+Respiratory Health, Frontiers Science Center for Disease-related Molecular
+⁵Shanghai Sixth People's Hospital Affiliated to Shanghai Jiao Tong
+University School of Medicine, Shanghai 200233, China
+BMC
+© The Author(s) 2025. Open Access This article is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0
+International License, which permits any non-commercial use, sharing, distribution and reproduction in any medium or format, as long as you
+give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if you modified the
+licensed material. You do not have permission under this licence to share adapted material derived from this article or parts of it. The images or
+other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the
+material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or
+exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://creati
+vecommons.org/licenses/by-nc-nd/4.0/.
+Li et al. BMC Pulmonary Medicine
+(2025) 25:336
+Page 2 of 12
+Introduction
+To mitigate selection bias in this single-center study, we
+Non-small-cell lung cancer (NSCLC) patients with EGFR
+included all patients who met the pre-defined inclusion
+mutations typically respond well to tyrosine kinase inhib-
+and exclusion criteria. This approach approximates a
+itors (TKIs) [1-4]. However, concurrent TP53 mutations,
+consecutive case series from our institution during the
+which could be found in 30-72% of all EGFR-mutated
+specified period.
+NSCLCs, have been associated with TKI resistance and
+Including criteria: (a) patients were pathologically con-
+suboptimal responses [5-8]. This presents a critical chal-
+firmed with non-small cell lung cancer. (b) patients had
+lenge in determining optimal treatment strategies for
+undergone CT scan within 30 days before the surgery. (c)
+patients with these co-mutations.
+patients had undergone 56-panel gene detection. Exclu-
+he identification of EGFR/TP53 co-mutations currently
+sion criteria: (a) patients whose lesions are indivisible due
+depends on invasive tissue sampling and time-consuming
+to massive pleural fluid, pulmonary atelectasis, etc. (b)
+genetic testing. Although these methods are effective,
+patients who lost follow-up. (c) patients whose CT scans
+they may delay the initiation of treatment and increase
+did not meet the technical requirements for radiomic
+the healthcare burden. Recent studies have indicated that
+feature extraction.
+radiomic features derived from computed tomography
+The CT images of the patients were read using picture
+(CT) scans may correlate with underlying genetic altera-
+archiving and communication system (PACS), and the
+tions, offering a promising non-invasive alternative for
+maximum diameter of the lesion (mm) was measured to
+mutation prediction [9-11]. Artificial intelligence (AI)
+evaluate the macroscopic imaging characteristics. The
+has also shown potential in enhancing such predictive
+CT scans included a 5 mm plain scan, an enhanced scan,
+models [12, 13]. While previous research has success-
+0.625 mm and 1 mm thin slice CT scan. Immunohisto-
+fully applied AI to predict EGFR mutations in lung can-
+chemical staining of pathological tissues was performed
+cer, with reported the Area Under the ROC curve (AUC)
+according to the National Comprehensive Cancer Net-
+values ranging from 0.7 to 0.8 [14-17], there remains a
+work (NCCN) guidelines. The lung cancer tissues were
+significant knowledge gap in predicting EGFR/TP53 co-
+classified according to their pathology.
+mutations-particularly in Asian populations, where
+The previous visit records of patients were checked and
+EGFR mutations are more prevalent. Understanding
+verified by the electronic medical record system, and the
+these co-mutations is critical for optimizing treatment
+deadline for telephone follow-up was April 28 2024. For
+strategies, as they may necessitate alternative therapies
+patients who received EGFR-TKI as first-line therapy,
+beyond standard EGFR-TKI treatment. This study aims
+without immunotherapy, chemo-radiotherapy and sur-
+to address this gap by developing an AI-driven model
+gery at the same time, and who had regular follow-up
+that integrates CT imaging and clinical data to predict
+with whole-body imaging CT were especially focused.
+EGFR/TP53 co-mutations in Asian patients with non-
+Patients were evaluated for disease progression accord-
+small cell lung cancer (NSCLC). By characterizing the
+ing to Response Evaluation Criteria 1.1 (RECIST) for
+clinical and imaging features associated with co-mutated
+response to solid tumors. Progression-free survival (PFS),
+cases and constructing a non-invasive prediction frame-
+the first endpoint, was calculated as the time from the
+work, we seek to enable faster, more accurate therapeutic
+start of TKI treatment to disease progression or death
+decision-making and enhance precision oncology in lung
+or to the end of follow-up. Overall Survival (OS), which
+cancer care. Ultimately, this approach may reduce the
+was defined as the time between the diagnosis of primary
+need for invasive diagnostics while preserving diagnostic
+lung cancer and death from any cause, was the secondary
+accuracy.
+endpoint of this study. Commonly used clinical tumor
+markers (within 30 days before pathological diagnosis)
+Method
+were drawn from the blood samples.
+This retrospective study was approved by our Institu-
+tional Review Board, which waived the need for informed
+Image acquisition
+consent from the patients. This study did not consti-
+CT images with a thickness of 1mm within 30 days before
+tute a clinical trial and as such did not require formal
+pathological diagnosis were selected. All non-enhanced,
+registration.
+1 mm thin-slice CT images were processed in the
+DICOM format using IQQA software (IQQA-CHEST,
+Study population
+EDDA Technology, Princeton Junction, NJ, USA) from
+We retrospectively collected patients with pathologically
+the PACS station. The chest CT testing devices used
+confirmed primary NSCLC at the West China Hospital
+for all the patients were Siemens, Philips Brilliance Big
+from January 2013 to April 2024. The clinical informa-
+Bore, and GE Discovery CT750 HD. The parameters set
+tion of the patients was collected and verified using the
+as following, tube voltage as 120 V, tube current as 200-
+electronic pathology system of the West China Hospital.
+500 mA, rotation time as 0.4-0.7 s, and pixel matrix as
+Li et al. BMC Pulmonary Medicine
+(2025) 25:336
+Page 3 of 12
+512 512. The Siemens scanner used a soft convolution
+Feature selection
+kernel (B31f, B30f), and the GE scanner used the STAN-
+We divided all features into three categories: first-
+DARD kernel.
+order, shape, and texture. To reduce dimensionality,
+we introduced three steps: (1) features with variance
+Image preprocessing
+greater than 0.8 were included in the next step; (2) the
+Image preprocessing steps, including voxel resampling
+remaining features were assessed using the F-statistic
+and intensity normalization, were implemented in accor-
+test in one-way analysis of variance (ANOVA) [22] for
+dance with principles outlined by the Image Biomarker
+their association with the presence of genetic muta-
+Standardization Initiative (IBSI) to enhance data con-
+tions. Features with a p-value greater than 0.05 were
+sistency and feature robustness [18]. To ensure data
+removed. (3) for features deemed statistically signifi-
+consistency and prepare images for model training, a
+cant, Spearman's rank correlation coefficient between
+multi-step preprocessing pipeline was implemented.
+the label and each feature was calculated [23]. This
+First, all patient CT images and their corresponding
+study employed randomized shuffling of the data
+segmentation masks were resampled to the dataset's
+series prior to allocation.
+median voxel spacing using nearest-neighbor interpola-
+tion, standardizing spatial resolution. Second, extensive
+Model establishment
+data augmentation techniques were applied, encompass-
+We constructed four predictive models based on the
+ing common geometric transformations and intensity
+filtered features: a clinical model, a cancer-indicator
+alterations to enhance model robustness and generaliza-
+model, a radiomics model, and a combined model. A
+tion. Third, for intensity standardization, values within
+total of 1,055 patients eligible for imaging analysis were
+the segmented the region of interest (ROI) were initially
+randomly divided into training and testing sets in an 8:2
+collected and then truncated to their 0.01 and 0.99 per-
+ratio. All models employed the same preprocessing tech-
+centile range. The mean and standard deviation derived
+niques and classifiers across both datasets.
+from these truncated foreground intensities were subse-
+The combined model was formulated as follows: Mc₀mbined
+quently used to perform Z-score normalization on the
+= WRadiomicsMRadiomics + WclinicalMclinical + "cancer-indicators
+relevant image patches. Following Z-score normalization,
+Mcancerindicators"
+these intensities were linearly scaled to a fixed range of
+The weights "Radiomics' Wclinical and Wcancer-indicators
+[-1, 1]. Finally, as a further preprocessing step, images
+represent the learned contribution of each sub-model.
+underwent a probabilistic Bézier curve-based nonlinear
+The contribution weights in the combined model are
+transformation.
+not pre-defined or static. They are learned dynami-
+cally b the model during the end-to-end training pro-
+Image segmentation
+cess of the combined model. Specifically, these weights
+To ensure the generalizability of the model and its adapt-
+are derived through a component of our fusion archi-
+ability to various CT imaging devices, a self-supervised
+tecture where learnable parameters, correspond-
+learning mechanism was employed to optimize a cus-
+ing to the influence of each sub-model's output, are
+tomized VB-Net framework [19], which modified the
+passed through a softmax function. This mathematical
+original image under nonlinear changes. Based on dis-
+operation ensures that the resulting weights are posi-
+playing VB-Net using ITK-Snap software [20], the Bezier
+tive and sum to unity, thereby representing a normal-
+Curve [21] was used to preprocess the ROI segmentation.
+ized and dynamically adjusted contribution of each
+Detailed procedures are provided in the Supplementary
+sub-model to the final integrated prediction. These
+Materials (Figures S1-2, S1-3).
+learnable parameters are optimized concurrently with
+the rest of the combined model's parameters using
+Feature extraction
+backpropagation.
+Following segmentation with the optimized VB-Net
+We evaluated multiple machine learning algorithms,
+model, lesion ROIs were obtained. To address the lim-
+including AdaBoost [24], Decision Tree [25], boot-
+ited diversity of feature types, this study applied a range
+strap aggregating decision tree [26], Gaussian process
+of filters to enhance feature extraction. A total of 14
+[27], gradient boosting decision tree (GBDT) [28],
+classes comprising 24 filters, along with 8 preprocess-
+K-nearest neighbor (KNN), logistic regression [29],
+ing techniques, were used for image processing. Key set-
+Random Forest(RF) ,support vector machines
+tings included a fixed bin width of 25 Hounsfield Units
+(SVM) [31], eXtreme gradient boosting (XGBoost)
+(HU) for intensity discretization. All images were resam-
+[32], and quadratic discriminant analysis (QDA) [33]
+pled, and the default interpolator was set to sitkBSpline.
+for machine learning. To mitigate the class imbal-
+Additional details are available in the Supplementary
+ance in our dataset, where patients with co-mutations
+Materials.
+constituted a substantially smaller proportion relative
+Li et al. BMC Pulmonary Medicine
+(2025) 25:336
+Page 4 of 12
+to other cohorts, we applied the Synthetic Minority
+Software and implementation details
+Oversampling Technique (SMOTE) [34], a widely used
+All computational analyses were performed using Python
+method for addressing imbalanced classification tasks,
+version 3.7.1. The VB-Net was implemented using the
+to improve the predictive performance of our model.
+PyTorch framework 1.8.2, with NVIDIA CUDATool-
+To further improve predictive accuracy, hyperparam-
+kit 10.2.89 employed for GPU acceleration where appli-
+eter tuning was conducted for each classifier using a
+cable. Radiomic feature extraction was conducted using
+grid search strategy with 5-fold cross-validation on
+the PyRadiomics 3.1.0. Standard machine learning models,
+the training dataset. The AUC on the validation folds
+feature selection techniques, and statistical analyses were
+served as the primary metric for selecting the optimal
+implemented primarily with the scikit-learn version 1.0.2
+hyperparameter set for each algorithm. The detailed
+and SciPy version 1.7.3. ITK-SNAP 5.2.0 was utilized for
+hyperparameters are presented in supplementary
+image visualization and to support segmentation processes.
+materials Table S2.
+The SMOTE was applied using imblearn version 0.12.4.
+Biologic mechanisms of the radiomic features
+Result
+To investigate the biological basis of high-dimensional
+General population characteristics
+radiomic features, we analyzed a subset of 546 patients
+A total of 2171 patients with primary NSCLC diagnosed
+who underwent both 56-gene panel next-generation
+for the first time from January 2013 to April 2024 were
+sequencing and LDCT. Hierarchical clustering was per-
+collected initially (Fig. 1). Among 2171 patients, 1055
+formed using the Ward linkage method, and the optimal
+patients who had done full follow-up with eligible LDCT
+number of clusters was determined based on the silhou-
+scans were finally included in the study. The basic clinical
+ette score.
+characteristics are shown in Table 1.
+Statistical method
+Prognosis of survival
+The model performance was evaluated by AUC and
+One thousand four hundred forty-seven patients were
+Kaplan-Meier analysis. To select best performance
+followed up for more than one year or had outcome
+model, we employed 5-fold cross-validation method. Sta-
+events during this period, and 724 patients (33.3%) were
+tistical analyses were performed using SPSS 23.0, using
+lost to follow-up. The main reasons for the loss of follow-
+mean ± standard deviation for continuous variables,
+up were telephone changes and failure to return visits on
+rank sum test for between-group comparisons of con-
+time. The overall survival results are shown in Fig. 2-1,
+tinuous variables, and frequency for subtyped variables,
+with a 1-year survival rate of 78.93%.
+and chi-square test or Fisher's exact probability method
+A univariate/multivariate Cox regression model was
+for between-group comparisons of subtyped variables.
+used to analyze the influence of clinical, pathologi-
+Two-sided tests with P<0.05 were statistically differ-
+cal, genetic and other factors on one-year OS (Table
+ent. For pairwise comparisons between model AUCs, we
+S1-1, S1-2). Age 65-year-old, Tumor, Node, Metastasis
+performed the DeLong test, which provides a statistical
+(TNM) stage III-IV, Kirsten rat sarcoma viral oncogene
+assessment of whether the difference between two AUCs
+homolog (KRAS) mutation, and TP53 mutation were
+is significant [35].
+associated with shortened OS in NSCLC patients. EGFR
+Use multi-modal information from
+Construct model to predict patients
+comparison between multi-modal and
+NSCLC patients as input
+EGFR/TP53 co-mutation status
+unimodal performance
+24 filters
++
+pre-treatment CT scans
+8 preprocessing techniques
+Training
+Test
+(n=844)
+(n=211)
+West China Hospital
+Patients with full
+of Sichuan University
+follow-up and eligible
+(n=2171)
+CT (n=1055)
+train, hyperparameter fine-tuning,
+5-fold cross validation
+clinical information
+random forest support vector k-nearest
+machine
+neighbor
+blood sample
+PFS as primary endpoint
+os as secondary endpoint
+Fig. 1 Research workflow of constructing non-invasive prediction model. We collected CT scans, patients' demographic features and blood sample. Then
+we split patients into train and test group randomly. We trained different machine learning methods, all tuned with hyperparameters, 5-fold cross-valida-
+tion, and finally selected the combination that performs best in the training set, combining clinical information, imaging features and cancer markers to
+form our combined model. *NSCLC = non-small cell lung cancer, CT = computed tomography
+Li et al. BMC Pulmonary Medicine
+(2025) 25:336
+Page 5 of 12
+Table 1 Baseline demographic and clinical characteristics of the patients in different co-mutation groups
+EGFR-/TP53-
+EGFR+/TP53-
+EGFR+/TP53+
+EGFR-/TP53+
+P-value
+N=249
+N=270
+N=260
+N=276
+Gender
+<0.001
+Female
+79(25.7%)
+281(68.7%)
+206(60.8%)
+42(15.2%)
+Male
+228(74.3%)
+128(31.3%)
+133(39.2%)
+234(84.8%)
+Age
+0.037
+>65
+163(53.1%)
+192(46.9%)
+146(43.1%)
+103(37.3%)
+≤65
+144(46.9%)
+217(53.1%)
+193(56.9%)
+173(62.7%)
+Smoking
+<0.001
+Yes
+201(65.5%)
+73(17.8%)
+83(24.5%)
+210(76.1%)
+No
+106(34.5%)
+336(82.2%)
+256(75.5%)
+66(23.9%)
+Lung Cancer Family History
+0.048
+Yes
+13(4.2%)
+36(8.8%)
+21(6.2%)
+12(4.3%)
+No
+294(95.8%)
+373(91.2%)
+318(93.8%)
+264(95.7%)
+Non-lung cancer Family History
+0.239
+Yes
+44(14.3%)
+48(11.7%)
+34(10.0%)
+27(9.8%)
+No
+263(85.7%)
+361(88.3%)
+305(90.0%)
+249(90.2%)
+Cancer Indicators
+CEA
+4.53(2.17,25.31)
+2.67(1.52,6.57)
+5.46(2.17,32.41)
+3.54(0.84,6.24)
+<0.001
+CA125
+66.39(25.13,66.39)
+42.60(11.45,66.39)
+66.39(13.45,66.39)
+72(60.75,83.25)
+<0.001
+CA199
+64.63(13.65,64.63)
+42.37(10.28,64.63)
+64.63(13.45,64.63)
+24(3.14,44.86)
+<0.001
+CYFRA21-1
+4.83(2.8,7.88)
+2.65(1.90,3.72)
+3.60(2.31,7.44)
+5.70 (0.52,10.88)
+<0.001
+NSE
+15.45(11.54,18.14)
+12.49(10.49,15.70)
+13.60(10.98,17.21)
+16.53 (8.68,24.38)
+<0.001
+mutations, targeted therapy, and surgical resection are
+Specifically, when the randomly assigned probability
+associated with prolonged OS.
+was less than 0.6, conventional preprocessing methods
+Figure 2-2 shows that the OS of patients with differ-
+were applied directly. Conversely, when the probabil-
+ent EGFR and TP53 mutation statuses was significantly
+ity exceeded 0.6, the images first underwent a nonlinear
+different (P<0.001). The 1-year survival rate of EGFR⁺/
+transformation based on Bézier curves to introduce geo-
+TP53⁻ patients was the best in all four groups (96.30%),
+metric variability. Subsequently, the transformed images
+compared with EGFR⁻/TP53⁻ patients as 80.24%, EGFR⁺/
+were further normalized using both quantile normaliza-
+TP53+ patients as 84.03%, and EGFR⁻/TP53⁺ patients as
+tion and standard z-score normalization (mean/standard
+57.81%, respectively.
+deviation) to standardize the pixel intensity distribu-
+We also analyzed the progression free survival of
+tion. At the same time, the recognition accuracy of the
+patients in the EGFR⁺/TP53⁺ and EGFR⁺/TP53⁻ groups
+optimized model for the images outside the lung was
+who received first-line EGFR-TKI treatment. Up to the
+increased, and the false positive rate of the false-positive
+follow-up time, the median PFS of EGFR⁺/TP53⁺ patients
+extrapulmonary lesions segmented by the original model
+were 17.13 months (1.13-55). The median PFS of EGFR⁺/
+was also reduced after preprocessing and optimization.
+TP53⁻ patients was 11.4 months (3.7-79.71). Figures 2
+Figure 3 showed CT images of four patients in differ-
+and 3 illustrates that the EGFR⁺/TP53⁺ patients had
+ent co-mutation groups acquired at three different time
+significant shorter PFS than the EGFR⁺/TP53⁻ patients
+points, before surgery, at the time of recurrence, and
+(P=0.00224). We further analyzed two EGFR/TP53
+after treatment with TKI for outcome.
+co-mutation subtypes, namely EGFR and
+EGFRL⁸⁵⁸⁸/TP53. Figures 2, 3 and 4 revealed that patients
+Feature selection
+with exon 19 deletions (EGFR¹⁹ᵈᵉ¹) exhibited the most
+After preprocessing, 1084 radiomic features were used
+favorable prognosis when treated with EGFR-TKIs, fol-
+for model construction. Initially, features were cat-
+lowed by those with the L858R point mutation in exon 21
+egorized into three distinct groups: first-order statistics,
+(EGFR¹⁸⁵⁸⁸⁾. Conversely, patients with other uncommon
+shape attributes, and texture characteristics. The 'texture'
+subtypes demonstrated a poorer prognosis, a finding that
+category encompasses all the high-dimensional features.
+is consistent with previous studies [36, 37].
+For each feature, we determined the p-value to assess
+statistical significance. Boxplots were subsequently used
+Image segmentation
+to visually represent the distribution of p-values across
+After using the Bezier Curve to preprocess the VB-Net,
+the different feature categories. Notably, all features
+the segmentation ROIs were more sensitive to edges.
+within the 'shape' category demonstrated p-values below
+Li et al. BMC Pulmonary Medicine
+(2025) 25:336
+Page 6 of 12
+1-year Overall Survival
+1.00
+KM_estimate
+the 0.05 threshold, indicating statistical significance, as
+depicted in Figure S3-1. In addition, we computed the
+0.95
+Spearman rank correlation coefficient for each feature.
+Boxplot visualizations revealed that the 'first-order' and
+Survival Probability
+0.90
+'texture' categories exhibited a more extensive range
+of correlations, encompassing both positive and nega-
+0.85
+1-yr OS: 78.93%
+tive associations, in contrast to the 'shape' category, as
+shown in Figure S3-2. All groups had a median correla-
+0.80
+tion of zero or close to zero, indicating that features in
+all groups had no strong monotonic relationship for the
+0
+50
+100
+150
+200
+250
+300
+350
+400
+450
+Time (Days)
+majority of features on average. The outliers suggested
+Survival Probability by Group
+that there were some features with particularly strong
+1.0
+positive or negative correlations compared with the rest
+of the features in their respective groups. Furthermore,
+0.9
+we calculated the distance correlation between the three
+groups and gene mutation status. The central line in each
+0.8
+box in figure S3-3 represents the median of the distance
+correlation coefficients for each category, suggesting a
+0.7
+relatively strong association between features and labels.
+The 'shape' category appears to have the highest median
+Patient Group
+0.6
+EGFR-/TP53-
+EGFR+/TP53-
+EGFR-/TP53+
+correlation, followed by 'texture' and then 'first-order'.
+EGFR+/TP53+
+50
+100
+150
+200
+250
+300
+350
+Time (Days)
+The height of each box represents the interquartile range
+Overall 0.001
+EGFR+/TP53+ VS EGFR+/TP53-: 0.001
+EGFR+/TP53+ EGFR-/TP53+ 0.001
+(IQR). A larger IQR indicates greater variability in the
+EGFR+/TP53- EGFR-/TP53+ 0.001
+EGFR+/TP53- vs EGFR-/TP53- 0.001 ***
+EGFR-/TP53+ vs EGFR-/TP53- 0.001
+distance correlation coefficients. 'texture' showed smaller
+/
+IQR compared with other two groups, indicating lower
+Progression-Free Survival by EGFR/TP53 Group
+variability. 'texture' showing several points that lie signifi-
+1.00
+- EGFR+/TP53+
+EGFR+/TP53
+cantly outside the rest of the data. Also, 'texture' appears
+0.98
+to have the widest range, suggesting that the distance
+0.96
+correlation varies more across different features within
+0.94
+this category. When comparing across categories, 'shape'
+features tend to have a higher median distance correla-
+0.92
+tion and a slightly tighter spread, suggesting that these
+0.90
+features may consistently have a strong and more uni-
+0.88
+form association with the labels.
+0.002
+0.86
+10
+20
+30
+50
+60
+70
+80
+Time (Months)
+Performance of models
+Survival Curves with p-values
+Figure 4 presents a comprehensive receiver operating
+Patient Group
+1.00
+EGFR 19del TP53
+EGFR TP53
+characteristic (ROC) curve analysis comparing four pre-
+uncommon TP53
+0.95
+dictive models for genotype classification, with particu-
+0.90
+lar focus on EGFR-TP53 co-mutations. Label 0, 1, and 2
+0.85
+stood for EGFR-mutation, EGFR-TP53 co-mutations and
+Survival Probability
+0.80
+other gene mutations, respectively. Each model dem-
+onstrates distinct performance characteristics across
+0.75
+training and test sets. The clinical model, employing
+0.70
+L2-Normalization preprocessing and Random Forest
+0.65
+classification, achieved notable performance in detect-
+5
+10
+15
+20
+25
+30
+35
+40
+Time (days)
+ing co-mutations (label 1) with AUC values of 0.711 and
+EGFR vs TP53: p=0
+EGFR 19del EGFR uncommon TP53 p<0.001
+L858R VS _uncommon
+0.771 in training and test sets, respectively (Fig. 4A). The
+radiomics model, developed through extensive algorith-
+Fig. 2 1. 1-year Overall Survival of all patients. Figure 2-2. Survival Proba-
+mic optimization across 90 different combinations of
+bility of patients in different EGFR/TP53 group. Figure 2-3. Progression-Free
+preprocessing and classification methods, demonstrated
+Survival of 79 patients in EGFR+/TP53+ and EGFR+/TP53- group. Figure
+2-4. Kaplan-Meier curves of EGFR ᵈᵉʳ/TP53+, EGFRL R/TP53+and EG-
+enhanced predictive capability with an AUC of 0.755 for
+FRuncommon/TP53*co-mutation subtypes
+co-mutations using Quantile transformer and Random
+Forest (Fig. 4B). A comprehensive summary of the AUC
+Li et al. BMC Pulmonary Medicine
+(2025) 25:336
+Page 7 of 12
+pre-surgery
+recurrence
+endpoint
+A
+EGFR+/TP53+
+B
+EGFR+/TP53-
+c
+EGFR-/TP53-
+D
+EGFR-/TP53+
+Fig. 3 CT images of four patients in different co-mutation groups acquired at three different time points. A A EGFR+/TP53 + female patient born in 1969
+was diagnosed with pT₂₆N₀M₀ lung adenocarcinoma in 2019. After curative surgery, recurrence in the lower lobe of the right lung was confirmed in May
+2020. The nodule volume showed no significant change after TKI therapy. B A EGFR+/TP53- female patient born in 1974 was diagnosed with pT₃N₂M₀
+lung adenocarcinoma in 2019. in March 2021 the small nodules in both lungs were confirmed, which decreased in size at the follow-up review. c A 1946
+EGFR-/TP53- male patient, smoker for > 20 years, diagnosed with ₂ₐN₀M₀ lung adenocarcinoma of the upper lobe of the left lung in 2018. After wedge
+resection, the lung was reviewed for recurrence in 2020, with decreased volume after three-months TKI therapy. D A 1954 EGFR-/TP53 + male patient,
+smoker for > 30 years, diagnosed in 2019 with pT₄N₂M₀ adenocarcinoma of the upper lobe of the right lung, involving nerves and vasculature, treated
+with surgical resection followed by adjuvant 4 cycles of Pemetrexed and cisplatin (AP) chemotherapy. In 2020, recurrence in right lower lobe was con-
+firmed. The volume decreased after TKI therapy
+values obtained on both the training and test sets for the
+errors from permutation and subsampling analyses. Pair-
+various feature preprocessing techniques and classifier
+wise statistical comparisons of AUCs using the DeLong
+algorithms explored during this extensive optimization
+Test, including z-statistics and p-values for each class, are
+process is provided in the Supplementary Materials Table
+provided in Supplementary Materials Table S5.
+S3. The cancer-indicator model, constructed from four
+Figure 5 illustrates the comprehensive performance
+blood-based biomarkers, showed moderate performance
+analysis of four diagnostic models in genotype classifica-
+in co-mutation detection with a test set AUC of 0.683
+tion. The radar charts (Fig. 5A, B) demonstrate that the
+(Fig. 4C). Notably, the combined model, which inte-
+combined and radiomics models achieve balanced per-
+grates features from all three previous approaches, exhib-
+formance across multiple metrics for the ternary clas-
+ited superior performance in identifying co-mutations
+sification of genotypes. The specific numerical values
+(AUC=0.843) (Fig. 4D), demonstrating the synergistic
+for these metrics for all four models across these three
+benefit of multi-modal data integration in genomic pre-
+mutation statuses are detailed in supplementary Table
+diction tasks. This progressive improvement in predictive
+S4. This pattern suggests inherent challenges in detect-
+performance across models, particularly for the challeng-
+ing co-mutations. To elucidate the biological basis of
+ing task of co-mutation detection, underscores the value
+radiomics' predictive capability, we analyzed correlations
+of comprehensive data integration in enhancing diag-
+between 56 genes and 1,084 radiomic features (Fig. 5C).
+nostic accuracy. A summary of the AUCs with their cor-
+Hierarchical clustering revealed two distinct groups of
+responding 95% confidence intervals for various model
+genes and radiomic features, with TP53 and EGFR clus-
+configurations and preprocessing steps is presented in
+tering together and showing strong correlations with
+Supplementary Figure S4. This figure also illustrates
+specific radiomic features. Further analysis of EGFR/
+Li et al. BMC Pulmonary Medicine
+(2025) 25:336
+Page 8 of 12
+ROC curve(Train)
+ROC curve(Test)
+A
+1
+1
+0.8
+0.8
+0.6
+0.6
+True Positive Rate
+True Positive Rate
+0.4
+0.4
+L2 normalization> RandomForest
+L2 normalization> RandomForest
+mean (AUC=0.699)
+mean (AUC=0.730)
+0.2
+0.2
+normalization> RandomForest
+L2 normalization> RandomForest
+label0 (AUC =0.798)
+label0 (AUC=0.816)
+L2 malization: Randomf orest
+L2 normalization> RandomForest
+labell (AUC=0.771)
+labell (AUC=0.711)
+0
+L2 normalization> RandomForest
+0
+L2 normalization> RandomForest
+label2 (AUC=0.524)
+label2 (AUC=0.661)
+0
+0.2
+0.4
+0.6
+0.8
+1
+0
+0.2
+0.4
+0.6
+0.8
+1
+False Positive Rate
+False Positive Rate
+ROC curve(Train)
+ROC curve(Test)
+B
+1
+1
+0.8
+0.8
+0.6
+0.6
+True Positive Rate
+True Positive Rate
+0.4
+0.4
+RandomFe
+RandomF
+mean (AUC =0 948)
+mean (AUC=0.770)
+0.2
+0.2
+RandomForest
+RandomForest
+label0 (AUC 822)
+labelo (AUC=0.953)
+RandomF
+Random orest
+labell (AUC=0. 755)
+labell (AUC=0.935)
+0
+RandomForest
+0
+RandomF
+label2 (AUC=0 729)
+label2 (AUC=0.956)
+0
+0.2
+0.4
+0.6
+0.8
+0
+0.2
+0.4
+0.6
+0.8
+1
+False Positive Rate
+False Positive Rate
+ROC curve(Train)
+C
+ROC curve(Test)
+1
+1
+0.8
+0.8
+0.6
+0.6
+True Positive Rate
+True Positive Rate
+0.4
+0.4
+RandomForest
+RandomForest
+mean (AUC=0.878)
+mean (AUC=0.653)
+0.2
+RandomForest
+0.2
+RandomForest
+label0 (AUC=0.878)
+labelo (AUC=0. 711)
+RandomForest
+RandomForest
+labell (AUC=0.868)
+labell (AUC=0.683)
+0
+RandomForest
+0
+RandomForest
+label2 (AUC 888)
+label2 (AUC=0.563)
+0
+0.2
+0.4
+0.6
+0.8
+1
+0
+0.2
+0.4
+0.6
+0.8
+False Positive Rate
+False Positive Rate
+ROC curve(Train)
+ROC curve(Test)
+D
+1
+1
+0.8
+0.8
+0.6
+True Positive Rate
+0.6
+0.4
+True Positive Rate
+0.4
+RandomForest
+Fold5_mean (AUC=0.954)
+RandomF orest
+0.2
+Fold5 mean (AUC=0.841)
+RandomForest
+0.2
+FoldS_label0 (AUC=0.962)
+RandomForest
+FoldS label0 (AUC=0.886)
+RandomForest
+FoldS_label1 (AUC=0.937)
+RandomF
+Folds label1 (AUC=0.843)
+0
+RandomForest
+FoldS label2 (AUC=0.963)
+0
+RandomForest
+FoldS label2 (AUC=0.792)
+0
+0.2
+0.4
+0.6
+0.8
+1
+0
+0.2
+0.4
+0.6
+0.8
+--
+False Positive Rate
+False Positive Rate
+Fig. 4 The performance of the four models in predicting different genotypes (A) AUC of clinical model; (B)AUC of radiomic model; (C) AUC of cancer-
+indicator model; (D) AUC of combined model. Labels 0, 1, and 2 stand for EGFR+, EGFR-TP53 co-mutations and other gene mutations, respectively
+Li et al. BMC Pulmonary Medicine
+(2025) 25:336
+Page 9 of 12
+A
+Combined
+Radiomics
+Clinical
+Cancer Indicator
+Accuracy
+Accuracy
+Accuracy
+Accuracy
+1.0
+1.0
+1.0
+1.0
+0.8
+0.8
+0.8
+0.8
+0.6
+F1
+0.4
+specificity
+F1
+0.4
+specificity
+F1
+J.4
+specificity
+F1
+0.2
+specificity
+0.2
+0.2
+0.2
+Precision
+sensitivity
+Precision
+sensitivity
+Precision
+sensitivity
+Precision
+sensitivity
+0
+1
+2
+0
+1
+2
+0
+1
+2
+0
+1
+2
+B
+Label = 0
+Label = 1
+Label = 2
+Accuracy
+Accuracy
+Accuracy
+1.0
+1.0
+1.0
+0.8
+0.8
+0.8
+0
+0
+F1
+0.4
+specificity
+F1
+0.4
+specificity
+F1
+0.2
+specificity
+0.2
+0.2
+Precision
+sensitivity
+Precision
+sensitivity
+Precision
+sensitivity
+Combined
+Clinical
+Combined
+Clinical
+Combined
+Clinical
+Radiomics
+Cancer Indicator
+Radiomics
+Cancer Indicator
+Radiomics
+Cancer Indicator
+C
+D
+Correlation Heatmap Radiomic Features vs Groups
+Correlation between Gene Expression and Radiologic al Features
+Radiological
+EGFR+/TP53+
+EGFR
+EGFR+/TP53
+EGFR/TP53
+Fig. 5 Radar maps of the five diagnostic metrics (accuracy, sensitivity, specificity, precision and F1 score) in the test set for (A) all four models and for (B)
+ternary classification of genotypes. Each line in the radar map represents the performance of a certain model for a single classification (labels 0, 1, and 2
+stood for EGFR-mutation, EGFR-TP53 co-mutations and other gene mutations, respectively) according to five diagnostic metrics, and the area enclosed by
+each line gives a quick comparative view of overall performance for different classifications of different models. c heatmap demonstrates the correlation
+between 56 genes and 1084 radiomic features. D heatmap to visualize the correlation between radiomic features and 4 different genotypes
+TP53 mutation status combinations (Fig. 5D) revealed
+similar correlation patterns with EGFR⁺/TP53⁺, as did
+distinct radiomic signatures: EGFR⁺/TP53⁺ and EGFR⁺/
+EGFR⁻/TP53⁻ with EGFR⁺/TP53⁻, albeit with attenuated
+TP53⁻ groups demonstrated inverse correlations with
+relationships, indicating potential influence from addi-
+identical features, suggesting TP53's modulatory role in
+tional genetic factors on imaging phenotypes. Figure 6
+imaging phenotypes. Additionally, EGFR⁻/TP53⁺ shared
+illustrates the decision curve analysis of four predictive
+Li et al. BMC Pulmonary Medicine
+(2025) 25:336
+Page 10 of 12
+Label = 0
+Label = 1
+Label = 2
+0.40
+0.40
+0.40
+combined
+combined
+combined
+radiomics
+radiomics
+radiomics
+0.35
+0.35
+0.35
+clinical
+clinical
+clinical
+cancer indicator
+cancer indicator
+cancer indicator
+0.30
+0.30
+0.30
+0.25
+0.25
+0.25
+Net Benefit
+0.20
+Net Benefit
+0.20
+Net Benefit
+0.20
+0.15
+0.15
+0.15
+0.10
+0.10
+0.10
+0.05
+0.05
+0.05
+0.00
+0.00
+0.00
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+Threshold probability
+Threshold probability
+Threshold probability
+Fig. 6 Decision Curve Analysis (DCA) for four models across three EGFR/TP53 groups. Labels 0, 1, and 2 stand for EGFR+, EGFR-TP53 co-mutations and
+other gene mutations, respectively
+models across three labels. The combined model demon-
+KRAS, Erb-B2 receptor tyrosine kinase 2 (ERBB2) and
+strates superior net benefit, particularly at lower thresh-
+TP53 [42]. The AUCs for discriminating between these
+old probabilities (0.0-0.4), indicating its enhanced clinical
+four mutations reached good results, ranging from 0.78
+utility in scenarios prioritizing diagnostic sensitivity. The
+to 0.88. However, their sample size was relatively small
+radiomics model shows comparable performance to the
+compared with that in our study. Furthermore, we offer
+combined model in the intermediate threshold range
+deeper insight into EGFR⁺/⁻ and TP53+ patients. Some
+(0.4-0.6), while both clinical and cancer indicator models
+studies have also explored the use of machine learning on
+exhibit consistently lower net benefit across all thresh-
+pathological slides. For example, one study constructed a
+olds. These findings support the advantage of integrated
+model for histopathology slides to automatically classify
+approaches combining radiomics with conventional clini-
+lung adenocarcinoma (LUAD), lung squamous cell carci-
+cal parameters for optimal predictive performance.
+noma (LUSC), or normal lung tissue, and further predict
+the ten most commonly mutated genes in LUAD, which
+Discussion
+could reveal the mutation status of TP53 with an AUC
+Our study demonstrated that the combined AI model,
+of 0.76 [43]. In contrast, our study utilized CT imaging,
+which integrates radiomic features and clinical data,
+which offers a more efficient and non-invasive alternative
+achieved superior performance (AUC=0.843) in pre-
+to histopathological analysis.
+dicting EGFR/TP53 co-mutations compared to single-
+Our investigation is supported by a relatively large
+modality approaches. In comparison, the imaging-only
+dataset, significantly exceeding the sample sizes used in
+model and the clinical-only model yielded AUCs of
+previous studies. The development of our model incor-
+0.711 and 0.683, respectively. Notably, shape and tex-
+porated a comprehensive set of features and employed
+ture-related radiomic features exhibited strong associa-
+11 distinct machine learning classifiers, a strategy that
+tions with mutation status, highlighting their potential
+enhances the robustness and reproducibility of the inte-
+as non-invasive biomarkers for genetic profiling. Incor-
+grated model. To explore the underlying biological mech-
+porating a broader set of features-particularly clinical
+anisms, we further examined the correlations between
+information-significantly enhanced the model's predic-
+genetic mutations and radiomic features. Both the heat-
+tive performance, consistent with findings from prior
+map and silhouette score revealed strong associations
+studies such as the EGFR prediction model proposed by
+between EGFR/TP53 status and radiomic characteristics.
+Tu et al. [38]. Our best-performing model, which com-
+Additionally, we conducted decision curve analysis to
+bined imaging and clinical data, achieved an AUC of
+evaluate the clinical utility of the combined model. The
+0.843 in cross-validation, underscoring its robust pre-
+results demonstrated the model's potential to accurately
+dictive capability and potential for clinical implementa-
+and reliably stratify patients by genotype, thereby assist-
+tion. Several models have been constructed to predict
+ing clinicians in making early and informed treatment
+the mutation status in patients with lung cancer. How-
+decisions, particularly for individuals at risk of develop-
+ever, these studies predicted the gene mutation status
+ing drug resistance.
+separately [39-41], which could not identify patients
+Several limitations in the present study warrant con-
+with EGFR and TP53 co-mutations. Zhang et al. used a
+sideration and highlight important avenues for future
+Logistic Regression model to simultaneously determine
+research. First, the retrospective nature, while allowing
+the presence of four types of gene mutations: EGFR,
+for a large initial cohort, may introduce selection bias.
+Li et al. BMC Pulmonary Medicine
+(2025) 25:336
+Page 11 of 12
+RECIST
+Response Evaluation Criteria in Solid Tumors
+Future prospective multi-center studies with standard-
+AP
+Pemetrexed and Cisplatin
+ized data collection protocols would be optimal to mini-
+IQR
+Interquartile range
+mize such biases and confirm our findings. Second, our
+Al
+Artificial Intelligence
+RF
+Random Forest
+single-center design limits the immediate generalizability
+ANOVA
+Analysis of variance
+of the findings, and the performance discrepancy between
+GBDT
+Gradient boosting decision tree
+training and testing datasets suggests potential overfit-
+KNN
+K-nearest neighbor
+SVM
+Support vector machines
+ting. To address this, future research should prioritize
+XGBoost
+eXtreme gradient boosting
+external validation using diverse, multicenter datasets to
+QDA
+Quadratic discriminant analysis
+robustly assess and improve model generalizability. Fur-
+DCA
+Decision Curve Analysis
+EGFR^19del^
+EGFR exon 19 deletion
+thermore, exploring advanced regularization technique
+EGFR^L858R^
+EGFR exon 21 L858R point mutation
+during model development could mitigate overfitting and
+NCCN
+National Comprehensive Cancer Network
+enhance model stability. Third, our focus on EGFR and
+MLOps
+Machine Learning Operations
+TP53 co-mutations, though clinically significant, does not
+encompass the full spectrum of genetic alterations that
+Supplementary Information
+may influence radiomic phenotypes and TKI resistance.
+The online version contains supplementary material available at https://doi.or
+g/10.1186/s12890-025-03805-8.
+Future studies should aim to develop models capable of
+predicting a broader array of actionable mutations and co-
+Supplementary Material 1.
+mutation patterns, which may involve integrating more
+Supplementary Material 2.
+comprehensive genomic data and leveraging machine
+learning architectures designed for multi-label classifica-
+tion. Furthermore, while the combined model showed
+Acknowledgements
+Not applicable.
+improvement, the modest gains in specificity and sensitiv-
+ity suggest that the feature integration methodology could
+Authors' contributions
+be further optimized. Future work could explore more
+(I) Conception and design: W Li, Y Zhou; (II) Administrative support: W Li; (III)
+Provision of study materials or patients: W Li, Q Li, Q Wang, Y Qi, Y Zhou; (IV)
+sophisticated data fusion techniques, advanced ensemble
+Collection and assembly of data: J Li, R Xu, Z Liang, Ling Bi; (V) Data analysis
+methods, or end-to-end deep learning models that can
+and interpretation: J Li, R Xu, D Wang, Z Liang; (VI) Manuscript writing: J Li, R
+learn optimal representations directly from multi-modal
+Xu; (VII) Final approval of manuscript: All authors
+data. Adopting state-of-the-art AI development frame-
+Funding
+works and MLOps (Machine Learning Operations) prin-
+This work was supported by Noncommunicable Chronic Diseases-National
+ciples could also streamline the experimental workflow,
+Science and Technology Major Project (2023ZD0506102 / 2023ZD0506100);
+National Natural Science Foundation of China (92159302).
+enhance model optimization, and improve reproducibility.
+Data availability
+Conclusion
+Data are available from the authors upon reasonable request and with
+permission from the West China Hospital.For researchers who want to access
+This study presents a promising non-invasive approach
+the code and models used in this study for academic research purposes,
+for identifying EGFR/TP53 co-mutations in NSCLC
+please direct your request to first authors.
+patients. The high predictive accuracy of our combined
+model could facilitate earlier identification of patients
+Declarations
+likely to exhibit TKI resistance, enabling more personal-
+Ethics approval and consent to participate
+ized treatment strategies.
+All methods were performed in accordance with the Declaration of Helsinki.
+The study was approved by the institutional review board of the West China
+Abbreviations
+Hospital of Sichuan University (No.232). Besides, informed consent was waived
+NSCLC
+Non-small cell lung cancer
+by the institutional review board of the West China Hospital of Sichuan
+EGFR
+Epidermal growth factor receptor
+University because this was a retrospective study.
+TP53
+Tumor protein 53
+TKI
+Tyrosine kinase inhibitor
+Consent for publication
+KRAS
+Kirsten rat sarcoma viral oncogene homolog
+Not applicable.
+ERBB2
+Erb-B2 receptor tyrosine kinase 2
+LUAD
+Lung adenocarcinoma
+Competing interests
+LUSC
+Lung squamous cell carcinoma
+The authors declare no competing interests.
+TNM
+Tumor, Node, Metastasis (cancer staging system)
+OS
+Overall Survival
+Received: 17 December 2024 / Accepted: 23 June 2025
+PFS
+Progression-free survival
+ROC
+Receiver operating characteristic
+Published online: 10 July 2025
+AUC
+Area under the curve
+LDCT
+low-dose computed tomography
+CT
+Computed tomography
+References
+PACS
+Picture Archiving and Communication System
+1.
+ROI
+Region of Interest
+Akamatsu H, Toi Y, Hayashi H, et al. Efficacy of osimertinib plus bevacizumab
+IBSI
+Image Biomarker Standardization Initiative
+vs osimertinib in patients with EGFR T790M-Mutated Non-Small cell lung
+Li et al. BMC Pulmonary Medicine
+(2025) 25:336
+Page 12 of 12
+Cancer previously treated with epidermal growth factor Receptor-Tyrosine
+23. Fave X, Cook M, Frederick A, et al. Preliminary investigation into sources of
+kinase inhibitor: West Japan oncology group 8715L phase 2 randomized
+uncertainty in quantitative imaging features. Comput Med Imaging Graph.
+clinical trial JAMA Oncol. 2021;7(3):386-94.
+2015;44:54-61.
+2.
+Maemondo M, Inoue A, Kobayashi K, et al. Gefitinib or chemotherapy
+24. Schapire RE. Explaining AdaBoost [M]//SCHÖLKOPF B, LUO Z, VOVK V. Empiri-
+for non-small-cell lung cancer with mutated EGFR. N Engl J Med.
+cal Inference: Festschrift in Honor of Vladimir N Vapnik. Berlin, Heidelberg;
+2010;362(25):2380-8.
+Springer Berlin Heidelberg. 2013: 37-52.
+3.
+Mok TS, Wu YL, Thongprasert S, et al. Gefitinib or carboplatin-paclitaxel in
+25. Kamiński B, Jakubczyk M, Szufel P. A framework for sensitivity analysis of deci-
+pulmonary adenocarcinoma. N Engl J Med. 2009;361(10):947-57.
+sion trees. Cent Eur J Oper Res. 2018;26(1):135-159.
+4.
+Soria JC, Ohe Y, Vansteenkiste J, et al. Osimertinib in untreated EGFR-Mutated
+26. Breiman L. Bagging predictors. Mach Learn. 1996;24(2):123-40.
+advanced Non-Small-Cell lung Cancer. N Engl J Med. 2018;378(2):113-25.
+27. Bousquet O, Luxburg U, Rätsch G. Advanced Lectures on Machine Learning,
+5.
+Vokes NI, Chamberse E, Nguyen T, et al. Concurrent TP53 mutations facilitate
+Schools MLS. 2003, Canberra, Australia, February 2-14, 2003, Tübingen,
+resistance evolution in EGFR-Mutant lung adenocarcinoma. J Thorac Oncol.
+Germany, August 4-16, 2003, Revised Lectures. 2004.
+2022;17(6):779-92.
+28. Mason L, Baxter J, Bartlett P et al. Boosting Algorithms as Gradient Descent.
+6.
+Canale M, Petracci E, Delmonte A, et al. Impact of TP53 mutations on
+1999.
+outcome in EGFR-Mutated patients treated with First-Line tyrosine kinase
+29. Tolles J, Meurer WJ. Logistic Regression: Relating Patient Characteristics to
+inhibitors. Clin Cancer Res. 2017;23(9):2195-202.
+Outcomes. JAMA. 2016;316(5):533-534.
+7.
+Roeper J, Christopoulos P, Falk M, et al. TP53 co-mutations as an independent
+30. Breiman L. Random forests. Mach Learn. 2001;45(1):5-32.
+prognostic factor in 2nd and further line therapy-EGFR mutated non-small
+31. Cortes C. Support-vector networks. Mach Learn. 1995;20(3):273-97.
+cell lung cancer IV patients treated with osimertinib. Transl Lung Cancer Res.
+32. Chen T, XGBoost: GUESTRINC, SIGKDD International Conference on Knowl-
+2022;11(1):4-13.
+edge Discovery and Data Mining. A Scalable Tree Boosting System [Z].
+8.
+Liu S, Yu J, Zhang H, Liu J. TP53 Co-Mutations in Advanced EGFR-Mutated
+Proceedings of the 22nd ACM. San Francisco, California, USA; Association for
+Non-Small Cell Lung Cancer: Prognosis and Therapeutic Strategy for Cancer
+Computing Machinery. 2016: 785-94.10.1145/2939672.2939785.
+Therapy. Front Oncol. 2022;12:860563.
+33. Tharwat A. Linear vs. quadratic discriminant analysis classifier: a tutorial. Int J
+9.
+Aerts HJ, Velazquez ER, Leijenaar RT, et al. Decoding tumour phenotype by
+Appl Pattern Recognit. 2016;3:145.
+noninvasive imaging using a quantitative radiomics approach. Nat Commun.
+34. Chaipanha W. Kaewwichian P. Smote VS. Communications Scientific letters
+2014;5(1):4006.
+of the University of Zilina. Random Undersampling for Imbalanced Data- Car
+10. Gillies RJ, Kinahan PE, Hricakh H. Radiomics: images are more than pictures,
+Ownership Demand Model. 2022; 24.
+they are data. Radiology. 2016;278(2):563-77.
+35. Delong ER, Delong DM, Clarke-Pearson DL. L. Comparing the areas under two
+11. Lambin P, Rios-Velazquez E, Leijenaar R, et al. Radiomics: extracting more
+or more correlated receiver operating characteristic curves: a nonparametric
+information from medical images using advanced feature analysis. Eur J
+approach. Biometrics. 1988;44(3):837-45.
+Cancer. 2012;48(4):441-6.
+36. Takamochi K, Oh S, Matsunaga T, et al. Prognostic impacts of EGFR mutation
+12. Zhou Y, Xu X. The application of artificial intelligence and radiomics in lung
+status and subtype in patients with surgically resected lung adenocarcinoma.
+cancer Precision Clin Med. 2020;3(3):214-27.
+J Thorac Cardiovasc Surg. 2017;154(5):1768-e741.
+13. Bera K, Braman N, Gupta A, et al. Predicting cancer outcomes with radiomics
+37. Sutiman N, Tan SW, Tan EH, et al. EGFR mutation subtypes influence survival
+and artificial intelligence in radiology. Nat Rev Clin Oncol. 2022;19(2):132-46.
+outcomes following First-Line gefitinib therapy in advanced Asian NSCLC
+14. Song J, Wang L, Ng NN, et al. Development and validation of a machine
+patients. J Thorac Oncol. 2017;12(3):529-38.
+learning model to explore tyrosine kinase inhibitor response in patients with
+38. Shuo W, Jingyun S, Zhaoxiang Y, et al. Predicting EGFR mutation status in lung
+stage IV EGFR Variant-Positive Non-Small cell lung Cancer. JAMA Netw Open.
+adenocarcinoma on computed tomography image using deep learning. Eur
+2020;3(12):e2030442.
+Respir J. 2019;53(3):1800986.
+15. Zhang B, Qi S, Pan X, et al. Deep CNN model using CT radiomics feature map-
+39. Shao J, Ma J, Zhang S, et al. Radiogenomic System for Non-Invasive Identifica-
+ping recognizes EGFR gene mutation status of lung adenocarcinoma. Front
+tion of Multiple Actionable Mutations and PD-L1 Expression in Non-Small
+Oncol. 2020;10:598721.
+Cell Lung Cancer Based on CT Images. Cancers (Basel). 2022;14(19):4823.
+16. Pinheiro G, Pereira T, Dias C, et al. Identifying relationships between imaging
+40. Zhang X, Zhang G, Qiu X, et al. Non-invasive decision support for clini-
+phenotypes and lung cancer-related mutation status: EGFR and KRAS. Sci
+cal treatment of non-small cell lung cancer using a multiscale radiomics
+Rep. 2020;10(1):3625.
+approach. Radiotherapy Oncology: J Eur Soc Therapeutic Radiol Oncol.
+17. Wang S, Yu H, Gan Y, et al. Mining whole-lung information by artificial intel-
+2024;191:110082.
+ligence for predicting EGFR genotype and targeted therapy response in lung
+41. Qiao H, Ding Z, Zhu Y, et al. Quantitative analysis of TP53-Related lung Cancer
+cancer: a multicohort study. Lancet Digit Health. 2022;4(5):e309-19.
+based on radiomics. Int J Gen Med. 2022;15:8481-9.
+18. Zwanenburg A, Vallières M, Abdalah MA, et al. The image biomarker stan-
+42. Zhang T, Xu Z, Liu G, et al. Simultaneous Identification of EGFR,KRAS,ERBB2,
+dardization initiative: standardized quantitative radiomics for High-Through-
+and TP53 Mutations in Patients with Non-Small Cell Lung Cancer by
+put image-based phenotyping. Radiology. 2020;295(2):328-38.
+Machine Learning-Derived Three-Dimensional Radiomics. Cancers (Basel).
+19. Han M, Yao G, Zhang W et al. Segmentation of CT Thoracic Organs by Multi-
+2021;13(8):1814.
+resolution VB-nets; proceedings of the SegTHOR@ISBI, F, 2019.
+43. Coudray N, Ocampo PS, SakellaropouloS T, et al. Classification and mutation
+20. Yushkevich PA, Piven J, Hazlett HC, et al. User-guided 3D active contour
+prediction from non-small cell lung cancer histopathology images using
+segmentation of anatomical structures: significantly improved efficiency and
+deep learning. Nat Med. 2018;24(10):1559-67.
+reliability. Neurolmage. 2006;31(3):1116-28.
+21. Zhou Z, Sodha V, Siddiquee MMR, et al. Models Genesis: Generic Autodidactic
+Models for 3D Medical Image Analysis. Med Image Comput Comput Assist
+Publisher's Note
+Interv. 2019;11767:384-393.
+Springer Nature remains neutral with regard to jurisdictional claims in
+22. Ross A, Willson VL. One-Way Anova [M]//ROSS A, WILLSON VL. Basic and
+published maps and institutional affiliations.
+Advanced Statistical Tests: Writing Results Sections and Creating Tables and
+Figures. Rotterdam; SensePublishers. 2017:21-4.

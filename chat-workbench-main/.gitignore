@@ -1,0 +1,411 @@
+# ============================================================================
+# PYTHON & VIRTUAL ENVIRONMENTS
+# ============================================================================
+
+.venv/
+.env
+__pycache__/
+*.py[cod]
+*$py.class
+*.ruff_cache
+*.mypy_cache
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+docs/source
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# ============================================================================
+# NODE.JS, JAVASCRIPT & TYPESCRIPT
+# ============================================================================
+
+# Dependencies
+**/node_modules/
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+.pnpm-store/
+node_modules.nosync
+
+# Package manager locks (keep these tracked by default)
+# package-lock.json and yarn.lock should be tracked
+
+# Build outputs and caches
+.cache/
+*.tsbuildinfo
+.turbo/
+.parcel-cache/
+.swc/
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Testing
+/coverage
+.nyc_output/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+lerna-debug.log*
+
+# ============================================================================
+# BUILD TOOLS & BUNDLERS
+# ============================================================================
+
+# Webpack
+webpack-stats.json
+webpack.config.js.map
+
+# Rollup
+rollup.config.js.map
+
+# Vite
+vite.config.js.timestamp-*
+dist/
+dist-ssr/
+
+# ESBuild
+.esbuild/
+
+# Bundler outputs
+/build
+/out
+
+# ============================================================================
+# FRAMEWORKS & PLATFORMS
+# ============================================================================
+
+# Next.js
+.next/
+out/
+
+# Nuxt.js
+.nuxt/
+.output/
+
+# Gatsby
+.cache/
+public/
+
+# Storybook
+storybook-static/
+
+# Remix
+/remix.config.*.timestamp-*.mjs
+
+# SvelteKit
+.sveltekit/
+
+# ============================================================================
+# CLOUD & DEPLOYMENT
+# ============================================================================
+
+# AWS
+.cdk.staging/
+cdk.out/
+.aws-sam/
+cdk.context.json
+
+# Vercel
+.vercel
+
+# Serverless Framework
+.serverless/
+
+# ============================================================================
+# DEVELOPMENT TOOLS & IDEs
+# ============================================================================
+
+# VSCode
+.vscode/
+
+# Local History for Visual Studio Code
+.history/
+.ionide/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+# JetBrains IDEs
+.idea/
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ============================================================================
+# OPERATING SYSTEM FILES
+# ============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+
+# ============================================================================
+# PROJECT SPECIFIC
+# ============================================================================
+
+# Data and results
+results/
+data/results
+test_data/
+.docs
+
+# Utility files
+**/*repomix-output.*
+journal.xml
+/files
+
+# Rust
+debug/
+/target
+Cargo.lock
+**/*.rs.bk
+*.pdb
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+*.db
+
+# Packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Miscellaneous
+cline_examples/
+
+# Security & Certificate files
+*.pem
+*.key
+*.crt
+*.cer
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# ============================================================================
+# LLM & AI TOOLS
+# ============================================================================
+
+CLAUDE.md
+GEMINI.md
+*cline*
+*Cline*
+.claude/
+
+# ============================================================================
+# ENVIRONMENT VARIABLES
+# ============================================================================
+
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.staging
+.env.production
+
+# ============================================================================
+# CONFIG FILES THAT SHOULD BE TRACKED
+# (These exceptions override the broader ignore patterns above)
+# ============================================================================
+
+# ESLint configurations
+!**/eslint.config.js
+!**/eslint.config.mjs
+!**/eslint.config.cjs
+!**/.eslintrc.js
+!**/.eslintrc.mjs
+!**/.eslintrc.cjs
+
+# Test configurations
+!**/jest.config.js
+!**/jest.config.mjs
+!**/jest.config.cjs
+!**/vitest.config.js
+!**/vitest.config.mjs
+
+# Build tool configurations
+!**/webpack.config.js
+!**/rollup.config.js
+!**/vite.config.js
+!**/esbuild.config.js
+
+# Framework configurations
+!**/next.config.js
+!**/next.config.mjs
+!**/nuxt.config.js
+!**/gatsby.config.js
+!**/remix.config.js
+
+# CSS/Styling configurations
+!**/postcss.config.js
+!**/postcss.config.mjs
+!**/tailwind.config.js
+!**/tailwind.config.ts
+!**/tailwind.config.mjs
+
+# TypeScript configurations
+!**/tsconfig.json
+!**/tsconfig.*.json
+
+# Package management
+!**/package.json
+!**/package-lock.json
+!**/yarn.lock
+!**/pnpm-lock.yaml
+
+# Code formatting
+!**/.prettierrc
+!**/.prettierrc.js
+!**/.prettierrc.mjs
+!**/.prettierrc.json
+
+# CDK and AWS configurations
+!**/cdk.json
+!**/samconfig.toml
+
+# Other important configs
+!**/babel.config.js
+!**/babel.config.mjs
+!**/.babelrc.js

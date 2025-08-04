@@ -1,0 +1,1460 @@
+
+Breast Cancer Research and Treatment
+https://doi.org/10.1007/s10549-025-07759-7
+RESEARCH
+Check for
+updates
+Genomic landscape of hormone therapy-resistant HR-positive,
+HER2-negative breast cancer
+Rohan Chaubal¹,²,³ Elizabeth Talker2,4 Jaya Chitra 1,2 Rasika Kadam2,4 Nilesh Gardi²,³,⁴ Riddhi Ursekar2,4
+Anushree Kadam2,4 Ankita Singh² Suhani Sale¹,² Shwetali Pandey²,4 Mrudula Madhav²,⁴ Aishwarya Raja²,3,4
+Rushikesh Mukhare2,3,4 Pallavi Parab³,⁴ Nitin Shetty³,⁵ Kunal Gala³,⁵ Suyash Kulkarni³,⁵ Khushboo A. Gandhi²,⁴
+Seema Gulia³,⁴ Shalaka Joshi1,2,3 Tanuja Shet3,6 Sudeep Gupta²,³,⁴
+Received: 1 October 2024 / Accepted: 4 June 2025
+© The Author(s) 2025
+Abstract
+Purpose We aimed to characterize the genomic landscape of hormone receptor-positive (HR+)/HER2-negative breast cancer
+in patients with hormone therapy-resistant and -sensitive phenotypes.
+Methods HR+/HER2-negative patients who were disease-free for >2 years were considered hormone therapy-sensitive
+= 19), while those who experienced disease progression within 2 years were considered hormone therapy-resistant (n=48).
+Whole-exome sequencing (WES) was performed on paired (treatment-naive and relapse-site) tumor and germline-derived
+DNA from resistant patients (n=19), and targeted next-generation sequencing (NGS) was performed on plasma-derived
+circulating tumor DNA (ctDNA) from resistant (n=35) and sensitive (n = 19) patients.
+Results In 19 resistant patients, the mutation burden was higher in relapse-site compared with treatment-naive samples
+(median 0.883 vs 0.655 mutations/mb, p=0.03), there were 64 driver mutations (median treatment-naïve versus relapse-site;
+2/sample vs. 3/relapse), of which 21 mutations in 8 genes in 15 (78.9%) patients were classified as actionable, and branching
+evolutionary trajectories were seen in 18 (94.7%) patients, with the presence of PIK3CA and/or TP53 mutations in stem clones
+of 13 (68.4%) patients. ctDNA analysis in 35 resistant patients identified 27 actionable hotspot mutations, such as PIK3CA
+H1047X, AKTI p.E17K, CDHI p.R63X, CDKN2A p.X50*, ERBB2 p.D769Y, and ESRI p.E380Q, in 25 (71.4%) patients.
+Among 19 patients with hormone therapy-sensitive disease who were in remission at the time of sample collection, ctDNA
+analysis showed driver mutations in 10 (52.6%) patients, of whom 2 patients subsequently experienced relapse and died.
+Conclusion Hormone therapy-resistant HR+/HER2-negative breast cancers are polyclonal, acquire actionable alterations
+at relapse, and moderate-depth ctDNA successfully identifies many clonal mutations, suggesting a role for liquid biopsy
+monitoring in these patients.
+Keywords Breast cancer . Hormone therapy resistance Circulating tumor DNA Actionable mutations Liquid biopsy
+Sudeep Gupta
+4
+Department of Medical Oncology, Tata Memorial
+sudeepgupta04@yahoo.com
+Hospital, Tata Memorial Centre, Dr Ernest Borges Road,
+Parel, Mumbai, Maharashtra 400012, India
+1
+Department of Surgical Oncology, Tata Memorial Hospital,
+5
+Department of Interventional Radiology, Tata
+Tata Memorial Centre, Mumbai, Maharashtra 400012, India
+Memorial Hospital, Tata Memorial Centre, Mumbai,
+2
+Hypoxia and Clinical Genomics Lab (Clinician Scientist
+Maharashtra 400012, India
+Laboratory), Advanced Centre for Treatment, Research,
+6
+and Education in Cancer, Tata Memorial Centre,
+Department of Pathology, Tata Memorial Hospital, Tata
+Memorial Centre, Mumbai, Maharashtra 400012, India
+Navi Mumbai, Maharashtra 410210, India
+3
+Homi Bhabha National Institute, Training School Complex,
+Anushakti Nagar, Mumbai, Maharashtra 400094, India
+Published online: 12 July 2025
+Springer
+Breast Cancer Research and Treatment
+Introduction
+Materials and methods
+Breast cancer is the most common malignancy among
+Study design, patient selection and samples
+women in India and causes substantial morbidity and mor-
+tality [1-3]. Approximately 50-60% of all breast cancers
+The study was approved by the Institutional Ethics Com-
+diagnosed in India are hormone receptor [estrogen receptor
+mittee of the Advanced Centre for Treatment, Research and
+(ER) and/or progesterone receptor (PR)]-positive (HR+)
+Education in Cancer (ACTREC), Tata Memorial Centre,
+[4] and 20-40% of all HR+, and Human Epidermal growth
+India and registered in the Clinical Trials Registry of India
+factor Receptor 2 (HER2)-negative breast cancer patients
+(CTRI/2017/11/010553) The patients were recruited after
+receiving adjuvant hormone therapy develop recurrent
+obtaining written informed consent as previously described
+or metastatic tumors [5]. Almost all patients with HR+/
+[29]. Briefly, this was a single-center prospective study,
+HER2-negative metastatic breast cancers eventually
+which involved sample and data collection from patients
+develop resistance to hormone therapy. Thus, treatment-
+with histopathologically proven breast cancer, which was
+resistant HR+/HER2-negative breast cancer contributes
+positive for ER and/or PR by immunohistochemistry and
+substantially to breast cancer mortality [6]. Therefore, it is
+negative for HER2 by immunohistochemistry or fluores-
+important to understand and monitor the molecular factors
+cent in situ hybridization. All patients with early stage or
+associated with treatment resistance.
+locally advanced breast cancers (LABC) received standard
+Several studies have evaluated the molecular differ-
+curative-intent treatment involving surgery, with or without
+ences between hormone therapy-resistant and hormone
+(neo)adjuvant chemotherapy, radiotherapy as indicated, and
+therapy-sensitive breast tumors [7, 8]. Constitutive sign-
+adjuvant hormone therapy. Patients were characterized as
+aling through the Estrogen Receptor 1 (ESR1) pathway,
+hormone therapy-sensitive if they were relapse-free for at
+activated by ESR1 gene fusions [9, 10] or point mutations
+least 2 years after starting hormone therapy (Fig. 1). Blood,
+[11-17], is a mechanism of resistance in patients receiving
+buccal swab samples, and previously archived tumor tissue
+aromatase inhibitors and other treatments. Some of these
+at the time of diagnosis were collected from these patients.
+studies have evaluated resistance by assessing molecular
+Patients who experienced disease progression on hormone
+changes in the circulating tumor DNA (ctDNA) [12-15].
+therapy or who had disease relapse within 2 years of start-
+HER2 pathway activation has been proposed as a mech-
+ing hormone therapy were characterized as having hormone
+anism for hormone therapy resistance in a subset of HR+/
+therapy-resistant disease. Blood, buccal swab, and tumor
+HER2-negative breast tumors [18-21]. Other oncogenic
+tissue from the most accessible site of relapse were collected
+pathways [22-24] or metabolic pathways [25] have also
+from these patients (Fig. 1).
+been implicated in treatment resistance in these patients.
+Briefly, 3-4 cores of fresh tumor biopsy were preserved in
+Some studies have profiled tumor samples from patients
+either RNAlater (Thermo Fisher Scientific, Massachusetts,
+whose disease progressed on therapy, establishing the
+USA) or Allprotect (Qiagen, Hilden, Germany) at 2-8 °C for
+landscape of genomic aberrations enriched in this resistant
+24 h, and then transferred to -80 °C until further analysis.
+phenotype [26-28]. However, many of these studies were
+For patients whose relapse-site biopsies were obtained, we
+performed in limited sample set of tumors, used DNA
+also collected treatment-naïve tumor tissue from the time of
+from archival blocks, or performed targeted DNA sequenc-
+diagnosis, which was bio-banked in the hospital tumor tissue
+ing using small next-generation sequencing (NGS) panels
+repository. Plasma from the peripheral blood was processed
+[29, 30]. Notably, only a few studies evaluated paired,
+as described earlier [30].
+fresh-frozen, treatment-naïve samples and the correspond-
+ing sample at relapse, which would allow insights into
+Whole-exome sequencing
+acquired and intrinsic mechanisms of therapy resistance.
+In this study of HR+, HER2-negative patients, we sub-
+As per the manufacturer's protocols, DNA from fresh-frozen
+jected samples from treatment-naïve tumors bio-banked
+and buffy-coat samples was extracted using the QIAamp
+at the time of diagnosis (retrospective), samples from
+DNA Mini Kit (Qiagen, Hilden, Germany), as described
+relapse-site (prospective), and paired germline DNA from
+earlier [30]. Tumor DNA was subjected to Agilent V6
+white blood cells (prospective) to whole-exome sequenc-
+exome capture at 200x depth, and buffy-coat DNA at 100x
+ing (WES). We also subjected ctDNA, extracted at the
+depth. Subsequent sequencing was performed on an Illumina
+time of relapse in hormone therapy-resistant patients or at
+NovaSeq 6000, as previously described [30].
+the time of routine follow-up in hormone therapy-sensitive
+(without relapse) patients, to an in-house, 336-gene cus-
+tom full-exon targeted NGS assay.
+Springer
+Breast Cancer Research and Treatment
+Fig. 1 A,B Study design,
+A
+schema, and patient recruitment
+Hormone Therapy Sensitive Cohort
+flowchart
+ER and/or PR+ and Her2-
+Absence of relapse within 2 years on initiating
+adjuvant hormone therapy (AI or tamoxifen)
+ER Antagonist OR Aromatase Inhibitor
+Relapse Free For Two Years
+Hormone Therapy Sensitive Cohort
+Hormone Therapy Resistant Cohort
+Patients with early breast cancer with
+ER and/or PR+ and Her2-
+local or regional relapse on adjuvant
+ER Antagonist OR Aromatase Inhibitor
+hormone therapy
+Disease Progression
+Upfront metastatic breast cancer with
+Hormone Therapy Resistant Cohort
+primary tumors in situ, on hormone
+therapy (AI or tamoxifen)
+B
+N=67 Patients
+N=48 Resistant
+N=19 Sensitive (No clinical tumour at follow-up)
+n=19 WBC, tumour tissue
+n=29* Only ctDNA
+WBC, Tumour tissue
+ctDNA at follow-up
+at diagnosis & relapse
+at relapse
+at diagnosis n=0
+n=19
+n=7 ctDNA at relapse
+n=54 ctDNA
+n=19 WES data for WBC, Tumour
+n=35 (28+7)
+n=19
+tissue at diagnosis & relapse
+At Relapse
+Sensitive at Follow-up
+n=53 ctDNA NGS Data available
+n=35 (28+7)
+n=18
+At Relapse
+Sensitive at Follow-up
+Next-generation sequencing assay for ctDNA
+somatic and germline genes, homologous recombination
+deficiency (HRD), microsatellite instability, and mismatch
+The genes' list in our ctDNA assay was curated from
+repair deficiency (Supplementary Materials and Methods,
+various studies based on their relevance in breast cancer,
+Supplementary Table 1). We were able to generate full-
+gynecological cancers, prostate cancer, and germline pre-
+length exon capture baits for 336 genes with at least 99%
+disposition, to enable a broad-based genomic evaluation of
+coverage (Supplementary Table 2).
+Springer
+Breast Cancer Research and Treatment
+Circulating tumor DNA (ctDNA) sequencing
+using CALDER [35] and visualized with TimeScape [36].
+For ctDNA sequencing analysis, raw reads were aligned
+According to the manufacturer's instructions, ctDNA was
+to the human hg19 genome using default seed settings.
+extracted from 3 to 6 mL of plasma using the QIAamp Cir-
+The resulting BAM file was filtered for duplicate reads,
+culating Nucleic Acid kit (Qiagen, Hilden, Germany) as
+and consensus variants were called in tumor-only somatic
+described earlier [30]. Briefly, extracted ctDNA was eluted
+mode with default settings. Only variants annotated as
+into 55 µL of AVE buffer and stored at -20 °C. The concen-
+PASS and meeting default quality control filters, along
+tration of extracted cell-free DNA (cfDNA) was determined
+with additional hard filters, were carried forward for fur-
+using the Qubit dsDNA HS (High Sensitivity) Assay Kit
+ther analysis. The list of filters used is provided in Sup-
+(Invitrogen, Carlsbad, CA, USA). Its size distribution was
+plementary Table 3.
+assessed with the TapeStation using the cfDNA High Sen-
+sitivity Assay Kit (Agilent Technologies, Santa Clara, CA,
+Data availability statement
+USA). cfDNA was concentrated using SpeedVac to obtain
+an adequate amount for library preparation. The Twist Uni-
+The human sequence data generated in this study are not
+versal Adapter system, consisting of Twist Universal Adapt-
+publicly available due to patient privacy requirements but
+ers and Twist Unique Dual-Indexed (UDI) Primers, was used
+are available from the corresponding author upon reason-
+for library preparation (The TWIST UDI Library Prepara-
+able request. Other data generated in this study are available
+tion protocol) as per the manufacturer's (Twist Bioscience,
+within the article and its supplementary data files.
+South San Francisco, CA, USA) protocol. Enzymatic frag-
+mentation and Y-shaped adapter ligation of at least 10 ng of
+ctDNA were carried out using a combination of restriction
+Results
+enzymes and sonication. The fragmented DNA was then
+end-repaired, A-tailed, and ligated to the Y-shaped adapt-
+Patient cohort and clinical characteristics
+ers, which contain the UDIs that allow for sample multi-
+plexing. The ctDNA was then purified using AMPure XP
+Three hundred thirty-four patients, recruited between 2017
+beads (Beckman Coulter, USA) to remove unligated adapt-
+and 2023, were included in this analysis, of whom 135 had
+ers and other impurities. The purified ctDNA was ampli-
+hormone therapy-resistant and 199 had hormone therapy-
+fied using PCR to generate the amplified, indexed libraries
+sensitive disease (Supplementary Fig. 1). Plasma was avail-
+for downstream target enrichment and sequencing on Illu-
+able from 298 of these 334 patients (resistant 119, sensitive
+mina's NGS systems. cDNA libraries were enzymatically
+179), plasma nucleic acid was detected in 254 out of 298
+fragmented and then ligated to Twist Universal Adapters.
+patients (resistant 116, sensitive 138), and cfDNA (defined
+Subsequent PCR amplification with Twist UDI Primers
+as 50-700 basepair (bp) [37] gated by the cfDNA assay
+incorporated Illumina barcodes, yielding indexed libraries
+on TapeStation, was detected in 250 of these 254 patients
+ready for target enrichment.
+(resistant 116, sensitive 134). ctDNA (defined as 50-350 bp)
+was detected in 136 of these 250 patients (resistant 116,
+Bioinformatics analysis
+sensitive 24), out of which 118 patients (resistant 98, sensi-
+tive 20) had 50% of the total cfDNA between 50 and 350 bp
+Whole-exome sequencing data generation and analysis,
+indicating enrichment of ctDNA, with minimal background
+copy-number variation calling, clonality analysis, evo-
+contamination with white blood cell DNA. Thus, the result
+lutionary phylogenetic tree derivation, and visualization
+indicates higher prevalence of ctDNA in patients with hor-
+were performed using default settings of algorithms as
+mone therapy-resistant disease, with ctDNA detected in 98
+previously described [30] and detailed in supplementary
+of the 116 (84.5%) patients compared to only 20 of the 138
+data. ctDNA data generation was performed using Illu-
+(14.5%) hormone therapy-sensitive patients.
+mina Dynamic Read Analysis for GENomics (DRAGEN)
+Of the 118 patients with ≥50% ctDNA in plasma, ctDNA
+On-Board Server for the Illumina NovaSeqX, following
+was subjected to library preparation for 62 (resistant 43, sen-
+the manufacturer's user guide and described previously
+sitive 19) patients with >10 ng ctDNA, of which 54 were
+[31, 32]. Briefly, raw fastq files were aligned to the refer-
+subjected to NGS (resistant 35, sensitive 19), and data were
+ence human genome (hg19) using BWA-Mem 2.0 (default
+available.
+settings), followed by variant calling using Varscan 2
+WES data were available from paired somatic samples
+(default settings). Copy-number information was derived
+(treatment-naïve and relapsed tumor) for 19 patients with
+using VarScan2 copy-number (version 2.4.3) [33]. Clon-
+hormone therapy-resistant disease, with an overlap of 7
+ality analysis was performed using PyClone [34]. For
+resistant patients with available ctDNA NGS data. Thus,
+each patient, evolutionary phylogenetic trees were derived
+the final analysis set comprised NGS data from 66 patients
+Springer
+Breast Cancer Research and Treatment
+(resistant 47, sensitive 19), comprising 12 resistant patients
+treatment-naive as well as relapse-site samples, and 12 muta-
+with only paired somatic tumor tissue, 28 resistant patients
+tions were lost at relapse, while 21 driver mutations were
+with only ctDNA data, 7 resistant patients with both paired
+gained at relapse, including potentially actionable alterations
+somatic tissue and ctDNA data, and 19 sensitive patients
+in genes like ESR1, PIK3R2, ATR, EZH2, and POLE. In 15
+with only ctDNA data. Details of the genomic assays are
+(78.9%) patients, 21 of the 64 driver mutations in 8 genes
+provided in Supplementary Table 4.
+were actionable on the ESCAT scale, with at least one level
+The clinical characteristics of the 67 patients are shown
+of evidence, A, B, C or D. In 11 (57.9%) patients, 14 of these
+in Supplementary Table 5. All patients were females, with
+21 mutations were present in treatment-naive and relapse-
+a median age of 51 (27-70) years, and a median follow-up
+site samples; in 2 (10.5%) patients, 2 mutations were lost in
+duration of 57 months, calculated from the time of enroll-
+relapse-site samples; and in 6 (31.6%) patients, 5 mutations
+ment to the date of last follow-up. Patients in the resistant
+were gained in relapse-site samples (Fig. 2).
+group, compared with the sensitive group, had a higher pro-
+portion of grade III tumors (76.5% vs. 47.1%) and stage IV
+Clonal evolutionary patterns in tumor tissue
+disease (39% vs. 2%) at the time of sample acquisition. All
+from hormone therapy-resistant patients = 19)
+patients had undergone curative-intent surgery except one
+patient who had de novo metastatic disease with multiple
+Treatment-naïve tumor samples from hormone therapy-
+organ metastasis at the time of initial presentation. Patients
+resistant patients were polyclonal, with varying mutational
+with hormone therapy-resistant disease had received a
+burdens (Fig. 3), comprising a stem clone which branched
+median of three lines of systemic therapies at the time of
+into subclones (Fig. 4). This 'branching evolutionary' pat-
+sample acquisition. Five patients had received prior treat-
+tern was observed in 18 (94.7%) patients. The treatment-
+ment with CDK4/6 inhibitors. Within the premenopausal
+naive tumor was bi-clonal in the remaining 1 (5.3%) patient
+subset, eight patients had undergone ovarian function sup-
+and remained the same at relapse. We classified patients by
+pression; however, specific data regarding the distribution
+the presence of mutations in PIK3CA and/or TP53 in the
+among ovarian suppression combined with aromatase inhibi-
+stem clones. Stem clones in 13 (68.4%) harbored a muta-
+tors, ovarian suppression with tamoxifen, or tamoxifen mon-
+tion in PIK3CA or TP53, or both (Supplementary Table 7).
+otherapy were not available.
+Group A patients included 3 (15.8%) patients with co-
+occurring TP53 and PIK3CA mutations in their stem clones
+Whole-exome sequencing of treatment-naive
+(Fig. 4A), who lacked additional driver mutations in their
+and post-treatment relapsed tumor in hormone
+stem clones, suggesting that the co-occurrence and persis-
+therapy-resistant patients = 19)
+tence of PIK3CA and TP53 mutated cells throughout their
+clinical course were sufficient to drive treatment resist-
+The post-treatment relapsed tumors had a higher mutation
+ance. One (5.3%) of these three patients (P038R) acquired
+rate (median of 0.883 mutations per mb, range 0.51-3.41)
+an ESRI mutation Y537S) at relapse, which has been
+compared with treatment-naïve diagnostic tumors (median
+previously shown to play a role in resistance to tamoxifen,
+0.655 mutations per mb, range 0.31-2.09) (p value 0.03).
+aromatase inhibitors, and fulvestrant [11]. Group B patients
+In 38 tumor samples obtained from 19 patients, including
+included 3 (15.8%) patients who harbored TP53 mutations
+treatment-naive and relapse-site tissue, we identified 1886
+alone, with no mutations in the PI3K pathway (Fig. 4B).
+unique somatic variants in 1608 genes (Supplementary
+These patients had additional GATA3, RAD54, and AMERI
+Table 6), of which 1810 mutations in 1562 genes were anno-
+mutations in their stem clones. Group C comprised of 8
+tated for functional effects. There were 540 mutations in 508
+(42.1%) patients with PIK3CA mutations alone, with no
+genes in treatment-naive and relapse-site samples, 451 muta-
+mutations in TP53 in their stem clone (Fig. 4C). The stem
+tions in 420 genes seen only in treatment-naïve samples,
+clone in 5 (26.3%) of these patients had additional mutations
+and 819 mutations in 751 genes exclusively acquired in the
+in other oncogenes (JAG1, RAF1, KRAS, and FOXAI), in
+relapsed tumor samples. (Supplementary Table 6). To deter-
+2 (10.5%) patients had mutations in DNA damage repair
+mine the clinical actionability of the 1810 identified muta-
+(DDR) genes (RAD18, XRCC5), oncogenes (MAP3K21,
+tions, the [European Society of Medical Oncology Scale
+MAP2K5, PDGFRL) and tumor suppressor gene (PTEN),
+for Clinical Actionability of Molecular Targets], ESCAT
+in 1 (5.3%) patient had an ESR2 mutation (R220W), and in 1
+analysis was performed on a local installation of the Cancer
+(5.3%) patient acquired two mutations in TP53 at the time of
+Genome Interpreter (CGI) [41] under an academic license.
+relapse (R141C and E66X). Group D comprised 5 (26.3%)
+CGI annotated 64 of the 1810 mutations as confirmed driv-
+patients lacking mutations in TP53 or PIK3CA (Fig. 4D), but
+ers (Fig. 2). There was a median of two driver mutations in
+having known driver mutations in FOXA2, NOTCH1, PTEN,
+treatment-naive samples and a median of three mutations
+GATA3, MEN1, FRG1, and MAP3K in their stem clone.
+in relapsed tumors, 31 driver mutations were present in the
+Relapse-site tumor tissue in 2 (10.5%) Group D patients
+Springer
+Breast Cancer Research and Treatment
+Treatment Naïve Biopsy
+Post-Treatment at Relapse
+Protein
+Gene
+Change
+P014R
+P035R_Dx
+P036R_Dx
+P038R_Dx
+P060R_Dx
+P063R_Dx
+P069R_Dx
+P072R_Dx
+P076R_Dx
+P079R_Dx
+P082R_Dx
+P090R_Dx
+P091R_Dx
+P033R_Dx
+P053R_Dx
+P010R_Dx
+P067R_Dx
+P068R_Dx
+P080R Dx
+P014R_Rls
+P035R_Rls
+P036R_Rls
+P038R_Rls
+P060R_Rls
+P063R_Rls
+P069R_Rls
+P072R_Rls
+P076R Rls
+P079R_Rls
+P082R_Rls
+P090R_Rls
+P091R_Rls
+P033R_Rls
+P053R_Rls
+P010R_Rls
+P067R_Rls
+P068R_Rls
+P080R Rls
+ESCAT
+Evidence
+Treatment
+Level
+PIK3CA
+p.C420R
+A
+Alpelisib+ Fulvestrant
+PIK3CA
+p.H1047R
+A
+Alpelisib+ Fulvestrant
+PIK3CA
+p.E545K
+A
+Alpelisib+ Fulvestrant
+PIK3CA
+p.Y1021H
+A
+Alpelisib+ Fulvestrant
+PIK3CA
+p.R93Q
+A
+Alpelisib+ Fulvestrant
+TP53
+p.C145F
+B
+Pazopanib,Vorinostat
+TP53
+p.H82R
+B
+Pazopanib,Vorinostat
+TP53
+p.H61R
+B
+Pazopanib,Vorinostat
+TP53
+p.S109T
+B
+Pazopanib,Vorinostat
+TP53
+p.R141C
+B
+Pazopanib,Vorinostat
+KRAS
+p.G12D
+D
+Cobimetinib + Binimetinib + Trametinib
+NOTCH1
+p.G1513S
+C
+Gamma secretase inhibitors(Ro4929097,Pf-03084014,Mk-0752,etc)
+PTEN
+p.D24H
+C
+Sirolimus
+SF3B1
+p.K700E
+D
+Spliceosome inhibitors
+FOXA1
+p.S250F
+RAF1
+p.T10M
+LRP1B
+p.G510R
+MGA
+p.R984C
+NBEA
+p.G296S
+NCK1
+p.E98K
+RASA1
+p.N1014D
+RASGRP1
+p.A688T
+SMARCA
+p.G1232S
+SMARCD
+p.G470E
+ARHGAP
+p.K640R
+ARID4B
+p.P547A
+ATIC
+p.1423T
+CAD
+p.E1090Q
+CHD9
+p.N22381
+SF3A3
+p.E2X
+AXIN1
+p.Q357X
+PIK3CA
+p.E542G
+A
+Alpelisib+ Fulvestrant
+PIK3CA
+p.E542K
+A
+Alpelisib+ Fulvestrant
+FLNA
+p.L144Q
+HCFC1
+p.R340H
+MED24
+p.A400V
+MYOD1
+p.R103H
+ZMYM3
+p.L1200V
+ZNF292
+p.A801S
+AQR
+p.L450F
+ASPM
+p.S2466L
+PREX2
+p.Q1321X
+CHD4
+p.S767C
+TP53
+p.E66X
+B
+Pazopanib,Vorinostat
+ESR1
+p.D538G
+A
+Elacestrant
+ESR1
+p.Y537S
+A
+Elacestrant
+ATR
+p.P2287T
+D
+Olaparib
+KRAS
+p.G12A
+D
+Cobimetinib + Binimetinib + Trametinib
+ATF1
+p.E229K
+EZH2
+p.D598N
+PDGFRA
+p.A529T
+PIK3R2
+p.R355Q
+POLE
+p.G770W
+TSC1
+p.Q875E
+ARHGAP
+p.S33F
+BCORL1
+p.R1642Q
+CSMD3
+p.D921N
+EXT2
+p.R43Q
+LRP6
+p.E428V
+MUC20
+p.R619X
+MYH11
+p.R1273Q
+PGR
+p.F590V
+SOS1
+p.R1019Q
+SPTAN1
+p.Q333X
+Fig. 2 Driver mutations identified as actionable by ESCAT analysis
+is a patient, and each row is a mutation. ESCAT level of evidence is
+on CGI for 19 hormone therapy-resistant patients with WES data of
+indicated beside each mutation along with treatment
+paired treatment-naïve and relapse-site tissue biopsies. Each column
+acquired an ESR1 hotspot mutation. In 2 (10.5%) patients
+Targeted NGS of ctDNA identifies breast cancer
+(P080R & P069R), we could not identify any known driver
+hallmark mutations (n = 54 patients, hormone
+mutation in the stem clone.
+therapy-resistant 35, hormone therapy-sensitive 19)
+We designed a targeted enrichment assay for 336 genes
+Springer
+Breast Cancer Research and Treatment
+Distribution of Mutations Across Clones
+(Supplementary Table 1) covering 1,037,600 bp spanning
+5,285 exons with a 99.75% (1,034,996 bp) cumulative cov-
+300
+A
+erage of our intended target regions. Among 54 patients
+B
+(resistant 35, sensitive 19) for whom ctDNA NGS data were
+C
+available, a median sequencing yield of 11,869 megabases
+200
+D
+Mutations
+(MB) was achieved, corresponding to a median coverage
+E
+of 11,557x. Data quality was high, with a mean of 95% of
+F
+bases exhibiting a Q-score ≥ 30 and an overall mean qual-
+100
+G
+ity score of 36 (Supplementary Table 8). In 53 (resistant
+H
+35, sensitive 18) of these 54 patients, there was at least one
+variant, which passed the hard filters, with a total of 23,113
+0
+unique variants (Supplementary Table 9), of which 12,761
+P072R
+P090R
+P010R
+P033R
+P035R
+P067R
+P069R
+P079R
+P080R
+P082R
+P060R
+P063R
+P014R
+P036R
+P038R
+P053R
+P091R
+P068R
+P076R
+variants were either synonymous or annotated as 'unknown'
+and were discarded from further analysis, while 10,352 vari-
+Patients
+ants, annotated as 'nonsynonymous', 'frameshift', 'stop loss',
+or 'stop gain', were further analyzed. Of these 10,352 vari-
+Fig. 3 Distribution of mutations across each clone in clonal analysis
+ants, 805 were absent from both the single-nucleotide poly-
+of 19 patients from WES data of paired treatment-naïve and relapse-
+morphisms (dbSNP) database and the Catalogue of Somatic
+site tissue biopsies
+A
+P036R
+B
+P060R
+Clonal Prevalence
+PIK3CA
+TP53
+TP53
+Clonal Prevalence
+FOXC1
+Time Point
+P090R
+TO
+T1
+TP53, PIK3CA
+T2
+Clonal Prevalence
+Time Point
+P082R
+TP53
+T2
+Time Point
+P038R
+Clonal Prevalence
+TP53, PIK3CA
+Clonal Prevalence
+ESR1
+FRG1
+T1
+T2
+Time Point
+Time Point
+D
+c
+PIK3CA, FOXA1
+ARID4B
+NOTCH1
+FRG1, MEN1
+PIK3CA
+ESR1
+JAG1
+ESR1
+GATA3
+Time Point
+P067R
+FOXA1
+PIK3CA
+TP53
+GATA3
+PTEN, ESR2
+MAP3K,
+FRG1
+PIK3CA
+CDKN9
+Time
+Point
+PIK3CA
+PIK3CA
+POLE
+KRAS
+GATA3, KMT2E
+AMER2
+PIK3CA
+ARID1A, SF3BP1
+Fig. 4 Clonal landscape of 18 patients with WES data of treatment-
+(B), PIK3CA alone in stem clone (C), and those with other driver
+naïve and relapse-site tissue biopsies. Patients are divided into those
+mutations in stem clone (D)
+with TP53 and PIK3CA in stem clone (A), TP53 alone in stem clone
+Springer
+Breast Cancer Research and Treatment
+Mutations in Cancer (COSMIC), indicating that they could
+pathogenic BRCA1 variant in a sensitive patient was anno-
+be ethnicity-specific germline polymorphisms (Supplemen-
+tated with a dbSNP ID alone, indicating that this may be a
+tary Table 9), while 2328 variants were found in dbSNP
+germline variant; this patient also reported a familial history
+alone, suggesting that they are germline polymorphisms. Of
+of breast cancer. The other two BRCA1 variants (resistant 1,
+these 2328 possibly germline polymorphisms, variants in
+sensitive 1) and the sole BRCA2 variant in a resistant patient
+11/54 (20.4%) patients in 7 genes (BRCA1, CHEK2, MLH3,
+were also present in the COSMIC database, indicating that
+MMP9, SOX2, AR, and ZFHX3) were annotated as patho-
+they may be somatic or germline, which we are unable to
+genic or likely pathogenic. Of 10,352 variants, 7219 were
+confirm in the absence of germline control from buccal swab
+present in COSMIC (Supplementary Table 9), of which,
+DNA.
+6969 were annotated as 'Benign', 'Likely Benign', or of
+'Uncertain pathogenicity' and were excluded from further
+Presence of driver mutations in ctDNA increases
+analyses, while 250 of the 7219 variants in 53 patients were
+the risk of subsequent relapses (n = 19 patients,
+annotated as 'Pathogenic' or 'Likely Pathogenic' and were
+hormone therapy-sensitive)
+further analyzed. Of the 250 variants, 170 were present in
+more than 30 patients (for example, HNFIA p.S574G in 52
+We detected known driver mutations in TP53, KRAS,
+patients, FGFR4 p.G388R in 30 patients, and IL7R V138I
+PIK3CA, BRCA1, SF3B1, AR, MSH6, and MENI in the
+and p.I66T in 44 patients), indicating that they were likely to
+ctDNA of 10 (52.6%) of the 19 patients with hormone ther-
+be polymorphisms and were excluded from further analysis.
+apy-sensitive disease who were radiologically and clinically
+In the remaining 80 pathogenic variants, there were 42
+disease-free at the time of their blood sample collection
+unique variants in 22 genes present in 32 of the 35 hormone
+(Supplementary Table 11). Of these 10 patients, 8 (80% of
+therapy-resistant patients (Supplementary Table 10). Among
+those with driver mutations in ctDNA) were alive and dis-
+these 35 patients, 15 (42.9%) patients had hotspot muta-
+ease-free at the time of analysis, while 2 (20% of those with
+tions in PIK3CA, 9 (25.7%) patients had hotspot mutations
+driver mutations), one with a known pathogenic mutation
+in TP53, and 3 (8.6%) patients had hotspot mutations in both
+in MEN1 and another with two driver mutations in PIK3CA
+genes. ESCAT analysis using CGI identified 27 of these 42
+and KRAS, experienced disease relapse and died. Among
+variants in 12 genes, in 25 (71.4%) resistant patients to be
+the 9 patients without any known driver mutations in the
+actionable (Supplementary Table 11). In resistant patients,
+ctDNA analysis, one was lost to follow-up, and the remain-
+driver alterations with any level of actionability included
+ing 8 (88.9% of those without driver mutations) were alive
+PIK3CA H1047X, AKT1 p.E17K, CDH1 p.R63X, CDKN2A
+and disease free at the time of analysis.
+p.X50*, ERBB2 p.D769Y, ESRI p.E380Q, GATA3 p.R367X,
+KRAS p.G12A, KRAS p.G12D, PTEN p.D24H, and SF3B1
+Driver mutations in tissue biopsy are recapitulated
+p.K700E. Interestingly, we could not identify any additional
+in the ctDNA NGS assay (n = hormone
+driver mutation in the two patients harboring the ESR1
+therapy-resistant)
+p.E380Q mutation.
+Among 19 hormone therapy-sensitive patients, there were
+NGS data from paired (treatment-naïve and relapse-site)
+10 unique pathogenic variants in 8 genes, seen in 10 (52.6%)
+somatic tumor tissue and from their ctDNA at relapse
+patients. Hotspot mutations were seen in 3 (15.8%) patients
+were available in 7 patients. There were mutations in 1608
+in PIK3CA and in 1 (5.3%) patient in TP53. Four of these
+unique genes in the somatic tissue (either treatment-naïve
+10 variants in 3 genes in 6 sensitive patients were identified
+or relapse-site or both), of which 59 genes were included in
+to be driver mutations by ESCAT analysis on CGI (Sup-
+our targeted ctDNA panel. There were 7 genes, which had
+plementary Table 11), and included PIK3CA pH1047X and
+10 driver mutations as detected by the ESCAT analysis, in
+KRAS pG12A.
+tumor tissue of 7 (100%) patients. In 1 (14.3%) patient, two
+Thus, overall, 31 (27 resistant, 4 sensitive, 57.4%) of
+driver mutations were detected only in treatment-naive sam-
+these 54 patients had mutations in either PIK3CA or TP53,
+ple but absent in relapse-site tissue and ctDNA; in 2 (28.6%)
+with potentially actionable alterations seen in 28 (25 resist-
+patients, two driver mutations were detected only in relapse-
+ant, 3 sensitive, 51.9%) patients.
+site tissue but were absent in ctDNA at relapse; in 1 (14.3%)
+patient, one driver mutation was detected in relapse-site tis-
+Circulating tumor DNA (ctDNA) NGS assay can
+sue and ctDNA at relapse; and in 4 (57.1%) patients, five
+detect germline BRCA1 variants (n = 54)
+driver (all also present in the stem clone of these patients)
+mutations were detected in treatment-naive and relapse-
+Three (resistant 1, sensitive 2, 5.6%) patients had patho-
+site tissue as well as ctDNA at the time of relapse (Sup-
+genic BRCA1 variants, while 1 (1.9%) resistant patient had
+plementary Fig. 2). Stem clone driver mutations in FOXAI
+a pathogenic BRCA2 variant in the ctDNA analysis. One
+and ESR1 in patients P068R and P038R, respectively, were
+Springer
+Breast Cancer Research and Treatment
+not identified in corresponding ctDNA samples. Manual
+with hormone therapy-sensitive disease had detectable
+inspection of these loci in the VCF files indicated that these
+driver mutations in the ctDNA analysis, and 20% of these
+mutations had been filtered out due to a hard-calling filter,
+patients experienced subsequent disease relapse and death.
+which excluded any mutation where more than two alternate
+We identified stem clones comprising mutations in TP53
+alleles were passing the LOD. Thirteen mutations in 11 (of
+and/or PIK3CA in 13 hormone therapy-resistant patients, 6
+the 59) genes, which were not classified as drivers, were not
+of whom also had the same mutations in ctDNA, indicating
+identified in the ctDNA at the time of relapse. There were
+the importance of targeting these clones early in the disease
+no driver mutations in the ctDNA, which were absent in the
+course. In 5 of these patients with TP53 mutations in stem
+corresponding tissue sample at relapse.
+clones, the only additional mutation was in PIK3CA, indi-
+cating the likely sufficiency of TP53 mutations in seeding
+Landscape of actionable mutations (n = 66 patients,
+metastatic clones. On the other hand, in 10 of these patients
+resistant 47, sensitive 19)
+in whom PIK3CA mutations were detected in the stem clone,
+there were additional mutations in TP53, FOXAI, SF3BP1,
+Overall, we had NGS libraries with analyzable data in 66
+KRAS, and ESR1, indicating that PIK3CA mutations may
+(resistant 47, sensitive 19) patients, wherein we identified
+require additional mutations for the propagation of the stem
+47 unique actionable drivers in 16 genes in at least one assay
+clone.
+(WES or ctDNA, Fig. 5) in 47 (resistant 40, sensitive 6,
+While our patient cohort was enriched for PIK3CA and
+71.2%) patients.
+TP53 mutations, 7% patients harbored ESR1 mutations,
+Among the 47 hormone therapy-resistant patients, 6
+all acquired at the time of relapse. Patient P038R, who had
+(12.7%) had both PIK3CA and TP53 hotspot mutations, and
+PIK3CA and TP53 mutations in their stem clone, acquired
+14 (29.7%) had mutations in PIK3CA alone, while 4 (8.5%)
+an ESR1 mutation (p.Y537S) at relapse. The p. Y537S muta-
+had mutations in TP53 alone. Thus, 24 (51.1%) hormone
+tion has been shown to activate ER signaling, resulting in
+therapy-resistant patients had either a PIK3CA or TP53
+ligand-independent cell growth and making breast cancer
+mutation, 5 (10.6%) resistant patients had ESR1 mutations,
+cells resistant to tamoxifen, aromatase inhibitors, and fulves-
+and 2 (4.3%) resistant patients each had PTEN, CDKN2A, or
+trant treatment [13, 38]. However, the fact that this patient
+KRAS mutations, while 1 (2.1%) resistant patient each had
+already harbored TP53 and PIK3CA mutations in the stem
+BRCA1, BRCA2, SF3B1, ERBB2, AKT1, or ATR mutations.
+clone suggests that this ESR1 mutation may not be the sole
+Of the 19 hormone therapy-sensitive patients, no patient
+driver for resistance, as previously reported [38]. ER sign-
+had both TP53 and PIK3CA mutations, 4 (21.1%) had muta-
+aling may require additional mutations in tumor suppres-
+tions in PIK3CA alone, and 3 (15.8%) patients had mutations
+sors and oncogenes to induce resistance phenotypes. Patient
+in TP53 alone. The landscape for sensitive patients is based
+P079R had an ESR2 mutation (R220W) in the stem clone,
+on ctDNA analysis and is described in detail in the section
+which has been previously reported in thyroid cancer by the
+above.
+International Cancer Genomics Consortium (ICGC) [39].
+Overall, among the entire cohort of 66 patients, 6 (9.1%)
+Additional changes at this locus have also been reported in
+had mutations in both PIK3CA and TP53 genes, 18 (27.3%)
+hepatocellular carcinoma [39], Merkel-cell carcinoma [40],
+patients had mutations in PIK3CA alone, and 7 (10.6%)
+and colorectal cancer, suggesting that this could be a pan-
+patients had mutations in TP53 alone.
+cancer hotspot for ESR2 mutations. Thus far, no study has
+shown the role of this mutation in treatment resistance, and
+it would be interesting to investigate this mutation in pro-
+Discussion
+spective studies.
+We identified additional actionable alterations that pre-
+We performed a comprehensive genomic analysis involving
+dicted possible benefits from PARP inhibitors (BRCA1,
+WES of paired treatment-naïve and corresponding relapse-
+BRCA2, ATR, CDK12, and POLE mutations), ERBB2-
+site samples, along with high-depth targeted sequencing of
+directed therapies, PI3 kinase inhibitors, and mTOR
+ctDNA at the time of relapse in patients with hormone ther-
+inhibitors. Analysis of ctDNA at the time of relapse in 35
+apy-resistant breast cancer, and the same ctDNA analysis in
+patients with hormone therapy-resistant disease revealed
+hormone therapy-sensitive breast cancer patients. Our results
+ESCAT actionable alteration in 71% of these patients.
+suggest that the resistant breast tumors were polyclonal at
+This suggests that ctDNA-based liquid biopsy may pro-
+the time of diagnosis and seeded clones in a branching evo-
+vide clinically relevant information in a high proportion of
+lutionary pattern. A high proportion of patients with resist-
+such patients and could precede tissue biopsy as the first
+ant tumors had ESCAT clinically actionable mutations,
+evaluation. It could also be useful to guide treatment in
+which were either retained, lost, or gained between the times
+patients with hard-to-biopsy relapse sites. Our results also
+of diagnosis and relapse. Approximately half of the patients
+suggest the potential utility of ctDNA-based liquid biopsy
+Springer
+Breast Cancer Research and Treatment
+Targetted ctDNA
+NGS Data
+WES
+Breast
+Chest Wall
+Lung
+Sample in Study
+Liver
+Lymph Node
+WBC Lymphocytes
+Plasma
+De Novo Metastatic
+Yes
+Node Positive
+Positive
+Sensitive
+Cohort
+Resistant
+PIK3CA
+TP53
+Mutation
+ESR1
+NTRK
+Gene
+Mutation
+P069R
+P038R
+P035R
+P036R
+P068R
+P060R
+P079R
+P083R
+P018R
+P109R
+P183R
+P090R
+P103R
+P051R
+P013R
+P180R
+P094R
+P063R
+P020R
+P076R
+P072R
+P053R
+P043R
+P082R
+P062R
+P097R
+P014R
+P033R
+P010R
+P029R
+P055R
+P077R
+P087R
+P088R
+P091R
+P098R
+P102R
+P118R
+P125R
+P190R
+P150S
+P153S
+P231S
+P125S
+P030S
+P095S
+Key
+PIK3CA
+p.H1047R
+Diagnostic (Dx)
+PIK3CA
+p.R108H
+Relapse (Rls)
+PIK3CA
+p.H1047L
+ctDNA
+PIK3CA
+p.E545K
+Dx+Rls
+PIK3CA
+p.E545Q
+Dx+ctDNA
+PIK3CA
+p.E542K
+RIs+ctDNA
+PIK3CA
+p.E542G
+Dx+RIs+ctDNA
+PIK3CA
+p.C420R
+PIK3CA
+p.E726K
+PIK3CA
+p.G1049R
+PIK3CA
+p.N345K
+PIK3CA
+p.R93Q
+PIK3CA
+p.Y1021H
+TP53
+p.C145F
+TP53
+p.C3F
+TP53
+p.C44F
+TP53
+p.E66X
+TP53
+p.H61R
+TP53
+p.H82R
+TP53
+p.M114R
+TP53
+p.R117S
+TP53
+p.S109T
+TP53
+p.Y88C
+TP53
+p.Q60X
+TP53
+p.R141C
+TP53
+p.E154Q
+TP53
+p.R81X
+ESR1
+p.Y537S
+ESR1
+p.D538G
+ESR1
+p.E380Q
+KRAS
+p.G12A
+KRAS
+p.G12D
+PTEN
+p.D24H
+PTEN
+p.Y315X
+ERBB2
+p.D769Y
+NTRK1
+p.G607V
+AKT1
+p.E17K
+ATR
+p.P2287T
+BRCA1
+p.E23Vfs*17
+BRCA1
+p.V710Ffs*8
+BRCA2
+p.S1882X
+CDH1
+p.R63X
+CDKN2A
+p.Q50X
+GATA3
+p.R367X
+NOTCH1
+p.G1513S
+SF3B1
+p.K700E
+SF3B1
+p.K666N
+Fig. 5 Driver mutations identified as actionable by ESCAT analysis
+tion. The black box indicates "yes". The key indicates color coding
+on CGI for the entire cohort of 66 patients, with data from WES and
+for tissues in which mutations have been identified
+ctDNA combined. Each column is a patient, and each row is a muta-
+in patients who are in clinical remission. Among 10 such
+These results are concordant with those of a recently pub-
+patients with ctDNA detectable driver mutations in our
+lished study in the adjuvant endocrine setting, which also
+analysis, two patients relapsed at 29 and 32 months after
+suggested a higher risk of relapse among patients with
+ctDNA detection, while none of the 9 patients without
+detectable mutations in the ctDNA [41].
+detectable driver mutations in ctDNA experienced relapse.
+Springer
+Breast Cancer Research and Treatment
+Our results suggest that ctDNA sequencing performed at
+relapse show several potentially actionable genomic altera-
+10,000x will identify all driver stem clone mutations such
+tions, and ctDNA sequencing at a modest coverage level can
+as TP53, PIK3CA, PTEN, and KRAS. However, it may miss
+recapitulate some of these alterations, but not all.
+critical actionable mutations like ESR1 and others, present
+at sub-clonal frequencies at the time of disease relapse in
+Supplementary Information The online version contains supplemen-
+tary material available at https://doi.org/10.1007/s10549-025-07759-7.
+some patients, as also reported by others [42-46]. One rea-
+son could be that ctDNA assays lack the depth of sequencing
+Author contributions S.G. and R.C. conceptualized and designed this
+to capture sub-clonal frequencies of these alterations [47].
+study. S.G. acquired the funding for this study. R.C, E.T, J.C, R.K,
+Our assay was able to identify the stem clone driver muta-
+R.U, A.K, A.S, S.S, S.P, M.M., A.R., R.M., P.P, S.J, Gulia, and S.G
+screened, consented, and recruited the patients for this study. N.S.,
+tions in tissue WES at low allelic fractions (Median: 0.1056,
+K. Gala, S.K, S.J, S. Gulia, and S.G performed procedures to obtain
+Lower 0.0069-Upper 0.6447) in ctDNA (Supplementary
+patient tissue. R.C, R.K, E.T, J.C, S.P, M.M., A.S., R.U., S.S., A.K.,
+Table 12), indicating that our panel is indeed capable of
+A.R., and K.G bio-banked and processed the patient samples for all
+capturing low allelic frequency mutations, provided that we
+assays. R.C., E.T., J.C., and K.G. performed the ctDNA NGS Assays.
+T.S. performed the histopathological evaluation of all patient samples.
+saturate sequencing coverage. Assays which perform higher-
+R.C. and N.G. analyzed the WES data. R.C. analyzed the ctDNA NGS
+depth sequencing (50,000x-100,000x) are likely to capture
+data. R.C. and S.G. interpreted and integrated WES, ctDNA assay and
+the mutational burden of relapsed disease [48]. Another pos-
+clinical data. R.C. and S.G. wrote the manuscript which was subse-
+sibility is that the tumor may not shed ctDNA from specific
+quently reviewed and approved by all the authors.
+subclones, which need to be tested in a larger patient cohort
+Funding Open access funding provided by Department of Atomic
+[48]. Based on the results of our study, we suggest that the
+Energy. This study was funded by the Department of Atomic Energy,
+ctDNA sequencing depth performed in our study could be
+Government of India. This study was also funded by the Department of
+helpful for relatively low-cost disease monitoring, since
+Biotechnology (DBT), GOI, through the DBT-Virtual National Cancer
+Institute (VNCI) Breast Cancer 2015 Grant (BT/MED/30/VNCI-Hr-
+TP53, PIK3CA, PTEN, and KRAS mutations are identified
+BRCA/2015) awarded to SG. We acknowledge funding from Mizuho
+with high sensitivity [49, 50]. Overall, the results of this
+Bank Limited for research infrastructure to the research laboratory.
+study are concordant with our recent publication, which
+We thank Mr. Akhil Gupta for funding laboratory infrastructure. We
+utilized whole-genome sequencing in unpaired cohorts of
+acknowledge part research funding for this study from the Women's
+Cancer Initiative (WCI)-Tata Memorial Hospital. RC and NG were
+hormone therapy-sensitive and hormone therapy-resistant
+funded by a fellowship from HBNI, Mumbai, and TMC, Mumbai. RC
+patients, and suggested that mutations in PIK3CA, TP53, and
+and NG are also funded by a fellowship from the Department of Bio-
+ESRI are associated with hormone therapy resistance [5].
+technology (DBT), GOI, through the DBT-Virtual National Cancer
+Our study has a few limitations. The sample size was
+Institute (VNCI) Breast Cancer 2015 Grant (BT/MED/30/VNCI-Hr-
+BRCA/2015) awarded to SG. NG was also funded by the Department of
+relatively small for the whole-exome-based clonality analy-
+Science and Technology (DST)-Scientific Engineering and Research
+sis. While the number of samples for ctDNA analysis was
+Board (SERB) and Prime Minister's Fellowship. The funders had no
+higher, paired tissue was available for only a few patients,
+role in the design and conduct of this study or interpretation of the
+results.
+restricting direct comparisons between tissue and plasma-
+derived genomic alterations. Additionally, not all patients
+Code availability All software versions and relevant settings are men-
+had matched germline DNA, limiting our ability to accu-
+tioned and cited in the manuscript where required. If needed, all com-
+rately distinguish somatic from germline variants. Finally,
+putational pipelines used for analysis in this paper will be made avail-
+performing ctDNA sequencing at higher coverage levels on
+able as versioned bash files that can be executed on UNIX platforms
+upon request by the corresponding author.
+the same samples may have improved sensitivity and helped
+establish more robust thresholds for detecting clinically
+Declarations
+actionable alterations.
+Our study also has some strengths. The sample set
+Conflict of interest The authors declare no competing interests.
+derived from clinically phenotyped hormone therapy-resist-
+Ethics This study was conducted in accordance with the Declaration
+ant patients, comprising treatment-naïve and relapse-site
+of Helsinki. Patients were recruited after obtaining informed consent
+samples with corresponding germline, and ctDNA in some
+under the appropriate protocol for each study as approved by the Tata
+of them, is hard to assemble and allowed us to identify the
+Memorial Hospital (TMH) and ACTREC Institutional Ethics Commit-
+clonal acquisition of mutations and their prevalence in the
+tee (IEC) for IEC study no. 900239 registered with the Clinical Trials
+Registry of India (CTRI) as CTRI/2017/11/010553.
+ctDNA at relapse. The availability of ctDNA in well-char-
+acterized hormone therapy-sensitive patients also allowed
+Open Access This article is licensed under a Creative Commons
+us to contrast the findings between two clinically relevant
+Attribution-NonCommercial-NoDerivatives 4.0 International License,
+patient populations.
+which permits any non-commercial use, sharing, distribution and repro-
+In summary, hormone therapy-resistant breast cancers are
+duction in any medium or format, as long as you give appropriate credit
+polyclonal at the time of diagnosis and relapse with a persis-
+to the original author(s) and the source, provide a link to the Creative
+Commons licence, and indicate if you modified the licensed material.
+tent stem clone. Tumor tissues at the time of diagnosis and
+Springer
+Breast Cancer Research and Treatment
+You do not have permission under this licence to share adapted material
+15. Fribbens C, O'Leary B, Kilburn L et al (2016) Plasma ESR1
+derived from this article or parts of it. The images or other third party
+mutations and the treatment of estrogen receptor-positive
+material in this article are included in the article's Creative Commons
+advanced breast cancer. J Clin Oncol 34:2961-2968
+licence, unless indicated otherwise in a credit line to the material. If
+16. Lee JW, Soung YH, Seo SH et al (2006) Somatic mutations of
+material is not included in the article's Creative Commons licence and
+ERBB2 kinase domain in gastric, colorectal, and breast carcino-
+your intended use is not permitted by statutory regulation or exceeds
+mas. Clin Cancer Res 12:57-61
+the permitted use, you will need to obtain permission directly from
+17. Pegram M, Jackisch C, Johnston SRD (2023) Estrogen/HER2
+the copyright holder. To view a copy of this licence, visit http://crea-
+receptor crosstalk in breast cancer: combination therapies to
+tivecommons.org/licenses/by-nc-nd/4.0/.
+improve outcomes for patients with hormone receptor-positive/
+HER2-positive breast cancer. NPJ Breast Cancer 9:45
+18. Hyman DM, Piha-Paul SA, Won H et al (2018) HER kinase inhi-
+bition in patients with HER2- and HER3-mutant cancers. Nature
+554:189-194
+References
+19. Nayar U, Cohen O, Kapstad C et al (2019) Acquired HER2 muta-
+tions in ER(+) metastatic breast cancer confer resistance to estro-
+1. Sathishkumar K, Chaturvedi M, Das P et al (2022) Cancer inci-
+gen receptor-directed therapies. Nat Genet 51:207-216
+dence estimates for 2022 & projection for 2025: result from
+20. Croessmann S, Formisano L, Kinch LN et al (2019) Combined
+National Cancer Registry Programme, India. Indian J Med Res
+blockade of activating ERBB2 mutations and ER results in syn-
+156:598-607
+thetic lethality of ER+/HER2 mutant breast cancer. Clin Cancer
+2. Wadasadawala T, Joshi S, Rath S et al (2024) Tata memorial cen-
+Res 25:277-289
+tre evidence based management of breast cancer. Indian J Cancer
+21. Frogne T, Benjaminsen RV, Sonne-Hansen K et al (2009) Activa-
+61:S52-S79
+tion of ErbB3, EGFR and Erk is essential for growth of human
+3. Ghosh J, Gupta S, Desai S et al (2011) Estrogen, progesterone and
+breast cancer cell lines with acquired resistance to fulvestrant.
+HER2 receptor expression in breast tumors of patients, and their
+Breast Cancer Res Treat 114:263-275
+usage of HER2-targeted therapy, in a tertiary care centre in India.
+22. Turner N, Pearson A, Sharpe R et al (2010) FGFR1 amplification
+Indian J Cancer 48:391-396
+drives endocrine therapy resistance and is a therapeutic target in
+4. Badwe RA, Parmar V, Nair N et al (2023) Effect of peritumoral
+breast cancer. Cancer Res 70:2085-2094
+infiltration of local anaesthetic before surgery on survival in early
+23. Koundouros N, Poulogiannis G (2018) Phosphoinositide 3-kinase/
+breast cancer. J Clin Oncol 41:3318-3328
+Akt signaling and redox metabolism in cancer. Front Oncol 8:160
+5. Ghosh A, Chaubal R, Das C et al (2025) Genomic hallmarks of
+24. Razavi P, Chang MT, Xu G et al (2018) The genomic landscape
+endocrine therapy resistance in ER/PR+HER2- breast tumours.
+of endocrine-resistant advanced breast cancers. Cancer Cell
+Commun Biol 8:207
+34(427-38):e6
+6. Jones V, Yin HH, Yuan YC et al (2025) Gene expression associ-
+25. Chiefari E, Mirabelli M, La Vignera S et al (2021) Insulin
+ated with endocrine therapy resistance in estrogen receptor-posi-
+resistance and cancer: in search for a causal link. Int J Mol Sci
+tive breast cancer. Sci Rep 15:7220
+22(20):11137
+7. Li S, Shen D, Shao J, Crowder R et al (2013) Endocrine-therapy-
+26. Giltnane JM, Hutchinson KE, Stricker TP et al (2017) Genomic
+resistant ESR1 variants revealed by genomic characterization of
+profiling of ER(+) breast cancers after short-term estrogen sup-
+breast-cancer-derived xenografts. Cell Rep 4:1116-1130
+pression reveals alterations associated with endocrine resistance.
+8. Lei JT, Shao J, Zhang J et al (2018) Functional annotation of
+Sci Transl Med 9(402):eaai7993
+ESR1 gene fusions in estrogen receptor-positive breast cancer.
+27. Maetens M, Brown D, Irrthum A et al (2017) The AURORA pilot
+Cell Rep 24(1434-44):e7
+study for molecular screening of patients with advanced breast
+9. Barone I, Cui Y, Herynk MH et al (2009) Expression of the
+cancer-a study of the breast international group. NPJ Breast Can-
+K303R estrogen receptor-alpha breast cancer mutation induces
+cer 3:23
+resistance to an aromatase inhibitor via addiction to the PI3K/Akt
+28. Schuster EF, Lopez-Knowles E, Alataki A et al (2023) Molec-
+kinase pathway. Cancer Res 69:4724-4732
+ular profiling of aromatase inhibitor sensitive and resistant
+10. Robinson DR, Wu YM, Vats P et al (2013) Activating ESR1 muta-
+ER+HER2- postmenopausal breast cancers. Nat Commun
+tions in hormone-resistant metastatic breast cancer. Nat Genet
+14:4017
+45:1446-1451
+29. Butti R, Kapse P, Bhadauriya G et al (2023) Development and
+11. Toy W, Shen Y, Won H et al (2013) ESR1 ligand-binding
+characterization of a patient-derived orthotopic xenograft of
+domain mutations in hormone-resistant breast cancer. Nat Genet
+therapy-resistant breast cancer. Oncol Rep 49:99
+45:1439-1445
+30. Gardi N, Chaubal R, Parab P et al (2024) Natural history of ger-
+12. Moynahan ME, Chen D, He W et al (2017) Correlation between
+mline BRCA1 mutated and BRCA wild-type triple-negative breast
+PIK3CA mutations in cell-free DNA and everolimus effi-
+cancer. Cancer Res Commun 4:404-417
+cacy in HR(+), HER2(-) advanced breast cancer: results from
+31. Behera S, Catreux S, Rossi M et al (2024) Comprehensive and
+BOLERO-2. Br J Cancer 116:726-730
+accurate genome analysis at scale using DRAGEN accelerated
+13. Chandarlapaty S, Chen D, He W et al (2016) Prevalence of ESR1
+algorithms. bioRxiv. https://doi.org/10.1101/2024.01.02.573821
+mutations in cell-free DNA and outcomes in metastatic breast can-
+32. Alganmi N, Abusamra H (2023) Evaluation of an optimized ger-
+cer: a secondary analysis of the BOLERO-2 clinical trial. JAMA
+mline exomes pipeline using BWA-MEM2 and Dragen-GATK
+Oncol 2:1310-1315
+tools. PLoS ONE 18:e0288371
+14. Kleftogiannis D, Ho D, Liew JX et al (2020) Detection of genomic
+33. Koboldt DC, Zhang Q, Larson DE et al (2012) VarScan 2: somatic
+alterations in breast cancer with circulating tumor DNA sequenc-
+mutation and copy number alteration discovery in cancer by
+ing. Sci Rep 10:16774
+exome sequencing. Genome Res 22:568-576
+34. Roth A, Khattra J, Yap D et al (2014) PyClone: statistical infer-
+ence of clonal population structure in cancer. Nat Methods
+11:396-398
+Springer
+Breast Cancer Research and Treatment
+35. Myers MA, Satas G, Raphael BJ (2019) CALDER: inferring
+44. Cho MS, Park CH, Lee S, Park HS (2020) Clinicopathological
+phylogenetic trees from longitudinal tumor samples. Cell Syst
+parameters for circulating tumor DNA shedding in surgically
+8(514-22):e5
+resected non-small cell lung cancer with EGFR or KRAS muta-
+36. Smith MA, Nielsen CB, Chan FC et al (2017) E-scape: interactive
+tion. PLoS ONE 15:e0230622
+visualization of single-cell phylogenetics and cancer evolution.
+45. Dang DK, Park BH (2022) Circulating tumor DNA: current chal-
+Nat Methods 14:549-550
+lenges for clinical utility. J Clin Invest 132(12):e154941
+37. Markus H, Chandrananda D, Moore E et al (2022) Refined char-
+46. Vandekerkhove G, Lavoie JM, Annala M et al (2021) Plasma
+acterization of circulating tumor DNA through biological feature
+ctDNA is a tumor tissue surrogate and enables clinical-genomic
+integration. Sci Rep 12:1928
+stratification of metastatic bladder cancer. Nat Commun 12:184
+38. Harrod A, Fulton J, Nguyen VTM et al (2017) Genomic model-
+47. Duffy MJ, Crown J (2022) Use of circulating tumour DNA
+ling of the ESR1 Y537S mutation for evaluating function and new
+(ctDNA) for measurement of therapy predictive biomarkers in
+therapeutic approaches for metastatic breast cancer. Oncogene
+patients with cancer. J Pers Med 12(1):99
+36:2286-2296
+48. Pascual J, Attard G, Bidard FC et al (2022) ESMO recommenda-
+39. Consortium ITP-CAoWG (2020) Pan-cancer analysis of whole
+tions on the use of circulating tumor DNA assays for patients with
+genomes. Nature 578:82-93
+cancer: a report from the ESMO Precision Medicine Working
+40. Wong SQ, Waldeck K, Vergara IA et al (2015) UV-associated
+Group. Ann Oncol 33:750-768
+mutations underlie the etiology of MCV-negative Merkel cell
+49. Cohen SA, Liu MC, Aleshin A (2023) Practical recommendations
+carcinomas. Cancer Res 75:5228-5234
+for using ctDNA in clinical decision making. Nature 619:259-268
+41. Lipsyc-Sharf M, de Bruin EC, Santos K et al (2022) Circulating
+50. Davis AA, Jacob S, Gerratana L et al (2020) Landscape of cir-
+tumor DNA and late recurrence in high-risk hormone receptor-
+culating tumor DNA in metastatic breast cancer. EBioMedicine
+positive, human epidermal growth factor receptor 2-negative
+58:102914
+breast cancer. J Clin Oncol 40(22):2408-2419
+42. Tsui DWY, Cheng ML, Shady M et al (2021) Tumor fraction-
+Publisher's Note Springer Nature remains neutral with regard to
+guided cell-free DNA profiling in metastatic solid tumor patients.
+jurisdictional claims in published maps and institutional affiliations.
+Genome Med 13:96
+43. Zhang Y, Yao Y, Xu Y et al (2021) Pan-cancer circulating tumor
+DNA detection in over 10,000 Chinese patients. Nat Commun
+12:11
+Springer

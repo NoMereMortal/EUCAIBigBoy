@@ -1,0 +1,84 @@
+groups:
+  - name: app_alerts
+    rules:
+      - alert: HighErrorRate
+        expr: sum(rate(http_5xx_errors_total[5m])) / sum(rate(http_requests_total[5m])) > 0.05
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: High error rate detected
+          description: Error rate is above 5% for more than 1 minute
+          dashboard_url: 'http://grafana:3006/d/app_metrics/api-metrics'
+
+      - alert: HighLatency
+        expr: histogram_quantile(0.95, sum(rate(http_request_duration_seconds_bucket[5m])) by (le, endpoint)) > 1.0
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: High latency detected
+          description: 95th percentile latency is above 1 second for more than 1 minute
+          dashboard_url: 'http://grafana:3006/d/app_metrics/api-metrics'
+
+      - alert: CircuitBreakerOpen
+        expr: circuit_breaker_state == 0
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: Circuit breaker is open
+          description: 'Circuit breaker for {{ $labels.client }} is open'
+          dashboard_url: 'http://grafana:3006/d/app_metrics/api-metrics'
+
+      - alert: HighClientErrorRate
+        expr: sum(rate(client_errors_total[5m])) by (client) / sum(rate(client_requests_total[5m])) by (client) > 0.1
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: High client error rate
+          description: 'Client {{ $labels.client }} has an error rate above 10% for more than 2 minutes'
+          dashboard_url: 'http://grafana:3006/d/app_metrics/api-metrics'
+
+      - alert: HighContextServerErrorRate
+        expr: sum(rate(context_server_errors_total[5m])) by (server) / sum(rate(context_server_queries_total[5m])) by (server) > 0.1
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: High context server error rate
+          description: 'Context server {{ $labels.server }} has an error rate above 10% for more than 2 minutes'
+          dashboard_url: 'http://grafana:3006/d/app_metrics/api-metrics'
+
+      - alert: HighChatLatency
+        expr: histogram_quantile(0.95, sum(rate(chat_response_seconds_bucket[5m])) by (le, model)) > 5.0
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: High chat response latency
+          description: 'Chat model {{ $labels.model }} has 95th percentile latency above 5 seconds for more than 2 minutes'
+          dashboard_url: 'http://grafana:3006/d/app_metrics/api-metrics'
+
+  - name: system_alerts
+    rules:
+      - alert: HighMemoryUsage
+        expr: process_resident_memory_bytes / 1024 / 1024 > 1000
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: High memory usage
+          description: 'Instance {{ $labels.instance }} memory usage is above 1GB for more than 5 minutes'
+          dashboard_url: 'http://grafana:3006/d/app_metrics/api-metrics'
+
+      - alert: HighCPUUsage
+        expr: rate(process_cpu_seconds_total[5m]) > 0.8
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: High CPU usage
+          description: 'Instance {{ $labels.instance }} CPU usage is above 80% for more than 5 minutes'
+          dashboard_url: 'http://grafana:3006/d/app_metrics/api-metrics'
