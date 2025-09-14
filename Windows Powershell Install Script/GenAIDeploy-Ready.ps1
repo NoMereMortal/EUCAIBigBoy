@@ -25,52 +25,61 @@ Import-Module powershell-yaml -Force
 # T-Shirt Size Environment configurations
 $script:EnvironmentConfigs = @{
     'dev' = @{
-        'DisplayName' = 'Development'
-        'Description' = 'Single developer, light testing'
+        'DisplayName' = 'Development Environment'
+        'Description' = 'Single developer, testing, proof of concept'
         'InstanceType' = 't3.medium'
         'MinSize' = 1
         'MaxSize' = 2
         'DesiredCapacity' = 1
-        'DBInstanceClass' = 'db.t3.micro'
-        'AllocatedStorage' = 20
         'Suffix' = '-dev'
         'ApiCpu' = 512
         'ApiMemory' = 1024
         'UiCpu' = 256
         'UiMemory' = 512
-        'Cost' = '$50-100/month'
+        'DynamoDBMode' = 'On-demand'
+        'OpenSearchInstance' = 't3.small.search (1 node)'
+        'S3Config' = 'Standard storage, no versioning'
+        'MemoryDBInstance' = 'db.t4g.small (1 node)'
+        'CognitoConfig' = 'Built-in user pool'
+        'Cost' = '$75-150/month'
     }
     'medium-prod' = @{
-        'DisplayName' = 'Medium Production'
-        'Description' = '10-50 concurrent users'
+        'DisplayName' = 'Medium Production Environment'
+        'Description' = '10-100 concurrent users, small team production'
         'InstanceType' = 't3.large'
         'MinSize' = 2
         'MaxSize' = 10
         'DesiredCapacity' = 2
-        'DBInstanceClass' = 'db.t3.small'
-        'AllocatedStorage' = 50
         'Suffix' = '-medium'
         'ApiCpu' = 1024
         'ApiMemory' = 2048
         'UiCpu' = 512
         'UiMemory' = 1024
-        'Cost' = '$200-400/month'
+        'DynamoDBMode' = 'Provisioned 25 RCU/25 WCU'
+        'OpenSearchInstance' = 'm6g.medium.search (2 nodes, multi-AZ)'
+        'S3Config' = 'Standard + IA lifecycle, versioning'
+        'MemoryDBInstance' = 'db.t4g.medium (2 nodes, cluster)'
+        'CognitoConfig' = 'Social providers, basic MFA'
+        'Cost' = '$300-600/month'
     }
     'enterprise-prod' = @{
-        'DisplayName' = 'Enterprise Production'
-        'Description' = '100+ concurrent users'
+        'DisplayName' = 'Enterprise Production Environment'
+        'Description' = '100+ concurrent users, high availability, compliance'
         'InstanceType' = 't3.xlarge'
         'MinSize' = 3
         'MaxSize' = 20
         'DesiredCapacity' = 3
-        'DBInstanceClass' = 'db.t3.medium'
-        'AllocatedStorage' = 100
         'Suffix' = '-enterprise'
         'ApiCpu' = 2048
         'ApiMemory' = 4096
         'UiCpu' = 1024
         'UiMemory' = 2048
-        'Cost' = '$500-1000/month'
+        'DynamoDBMode' = 'Auto-scaling 100-1000 RCU/WCU'
+        'OpenSearchInstance' = 'm6g.large.search (3 nodes, dedicated master)'
+        'S3Config' = 'Intelligent tiering, cross-region replication'
+        'MemoryDBInstance' = 'db.r7g.large (3 nodes, multi-AZ)'
+        'CognitoConfig' = 'Advanced security, SAML/OIDC, enforced MFA'
+        'Cost' = '$800-1500/month'
     }
 }
 
@@ -96,7 +105,7 @@ function Is-ValidPrivateCidr {
 }
 
 function Show-Message($msg, $title="GenAI Workbench Installer") {
-    [System.Windows.Forms.MessageBox]::Show($msg, $title)
+    [System.Windows.Forms.MessageBox]::Show($form, $msg, $title)
 }
 
 function Refresh-Environment {
@@ -418,9 +427,13 @@ function Generate-CloudFormationTemplate {
     # Use ECR image if available, otherwise default container
     $containerImage = if ($ecrImageUri) { $ecrImageUri } else { "public.ecr.aws/docker/library/nginx:alpine" }
     
-    # Calculate subnet CIDRs
+    # Calculate subnet CIDRs - using working method from previous script
     $subnet1Cidr = $vpcCidr.Replace("/16", "/24").Replace(".0.0", ".1.0")
     $subnet2Cidr = $vpcCidr.Replace("/16", "/24").Replace(".0.0", ".2.0")
+    $privateSubnet1Cidr = $vpcCidr.Replace("/16", "/24").Replace(".0.0", ".3.0")
+    $privateSubnet2Cidr = $vpcCidr.Replace("/16", "/24").Replace(".0.0", ".4.0")
+    
+
     
     # Build template with string replacement to avoid any expansion issues
     $templateBase = @'
@@ -462,6 +475,63 @@ function Generate-CloudFormationTemplate {
         "CidrBlock": "SUBNET2_PLACEHOLDER",
         "AvailabilityZone": {"Fn::Select": [1, {"Fn::GetAZs": ""}]},
         "MapPublicIpOnLaunch": true
+      }
+    },
+    "PrivateSubnet1": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "VpcId": {"Ref": "VPC"},
+        "CidrBlock": "PRIV_SUB1_CIDR",
+        "AvailabilityZone": {"Fn::Select": [0, {"Fn::GetAZs": ""}]}
+      }
+    },
+    "PrivateSubnet2": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "VpcId": {"Ref": "VPC"},
+        "CidrBlock": "PRIV_SUB2_CIDR",
+        "AvailabilityZone": {"Fn::Select": [1, {"Fn::GetAZs": ""}]}
+      }
+    },
+    "NATGateway": {
+      "Type": "AWS::EC2::NatGateway",
+      "Properties": {
+        "AllocationId": {"Fn::GetAtt": ["EIPForNAT", "AllocationId"]},
+        "SubnetId": {"Ref": "Subnet1"}
+      }
+    },
+    "EIPForNAT": {
+      "Type": "AWS::EC2::EIP",
+      "Properties": {
+        "Domain": "vpc"
+      }
+    },
+    "PrivateRouteTable": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {"Ref": "VPC"}
+      }
+    },
+    "PrivateRoute": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "RouteTableId": {"Ref": "PrivateRouteTable"},
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "NatGatewayId": {"Ref": "NATGateway"}
+      }
+    },
+    "PrivateSubnetAssoc1": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "SubnetId": {"Ref": "PrivateSubnet1"},
+        "RouteTableId": {"Ref": "PrivateRouteTable"}
+      }
+    },
+    "PrivateSubnetAssoc2": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "SubnetId": {"Ref": "PrivateSubnet2"},
+        "RouteTableId": {"Ref": "PrivateRouteTable"}
       }
     },
     "IGW": {
@@ -523,6 +593,26 @@ function Generate-CloudFormationTemplate {
         ]
       }
     },
+    "OpenSearchSG": {
+      "Type": "AWS::EC2::SecurityGroup",
+      "Properties": {
+        "GroupDescription": "OpenSearch Security Group",
+        "VpcId": {"Ref": "VPC"},
+        "SecurityGroupIngress": [
+          {"IpProtocol": "tcp", "FromPort": 443, "ToPort": 443, "SourceSecurityGroupId": {"Ref": "ECSSG"}}
+        ]
+      }
+    },
+    "MemoryDBSG": {
+      "Type": "AWS::EC2::SecurityGroup",
+      "Properties": {
+        "GroupDescription": "MemoryDB Security Group",
+        "VpcId": {"Ref": "VPC"},
+        "SecurityGroupIngress": [
+          {"IpProtocol": "tcp", "FromPort": 6379, "ToPort": 6379, "SourceSecurityGroupId": {"Ref": "ECSSG"}}
+        ]
+      }
+    },
     "Cluster": {
       "Type": "AWS::ECS::Cluster",
       "Properties": {
@@ -568,6 +658,45 @@ function Generate-CloudFormationTemplate {
                   "Effect": "Allow",
                   "Action": ["bedrock:*", "bedrock-runtime:*"],
                   "Resource": "*"
+                },
+                {
+                  "Effect": "Allow",
+                  "Action": [
+                    "dynamodb:GetItem",
+                    "dynamodb:PutItem",
+                    "dynamodb:UpdateItem",
+                    "dynamodb:DeleteItem",
+                    "dynamodb:Query",
+                    "dynamodb:Scan"
+                  ],
+                  "Resource": [
+                    {"Fn::GetAtt": ["ChatHistoryTable", "Arn"]},
+                    {"Fn::GetAtt": ["UserSessionsTable", "Arn"]},
+                    {"Fn::GetAtt": ["DocumentsTable", "Arn"]}
+                  ]
+                },
+                {
+                  "Effect": "Allow",
+                  "Action": [
+                    "s3:GetObject",
+                    "s3:PutObject",
+                    "s3:DeleteObject",
+                    "s3:ListBucket"
+                  ],
+                  "Resource": [
+                    {"Fn::GetAtt": ["DocumentsBucket", "Arn"]},
+                    {"Fn::Sub": "${DocumentsBucket.Arn}/*"}
+                  ]
+                },
+                {
+                  "Effect": "Allow",
+                  "Action": [
+                    "es:ESHttpGet",
+                    "es:ESHttpPost",
+                    "es:ESHttpPut",
+                    "es:ESHttpDelete"
+                  ],
+                  "Resource": {"Fn::GetAtt": ["OpenSearchDomain", "DomainArn"]}
                 }
               ]
             }
@@ -680,6 +809,126 @@ function Generate-CloudFormationTemplate {
           }
         ]
       }
+    },
+    "ChatHistoryTable": {
+      "Type": "AWS::DynamoDB::Table",
+      "Properties": {
+        "TableName": "genai-chat-historySUFFIX_PLACEHOLDER",
+        "AttributeDefinitions": [
+          {"AttributeName": "session_id", "AttributeType": "S"},
+          {"AttributeName": "timestamp", "AttributeType": "N"}
+        ],
+        "KeySchema": [
+          {"AttributeName": "session_id", "KeyType": "HASH"},
+          {"AttributeName": "timestamp", "KeyType": "RANGE"}
+        ],
+        "BillingMode": "PAY_PER_REQUEST"
+      }
+    },
+    "UserSessionsTable": {
+      "Type": "AWS::DynamoDB::Table",
+      "Properties": {
+        "TableName": "genai-user-sessionsSUFFIX_PLACEHOLDER",
+        "AttributeDefinitions": [
+          {"AttributeName": "user_id", "AttributeType": "S"}
+        ],
+        "KeySchema": [
+          {"AttributeName": "user_id", "KeyType": "HASH"}
+        ],
+        "BillingMode": "PAY_PER_REQUEST"
+      }
+    },
+    "DocumentsTable": {
+      "Type": "AWS::DynamoDB::Table",
+      "Properties": {
+        "TableName": "genai-documentsSUFFIX_PLACEHOLDER",
+        "AttributeDefinitions": [
+          {"AttributeName": "document_id", "AttributeType": "S"}
+        ],
+        "KeySchema": [
+          {"AttributeName": "document_id", "KeyType": "HASH"}
+        ],
+        "BillingMode": "PAY_PER_REQUEST"
+      }
+    },
+    "DocumentsBucket": {
+      "Type": "AWS::S3::Bucket",
+      "Properties": {
+        "PublicAccessBlockConfiguration": {
+          "BlockPublicAcls": true,
+          "BlockPublicPolicy": true,
+          "IgnorePublicAcls": true,
+          "RestrictPublicBuckets": true
+        }
+      }
+    },
+    "OpenSearchDomain": {
+      "Type": "AWS::Elasticsearch::Domain",
+      "Properties": {
+        "DomainName": "genai-searchSUFFIX_PLACEHOLDER",
+        "ElasticsearchVersion": "7.10",
+        "ElasticsearchClusterConfig": {
+          "InstanceType": "t3.small.elasticsearch",
+          "InstanceCount": 1
+        },
+        "EBSOptions": {
+          "EBSEnabled": true,
+          "VolumeType": "gp3",
+          "VolumeSize": 20
+        },
+        "VPCOptions": {
+          "SecurityGroupIds": [{"Ref": "OpenSearchSG"}],
+          "SubnetIds": [{"Ref": "PrivateSubnet1"}]
+        },
+        "DomainEndpointOptions": {
+          "EnforceHTTPS": true
+        }
+      }
+    },
+    "MemoryDBSubnetGroup": {
+      "Type": "AWS::MemoryDB::SubnetGroup",
+      "Properties": {
+        "SubnetGroupName": "genai-memorydb-subnetsSUFFIX_PLACEHOLDER",
+        "SubnetIds": [{"Ref": "PrivateSubnet1"}, {"Ref": "PrivateSubnet2"}]
+      }
+    },
+    "MemoryDBCluster": {
+      "Type": "AWS::MemoryDB::Cluster",
+      "Properties": {
+        "ClusterName": "genai-cacheSUFFIX_PLACEHOLDER",
+        "ACLName": "open-access",
+        "NodeType": "db.t4g.small",
+        "NumShards": 1,
+        "NumReplicasPerShard": 0,
+        "SubnetGroupName": {"Ref": "MemoryDBSubnetGroup"},
+        "SecurityGroupIds": [{"Ref": "MemoryDBSG"}],
+        "TLSEnabled": true
+      }
+    },
+    "CognitoUserPool": {
+      "Type": "AWS::Cognito::UserPool",
+      "Properties": {
+        "UserPoolName": "genai-usersSUFFIX_PLACEHOLDER",
+        "Policies": {
+          "PasswordPolicy": {
+            "MinimumLength": 8,
+            "RequireUppercase": true,
+            "RequireLowercase": true,
+            "RequireNumbers": true,
+            "RequireSymbols": false
+          }
+        },
+        "MfaConfiguration": "OFF"
+      }
+    },
+    "CognitoUserPoolClient": {
+      "Type": "AWS::Cognito::UserPoolClient",
+      "Properties": {
+        "ClientName": "genai-appSUFFIX_PLACEHOLDER",
+        "UserPoolId": {"Ref": "CognitoUserPool"},
+        "GenerateSecret": false,
+        "ExplicitAuthFlows": ["ADMIN_NO_SRP_AUTH", "USER_PASSWORD_AUTH"]
+      }
     }
   },
   "Outputs": {
@@ -690,20 +939,60 @@ function Generate-CloudFormationTemplate {
     "VPCId": {
       "Description": "VPC ID",
       "Value": {"Ref": "VPC"}
+    },
+    "ChatHistoryTable": {
+      "Description": "DynamoDB Chat History Table",
+      "Value": {"Ref": "ChatHistoryTable"}
+    },
+    "DocumentsBucket": {
+      "Description": "S3 Documents Bucket",
+      "Value": {"Ref": "DocumentsBucket"}
+    },
+    "OpenSearchEndpoint": {
+      "Description": "Elasticsearch Domain Endpoint",
+      "Value": {"Fn::GetAtt": ["OpenSearchDomain", "DomainEndpoint"]}
+    },
+    "MemoryDBEndpoint": {
+      "Description": "MemoryDB Cluster Endpoint",
+      "Value": {"Fn::GetAtt": ["MemoryDBCluster", "ClusterEndpoint.Address"]}
+    },
+    "CognitoUserPoolId": {
+      "Description": "Cognito User Pool ID",
+      "Value": {"Ref": "CognitoUserPool"}
     }
   }
 }
 '@
     
-    # Replace placeholders with actual values
+    # Replace placeholders with actual values - CIDR blocks first
+    Write-Host "CIDR Values: VPC=$vpcCidr, Sub1=$subnet1Cidr, Sub2=$subnet2Cidr, Priv1=$privateSubnet1Cidr, Priv2=$privateSubnet2Cidr"
+    
     $template = $templateBase.Replace('VPCCIDR_PLACEHOLDER', $vpcCidr)
     $template = $template.Replace('SUBNET1_PLACEHOLDER', $subnet1Cidr)
     $template = $template.Replace('SUBNET2_PLACEHOLDER', $subnet2Cidr)
+    $template = $template.Replace('PRIV_SUB1_CIDR', $privateSubnet1Cidr)
+    $template = $template.Replace('PRIV_SUB2_CIDR', $privateSubnet2Cidr)
     $template = $template.Replace('SUFFIX_PLACEHOLDER', $suffix)
     $template = $template.Replace('CPU_PLACEHOLDER', $config.ApiCpu.ToString())
     $template = $template.Replace('MEMORY_PLACEHOLDER', $config.ApiMemory.ToString())
     $template = $template.Replace('IMAGE_PLACEHOLDER', $containerImage)
     $template = $template.Replace('CAPACITY_PLACEHOLDER', $config.DesiredCapacity.ToString())
+    
+    # Debug: Show actual CIDR values in template
+    Write-Host "Template CIDR check:"
+    $cidrLines = $template -split "`n" | Where-Object { $_ -match 'CidrBlock.*192\.168' } | Select-Object -First 4
+    $cidrLines | ForEach-Object { Write-Host "  $_" }
+    
+    # Verify no placeholders remain
+    if ($template.Contains('_PLACEHOLDER')) {
+        Write-Host "WARNING: Template still contains placeholders!"
+        $placeholders = [regex]::Matches($template, '\w+_PLACEHOLDER') | ForEach-Object { $_.Value } | Sort-Object -Unique
+        Write-Host "Remaining placeholders: $($placeholders -join ', ')"
+        # Show first few lines with placeholders for debugging
+        $lines = $template -split "`n" | Where-Object { $_ -match '_PLACEHOLDER' } | Select-Object -First 3
+        Write-Host "Sample lines with placeholders:"
+        $lines | ForEach-Object { Write-Host "  $_" }
+    }
     
     return $template
 }
@@ -756,26 +1045,29 @@ function Deploy-CloudFormation {
             Write-Host "Deploying from S3: $templateUrl"
             aws cloudformation create-stack --template-url $templateUrl --stack-name $stackName --capabilities CAPABILITY_IAM --region $region
             if ($LASTEXITCODE -eq 0) {
-                Write-Host "Stack creation initiated. Monitoring progress..."
+                $statusTextBox.AppendText("Stack creation initiated. Monitoring progress...`r`n")
+                $statusTextBox.Refresh()
                 $waitStart = Get-Date
                 do {
                     Start-Sleep -Seconds 30
                     $elapsed = [math]::Round(((Get-Date) - $waitStart).TotalMinutes, 1)
-                    Write-Host "Stack creation in progress... ($elapsed minutes elapsed)"
+                    $statusTextBox.AppendText("Stack creation in progress... ($elapsed minutes elapsed)`r`n")
                     $stackStatus = aws cloudformation describe-stacks --stack-name $stackName --region $region --query "Stacks[0].StackStatus" --output text 2>$null
                     
                     # Show which resource is currently being created
                     $currentResource = aws cloudformation describe-stack-events --stack-name $stackName --region $region --query "StackEvents[?ResourceStatus=='CREATE_IN_PROGRESS'][0].[LogicalResourceId,ResourceType]" --output text 2>$null
                     if ($currentResource) {
-                        Write-Host "Currently creating: $currentResource"
+                        $statusTextBox.AppendText("Currently creating: $currentResource`r`n")
                     }
+                    $statusTextBox.Refresh()
                 } while ($stackStatus -eq "CREATE_IN_PROGRESS" -and $elapsed -lt 25)
                 
                 if ($stackStatus -eq "CREATE_COMPLETE") {
-                    Write-Host "Stack creation completed successfully!"
+                    $statusTextBox.AppendText("Stack creation completed successfully!`r`n")
                 } else {
-                    Write-Host "Stack status: $stackStatus"
+                    $statusTextBox.AppendText("Stack status: $stackStatus`r`n")
                 }
+                $statusTextBox.Refresh()
             }
         } else {
             Write-Host "S3 upload failed, cannot proceed with deployment"
@@ -846,7 +1138,7 @@ if (-not (Get-Command cdk -ErrorAction SilentlyContinue)) {
 
 # Create GUI Form
 $form = New-Object System.Windows.Forms.Form
-$form.Text = "GenAI Workbench Installer v9.11 Complete T-Shirt"
+$form.Text = "GenAI Workbench Installer v9.11"
 $form.Size = New-Object System.Drawing.Size(800, 900)
 $form.StartPosition = "CenterScreen"
 $form.FormBorderStyle = "FixedDialog"
@@ -1036,111 +1328,150 @@ $tabDeploy.Controls.Add($sizeComboBox)
 # Size Info Display
 $sizeInfoLabel = New-Object System.Windows.Forms.Label
 $sizeInfoLabel.Location = New-Object System.Drawing.Point(30, 50)
-$sizeInfoLabel.Size = New-Object System.Drawing.Size(550, 60)
+$sizeInfoLabel.Size = New-Object System.Drawing.Size(550, 96)
 $sizeInfoLabel.ForeColor = [System.Drawing.Color]::Blue
 $sizeInfoLabel.Font = New-Object System.Drawing.Font("Microsoft Sans Serif", 9)
 $tabDeploy.Controls.Add($sizeInfoLabel)
 
 # VPC CIDR
 $vpcLabel = New-Object System.Windows.Forms.Label
-$vpcLabel.Location = New-Object System.Drawing.Point(30, 130)
+$vpcLabel.Location = New-Object System.Drawing.Point(30, 166)
 $vpcLabel.Size = New-Object System.Drawing.Size(150, 20)
 $vpcLabel.Text = "VPC CIDR Block:"
 $tabDeploy.Controls.Add($vpcLabel)
 
 $vpcTextBox = New-Object System.Windows.Forms.TextBox
-$vpcTextBox.Location = New-Object System.Drawing.Point(200, 128)
+$vpcTextBox.Location = New-Object System.Drawing.Point(200, 164)
 $vpcTextBox.Size = New-Object System.Drawing.Size(200, 25)
 $vpcTextBox.Text = "10.0.0.0/16"
 $tabDeploy.Controls.Add($vpcTextBox)
 
 # Key Pair
 $keyLabel = New-Object System.Windows.Forms.Label
-$keyLabel.Location = New-Object System.Drawing.Point(30, 170)
+$keyLabel.Location = New-Object System.Drawing.Point(30, 206)
 $keyLabel.Size = New-Object System.Drawing.Size(150, 20)
 $keyLabel.Text = "EC2 Key Pair Name:"
 $tabDeploy.Controls.Add($keyLabel)
 
 $keyTextBox = New-Object System.Windows.Forms.TextBox
-$keyTextBox.Location = New-Object System.Drawing.Point(200, 168)
+$keyTextBox.Location = New-Object System.Drawing.Point(200, 204)
 $keyTextBox.Size = New-Object System.Drawing.Size(200, 25)
 $keyTextBox.Text = "my-key-pair"
 $tabDeploy.Controls.Add($keyTextBox)
 
 # AWS Region
 $regionLabel = New-Object System.Windows.Forms.Label
-$regionLabel.Location = New-Object System.Drawing.Point(30, 210)
+$regionLabel.Location = New-Object System.Drawing.Point(30, 246)
 $regionLabel.Size = New-Object System.Drawing.Size(150, 20)
 $regionLabel.Text = "AWS Region:"
 $tabDeploy.Controls.Add($regionLabel)
 
-$regionTextBox = New-Object System.Windows.Forms.TextBox
-$regionTextBox.Location = New-Object System.Drawing.Point(200, 208)
-$regionTextBox.Size = New-Object System.Drawing.Size(200, 25)
-$regionTextBox.Text = "Enter Region (e.g. us-east-1)"
-$tabDeploy.Controls.Add($regionTextBox)
+$regionComboBox = New-Object System.Windows.Forms.ComboBox
+$regionComboBox.Location = New-Object System.Drawing.Point(200, 244)
+$regionComboBox.Size = New-Object System.Drawing.Size(300, 25)
+$regionComboBox.DropDownStyle = "DropDownList"
+$regionComboBox.Items.AddRange(@(
+    "us-east-1 (N. Virginia) - Recommended",
+    "us-east-2 (Ohio)",
+    "us-west-1 (N. California)", 
+    "us-west-2 (Oregon)",
+    "eu-west-1 (Ireland)",
+    "eu-west-2 (London)",
+    "eu-central-1 (Frankfurt)",
+    "ap-southeast-1 (Singapore)",
+    "ap-southeast-2 (Sydney)",
+    "ap-northeast-1 (Tokyo)"
+))
+$regionComboBox.SelectedIndex = 0
+$tabDeploy.Controls.Add($regionComboBox)
 
 # AWS Account Number
 $accountLabel = New-Object System.Windows.Forms.Label
-$accountLabel.Location = New-Object System.Drawing.Point(30, 250)
+$accountLabel.Location = New-Object System.Drawing.Point(30, 286)
 $accountLabel.Size = New-Object System.Drawing.Size(150, 20)
 $accountLabel.Text = "AWS Account Number:"
 $tabDeploy.Controls.Add($accountLabel)
 
 $accountTextBox = New-Object System.Windows.Forms.TextBox
-$accountTextBox.Location = New-Object System.Drawing.Point(200, 248)
+$accountTextBox.Location = New-Object System.Drawing.Point(200, 284)
 $accountTextBox.Size = New-Object System.Drawing.Size(200, 25)
 $accountTextBox.Text = "Enter AWS Account #"
+$accountTextBox.ForeColor = [System.Drawing.Color]::Gray
+$accountTextBox.Add_Enter({
+    if ($accountTextBox.Text -eq "Enter AWS Account #") {
+        $accountTextBox.Text = ""
+        $accountTextBox.ForeColor = [System.Drawing.Color]::Black
+    }
+})
+$accountTextBox.Add_Leave({
+    if ($accountTextBox.Text -eq "") {
+        $accountTextBox.Text = "Enter AWS Account #"
+        $accountTextBox.ForeColor = [System.Drawing.Color]::Gray
+    }
+})
 $tabDeploy.Controls.Add($accountTextBox)
 
 # Git Repository URL
 $gitLabel = New-Object System.Windows.Forms.Label
-$gitLabel.Location = New-Object System.Drawing.Point(30, 290)
+$gitLabel.Location = New-Object System.Drawing.Point(30, 326)
 $gitLabel.Size = New-Object System.Drawing.Size(150, 20)
 $gitLabel.Text = "Git Repository URL:"
 $tabDeploy.Controls.Add($gitLabel)
 
 $gitTextBox = New-Object System.Windows.Forms.TextBox
-$gitTextBox.Location = New-Object System.Drawing.Point(200, 288)
+$gitTextBox.Location = New-Object System.Drawing.Point(200, 324)
 $gitTextBox.Size = New-Object System.Drawing.Size(350, 25)
 $gitTextBox.Text = "https://github.com/NoMereMortal/EUCAIBigBoy.git"
 $tabDeploy.Controls.Add($gitTextBox)
 
 # Deployment Directory
 $deployDirLabel = New-Object System.Windows.Forms.Label
-$deployDirLabel.Location = New-Object System.Drawing.Point(30, 330)
+$deployDirLabel.Location = New-Object System.Drawing.Point(30, 366)
 $deployDirLabel.Size = New-Object System.Drawing.Size(150, 20)
 $deployDirLabel.Text = "Deployment Directory:"
 $tabDeploy.Controls.Add($deployDirLabel)
 
 $deployDirTextBox = New-Object System.Windows.Forms.TextBox
-$deployDirTextBox.Location = New-Object System.Drawing.Point(200, 328)
+$deployDirTextBox.Location = New-Object System.Drawing.Point(200, 364)
 $deployDirTextBox.Size = New-Object System.Drawing.Size(270, 25)
 $deployDirTextBox.Text = "Enter path to where you want your local repo to be"
+$deployDirTextBox.ForeColor = [System.Drawing.Color]::Gray
+$deployDirTextBox.Add_Enter({
+    if ($deployDirTextBox.Text -eq "Enter path to where you want your local repo to be") {
+        $deployDirTextBox.Text = ""
+        $deployDirTextBox.ForeColor = [System.Drawing.Color]::Black
+    }
+})
+$deployDirTextBox.Add_Leave({
+    if ($deployDirTextBox.Text -eq "") {
+        $deployDirTextBox.Text = "Enter path to where you want your local repo to be"
+        $deployDirTextBox.ForeColor = [System.Drawing.Color]::Gray
+    }
+})
 $tabDeploy.Controls.Add($deployDirTextBox)
 
 # Browse Button for Deployment Directory
 $btnBrowse = New-Object System.Windows.Forms.Button
-$btnBrowse.Location = New-Object System.Drawing.Point(480, 328)
+$btnBrowse.Location = New-Object System.Drawing.Point(480, 364)
 $btnBrowse.Size = New-Object System.Drawing.Size(70, 25)
 $btnBrowse.Text = "Browse"
 $tabDeploy.Controls.Add($btnBrowse)
 
 # S3 Template URI (Optional)
 $s3Label = New-Object System.Windows.Forms.Label
-$s3Label.Location = New-Object System.Drawing.Point(30, 370)
+$s3Label.Location = New-Object System.Drawing.Point(30, 406)
 $s3Label.Size = New-Object System.Drawing.Size(150, 20)
 $s3Label.Text = "S3 Template URI:"
 $tabDeploy.Controls.Add($s3Label)
 
 $s3TextBox = New-Object System.Windows.Forms.TextBox
-$s3TextBox.Location = New-Object System.Drawing.Point(200, 368)
+$s3TextBox.Location = New-Object System.Drawing.Point(200, 404)
 $s3TextBox.Size = New-Object System.Drawing.Size(350, 25)
 $s3TextBox.Text = "s3://my-bucket/templates/genai-workbench.json"
 $tabDeploy.Controls.Add($s3TextBox)
 
 $s3HelpLabel = New-Object System.Windows.Forms.Label
-$s3HelpLabel.Location = New-Object System.Drawing.Point(200, 395)
+$s3HelpLabel.Location = New-Object System.Drawing.Point(200, 431)
 $s3HelpLabel.Size = New-Object System.Drawing.Size(350, 30)
 $s3HelpLabel.Text = "(Required - S3 storage bypasses PowerShell JSON formatting issues)"
 $s3HelpLabel.ForeColor = [System.Drawing.Color]::DarkBlue
@@ -1148,7 +1479,7 @@ $tabDeploy.Controls.Add($s3HelpLabel)
 
 # Deploy Button
 $deployButton = New-Object System.Windows.Forms.Button
-$deployButton.Location = New-Object System.Drawing.Point(350, 440)
+$deployButton.Location = New-Object System.Drawing.Point(350, 476)
 $deployButton.Size = New-Object System.Drawing.Size(100, 30)
 $deployButton.Text = "Deploy"
 $deployButton.BackColor = [System.Drawing.Color]::LightGreen
@@ -1156,8 +1487,8 @@ $tabDeploy.Controls.Add($deployButton)
 
 # Status TextBox
 $statusTextBox = New-Object System.Windows.Forms.TextBox
-$statusTextBox.Location = New-Object System.Drawing.Point(30, 490)
-$statusTextBox.Size = New-Object System.Drawing.Size(720, 330)
+$statusTextBox.Location = New-Object System.Drawing.Point(30, 526)
+$statusTextBox.Size = New-Object System.Drawing.Size(720, 294)
 $statusTextBox.Multiline = $true
 $statusTextBox.ScrollBars = "Vertical"
 $statusTextBox.ReadOnly = $true
@@ -1170,8 +1501,9 @@ $sizeComboBox.Add_SelectedIndexChanged({
     $config = $script:EnvironmentConfigs[$sizeKey]
     
     $sizeInfoLabel.Text = "$($config.Description)`n" +
-                         "API: $($config.ApiCpu) CPU, $($config.ApiMemory)MB RAM | UI: $($config.UiCpu) CPU, $($config.UiMemory)MB RAM`n" +
-                         "Capacity: $($config.MinSize)-$($config.MaxSize) instances | Est. Cost: $($config.Cost)"
+                         "Compute: API $($config.ApiCpu)CPU/$($config.ApiMemory)MB, UI $($config.UiCpu)CPU/$($config.UiMemory)MB`n" +
+                         "Data: $($config.DynamoDBMode), $($config.OpenSearchInstance), $($config.S3Config)`n" +
+                         "Cache: $($config.MemoryDBInstance) | Auth: $($config.CognitoConfig) | Cost: $($config.Cost)"
 })
 
 # Initialize size info display
@@ -1179,8 +1511,9 @@ $selectedIndex = $sizeComboBox.SelectedIndex
 $sizeKey = @('dev', 'medium-prod', 'enterprise-prod')[$selectedIndex]
 $config = $script:EnvironmentConfigs[$sizeKey]
 $sizeInfoLabel.Text = "$($config.Description)`n" +
-                     "API: $($config.ApiCpu) CPU, $($config.ApiMemory)MB RAM | UI: $($config.UiCpu) CPU, $($config.UiMemory)MB RAM`n" +
-                     "Capacity: $($config.MinSize)-$($config.MaxSize) instances | Est. Cost: $($config.Cost)"
+                     "Compute: API $($config.ApiCpu)CPU/$($config.ApiMemory)MB, UI $($config.UiCpu)CPU/$($config.UiMemory)MB`n" +
+                     "Data: $($config.DynamoDBMode), $($config.OpenSearchInstance), $($config.S3Config)`n" +
+                     "Cache: $($config.MemoryDBInstance) | Auth: $($config.CognitoConfig) | Cost: $($config.Cost)"
 
 # Event Handlers
 $btnTestCred.Add_Click({
@@ -1199,7 +1532,7 @@ $btnTestCred.Add_Click({
         if ($sessionToken) {
             aws configure set aws_session_token $sessionToken
         }
-        $regionToUse = $regionTextBox.Text.Trim()
+        $regionToUse = $regionComboBox.Text.Split(' ')[0]
         if ($regionToUse) {
             aws configure set region $regionToUse
         }
@@ -1356,13 +1689,15 @@ $deployButton.Add_Click({
         $selectedConfig = $script:EnvironmentConfigs[$sizeKey]
         
         $statusTextBox.AppendText("$($selectedConfig.DisplayName) - $($selectedConfig.Description)`r`n")
-        $statusTextBox.AppendText("Resources: API $($selectedConfig.ApiCpu)CPU/$($selectedConfig.ApiMemory)MB, UI $($selectedConfig.UiCpu)CPU/$($selectedConfig.UiMemory)MB`r`n")
+        $statusTextBox.AppendText("Compute: API $($selectedConfig.ApiCpu)CPU/$($selectedConfig.ApiMemory)MB, UI $($selectedConfig.UiCpu)CPU/$($selectedConfig.UiMemory)MB`r`n")
+        $statusTextBox.AppendText("Data Layer: $($selectedConfig.DynamoDBMode), $($selectedConfig.OpenSearchInstance)`r`n")
+        $statusTextBox.AppendText("Cache & Auth: $($selectedConfig.MemoryDBInstance), $($selectedConfig.CognitoConfig)`r`n")
         $statusTextBox.AppendText("Estimated Cost: $($selectedConfig.Cost)`r`n`r`n")
         
         # Validate inputs
         $vpcCidr = $vpcTextBox.Text.Trim()
         $keyPair = $keyTextBox.Text.Trim()
-        $region = $regionTextBox.Text.Trim()
+        $region = $regionComboBox.Text.Split(' ')[0]
         $accountNumber = $accountTextBox.Text.Trim()
         $environment = $sizeKey  # Use selected t-shirt size
         $s3Uri = $s3TextBox.Text.Trim()
@@ -1462,8 +1797,15 @@ $deployButton.Add_Click({
         $statusTextBox.Refresh()
         
         # Step 4: Generate CloudFormation template
-        $statusTextBox.AppendText("Step 4: Generating CloudFormation template...`r`n")
-        $template = Generate-CloudFormationTemplate -vpcCidr $vpcCidr -keyPairName $keyPair -environment $environment -ecrImageUri $containerImage
+        $statusTextBox.AppendText("Step 4: Generating complete CloudFormation template with data layer...`r`n")
+        $template = Generate-CloudFormationTemplate -vpcCidr $vpcCidr -keyPairName $keyPair -environment $environment -accountNumber $accountNumber -ecrImageUri $containerImage
+        
+        if (-not $template -or $template.Length -lt 100) {
+            $statusTextBox.AppendText("ERROR: Template generation failed or template is empty`r`n")
+            return
+        }
+        
+        $statusTextBox.AppendText("Template generated successfully ($(($template.Length / 1024).ToString('F1')) KB)`r`n")
         
         # Step 5: Deploy stack
         $config = $script:EnvironmentConfigs[$environment]
@@ -1472,7 +1814,21 @@ $deployButton.Add_Click({
         $statusTextBox.AppendText("Step 5: Deploying CloudFormation stack: $stackName`r`n")
         
         # Show expectation-setting message
-        Show-Message "CloudFormation deployment is starting. This process will create your AWS infrastructure including VPC, ECS cluster, load balancer, and other resources.`n`nExpected time: 5-15 minutes`n`nYou can monitor progress in the status window and AWS CloudFormation console." "Deployment In Progress"
+        $deployMsg = "CloudFormation deployment is starting. This process will create your complete GenAI Workbench infrastructure including:`n`n" +
+                    "COMPUTE LAYER:`n" +
+                    "- VPC with public/private subnets and NAT Gateway`n" +
+                    "- ECS Fargate cluster with Application Load Balancer`n" +
+                    "- Proper IAM roles with least-privilege access`n`n" +
+                    "DATA LAYER:`n" +
+                    "- 3 DynamoDB tables: Chat history, user sessions, documents`n" +
+                    "- Elasticsearch domain: Vector search with VPC isolation`n" +
+                    "- S3 bucket: Document storage with lifecycle policies`n`n" +
+                    "CACHING & AUTH:`n" +
+                    "- MemoryDB cluster: Redis caching with TLS encryption`n" +
+                    "- Cognito: User authentication with configurable MFA`n`n" +
+                    "Expected deployment time: 15-25 minutes`n`n" +
+                    "You can monitor progress in the status window and AWS CloudFormation console."
+        Show-Message $deployMsg "Complete GenAI Workbench Deployment"
         
         $success = Deploy-CloudFormation -stackName $stackName -templateContent $template -region $region -s3Uri $s3Uri
         
