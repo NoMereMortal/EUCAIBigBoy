@@ -1186,7 +1186,7 @@ $tabPreDeploy.Controls.Add($txtSecretKey)
 $lblSessionToken = New-Object System.Windows.Forms.Label
 $lblSessionToken.Text = "Session Token (optional):"
 $lblSessionToken.Location = New-Object System.Drawing.Point(30, 110)
-$lblSessionToken.Size = New-Object System.Drawing.Size(150, 25)
+$lblSessionToken.Size = New-Object System.Drawing.Size(170, 25)
 $tabPreDeploy.Controls.Add($lblSessionToken)
 
 $txtSessionToken = New-Object System.Windows.Forms.TextBox
@@ -1198,27 +1198,27 @@ $tabPreDeploy.Controls.Add($txtSessionToken)
 $btnTestCred = New-Object System.Windows.Forms.Button
 $btnTestCred.Text = "Test AWS Credentials"
 $btnTestCred.Size = New-Object System.Drawing.Size(170, 35)
-$btnTestCred.Location = New-Object System.Drawing.Point(30, 145)
+$btnTestCred.Location = New-Object System.Drawing.Point(30, 163)
 $tabPreDeploy.Controls.Add($btnTestCred)
 
 # Step 2. System Components PreCheck
 $lblStep2 = New-Object System.Windows.Forms.Label
 $lblStep2.Text = "Step 2. System Components PreCheck"
 $lblStep2.Font = New-Object System.Drawing.Font("Microsoft Sans Serif",12,[System.Drawing.FontStyle]::Bold)
-$lblStep2.Location = New-Object System.Drawing.Point(30, 195)
+$lblStep2.Location = New-Object System.Drawing.Point(30, 213)
 $lblStep2.Size = New-Object System.Drawing.Size(400, 30)
 $tabPreDeploy.Controls.Add($lblStep2)
 
 $lblNpmStatus = New-Object System.Windows.Forms.Label
-$lblNpmStatus.Location = New-Object System.Drawing.Point(30, 230)
+$lblNpmStatus.Location = New-Object System.Drawing.Point(30, 248)
 $lblNpmStatus.Size = New-Object System.Drawing.Size(600, 30)
 $lblNpmStatus.Text = "Click 'Check NPM and CDK Status' to begin."
 $tabPreDeploy.Controls.Add($lblNpmStatus)
 
-$buttonY = 265
-$buttonHeight = 35
+$buttonY = 283
+$buttonHeight = 40
 $buttonGap = 25
-$btnWidth = 190
+$btnWidth = 200
 $btn1X = 30
 $btn2X = $btn1X + $btnWidth + $buttonGap
 $btn3X = $btn1X + 2*($btnWidth + $buttonGap)
@@ -1226,21 +1226,21 @@ $btn3X = $btn1X + 2*($btnWidth + $buttonGap)
 $btnCheckNpmStatus = New-Object System.Windows.Forms.Button
 $btnCheckNpmStatus.Text = "Check NPM and CDK Status"
 $btnCheckNpmStatus.Size = New-Object System.Drawing.Size($btnWidth, $buttonHeight)
-$btnCheckNpmStatus.Font = New-Object System.Drawing.Font("Microsoft Sans Serif", 10)
+$btnCheckNpmStatus.Font = New-Object System.Drawing.Font("Microsoft Sans Serif", 9)
 $btnCheckNpmStatus.Location = New-Object System.Drawing.Point($btn1X, $buttonY)
 $tabPreDeploy.Controls.Add($btnCheckNpmStatus)
 
 $btnReinstallCDK = New-Object System.Windows.Forms.Button
 $btnReinstallCDK.Text = "Reinstall AWS CDK"
 $btnReinstallCDK.Size = New-Object System.Drawing.Size($btnWidth, $buttonHeight)
-$btnReinstallCDK.Font = New-Object System.Drawing.Font("Microsoft Sans Serif", 10)
+$btnReinstallCDK.Font = New-Object System.Drawing.Font("Microsoft Sans Serif", 9)
 $btnReinstallCDK.Location = New-Object System.Drawing.Point($btn2X, $buttonY)
 $tabPreDeploy.Controls.Add($btnReinstallCDK)
 
 $btnClearCache = New-Object System.Windows.Forms.Button
 $btnClearCache.Text = "Clear NPM Cache"
 $btnClearCache.Size = New-Object System.Drawing.Size($btnWidth, $buttonHeight)
-$btnClearCache.Font = New-Object System.Drawing.Font("Microsoft Sans Serif", 10)
+$btnClearCache.Font = New-Object System.Drawing.Font("Microsoft Sans Serif", 9)
 $btnClearCache.Location = New-Object System.Drawing.Point($btn3X, $buttonY)
 $tabPreDeploy.Controls.Add($btnClearCache)
 
@@ -1273,29 +1273,29 @@ function Add-RedXMark($text) { return "[ERROR] " + $text }
 $lblStep3 = New-Object System.Windows.Forms.Label
 $lblStep3.Text = "Step 3. Check for '/16' Network CIDR Availability"
 $lblStep3.Font = New-Object System.Drawing.Font("Microsoft Sans Serif",12,[System.Drawing.FontStyle]::Bold)
-$lblStep3.Location = New-Object System.Drawing.Point(30, 420)
+$lblStep3.Location = New-Object System.Drawing.Point(30, 438)
 $lblStep3.Size = New-Object System.Drawing.Size(500, 30)
 $tabPreDeploy.Controls.Add($lblStep3)
 
 $lblCidrCheck = New-Object System.Windows.Forms.Label
 $lblCidrCheck.Text = "CIDR to check:"
-$lblCidrCheck.Location = New-Object System.Drawing.Point(30, 460)
+$lblCidrCheck.Location = New-Object System.Drawing.Point(30, 478)
 $lblCidrCheck.Size = New-Object System.Drawing.Size(100, 25)
 $tabPreDeploy.Controls.Add($lblCidrCheck)
 
 $txtCidrInput = New-Object System.Windows.Forms.TextBox
-$txtCidrInput.Location = New-Object System.Drawing.Point(150, 460)
+$txtCidrInput.Location = New-Object System.Drawing.Point(150, 478)
 $txtCidrInput.Size = New-Object System.Drawing.Size(150, 25)
 $tabPreDeploy.Controls.Add($txtCidrInput)
 
 $btnCidrCheck = New-Object System.Windows.Forms.Button
 $btnCidrCheck.Text = "Check CIDR"
-$btnCidrCheck.Location = New-Object System.Drawing.Point(320, 460)
+$btnCidrCheck.Location = New-Object System.Drawing.Point(320, 478)
 $btnCidrCheck.Size = New-Object System.Drawing.Size(120, 30)
 $tabPreDeploy.Controls.Add($btnCidrCheck)
 
 $lblCidrResult = New-Object System.Windows.Forms.Label
-$lblCidrResult.Location = New-Object System.Drawing.Point(30, 495)
+$lblCidrResult.Location = New-Object System.Drawing.Point(30, 513)
 $lblCidrResult.Size = New-Object System.Drawing.Size(600, 40)
 $tabPreDeploy.Controls.Add($lblCidrResult)
 
@@ -1328,46 +1328,46 @@ $tabDeploy.Controls.Add($sizeComboBox)
 # Size Info Display
 $sizeInfoLabel = New-Object System.Windows.Forms.Label
 $sizeInfoLabel.Location = New-Object System.Drawing.Point(30, 50)
-$sizeInfoLabel.Size = New-Object System.Drawing.Size(550, 96)
+$sizeInfoLabel.Size = New-Object System.Drawing.Size(550, 130)
 $sizeInfoLabel.ForeColor = [System.Drawing.Color]::Blue
 $sizeInfoLabel.Font = New-Object System.Drawing.Font("Microsoft Sans Serif", 9)
 $tabDeploy.Controls.Add($sizeInfoLabel)
 
 # VPC CIDR
 $vpcLabel = New-Object System.Windows.Forms.Label
-$vpcLabel.Location = New-Object System.Drawing.Point(30, 166)
+$vpcLabel.Location = New-Object System.Drawing.Point(30, 216)
 $vpcLabel.Size = New-Object System.Drawing.Size(150, 20)
 $vpcLabel.Text = "VPC CIDR Block:"
 $tabDeploy.Controls.Add($vpcLabel)
 
 $vpcTextBox = New-Object System.Windows.Forms.TextBox
-$vpcTextBox.Location = New-Object System.Drawing.Point(200, 164)
+$vpcTextBox.Location = New-Object System.Drawing.Point(200, 214)
 $vpcTextBox.Size = New-Object System.Drawing.Size(200, 25)
 $vpcTextBox.Text = "10.0.0.0/16"
 $tabDeploy.Controls.Add($vpcTextBox)
 
 # Key Pair
 $keyLabel = New-Object System.Windows.Forms.Label
-$keyLabel.Location = New-Object System.Drawing.Point(30, 206)
+$keyLabel.Location = New-Object System.Drawing.Point(30, 242)
 $keyLabel.Size = New-Object System.Drawing.Size(150, 20)
 $keyLabel.Text = "EC2 Key Pair Name:"
 $tabDeploy.Controls.Add($keyLabel)
 
 $keyTextBox = New-Object System.Windows.Forms.TextBox
-$keyTextBox.Location = New-Object System.Drawing.Point(200, 204)
+$keyTextBox.Location = New-Object System.Drawing.Point(200, 240)
 $keyTextBox.Size = New-Object System.Drawing.Size(200, 25)
 $keyTextBox.Text = "my-key-pair"
 $tabDeploy.Controls.Add($keyTextBox)
 
 # AWS Region
 $regionLabel = New-Object System.Windows.Forms.Label
-$regionLabel.Location = New-Object System.Drawing.Point(30, 246)
+$regionLabel.Location = New-Object System.Drawing.Point(30, 282)
 $regionLabel.Size = New-Object System.Drawing.Size(150, 20)
 $regionLabel.Text = "AWS Region:"
 $tabDeploy.Controls.Add($regionLabel)
 
 $regionComboBox = New-Object System.Windows.Forms.ComboBox
-$regionComboBox.Location = New-Object System.Drawing.Point(200, 244)
+$regionComboBox.Location = New-Object System.Drawing.Point(200, 280)
 $regionComboBox.Size = New-Object System.Drawing.Size(300, 25)
 $regionComboBox.DropDownStyle = "DropDownList"
 $regionComboBox.Items.AddRange(@(
@@ -1387,13 +1387,13 @@ $tabDeploy.Controls.Add($regionComboBox)
 
 # AWS Account Number
 $accountLabel = New-Object System.Windows.Forms.Label
-$accountLabel.Location = New-Object System.Drawing.Point(30, 286)
+$accountLabel.Location = New-Object System.Drawing.Point(30, 322)
 $accountLabel.Size = New-Object System.Drawing.Size(150, 20)
 $accountLabel.Text = "AWS Account Number:"
 $tabDeploy.Controls.Add($accountLabel)
 
 $accountTextBox = New-Object System.Windows.Forms.TextBox
-$accountTextBox.Location = New-Object System.Drawing.Point(200, 284)
+$accountTextBox.Location = New-Object System.Drawing.Point(200, 320)
 $accountTextBox.Size = New-Object System.Drawing.Size(200, 25)
 $accountTextBox.Text = "Enter AWS Account #"
 $accountTextBox.ForeColor = [System.Drawing.Color]::Gray
@@ -1413,26 +1413,26 @@ $tabDeploy.Controls.Add($accountTextBox)
 
 # Git Repository URL
 $gitLabel = New-Object System.Windows.Forms.Label
-$gitLabel.Location = New-Object System.Drawing.Point(30, 326)
+$gitLabel.Location = New-Object System.Drawing.Point(30, 362)
 $gitLabel.Size = New-Object System.Drawing.Size(150, 20)
 $gitLabel.Text = "Git Repository URL:"
 $tabDeploy.Controls.Add($gitLabel)
 
 $gitTextBox = New-Object System.Windows.Forms.TextBox
-$gitTextBox.Location = New-Object System.Drawing.Point(200, 324)
+$gitTextBox.Location = New-Object System.Drawing.Point(200, 360)
 $gitTextBox.Size = New-Object System.Drawing.Size(350, 25)
 $gitTextBox.Text = "https://github.com/NoMereMortal/EUCAIBigBoy.git"
 $tabDeploy.Controls.Add($gitTextBox)
 
 # Deployment Directory
 $deployDirLabel = New-Object System.Windows.Forms.Label
-$deployDirLabel.Location = New-Object System.Drawing.Point(30, 366)
+$deployDirLabel.Location = New-Object System.Drawing.Point(30, 402)
 $deployDirLabel.Size = New-Object System.Drawing.Size(150, 20)
 $deployDirLabel.Text = "Deployment Directory:"
 $tabDeploy.Controls.Add($deployDirLabel)
 
 $deployDirTextBox = New-Object System.Windows.Forms.TextBox
-$deployDirTextBox.Location = New-Object System.Drawing.Point(200, 364)
+$deployDirTextBox.Location = New-Object System.Drawing.Point(200, 400)
 $deployDirTextBox.Size = New-Object System.Drawing.Size(270, 25)
 $deployDirTextBox.Text = "Enter path to where you want your local repo to be"
 $deployDirTextBox.ForeColor = [System.Drawing.Color]::Gray
@@ -1452,26 +1452,26 @@ $tabDeploy.Controls.Add($deployDirTextBox)
 
 # Browse Button for Deployment Directory
 $btnBrowse = New-Object System.Windows.Forms.Button
-$btnBrowse.Location = New-Object System.Drawing.Point(480, 364)
+$btnBrowse.Location = New-Object System.Drawing.Point(480, 400)
 $btnBrowse.Size = New-Object System.Drawing.Size(70, 25)
 $btnBrowse.Text = "Browse"
 $tabDeploy.Controls.Add($btnBrowse)
 
 # S3 Template URI (Optional)
 $s3Label = New-Object System.Windows.Forms.Label
-$s3Label.Location = New-Object System.Drawing.Point(30, 406)
+$s3Label.Location = New-Object System.Drawing.Point(30, 442)
 $s3Label.Size = New-Object System.Drawing.Size(150, 20)
 $s3Label.Text = "S3 Template URI:"
 $tabDeploy.Controls.Add($s3Label)
 
 $s3TextBox = New-Object System.Windows.Forms.TextBox
-$s3TextBox.Location = New-Object System.Drawing.Point(200, 404)
+$s3TextBox.Location = New-Object System.Drawing.Point(200, 440)
 $s3TextBox.Size = New-Object System.Drawing.Size(350, 25)
 $s3TextBox.Text = "s3://my-bucket/templates/genai-workbench.json"
 $tabDeploy.Controls.Add($s3TextBox)
 
 $s3HelpLabel = New-Object System.Windows.Forms.Label
-$s3HelpLabel.Location = New-Object System.Drawing.Point(200, 431)
+$s3HelpLabel.Location = New-Object System.Drawing.Point(200, 467)
 $s3HelpLabel.Size = New-Object System.Drawing.Size(350, 30)
 $s3HelpLabel.Text = "(Required - S3 storage bypasses PowerShell JSON formatting issues)"
 $s3HelpLabel.ForeColor = [System.Drawing.Color]::DarkBlue
@@ -1479,7 +1479,7 @@ $tabDeploy.Controls.Add($s3HelpLabel)
 
 # Deploy Button
 $deployButton = New-Object System.Windows.Forms.Button
-$deployButton.Location = New-Object System.Drawing.Point(350, 476)
+$deployButton.Location = New-Object System.Drawing.Point(350, 512)
 $deployButton.Size = New-Object System.Drawing.Size(100, 30)
 $deployButton.Text = "Deploy"
 $deployButton.BackColor = [System.Drawing.Color]::LightGreen
@@ -1487,7 +1487,7 @@ $tabDeploy.Controls.Add($deployButton)
 
 # Status TextBox
 $statusTextBox = New-Object System.Windows.Forms.TextBox
-$statusTextBox.Location = New-Object System.Drawing.Point(30, 526)
+$statusTextBox.Location = New-Object System.Drawing.Point(30, 562)
 $statusTextBox.Size = New-Object System.Drawing.Size(720, 294)
 $statusTextBox.Multiline = $true
 $statusTextBox.ScrollBars = "Vertical"
